@@ -1,5 +1,6 @@
 ---
 frage: "Wie hoch sollte deine Berufsunfähigkeitsrente als Zahnärzt*in sein?"
+titel: "Wie hoch sollte die BU-Rente sein?"
 kurzantwort: "Als Richtwert nennt die Verbraucherzentrale etwa 80 Prozent des aktuellen Nettoeinkommens. Die Rente sollte die laufenden Ausgaben wie Miete, Haushalt und Altersvorsorge decken."
 metaDescription: "Wie hoch eine Berufsunfähigkeitsrente für Zahnärzt*innen sein sollte: Richtwert, Dynamik, Laufzeit bis 67 und Nachversicherung, mit Quellen."
 status: entwurf

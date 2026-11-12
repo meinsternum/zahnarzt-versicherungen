@@ -1,5 +1,6 @@
 ---
 frage: "Reicht die Berufsunfähigkeitsrente des Versorgungswerks für Zahnärzt*innen aus?"
+titel: "BU-Rente des Versorgungswerks: reicht sie?"
 kurzantwort: "Das Versorgungswerk zahlt eine Berufsunfähigkeitsrente nur unter engen Voraussetzungen. Maßgeblich ist die Satzung deines Versorgungswerks, die sich je nach Bundesland unterscheidet. Typisch ist ein Alles-oder-nichts-Prinzip ohne prozentuale Einstufung."
 metaDescription: "Berufsunfähigkeitsrente im Versorgungswerk für Zahnärzt*innen: enge Voraussetzungen, Unterschiede der Satzungen und ein aktuelles Urteil, mit Quellen."
 status: entwurf

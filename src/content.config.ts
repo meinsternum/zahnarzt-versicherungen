@@ -5,6 +5,7 @@ const situationen = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/situationen' }),
   schema: z.object({
     frage: z.string(),
+    titel: z.string().max(60), // kurzer Seitentitel für Suchergebnisse
     kurzantwort: z.string(),
     metaDescription: z.string().max(170),
     // entwurf = nur in Vorschau sichtbar, freigegeben = geht live

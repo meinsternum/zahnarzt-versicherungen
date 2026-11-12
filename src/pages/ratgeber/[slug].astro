@@ -51,7 +51,7 @@ const jsonLd = [
 
 const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
 ---
-<Base title={`${d.frage} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd}>
+<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd}>
   {!isProduction && d.status === 'entwurf' && (
     <p class="draft-note">Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.</p>
   )}
@@ -94,7 +94,7 @@ const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
   </article>
 
   <div class="cta">
-    <p>Du möchtest wissen, was davon für deine Situation gilt? Wir schauen es uns gemeinsam an. Das Erstgespräch ist kostenlos und unverbindlich.</p>
-    <a class="btn" href="https://meinsternum.de/online-buchen">Termin buchen</a>
+    <p>Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
+    <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
   </div>
 </Base>

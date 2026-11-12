@@ -1,4 +1,0 @@
-User-agent: *
-Allow: /
-
-Sitemap: https://zahnarzt-versicherungen.de/sitemap-index.xml

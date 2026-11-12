@@ -1,7 +1,8 @@
 // Netlify setzt CONTEXT=production nur beim Live-Build der Hauptseite.
 // Vorschau-Builds und lokale Builds zeigen auch Entwürfe.
-// Solange false: auch die Live-Seite trägt noindex. Erst auf true setzen, wenn Impressum/Datenschutz freigegeben sind.
-export const indexierungErlaubt = false;
+import indexierung from '../../indexierung.json';
+// Solange false: auch die Live-Seite trägt noindex, keine Sitemap. Schalter in indexierung.json.
+export const indexierungErlaubt: boolean = indexierung.erlaubt;
 
 export const isProduction = process.env.CONTEXT === 'production';
 
