@@ -20,17 +20,21 @@ Wir sind nach Art. 37 DSGVO in Verbindung mit § 38 BDSG nicht zur Benennung ein
 
 ## 3. Hosting bei Netlify
 
-Diese Website wird bei Netlify, Inc., San Francisco, USA gehostet. Beim Aufruf der Website verarbeitet Netlify technische Verbindungsdaten, um die Seite auszuliefern und zu schützen.
+Diese Website wird bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, CA 94107, USA gehostet. Beim Aufruf der Website verarbeitet Netlify technische Verbindungsdaten, um die Seite auszuliefern und zu schützen.
 
-[PRÜFEN: Vertragsgrundlage mit Netlify (Auftragsverarbeitungsvertrag nach Art. 28 DSGVO, Standardvertragsklauseln, ggf. EU-US Data Privacy Framework-Zertifizierung), Serverstandorte und Speicherdauer der Logdaten aus der aktuellen Netlify-Dokumentation belegen. Wortlaut rechtlich prüfen.]
+Mit Netlify besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Die Übermittlung in die USA stützt sich auf die Zertifizierung von Netlify unter dem EU-US Data Privacy Framework und, falls diese entfällt, auf Standardvertragsklauseln der EU-Kommission. Netlify setzt Unterauftragsverarbeiter ein, die Netlify auf https://www.netlify.com/legal/subprocessors/ auflistet.
+
+[PRÜFEN: Netlify nennt die Auftragsverarbeitung (DPA, Stand 9. Juni 2026) als Teil der Nutzungsvereinbarung. Bestätigen, dass sie für den Free-Plan des Kontos gilt, und ob ein Abschluss im Konto nötig ist. Aktuelle DPF-Zertifizierung im Verzeichnis dataprivacyframework.gov gegenprüfen.]
 
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sichere und effiziente Bereitstellung der Website).
 
 ## 4. Protokolldaten
 
-Beim Aufruf werden automatisch Daten verarbeitet, die dein Browser übermittelt, insbesondere IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge und Browser- sowie Betriebssysteminformationen. Zweck ist die technische Bereitstellung der Seite und die Abwehr von Angriffen.
+Beim Aufruf werden automatisch Daten verarbeitet, die dein Browser übermittelt, insbesondere IP-Adresse, Datum und Uhrzeit, aufgerufene Seite, übertragene Datenmenge und Browser- sowie Betriebssysteminformationen. Zweck ist die technische Bereitstellung der Seite sowie die Fehlersuche und die Abwehr von Angriffen. Die Protokolle verwaltet Netlify. Wir als Betreiber haben auf diese Zugriffsprotokolle keinen Zugriff.
 
-[PRÜFEN: Löschfristen der Logdaten bei Netlify.]
+Nach Angaben von Netlify werden die Zugriffsprotokolle weniger als 30 Tage gespeichert.
+
+[PRÜFEN: Diese Angabe stammt aus einem Beitrag im Netlify-Support-Forum, nicht aus der offiziellen Datenschutzerklärung oder dem DPA. Aktuelle Aussage von Netlify prüfen und ggf. mit Netlify klären.]
 
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.
 
