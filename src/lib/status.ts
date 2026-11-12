@@ -21,6 +21,6 @@ export function visible<T extends Item>(items: T[]): T[] {
   return live;
 }
 
-// "Über uns" (Teamfoto, Vita) geht erst live, wenn Einverständnis des Teams und Vita geklärt sind.
-export const ueberUnsFreigegeben = false;
+// "Über uns" (Teamfoto, Vita) ist freigegeben: Team-Einverständnis (Patrick, 12.11.2026) und Vita nach meinsternum.de/wir.
+export const ueberUnsFreigegeben = true;
 export const zeigeUeberUns = !isProduction || ueberUnsFreigegeben;
