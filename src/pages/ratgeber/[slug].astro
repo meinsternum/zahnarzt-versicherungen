@@ -1,7 +1,7 @@
 ---
-import Bewertung from '../../components/Bewertung.astro';
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import { datumDe } from '../../lib/datum';
 import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
 
 export async function getStaticPaths() {
@@ -61,7 +61,7 @@ const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
     <p class="kurzantwort">{d.kurzantwort}</p>
     <div class="autor">
       <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer von MEIN STERNUM" width="56" height="56" loading="lazy" />
-      <p class="meta">Stand: {d.stand} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, MEIN STERNUM Finanzberatung GmbH</p>
+      <p class="meta">Stand: {datumDe(d.stand)} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, MEIN STERNUM Finanzberatung GmbH</p>
     </div>
 
     <Content />
@@ -97,7 +97,6 @@ const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
     )}
   </article>
 
-  <Bewertung />
   <div class="cta">
     <p>Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
     <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>

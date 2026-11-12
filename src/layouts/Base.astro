@@ -17,6 +17,10 @@ interface Props {
 }
 
 const { title, description, path, noindex = false, jsonLd = [], fullWidth = false } = Astro.props;
+const suffix = ' | zahnarzt-versicherungen.de';
+const basis = title.endsWith(suffix) ? title.slice(0, -suffix.length) : title;
+// Domain-Zusatz nur, wenn der Titel danach höchstens 60 Zeichen hat (sonst kürzt Google).
+const fullTitle = (basis + suffix).length <= 60 ? basis + suffix : basis;
 const canonical = new URL(path, 'https://zahnarzt-versicherungen.de').toString();
 // Außerhalb des Live-Builds nie indexieren.
 const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofollow' : 'index, follow';
@@ -26,14 +30,14 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
+    <title>{fullTitle}</title>
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" href="/favicon-180.png" />
-    <meta property="og:title" content={title} />
+    <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
     <meta property="og:url" content={canonical} />
