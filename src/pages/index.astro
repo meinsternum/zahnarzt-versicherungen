@@ -3,7 +3,7 @@ import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { visible } from '../lib/status';
 
-const seiten = visible(await getCollection('situationen'));
+const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 
 const jsonLd = [{
   '@context': 'https://schema.org',
@@ -17,14 +17,36 @@ const jsonLd = [{
   },
 }];
 ---
-<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Orientierung zu Versicherungen und Absicherung für Zahnärzt*innen. Ein Angebot der MEIN STERNUM Finanzberatung GmbH." path="/" jsonLd={jsonLd}>
-  <h1>Versicherungen für Zahnärzt*innen</h1>
-  <p class="kurzantwort">Hier findest du Antworten auf typische Fragen zu Absicherung und Versicherungen in den verschiedenen Phasen deines Berufslebens.</p>
-  <ul class="liste">
-    {seiten.map((s) => <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></li>)}
-  </ul>
-  <div class="cta">
-    <p>Persönliche Fragen klären wir im Gespräch. Das Erstgespräch ist kostenlos und unverbindlich.</p>
-    <a class="btn" href="https://meinsternum.de/online-buchen">Termin buchen</a>
+<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf konkrete Fragen zu Berufsunfähigkeit und Absicherung für Zahnärzt*innen, mit Quellen und Stand. Ein Angebot der MEIN STERNUM Finanzberatung GmbH." path="/" jsonLd={jsonLd} fullWidth>
+  <section class="hero">
+    <div class="wrap">
+      <h1>Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen</h1>
+      <p>Jede Seite beantwortet eine Frage aus deiner Berufsphase, nennt Quellen und das Datum der letzten Prüfung.</p>
+      <a class="btn" href="/ratgeber">Zu den Fragen</a>
+    </div>
+  </section>
+  <div class="wrap">
+    <div>
+      <h2>Aktuelle Fragen zur Berufsunfähigkeit</h2>
+      <ul class="karten">
+        {seiten.map((s) => (
+          <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}<span>{s.data.kurzantwort}</span></a></li>
+        ))}
+      </ul>
+
+      <div class="regeln">
+        <h2>So sind die Seiten aufgebaut</h2>
+        <ul>
+          <li>Eine Frage pro Seite, die Kurzantwort steht direkt darunter.</li>
+          <li>Jede Seite nennt ihre Quellen und den Stand der Prüfung.</li>
+          <li>Die Inhalte sind allgemeine Informationen und ersetzen keine individuelle Beratung.</li>
+        </ul>
+      </div>
+
+      <div class="cta">
+        <p>Persönliche Fragen klären wir im Gespräch. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+        <a class="btn" href="https://meinsternum.de/online-buchen">Termin buchen</a>
+      </div>
+    </div>
   </div>
 </Base>

@@ -13,6 +13,7 @@ const situationen = defineCollection({
     quellen: z.array(z.object({ titel: z.string(), url: z.string().optional() })).default([]),
     faq: z.array(z.object({ frage: z.string(), antwort: z.string() })).default([]),
     verwandt: z.array(z.string()).default([]),
+    reihenfolge: z.number().default(99),
   }),
 });
 
