@@ -1,4 +1,5 @@
 ---
+import Bewertung from '../components/Bewertung.astro';
 import Base from '../layouts/Base.astro';
 import { zeigeUeberUns } from '../lib/status';
 
@@ -29,6 +30,7 @@ const jsonLd = [{
   <img class="portrait" src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer von MEIN STERNUM" width="160" height="160" loading="lazy" />
   <p>Patrick Senn hat die MEIN STERNUM Finanzberatung GmbH 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
 
+  <Bewertung />
   <div class="cta">
     <p>Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch.</p>
     <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>

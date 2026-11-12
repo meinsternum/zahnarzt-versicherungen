@@ -90,3 +90,6 @@ main.voll { padding-top: 0; }
   header.site nav a:not(:first-child) { display: none; }
   .wortmarke { white-space: nowrap; }
 }
+
+.bewertung { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.9rem; color: var(--text-soft); margin: 2rem 0 1rem; }
+.bewertung .sterne { color: var(--teal); letter-spacing: 0.1em; flex: none; }

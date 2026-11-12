@@ -25,7 +25,7 @@ verwandt:
 
 Die Verbraucherzentrale nennt etwa 80 Prozent des aktuellen Nettoeinkommens als Richtwert für die Höhe der Berufsunfähigkeitsrente. Entscheidend ist, dass die Rente alle laufenden Ausgaben deckt, etwa Haushalt, Miete und Altersvorsorge.
 
-[PRÜFEN: Für Zahnärzt*innen in der Niederlassung zählen auch Praxisfinanzierung und laufende Praxiskosten. Ob und wie sich das auf die Höhe auswirkt, ist eine Frage der individuellen Planung und wird hier nicht pauschal beantwortet.]
+[PRÜFEN: Für Zahnärzt\*innen in der Niederlassung zählen auch Praxisfinanzierung und laufende Praxiskosten. Ob und wie sich das auf die Höhe auswirkt, ist eine Frage der individuellen Planung und wird hier nicht pauschal beantwortet.]
 
 ## Dynamik
 

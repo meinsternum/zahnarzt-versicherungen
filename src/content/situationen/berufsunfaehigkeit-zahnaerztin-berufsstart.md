@@ -27,7 +27,7 @@ Eine Berufsunfähigkeitsversicherung prüft bei der Annahme deinen Gesundheitszu
 
 ## Was ein früher Abschluss bringen kann
 
-Studierende und Berufsanfänger*innen bekommen häufig günstigere Beiträge. Nach Angaben der Verbraucherzentrale bleibt die zu Beginn festgelegte Berufseinstufung bestehen, auch wenn du später in einen risikoreicheren Beruf wechselst. Für Zahnärzt*innen kann das bei der Niederlassung relevant werden.
+Studierende und Berufsanfänger\*innen bekommen häufig günstigere Beiträge. Nach Angaben der Verbraucherzentrale bleibt die zu Beginn festgelegte Berufseinstufung bestehen, auch wenn du später in einen risikoreicheren Beruf wechselst. Für Zahnärzt\*innen kann das bei der Niederlassung relevant werden.
 
 ## Worauf du bei Starterpolicen achten solltest
 
@@ -39,10 +39,10 @@ Beantwortest du die Gesundheitsfragen unvollständig oder falsch, kann der Versi
 
 ## Nachversicherungsgarantie
 
-Mit einer Nachversicherungsgarantie kannst du die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüfung erhöhen, etwa bei beruflichem Aufstieg, Heirat, Geburt eines Kindes oder Hausbau. Für Zahnärzt*innen kann auch der Schritt in die Niederlassung ein solcher Anlass sein. [PRÜFEN: Ob die Niederlassung in den Tarifen als Anlass gilt, steht in den jeweiligen Bedingungen und lässt sich nicht pauschal sagen.]
+Mit einer Nachversicherungsgarantie kannst du die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüfung erhöhen, etwa bei beruflichem Aufstieg, Heirat, Geburt eines Kindes oder Hausbau. Für Zahnärzt\*innen kann auch der Schritt in die Niederlassung ein solcher Anlass sein. [PRÜFEN: Ob die Niederlassung in den Tarifen als Anlass gilt, steht in den jeweiligen Bedingungen und lässt sich nicht pauschal sagen.]
 
 ## Was das Versorgungswerk nicht ersetzt
 
-Als Zahnärzt*in bist du in der Regel Pflichtmitglied in einem Versorgungswerk. Dessen Berufsunfähigkeitsrente ist an enge Voraussetzungen geknüpft. Details dazu findest du auf der Seite [Reicht die Berufsunfähigkeitsrente des Versorgungswerks aus?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen).
+Als Zahnärzt\*in bist du in der Regel Pflichtmitglied in einem Versorgungswerk. Dessen Berufsunfähigkeitsrente ist an enge Voraussetzungen geknüpft. Details dazu findest du auf der Seite [Reicht die Berufsunfähigkeitsrente des Versorgungswerks aus?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen).
 
 Diese Seite enthält allgemeine Informationen und ersetzt keine individuelle Beratung.

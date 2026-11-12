@@ -1,0 +1,7 @@
+---
+import { bewertung as b } from '../lib/bewertung';
+---
+<p class="bewertung">
+  <span class="sterne" aria-hidden="true">★★★★★</span>
+  <span>Google-Bewertungen der MEIN STERNUM Finanzberatung GmbH: {b.wert} von 5 bei {b.anzahl} Bewertungen (Stand {b.stand}). <a href={b.url}>Bewertungen bei Google ansehen</a></span>
+</p>

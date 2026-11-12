@@ -32,11 +32,11 @@ verwandt:
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
 ---
 
-Als Zahnärzt*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
+Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
 
 ## Wann das Versorgungswerk zahlt
 
-Jede Kammer hat ein eigenes Regelwerk, und die Regeln können abweichen. Zwei Beispiele zeigen, worauf du achten solltest. Die Regelwerke deines eigenen Versorgungswerks findest du auf dessen Website oder bei deiner Kammer. Das gilt auch für Zahnärzt*innen in Köln und im Rheinland.
+Jede Kammer hat ein eigenes Regelwerk, und die Regeln können abweichen. Zwei Beispiele zeigen, worauf du achten solltest. Die Regelwerke deines eigenen Versorgungswerks findest du auf dessen Website oder bei deiner Kammer. Das gilt auch für Zahnärzt\*innen in Köln und im Rheinland.
 
 In Westfalen-Lippe zahlt das Versorgungswerk die Berufsunfähigkeitsrente nur auf Antrag, wenn du dauerhaft berufsunfähig bist und deine zahnärztliche Tätigkeit aufgegeben hast. Berufsunfähig bist du dort, wenn du deine zahnärztlichen Fähigkeiten gesundheitsbedingt in irgendeiner Weise wirtschaftlich nicht mehr nutzen kannst, auch nicht außerhalb der Praxis (Satzung, Stand Juli 2026, § 41 Abs. 1 und 2).
 
@@ -44,7 +44,7 @@ In Niedersachsen (Altersversorgungs- und Hinterbliebenenordnung ab 01.02.2024) h
 
 ## Was „Praxis aufgeben“ bedeutet
 
-In beiden Beispielen reicht die Diagnose allein nicht. In Westfalen-Lippe gibt es keinen Anspruch, wenn eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du die Aufgabe der zahnärztlichen Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du keine zahnärztliche Tätigkeit ausgeübt hast. Fehlt die Erklärung, entfällt die Rente ab Mai (§ 17a Abs. 1 und 3). Dort trägst du die Kosten für den Nachweis der Berufsunfähigkeit selbst, ein nicht behandelnde*r Fachärzt*in erstellt das Gutachten, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung deiner Berufsfähigkeit ergreifen (§ 17 Abs. 5 bis 8).
+In beiden Beispielen reicht die Diagnose allein nicht. In Westfalen-Lippe gibt es keinen Anspruch, wenn eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du die Aufgabe der zahnärztlichen Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du keine zahnärztliche Tätigkeit ausgeübt hast. Fehlt die Erklärung, entfällt die Rente ab Mai (§ 17a Abs. 1 und 3). Dort trägst du die Kosten für den Nachweis der Berufsunfähigkeit selbst, ein nicht behandelnde\*r Fachärzt\*in erstellt das Gutachten, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung deiner Berufsfähigkeit ergreifen (§ 17 Abs. 5 bis 8).
 
 *Fiktives Beispiel: Dr. B. führt eine Einzelpraxis und kann wegen einer Handerkrankung nicht mehr behandeln. Sie stellt eine Vertretung ein, um die Praxis zu halten. Nach der Satzung aus Westfalen-Lippe hat sie für diese Zeit keinen Anspruch auf die Berufsunfähigkeitsrente, weil eine Vertretung die Praxis weiterführt. Zusätzlich prüft das Versorgungswerk, ob sie ihre Fähigkeiten außerhalb der Praxis wirtschaftlich nutzen kann. Was bei deinem Versorgungswerk gilt, steht in deiner Satzung.*
 
