@@ -52,8 +52,8 @@ const jsonLd = [
 const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
 ---
 <Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd}>
-  {!isProduction && d.status === 'entwurf' && (
-    <p class="draft-note">Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.</p>
+  {!isProduction && d.status !== 'freigegeben' && (
+    <p class="draft-note">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>
   )}
   <article>
     <h1>{d.frage}</h1>

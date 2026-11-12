@@ -8,8 +8,8 @@ const situationen = defineCollection({
     titel: z.string().max(60), // kurzer Seitentitel für Suchergebnisse
     kurzantwort: z.string(),
     metaDescription: z.string().max(170),
-    // entwurf = nur in Vorschau sichtbar, freigegeben = geht live
-    status: z.enum(['entwurf', 'freigegeben']).default('entwurf'),
+    // entwurf = Text ungeprüft, geprueft = Inhalts-Chat hat geprüft (nur Vorschau), freigegeben = geht live
+    status: z.enum(['entwurf', 'geprueft', 'freigegeben']).default('entwurf'),
     stand: z.string(), // Datum der letzten fachlichen Prüfung, z. B. 2026-11-12
     quellen: z.array(z.object({ titel: z.string(), url: z.string().optional() })).default([]),
     faq: z.array(z.object({ frage: z.string(), antwort: z.string() })).default([]),

@@ -1,22 +1,32 @@
 ---
-frage: "Berufsunfähigkeit als Zahnärzt*in: Was Versorgungswerke regeln und was offen bleibt"
+frage: "Reicht die BU-Rente des Versorgungswerks für Zahnärzt*innen?"
 titel: "BU bei Zahnärzt*innen: Versorgungswerk und private BU"
-kurzantwort: "Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags."
-metaDescription: "Berufsunfähigkeit als Zahnärzt*in: Wann das Versorgungswerk zahlt, was die Aufgabe der Praxis bedeutet und was die private BU anders regeln kann. Mit Quellen."
-status: freigegeben
-reihenfolge: 1
+kurzantwort: "Das Versorgungswerk zahlt bei Berufsunfähigkeit je nach Satzung nur, wenn du die zahnärztliche Tätigkeit aufgibst. Ob das für dich reicht, hängt von deiner Satzung und deinem Vertrag ab."
+metaDescription: "Wann das Versorgungswerk bei Berufsunfähigkeit zahlt, was Praxis aufgeben bedeutet und was die private BU anders regeln kann. Mit Satzungsbeispielen."
+status: geprueft
 stand: "2026-11-12"
 quellen:
-  - titel: "Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe (VZWL), Stand Juli 2026, §§ 9, 10, 18, 41 (verlinkt von vzwl.de/satzung.html)"
-    url: "https://vzwl.de/satzung.html"
-  - titel: "Altersversorgungs- und Hinterbliebenenordnung der Zahnärztekammer Niedersachsen (ZKN), gültig ab 01.02.2024, §§ 8, 9, 17, 17a"
-    url: "https://zkn.de/wp-content/uploads/2024/06/ABH-gueltig-ab-01.02.2024.pdf"
-  - titel: "§ 172 VVG (Begriff der Berufsunfähigkeit), abgerufen am 12.11.2026"
+  - titel: "§ 172 VVG, Berufsunfähigkeit (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__172.html"
-  - titel: "§ 31 IfSG (Beschäftigungsverbote), abgerufen am 12.11.2026"
+  - titel: "§ 19 VVG, Anzeigepflicht (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/vvg_2008/__19.html"
+  - titel: "§ 31 IfSG, Tätigkeitsverbot (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/ifsg/__31.html"
-  - titel: "BZÄK: Schritte in das zahnärztliche Berufsleben (Kammer- und Versorgungswerk-Mitgliedschaft)"
+  - titel: "§ 2 IfSG, Begriffsbestimmungen (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/ifsg/__2.html"
+  - titel: "Satzung Versorgungswerk der Zahnärztekammer Westfalen-Lippe, Stand Juli 2026, § 41"
+    url: "https://vzwl.de/satzung.html"
+  - titel: "Altersversorgungs- und Hinterbliebenenordnung Zahnärztekammer Niedersachsen, gültig ab 01.02.2024, §§ 17, 17a"
+    url: "https://zkn.de/wp-content/uploads/2024/06/ABH-gueltig-ab-01.02.2024.pdf"
+  - titel: "Bundeszahnärztekammer: Schritte in das zahnärztliche Berufsleben (Pflichtmitgliedschaft)"
     url: "https://www.bzaek.de/fileadmin/PDFs/b/schritte_in_das_zahnaerztliche_berufsleben.pdf"
+faq:
+  - frage: "Zahlt das Versorgungswerk, wenn eine Vertretung meine Praxis weiterführt?"
+    antwort: "Nach der Satzung aus Westfalen-Lippe nicht (§ 41 Abs. 3). Die Ordnung in Niedersachsen enthält dazu in den §§ 17 und 17a keine ausdrückliche Regel. Maßgeblich ist die Satzung deines Versorgungswerks."
+  - frage: "Gibt es im Gesetz eine Prozentgrenze für Berufsunfähigkeit?"
+    antwort: "Nein. § 172 Abs. 2 VVG nennt keine Prozentzahl. Ab welchem Grad ein privater Vertrag zahlt, steht in den Versicherungsbedingungen."
+  - frage: "Muss ich für das Versorgungswerk eine Gesundheitsprüfung machen?"
+    antwort: "In den beiden gelesenen Regelwerken ist für die Pflichtmitgliedschaft keine Gesundheitsprüfung vorgesehen. Wer bei Beginn bereits berufsunfähig ist, wird nicht Mitglied."
 verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
@@ -54,6 +64,6 @@ In den beiden gelesenen Regelwerken ist für die Pflichtmitgliedschaft im Versor
 
 ## Was du mitnehmen kannst
 
-Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags. Wie sich beides in deinem Fall zusammensetzt, hängt von deiner Satzung, deiner Praxisform und deinen Vertragsbedingungen ab. Das lässt sich in einem Gespräch an deinen Unterlagen klären: [meinsternum.de/online-buchen](https://meinsternum.de/online-buchen)
+Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags. Wie sich beides in deinem Fall zusammensetzt, hängt von deiner Satzung, deiner Praxisform und deinen Vertragsbedingungen ab.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Satzung VZWL Juli 2026, Altersversorgungs- und Hinterbliebenenordnung ZKN 01.02.2024, Gesetze abgerufen am 12.11.2026.*
