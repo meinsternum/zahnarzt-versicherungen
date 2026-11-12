@@ -20,3 +20,7 @@ export function visible<T extends Item>(items: T[]): T[] {
   }
   return live;
 }
+
+// "Über uns" (Teamfoto, Vita) geht erst live, wenn Einverständnis des Teams und Vita geklärt sind.
+export const ueberUnsFreigegeben = false;
+export const zeigeUeberUns = !isProduction || ueberUnsFreigegeben;

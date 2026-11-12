@@ -5,7 +5,7 @@ import '@fontsource/inter/300.css';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
-import { isProduction, indexierungErlaubt } from '../lib/status';
+import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
 
 interface Props {
   title: string;
@@ -30,6 +30,9 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="/favicon.ico" sizes="48x48" />
+    <link rel="apple-touch-icon" href="/favicon-180.png" />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
@@ -41,8 +44,8 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
   <body>
     <header class="site">
       <div class="wrap">
-        <a class="brand" href="/"><span>zahnarzt</span><b>versicherungen</b></a>
-        <nav><a href="/ratgeber">Ratgeber</a></nav>
+        <a class="brand" href="/" aria-label="zahnarzt versicherungen, Startseite"><img src="/favicon.svg" alt="" width="36" height="36" /><span class="wortmarke"><span>zahnarzt</span><b>versicherungen</b></span></a>
+        <nav><a href="/ratgeber">Ratgeber</a>{zeigeUeberUns && <a href="/ueber-uns">Über uns</a>}</nav>
       </div>
     </header>
     <main class={fullWidth ? 'voll' : ''}>
@@ -52,6 +55,7 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
       <div class="wrap">
         <p>Ein Angebot der MEIN STERNUM Finanzberatung GmbH, Göppinger Str. 2a, 50739 Köln.</p>
         <p>
+          {zeigeUeberUns && <><a href="/ueber-uns">Über uns</a> · </>}
           <a href="/impressum">Impressum</a> ·
           <a href="/datenschutz">Datenschutz</a> ·
           <a href="/erstinformation">Erstinformation</a>

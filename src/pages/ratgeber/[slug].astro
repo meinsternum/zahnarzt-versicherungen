@@ -1,7 +1,7 @@
 ---
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
-import { visible, isProduction } from '../../lib/status';
+import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
 
 export async function getStaticPaths() {
   const alle = await getCollection('situationen');
@@ -58,7 +58,10 @@ const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
   <article>
     <h1>{d.frage}</h1>
     <p class="kurzantwort">{d.kurzantwort}</p>
-    <p class="meta">Stand: {d.stand} · Autor: Patrick Senn, MEIN STERNUM Finanzberatung GmbH</p>
+    <div class="autor">
+      <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer von MEIN STERNUM" width="56" height="56" loading="lazy" />
+      <p class="meta">Stand: {d.stand} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, MEIN STERNUM Finanzberatung GmbH</p>
+    </div>
 
     <Content />
 

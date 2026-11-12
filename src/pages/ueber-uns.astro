@@ -1,0 +1,36 @@
+---
+import Base from '../layouts/Base.astro';
+import { zeigeUeberUns } from '../lib/status';
+
+if (!zeigeUeberUns) return new Response(null, { status: 404 });
+
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'Über uns',
+  url: 'https://zahnarzt-versicherungen.de/ueber-uns',
+  inLanguage: 'de',
+  about: {
+    '@type': 'Organization',
+    name: 'MEIN STERNUM Finanzberatung GmbH',
+    url: 'https://www.meinsternum.de',
+    address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
+    founder: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer' },
+  },
+}];
+---
+<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team der MEIN STERNUM Finanzberatung GmbH in Köln." path="/ueber-uns" jsonLd={jsonLd}>
+  <h1>Über uns</h1>
+  <p>zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
+
+  <img class="teamfoto" src="/bilder/team-meinsternum.webp" alt="Das Team der MEIN STERNUM Finanzberatung GmbH im Freien am Wasser" width="1600" height="1066" loading="lazy" />
+
+  <h2>Patrick Senn</h2>
+  <img class="portrait" src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer von MEIN STERNUM" width="160" height="160" loading="lazy" />
+  <p>Patrick Senn ist Geschäftsführer der MEIN STERNUM Finanzberatung GmbH und Autor der Texte auf dieser Seite. [PRÜFEN: Kurzvita, Qualifikationen und Zulassung (z. B. Erlaubnis nach § 34d/§ 34f GewO, Registernummer) von Patrick ergänzen; nichts ohne Beleg.]</p>
+
+  <div class="cta">
+    <p>Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch.</p>
+    <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
+  </div>
+</Base>
