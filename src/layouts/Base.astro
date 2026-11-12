@@ -1,7 +1,7 @@
 ---
 import '../styles/global.css';
 import CookieBanner from '../components/CookieBanner.astro';
-import { isProduction } from '../lib/status';
+import { isProduction, indexierungErlaubt } from '../lib/status';
 
 interface Props {
   title: string;
@@ -14,7 +14,7 @@ interface Props {
 const { title, description, path, noindex = false, jsonLd = [] } = Astro.props;
 const canonical = new URL(path, 'https://zahnarzt-versicherungen.de').toString();
 // Außerhalb des Live-Builds nie indexieren.
-const robots = noindex || !isProduction ? 'noindex, nofollow' : 'index, follow';
+const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofollow' : 'index, follow';
 ---
 <!doctype html>
 <html lang="de">
