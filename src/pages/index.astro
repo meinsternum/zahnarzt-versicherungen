@@ -1,54 +1,125 @@
 ---
-import Bewertung from '../components/Bewertung.astro';
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { visible } from '../lib/status';
+import Bewertung from '../components/Bewertung.astro';
+import { visible, zeigeUeberUns } from '../lib/status';
 
 const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 
-const jsonLd = [{
-  '@context': 'https://schema.org',
+const schritte = [
+  { titel: 'Analyse deiner Situation', text: 'Im Beratungsgespräch klären wir deine Fragen, digital per Zoom, telefonisch oder vor Ort in Köln.' },
+  { titel: 'Marktvergleich', text: 'Wir vergleichen passende Lösungen für Ärzt*innen und stellen dir das Ergebnis zur Verfügung.' },
+  { titel: 'Empfehlung', text: 'Du erhältst eine verständliche Übersicht mit konkreten Empfehlungen und der Begründung dazu.' },
+  { titel: 'Betreuung', text: 'Nach dem Abschluss bleiben wir bei Änderungen und im Leistungsfall ansprechbar.' },
+];
+
+const organisation = {
   '@type': 'Organization',
-  name: 'zahnarzt-versicherungen.de',
-  url: 'https://zahnarzt-versicherungen.de',
-  parentOrganization: {
-    '@type': 'Organization',
-    name: 'MEIN STERNUM Finanzberatung GmbH',
-    url: 'https://www.meinsternum.de',
+  '@id': 'https://zahnarzt-versicherungen.de/#organisation',
+  name: 'MEIN STERNUM Finanzberatung GmbH',
+  url: 'https://www.meinsternum.de',
+  telephone: '+49 221 98654436',
+  email: 'hallo@meinsternum.de',
+  address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
+};
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': 'https://zahnarzt-versicherungen.de/#website',
+    name: 'zahnarzt versicherungen',
+    url: 'https://zahnarzt-versicherungen.de',
+    inLanguage: 'de',
+    publisher: { '@id': 'https://zahnarzt-versicherungen.de/#organisation' },
   },
-}];
+  { '@context': 'https://schema.org', ...organisation, founder: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer' } },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Fragen zur Berufsunfähigkeit für Zahnärzt*innen',
+    itemListElement: seiten.map((s, i) => ({
+      '@type': 'ListItem',
+      position: i + 1,
+      name: s.data.frage,
+      url: `https://zahnarzt-versicherungen.de/ratgeber/${s.id}`,
+    })),
+  },
+];
 ---
-<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf konkrete Fragen zu Berufsunfähigkeit und Absicherung für Zahnärzt*innen, mit Quellen und Stand. Ein Angebot der MEIN STERNUM Finanzberatung GmbH." path="/" jsonLd={jsonLd} fullWidth>
+<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf konkrete Fragen zur Absicherung von Zahnärzt*innen, mit Quellen und Stand. Von Patrick Senn und Team, Köln." path="/" jsonLd={jsonLd} fullWidth>
   <section class="hero">
-    <div class="wrap">
+    <div class="wrap breit">
       <h1>Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen</h1>
-      <p>Jede Seite beantwortet eine Frage aus deiner Berufsphase, nennt Quellen und das Datum der letzten Prüfung.</p>
-      <a class="btn" href="/ratgeber">Zu den Fragen</a>
+      <p>Jede Seite beantwortet eine Frage aus deiner Berufsphase, nennt ihre Quellen und das Datum der letzten Prüfung. Wir beraten Ärzt*innen seit vielen Jahren zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
+      <p class="knoepfe">
+        <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
+        <a class="btn zweit" href="/ratgeber">Zu den Fragen</a>
+      </p>
     </div>
   </section>
-  <div class="wrap">
-    <div>
-      <h2>Aktuelle Fragen zur Berufsunfähigkeit</h2>
-      <ul class="karten">
-        {seiten.map((s) => (
-          <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}<span>{s.data.kurzantwort}</span></a></li>
-        ))}
-      </ul>
 
-      <div class="regeln">
-        <h2>So sind die Seiten aufgebaut</h2>
-        <ul>
-          <li>Eine Frage pro Seite, die Kurzantwort steht direkt darunter.</li>
-          <li>Jede Seite nennt ihre Quellen und den Stand der Prüfung.</li>
-          <li>Die Inhalte sind allgemeine Informationen und ersetzen keine individuelle Beratung.</li>
-        </ul>
+  <div class="wrap breit">
+    <section aria-labelledby="themen">
+      <h2 id="themen">Fragen nach Berufsphase</h2>
+      <div class="phasen">
+        <article class="phase">
+          <h3>Studium</h3>
+          <p>Fragen zu Absicherung im Studium folgen.</p>
+        </article>
+        <article class="phase">
+          <h3>Berufseinstieg und Anstellung</h3>
+          <ul class="karten">
+            {seiten.map((s) => (
+              <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}<span>{s.data.kurzantwort}</span></a></li>
+            ))}
+          </ul>
+        </article>
+        <article class="phase">
+          <h3>Niederlassung</h3>
+          <p>Fragen zur Absicherung bei Praxisgründung und Übernahme folgen.</p>
+        </article>
       </div>
+    </section>
 
+    <section aria-labelledby="wer" class="wer">
+      <h2 id="wer">Wer die Fragen beantwortet</h2>
+      <div class="wer-inhalt">
+        <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer" width="160" height="160" loading="lazy" />
+        <div>
+          <p>Patrick Senn berät seit 2008 Ärzt*innen und ist Geschäftsführer des Beratungsunternehmens hinter dieser Seite. Er schreibt und verantwortet die Texte. Die fachlichen Aussagen stützen sich auf Gesetze, Satzungen und weitere Primärquellen, die jede Seite nennt.</p>
+          {zeigeUeberUns && <p><a href="/ueber-uns">Mehr über Patrick Senn und das Team</a></p>}
+        </div>
+      </div>
       <Bewertung />
-      <div class="cta">
-        <p>Persönliche Fragen klären wir im Gespräch. Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
-        <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
-      </div>
-    </div>
+    </section>
+
+    <section aria-labelledby="ablauf">
+      <h2 id="ablauf">So läuft eine Beratung ab</h2>
+      <ol class="schritte">
+        {schritte.map((s) => (
+          <li><h3>{s.titel}</h3><p>{s.text}</p></li>
+        ))}
+      </ol>
+    </section>
+
+    <section aria-labelledby="aufbau">
+      <h2 id="aufbau">So sind die Seiten aufgebaut</h2>
+      <ul class="liste">
+        <li>Eine Frage pro Seite, die Kurzantwort steht direkt darunter.</li>
+        <li>Jede Seite nennt ihre Quellen und den Stand der Prüfung.</li>
+        <li>Die Inhalte sind allgemeine Informationen und ersetzen keine individuelle Beratung.</li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="kontakt" class="kontakt">
+      <h2 id="kontakt">Nächste Schritte</h2>
+      <p>Persönliche Fragen klären wir im Gespräch. Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
+      <ul class="kacheln">
+        <li><a href="https://meinsternum.de/online-buchen"><b>Termin buchen</b><span>Erstgespräch online vereinbaren</span></a></li>
+        <li><a href="tel:+4922198654436"><b>Anrufen</b><span>0221 98654436</span></a></li>
+        <li><a href="mailto:hallo@meinsternum.de"><b>E-Mail</b><span>hallo@meinsternum.de</span></a></li>
+      </ul>
+    </section>
   </div>
 </Base>

@@ -47,7 +47,7 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
   </head>
   <body>
     <header class="site">
-      <div class="wrap">
+      <div class={fullWidth ? "wrap breit" : "wrap"}>
         <a class="brand" href="/" aria-label="zahnarzt versicherungen, Startseite"><img src="/favicon.svg" alt="" width="36" height="36" /><span class="wortmarke"><span>zahnarzt</span><b>versicherungen</b></span></a>
         <nav><a href="/ratgeber">Ratgeber</a>{zeigeUeberUns && <a href="/ueber-uns">Über uns</a>}</nav>
       </div>
@@ -56,7 +56,7 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
       {fullWidth ? <slot /> : <div class="wrap"><slot /></div>}
     </main>
     <footer class="site">
-      <div class="wrap">
+      <div class={fullWidth ? "wrap breit" : "wrap"}>
         <p>Ein Angebot der MEIN STERNUM Finanzberatung GmbH, Göppinger Str. 2a, 50739 Köln.</p>
         <p>
           {zeigeUeberUns && <><a href="/ueber-uns">Über uns</a> · </>}

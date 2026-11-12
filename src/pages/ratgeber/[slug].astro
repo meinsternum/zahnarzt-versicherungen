@@ -60,8 +60,8 @@ const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
     <h1>{d.frage}</h1>
     <p class="kurzantwort">{d.kurzantwort}</p>
     <div class="autor">
-      <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer von MEIN STERNUM" width="56" height="56" loading="lazy" />
-      <p class="meta">Stand: {datumDe(d.stand)} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, MEIN STERNUM Finanzberatung GmbH</p>
+      <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer" width="56" height="56" loading="lazy" />
+      <p class="meta">Stand: {datumDe(d.stand)} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, Geschäftsführer</p>
     </div>
 
     <Content />
