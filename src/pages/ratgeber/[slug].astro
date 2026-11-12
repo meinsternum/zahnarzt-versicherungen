@@ -1,0 +1,100 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { visible, isProduction } from '../../lib/status';
+
+export async function getStaticPaths() {
+  const alle = await getCollection('situationen');
+  const sichtbar = visible(alle);
+  return sichtbar.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry, alle: sichtbar },
+  }));
+}
+
+const { entry, alle } = Astro.props;
+const { Content } = await render(entry);
+const d = entry.data;
+const url = `https://zahnarzt-versicherungen.de/ratgeber/${entry.id}`;
+
+const publisher = {
+  '@type': 'Organization',
+  name: 'MEIN STERNUM Finanzberatung GmbH',
+  url: 'https://www.meinsternum.de',
+  address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
+};
+
+const jsonLd = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: d.frage,
+    description: d.metaDescription,
+    dateModified: d.stand,
+    inLanguage: 'de',
+    mainEntityOfPage: url,
+    author: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer', worksFor: publisher },
+    publisher,
+  },
+  ...(d.faq.length
+    ? [{
+        '@context': 'https://schema.org',
+        '@type': 'FAQPage',
+        mainEntity: d.faq.map((f) => ({
+          '@type': 'Question',
+          name: f.frage,
+          acceptedAnswer: { '@type': 'Answer', text: f.antwort },
+        })),
+      }]
+    : []),
+];
+
+const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
+---
+<Base title={`${d.frage} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd}>
+  {!isProduction && d.status === 'entwurf' && (
+    <p class="draft-note">Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.</p>
+  )}
+  <article>
+    <h1>{d.frage}</h1>
+    <p class="kurzantwort">{d.kurzantwort}</p>
+    <p class="meta">Stand: {d.stand} · Autor: Patrick Senn, MEIN STERNUM Finanzberatung GmbH</p>
+
+    <Content />
+
+    {d.faq.length > 0 && (
+      <section>
+        <h2>Häufige Fragen</h2>
+        {d.faq.map((f) => (
+          <>
+            <h3>{f.frage}</h3>
+            <p>{f.antwort}</p>
+          </>
+        ))}
+      </section>
+    )}
+
+    {d.quellen.length > 0 && (
+      <section>
+        <h2>Quellen</h2>
+        <ul class="liste">
+          {d.quellen.map((q) => <li>{q.url ? <a href={q.url}>{q.titel}</a> : q.titel}</li>)}
+        </ul>
+      </section>
+    )}
+
+    {verwandte.length > 0 && (
+      <section>
+        <h2>Verwandte Fragen</h2>
+        <ul class="liste">
+          {verwandte.map((v) => <li><a href={`/ratgeber/${v.id}`}>{v.data.frage}</a></li>)}
+        </ul>
+      </section>
+    )}
+  </article>
+
+  <div class="cta">
+    <p>Du möchtest wissen, was davon für deine Situation gilt? Wir schauen es uns gemeinsam an. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+    <a class="btn" href="https://meinsternum.de/online-buchen">Termin buchen</a>
+  </div>
+</Base>

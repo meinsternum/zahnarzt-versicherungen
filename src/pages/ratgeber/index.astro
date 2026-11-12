@@ -1,0 +1,13 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { visible } from '../../lib/status';
+
+const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.frage.localeCompare(b.data.frage, 'de'));
+---
+<Base title="Ratgeber für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen." path="/ratgeber">
+  <h1>Ratgeber für Zahnärzt*innen</h1>
+  <ul class="liste">
+    {seiten.map((s) => <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></li>)}
+  </ul>
+</Base>

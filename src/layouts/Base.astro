@@ -1,0 +1,59 @@
+---
+import '../styles/global.css';
+import CookieBanner from '../components/CookieBanner.astro';
+import { isProduction } from '../lib/status';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  noindex?: boolean;
+  jsonLd?: object[];
+}
+
+const { title, description, path, noindex = false, jsonLd = [] } = Astro.props;
+const canonical = new URL(path, 'https://zahnarzt-versicherungen.de').toString();
+// Außerhalb des Live-Builds nie indexieren.
+const robots = noindex || !isProduction ? 'noindex, nofollow' : 'index, follow';
+---
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <meta name="robots" content={robots} />
+    <link rel="canonical" href={canonical} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:locale" content="de_DE" />
+    {jsonLd.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
+    <CookieBanner />
+  </head>
+  <body>
+    <header class="site">
+      <div class="wrap">
+        <a class="brand" href="/"><span>zahnarzt</span><b>versicherungen</b></a>
+        <nav><a href="/ratgeber">Ratgeber</a></nav>
+      </div>
+    </header>
+    <main>
+      <div class="wrap">
+        <slot />
+      </div>
+    </main>
+    <footer class="site">
+      <div class="wrap">
+        <p>Ein Angebot der MEIN STERNUM Finanzberatung GmbH, Göppinger Str. 2a, 50739 Köln.</p>
+        <p>
+          <a href="/impressum">Impressum</a> ·
+          <a href="/datenschutz">Datenschutz</a> ·
+          <a href="/erstinformation">Erstinformation</a>
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

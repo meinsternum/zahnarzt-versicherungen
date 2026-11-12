@@ -1,0 +1,30 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { visible } from '../lib/status';
+
+const seiten = visible(await getCollection('situationen'));
+
+const jsonLd = [{
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: 'zahnarzt-versicherungen.de',
+  url: 'https://zahnarzt-versicherungen.de',
+  parentOrganization: {
+    '@type': 'Organization',
+    name: 'MEIN STERNUM Finanzberatung GmbH',
+    url: 'https://www.meinsternum.de',
+  },
+}];
+---
+<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Orientierung zu Versicherungen und Absicherung für Zahnärzt*innen. Ein Angebot der MEIN STERNUM Finanzberatung GmbH." path="/" jsonLd={jsonLd}>
+  <h1>Versicherungen für Zahnärzt*innen</h1>
+  <p class="kurzantwort">Hier findest du Antworten auf typische Fragen zu Absicherung und Versicherungen in den verschiedenen Phasen deines Berufslebens.</p>
+  <ul class="liste">
+    {seiten.map((s) => <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></li>)}
+  </ul>
+  <div class="cta">
+    <p>Persönliche Fragen klären wir im Gespräch. Das Erstgespräch ist kostenlos und unverbindlich.</p>
+    <a class="btn" href="https://meinsternum.de/online-buchen">Termin buchen</a>
+  </div>
+</Base>

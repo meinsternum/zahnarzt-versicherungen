@@ -1,0 +1,17 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { visible } from '../lib/status';
+
+export async function getStaticPaths() {
+  const alle = visible(await getCollection('rechtliches'));
+  return alle.map((entry) => ({ params: { recht: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props;
+const { Content } = await render(entry);
+---
+<Base title={`${entry.data.titel} | zahnarzt-versicherungen.de`} description={`${entry.data.titel} von zahnarzt-versicherungen.de`} path={`/${entry.id}`}>
+  <h1>{entry.data.titel}</h1>
+  <Content />
+</Base>
