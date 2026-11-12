@@ -1,46 +1,59 @@
 ---
-frage: "Reicht die Berufsunfähigkeitsrente des Versorgungswerks für Zahnärzt*innen aus?"
-titel: "BU-Rente des Versorgungswerks: reicht sie?"
-kurzantwort: "Das Versorgungswerk zahlt eine Berufsunfähigkeitsrente nur unter engen Voraussetzungen. Maßgeblich ist die Satzung deines Versorgungswerks, die sich je nach Bundesland unterscheidet. Typisch ist ein Alles-oder-nichts-Prinzip ohne prozentuale Einstufung."
-metaDescription: "Berufsunfähigkeitsrente im Versorgungswerk für Zahnärzt*innen: enge Voraussetzungen, Unterschiede der Satzungen und ein aktuelles Urteil, mit Quellen."
-status: entwurf
-reihenfolge: 2
+frage: "Berufsunfähigkeit als Zahnärzt*in: Was Versorgungswerke regeln und was offen bleibt"
+titel: "BU bei Zahnärzt*innen: Versorgungswerk und private BU"
+kurzantwort: "Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags."
+metaDescription: "Berufsunfähigkeit als Zahnärzt*in: Wann das Versorgungswerk zahlt, was die Aufgabe der Praxis bedeutet und was die private BU anders regeln kann. Mit Quellen."
+status: freigegeben
+reihenfolge: 1
 stand: "2026-11-12"
 quellen:
-  - titel: "Martin Wortmann: BU-Rente nur im Ausnahmefall. zm – Zahnärztliche Mitteilungen 15/2026, 16.08.2026"
-    url: "https://www.zm-online.de/artikel/2026/zm-2026-15-16/bu-rente-nur-im-ausnahmefall"
-  - titel: "Versorgungswerk der Landeszahnärztekammer Thüringen: Merkblatt zur Berufsunfähigkeit (ohne Datumsangabe)"
-    url: "https://www.lzkth.de/fileadmin/user_upload/4_Dokumente/Versorgungswerk/Merkblatt_zur_BU_gegendert.pdf"
-faq:
-  - frage: "Gelten die Regeln des Versorgungswerks bundesweit gleich?"
-    antwort: "Nein. Laut zm gibt es keine bundesweiten Vorgaben. Maßgeblich ist die jeweilige Satzung, die sich in den Grundzügen ähnelt, im Detail aber unterscheidet."
-  - frage: "Reicht es, wenn ich meine Praxis übergebe?"
-    antwort: "Viele Satzungen verlangen die vollständige Aufgabe der zahnärztlichen Tätigkeit. Laut zm reicht in Hamburg die Übergabe der Praxis an einen Vertreter dafür nicht aus. Prüfe die Regelung deines Versorgungswerks."
-  - frage: "Wird die Berufsunfähigkeit prozentual eingestuft?"
-    antwort: "Nach der Darstellung in zm spielt eine prozentuale Einstufung wie bei privaten Berufsunfähigkeitsversicherungen keine Rolle. Es gilt ein Alles-oder-nichts-Prinzip."
+  - titel: "Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe (VZWL), Stand Juli 2026, §§ 9, 10, 18, 41 (verlinkt von vzwl.de/satzung.html)"
+    url: "https://vzwl.de/satzung.html"
+  - titel: "Altersversorgungs- und Hinterbliebenenordnung der Zahnärztekammer Niedersachsen (ZKN), gültig ab 01.02.2024, §§ 8, 9, 17, 17a"
+    url: "https://zkn.de/wp-content/uploads/2024/06/ABH-gueltig-ab-01.02.2024.pdf"
+  - titel: "§ 172 VVG (Begriff der Berufsunfähigkeit), abgerufen am 12.11.2026"
+    url: "https://www.gesetze-im-internet.de/vvg_2008/__172.html"
+  - titel: "§ 31 IfSG (Beschäftigungsverbote), abgerufen am 12.11.2026"
+    url: "https://www.gesetze-im-internet.de/ifsg/__31.html"
+  - titel: "BZÄK: Schritte in das zahnärztliche Berufsleben (Kammer- und Versorgungswerk-Mitgliedschaft)"
+    url: "https://www.bzaek.de/fileadmin/PDFs/b/schritte_in_das_zahnaerztliche_berufsleben.pdf"
 verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
 ---
 
-## Was die Quellen zu den Voraussetzungen sagen
+Als Zahnärzt*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
 
-Die Zahnärztlichen Mitteilungen (zm) beschreiben in Ausgabe 15/2026, dass Versorgungswerke eine Berufsunfähigkeitsrente nur unter engen Voraussetzungen zahlen. Beschrieben wird das am Beispiel einer Entscheidung des Niedersächsischen Oberverwaltungsgerichts Lüneburg vom 27. Mai 2026 (Az. 8 LB 64/24).
+## Wann das Versorgungswerk zahlt
 
-- **Alles oder nichts:** Eine prozentuale Einstufung der Berufsunfähigkeit, wie sie aus privaten Verträgen bekannt ist, spielt keine Rolle.
-- **Ausweichtätigkeiten:** Auch nicht-kurative Tätigkeiten müssen ausgeschlossen sein. Infrage kommen nur Tätigkeiten, für die zahnärztliche Studienkenntnisse nötig sind. Sie müssen nach zm lediglich das Existenzminimum sichern, nicht den bisherigen Lebensstandard.
-- **Dauerhaftigkeit:** Die Einschränkungen müssen dauerhaft sein. Häufig müssen vorher alle Behandlungs- und Rehabilitationsmöglichkeiten ausgeschöpft sein.
+Jede Kammer hat ein eigenes Regelwerk, und die Regeln können abweichen. Zwei Beispiele zeigen, worauf du achten solltest. Die Regelwerke deines eigenen Versorgungswerks findest du auf dessen Website oder bei deiner Kammer. Das gilt auch für Zahnärzt*innen in Köln und im Rheinland.
 
-## Unterschiede zwischen den Versorgungswerken
+In Westfalen-Lippe zahlt das Versorgungswerk die Berufsunfähigkeitsrente nur auf Antrag, wenn du dauerhaft berufsunfähig bist und deine zahnärztliche Tätigkeit aufgegeben hast. Berufsunfähig bist du dort, wenn du deine zahnärztlichen Fähigkeiten gesundheitsbedingt in irgendeiner Weise wirtschaftlich nicht mehr nutzen kannst, auch nicht außerhalb der Praxis (Satzung, Stand Juli 2026, § 41 Abs. 1 und 2).
 
-Nach zm nennen die Satzungen in Berlin und Westfalen-Lippe ausdrücklich gutachterliche oder Verwaltungstätigkeiten als mögliche Ausweichtätigkeiten. Die Anforderungen an die Prognose variieren. Die meisten Satzungen verlangen körperliche gesundheitliche Einschränkungen, ein behördliches Tätigkeitsverbot zählt demnach nicht.
+In Niedersachsen (Altersversorgungs- und Hinterbliebenenordnung ab 01.02.2024) heißt der Maßstab „völlig berufsunfähig“: Du kannst eine zahnärztliche Tätigkeit nicht mehr nachhaltig ausüben. Die Rente beträgt dann 80 Prozent der Altersrente, die du bis dahin erworben hast (§ 17 Abs. 1 und 2).
 
-## Beispiel Thüringen
+## Was „Praxis aufgeben“ bedeutet
 
-Das Versorgungswerk der Landeszahnärztekammer Thüringen beschreibt in einem Merkblatt, dass Berufsunfähigkeit vorliegt, wenn Mitglieder zur Ausübung des Berufs unfähig sind. Eine Minderung der Erwerbsfähigkeit um etwa 50 Prozent reicht in der Regel nicht. Für eine dauernde Berufsunfähigkeit gilt die bestätigte Abmeldung bei der Zahnärztekammer als Nachweis der Berufsaufgabe. Die Berufsunfähigkeit wird durch ein Gutachten eines vom Versorgungswerk bestimmten Arztes belegt. Dieses Beispiel zeigt nur eine Satzung und lässt sich nicht auf andere Versorgungswerke übertragen.
+In beiden Beispielen reicht die Diagnose allein nicht. In Westfalen-Lippe gibt es keinen Anspruch, wenn eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du die Aufgabe der zahnärztlichen Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du keine zahnärztliche Tätigkeit ausgeübt hast. Fehlt die Erklärung, entfällt die Rente ab Mai (§ 17a Abs. 1 und 3). Dort trägst du die Kosten für den Nachweis der Berufsunfähigkeit selbst, ein nicht behandelnde*r Fachärzt*in erstellt das Gutachten, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung deiner Berufsfähigkeit ergreifen (§ 17 Abs. 5 bis 8).
 
-## Was das für dich bedeutet
+*Fiktives Beispiel: Dr. B. führt eine Einzelpraxis und kann wegen einer Handerkrankung nicht mehr behandeln. Sie stellt eine Vertretung ein, um die Praxis zu halten. Nach der Satzung aus Westfalen-Lippe hat sie für diese Zeit keinen Anspruch auf die Berufsunfähigkeitsrente, weil eine Vertretung die Praxis weiterführt. Zusätzlich prüft das Versorgungswerk, ob sie ihre Fähigkeiten außerhalb der Praxis wirtschaftlich nutzen kann. Was bei deinem Versorgungswerk gilt, steht in deiner Satzung.*
 
-Die private Berufsunfähigkeitsversicherung und die Leistung des Versorgungswerks folgen unterschiedlichen Regeln. Ob und in welcher Höhe das Versorgungswerk im Ernstfall leistet, steht in der Satzung deines Versorgungswerks. Wegen der engen Voraussetzungen solltest du deine private Absicherung nicht davon abhängig machen, dass das Versorgungswerk leistet. [PRÜFEN: Formulierung vor Freigabe fachlich bestätigen.]
+## Was die private Berufsunfähigkeitsversicherung anders regeln kann
 
-Diese Seite enthält allgemeine Informationen und ersetzt keine individuelle Beratung.
+Das Gesetz beschreibt Berufsunfähigkeit in der privaten Versicherung so: Du kannst deinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, wegen Krankheit, Körperverletzung oder eines über das Alter hinausgehenden Kräfteverfalls ganz oder teilweise voraussichtlich dauerhaft nicht mehr ausüben. Eine Prozentzahl nennt § 172 Abs. 2 VVG nicht. Ab welchem Grad ein Vertrag zahlt, steht deshalb in den Versicherungsbedingungen, nicht im Gesetz.
+
+Ein Vertrag kann außerdem vorsehen, dass der Versicherer dich auf eine andere Tätigkeit verweist, die deiner Ausbildung, deinen Fähigkeiten und deiner bisherigen Lebensstellung entspricht. Das kann eine Tätigkeit sein, die du bereits ausübst (konkrete Verweisung), oder eine, die du ausüben könntest (abstrakte Verweisung) (§ 172 Abs. 3 VVG). Lies vor dem Abschluss, ob und wie dein Vertrag das regelt. Ein Vergleich mit dem Maßstab deines Versorgungswerks zeigt dir, wo beide Absicherungen auseinanderlaufen können.
+
+## Tätigkeitsverbot: Was § 31 IfSG regelt
+
+Die zuständige Behörde kann Kranken, Krankheitsverdächtigen, Ansteckungsverdächtigen und Ausscheidern bestimmte berufliche Tätigkeiten ganz oder teilweise untersagen. Ausscheider sind Personen, die Krankheitserreger ausscheiden und dadurch eine Ansteckungsquelle für die Allgemeinheit sein können, ohne krank oder krankheitsverdächtig zu sein (§ 2 Nr. 6 IfSG). Das Verbot kann auch Personen treffen, die Erreger so in oder an sich tragen, dass im Einzelfall eine Weiterverbreitung droht (§ 31 IfSG). Ob ein solches Verbot in deinem Vertrag einer Berufsunfähigkeit gleichgestellt ist, regeln die Versicherungsbedingungen. Prüfe das Dokument, bevor du dich darauf verlässt.
+
+## Gesundheit beim Eintritt
+
+In den beiden gelesenen Regelwerken ist für die Pflichtmitgliedschaft im Versorgungswerk keine Gesundheitsprüfung vorgesehen. Wer bei Beginn der Mitgliedschaft bereits berufsunfähig ist, wird in beiden nicht Mitglied. Bei der privaten Versicherung musst du dem Versicherer vor Vertragsabschluss die dir bekannten Gefahrumstände anzeigen, nach denen er in Textform fragt (§ 19 Abs. 1 VVG).
+
+## Was du mitnehmen kannst
+
+Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags. Wie sich beides in deinem Fall zusammensetzt, hängt von deiner Satzung, deiner Praxisform und deinen Vertragsbedingungen ab. Das lässt sich in einem Gespräch an deinen Unterlagen klären: [meinsternum.de/online-buchen](https://meinsternum.de/online-buchen)
+
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Satzung VZWL Juli 2026, Altersversorgungs- und Hinterbliebenenordnung ZKN 01.02.2024, Gesetze abgerufen am 12.11.2026.*

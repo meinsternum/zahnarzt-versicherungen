@@ -4,7 +4,7 @@ titel: "BU für Zahnärzt*innen: wann abschließen?"
 kurzantwort: "Möglichst in gesunden Jahren, oft schon im Studium oder zum Berufsstart. Der Gesundheitszustand entscheidet bei der Annahme mit, und Vorerkrankungen lassen sich vor dem Antrag anonym klären."
 metaDescription: "Wann sich eine Berufsunfähigkeitsversicherung für Zahnärzt*innen lohnt: Zeitpunkt, Gesundheitsfragen, Starterpolicen und Nachversicherungsgarantie, mit Quellen."
 status: entwurf
-reihenfolge: 1
+reihenfolge: 2
 stand: "2026-11-12"
 quellen:
   - titel: "Verbraucherzentrale: Berufsunfähigkeit – Wie Sie sich gegen Verlust des Einkommens absichern (Stand der Seite: 02.01.2025)"
