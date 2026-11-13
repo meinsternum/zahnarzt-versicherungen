@@ -8,7 +8,6 @@ import { ORGANISATION as O, SITE_URL, SITE_NAME } from './site';
 export async function ladeStartseite() {
   const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
   const gruppen = gruppiere(seiten);
-  const themenLinks = seiten.map((s) => ({ href: `/ratgeber/${s.id}`, text: s.data.frage }));
 
   const organisation = {
     '@context': 'https://schema.org',
@@ -30,5 +29,5 @@ export async function ladeStartseite() {
       mainEntity: faq.eintraege.map((f) => ({ '@type': 'Question', name: f.frage, acceptedAnswer: { '@type': 'Answer', text: f.antwort } })),
     },
   ];
-  return { seiten, gruppen, themenLinks, jsonLd };
+  return { seiten, gruppen, jsonLd };
 }

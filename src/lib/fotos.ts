@@ -3,7 +3,6 @@
 // Astro erzeugt daraus beim Build AVIF/WebP in passenden Breiten.
 import type { ImageMetadata } from 'astro';
 import patrick04Hoch from '../assets/fotos/patrick-04-hoch.jpg';
-import patrick05Quadrat from '../assets/fotos/patrick-05-quadrat.jpg';
 import schreibtisch01 from '../assets/fotos/schreibtisch-01.jpg';
 import kollege02 from '../assets/fotos/kollege-02.jpg';
 import team02 from '../assets/fotos/team-02.jpg';
@@ -16,7 +15,6 @@ const TEAM = 'Team von MEIN STERNUM';
 
 export const fotos = {
   'patrick-04-hoch': { name: 'patrick-04', datei: '2M3A0103.jpg (Zuschnitt 4:5)', bild: patrick04Hoch, alt: PATRICK },
-  'patrick-05-quadrat': { name: 'patrick-05', datei: '2M3A0104.jpg (Zuschnitt 1:1)', bild: patrick05Quadrat, alt: PATRICK },
   'schreibtisch-01': { name: 'schreibtisch-01', datei: '2M3A0116.jpg', bild: schreibtisch01, alt: 'Patrick Senn bei der Arbeit am Schreibtisch' },
   'kollege-02': { name: 'kollege-02', datei: '2M3A0045.jpg', bild: kollege02, alt: 'Patrick Senn mit einem Teammitglied von MEIN STERNUM' },
   'team-02': { name: 'team-02', datei: 'IMG_9666.JPG', bild: team02, alt: TEAM },

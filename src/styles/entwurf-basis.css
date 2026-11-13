@@ -104,15 +104,24 @@ ul { margin: 0; padding: 0; list-style: none; }
 }
 @media (max-width: 350px) { .wortmarke b { display: block; } .wortmarke { line-height: 1.05; } }
 
-/* Bewertungszeile */
-.bewertungszeile { display: flex; gap: 0.6rem; align-items: baseline; font-size: 0.92rem; color: var(--text-leise); margin: 0; }
-.bewertungszeile .sterne { color: var(--teal); letter-spacing: 0.08em; flex: none; }
-.bewertungszeile strong { color: var(--text); font-weight: 600; }
+/* Google-Bewertungen: große Note, Sterne, Anzahl, Stand */
+.sr { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.bewertung { display: flex; align-items: center; gap: 1.1rem; background: #fff; border: 1px solid var(--linie); border-radius: 16px; padding: 0.9rem 1.2rem; box-shadow: 0 1px 2px rgba(37, 50, 74, 0.04); }
+.bewertung p { margin: 0; }
+.bewertung-note { font-size: 2.6rem; font-weight: 700; line-height: 1; color: var(--navy); letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
+.bewertung-text { display: grid; gap: 0.1rem; line-height: 1.35; }
+.bewertung-sterne { font-size: 1.25rem; letter-spacing: 0.1em; color: var(--teal-hell); line-height: 1.1; }
+.bewertung-anzahl { font-size: 0.98rem; color: var(--text); }
+.bewertung-anzahl strong { font-weight: 600; }
+.bewertung-stand { font-size: 0.82rem; color: var(--text-leise); }
+.bewertung.dunkel { background: rgba(255, 255, 255, 0.1); border-color: rgba(255, 255, 255, 0.25); box-shadow: none; }
+.bewertung.dunkel .bewertung-note, .bewertung.dunkel .bewertung-sterne, .bewertung.dunkel .bewertung-anzahl, .bewertung.dunkel a { color: #fff; }
+.bewertung.dunkel .bewertung-stand { color: #dfe7f1; }
 
 /* Fuß */
 .fuss { background: var(--navy-tief); color: #dfe6f0; margin-top: 0; font-size: 0.95rem; }
 .fuss a { color: #fff; }
-.fuss-raster { display: grid; gap: 2.5rem; grid-template-columns: 1.4fr 1fr 1fr; padding-top: 3.5rem; padding-bottom: 2.5rem; }
+.fuss-raster { display: grid; gap: 2.5rem; grid-template-columns: 1.6fr 1fr; padding-top: 3.5rem; padding-bottom: 2.5rem; }
 .fuss-marke { font-size: 1.15rem; color: #fff; margin-bottom: 0.8rem; }
 .fuss-titel { color: #fff; font-weight: 600; margin-bottom: 0.6rem; }
 .fuss li { margin-bottom: 0.4rem; }

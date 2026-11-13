@@ -15,9 +15,8 @@ interface Props {
   variante: 'a' | 'b';
   bezeichnung: string;
   jsonLd?: object[];
-  themenLinks?: { href: string; text: string }[];
 }
-const { title, description, variante, bezeichnung, jsonLd = [], themenLinks = [] } = Astro.props;
+const { title, description, variante, bezeichnung, jsonLd = [] } = Astro.props;
 const canonical = new URL('/', SITE_URL).toString();
 const nav = [
   { href: '/', text: 'Startseite' },
@@ -81,21 +80,15 @@ const nav = [
       <div class="rahmen fuss-raster">
         <div>
           <p class="fuss-marke"><span>zahnarzt</span><b>versicherungen</b></p>
-          <p>Ein Angebot der {O.name}<br />{O.strasse}, {O.plz} {O.ort}</p>
+          <p>Ein Angebot der {O.name.replace('MEIN STERNUM', 'MEIN\u00a0STERNUM')}<br />{O.strasse}, {O.plz} {O.ort}</p>
           <p><a href={O.telefonLink}>{O.telefon}</a><br /><a href={`mailto:${O.email}`}>{O.email}</a></p>
           <p><a class="knopf knopf-hell knopf-klein" href={TERMIN_URL}>Termin buchen</a></p>
         </div>
-        {themenLinks.length > 0 && (
-          <div>
-            <p class="fuss-titel">Themen</p>
-            <ul>{themenLinks.map((t) => <li><a href={t.href}>{t.text}</a></li>)}</ul>
-          </div>
-        )}
         <div>
           <p class="fuss-titel">Seite</p>
           <ul>
             {zeigeUeberUns && <li><a href="/ueber-uns">Über uns</a></li>}
-            <li><a href="/ratgeber">Ratgeber</a></li>
+            <li><a href="/ratgeber">Alle Fragen im Ratgeber</a></li>
             <li><a href="/impressum">Impressum</a></li>
             <li><a href="/datenschutz">Datenschutz</a></li>
             <li><a href="/erstinformation">Erstinformation</a></li>
