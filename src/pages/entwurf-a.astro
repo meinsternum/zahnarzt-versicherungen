@@ -1,0 +1,204 @@
+---
+// Startseiten-Entwurf A: ruhig, redaktionell, typografisch. noindex, nicht in der Sitemap.
+import Entwurf from '../layouts/Entwurf.astro';
+import Foto from '../components/Foto.astro';
+import Icon from '../components/Icon.astro';
+import Bewertungszeile from '../components/Bewertungszeile.astro';
+import EntwurfMarke from '../components/EntwurfMarke.astro';
+import { ladeStartseite } from '../lib/startseite-daten';
+import { hero, themen, ablauf, werWirSind, faq, abschluss } from '../lib/startseite';
+import { TERMIN_URL } from '../lib/site';
+import { zeigeUeberUns } from '../lib/status';
+
+const { gruppen, themenLinks, jsonLd } = await ladeStartseite();
+const [h1Teil1, h1Teil2] = hero.h1.split(': ');
+---
+<Entwurf title="Entwurf A: Startseite | zahnarzt-versicherungen.de" description="Startseiten-Entwurf A zur Auswahl." variante="a" bezeichnung="Startseiten-Entwurf A" jsonLd={jsonLd} themenLinks={themenLinks}>
+  <section class="a-hero">
+    <div class="rahmen a-hero-raster">
+      <div class="a-hero-text">
+        <h1><span class="stark">{h1Teil1}:</span> <span class="leicht">{h1Teil2}</span></h1>
+        <p class="a-lead">{hero.lead.text} {hero.lead.entwurf && <EntwurfMarke />}</p>
+        <p class="a-knoepfe">
+          <a class="knopf" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a>
+          <a class="knopf knopf-rand" href="#themen">{hero.zweit}</a>
+        </p>
+        <Bewertungszeile kompakt class="a-hero-bewertung" />
+      </div>
+      <figure class="a-hero-bild">
+        <Foto foto="patrick-04-hoch" prioritaet sizes="(min-width: 900px) 34vw, 88vw" breiten={[400, 560, 720, 960]} />
+        <figcaption><b>Patrick Senn</b> Geschäftsführer</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="a-abschnitt" id="themen" aria-labelledby="themen-h">
+    <div class="rahmen">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">01</p>
+        <h2 id="themen-h">{themen.h2}</h2>
+      </header>
+      <div class="a-gruppen">
+        {gruppen.map((g) => (
+          <div class="a-gruppe einblenden">
+            <h3 class="a-gruppe-titel"><Icon name={g.icon} size={22} />{g.titel}</h3>
+            <ul class="a-karten">
+              {g.seiten.map((s) => (
+                <li class="a-karte">
+                  <h4><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h4>
+                  <p>{s.data.kurzantwort}</p>
+                  <span class="a-karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <section class="a-abschnitt a-ablauf" aria-labelledby="ablauf-h">
+    <div class="rahmen a-ablauf-raster">
+      <figure class="a-ablauf-bild einblenden">
+        <Foto foto="schreibtisch-01" sizes="(min-width: 900px) 38vw, 88vw" />
+      </figure>
+      <div>
+        <header class="a-kopf">
+          <p class="a-nummer" aria-hidden="true">02</p>
+          <h2 id="ablauf-h">{ablauf.h2} {ablauf.entwurf && <EntwurfMarke />}</h2>
+        </header>
+        <ol class="a-schritte">
+          {ablauf.schritte.map((s, i) => (
+            <li class="einblenden">
+              <span class="a-ziffer" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <div>
+                <h3>{s.titel}</h3>
+                <p>{s.text} {s.platzhalter && <span class="platzhalter">[PLATZHALTER: {s.platzhalter}]</span>}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="a-abschnitt" aria-labelledby="wer-h">
+    <div class="rahmen">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">03</p>
+        <h2 id="wer-h">{werWirSind.h2}</h2>
+      </header>
+      <figure class="a-team einblenden">
+        <Foto foto="team-02" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
+      </figure>
+      <div class="a-wer-text einblenden">
+        {werWirSind.absaetze.map((p) => <p>{p}</p>)}
+        {zeigeUeberUns && <p><a class="a-mehr" href="/ueber-uns">{werWirSind.link}<Icon name="pfeil" size={16} /></a></p>}
+      </div>
+    </div>
+  </section>
+
+  <section class="a-abschnitt" aria-labelledby="faq-h">
+    <div class="rahmen a-faq-raster">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">04</p>
+        <h2 id="faq-h">{faq.h2} {faq.entwurf && <EntwurfMarke />}</h2>
+      </header>
+      <dl class="a-faq">
+        {faq.eintraege.map((f) => (
+          <div class="einblenden">
+            <dt>{f.frage}</dt>
+            <dd>{f.antwort}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="a-abschluss" aria-labelledby="abschluss-h">
+    <div class="rahmen">
+      <div class="a-abschluss-flaeche einblenden">
+        <h2 id="abschluss-h">{abschluss.h2}</h2>
+        <p>{abschluss.text}</p>
+        <p><a class="knopf knopf-hell" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a></p>
+        <Bewertungszeile class="auf-dunkel" />
+      </div>
+    </div>
+  </section>
+</Entwurf>
+
+<style is:global>
+  .va .a-hero { padding: clamp(2.5rem, 6vw, 5.5rem) 0 clamp(3rem, 7vw, 6rem); }
+  .va .a-hero-raster { display: grid; grid-template-columns: 1.25fr 0.85fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+  .va .a-hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.4rem); line-height: 1.04; letter-spacing: -0.03em; margin-bottom: 1.6rem; }
+  .va .a-hero h1 .stark { font-weight: 700; display: block; }
+  .va .a-hero h1 .leicht { font-weight: 300; color: var(--teal); }
+  .va .a-lead { font-size: clamp(1.08rem, 1.4vw, 1.22rem); color: var(--text-leise); max-width: 36rem; margin-bottom: 2rem; }
+  .va .a-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem; }
+  .va .a-hero-bewertung { max-width: 32rem; padding-top: 1.2rem; border-top: 1px solid var(--linie); }
+  .va .a-hero-bild { margin: 0; position: relative; }
+  .va .a-hero-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 28px; }
+  .va .a-hero-bild figcaption { position: absolute; left: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.94); border-radius: 12px; padding: 0.55rem 0.9rem; font-size: 0.85rem; color: var(--text-leise); line-height: 1.35; box-shadow: var(--schatten); }
+  .va .a-hero-bild figcaption b { display: block; color: var(--navy); font-weight: 600; }
+
+  .va .a-abschnitt { padding: clamp(3.5rem, 8vw, 7rem) 0; border-top: 1px solid var(--linie); }
+  .va .a-kopf { display: flex; align-items: baseline; gap: 1rem; margin-bottom: clamp(1.75rem, 4vw, 3rem); }
+  .va .a-nummer { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--teal); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+  .va .a-kopf h2 { font-size: clamp(1.75rem, 3.4vw, 2.6rem); font-weight: 700; }
+
+  .va .a-gruppen { display: grid; gap: clamp(2rem, 4vw, 3rem); grid-template-columns: 1fr 2fr; align-items: start; }
+  .va .a-gruppe-titel { display: flex; align-items: center; gap: 0.55rem; font-size: 1rem; font-weight: 600; color: var(--text-leise); margin-bottom: 1rem; text-transform: none; }
+  .va .a-gruppe-titel .icon { color: var(--teal-hell); }
+  .va .a-karten { display: grid; gap: 1rem; }
+  .va .a-gruppe:nth-child(2) .a-karten { grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr)); }
+  .va .a-karte { position: relative; background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); padding: 1.5rem 1.5rem 3rem; transition: transform 0.25s var(--weich), box-shadow 0.25s var(--weich), border-color 0.25s var(--weich); }
+  .va .a-karte:hover { transform: translateY(-3px); box-shadow: var(--schatten); border-color: #cfd8e4; }
+  .va .a-karte h4 { margin: 0 0 0.6rem; font-size: 1.15rem; line-height: 1.3; color: var(--navy); font-weight: 600; }
+  .va .a-karte h4 a { color: inherit; text-decoration: none; }
+  .va .a-karte h4 a::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius); }
+  .va .a-karte p { margin: 0; color: var(--text-leise); font-size: 0.97rem; }
+  .va .a-karte-pfeil { position: absolute; left: 1.5rem; bottom: 1.1rem; color: var(--teal); transition: transform 0.25s var(--weich); }
+  .va .a-karte:hover .a-karte-pfeil { transform: translateX(4px); }
+  .va .a-karte:focus-within { outline: 3px solid var(--teal-hell); outline-offset: 3px; }
+  .va .a-karte h4 a:focus-visible { outline: none; }
+
+  .va .a-ablauf { background: #fff; }
+  .va .a-ablauf-raster { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: center; }
+  .va .a-ablauf-bild { margin: 0; }
+  .va .a-ablauf-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 62% 50%; border-radius: 28px; }
+  .va .a-schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .va .a-schritte li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--linie); }
+  .va .a-schritte li:last-child { border-bottom: 1px solid var(--linie); }
+  .va .a-ziffer { font-size: 2.6rem; font-weight: 300; line-height: 1; color: var(--teal-hell); font-variant-numeric: tabular-nums; }
+  .va .a-schritte h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.35rem; }
+  .va .a-schritte p { margin: 0; color: var(--text-leise); }
+
+  .va .a-team { margin: 0 0 2.5rem; }
+  .va .a-team img { width: 100%; aspect-ratio: 21 / 9; object-fit: cover; object-position: 50% 62%; border-radius: 28px; }
+  .va .a-wer-text { columns: 2 22rem; column-gap: 3rem; max-width: 60rem; color: var(--text); }
+  .va .a-wer-text p { break-inside: avoid; }
+  .va .a-mehr { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+
+  .va .a-faq-raster { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 5vw, 5rem); }
+  .va .a-faq { margin: 0; }
+  .va .a-faq div { padding: 1.4rem 0; border-top: 1px solid var(--linie); }
+  .va .a-faq div:last-child { border-bottom: 1px solid var(--linie); }
+  .va .a-faq dt { font-weight: 600; color: var(--navy); font-size: 1.12rem; margin-bottom: 0.4rem; }
+  .va .a-faq dd { margin: 0; color: var(--text-leise); }
+
+  .va .a-abschluss { padding: 0 0 clamp(3.5rem, 8vw, 6rem); }
+  .va .a-abschluss-flaeche { background: var(--verlauf); color: #fff; border-radius: 32px; padding: clamp(2.25rem, 6vw, 4.5rem); }
+  .va .a-abschluss-flaeche h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin-bottom: 1rem; }
+  .va .a-abschluss-flaeche > p { max-width: 36rem; font-size: 1.1rem; }
+  .va .auf-dunkel { color: #e6edf5; margin-top: 1.6rem; }
+  .va .auf-dunkel strong { color: #fff; }
+  .va .auf-dunkel .sterne { color: #fff; }
+  .va .auf-dunkel a { color: #fff; }
+
+  @media (max-width: 900px) {
+    .va .a-hero-raster, .va .a-ablauf-raster, .va .a-faq-raster, .va .a-gruppen { grid-template-columns: 1fr; }
+    .va .a-hero-bild { max-width: 26rem; }
+    .va .a-ablauf-bild img { aspect-ratio: 3 / 2; }
+    .va .a-team img { aspect-ratio: 3 / 2; }
+  }
+</style>

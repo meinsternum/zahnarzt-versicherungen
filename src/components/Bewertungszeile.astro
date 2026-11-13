@@ -1,0 +1,14 @@
+---
+// Statische Zeile mit Google-Bewertungen (Werte aus src/lib/bewertung.ts). Kein Widget, kein Schema.
+import { bewertung as b } from '../lib/bewertung';
+interface Props { kompakt?: boolean; class?: string }
+const { kompakt = false, class: klasse = '' } = Astro.props;
+---
+<p class={`bewertungszeile ${kompakt ? 'kompakt' : ''} ${klasse}`}>
+  <span class="sterne" aria-hidden="true">★★★★★</span>
+  {kompakt ? (
+    <span><strong>{b.wert} von 5</strong> bei {b.anzahl} Google-Bewertungen unseres Beratungsteams in Köln (Stand {b.stand}). <a href={b.url}>Bewertungen ansehen</a></span>
+  ) : (
+    <span>Google-Bewertungen unseres Beratungsteams in Köln: <strong>{b.wert} von 5</strong> bei {b.anzahl} Bewertungen (Stand {b.stand}). <a href={b.url}>Bewertungen bei Google ansehen</a></span>
+  )}
+</p>
