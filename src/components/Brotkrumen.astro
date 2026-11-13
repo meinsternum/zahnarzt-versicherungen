@@ -1,0 +1,12 @@
+---
+import type { Krume } from '../lib/schema';
+interface Props { krumen: Krume[] }
+const { krumen } = Astro.props;
+---
+<nav class="brotkrumen rahmen" aria-label="Brotkrumen">
+  <ol>
+    {krumen.map((k, i) => (
+      <li>{i < krumen.length - 1 ? <a href={k.href}>{k.name}</a> : <span aria-current="page">{k.name}</span>}</li>
+    ))}
+  </ol>
+</nav>

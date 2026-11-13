@@ -1,11 +1,18 @@
 ---
-import '../styles/global.css';
-import CookieBanner from '../components/CookieBanner.astro';
+// Standard-Layout für alle Seiten: Kopf mit Navigation und Termin-Button (sticky), Brotkrumen, Fuß.
+// Alle Inhalte stehen als statisches HTML im Quelltext; das kleine Skript blendet nur ein.
 import '@fontsource/inter/300.css';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/600.css';
 import '@fontsource/inter/700.css';
+import inter400 from '@fontsource/inter/files/inter-latin-400-normal.woff2?url';
+import inter700 from '@fontsource/inter/files/inter-latin-700-normal.woff2?url';
+import '../styles/site.css';
+import CookieBanner from '../components/CookieBanner.astro';
+import Brotkrumen from '../components/Brotkrumen.astro';
 import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
+import { TERMIN_URL, ORGANISATION as O, KI_HINWEIS, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
+import { breadcrumbs, type Krume } from '../lib/schema';
 
 interface Props {
   title: string;
@@ -13,17 +20,32 @@ interface Props {
   path: string;
   noindex?: boolean;
   jsonLd?: object[];
-  fullWidth?: boolean;
+  krumen?: Krume[]; // ohne Startseite; leer = keine Brotkrumen (Startseite)
+  ogTyp?: 'website' | 'article';
 }
 
-const { title, description, path, noindex = false, jsonLd = [], fullWidth = false } = Astro.props;
+const { title, description, path, noindex = false, jsonLd = [], krumen = [], ogTyp = 'website' } = Astro.props;
 const suffix = ' | zahnarzt-versicherungen.de';
 const basis = title.endsWith(suffix) ? title.slice(0, -suffix.length) : title;
 // Domain-Zusatz nur, wenn der Titel danach höchstens 60 Zeichen hat (sonst kürzt Google).
 const fullTitle = (basis + suffix).length <= 60 ? basis + suffix : basis;
-const canonical = new URL(path, 'https://zahnarzt-versicherungen.de').toString();
+const canonical = new URL(path, SITE_URL).toString();
 // Außerhalb des Live-Builds nie indexieren.
 const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofollow' : 'index, follow';
+
+const alleKrumen: Krume[] = krumen.length ? [{ name: 'Startseite', href: '/' }, ...krumen] : [];
+const schema = [...jsonLd, ...(alleKrumen.length ? [breadcrumbs(alleKrumen)] : [])];
+
+const nav = [
+  { href: '/', text: 'Startseite' },
+  { href: '/ratgeber', text: 'Ratgeber' },
+  ...(zeigeUeberUns ? [{ href: '/ueber-uns', text: 'Über uns' }] : []),
+  { href: '/kontakt', text: 'Kontakt' },
+];
+const aktiv = (href: string) => (href === '/' ? path === '/' : path === href || path.startsWith(href + '/'));
+const aktuell = (href: string) => (path === href ? 'page' : aktiv(href) ? 'true' : undefined);
+const firma = O.name.replace('MEIN STERNUM', 'MEIN STERNUM');
+const profile = SOCIAL.filter((s) => s.url);
 ---
 <!doctype html>
 <html lang="de">
@@ -34,38 +56,93 @@ const robots = noindex || !isProduction || !indexierungErlaubt ? 'noindex, nofol
     <meta name="description" content={description} />
     <meta name="robots" content={robots} />
     <link rel="canonical" href={canonical} />
+    <link rel="preload" href={inter400} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={inter700} as="font" type="font/woff2" crossorigin />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     <link rel="icon" href="/favicon.ico" sizes="48x48" />
     <link rel="apple-touch-icon" href="/favicon-180.png" />
     <meta property="og:title" content={fullTitle} />
     <meta property="og:description" content={description} />
-    <meta property="og:type" content="website" />
+    <meta property="og:type" content={ogTyp} />
     <meta property="og:url" content={canonical} />
     <meta property="og:locale" content="de_DE" />
-    {jsonLd.map((block) => <script type="application/ld+json" set:html={JSON.stringify(block)} />)}
+    <meta property="og:site_name" content="zahnarzt-versicherungen.de" />
+    <meta property="og:image" content={new URL('/favicon-512.png', SITE_URL).toString()} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={fullTitle} />
+    <meta name="twitter:description" content={description} />
+    <script is:inline>document.documentElement.classList.add('js')</script>
+    {schema.map((b) => <script type="application/ld+json" set:html={JSON.stringify(b)} />)}
     <CookieBanner />
   </head>
   <body>
-    <header class="site">
-      <div class={fullWidth ? "wrap breit" : "wrap"}>
-        <a class="brand" href="/" aria-label="zahnarzt versicherungen, Startseite"><img src="/favicon.svg" alt="" width="36" height="36" /><span class="wortmarke"><span>zahnarzt</span><b>versicherungen</b></span></a>
-        <nav><a href="/ratgeber">Ratgeber</a>{zeigeUeberUns && <a href="/ueber-uns">Über uns</a>}</nav>
+    <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+    <header class="kopf">
+      <div class="rahmen kopf-innen">
+        <a class="marke" href="/">
+          <img src="/favicon.svg" alt="" width="36" height="36" />
+          <span class="wortmarke"><span>zahnarzt</span><b>versicherungen</b></span>
+        </a>
+        <nav class="hauptnav" aria-label="Hauptnavigation">
+          <ul>
+            {nav.map((n) => <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
+          </ul>
+        </nav>
+        <a class="knopf knopf-klein kopf-termin" href={TERMIN_URL}>Termin buchen</a>
+        <details class="menue">
+          <summary aria-label="Menü"><span class="menue-strich" aria-hidden="true"></span><span class="menue-text">Menü</span></summary>
+          <nav aria-label="Hauptnavigation mobil">
+            <ul>
+              {nav.map((n) => <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
+            </ul>
+          </nav>
+        </details>
       </div>
     </header>
-    <main class={fullWidth ? 'voll' : ''}>
-      {fullWidth ? <slot /> : <div class="wrap"><slot /></div>}
+
+    {alleKrumen.length > 0 && <Brotkrumen krumen={alleKrumen} />}
+
+    <main id="inhalt" tabindex="-1">
+      <slot />
     </main>
-    <footer class="site">
-      <div class={fullWidth ? "wrap breit" : "wrap"}>
-        <p>Ein Angebot der MEIN STERNUM Finanzberatung GmbH, Göppinger Str. 2a, 50739 Köln.</p>
-        <p>
-          {zeigeUeberUns && <><a href="/ueber-uns">Über uns</a> · </>}
-          <a href="/impressum">Impressum</a> ·
-          <a href="/datenschutz">Datenschutz</a> ·
-          <a href="/erstinformation">Erstinformation</a>
-        </p>
-          <p class="hinweis">Die Inhalte dieser Seite sind allgemeine Informationen und ersetzen keine individuelle Beratung.</p>
+
+    <footer class="fuss">
+      <div class="rahmen fuss-raster">
+        <div>
+          <p class="fuss-marke"><span>zahnarzt</span><b>versicherungen</b></p>
+          <p>Ein Angebot der <a href={O.url}>{firma}</a><br />{O.strasse}, {O.plz} {O.ort}</p>
+          <p><a href={O.telefonLink}>{O.telefon}</a><br /><a href={`mailto:${O.email}`}>{O.email}</a></p>
+          {profile.length > 0 && <p>{profile.map((s, i) => <>{i > 0 && ' · '}<a href={s.url}>{s.name}</a></>)}</p>}
+          <p><a class="knopf knopf-hell knopf-klein" href={TERMIN_URL}>Termin buchen</a></p>
+        </div>
+        <div>
+          <p class="fuss-titel">Seite</p>
+          <ul>
+            <li><a href="/ratgeber">Ratgeber: alle Fragen</a></li>
+            {zeigeUeberUns && <li><a href="/ueber-uns">Über uns</a></li>}
+            <li><a href="/kontakt">Kontakt</a></li>
+            <li><a href="/impressum">Impressum</a></li>
+            <li><a href="/datenschutz">Datenschutz</a></li>
+            <li><a href="/erstinformation">Erstinformation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="rahmen fuss-unten">
+        <p>{PFLICHTHINWEIS}</p>
+        <p class="ki">{KI_HINWEIS}</p>
       </div>
     </footer>
+    <script is:inline>
+      (function () {
+        if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
+          document.documentElement.classList.remove('js');
+          return;
+        }
+        var io = new IntersectionObserver(function (es) {
+          es.forEach(function (e) { if (e.isIntersecting) { e.target.classList.add('sichtbar'); io.unobserve(e.target); } });
+        }, { rootMargin: '0px 0px -8% 0px' });
+        document.querySelectorAll('.einblenden').forEach(function (el) { io.observe(el); });
+      })();
+    </script>
   </body>
 </html>

@@ -16,6 +16,7 @@ export const ORGANISATION = {
   ort: 'Köln',
   telefon: '0221 98654436',
   telefonLink: 'tel:+4922198654436',
+  telefonSchema: '+49 221 98654436',
   email: 'hallo@meinsternum.de',
 };
 
@@ -24,3 +25,11 @@ export const KI_HINWEIS = 'Mit KI-Unterstützung erstellt, redaktionell geprüft
 
 export const PFLICHTHINWEIS =
   'Die Inhalte dieser Seite sind allgemeine Informationen und ersetzen keine individuelle Beratung.';
+
+// Kontaktwege und Profile. Leere url = noch nicht geliefert (Patrick schickt Nummer und Links),
+// wird dann nicht angezeigt und nicht ins Schema übernommen.
+export const SOCIAL: { name: string; url: string }[] = [
+  { name: 'WhatsApp', url: '' },
+  { name: 'LinkedIn', url: '' },
+  { name: 'Instagram', url: '' },
+];

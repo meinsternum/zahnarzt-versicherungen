@@ -1,7 +1,8 @@
 ---
+// Rechtstexte (Impressum, Datenschutz, Erstinformation): nur Rahmen. Inhalte unverändert aus src/content/rechtliches.
 import { getCollection, render } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { visible } from '../lib/status';
+import { visible, isProduction } from '../lib/status';
 
 export async function getStaticPaths() {
   const alle = visible(await getCollection('rechtliches'));
@@ -11,7 +12,13 @@ export async function getStaticPaths() {
 const { entry } = Astro.props;
 const { Content } = await render(entry);
 ---
-<Base title={`${entry.data.titel} | zahnarzt-versicherungen.de`} description={`${entry.data.titel} von zahnarzt-versicherungen.de`} path={`/${entry.id}`}>
-  <h1>{entry.data.titel}</h1>
-  <Content />
+<Base title={`${entry.data.titel} | zahnarzt-versicherungen.de`} description={`${entry.data.titel} von zahnarzt-versicherungen.de`} path={`/${entry.id}`} krumen={[{ name: entry.data.titel, href: `/${entry.id}` }]}>
+  <div class="rahmen">
+    {!isProduction && entry.data.status !== 'freigegeben' && <p class="vorschau-hinweis">Rechtstext im Entwurf: Inhalt prüft und gibt Patrick frei. Nur in der Vorschau sichtbar.</p>}
+    <header class="seitenkopf"><h1>{entry.data.titel}</h1></header>
+    <div class="prosa recht">
+      <Content />
+    </div>
+  </div>
+  <div class="abstand-unten"></div>
 </Base>

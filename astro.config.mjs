@@ -6,7 +6,7 @@ const indexierung = JSON.parse(readFileSync(new URL('./indexierung.json', import
 export default defineConfig({
   site: 'https://zahnarzt-versicherungen.de',
   // Entwurfsseiten (/entwurf-*) nie in der Sitemap.
-  integrations: [sitemap({ filter: (page) => indexierung.erlaubt && !/\/entwurf-/.test(page) })],
+  integrations: [sitemap({ filter: (page) => indexierung.erlaubt && !/\/(entwurf-|404)/.test(page) })],
   trailingSlash: 'never',
   build: { format: 'file', inlineStylesheets: 'always' }, // CSS inline: keine render-blockierenden Anfragen
 });

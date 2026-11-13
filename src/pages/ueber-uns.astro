@@ -1,53 +1,76 @@
 ---
-import Bewertung from '../components/Bewertung.astro';
+// Über uns: Texte unverändert (freigegeben 12.11.2026), neues Layout und Fotos aus dem Pool.
 import Base from '../layouts/Base.astro';
+import Foto from '../components/Foto.astro';
+import CtaBlock from '../components/CtaBlock.astro';
 import { zeigeUeberUns } from '../lib/status';
+import { ORGANISATION as O, SITE_URL } from '../lib/site';
+import { organisation, person, ORG_ID } from '../lib/schema';
 
 if (!zeigeUeberUns) return new Response(null, { status: 404 });
 
-const jsonLd = [{
-  '@context': 'https://schema.org',
-  '@type': 'AboutPage',
-  name: 'Über uns',
-  url: 'https://zahnarzt-versicherungen.de/ueber-uns',
-  inLanguage: 'de',
-  about: {
-    '@type': 'Organization',
-    name: 'MEIN STERNUM Finanzberatung GmbH',
-    url: 'https://www.meinsternum.de',
-    address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
-    founder: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer' },
-  },
-}];
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'AboutPage', name: 'Über uns', url: `${SITE_URL}/ueber-uns`, inLanguage: 'de', about: { '@id': ORG_ID } },
+  organisation(),
+  person(),
+];
+const team = [
+  ['Aileen Scherer', 'Partnerin, im Team seit 2017. Schwerpunkte: Versicherungen, Immobilien als Kapitalanlage, Onlinemarketing.'],
+  ['Michael Elsner', 'Arzt- und Unternehmensberater, im Team seit August 2023. Schwerpunkte: Berufsstart, Niederlassung und Existenzgründung.'],
+  ['Alexios Karantonis', 'Versicherungsmakler, im Team seit Januar 2024. Schwerpunkte: private Krankenversicherung, Berufsunfähigkeit, Altersvorsorge.'],
+  ['Fatma Gözel-Bußmann', 'Finanzmaklerin, im Team seit 2020. Schwerpunkte: Berufsunfähigkeit, private Krankenversicherung, Altersvorsorge.'],
+  ['Frank Schmidt', 'Fachwirt für Finanzberatung (IHK), im Team seit Januar 2023. Schwerpunkte: Kapitalanlage und Altersvorsorge.'],
+  ['Steffen Weber', 'Schwerpunkte: Altersvorsorge und Investment.'],
+  ['Henry Momberger', 'Finanzplaner, im Team seit 2017. Schwerpunkt: Immobilienfinanzierung.'],
+  ['Kirsten Zimmermann', 'Im Team seit 2021. Ansprechpartnerin für Sachversicherungen, unterstützt die Organisation.'],
+  ['Eva Janßen', 'Assistentin in den Bereichen Versicherungen und Kundenkommunikation.'],
+  ['Vanessa Steuer', 'Im Team seit Februar 2022. Telefon und Social Media.'],
+];
+const firma = 'MEIN STERNUM Finanzberatung GmbH';
 ---
-<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team der MEIN STERNUM Finanzberatung GmbH in Köln." path="/ueber-uns" jsonLd={jsonLd}>
-  <h1>Über uns</h1>
-  <p>zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
+<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team der MEIN STERNUM Finanzberatung GmbH in Köln." path="/ueber-uns" jsonLd={jsonLd} krumen={[{ name: 'Über uns', href: '/ueber-uns' }]}>
+  <div class="rahmen">
+    <header class="seitenkopf">
+      <h1>Über uns</h1>
+      <p class="einleitung">zahnarzt-versicherungen.de ist ein Angebot der <a href={O.url}>{firma}</a> aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
+    </header>
 
-  <h2>Patrick Senn</h2>
-  <img class="portrait" src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer" width="160" height="160" loading="lazy" />
-  <p>Patrick Senn hat die MEIN STERNUM Finanzberatung GmbH 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
+    <section class="abschnitt uu-person" id="patrick-senn" aria-labelledby="ps-h">
+      <figure class="uu-portrait">
+        <Foto foto="patrick-01-hoch" prioritaet sizes="(min-width: 760px) 18rem, 70vw" breiten={[300, 480, 640]} />
+      </figure>
+      <div>
+        <h2 id="ps-h" class="abschnitt-titel">Patrick Senn</h2>
+        <p>Patrick Senn hat die {firma} 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
+      </div>
+    </section>
 
-  <h2>Das Team</h2>
-  <img class="teamfoto" src="/bilder/team-meinsternum.webp" alt="Mitglieder des Beratungsteams im Freien am Wasser" width="1600" height="1066" loading="lazy" />
-  <p class="meta">Auf dem Foto ist ein Teil des Teams zu sehen.</p>
-  <ul class="liste">
-    <li><strong>Aileen Scherer</strong>: Partnerin, im Team seit 2017. Schwerpunkte: Versicherungen, Immobilien als Kapitalanlage, Onlinemarketing.</li>
-    <li><strong>Michael Elsner</strong>: Arzt- und Unternehmensberater, im Team seit August 2023. Schwerpunkte: Berufsstart, Niederlassung und Existenzgründung.</li>
-    <li><strong>Alexios Karantonis</strong>: Versicherungsmakler, im Team seit Januar 2024. Schwerpunkte: private Krankenversicherung, Berufsunfähigkeit, Altersvorsorge.</li>
-    <li><strong>Fatma Gözel-Bußmann</strong>: Finanzmaklerin, im Team seit 2020. Schwerpunkte: Berufsunfähigkeit, private Krankenversicherung, Altersvorsorge.</li>
-    <li><strong>Frank Schmidt</strong>: Fachwirt für Finanzberatung (IHK), im Team seit Januar 2023. Schwerpunkte: Kapitalanlage und Altersvorsorge.</li>
-    <li><strong>Steffen Weber</strong>: Schwerpunkte: Altersvorsorge und Investment.</li>
-    <li><strong>Henry Momberger</strong>: Finanzplaner, im Team seit 2017. Schwerpunkt: Immobilienfinanzierung.</li>
-    <li><strong>Kirsten Zimmermann</strong>: Im Team seit 2021. Ansprechpartnerin für Sachversicherungen, unterstützt die Organisation.</li>
-    <li><strong>Eva Janßen</strong>: Assistentin in den Bereichen Versicherungen und Kundenkommunikation.</li>
-    <li><strong>Vanessa Steuer</strong>: Im Team seit Februar 2022. Telefon und Social Media.</li>
-  </ul>
-  <p class="meta">Angaben nach meinsternum.de/wir, Stand 12.11.2026.</p>
+    <section class="abschnitt" aria-labelledby="team-h">
+      <h2 id="team-h" class="abschnitt-titel">Das Team</h2>
+      <figure class="uu-team">
+        <Foto foto="team-02" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
+        <figcaption>Auf dem Foto ist ein Teil des Teams zu sehen.</figcaption>
+      </figure>
+      <ul class="uu-liste">
+        {team.map(([name, text]) => <li><strong>{name}</strong>: {text}</li>)}
+      </ul>
+      <p class="quellen-stand">Angaben nach meinsternum.de/wir, Stand 12.11.2026.</p>
+    </section>
 
-  <Bewertung />
-  <div class="cta">
-    <p>Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch.</p>
-    <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
+    <CtaBlock text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
   </div>
 </Base>
+
+<style>
+  .uu-person { display: grid; grid-template-columns: 18rem 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+  .uu-person p { max-width: 40rem; font-size: 1.06rem; }
+  .uu-portrait { margin: 0; }
+  .uu-portrait :global(img) { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; }
+  .uu-team { margin: 0 0 2rem; }
+  .uu-team :global(img) { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; }
+  .uu-team figcaption { font-size: 0.85rem; color: var(--text-leise); margin-top: 0.5rem; }
+  .uu-liste { display: grid; gap: 0.9rem 2.5rem; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
+  .uu-liste li { padding-top: 0.9rem; border-top: 1px solid var(--linie); color: var(--text-leise); }
+  .uu-liste strong { color: var(--navy); font-weight: 600; }
+  @media (max-width: 760px) { .uu-person { grid-template-columns: 1fr; } .uu-portrait { max-width: 16rem; } }
+</style>

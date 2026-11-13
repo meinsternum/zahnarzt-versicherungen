@@ -1,29 +1,34 @@
 ---
+// Artikel-Template. Text, Frontmatter, Quellen und Pflichthinweis kommen unverändert aus der Seitendatei.
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import Foto from '../../components/Foto.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBlock from '../../components/CtaBlock.astro';
 import { datumDe } from '../../lib/datum';
 import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
+import { fotoJeSeite, STANDARD_FOTO } from '../../lib/fotos';
+import { phaseJeSeite } from '../../lib/phasen';
+import { SITE_URL } from '../../lib/site';
+import { organisation, person, faqPage, ORG_ID, PERSON_ID } from '../../lib/schema';
 
 export async function getStaticPaths() {
-  const alle = await getCollection('situationen');
-  const sichtbar = visible(alle);
-  return sichtbar.map((entry) => ({
-    params: { slug: entry.id },
-    props: { entry, alle: sichtbar },
-  }));
+  const sichtbar = visible(await getCollection('situationen'));
+  return sichtbar.map((entry) => ({ params: { slug: entry.id }, props: { entry, alle: sichtbar } }));
 }
 
 const { entry, alle } = Astro.props;
-const { Content } = await render(entry);
+const { Content, headings } = await render(entry);
 const d = entry.data;
-const url = `https://zahnarzt-versicherungen.de/ratgeber/${entry.id}`;
+const url = `${SITE_URL}/ratgeber/${entry.id}`;
+const foto = fotoJeSeite[entry.id] ?? STANDARD_FOTO;
+const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
 
-const publisher = {
-  '@type': 'Organization',
-  name: 'MEIN STERNUM Finanzberatung GmbH',
-  url: 'https://www.meinsternum.de',
-  address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
-};
+const verzeichnis = [
+  ...headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, text: h.text })),
+  ...(d.faq.length ? [{ id: 'haeufige-fragen', text: 'Häufige Fragen' }] : []),
+  ...(d.quellen.length ? [{ id: 'quellen', text: 'Quellen' }] : []),
+];
 
 const jsonLd = [
   {
@@ -33,72 +38,90 @@ const jsonLd = [
     description: d.metaDescription,
     dateModified: d.stand,
     inLanguage: 'de',
+    url,
     mainEntityOfPage: url,
-    author: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer', worksFor: publisher },
-    publisher,
+    author: { '@id': PERSON_ID },
+    publisher: { '@id': ORG_ID },
+    citation: d.quellen.filter((q) => q.url).map((q) => ({ '@type': 'CreativeWork', name: q.titel, url: q.url })),
   },
-  ...(d.faq.length
-    ? [{
-        '@context': 'https://schema.org',
-        '@type': 'FAQPage',
-        mainEntity: d.faq.map((f) => ({
-          '@type': 'Question',
-          name: f.frage,
-          acceptedAnswer: { '@type': 'Answer', text: f.antwort },
-        })),
-      }]
-    : []),
+  organisation(),
+  person(),
+  ...(d.faq.length ? [faqPage(d.faq)] : []),
 ];
-
-const verwandte = alle.filter((a) => d.verwandt.includes(a.id));
 ---
-<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd}>
-  {!isProduction && d.status !== 'freigegeben' && (
-    <p class="draft-note">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>
-  )}
-  <article>
-    <h1>{d.frage}</h1>
-    <p class="kurzantwort">{d.kurzantwort}</p>
-    <div class="autor">
-      <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer" width="56" height="56" loading="lazy" />
-      <p class="meta">Stand: {datumDe(d.stand)} · Autor: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : "Patrick Senn"}, Geschäftsführer</p>
+<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd} ogTyp="article" krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: d.titel, href: `/ratgeber/${entry.id}` }]}>
+  <article class="rahmen">
+    {!isProduction && d.status !== 'freigegeben' && (
+      <p class="vorschau-hinweis">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>
+    )}
+    <header class="artikel-kopf">
+      <div>
+        <p class="karte-phase">{phaseJeSeite[entry.id] ?? 'Jede Berufsphase'}</p>
+        <h1>{d.frage}</h1>
+        <div class="kurzantwort">
+          <span class="kurzantwort-label">Kurz gesagt</span>
+          <p>{d.kurzantwort}</p>
+        </div>
+        <p class="stand-zeile">Stand: <time datetime={d.stand}>{datumDe(d.stand)}</time> · Text: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : 'Patrick Senn'}, Geschäftsführer</p>
+      </div>
+      <figure class="artikel-foto">
+        <Foto foto={foto} sizes="(min-width: 760px) 15rem, 5.5rem" breiten={[180, 360, 480]} />
+        <figcaption>Patrick Senn schreibt und verantwortet die Texte auf dieser Seite.</figcaption>
+      </figure>
+    </header>
+
+    <div class="artikel-raster">
+      <nav class="inhalt-verzeichnis" aria-labelledby="iv-titel">
+        <p id="iv-titel">Inhalt</p>
+        <ol>{verzeichnis.map((v) => <li><a href={`#${v.id}`}>{v.text}</a></li>)}</ol>
+      </nav>
+      <div>
+        <div class="prosa">
+          <Content />
+        </div>
+        {!isProduction && (
+          <p class="grafik-platzhalter">[GRAFIK-PLATZHALTER] Laut Regelwerk bekommt jede Seite eine Grafik (Vergleichstabelle oder Karten-Infografik) mit belegten Inhalten. Sie kommt aus dem Inhalts-Chat und geht durch die Prüfung. Nur in der Vorschau sichtbar.</p>
+        )}
+        <div class="prosa prosa-anhang">
+          {d.faq.length > 0 && (
+            <section aria-labelledby="haeufige-fragen">
+              <h2 id="haeufige-fragen">Häufige Fragen</h2>
+              <dl class="faq-liste">
+                {d.faq.map((f) => <div><dt>{f.frage}</dt><dd>{f.antwort}</dd></div>)}
+              </dl>
+            </section>
+          )}
+          {d.quellen.length > 0 && (
+            <section aria-labelledby="quellen">
+              <h2 id="quellen">Quellen</h2>
+              <ol class="quellen-liste">
+                {d.quellen.map((q) => (
+                  <li>{q.url ? <a href={q.url}>{q.titel}</a> : q.titel}{q.url && <span class="url">{q.url.replace(/^https?:\/\//, '')}</span>}</li>
+                ))}
+              </ol>
+              <p class="quellen-stand">Stand dieser Seite: {datumDe(d.stand)}. Fassungen und Abrufdaten der Quellen stehen im Hinweis am Ende des Textes.</p>
+            </section>
+          )}
+        </div>
+
+        <CtaBlock text="Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch." />
+
+        {verwandte.length > 0 && (
+          <section class="prosa-anhang verwandt" aria-labelledby="verwandt-h">
+            <h2 id="verwandt-h">Verwandte Fragen</h2>
+            <ul class="karten">
+              {verwandte.map((v) => (
+                <li class="karte">
+                  <p class="karte-phase">{phaseJeSeite[v.id] ?? 'Jede Berufsphase'}</p>
+                  <h3><a href={`/ratgeber/${v.id}`}>{v.data.frage}</a></h3>
+                  <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
+                </li>
+              ))}
+            </ul>
+          </section>
+        )}
+      </div>
     </div>
-
-    <Content />
-
-    {d.faq.length > 0 && (
-      <section>
-        <h2>Häufige Fragen</h2>
-        {d.faq.map((f) => (
-          <>
-            <h3>{f.frage}</h3>
-            <p>{f.antwort}</p>
-          </>
-        ))}
-      </section>
-    )}
-
-    {d.quellen.length > 0 && (
-      <section>
-        <h2>Quellen</h2>
-        <ul class="liste">
-          {d.quellen.map((q) => <li>{q.url ? <a href={q.url}>{q.titel}</a> : q.titel}</li>)}
-        </ul>
-      </section>
-    )}
-
-    {verwandte.length > 0 && (
-      <section>
-        <h2>Verwandte Fragen</h2>
-        <ul class="liste">
-          {verwandte.map((v) => <li><a href={`/ratgeber/${v.id}`}>{v.data.frage}</a></li>)}
-        </ul>
-      </section>
-    )}
   </article>
-
-  <div class="cta">
-    <p>Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
-    <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
-  </div>
+  <div class="abstand-unten"></div>
 </Base>

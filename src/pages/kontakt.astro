@@ -1,0 +1,47 @@
+---
+// Kontaktseite. Daten aus dem Impressum (src/lib/site.ts). Neue Sätze: zur Freigabe (Meilenstein 3).
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import Bewertungszeile from '../components/Bewertungszeile.astro';
+import { TERMIN_URL, ORGANISATION as O, SITE_URL, SOCIAL } from '../lib/site';
+import { isProduction } from '../lib/status';
+import { organisation, ORG_ID } from '../lib/schema';
+
+const jsonLd = [
+  { '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Kontakt', url: `${SITE_URL}/kontakt`, inLanguage: 'de', about: { '@id': ORG_ID } },
+  organisation(),
+];
+const firma = O.name.replace('MEIN STERNUM', 'MEIN STERNUM');
+const profile = SOCIAL.filter((s) => s.url);
+const fehlend = SOCIAL.filter((s) => !s.url).map((s) => s.name);
+---
+<Base title="Kontakt | zahnarzt-versicherungen.de" description="So erreichst du das Team hinter zahnarzt-versicherungen.de: Termin online buchen, Telefon, E-Mail oder vor Ort in Köln." path="/kontakt" jsonLd={jsonLd} krumen={[{ name: 'Kontakt', href: '/kontakt' }]}>
+  <div class="rahmen">
+    <header class="seitenkopf">
+      <h1>Kontakt</h1>
+      <p class="einleitung">Am einfachsten buchst du online einen Termin für ein Erstgespräch. Es ist kostenlos, dauert in der Regel etwa eine Stunde und findet digital per Zoom, telefonisch oder vor Ort in Köln statt.</p>
+      <p><a class="knopf" href={TERMIN_URL}>Erstgespräch buchen<Icon name="pfeil" size={18} /></a></p>
+    </header>
+
+    <section class="abschnitt kontakt-raster" aria-labelledby="wege-h">
+      <h2 id="wege-h" class="abschnitt-titel">Weitere Wege</h2>
+      <dl class="kontakt-liste">
+        <div><dt>Telefon</dt><dd><a href={O.telefonLink}>{O.telefon}</a></dd></div>
+        <div><dt>E-Mail</dt><dd><a href={`mailto:${O.email}`}>{O.email}</a></dd></div>
+        <div><dt>Anschrift</dt><dd><a href={O.url}>{firma}</a><br />{O.strasse}<br />{O.plz} {O.ort}</dd></div>
+        {profile.map((s) => <div><dt>{s.name}</dt><dd><a href={s.url}>{s.url.replace(/^https?:\/\//, '')}</a></dd></div>)}
+      </dl>
+      {!isProduction && fehlend.length > 0 && <p class="grafik-platzhalter">[PLATZHALTER: {fehlend.join(', ')}] Nummer und Links liefert Patrick. Nur in der Vorschau sichtbar.</p>}
+      <Bewertungszeile class="kontakt-bewertung" />
+    </section>
+  </div>
+  <div class="abstand-unten"></div>
+</Base>
+
+<style>
+  .kontakt-liste { margin: 0 0 2rem; display: grid; gap: 1rem 2.5rem; grid-template-columns: repeat(auto-fill, minmax(16rem, 1fr)); }
+  .kontakt-liste div { background: #fff; border: 1px solid var(--linie); border-radius: 16px; padding: 1.1rem 1.25rem; }
+  .kontakt-liste dt { font-size: 0.82rem; font-weight: 600; letter-spacing: 0.04em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.3rem; }
+  .kontakt-liste dd { margin: 0; font-size: 1.05rem; }
+  :global(.kontakt-bewertung) { max-width: 30rem; }
+</style>

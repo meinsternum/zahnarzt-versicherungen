@@ -1,0 +1,14 @@
+---
+// Termin-Block nach dem Fließtext (einziger CTA im Inhaltsbereich). Link nur über TERMIN_URL.
+import Icon from './Icon.astro';
+import Bewertungszeile from './Bewertungszeile.astro';
+import { TERMIN_URL } from '../lib/site';
+interface Props { titel?: string; text: string; button?: string }
+const { titel = 'Nächste Schritte', text, button = 'Erstgespräch buchen' } = Astro.props;
+---
+<section class="cta-block einblenden" aria-label="Termin buchen">
+  <h2>{titel}</h2>
+  <p>{text}</p>
+  <p><a class="knopf knopf-hell" href={TERMIN_URL}>{button}<Icon name="pfeil" size={18} /></a></p>
+  <Bewertungszeile dunkel class="cta-bewertung" />
+</section>

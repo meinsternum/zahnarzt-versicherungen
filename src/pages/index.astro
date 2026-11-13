@@ -1,125 +1,197 @@
 ---
+// Startseite (Entwurf A, von Patrick am 13.11.2026 gewählt).
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import Bewertung from '../components/Bewertung.astro';
+import Foto from '../components/Foto.astro';
+import Icon from '../components/Icon.astro';
+import Bewertungszeile from '../components/Bewertungszeile.astro';
+import { hero, themen, ablauf, werWirSind, faq, abschluss } from '../lib/startseite';
+import { TERMIN_URL, ORGANISATION } from '../lib/site';
 import { visible, zeigeUeberUns } from '../lib/status';
+import { gruppiere, phaseJeSeite } from '../lib/phasen';
+import { website, organisation, person, faqPage } from '../lib/schema';
 
 const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
-
-const schritte = [
-  { titel: 'Analyse deiner Situation', text: 'Im Beratungsgespräch klären wir deine Fragen, digital per Zoom, telefonisch oder vor Ort in Köln.' },
-  { titel: 'Marktvergleich', text: 'Wir vergleichen passende Lösungen für Ärzt*innen und stellen dir das Ergebnis zur Verfügung.' },
-  { titel: 'Empfehlung', text: 'Du erhältst eine verständliche Übersicht mit konkreten Empfehlungen und der Begründung dazu.' },
-  { titel: 'Betreuung', text: 'Nach dem Abschluss bleiben wir bei Änderungen und im Leistungsfall ansprechbar.' },
-];
-
-const organisation = {
-  '@type': 'Organization',
-  '@id': 'https://zahnarzt-versicherungen.de/#organisation',
-  name: 'MEIN STERNUM Finanzberatung GmbH',
-  url: 'https://www.meinsternum.de',
-  telephone: '+49 221 98654436',
-  email: 'hallo@meinsternum.de',
-  address: { '@type': 'PostalAddress', streetAddress: 'Göppinger Str. 2a', postalCode: '50739', addressLocality: 'Köln', addressCountry: 'DE' },
-};
-
-const jsonLd = [
-  {
-    '@context': 'https://schema.org',
-    '@type': 'WebSite',
-    '@id': 'https://zahnarzt-versicherungen.de/#website',
-    name: 'zahnarzt versicherungen',
-    url: 'https://zahnarzt-versicherungen.de',
-    inLanguage: 'de',
-    publisher: { '@id': 'https://zahnarzt-versicherungen.de/#organisation' },
-  },
-  { '@context': 'https://schema.org', ...organisation, founder: { '@type': 'Person', name: 'Patrick Senn', jobTitle: 'Geschäftsführer' } },
-  {
-    '@context': 'https://schema.org',
-    '@type': 'ItemList',
-    name: 'Fragen zur Berufsunfähigkeit für Zahnärzt*innen',
-    itemListElement: seiten.map((s, i) => ({
-      '@type': 'ListItem',
-      position: i + 1,
-      name: s.data.frage,
-      url: `https://zahnarzt-versicherungen.de/ratgeber/${s.id}`,
-    })),
-  },
-];
+const gruppen = gruppiere(seiten);
+const jsonLd = [website(), organisation(), person(), faqPage(faq.eintraege)];
+// Firmenname nie umbrechen
+const nb = (t: string) => t.replaceAll('MEIN STERNUM', 'MEIN\u00a0STERNUM');
+const FIRMA = 'MEIN\u00a0STERNUM Finanzberatung GmbH';
+const [werVor, werNach] = nb(werWirSind.absaetze[0]).split(FIRMA);
+const [h1Teil1, h1Teil2] = hero.h1.split(': ');
 ---
-<Base title="Versicherungen für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf konkrete Fragen zur Absicherung von Zahnärzt*innen, mit Quellen und Stand. Von Patrick Senn und Team, Köln." path="/" jsonLd={jsonLd} fullWidth>
-  <section class="hero">
-    <div class="wrap breit">
-      <h1>Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen</h1>
-      <p>Jede Seite beantwortet eine Frage aus deiner Berufsphase, nennt ihre Quellen und das Datum der letzten Prüfung. Wir beraten Ärzt*innen seit vielen Jahren zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
-      <p class="knoepfe">
-        <a class="btn" href="https://meinsternum.de/online-buchen">Erstgespräch buchen</a>
-        <a class="btn zweit" href="/ratgeber">Zu den Fragen</a>
-      </p>
+<Base title="Absicherung für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf Versicherungsfragen von Zahnärzt*innen, mit Quellen und Stand. Ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln." path="/" jsonLd={jsonLd}>
+<div class="startseite">
+  <section class="a-hero">
+    <div class="rahmen a-hero-raster">
+      <div class="a-hero-text">
+        <h1><span class="stark">{h1Teil1}:</span> <span class="leicht">{h1Teil2}</span></h1>
+        <p class="a-lead">{nb(hero.lead.text)}</p>
+        <p class="a-knoepfe">
+          <a class="knopf" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a>
+          <a class="knopf knopf-rand" href="#themen">{hero.zweit}</a>
+        </p>
+        <Bewertungszeile class="a-hero-bewertung" />
+      </div>
+      <figure class="a-hero-bild">
+        <Foto foto="patrick-04-hoch" prioritaet sizes="(min-width: 900px) 34vw, 88vw" breiten={[400, 560, 720, 960]} />
+        <figcaption><b>Patrick Senn</b> Geschäftsführer</figcaption>
+      </figure>
     </div>
   </section>
 
-  <div class="wrap breit">
-    <section aria-labelledby="themen">
-      <h2 id="themen">Fragen nach Berufsphase</h2>
-      <div class="phasen">
-        <article class="phase">
-          <h3>Studium</h3>
-          <p>Fragen zu Absicherung im Studium folgen.</p>
-        </article>
-        <article class="phase">
-          <h3>Berufseinstieg und Anstellung</h3>
-          <ul class="karten">
-            {seiten.map((s) => (
-              <li><a href={`/ratgeber/${s.id}`}>{s.data.frage}<span>{s.data.kurzantwort}</span></a></li>
-            ))}
-          </ul>
-        </article>
-        <article class="phase">
-          <h3>Niederlassung</h3>
-          <p>Fragen zur Absicherung bei Praxisgründung und Übernahme folgen.</p>
-        </article>
-      </div>
-    </section>
-
-    <section aria-labelledby="wer" class="wer">
-      <h2 id="wer">Wer die Fragen beantwortet</h2>
-      <div class="wer-inhalt">
-        <img src="/bilder/patrick-senn-portrait.webp" alt="Patrick Senn, Geschäftsführer" width="160" height="160" loading="lazy" />
-        <div>
-          <p>Patrick Senn berät seit 2008 Ärzt*innen und ist Geschäftsführer des Beratungsunternehmens hinter dieser Seite. Er schreibt und verantwortet die Texte. Die fachlichen Aussagen stützen sich auf Gesetze, Satzungen und weitere Primärquellen, die jede Seite nennt.</p>
-          {zeigeUeberUns && <p><a href="/ueber-uns">Mehr über Patrick Senn und das Team</a></p>}
-        </div>
-      </div>
-      <Bewertung />
-    </section>
-
-    <section aria-labelledby="ablauf">
-      <h2 id="ablauf">So läuft eine Beratung ab</h2>
-      <ol class="schritte">
-        {schritte.map((s) => (
-          <li><h3>{s.titel}</h3><p>{s.text}</p></li>
+  <section class="a-abschnitt" id="themen" aria-labelledby="themen-h">
+    <div class="rahmen">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">01</p>
+        <h2 id="themen-h">{themen.h2}</h2>
+      </header>
+      <div class="a-gruppen">
+        {gruppen.map((g) => (
+          <div class="themengruppe einblenden">
+            <h3 class="themengruppe-titel"><Icon name={g.icon} size={22} />{g.titel}</h3>
+            <ul class="karten">
+              {g.seiten.map((s) => (
+                <li class="karte">
+                  <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
+                  <h4><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h4>
+                  <p>{s.data.kurzantwort}</p>
+                  <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
+                </li>
+              ))}
+            </ul>
+          </div>
         ))}
-      </ol>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="aufbau">
-      <h2 id="aufbau">So sind die Seiten aufgebaut</h2>
-      <ul class="liste">
-        <li>Eine Frage pro Seite, die Kurzantwort steht direkt darunter.</li>
-        <li>Jede Seite nennt ihre Quellen und den Stand der Prüfung.</li>
-        <li>Die Inhalte sind allgemeine Informationen und ersetzen keine individuelle Beratung.</li>
-      </ul>
-    </section>
+  <section class="a-abschnitt a-ablauf" aria-labelledby="ablauf-h">
+    <div class="rahmen a-ablauf-raster">
+      <figure class="a-ablauf-bild einblenden">
+        <Foto foto="kollege-02" sizes="(min-width: 900px) 38vw, 88vw" />
+      </figure>
+      <div>
+        <header class="a-kopf">
+          <p class="a-nummer" aria-hidden="true">02</p>
+          <h2 id="ablauf-h">{ablauf.h2}</h2>
+        </header>
+        <ol class="a-schritte">
+          {ablauf.schritte.map((s, i) => (
+            <li class="einblenden">
+              <span class="a-ziffer" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
+              <div>
+                <h3>{s.titel}</h3>
+                <p>{s.text} {s.platzhalter && <span class="platzhalter">[PLATZHALTER: {s.platzhalter}]</span>}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+    </div>
+  </section>
 
-    <section aria-labelledby="kontakt" class="kontakt">
-      <h2 id="kontakt">Nächste Schritte</h2>
-      <p>Persönliche Fragen klären wir im Gespräch. Im Erstgespräch gehen wir deine Situation gemeinsam durch.</p>
-      <ul class="kacheln">
-        <li><a href="https://meinsternum.de/online-buchen"><b>Termin buchen</b><span>Erstgespräch online vereinbaren</span></a></li>
-        <li><a href="tel:+4922198654436"><b>Anrufen</b><span>0221 98654436</span></a></li>
-        <li><a href="mailto:hallo@meinsternum.de"><b>E-Mail</b><span>hallo@meinsternum.de</span></a></li>
-      </ul>
-    </section>
-  </div>
+  <section class="a-abschnitt" aria-labelledby="wer-h">
+    <div class="rahmen">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">03</p>
+        <h2 id="wer-h">{werWirSind.h2}</h2>
+      </header>
+      <figure class="a-team einblenden">
+        <Foto foto="team-02" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
+      </figure>
+      <div class="a-wer-text einblenden">
+        <p>{werVor}<a href={ORGANISATION.url}>{FIRMA}</a>{werNach}</p>
+        {werWirSind.absaetze.slice(1).map((p) => <p>{nb(p)}</p>)}
+        {zeigeUeberUns && <p><a class="a-mehr" href="/ueber-uns">{werWirSind.link}<Icon name="pfeil" size={16} /></a></p>}
+      </div>
+    </div>
+  </section>
+
+  <section class="a-abschnitt" aria-labelledby="faq-h">
+    <div class="rahmen a-faq-raster">
+      <header class="a-kopf">
+        <p class="a-nummer" aria-hidden="true">04</p>
+        <h2 id="faq-h">{faq.h2}</h2>
+      </header>
+      <dl class="a-faq">
+        {faq.eintraege.map((f) => (
+          <div class="einblenden">
+            <dt>{f.frage}</dt>
+            <dd>{nb(f.antwort)}</dd>
+          </div>
+        ))}
+      </dl>
+    </div>
+  </section>
+
+  <section class="a-abschluss" aria-labelledby="abschluss-h">
+    <div class="rahmen">
+      <div class="a-abschluss-flaeche einblenden">
+        <h2 id="abschluss-h">{abschluss.h2}</h2>
+        <p>{abschluss.text}</p>
+        <p><a class="knopf knopf-hell" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a></p>
+        <Bewertungszeile dunkel class="a-abschluss-bewertung" />
+      </div>
+    </div>
+  </section>
+</div>
 </Base>
+
+<style is:global>
+  .startseite .a-hero { padding: clamp(2.5rem, 6vw, 5.5rem) 0 clamp(3rem, 7vw, 6rem); }
+  .startseite .a-hero-raster { display: grid; grid-template-columns: 1.25fr 0.85fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+  .startseite .a-hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.4rem); line-height: 1.04; letter-spacing: -0.03em; margin-bottom: 1.6rem; }
+  .startseite .a-hero h1 .stark { font-weight: 700; display: block; }
+  .startseite .a-hero h1 .leicht { font-weight: 300; color: var(--teal); }
+  .startseite .a-lead { font-size: clamp(1.08rem, 1.4vw, 1.22rem); color: var(--text-leise); max-width: 36rem; margin-bottom: 2rem; }
+  .startseite .a-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem; }
+  .startseite .a-hero-bewertung { max-width: 30rem; }
+  .startseite .a-hero-bild { margin: 0; position: relative; }
+  .startseite .a-hero-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 28px; }
+  .startseite .a-hero-bild figcaption { position: absolute; left: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.94); border-radius: 12px; padding: 0.55rem 0.9rem; font-size: 0.85rem; color: var(--text-leise); line-height: 1.35; box-shadow: var(--schatten); }
+  .startseite .a-hero-bild figcaption b { display: block; color: var(--navy); font-weight: 600; }
+
+  .startseite .a-abschnitt { padding: clamp(3.5rem, 8vw, 7rem) 0; border-top: 1px solid var(--linie); }
+  .startseite .a-kopf { display: flex; align-items: baseline; gap: 1rem; margin-bottom: clamp(1.75rem, 4vw, 3rem); }
+  .startseite .a-nummer { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--teal); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
+  .startseite .a-kopf h2 { font-size: clamp(1.75rem, 3.4vw, 2.6rem); font-weight: 700; }
+
+  .startseite .a-gruppen { display: grid; gap: clamp(2rem, 4vw, 3rem); }
+
+  .startseite .a-ablauf { background: #fff; }
+  .startseite .a-ablauf-raster { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: center; }
+  .startseite .a-ablauf-bild { margin: 0; }
+  .startseite .a-ablauf-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; border-radius: 28px; }
+  .startseite .a-schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .startseite .a-schritte li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--linie); }
+  .startseite .a-schritte li:last-child { border-bottom: 1px solid var(--linie); }
+  .startseite .a-ziffer { font-size: 2.6rem; font-weight: 300; line-height: 1; color: var(--teal-hell); font-variant-numeric: tabular-nums; }
+  .startseite .a-schritte h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.35rem; }
+  .startseite .a-schritte p { margin: 0; color: var(--text-leise); }
+
+  .startseite .a-team { margin: 0 0 2.5rem; }
+  .startseite .a-team img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 28px; }
+  .startseite .a-wer-text { columns: 2 22rem; column-gap: 3rem; max-width: 60rem; color: var(--text); }
+  .startseite .a-wer-text p { break-inside: avoid; }
+  .startseite .a-mehr { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+
+  .startseite .a-faq-raster { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 5vw, 5rem); }
+  .startseite .a-faq { margin: 0; }
+  .startseite .a-faq div { padding: 1.4rem 0; border-top: 1px solid var(--linie); }
+  .startseite .a-faq div:last-child { border-bottom: 1px solid var(--linie); }
+  .startseite .a-faq dt { font-weight: 600; color: var(--navy); font-size: 1.12rem; margin-bottom: 0.4rem; }
+  .startseite .a-faq dd { margin: 0; color: var(--text-leise); }
+
+  .startseite .a-abschluss { padding: 0 0 clamp(3.5rem, 8vw, 6rem); }
+  .startseite .a-abschluss-flaeche { background: var(--verlauf); color: #fff; border-radius: 32px; padding: clamp(2.25rem, 6vw, 4.5rem); }
+  .startseite .a-abschluss-flaeche h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin-bottom: 1rem; }
+  .startseite .a-abschluss-flaeche > p { max-width: 36rem; font-size: 1.1rem; }
+  .startseite .a-abschluss-bewertung { margin-top: 2rem; max-width: 30rem; }
+
+  @media (max-width: 900px) {
+    .startseite .a-hero-raster, .startseite .a-ablauf-raster, .startseite .a-faq-raster, .startseite .a-gruppen { grid-template-columns: 1fr; }
+    .startseite .a-hero-bild { max-width: 26rem; }
+    .startseite .a-ablauf-bild img { aspect-ratio: 3 / 2; }
+  }
+</style>

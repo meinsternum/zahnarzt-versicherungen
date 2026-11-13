@@ -1,0 +1,36 @@
+---
+// 404-Seite mit Navigation und Themenlinks. noindex, nicht in der Sitemap.
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import Icon from '../components/Icon.astro';
+import { visible } from '../lib/status';
+import { phaseJeSeite } from '../lib/phasen';
+
+const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
+---
+<Base title="Seite nicht gefunden | zahnarzt-versicherungen.de" description="Diese Seite gibt es nicht. Hier findest du die Fragen im Ratgeber." path="/404" noindex>
+  <div class="rahmen">
+    <header class="seitenkopf">
+      <h1>Seite nicht gefunden</h1>
+      <p class="einleitung">Diese Adresse gibt es nicht oder nicht mehr. Vielleicht findest du deine Frage hier:</p>
+    </header>
+    <ul class="karten">
+      {seiten.map((s) => (
+        <li class="karte">
+          <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
+          <h2><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h2>
+          <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
+        </li>
+      ))}
+    </ul>
+    <p class="nf-links"><a href="/">Zur Startseite</a> · <a href="/ratgeber">Alle Fragen im Ratgeber</a> · <a href="/kontakt">Kontakt</a></p>
+  </div>
+  <div class="abstand-unten"></div>
+</Base>
+
+<style>
+  .karte :global(h2) { margin: 0 0 0.6rem; font-size: 1.15rem; line-height: 1.3; color: var(--navy); font-weight: 600; }
+  .karte h2 a { color: inherit; text-decoration: none; }
+  .karte h2 a::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius); }
+  .nf-links { margin-top: 2rem; }
+</style>
