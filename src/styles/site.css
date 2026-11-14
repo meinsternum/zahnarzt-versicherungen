@@ -276,3 +276,39 @@ main:focus { outline: none; }
   .artikel-foto figcaption { margin: 0; }
 }
 .abstand-unten { height: clamp(3rem, 6vw, 5rem); }
+
+/* Erklärende Grafiken in Artikeln (echtes HTML, CI-Farben). Stil der Blog-Grafiken: weiße Fläche, Kopf im Navy/Teal-Verlauf, Fußzeile mit Stand und Quelle. */
+.prosa .grafik { margin: 2.2rem 0; background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); overflow: hidden; box-shadow: var(--schatten); }
+.prosa .grafik-titel { background: var(--verlauf); color: #fff; font-weight: 600; font-size: 1.02rem; line-height: 1.35; padding: 0.95rem 1.25rem; }
+.prosa .grafik-fuss { margin: 0; padding: 0.7rem 1.25rem 0.85rem; border-top: 1px solid var(--linie); font-size: 0.8rem; line-height: 1.5; color: var(--text-leise); background: #f7f9fb; }
+.prosa .grafik-tabelle { overflow-x: auto; }
+.prosa .grafik-tabelle table { display: table; margin: 0; width: 100%; border: 0; font-size: 0.92rem; }
+.prosa .grafik-tabelle th, .prosa .grafik-tabelle td { padding: 0.7rem 1rem; border: 0; border-bottom: 1px solid var(--linie); vertical-align: top; text-align: left; line-height: 1.45; }
+.prosa .grafik-tabelle thead th { background: #eef3f8; color: var(--navy); font-weight: 600; font-size: 0.85rem; }
+.prosa .grafik-tabelle tbody th { color: var(--navy); font-weight: 600; background: #fff; width: 28%; }
+.prosa .grafik-tabelle tbody tr:last-child th, .prosa .grafik-tabelle tbody tr:last-child td { border-bottom: 0; }
+.prosa .grafik-karten { list-style: none; margin: 0; padding: 1.1rem; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr)); }
+.prosa .grafik-karten > li { margin: 0; padding: 1rem 1.05rem; border: 1px solid var(--linie); border-radius: 12px; background: #fbfcfd; }
+.prosa .grafik-karte-kopf { display: flex; align-items: center; gap: 0.55rem; margin: 0 0 0.55rem; font-weight: 600; color: var(--navy); font-size: 0.98rem; line-height: 1.3; }
+.prosa .grafik-nr { display: inline-grid; place-items: center; flex: none; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: rgba(39, 145, 163, 0.12); color: var(--teal); font-size: 0.8rem; font-weight: 700; }
+.prosa .grafik-karten ul { margin: 0; padding-left: 1.05rem; font-size: 0.9rem; line-height: 1.5; color: var(--text); }
+.prosa .grafik-karten ul li { margin: 0.25rem 0; }
+.prosa .grafik-ablauf { list-style: none; counter-reset: schritt; margin: 0; padding: 1.2rem 1.1rem; display: grid; gap: 0.9rem; grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr)); }
+.prosa .grafik-ablauf > li { counter-increment: schritt; margin: 0; position: relative; padding: 2.4rem 0.9rem 0.9rem; border-radius: 12px; background: #fbfcfd; border: 1px solid var(--linie); font-size: 0.9rem; line-height: 1.5; }
+.prosa .grafik-ablauf > li::before { content: counter(schritt); position: absolute; top: 0.8rem; left: 0.9rem; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--navy); color: #fff; display: grid; place-items: center; font-size: 0.8rem; font-weight: 700; }
+.prosa .grafik-ablauf p { margin: 0; }
+.prosa .grafik-schritt-titel { font-weight: 600; color: var(--navy); margin-bottom: 0.25rem !important; }
+@media (max-width: 560px) {
+  .prosa .grafik-tabelle table { font-size: 0.85rem; }
+  .prosa .grafik-tabelle th, .prosa .grafik-tabelle td { padding: 0.6rem 0.7rem; }
+  .prosa .grafik-tabelle tbody th { width: auto; }
+}
+@media (max-width: 560px) {
+  .prosa .grafik-tabelle thead { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+  .prosa .grafik-tabelle table, .prosa .grafik-tabelle tbody, .prosa .grafik-tabelle tr, .prosa .grafik-tabelle th, .prosa .grafik-tabelle td { display: block; width: auto; }
+  .prosa .grafik-tabelle tr { padding: 0.75rem 1rem; border-bottom: 1px solid var(--linie); }
+  .prosa .grafik-tabelle tbody tr:last-child { border-bottom: 0; }
+  .prosa .grafik-tabelle tbody th { padding: 0 0 0.35rem; border: 0; font-size: 0.95rem; }
+  .prosa .grafik-tabelle td { padding: 0.2rem 0; border: 0; }
+  .prosa .grafik-tabelle td::before, .prosa .grafik-tabelle tbody th::before { content: attr(data-label); display: block; font-size: 0.76rem; font-weight: 600; color: var(--text-leise); }
+}
