@@ -4,7 +4,7 @@ titel: "BU bei Zahnärzt*innen: Versorgungswerk und private BU"
 kurzantwort: "Das Versorgungswerk zahlt bei Berufsunfähigkeit je nach Satzung nur, wenn du die zahnärztliche Tätigkeit aufgibst. Ob das für dich reicht, hängt von deiner Satzung und deinem Vertrag ab."
 metaDescription: "Wann das Versorgungswerk bei Berufsunfähigkeit zahlt, was Praxis aufgeben bedeutet und was die private BU anders regeln kann. Mit Satzungsbeispielen."
 status: geprueft
-stand: "2026-11-13"
+stand: "2026-11-14"
 reihenfolge: 1
 quellen:
   - titel: "§ 172 VVG, Berufsunfähigkeit (gesetze-im-internet.de)"
@@ -32,9 +32,11 @@ verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-teilweise-zahnaerzt-innen
+  - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
+  - krankengeld-luecke-zahnaerzt-innen
 ---
 
-Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
+„Ich habe doch das Versorgungswerk, reicht das nicht?“ Die Frage ist berechtigt. Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die spannende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
 
 ## Wann das Versorgungswerk zahlt
 
@@ -44,17 +46,23 @@ In Westfalen-Lippe zahlt das Versorgungswerk die Berufsunfähigkeitsrente nur au
 
 In Niedersachsen (Satzung ABH ab 01.02.2024) heißt der Maßstab „völlig berufsunfähig“: Du kannst eine zahnärztliche Tätigkeit nicht mehr nachhaltig ausüben. Die Rente beträgt dann 80 Prozent der Anwartschaft auf Altersrente (§ 17 Abs. 1 und 2). Tritt der Leistungsfall vor dem 65. Geburtstag ein, erhöht sich die erworbene Anwartschaft um zugerechnete Anwartschaften (§ 15 Abs. 6). Wie die Rente berechnet wird, steht auf der Seite zur Rentenhöhe.
 
+Vereinfacht gesagt: In beiden Satzungen geht es nicht darum, ob du deine bisherige Arbeit noch so machen kannst wie vorher, sondern ob du zahnärztlich überhaupt noch tätig sein kannst.
+
 ## Was „Praxis aufgeben“ bedeutet
 
-In beiden Beispielen reicht die Diagnose allein nicht. In Westfalen-Lippe gibt es keinen Anspruch, wenn eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du die Aufgabe der zahnärztlichen Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du keine zahnärztliche Tätigkeit ausgeübt hast. Fehlt die Erklärung, entfällt die Rente ab Mai (§ 17a Abs. 1 und 3). Dort trägst du die Kosten für den Nachweis der Berufsunfähigkeit selbst, ein nicht behandelnde\*r Fachärzt\*in erstellt das Gutachten, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung deiner Berufsfähigkeit ergreifen (§ 17 Abs. 5 bis 8).
+In beiden Beispielen reicht die Diagnose allein nicht. In Westfalen-Lippe gibt es keinen Anspruch, wenn eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du die Aufgabe der zahnärztlichen Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du keine zahnärztliche Tätigkeit ausgeübt hast. Fehlt die Erklärung, entfällt die Rente ab Mai (§ 17a Abs. 1 und 3). Dort trägst du die Kosten für den Nachweis der Berufsunfähigkeit selbst, ein\*e nicht behandelnde\*r Fachärzt\*in erstellt das Gutachten, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung deiner Berufsfähigkeit ergreifen (§ 17 Abs. 5 bis 8).
 
-*Fiktives Beispiel: Dr. B. führt eine Einzelpraxis und kann wegen einer Handerkrankung nicht mehr behandeln. Sie stellt eine Vertretung ein, um die Praxis zu halten. Nach der Satzung aus Westfalen-Lippe hat sie für diese Zeit keinen Anspruch auf die Berufsunfähigkeitsrente, weil eine Vertretung die Praxis weiterführt. Zusätzlich prüft das Versorgungswerk, ob sie ihre Fähigkeiten außerhalb der Praxis wirtschaftlich nutzen kann. Was bei deinem Versorgungswerk gilt, steht in deiner Satzung.*
+*Fiktives Beispiel: Dr. B. führt eine Einzelpraxis und kann wegen einer Handerkrankung nicht mehr behandeln. Sie stellt eine Vertretung ein, um die Praxis zu halten. Verständlich, schließlich hat sie die Praxis über Jahre aufgebaut. Nach der Satzung aus Westfalen-Lippe hat sie für diese Zeit aber keinen Anspruch auf die Berufsunfähigkeitsrente, weil eine Vertretung die Praxis weiterführt. Zusätzlich prüft das Versorgungswerk, ob sie ihre Fähigkeiten außerhalb der Praxis wirtschaftlich nutzen kann. Was bei deinem Versorgungswerk gilt, steht in deiner Satzung.*
+
+Wichtig ist an der Stelle: Die Entscheidung, die Praxis zu halten, und der Anspruch auf die Rente können sich gegenseitig ausschließen. Das solltest du kennen, bevor der Fall eintritt.
 
 ## Was die private Berufsunfähigkeitsversicherung anders regeln kann
 
 Das Gesetz beschreibt Berufsunfähigkeit in der privaten Versicherung so: Du kannst deinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, wegen Krankheit, Körperverletzung oder eines über das Alter hinausgehenden Kräfteverfalls ganz oder teilweise voraussichtlich dauerhaft nicht mehr ausüben. Eine Prozentzahl nennt § 172 Abs. 2 VVG nicht. Ab welchem Grad ein Vertrag zahlt, steht deshalb in den Versicherungsbedingungen, nicht im Gesetz.
 
-Ein Vertrag kann außerdem vorsehen, dass der Versicherer dich auf eine andere Tätigkeit verweist, die deiner Ausbildung, deinen Fähigkeiten und deiner bisherigen Lebensstellung entspricht. Das kann eine Tätigkeit sein, die du bereits ausübst (konkrete Verweisung), oder eine, die du ausüben könntest (abstrakte Verweisung) (§ 172 Abs. 3 VVG). Lies vor dem Abschluss, ob und wie dein Vertrag das regelt. Ein Vergleich mit dem Maßstab deines Versorgungswerks zeigt dir, wo beide Absicherungen auseinanderlaufen können. Was gilt, wenn du nur noch teilweise arbeiten kannst, steht auf der Seite zum teilweisen Arbeiten.
+Ein Vertrag kann außerdem vorsehen, dass der Versicherer dich auf eine andere Tätigkeit verweist, die deiner Ausbildung, deinen Fähigkeiten und deiner bisherigen Lebensstellung entspricht. Das kann eine Tätigkeit sein, die du bereits ausübst (konkrete Verweisung), oder eine, die du ausüben könntest (abstrakte Verweisung) (§ 172 Abs. 3 VVG). Lies vor dem Abschluss, ob und wie dein Vertrag das regelt.
+
+Der Unterschied zum Versorgungswerk liegt also im Maßstab: hier dein zuletzt ausgeübter Beruf, dort die zahnärztliche Tätigkeit insgesamt. Ein Vergleich beider Maßstäbe zeigt dir, wo die Absicherungen auseinanderlaufen können. Was gilt, wenn du nur noch teilweise arbeiten kannst, steht auf der Seite zum teilweisen Arbeiten.
 
 ## Tätigkeitsverbot: Was § 31 IfSG regelt
 
@@ -66,6 +74,6 @@ In den beiden gelesenen Regelwerken ist für die Pflichtmitgliedschaft im Versor
 
 ## Was du mitnehmen kannst
 
-Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags. Wie sich beides in deinem Fall zusammensetzt, hängt von deiner Satzung, deiner Praxisform und deinen Vertragsbedingungen ab.
+Das Versorgungswerk kann dir bei Berufsunfähigkeit eine Rente zahlen, setzt aber je nach Regelwerk voraus, dass du die zahnärztliche Tätigkeit insgesamt aufgibst. Die private Versicherung folgt den Bedingungen deines Vertrags. Aus unserer Sicht ist das Versorgungswerk deshalb eine Grundlage, aber keine Antwort auf die Frage, ob du abgesichert bist. Wie sich beides in deinem Fall zusammensetzt, hängt von deiner Satzung, deiner Praxisform und deinen Vertragsbedingungen ab. Was das Versorgungswerk im Alter zahlt und wie eine Lücke entstehen kann, steht auf der Seite „[Reicht das Versorgungswerk im Alter für Zahnärzt\*innen?](/ratgeber/altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen)“.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Satzung VZWL Juli 2026, ABH ZKN 01.02.2024, Gesetze abgerufen am 12.11.2026.*

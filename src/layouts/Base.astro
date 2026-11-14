@@ -13,6 +13,10 @@ import Brotkrumen from '../components/Brotkrumen.astro';
 import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
 import { TERMIN_URL, ORGANISATION as O, KI_HINWEIS, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
 import { breadcrumbs, type Krume } from '../lib/schema';
+import Icon from '../components/Icon.astro';
+import { getCollection } from 'astro:content';
+import { visible } from '../lib/status';
+import { gruppiere, menueTitel } from '../lib/phasen';
 
 interface Props {
   title: string;
@@ -44,6 +48,11 @@ const nav = [
 ];
 const aktiv = (href: string) => (href === '/' ? path === '/' : path === href || path.startsWith(href + '/'));
 const aktuell = (href: string) => (path === href ? 'page' : aktiv(href) ? 'true' : undefined);
+// Mega-Menü: alle sichtbaren Ratgeberseiten nach Thema (gleiche Ordnung wie die Ratgeber-Übersicht).
+const menueSeiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
+const menueGruppen = gruppiere(menueSeiten);
+const ratgeberAktiv = aktiv('/ratgeber');
+const label = (s: (typeof menueSeiten)[number]) => menueTitel[s.id] ?? s.data.titel;
 const firma = O.name.replace('MEIN STERNUM', 'MEIN STERNUM');
 const profile = SOCIAL.filter((s) => s.url);
 ---
@@ -85,15 +94,53 @@ const profile = SOCIAL.filter((s) => s.url);
         </a>
         <nav class="hauptnav" aria-label="Hauptnavigation">
           <ul>
-            {nav.map((n) => <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
+            {nav.map((n) => n.href === '/ratgeber' ? (
+              <li class="mega-li">
+                <details class="mega" data-menue>
+                  <summary class:list={['mega-knopf', { aktiv: ratgeberAktiv }]}>Ratgeber<Icon name="runter" size={16} /></summary>
+                  <div class="mega-panel">
+                    <div class="rahmen mega-raster">
+                      <div class="mega-themen">
+                        {menueGruppen.map((g) => (
+                          <div class="mega-thema">
+                            <p class="mega-kopf"><a href={`/ratgeber#thema-${g.id}`}><span class="mega-symbol"><Icon name={g.icon} size={18} /></span>{g.titel}</a></p>
+                            <ul>
+                              {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                      <div class="mega-seite">
+                        <p class="mega-seite-titel">Deine Situation ist anders?</p>
+                        <p>Eine Ratgeberseite erklärt die Regeln. Deine persönliche Situation gehen wir im Erstgespräch gemeinsam durch.</p>
+                        <p><a class="knopf knopf-klein" href={TERMIN_URL}>Erstgespräch buchen<Icon name="pfeil" size={16} /></a></p>
+                        <p><a class="mega-alle" href="/ratgeber" aria-current={path === '/ratgeber' ? 'page' : undefined}>Alle Fragen im Überblick<Icon name="pfeil" size={16} /></a></p>
+                      </div>
+                    </div>
+                  </div>
+                </details>
+              </li>
+            ) : <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
           </ul>
         </nav>
         <a class="knopf knopf-klein kopf-termin" href={TERMIN_URL}>Termin buchen</a>
-        <details class="menue">
+        <details class="menue" data-menue>
           <summary aria-label="Menü"><span class="menue-strich" aria-hidden="true"></span><span class="menue-text">Menü</span></summary>
           <nav aria-label="Hauptnavigation mobil">
             <ul>
-              {nav.map((n) => <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
+              {nav.map((n) => n.href === '/ratgeber' ? (
+                <li class="menue-ratgeber">
+                  <a href="/ratgeber" aria-current={aktuell('/ratgeber')}>Ratgeber: alle Fragen</a>
+                  {menueGruppen.map((g) => (
+                    <details class="menue-thema">
+                      <summary><span class="mega-symbol"><Icon name={g.icon} size={16} /></span>{g.titel}<Icon name="runter" size={16} /></summary>
+                      <ul>
+                        {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                      </ul>
+                    </details>
+                  ))}
+                </li>
+              ) : <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
             </ul>
           </nav>
         </details>
@@ -133,6 +180,23 @@ const profile = SOCIAL.filter((s) => s.url);
       </div>
     </footer>
     <script is:inline>
+      // Menüs: Escape und Klick außerhalb schließen, nur ein Menü gleichzeitig offen.
+      // Ohne Skript funktionieren beide Menüs per Klick (details/summary).
+      (function () {
+        var menues = Array.prototype.slice.call(document.querySelectorAll('details[data-menue]'));
+        menues.forEach(function (m) {
+          m.addEventListener('toggle', function () {
+            if (m.open) menues.forEach(function (x) { if (x !== m) x.open = false; });
+          });
+        });
+        document.addEventListener('keydown', function (e) {
+          if (e.key !== 'Escape') return;
+          menues.forEach(function (m) { if (m.open) { m.open = false; m.querySelector('summary').focus(); } });
+        });
+        document.addEventListener('click', function (e) {
+          menues.forEach(function (m) { if (m.open && !m.contains(e.target)) m.open = false; });
+        });
+      })();
       (function () {
         if (!('IntersectionObserver' in window) || matchMedia('(prefers-reduced-motion: reduce)').matches) {
           document.documentElement.classList.remove('js');

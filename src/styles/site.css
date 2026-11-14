@@ -88,6 +88,42 @@ ul { margin: 0; padding: 0; list-style: none; }
 .menue nav { position: absolute; right: 0; top: calc(100% + 0.6rem); min-width: 14rem; background: #fff; border: 1px solid var(--linie); border-radius: 14px; box-shadow: var(--schatten); padding: 0.4rem; animation: auf 0.22s var(--weich); }
 .menue nav a { display: block; padding: 0.7rem 0.9rem; border-radius: 10px; color: var(--text); text-decoration: none; }
 .menue nav a:hover { background: rgba(57, 83, 124, 0.07); }
+/* Mega-Menü Ratgeber (Desktop): details/summary, funktioniert ohne Skript */
+.mega-li { position: static; }
+.mega > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 0.3rem; padding: 0.5rem 0.75rem; border-radius: 999px; color: var(--text); font-size: 0.97rem; transition: background-color 0.2s var(--weich); }
+.mega > summary::-webkit-details-marker { display: none; }
+.mega > summary:hover, .mega[open] > summary { background: rgba(57, 83, 124, 0.07); color: var(--navy); }
+.mega > summary.aktiv { color: var(--navy); font-weight: 600; background: rgba(57, 83, 124, 0.07); }
+.mega > summary .icon { transition: transform 0.2s var(--weich); }
+.mega[open] > summary .icon { transform: rotate(180deg); }
+.mega-panel { position: absolute; left: 0; right: 0; top: 100%; background: #fff; border-top: 1px solid var(--linie); border-bottom: 1px solid var(--linie); box-shadow: 0 24px 40px -24px rgba(37, 50, 74, 0.28); animation: auf 0.22s var(--weich); max-height: calc(100vh - 5rem); overflow-y: auto; }
+.mega-raster { display: grid; grid-template-columns: 1fr 17rem; gap: 2.5rem; padding-top: 2rem; padding-bottom: 2.25rem; }
+.mega-themen { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.75rem 2rem; }
+.mega-kopf { margin: 0 0 0.55rem; }
+.mega-kopf a { display: inline-flex; align-items: center; gap: 0.55rem; padding: 0; border-radius: 0; font-weight: 600; color: var(--navy); font-size: 1rem; text-decoration: none; }
+.mega-kopf a:hover { background: none; text-decoration: underline; text-underline-offset: 3px; }
+.mega-symbol { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border-radius: 9px; background: rgba(39, 145, 163, 0.1); color: var(--teal-hell); flex: none; }
+.hauptnav .mega-thema ul { display: block; margin: 0; padding: 0 0 0 2.55rem; }
+.hauptnav .mega-thema li + li { margin-top: 0.1rem; }
+.hauptnav .mega-thema li a { display: block; padding: 0.3rem 0; border-radius: 0; font-size: 0.93rem; line-height: 1.4; color: var(--text-leise); }
+.hauptnav .mega-thema li a:hover { background: none; color: var(--teal); }
+.hauptnav .mega-thema li a[aria-current] { background: none; color: var(--navy); font-weight: 600; }
+.mega-seite { border-left: 1px solid var(--linie); padding-left: 2rem; font-size: 0.93rem; color: var(--text-leise); }
+.mega-seite p { margin: 0 0 0.9rem; }
+.mega-seite-titel { font-weight: 600; color: var(--navy) !important; font-size: 1rem; }
+.hauptnav .mega-seite .knopf { display: inline-flex; color: #fff; background: var(--navy); padding: 0.6rem 1rem; border-radius: 999px; font-size: 0.92rem; }
+.hauptnav .mega-seite .knopf:hover { background: var(--navy-tief); color: #fff; }
+.hauptnav .mega-alle { display: inline-flex !important; align-items: center; gap: 0.35rem; padding: 0 !important; color: var(--teal) !important; font-weight: 600; background: none !important; }
+@media (max-width: 1100px) { .mega-themen { grid-template-columns: repeat(2, minmax(0, 1fr)); } .mega-raster { grid-template-columns: 1fr 15rem; gap: 2rem; } }
+/* Mobil: Themen als aufklappbare Gruppen im Menü */
+.menue nav { width: min(22rem, calc(100vw - 1.5rem)); max-height: calc(100vh - 5.5rem); overflow-y: auto; }
+.menue-thema summary { display: flex !important; align-items: center; gap: 0.55rem; padding: 0.55rem 0.9rem !important; border-radius: 10px !important; font-weight: 500 !important; font-size: 0.95rem !important; color: var(--text) !important; }
+.menue-thema summary .icon:last-child { margin-left: auto; color: var(--schiefer); transition: transform 0.2s var(--weich); }
+.menue-thema[open] summary .icon:last-child { transform: rotate(180deg); }
+.menue-thema .mega-symbol { width: 1.7rem; height: 1.7rem; border-radius: 7px; }
+.menue-thema ul { padding: 0 0 0.3rem 2.6rem; }
+.menue nav .menue-thema a { padding: 0.45rem 0.6rem; font-size: 0.92rem; color: var(--text-leise); }
+.menue-ratgeber { border-top: 1px solid var(--linie); border-bottom: 1px solid var(--linie); margin: 0.3rem 0; padding: 0.3rem 0; }
 @keyframes auf { from { opacity: 0; transform: translateY(-4px); } to { opacity: 1; transform: none; } }
 @media (max-width: 860px) {
   .hauptnav { display: none; }
@@ -183,7 +219,7 @@ main:focus { outline: none; }
 .cta-bewertung { margin-top: 1.6rem; max-width: 30rem; }
 
 /* Artikel */
-.artikel-kopf { display: grid; grid-template-columns: 1fr 15rem; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(1.5rem, 3vw, 2.25rem); }
+.artikel-kopf { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(1.5rem, 3vw, 2.25rem); }
 .artikel-kopf h1 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.4rem; }
 .kurzantwort { background: #fff; border: 1px solid var(--linie); border-left: 4px solid var(--teal-hell); border-radius: 14px; padding: 1.15rem 1.35rem; margin: 0 0 1rem; max-width: 46rem; }
 .kurzantwort-label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.35rem; }
@@ -229,11 +265,12 @@ main:focus { outline: none; }
 .grafik-platzhalter { border: 2px dashed #e8d18a; background: #fffbef; color: #5a4600; border-radius: 14px; padding: 1.1rem 1.25rem; margin: 2rem 0; font-size: 0.92rem; }
 
 @media (max-width: 960px) {
-  .artikel-raster { grid-template-columns: 1fr; }
+  .artikel-raster { grid-template-columns: minmax(0, 1fr); }
   .inhalt-verzeichnis { position: static; background: #fff; border: 1px solid var(--linie); border-radius: 14px; padding: 1rem 1.1rem; }
 }
 @media (max-width: 760px) {
-  .artikel-kopf { grid-template-columns: 1fr; }
+  .artikel-kopf { grid-template-columns: minmax(0, 1fr); }
+  .artikel-kopf h1 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
   .artikel-foto { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.9rem; align-items: center; }
   .artikel-foto img { aspect-ratio: 1 / 1; border-radius: 50%; }
   .artikel-foto figcaption { margin: 0; }

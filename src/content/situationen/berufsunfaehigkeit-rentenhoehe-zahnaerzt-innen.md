@@ -31,9 +31,11 @@ faq:
 verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+  - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
+  - krankengeld-luecke-zahnaerzt-innen
 ---
 
-Wie hoch deine BU-Rente sein sollte, steht nirgends als Zahl im Gesetz. Es hängt von deinen Ausgaben und Verpflichtungen ab und davon, was dein Versorgungswerk bei Berufsunfähigkeit zahlt. Diese Seite zeigt die Rechenlogik, die Fundstellen in zwei Satzungen und die Punkte, die wir nicht belegen können.
+„Wie viel BU-Rente brauche ich eigentlich?“ Eine Zahl dafür steht nirgends im Gesetz, und eine Faustregel gibt es hier bewusst nicht. Die Höhe hängt von deinen Ausgaben und Verpflichtungen ab und davon, was dein Versorgungswerk bei Berufsunfähigkeit zahlt. Diese Seite zeigt dir, wie du das selbst rechnen kannst, wo es in zwei Satzungen steht und welche Punkte wir nicht belegen können.
 
 ## Was das Gesetz zur Höhe sagt
 
@@ -41,7 +43,7 @@ Nach § 172 Abs. 1 VVG muss der Versicherer für eine nach Beginn der Versicheru
 
 ## Wovon die Höhe abhängt
 
-Die folgende Rechenlogik ist ein Vorschlag zum Ordnen, keine Vorgabe aus Gesetz oder Satzung.
+Die folgende Rechenlogik ist ein Vorschlag zum Ordnen, keine Vorgabe aus Gesetz oder Satzung. Die Grundidee ist einfach: Was läuft weiter, wenn dein Einkommen ausfällt?
 
 1. Laufende Ausgaben: alles, was bei Berufsunfähigkeit weiterläuft, etwa Wohnen, Lebenshaltung, Kranken- und Pflegeversicherung und Altersvorsorge. Die Verbraucherzentrale (Stand 02.01.2025) beschreibt als Maßstab, dass die Rente die alltäglichen Ausgaben absichern sollte, die auch nach Eintritt der Berufsunfähigkeit weitergezahlt werden müssen, zum Beispiel Haushaltskosten, Miete und Altersvorsorge.
 2. Verpflichtungen: Darlehen für Wohnung oder Praxis, Unterhalt für Partner\*in oder Kinder. Sie hängen von deiner Lebenssituation ab und können sich ändern, etwa bei Familiengründung oder Niederlassung.
@@ -60,7 +62,7 @@ Jedes Versorgungswerk hat eigene Regeln. Zwei Beispiele mit Fassungsdatum zeigen
 
 Unter welchen Voraussetzungen das Versorgungswerk überhaupt zahlt, steht auf der Seite „[Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen)“. Hier wird es nicht wiederholt. Beachte nur: Die Leistung ist an Voraussetzungen geknüpft, deshalb rechnest du unten zwei Fälle.
 
-Für deine Rechnung folgt daraus: Die beiden Regelwerke gehen unterschiedliche Rechenwege, und einen Betrag kannst du der Satzung allein nicht entnehmen, weil er von deinem Beitragsverlauf abhängt. Frage dein Versorgungswerk, welche Leistung dir bei Berufsunfähigkeit nach heutigem Stand zustünde, und rechne beide Fälle: mit und ohne diese Leistung.
+Für deine Rechnung folgt daraus: Die beiden Regelwerke gehen unterschiedliche Rechenwege, und einen Betrag kannst du der Satzung allein nicht entnehmen, weil er von deinem Beitragsverlauf abhängt. Der einfachste Weg ist deshalb eine Rückfrage: Frag dein Versorgungswerk, welche Leistung dir bei Berufsunfähigkeit nach heutigem Stand zustünde, und rechne beide Fälle, mit und ohne diese Leistung.
 
 Zur Anrechnung: In den §§ 41 und 53 der Satzung aus Westfalen-Lippe und in den §§ 15 Abs. 6 und 17 bis 17b der niedersächsischen ABH haben wir keine Regel gefunden, die andere Einkünfte oder eine private BU-Rente auf die Leistung des Versorgungswerks anrechnet. Ob andere Paragrafen das regeln, haben wir nicht geprüft. Frage das bei deinem Versorgungswerk nach.
 
@@ -81,6 +83,8 @@ Zur Anrechnung: In den §§ 41 und 53 der Satzung aus Westfalen-Lippe und in den
 
 *Die Lücke ist eine Rechengröße zum Vergleichen, kein Vorschlag für eine Rente. Steuer und Beiträge sind in diesem Beispiel nicht gerechnet.*
 
+Der Abstand zwischen Fall A und Fall B ist der eigentliche Punkt. Wer nur mit Fall A rechnet, verlässt sich darauf, dass die Voraussetzungen des Versorgungswerks im Ernstfall erfüllt sind.
+
 ## Steuer auf die BU-Rente
 
 Das Einkommensteuergesetz ordnet Renten nach ihrer Art zu. Zwei Bausteine aus § 22 Nr. 1 Satz 3 Buchst. a EStG:
@@ -96,6 +100,6 @@ Zur Nachversicherungsgarantie und zum Zeitpunkt des Abschlusses steht etwas auf 
 
 ## Was du mitnehmen kannst
 
-Das Gesetz legt keine Rentenhöhe fest. Eine mögliche Rechnung: laufende Ausgaben und Verpflichtungen, abzüglich der Leistung deines Versorgungswerks, die du dort erfragen kannst. Rechne zwei Fälle: mit und ohne Versorgungswerk-Leistung. Offen bleibt auf dieser Seite, welche Steuerregel für deine konkrete BU-Rente gilt.
+Das Gesetz legt keine Rentenhöhe fest. Eine mögliche Rechnung: laufende Ausgaben und Verpflichtungen, abzüglich der Leistung deines Versorgungswerks, die du dort erfragen kannst. Rechne zwei Fälle: mit und ohne Versorgungswerk-Leistung. Aus unserer Sicht ist das ehrlicher als jede Prozentregel, weil es bei deinen Zahlen ansetzt und nicht bei einem Durchschnitt. Offen bleibt auf dieser Seite, welche Steuerregel für deine konkrete BU-Rente gilt.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze abgerufen am 12.11.2026, Satzung VZWL Juli 2026, ABH ZKN 01.02.2024, Verbraucherzentrale Stand 02.01.2025.*

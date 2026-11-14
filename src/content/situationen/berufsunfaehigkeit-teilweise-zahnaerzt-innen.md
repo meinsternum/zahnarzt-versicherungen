@@ -24,9 +24,10 @@ verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-zahnaerztin-berufsstart
+  - krankengeld-luecke-zahnaerzt-innen
 ---
 
-Du kannst nach einer Erkrankung noch behandeln, aber nicht mehr so lange, so oft oder so belastend wie früher. Die Frage ist dann, ob das schon Berufsunfähigkeit ist. Die Antwort ist nicht ja oder nein, weil private Versicherung und Versorgungswerk unterschiedlich ansetzen.
+Du kannst nach einer Erkrankung noch behandeln, aber nicht mehr so lange, so oft oder so belastend wie früher. Ist das schon Berufsunfähigkeit? Die ehrliche Antwort ist weder ja noch nein, weil private Versicherung und Versorgungswerk an ganz unterschiedlichen Stellen ansetzen. Genau dieser Unterschied ist für den teilweisen Fall entscheidend.
 
 ## Was das Gesetz für die private BU sagt
 
@@ -44,7 +45,7 @@ In Westfalen-Lippe ist berufsunfähig, wer gesundheitsbedingt seine zahnärztlic
 
 In Niedersachsen (Satzung ABH ab 01.02.2024) zahlt das Versorgungswerk bei „völliger“ Berufsunfähigkeit eine Rente. Völlig berufsunfähig ist, wer eine zahnärztliche Tätigkeit nicht mehr nachhaltig ausüben kann (§ 17 Abs. 1 und 2). Das Wort „teilweise“ und eine Teilrente kommen in den gelesenen §§ 17 und 17a nicht vor.
 
-Was dein Versorgungswerk tut, wenn du nur noch eingeschränkt arbeiten kannst, sagt also deine Satzung. Was es bedeutet, die Tätigkeit aufzugeben, und was bei einer Vertretung gilt, erklären wir auf der Seite zum Versorgungswerk.
+Vereinfacht gesagt: Wer noch einen Teil seiner Zeit zahnärztlich arbeitet, erfüllt den Maßstab der beiden gelesenen Satzungen nicht. Was dein Versorgungswerk tut, wenn du nur noch eingeschränkt arbeiten kannst, sagt deine Satzung. Was es bedeutet, die Tätigkeit aufzugeben, und was bei einer Vertretung gilt, erklären wir auf der Seite zum Versorgungswerk.
 
 *Fiktives Beispiel: Die Zahnärztin Dr. K. kann nach einer Rückenerkrankung nur noch verkürzte Behandlungszeiten durchhalten und arbeitet in ihrer Praxis mit weniger Stunden weiter. Für die private BU kommt es darauf an, wie ihr Vertrag „teilweise“ definiert und ob er eine Verweisung vorsieht. Für das Versorgungswerk kommt es auf ihre Satzung an, und die beiden gelesenen Regelwerke sehen keine Teilrente vor. Ob Dr. K. Ansprüche hat, lässt sich ohne ihre Bedingungen und ihre Satzung nicht sagen.*
 
@@ -56,10 +57,10 @@ Das Gesetz lässt offen, wie der teilweise Fall gemessen wird. Diese Fragen kann
 - Sieht der Vertrag vor, dass du auf eine andere Tätigkeit verwiesen werden kannst, die du ausübst oder ausüben könntest (§ 172 Abs. 3 VVG), oder verzichtet er darauf?
 - Was gilt, wenn du noch in der Praxis arbeitest, etwa in verringertem Umfang?
 
-Wie der teilweise Fall gemessen wird, regelt dein Vertrag. Wenn du sie nicht findest, lohnt sich die Rückfrage beim Versicherer vor dem Leistungsfall.
+Wie der teilweise Fall gemessen wird, regelt dein Vertrag. Findest du die Regelung nicht, lohnt sich die Rückfrage beim Versicherer, und zwar vor dem Leistungsfall, nicht erst danach.
 
 ## Was du mitnehmen kannst
 
-Das Gesetz kennt die teilweise Berufsunfähigkeit, nennt aber keine Schwelle. Die private Versicherung folgt deinen Bedingungen. Die beiden gelesenen Regelwerke der Versorgungswerke sehen keine Teilrente vor. Ob eine Absicherung deinen Fall abdeckt, siehst du erst, wenn du beide Regelwerke nebeneinanderlegst. Dabei hilft dir die Seite zum Versorgungswerk.
+Das Gesetz kennt die teilweise Berufsunfähigkeit, nennt aber keine Schwelle. Die private Versicherung folgt deinen Bedingungen. Die beiden gelesenen Regelwerke der Versorgungswerke sehen keine Teilrente vor. Aus unserer Sicht ist der teilweise Fall deshalb genau die Stelle, an der sich zeigt, ob deine Absicherung zu deinem Arbeitsalltag passt. Das siehst du erst, wenn du beide Regelwerke nebeneinanderlegst. Dabei hilft dir die Seite zum Versorgungswerk.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Satzung VZWL Juli 2026, ABH ZKN 01.02.2024, § 172 VVG abgerufen am 13.11.2026.*

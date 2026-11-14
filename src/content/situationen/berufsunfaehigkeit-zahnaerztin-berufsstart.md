@@ -31,29 +31,32 @@ faq:
 verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
+  - krankengeld-luecke-zahnaerzt-innen
 ---
 
-Das Gesetz nennt keinen Zeitpunkt, ab dem du eine Berufsunfähigkeitsversicherung abschließen solltest. Was sich zwischen Studium, Berufsstart und Assistenzzeit ändert, sind andere Dinge: ab wann dein Vertrag läuft, was du im Antrag über deine Gesundheit angeben musst und was in den Bedingungen steht. Diese Seite ordnet das ein.
+„Muss ich mich darum jetzt schon kümmern?“ Diese Frage hören wir von Zahnärzt\*innen im Studium genauso wie kurz vor der Assistenzzeit. Die ehrliche Antwort: Einen richtigen Zeitpunkt schreibt das Gesetz nicht vor. Was sich zwischen Studium, Berufsstart und Assistenzzeit ändert, sind drei andere Dinge: ab wann dein Vertrag läuft, was du im Antrag über deine Gesundheit angeben musst und was in den Bedingungen steht. Genau die schauen wir uns hier an.
 
 ## Was das Gesetz zum Zeitpunkt festlegt
 
 Nach § 172 Abs. 1 VVG muss der Versicherer die vereinbarten Leistungen für eine nach Beginn der Versicherung eingetretene Berufsunfähigkeit erbringen. Die gesetzliche Leistungspflicht knüpft also an eine Berufsunfähigkeit an, die nach Beginn der Versicherung eintritt. Wann die Versicherung beginnt, steht in deinem Vertrag.
 
-Berufsunfähig ist nach § 172 Abs. 2 VVG, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, infolge Krankheit, Körperverletzung oder mehr als altersentsprechendem Kräfteverfall ganz oder teilweise voraussichtlich auf Dauer nicht mehr ausüben kann. Wie ein Vertrag die Studienphase behandelt und was beim Wechsel in den Beruf gilt, steht in den Versicherungsbedingungen. Eine eigene Regel dazu enthält § 172 VVG nicht.
+Berufsunfähig ist nach § 172 Abs. 2 VVG, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, infolge Krankheit, Körperverletzung oder mehr als altersentsprechendem Kräfteverfall ganz oder teilweise voraussichtlich auf Dauer nicht mehr ausüben kann. Vereinfacht gesagt: Das Gesetz legt fest, wofür der Versicherer leisten muss. Wie dein Vertrag mit dem Wechsel vom Studium in den Beruf umgeht, legt es nicht fest. Das steht in den Versicherungsbedingungen, § 172 VVG enthält dazu keine eigene Regel.
 
 ## Im Studium abschließen
 
-Wer schon als Studierende\*r eine erste Absicherung abschließt, bekommt laut Verbraucherzentrale (Stand 02.01.2025) neben dem oft guten Gesundheitszustand meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Das ist eine allgemeine Einschätzung ohne Zahlen. Was es für dich bedeutet, zeigt erst ein konkretes Angebot.
+Wer schon als Studierende\*r eine erste Absicherung abschließt, bekommt laut Verbraucherzentrale (Stand 02.01.2025) neben dem oft guten Gesundheitszustand meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Das ist eine allgemeine Einschätzung ohne Zahlen. Was sie für dich bedeutet, zeigt erst ein konkretes Angebot.
 
-Prüfe dabei, ob die Bedingungen auch nach dem Studium zu deiner Tätigkeit als Zahnärzt\*in passen und wie der Vertrag den Wechsel in den Beruf behandelt. Ob du schon im Studium eine BU brauchst, lässt sich aus Gesetz und Quellen nicht pauschal sagen. Es hängt von deinem Gesundheitsstand und den Vertragsbedingungen ab.
+Wichtig ist an der Stelle der Blick nach vorn: Passen die Bedingungen auch dann noch, wenn du als Zahnärzt\*in arbeitest, und wie regelt der Vertrag den Wechsel in den Beruf? Ob du schon im Studium eine BU brauchst, können wir dir pauschal nicht sagen, und Gesetz und Quellen können es auch nicht. Das hängt von deinem Gesundheitsstand und von den Bedingungen ab.
 
 ## Zum Berufsstart oder in der Assistenzzeit abschließen
 
 Auch für diese beiden Zeitpunkte nennt das Gesetz keinen Vorrang. Was sich ändert, ist die Ausgangslage bei den Gesundheitsfragen: Anzuzeigen ist, was dir bis zur Abgabe deiner Vertragserklärung bekannt ist. Was zwischen Studium und Antrag diagnostiziert oder behandelt wurde, kann angegeben werden müssen, wenn der Versicherer danach in Textform fragt (§ 19 Abs. 1 VVG). Wie weit die Fragen zurückreichen, steht im Antrag des jeweiligen Versicherers.
 
-*Fiktives Beispiel: Dr. K. will in der Assistenzzeit eine BU abschließen. Im Studium war sie einmal wegen Rückenschmerzen in physiotherapeutischer Behandlung. Der Antrag fragt nach Behandlungen der Wirbelsäule. Sie muss die Behandlung angeben, soweit die Frage sie erfasst. Wie weit die Frage zurückreicht, steht im Fragebogen.*
+*Fiktives Beispiel: Dr. K. will in der Assistenzzeit eine BU abschließen. Im Studium war sie einmal wegen Rückenschmerzen in physiotherapeutischer Behandlung. Längst erledigt, denkt sie. Der Antrag fragt nach Behandlungen der Wirbelsäule. Sie muss die Behandlung angeben, soweit die Frage sie erfasst. Wie weit die Frage zurückreicht, steht im Fragebogen.*
 
-Eine pauschale Antwort „zum Berufsstart“ oder „in der Assistenzzeit“ geben die Quellen nicht her. Vor dem Antrag kannst du an den Unterlagen klären:
+Entscheidend ist also nicht, wie lange etwas her ist, sondern wonach der Fragebogen fragt.
+
+„Zum Berufsstart“ oder „in der Assistenzzeit“: Eine pauschale Antwort darauf geben die Quellen nicht her. Was du stattdessen tun kannst: die Unterlagen vor dem Antrag mit diesen Fragen durchgehen.
 
 - Welche Gesundheitsfragen stellt der Antrag, und was müsstest du dazu angeben?
 - Ab wann beginnt der Versicherungsschutz?
@@ -71,7 +74,7 @@ Verletzt du diese Pflicht, kann der Versicherer vom Vertrag zurücktreten (§ 19
 
 Der Versicherer muss seine Rechte nach § 19 Abs. 2 bis 4 innerhalb eines Monats schriftlich geltend machen. Die Frist beginnt, wenn er von der Pflichtverletzung Kenntnis erlangt, und er muss die Umstände angeben, auf die er sich stützt (§ 21 Abs. 1 VVG). Tritt er nach einem Versicherungsfall zurück, muss er nicht leisten, es sei denn, die Verletzung bezieht sich auf einen Umstand, der weder für den Eintritt oder die Feststellung des Versicherungsfalls noch für die Feststellung oder den Umfang der Leistungspflicht ursächlich ist (§ 21 Abs. 2 Satz 1). Hast du die Anzeigepflicht arglistig verletzt, ist der Versicherer nicht zur Leistung verpflichtet (§ 21 Abs. 2 Satz 2). Seine Rechte nach § 19 Abs. 2 bis 4 erlöschen fünf Jahre nach Vertragsschluss. Das gilt nicht für Versicherungsfälle, die vor Ablauf der Frist eingetreten sind. Bei vorsätzlicher oder arglistiger Verletzung beträgt die Frist zehn Jahre (§ 21 Abs. 3). Das Recht, den Vertrag wegen arglistiger Täuschung anzufechten, bleibt unberührt (§ 22 VVG).
 
-Die Verbraucherzentrale rät, die Gesundheitsfragen auf jeden Fall vollständig und richtig zu beantworten, und weist darauf hin, dass die Versicherer die Antworten nicht einheitlich beurteilen (Stand 02.01.2025).
+Klingt kompliziert, und im Detail ist es das auch. Für dich heißt das vor allem eins: Die Verbraucherzentrale rät, die Gesundheitsfragen auf jeden Fall vollständig und richtig zu beantworten, und weist darauf hin, dass die Versicherer die Antworten nicht einheitlich beurteilen (Stand 02.01.2025).
 
 ## Vorerkrankungen: die anonyme Risikovoranfrage
 
@@ -81,18 +84,18 @@ Wer Probleme wegen Vorerkrankungen befürchtet, sollte laut Verbraucherzentrale 
 
 Einige Versicherer bieten laut Verbraucherzentrale (Stand 02.01.2025) sogenannte Starterpolicen an, die während einer Startphase in den ersten Jahren der Laufzeit bei gleichen Bedingungen einen günstigeren Preis haben. Nach Ablauf der Startphase steigt der Beitrag über den normalen Beitrag an. Über die gesamte Laufzeit ist das laut Verbraucherzentrale teurer.
 
-Frage deshalb vor dem Antrag nach, wie lange die Startphase dauert, wie hoch der Beitrag danach ist und ob in der Startphase dieselben Bedingungen gelten wie danach. Ein niedriger Anfangsbeitrag sagt noch nichts über die Kosten bis zum Vertragsende.
+Frage deshalb vor dem Antrag nach, wie lange die Startphase dauert, wie hoch der Beitrag danach ist und ob in der Startphase dieselben Bedingungen gelten wie danach. Ein niedriger Anfangsbeitrag fühlt sich gut an. Über die Kosten bis zum Vertragsende sagt er allein nichts.
 
 ## Nachversicherungsgarantie
 
-Die Nachversicherungsgarantie ist ein Vertragsmerkmal. In § 172 VVG ist sie nicht geregelt. Die Verbraucherzentrale (Stand 02.01.2025) beschreibt sie so: Du kannst bei bestimmten Ereignissen die Rente ohne weitere Gesundheitsprüfung erhöhen. Welche Ereignisse zählen, bis zu welcher Höhe und bis wann, steht im jeweiligen Vertrag. Beginnst du mit einer niedrigeren Rente, hängt eine spätere Erhöhung ohne neue Gesundheitsprüfung von dieser Regelung ab. Wie hoch deine Rente insgesamt sein sollte, behandelt die Seite zur Rentenhöhe.
+Die Nachversicherungsgarantie ist ein Vertragsmerkmal. In § 172 VVG ist sie nicht geregelt. Die Verbraucherzentrale (Stand 02.01.2025) beschreibt sie so: Du kannst bei bestimmten Ereignissen die Rente ohne weitere Gesundheitsprüfung erhöhen. Welche Ereignisse zählen, bis zu welcher Höhe und bis wann, steht im jeweiligen Vertrag. Konkret heißt das: Startest du mit einer niedrigeren Rente, hängt eine spätere Erhöhung ohne neue Gesundheitsprüfung genau von dieser Regelung ab. Wie hoch deine Rente insgesamt sein sollte, behandelt die Seite zur Rentenhöhe.
 
 ## Versorgungswerk
 
-Was das Versorgungswerk bei Berufsunfähigkeit regelt, erklärt die Seite „Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?“. Hier wird es nicht wiederholt.
+Was das Versorgungswerk bei Berufsunfähigkeit regelt, erklärt die Seite „[Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen)“. Hier wird es nicht wiederholt.
 
 ## Was du mitnehmen kannst
 
-Für den Zeitpunkt gibt es keine feste Regel im Gesetz. Ausschlaggebend sind, wann dein Vertrag beginnt (§ 172 Abs. 1 VVG), was du im Antrag angeben musst (§ 19 Abs. 1 VVG) und was in den Bedingungen steht, etwa zu Startphase und Nachversicherung. Die Gesundheitsfragen eines konkreten Antrags und die Bedingungen eines konkreten Vertrags lassen sich nur an den Unterlagen beurteilen.
+Den einen richtigen Zeitpunkt gibt es im Gesetz nicht. Ausschlaggebend sind, wann dein Vertrag beginnt (§ 172 Abs. 1 VVG), was du im Antrag angeben musst (§ 19 Abs. 1 VVG) und was in den Bedingungen steht, etwa zu Startphase und Nachversicherung. Aus unserer Sicht ist deshalb weniger die Frage „wann?“ entscheidend als „mit welchem Antrag und welchen Bedingungen?“. Und die lässt sich nur an den konkreten Unterlagen beantworten.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze abgerufen am 12.11.2026, Verbraucherzentrale Stand 02.01.2025.*

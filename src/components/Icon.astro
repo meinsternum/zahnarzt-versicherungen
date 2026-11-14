@@ -1,6 +1,6 @@
 ---
 // Einfache Linien-Symbole im CI-Stil (2px Strich, runde Enden). Rein dekorativ.
-interface Props { name: 'start' | 'schild' | 'praxis' | 'kalender' | 'gespraech' | 'dokument' | 'pfeil' | 'quelle'; size?: number }
+interface Props { name: 'start' | 'schild' | 'praxis' | 'kalender' | 'gespraech' | 'dokument' | 'pfeil' | 'quelle' | 'sparen' | 'puls' | 'waage' | 'uhr' | 'runter'; size?: number }
 const { name, size = 24 } = Astro.props;
 const pfade: Record<string, string> = {
   start: '<path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.2V16c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.8"/><path d="M21 9v5"/>',
@@ -11,6 +11,11 @@ const pfade: Record<string, string> = {
   dokument: '<path d="M7 3h7l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1z"/><path d="M14 3v4h4M9 12h6M9 16h6"/>',
   pfeil: '<path d="M5 12h14M13 6l6 6-6 6"/>',
   quelle: '<path d="M5 4h9l5 5v11H5z"/><path d="M9 13l2 2 4-4"/>',
+  sparen: '<path d="M4 20h16"/><path d="M6 20v-5M10 20V11M14 20V8M18 20V5"/>',
+  puls: '<path d="M3 12h4l2-5 4 10 2-5h6"/>',
+  waage: '<path d="M12 4v16M8 20h8M5 7h14"/><path d="M5 7l-2.5 6a2.5 2.5 0 005 0L5 7zM19 7l-2.5 6a2.5 2.5 0 005 0L19 7z"/>',
+  uhr: '<circle cx="12" cy="12" r="8"/><path d="M12 8v4l3 2"/>',
+  runter: '<path d="M6 9l6 6 6-6"/>',
 };
 ---
 <svg class="icon" width={size} height={size} viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false" set:html={pfade[name]} />
