@@ -156,7 +156,7 @@ const profile = SOCIAL.filter((s) => s.url);
     <footer class="fuss">
       <div class="rahmen fuss-raster">
         <div>
-          <p class="fuss-marke"><span>zahnarzt</span><b>versicherungen</b></p>
+          <p class="fuss-marke"><a href="/"><img src="/favicon.svg" alt="" width="36" height="36" loading="lazy" /><span class="wortmarke-text"><span>zahnarzt</span><b>versicherungen</b></span></a></p>
           <p>Ein Angebot der <a href={O.url}>{firma}</a><br />{O.strasse}, {O.plz} {O.ort}</p>
           <p><a href={O.telefonLink}>{O.telefon}</a><br /><a href={`mailto:${O.email}`}>{O.email}</a></p>
           {profile.length > 0 && <p>{profile.map((s, i) => <>{i > 0 && ' · '}<a href={s.url}>{s.name}</a></>)}</p>}

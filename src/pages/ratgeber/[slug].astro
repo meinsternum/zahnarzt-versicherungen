@@ -7,7 +7,7 @@ import Icon from '../../components/Icon.astro';
 import CtaBlock from '../../components/CtaBlock.astro';
 import { datumDe } from '../../lib/datum';
 import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
-import { fotoJeSeite, STANDARD_FOTO } from '../../lib/fotos';
+import { fotoJeSeite, STANDARD_FOTO, kreisZu } from '../../lib/fotos';
 import { phaseJeSeite } from '../../lib/phasen';
 import { SITE_URL } from '../../lib/site';
 import { organisation, person, faqPage, ORG_ID, PERSON_ID } from '../../lib/schema';
@@ -65,7 +65,8 @@ const jsonLd = [
         <p class="stand-zeile">Stand: <time datetime={d.stand}>{datumDe(d.stand)}</time> · Text: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : 'Patrick Senn'}, Geschäftsführer</p>
       </div>
       <figure class="artikel-foto">
-        <Foto foto={foto} sizes="(min-width: 760px) 15rem, 5.5rem" breiten={[180, 360, 480]} />
+        <Foto foto={foto} class="foto-gross" sizes="15rem" breiten={[240, 360, 480]} />
+        <Foto foto={kreisZu[foto] ?? foto} class="foto-kreis" sizes="5.5rem" breiten={[180, 360]} />
         <figcaption>Patrick Senn schreibt und verantwortet die Texte auf dieser Seite.</figcaption>
       </figure>
     </header>

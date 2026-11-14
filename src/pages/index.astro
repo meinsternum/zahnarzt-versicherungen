@@ -34,8 +34,8 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
         <Bewertungszeile class="a-hero-bewertung" />
       </div>
       <figure class="a-hero-bild">
-        <Foto foto="patrick-04-hoch" prioritaet sizes="(min-width: 900px) 34vw, 88vw" breiten={[400, 560, 720, 960]} />
-        <figcaption><b>Patrick Senn</b> Geschäftsführer</figcaption>
+        <Foto foto="team-02" prioritaet sizes="(min-width: 900px) 45vw, 92vw" breiten={[480, 720, 960, 1280]} />
+        <figcaption><b>Das Team von MEIN STERNUM</b> mit Patrick Senn, Geschäftsführer</figcaption>
       </figure>
     </div>
   </section>
@@ -98,7 +98,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
         <h2 id="wer-h">{werWirSind.h2}</h2>
       </header>
       <figure class="a-team einblenden">
-        <Foto foto="team-02" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
+        <Foto foto="schreibtisch-01" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
       </figure>
       <div class="a-wer-text einblenden">
         <p>{werVor}<a href={ORGANISATION.url}>{FIRMA}</a>{werNach}</p>
@@ -140,7 +140,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
 
 <style is:global>
   .startseite .a-hero { padding: clamp(2.5rem, 6vw, 5.5rem) 0 clamp(3rem, 7vw, 6rem); }
-  .startseite .a-hero-raster { display: grid; grid-template-columns: 1.25fr 0.85fr; gap: clamp(2rem, 5vw, 5rem); align-items: center; }
+  .startseite .a-hero-raster { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: center; }
   .startseite .a-hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.4rem); line-height: 1.04; letter-spacing: -0.03em; margin-bottom: 1.6rem; }
   .startseite .a-hero h1 .stark { font-weight: 700; display: block; }
   .startseite .a-hero h1 .leicht { font-weight: 300; color: var(--teal); }
@@ -148,7 +148,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
   .startseite .a-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem; }
   .startseite .a-hero-bewertung { max-width: 30rem; }
   .startseite .a-hero-bild { margin: 0; position: relative; }
-  .startseite .a-hero-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 28px; }
+  .startseite .a-hero-bild img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; }
   .startseite .a-hero-bild figcaption { position: absolute; left: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.94); border-radius: 12px; padding: 0.55rem 0.9rem; font-size: 0.85rem; color: var(--text-leise); line-height: 1.35; box-shadow: var(--schatten); }
   .startseite .a-hero-bild figcaption b { display: block; color: var(--navy); font-weight: 600; }
 
@@ -191,7 +191,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
 
   @media (max-width: 900px) {
     .startseite .a-hero-raster, .startseite .a-ablauf-raster, .startseite .a-faq-raster, .startseite .a-gruppen { grid-template-columns: 1fr; }
-    .startseite .a-hero-bild { max-width: 26rem; }
+    .startseite .a-hero-bild { max-width: 40rem; }
     .startseite .a-ablauf-bild img { aspect-ratio: 3 / 2; }
   }
 </style>

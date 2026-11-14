@@ -160,6 +160,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 .fuss a { color: #fff; }
 .fuss-raster { display: grid; gap: 2.5rem; grid-template-columns: 1.6fr 1fr; padding-top: 3.5rem; padding-bottom: 2.5rem; }
 .fuss-marke { font-size: 1.15rem; color: #fff; margin-bottom: 0.8rem; }
+.fuss-marke a { display: inline-flex; align-items: center; gap: 0.6rem; color: #fff; text-decoration: none; }
+.fuss-marke img { width: 36px; height: 36px; }
 .fuss-titel { color: #fff; font-weight: 600; margin-bottom: 0.6rem; }
 .fuss li { margin-bottom: 0.4rem; }
 .fuss li a { text-decoration: none; }
@@ -227,6 +229,8 @@ main:focus { outline: none; }
 .stand-zeile { font-size: 0.9rem; color: var(--text-leise); margin: 0; }
 .artikel-foto { margin: 0; }
 .artikel-foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; }
+.artikel-foto .foto-kreis, .artikel-foto picture:has(.foto-kreis) { display: none; }
+.artikel-foto picture { display: block; }
 .artikel-foto figcaption { font-size: 0.82rem; color: var(--text-leise); margin-top: 0.5rem; }
 .vorschau-hinweis { margin: 1rem 0 0; background: #fff4d6; color: #5a4600; border: 1px solid #e8d18a; border-radius: 10px; padding: 0.6rem 0.9rem; font-size: 0.9rem; }
 
@@ -272,7 +276,9 @@ main:focus { outline: none; }
   .artikel-kopf { grid-template-columns: minmax(0, 1fr); }
   .artikel-kopf h1 { hyphens: auto; -webkit-hyphens: auto; overflow-wrap: break-word; }
   .artikel-foto { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.9rem; align-items: center; }
-  .artikel-foto img { aspect-ratio: 1 / 1; border-radius: 50%; }
+  .artikel-foto .foto-gross, .artikel-foto picture:has(.foto-gross) { display: none; }
+  .artikel-foto picture:has(.foto-kreis) { display: block; }
+  .artikel-foto .foto-kreis { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; }
   .artikel-foto figcaption { margin: 0; }
 }
 .abstand-unten { height: clamp(3rem, 6vw, 5rem); }
