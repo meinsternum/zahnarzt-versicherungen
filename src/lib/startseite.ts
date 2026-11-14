@@ -5,7 +5,7 @@
 export const hero = {
   h1: 'Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen', // bestehende Startseite
   lead: {
-    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln. Er beantwortet Fragen von Zahnärzt*innen zur Absicherung, mit Quellen und dem Datum der letzten Prüfung.',
+    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln. Hier findest du Antworten auf konkrete Fragen von Zahnärzt*innen zur Absicherung: kurz beantwortet, mit Quellen und dem Datum der letzten Prüfung.',
     entwurf: true,
   },
   cta: 'Erstgespräch buchen', // bestehende Startseite
@@ -24,17 +24,17 @@ export const ablauf = {
     {
       titel: 'Termin wählen',
       // Angaben von Patrick, 13.11.2026
-      text: 'Du buchst online einen Termin für ein Erstgespräch. Es ist kostenlos und dauert in der Regel etwa eine Stunde.',
+      text: 'Du suchst dir online einen Termin für das Erstgespräch aus. Es ist kostenlos und dauert in der Regel etwa eine Stunde.',
     },
     {
       titel: 'Gespräch',
       // Wortlaut nach bestehender Startseite
-      text: 'Wir gehen deine Situation gemeinsam durch, digital per Zoom, telefonisch oder vor Ort in Köln.',
+      text: 'Wir gehen deine Situation in Ruhe gemeinsam durch, per Zoom, telefonisch oder vor Ort in Köln.',
     },
     {
       titel: 'Empfehlung mit Begründung',
       // Wortlaut nach bestehender Startseite, Zeitpunkt und Form von Patrick, 13.11.2026
-      text: 'Nach dem Gespräch erhältst du per E-Mail eine verständliche Übersicht mit konkreten Empfehlungen und der Begründung dazu.',
+      text: 'Nach dem Gespräch bekommst du per E-Mail eine verständliche Übersicht: konkrete Empfehlungen und jeweils, warum wir sie dir geben. Entscheiden kannst du danach in Ruhe.',
     },
   ],
 };
@@ -46,7 +46,7 @@ export const werWirSind = {
   entwurf: true,
   absaetze: [
     'zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.',
-    'Patrick Senn hat das Unternehmen 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Er schreibt und verantwortet die Texte auf dieser Seite.',
+    'Patrick Senn hat das Unternehmen 2015 mitgegründet und ist seitdem Geschäftsführer. Ärzt*innen berät er seit 2008, angefangen als Berater bei der HORBACH Wirtschaftsberatung in Köln. Er schreibt und verantwortet die Texte auf dieser Seite.',
   ],
   link: 'Mehr über Patrick Senn und das Team', // bestehende Startseite
 };
@@ -76,5 +76,5 @@ export const faq = {
 
 export const abschluss = {
   h2: 'Nächste Schritte', // bestehende Startseite
-  text: 'Persönliche Fragen klären wir im Gespräch. Im Erstgespräch gehen wir deine Situation gemeinsam durch.', // bestehende Startseite
+  text: 'Eine Ratgeberseite kann vieles erklären, aber nicht deine persönliche Situation. Die gehen wir im Erstgespräch gemeinsam durch.', // Stil-Skill, Entwurf zur Freigabe 14.11.2026
 };
