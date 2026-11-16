@@ -17,7 +17,7 @@ import { breadcrumbs, type Krume } from '../lib/schema';
 import Icon from '../components/Icon.astro';
 import { getCollection } from 'astro:content';
 import { visible } from '../lib/status';
-import { gruppiere, menueTitel } from '../lib/phasen';
+import { gruppiere, menueTitel, themenPfad } from '../lib/phasen';
 
 interface Props {
   title: string;
@@ -113,9 +113,10 @@ const profile = SOCIAL.filter((s) => s.url);
                       <div class="mega-themen">
                         {menueGruppen.map((g) => (
                           <div class="mega-thema">
-                            <p class="mega-kopf"><a href={`/ratgeber#thema-${g.id}`}><span class="mega-symbol"><Icon name={g.icon} size={18} /></span>{g.titel}</a></p>
+                            <p class="mega-kopf"><a href={themenPfad(g.id)}><span class="mega-symbol"><Icon name={g.icon} size={18} /></span>{g.titel}</a></p>
                             <ul>
-                              {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.slice(0, 4).map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.length > 4 && <li class="mega-mehr"><a href={themenPfad(g.id)}>Alle {g.seiten.length} Fragen</a></li>}
                             </ul>
                           </div>
                         ))}
@@ -145,7 +146,9 @@ const profile = SOCIAL.filter((s) => s.url);
                     <details class="menue-thema">
                       <summary><span class="mega-symbol"><Icon name={g.icon} size={16} /></span>{g.titel}<Icon name="runter" size={16} /></summary>
                       <ul>
-                        {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                        <li class="mega-mehr"><a href={themenPfad(g.id)}>Übersicht {g.titel}</a></li>
+                        {g.seiten.slice(0, 4).map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.length > 4 && <li class="mega-mehr"><a href={themenPfad(g.id)}>Alle {g.seiten.length} Fragen</a></li>}
                       </ul>
                     </details>
                   ))}

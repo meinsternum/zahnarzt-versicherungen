@@ -22,13 +22,17 @@ Handelsregisternummer: HRB 84954
 
 Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE302066579
 
-## Erlaubnis und Registrierung
+## Erlaubnis, Aufsicht und Registrierung
 
 Die MEIN STERNUM Finanzberatung GmbH ist tätig als Versicherungsmakler im Sinne des § 34d Abs. 1 der Gewerbeordnung. Die Erlaubnis nach § 34d Abs. 1 GewO wurde am 24.11.2015 durch die IHK Köln, Unter Sachsenhausen 10-26, 50667 Köln erteilt. Eintragung im Versicherungsvermittlerregister unter der Nummer D-76KX-2USW4-01 gemäß § 34d Abs. 7 GewO.
 
 Für die Finanzanlagenvermittlung gemäß § 34f Abs. 1 Satz 1 Nr. 1 GewO wurde die Erlaubnis durch die IHK Köln am 24.11.2015 erteilt, Registrierungsnummer D-F-142-J122-06.
 
 Die Eintragungen können beim Deutschen Industrie- und Handelskammertag (DIHK) e.V., Breite Str. 29, 10178 Berlin, sowie im Internet unter www.vermittlerregister.info abgefragt werden.
+
+Zuständige Aufsichtsbehörde ist die Industrie- und Handelskammer Köln, Unter Sachsenhausen 10-26, 50667 Köln.
+
+Berufshaftpflichtversicherung: ERGO Versicherung AG, 40198 Düsseldorf. Räumlicher Geltungsbereich: Deutschland.
 
 Es bestehen keine direkten oder indirekten Beteiligungen von über zehn Prozent an den Stimmrechten oder am Kapital eines Versicherungsunternehmens.
 
@@ -61,4 +65,16 @@ Ombudsmann Private Kranken- und Pflegeversicherung, Kronenstr. 13, 10117 Berlin
 
 Die Inhalte dieser Seiten dienen der allgemeinen Information und ersetzen keine individuelle Beratung. Für eigene Inhalte sind wir nach den allgemeinen Gesetzen verantwortlich. Für Inhalte verlinkter externer Seiten ist der jeweilige Betreiber verantwortlich. Bei Bekanntwerden von Rechtsverletzungen entfernen wir die betreffenden Inhalte oder Links umgehend.
 
-[PRÜFEN: Übernahme der weiteren Abschnitte (Urheberrecht, Transparenzverordnung/Nachhaltigkeitsrisiken) aus dem Impressum von meinsternum.de. Die Angaben zur Transparenzverordnung gelten für Finanzprodukte; prüfen, ob sie für diese Seite nötig sind.]
+## Verantwortlich für den Inhalt
+
+Verantwortlich für die redaktionellen Inhalte nach § 18 Abs. 2 MStV: Patrick Senn, Göppinger Str. 2a, 50739 Köln.
+
+## Urheberrecht
+
+Die Texte, Grafiken und Fotos auf dieser Website unterliegen dem deutschen Urheberrecht. Eine Verwendung außerhalb der gesetzlichen Grenzen braucht unsere Zustimmung. Inhalte Dritter sind als solche gekennzeichnet.
+
+## Nachhaltigkeit (Offenlegungsverordnung (EU) 2019/2088)
+
+Bei der Auswahl von Anbietern berücksichtigen wir deren Angaben zu Nachhaltigkeitsrisiken, also Ereignissen aus Umwelt, Sozialem und Unternehmensführung, die den Wert einer Anlage mindern können (Art. 3). Nachteilige Nachhaltigkeitsauswirkungen berücksichtigen wir anhand der Angaben der Anbieter, das ist derzeit nur eingeschränkt möglich, weil diese Angaben noch lückenhaft sind (Art. 4). Unsere Vergütung wird von Nachhaltigkeitsrisiken nicht beeinflusst (Art. 5).
+
+<!-- Inhalt sinngemäß nach dem Impressum von meinsternum.de (abgerufen 16.11.2026). -->

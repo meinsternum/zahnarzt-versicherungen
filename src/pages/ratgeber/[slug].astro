@@ -8,7 +8,7 @@ import CtaBlock from '../../components/CtaBlock.astro';
 import { datumDe } from '../../lib/datum';
 import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
 import { fotoJeSeite, STANDARD_FOTO, kreisZu } from '../../lib/fotos';
-import { phaseJeSeite } from '../../lib/phasen';
+import { phaseJeSeite, themaVon, themenPfad } from '../../lib/phasen';
 import { SITE_URL } from '../../lib/site';
 import { organisation, person, faqPage, ORG_ID, PERSON_ID } from '../../lib/schema';
 
@@ -48,8 +48,9 @@ const jsonLd = [
   person(),
   ...(d.faq.length ? [faqPage(d.faq)] : []),
 ];
+const thema = themaVon(entry.id);
 ---
-<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd} ogTyp="article" krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: d.titel, href: `/ratgeber/${entry.id}` }]}>
+<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd} ogTyp="article" krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: thema.titel, href: themenPfad(thema.id) }, { name: d.titel, href: `/ratgeber/${entry.id}` }]}>
   <article class="rahmen">
     {!isProduction && d.status !== 'freigegeben' && (
       <p class="vorschau-hinweis">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>

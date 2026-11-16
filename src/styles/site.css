@@ -368,3 +368,26 @@ main:focus { outline: none; }
   .startseite .themengruppe .karten, .themen-raster .karten { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); }
 }
 .startseite .karte > p:not(.karte-phase), .themen-raster .karte > p:not(.karte-phase) { display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
+
+/* Themen-Übersichtsseiten und Themenkarten */
+.thema-marke { display: inline-flex; align-items: center; gap: 0.45rem; font-size: 0.9rem; font-weight: 600; color: var(--teal); margin: 0 0 0.5rem; }
+.thema-karten { margin-top: 1rem; }
+.karte h2 { margin: 0 0 0.6rem; font-size: 1.15rem; line-height: 1.3; color: var(--navy); font-weight: 600; }
+.karte h2 a { color: inherit; text-decoration: none; }
+.karte h2 a::after { content: ''; position: absolute; inset: 0; border-radius: var(--radius); }
+.thema-weiter { margin: 2rem 0 0; }
+.thema-weiter a, .themenkarte-alle { display: inline-flex; align-items: center; gap: 0.35rem; font-weight: 600; }
+.themenkarten { list-style: none; padding: 0; margin: 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr)); }
+.themenkarte { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.75rem; }
+.themenkarte h3 { margin: 0; display: flex; align-items: center; gap: 0.55rem; font-size: 1.2rem; color: var(--navy); }
+.themenkarte h3 a { color: inherit; text-decoration: none; }
+.themenkarte h3 .icon { color: var(--teal-hell); }
+.themenkarte > p { margin: 0; color: var(--text-leise); font-size: 0.97rem; }
+.themenkarte ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 0.45rem; border-top: 1px solid var(--linie); padding-top: 0.85rem; }
+.themenkarte li a { color: var(--navy); text-decoration: none; font-size: 0.95rem; line-height: 1.35; }
+.themenkarte li a:hover { text-decoration: underline; }
+.themenkarte-alle { margin-top: auto; font-size: 0.95rem; }
+.a-themen-lead { margin: -0.5rem 0 1.5rem; color: var(--text-leise); max-width: 40rem; }
+.mega-mehr a { font-weight: 600; }
+.themengruppe-titel a { color: inherit; text-decoration: none; }
+.themengruppe-titel a:hover { text-decoration: underline; }

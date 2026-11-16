@@ -5,7 +5,7 @@ import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CtaBlock from '../../components/CtaBlock.astro';
 import { visible } from '../../lib/status';
-import { gruppiere, phaseJeSeite } from '../../lib/phasen';
+import { gruppiere, phaseJeSeite, themenPfad } from '../../lib/phasen';
 import { SITE_URL } from '../../lib/site';
 import { organisation } from '../../lib/schema';
 
@@ -25,7 +25,6 @@ const jsonLd = [
     },
   },
 ];
-const REIHE: Record<string, number> = { 'Berufsunfähigkeit': 1, 'Praxisausfall': 2, 'Altersvorsorge': 3, 'Praxisinhalt': 4, 'Krankenversicherung': 5, 'Berufshaftpflicht': 6 };
 ---
 <Base title="Ratgeber für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen." path="/ratgeber" jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }]}>
   <div class="rahmen">
@@ -35,8 +34,8 @@ const REIHE: Record<string, number> = { 'Berufsunfähigkeit': 1, 'Praxisausfall'
     </header>
     <div class="themen-raster">
     {gruppen.map((g) => (
-      <section class="themengruppe" style={`--n:${Math.min(g.seiten.length, 4)};order:${REIHE[g.titel] ?? 9}`} aria-labelledby={`thema-${g.id}`}>
-        <h2 class="themengruppe-titel" id={`thema-${g.id}`}><Icon name={g.icon} size={22} />{g.titel}</h2>
+      <section class="themengruppe" style={`--n:${Math.min(g.seiten.length, 4)}`} aria-labelledby={`thema-${g.id}`}>
+        <h2 class="themengruppe-titel" id={`thema-${g.id}`}><Icon name={g.icon} size={22} /><a href={themenPfad(g.id)}>{g.titel}</a></h2>
         <ul class="karten">
           {g.seiten.map((s) => (
             <li class="karte">

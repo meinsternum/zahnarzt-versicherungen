@@ -1,14 +1,16 @@
 // Ordnung der Ratgeberseiten: nach Thema gruppiert, Berufsphase als Hinweis je Seite.
 // (Patrick, 13.11.2026: gemischte Gruppen aus Phase und Produkt wirkten unstimmig.)
 // Dieselbe Ordnung speist Ratgeber-Übersicht, Startseite und das Mega-Menü.
+// Jedes Thema hat eine eigene Übersichtsseite unter /themen/<id> (16.11.2026): Startseite und Menü
+// zeigen nur Themen und einige Fragen, damit sie bei vielen Unterseiten nicht überlaufen.
 // Themen ohne sichtbare Seite werden nirgends angezeigt (keine toten Links).
 export const themen = [
-  { id: 'berufsunfaehigkeit', titel: 'Berufsunfähigkeit', icon: 'schild' },
-  { id: 'altersvorsorge', titel: 'Altersvorsorge', icon: 'sparen' },
-  { id: 'krankenversicherung', titel: 'Krankenversicherung', icon: 'puls' },
-  { id: 'berufshaftpflicht', titel: 'Berufshaftpflicht', icon: 'waage' },
-  { id: 'praxisinhalt', titel: 'Praxisinhalt', icon: 'praxis' },
-  { id: 'praxisausfall', titel: 'Praxisausfall', icon: 'uhr' },
+  { id: 'berufsunfaehigkeit', titel: 'Berufsunfähigkeit', icon: 'schild', beschreibung: 'Was das Versorgungswerk bei Berufsunfähigkeit zahlt, wann eine private BU sinnvoll ist und wie hoch die Rente sein sollte.' },
+  { id: 'praxisausfall', titel: 'Praxisausfall', icon: 'uhr', beschreibung: 'Wann die Praxisausfallversicherung zahlt, wie du den Tagessatz bestimmst und wie sie sich vom Krankentagegeld abgrenzt.' },
+  { id: 'praxisinhalt', titel: 'Praxisinhalt', icon: 'praxis', beschreibung: 'Was in der Inhaltsversicherung deiner Zahnarztpraxis versichert ist und wie Unterversicherung entsteht.' },
+  { id: 'krankenversicherung', titel: 'Krankenversicherung', icon: 'puls', beschreibung: 'Was bei längerer Krankheit vom Einkommen bleibt und wie ein Krankentagegeld die Lücke schließt.' },
+  { id: 'altersvorsorge', titel: 'Altersvorsorge', icon: 'sparen', beschreibung: 'Was das Versorgungswerk im Alter zahlt und wie du eine mögliche Rentenlücke berechnest.' },
+  { id: 'berufshaftpflicht', titel: 'Berufshaftpflicht', icon: 'waage', beschreibung: 'Pflicht, Mindestsummen und worauf du im Vertrag deiner Berufshaftpflicht achtest.' },
 ] as const;
 
 export type ThemaId = (typeof themen)[number]['id'];
@@ -62,3 +64,6 @@ export function gruppiere<T extends { id: string }>(seiten: T[]) {
     .map((t) => ({ ...t, seiten: seiten.filter((s) => (themaJeSeite[s.id] ?? 'berufsunfaehigkeit') === t.id) }))
     .filter((t) => t.seiten.length > 0);
 }
+
+export const themenPfad = (id: string) => `/themen/${id}`;
+export const themaVon = (seitenId: string) => themen.find((t) => t.id === (themaJeSeite[seitenId] ?? 'berufsunfaehigkeit'))!;
