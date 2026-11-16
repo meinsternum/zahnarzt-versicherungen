@@ -26,6 +26,7 @@ faq:
     antwort: "Das GDV-Muster enthält dafür eine Klausel (B 190501). Sie gilt nur, wenn sie vereinbart ist, und nur bis zu vereinbarten Grenzen. Die Grenzen nennt das Muster nicht."
 verwandt:
   - praxisinhalt-was-gehoert-hinein-zahnaerzt-innen
+  - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
 ---
 
 „Die Summe habe ich damals festgelegt, das passt schon.“ Vielleicht. Entscheidend sind zwei Begriffe, die sich zum Verwechseln ähnlich anhören: Die Versicherungssumme ist der Betrag, den du im Vertrag vereinbarst. Der Versicherungswert ist das, was nach den Regeln des Vertrags oder des Gesetzes zum Zeitpunkt des Schadens als Wert gilt. Liegt die Summe erheblich darunter, kann die Entschädigung gekürzt werden. Diese Seite zeigt, was das Gesetz dazu sagt und wie die unverbindlichen Musterbedingungen des Gesamtverbands der Versicherer (GDV) rechnen. Was in deinem Vertrag steht, entscheiden die Bedingungen deines Versicherers.

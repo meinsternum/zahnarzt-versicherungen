@@ -3,7 +3,7 @@
 // fiktive Beispiele gekennzeichnet, Fußzeile mit Stand und Quelle, keine neuen Zahlen.
 // Typen: tabelle (Vergleichstabelle), karten (Karten-Infografik), ablauf (Schritte/Zeitachse).
 // Platzierung: `nach` = Text der H2, an deren Abschnittsende die Grafik steht; 'start' = vor dem ersten H2.
-// Status: Entwurf zur Freigabe (14.11.2026), Prüfung durch den Inhalts-Chat offen.
+// Status: Praxisausfall-Seiten geprüft am 16.11.2026 (Regelwerk Fassung 3); übrige Grafiken Stand 14.11.2026.
 
 export const grafiken = {
   'berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen': [
@@ -186,24 +186,24 @@ export const grafiken = {
   ],
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': [
     {
-      typ: 'karten', nach: 'Wann zahlt sie?',
+      typ: 'ablauf', nach: 'Was bedeutet Haftzeit oder Leistungsdauer?',
+      titel: 'Karenzzeit und Haftzeit im Bedingungswerk A',
+      schritte: [
+        { titel: 'Schadenereignis', text: 'Ärztlich festgestellte Arbeitsunfähigkeit der leitenden Person (§ 2 Nr. 2). Karenzzeit und Haftzeit beginnen.' },
+        { titel: 'Karenzzeit', text: 'Kein Anspruch auf Leistung, die Praxis trägt die Kosten selbst (§ 4 Nr. 3).' },
+        { titel: 'Leistung', text: 'Nach Ablauf der Karenzzeit, längstens bis zum Ende der vereinbarten Haftzeit (§ 4 Nr. 1 und 2).' },
+      ],
+      fuss: 'Nach einem einzelnen Bedingungswerk (Stand 01.08.2020). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'karten', nach: 'Welche Pflichten hast du im Schadenfall?',
       titel: 'Deine Pflichten nach dem Versicherungsfall',
       karten: [
         { kopf: 'Anzeigen', punkte: ['Unverzüglich (§ 30 Abs. 1 VVG)'] },
         { kopf: 'Auskunft geben', punkte: ['Auf Verlangen, Belege soweit zumutbar (§ 31 VVG)'] },
         { kopf: 'Schaden mindern', punkte: ['Nach Möglichkeit (§ 82 Abs. 1 VVG)'] },
       ],
-      fuss: 'Stand: VVG abgerufen am 14.11.2026. Weitere Pflichten kann dein Vertrag nennen.',
-    },
-    {
-      typ: 'ablauf', nach: 'Wie Karenzzeit und Leistungsdauer zusammenspielen',
-      titel: 'Der Gedanke dahinter',
-      schritte: [
-        { titel: 'Ausfall beginnt', text: 'Der Auslöser, den dein Vertrag beschreibt' },
-        { titel: 'Karenzzeit', text: 'Falls vereinbart: noch keine Zahlung, die Kosten laufen weiter' },
-        { titel: 'Zahlung', text: 'Bis die vereinbarte Leistungsdauer endet' },
-      ],
-      fuss: 'Beschreibung des Gedankens, kein Beleg für den Ablauf in einem bestimmten Vertrag.',
+      fuss: 'Stand: VVG abgerufen am 16.11.2026. Weitere Pflichten kann dein Vertrag nennen.',
     },
   ],
   'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': [
@@ -214,7 +214,7 @@ export const grafiken = {
         { kopf: 'Im Beispiel enthalten', punkte: ['Personal', 'Raumkosten', 'Leasing, Zinsen, Abschreibungen', 'Übrige laufende Kosten'] },
         { kopf: 'Im Beispiel nicht enthalten', punkte: ['Material', 'Fremdlabor', 'Unsere Einschätzung für das Beispiel: behandlungsabhängig, keine Regel'] },
       ],
-      fuss: 'Kostenarten nach KZBV Jahrbuch 2025, Tab. 5.3; Einordnung angelehnt an FBUB 2010 (unverbindlich).',
+      fuss: 'Kostenarten des fiktiven Beispiels, angelehnt an KZBV Jahrbuch 2025, Tab. 5.3, und an ein einzelnes Bedingungswerk (Stand 01.08.2020).',
     },
   ],
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': [
@@ -222,10 +222,10 @@ export const grafiken = {
       typ: 'karten', nach: 'start',
       titel: 'Zwei Fragen, zwei Absicherungen',
       karten: [
-        { kopf: 'Was fehlt mir persönlich?', punkte: ['Krankentagegeld: ersetzt Verdienstausfall bei Arbeitsunfähigkeit (§ 192 Abs. 5 VVG)', 'Grenze nach Muster: Nettoeinkommen (§ 4 Abs. 2 MB/KT)'] },
-        { kopf: 'Was fehlt der Praxis?', punkte: ['Betriebsunterbrechung nach Muster: fortlaufende Kosten und Betriebsgewinn nach einem Sachschaden (FBUB A § 1)', 'Praxisausfall bei Krankheit: kein Muster gefunden, es gilt dein Vertrag'] },
+        { kopf: 'Was fehlt mir persönlich?', punkte: ['Krankentagegeld: ersetzt Verdienstausfall bei Arbeitsunfähigkeit (§ 192 Abs. 5 VVG)', 'Grenze nach Muster: Nettoeinkommen (§ 4 Abs. 2 MB/KT 2009)'] },
+        { kopf: 'Was fehlt der Praxis?', punkte: ['Praxisausfall: fortlaufende Kosten, je nach Vereinbarung auch entgehender Gewinn (Bedingungswerk A, § 4 Nr. 1)', 'Auslöser dort: Arbeitsunfähigkeit der leitenden Person (§ 2 Nr. 2)'] },
       ],
-      fuss: 'Stand: VVG abgerufen am 14.11.2026, MB/KT 2009 (Juni 2024), FBUB 2010 (Version 01.04.2014), unverbindliche Muster.',
+      fuss: 'Stand: VVG abgerufen am 16.11.2026, MB/KT 2009 (Juni 2024), Bedingungswerk A (01.08.2020). Dein Vertrag kann abweichen.',
     },
   ],
 };

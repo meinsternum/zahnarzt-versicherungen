@@ -32,6 +32,7 @@ faq:
     antwort: "Nach den GDV-Mustern gelten Daten und Programme nicht als Sachen. Versichert sind nur einzelne Fälle, etwa notwendige Systemprogrammdaten der versicherten Betriebseinrichtung. Cyberschäden sind ein eigenes Thema."
 verwandt:
   - praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen
+  - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
 ---
 
 „Die Praxis ist doch versichert, da steht Inhalt drauf.“ Ob das reicht, zeigt erst der Blick in die Bedingungen. Für die Frage, was in eine Praxisinhaltsversicherung gehört, kannst du die Musterbedingungen des Gesamtverbands der Versicherer (GDV) als Vergleich heranziehen. Sie sind unverbindlich, Versicherer dürfen sie verwenden oder davon abweichen. Deshalb zeigt diese Seite, wie die Muster gegliedert sind. Was in deinem Vertrag steht, entscheiden die Bedingungen deines Versicherers.

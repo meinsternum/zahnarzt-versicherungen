@@ -39,6 +39,7 @@ verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+  - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
 ---
 
 Du bist ein paar Wochen krank, die Praxis läuft ohne dich, und der Arbeitgeber zahlt dein Gehalt nach sechs Wochen nicht mehr weiter. Was dann auf deinem Konto ankommt, hängt davon ab, ob du gesetzlich oder privat versichert bist, und bei gutem Gehalt ist es oft deutlich weniger als gewohnt. Diese Seite gilt für angestellte Zahnärzt\*innen. Sie zeigt, wie das gesetzliche Krankengeld berechnet wird, wo bei gutem Gehalt eine Lücke entsteht und was ein Krankentagegeld nach Gesetz und Musterbedingungen regelt. Für Selbstständigkeit und Praxisgründung gelten andere Regeln, die wir auf einer eigenen Seite behandeln.

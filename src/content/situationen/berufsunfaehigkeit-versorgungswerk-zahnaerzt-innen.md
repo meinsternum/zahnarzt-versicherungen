@@ -34,6 +34,7 @@ verwandt:
   - berufsunfaehigkeit-teilweise-zahnaerzt-innen
   - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
   - krankengeld-luecke-zahnaerzt-innen
+  - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
 ---
 
 „Ich habe doch das Versorgungswerk, reicht das nicht?“ Die Frage ist berechtigt. Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer, und daraus folgt die Mitgliedschaft im Versorgungswerk. In den beiden Satzungen, die wir gelesen haben, ist dort auch eine Rente bei Berufsunfähigkeit geregelt. Die spannende Frage ist deshalb nicht, ob es eine Absicherung gibt, sondern ab wann sie zahlt und was dafür aus deiner Praxis werden muss.

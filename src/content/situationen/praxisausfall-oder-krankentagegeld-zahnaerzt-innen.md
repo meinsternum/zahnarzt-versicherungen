@@ -1,73 +1,92 @@
 ---
-frage: "Praxisausfallversicherung oder Krankentagegeld: Wer sichert was ab?"
-titel: "Praxisausfallversicherung oder Krankentagegeld?"
-kurzantwort: "Nach den Musterbedingungen des PKV-Verbands ersetzt ein Krankentagegeld Verdienstausfall bei Arbeitsunfähigkeit, die geprüften GDV-Muster zur Betriebsunterbrechung den Ertragsausfall des Betriebs nach einem Sachschaden. Für eine Praxisausfallversicherung bei Krankheit haben wir keine Musterbedingungen gefunden, es gilt dein Vertrag."
-metaDescription: "Praxisausfallversicherung oder Krankentagegeld: Was jeweils nach Gesetz und Musterbedingungen abgesichert ist und wo wir keine neutrale Quelle fanden."
+frage: "Praxisausfallversicherung oder Krankentagegeld: Was sichert was in der Zahnarztpraxis ab?"
+titel: "Praxisausfall oder Krankentagegeld in der Zahnarztpraxis"
+kurzantwort: "Das Krankentagegeld sichert dein persönliches Einkommen, die Praxisausfallversicherung die laufenden Kosten deiner Zahnarztpraxis, wenn du krank ausfällst. Grundlage sind die Musterbedingungen zum Krankentagegeld und Unterlagen zweier Versicherer zum Praxisausfall. Was dein Vertrag ersetzt, steht in seinen Bedingungen."
+metaDescription: "Krankentagegeld sichert dein Einkommen, die Praxisausfallversicherung setzt bei den Kosten der Zahnarztpraxis an. Mit Fundstellen aus Mustern und Bedingungen."
 status: geprueft
-stand: "2026-11-14"
-reihenfolge: 12
+stand: "2026-11-16"
+pruefenBis: "2027-11-16"
+reihenfolge: 61
 quellen:
   - titel: "§ 192 VVG, Vertragstypische Leistungen des Versicherers (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__192.html"
   - titel: "Musterbedingungen 2009 für die Krankentagegeldversicherung (MB/KT 2009), PKV-Verband, Stand Juni 2024"
     url: "https://www.pkv.de/fileadmin/user_upload/PKV/3_PDFs/ABV_und_MB/MB-KT.pdf"
+  - titel: "Bedingungswerk A: Bedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020 (vollständig gelesen, Anbieter nennen wir nicht)"
+  - titel: "Produktunterlage B: veröffentlichte Broschüre eines zweiten Versicherers zur Praxisausfallversicherung, Kennung 2509, abgerufen am 16.11.2026 (Anbieter nennen wir nicht)"
+  - titel: "§ 32 Zulassungsverordnung für Vertragszahnärzte (Zahnärzte-ZV), gesetze-im-internet.de"
+    url: "https://www.gesetze-im-internet.de/zo-zahn_rzte/__32.html"
   - titel: "GDV: Allgemeine Feuer-Betriebsunterbrechungs-Versicherungs-Bedingungen (FBUB 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/6120/8d3b52913f8c4b26fb6ab434b594078d/01-allgemeine-feuer-betriebsunterbrechungs-versicherungs-bedingungen--fbub-2010--data.pdf"
-  - titel: "GDV: Klauseln für die Betriebsunterbrechungs-Versicherung (SK BU 2010), Version 01.06.2020 (unverbindliche Bekanntgabe)"
-    url: "https://www.gdv.de/resource/blob/6126/e4fd22ffbf6a111dc0031516309cdd54/05-klauseln-fuer-die-betriebsunterbrechungs-versicherung-sk-bu-2010--data.pdf"
 faq:
-  - frage: "Was ersetzt ein Krankentagegeld?"
-    antwort: "Nach § 192 Abs. 5 Satz 1 VVG ersetzt der Versicherer den als Folge von Krankheit oder Unfall durch Arbeitsunfähigkeit verursachten Verdienstausfall durch das vereinbarte Krankentagegeld. Die Musterbedingungen des PKV-Verbands (MB/KT 2009) sprechen von Versicherungsschutz gegen Verdienstausfall. Höhe und Dauer ergeben sich aus dem Tarif."
-  - frage: "Spielen Praxiskosten beim Krankentagegeld eine Rolle?"
-    antwort: "Die Begriffe Betriebskosten und fortlaufende Kosten kommen in den MB/KT 2009 nicht vor. Als Grenze nennt das Muster das Nettoeinkommen aus dem Beruf: Das Tagegeld darf zusammen mit sonstigen Krankentage- und Krankengeldern das umgerechnete Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Wie dein Tarif das regelt, steht in deinen Bedingungen."
-  - frage: "Gibt es Musterbedingungen für die Praxisausfallversicherung?"
-    antwort: "Für Krankheit von Praxisinhaber*innen haben wir keine gefunden. Die geprüften GDV-Muster zur Betriebsunterbrechung knüpfen an einen Sachschaden an. Das Wort Praxisausfallversicherung kommt in den von uns geprüften Mustern (FBUB 2010, SK BU 2010, MB/KT 2009) und in § 192 VVG nicht vor."
+  - frage: "Zahlt das Krankentagegeld auch die Miete und das Personal meiner Zahnarztpraxis?"
+    antwort: "Nach den Musterbedingungen nicht als eigene Größe. Das Krankentagegeld ersetzt Verdienstausfall und darf zusammen mit anderen Krankentage- und Krankengeldern das Nettoeinkommen aus dem Beruf nicht übersteigen (§ 4 Abs. 2 MB/KT 2009). Die Begriffe Betriebskosten und fortlaufende Kosten kommen in den Musterbedingungen nicht vor. Dein Tarif kann abweichen."
+  - frage: "Was ersetzt eine Praxisausfallversicherung, wenn ich als Zahnärzt*in krank ausfalle?"
+    antwort: "Je nach Vereinbarung die fortlaufenden Kosten der Praxis oder zusätzlich den entgehenden Betriebsgewinn. So regelt es das Bedingungswerk, das wir vollständig gelesen haben (Bedingungswerk A, § 4 Nr. 1, Stand 01.08.2020). Die Produktunterlage eines zweiten Versicherers nennt die laufenden Betriebskosten. Maßgeblich ist dein Vertrag."
+  - frage: "Brauche ich als Praxisinhaber*in beides?"
+    antwort: "Das hängt davon ab, was abgesichert sein soll. Das Krankentagegeld ist nach den Musterbedingungen auf das Nettoeinkommen begrenzt, die Praxisausfallversicherung ersetzt nach den gelesenen Unterlagen fortlaufende Kosten der Praxis. Wer beides abdecken will, prüft beide Verträge getrennt: Was fehlt dir persönlich, und was fehlt der Praxis?"
+  - frage: "Zählen die Kosten für eine Praxisvertretung zu den versicherten Kosten?"
+    antwort: "Das Bedingungswerk A nennt bei den fortlaufenden Kosten ausdrücklich Aufwendungen für die Beschäftigung einer Ersatzkraft (§ 4 Nr. 4). Ob jede Form der Praxisvertretung darunter fällt, sagt der Text nicht, und Einnahmen, die die Vertretung erzielt, mindern die Entschädigung (§ 7 Nr. 1 und 3). Maßgeblich ist dein Vertrag."
+  - frage: "Was passiert, wenn aus der Krankheit eine Berufsunfähigkeit wird?"
+    antwort: "Im Bedingungswerk A endet die Leistung ab dem Zeitpunkt, ab dem die Person, die die Praxis leitet, voraussichtlich auf nicht absehbare Zeit, mindestens aber für mehr als zwei Jahre, außerstande ist, ihre bisherige Tätigkeit zu 50 Prozent oder mehr auszuüben (§ 4 Nr. 7 b). Ab dann ist die Berufsunfähigkeitsabsicherung das Thema."
+  - frage: "Ist ein Brand in der Praxis mitversichert?"
+    antwort: "Das ist eine andere Absicherung. Die Betriebsunterbrechung nach einem Sachschaden ersetzt nach den unverbindlichen Mustern des Versicherungsverbands fortlaufende Kosten und Betriebsgewinn, wenn der Betrieb durch einen Sachschaden unterbrochen wird (FBUB 2010, A § 1). Das Bedingungswerk A zur Praxisausfallversicherung knüpft an Arbeitsunfähigkeit und Quarantäne an, nicht an Sachschäden."
 verwandt:
-  - krankengeld-luecke-zahnaerzt-innen
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
+  - krankengeld-luecke-zahnaerzt-innen
+  - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+cta:
+  titel: "Krankentagegeld und Praxisausfall gemeinsam ansehen"
+  text: "Im Erstgespräch gehen wir deine Verträge durch und klären, was dein Einkommen absichert und was die Praxiskosten. Das Gespräch kostet nichts, die Empfehlung mit Begründung bekommst du danach per E-Mail."
+  button: "Erstgespräch buchen"
 ---
 
-„Ich habe doch ein Krankentagegeld, ist die Praxis damit nicht mit abgedeckt?“ Nicht automatisch, und genau deshalb lohnt sich ein genauerer Blick. Beide Absicherungen klingen ähnlich, messen aber an ganz unterschiedlichen Dingen. Hier ordnen wir, was Gesetz und Musterbedingungen zu beiden sagen und wo wir keine neutrale Quelle gefunden haben.
+„Ich habe doch ein Krankentagegeld, ist die Praxis damit nicht mit abgedeckt?“ Die Frage hören wir oft. Beide Verträge zahlen, wenn du krank ausfällst, aber sie messen an unterschiedlichen Größen: der eine an deinem Einkommen, der andere an den Kosten deiner Zahnarztpraxis.
 
-## Zwei Fragen, zwei Bezugsgrößen
+## Zahlt das Krankentagegeld auch die Kosten meiner Zahnarztpraxis?
 
-Vereinfacht gesagt: Das Krankentagegeld ersetzt Verdienstausfall als Person, die Betriebsunterbrechung nach den Mustern den Ertragsausfall des Betriebs. Gemessen wird an unterschiedlichen Größen. Konkret heißt das: Prüfe bei beiden Verträgen, woran die Leistung bemessen wird.
+Nach den Musterbedingungen nein, jedenfalls nicht als eigene Größe. Das Krankentagegeld ersetzt den Verdienstausfall, der durch Arbeitsunfähigkeit infolge von Krankheit oder Unfall entsteht (§ 192 Abs. 5 Satz 1 VVG, § 1 Abs. 1 MB/KT 2009). Höhe und Dauer ergeben sich aus dem Tarif (§ 4 Abs. 1 MB/KT 2009). Als Obergrenze nennen die Musterbedingungen das Nettoeinkommen aus dem Beruf: Das Krankentagegeld darf zusammen mit sonstigen Krankentage- und Krankengeldern das auf den Kalendertag umgerechnete Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT 2009). Die Begriffe Betriebskosten, fortlaufende Kosten und Praxis kommen in den Musterbedingungen nicht vor. Die Musterbedingungen sind unverbindlich, dein Tarif kann abweichen.
 
-## Was ein Krankentagegeld nach Gesetz und Muster abdeckt
+## Was ersetzt eine Praxisausfallversicherung?
 
-Nach § 192 Abs. 5 Satz 1 VVG ersetzt der Versicherer den als Folge von Krankheit oder Unfall durch Arbeitsunfähigkeit verursachten Verdienstausfall durch das vereinbarte Krankentagegeld. Die Musterbedingungen des PKV-Verbands (MB/KT 2009, Stand Juni 2024) beschreiben den Gegenstand als Versicherungsschutz gegen Verdienstausfall als Folge von Krankheiten oder Unfällen (§ 1 Abs. 1 MB/KT). Arbeitsunfähigkeit liegt danach vor, wenn die versicherte Person ihre berufliche Tätigkeit nach medizinischem Befund vorübergehend in keiner Weise ausüben kann, sie auch nicht ausübt und keiner anderweitigen Erwerbstätigkeit nachgeht (§ 1 Abs. 3 MB/KT). Höhe und Dauer ergeben sich aus dem Tarif (§ 4 Abs. 1 MB/KT). Als Obergrenze nennt das Muster das Nettoeinkommen aus dem Beruf: Das Tagegeld darf zusammen mit sonstigen Krankentage- und Krankengeldern das auf den Kalendertag umgerechnete Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Die Begriffe Betriebskosten, fortlaufende Kosten und Praxis kommen in den MB/KT nicht vor. Das Muster ist unverbindlich, dein Vertrag kann abweichen.
+In den Unterlagen, die wir gelesen haben, ersetzt sie die Kosten der Praxis, die weiterlaufen, während du arbeitsunfähig bist, und je nach Vereinbarung auch den entgehenden Gewinn. Musterbedingungen des Versicherungsverbands haben wir dafür nicht gefunden. Wir haben deshalb das Bedingungswerk eines Versicherers vollständig gelesen (Bedingungswerk A, Stand 01.08.2020) und die veröffentlichte Produktunterlage eines zweiten Versicherers (Produktunterlage B).
 
-Wichtig ist an der Stelle die Grenze: Weil sich das Tagegeld nach dem Muster am Nettoeinkommen orientiert, sind Miete, Personal und andere laufende Praxiskosten darin nicht als eigene Größe vorgesehen.
+Im Bedingungswerk A ist der Auslöser die ärztlich festgestellte Arbeitsunfähigkeit der Person, die den Betrieb verantwortlich leitet, wegen Krankheit oder Unfallfolgen (§ 2 Nr. 2). Ersetzt werden je nach Vereinbarung die fortlaufenden Kosten oder die fortlaufenden Kosten und der entgehende Betriebsgewinn (§ 4 Nr. 1). Fortlaufende Kosten sind dort insbesondere Personalkosten, Aufwendungen für eine Ersatzkraft, Mieten, Zinsen für Fremdkapital und Abschreibungen (§ 4 Nr. 4). Die Produktunterlage B nennt als erstattete Kosten Miete, Energiekosten, Personalkosten sowie Leasingraten und Finanzierungskosten. Das Nettoeinkommen ordnet sie in erster Linie dem Krankentagegeld zu und nennt die Praxisausfallversicherung dafür als ergänzenden Schutz.
 
-## Was eine Betriebsunterbrechung nach den GDV-Mustern abdeckt
+Zwei gelesene Unterlagen sind kein Marktüberblick. Sie zeigen aber, wie solche Verträge aufgebaut sein können.
 
-Die GDV-Muster zur Betriebsunterbrechung, die wir geprüft haben (FBUB 2010 und SK BU 2010), knüpfen an einen Sachschaden an, durch den der Betrieb unterbrochen oder beeinträchtigt wird (FBUB 2010, A § 1 Nr. 1). Ersetzt wird dort der Ertragsausfallschaden, der aus den fortlaufenden Kosten und dem Betriebsgewinn besteht, die wegen der Unterbrechung nicht erwirtschaftet werden konnten, längstens bis zum Ende der Haftzeit (A § 1 Nr. 2 a). Krankheit von Praxisinhaber\*innen haben wir in der FBUB und in den Klauseln SK BU 2010 als Auslöser nicht gefunden. Auch diese Muster sind unverbindliche Bekanntgaben.
+## Was gilt für Vertragszahnärzt\*innen bei Vertretung?
 
-## Was zur Praxisausfallversicherung belegt ist
+Als Vertragszahnärzt\*in musst du die Tätigkeit persönlich ausüben (§ 32 Abs. 1 Satz 1 Zahnärzte-ZV). Bei Krankheit, Urlaub oder Fortbildung kannst du dich innerhalb von zwölf Monaten zusammen bis zur Dauer von drei Monaten vertreten lassen (§ 32 Abs. 1 Satz 2 Zahnärzte-ZV). Dauert die Vertretung länger als eine Woche, ist sie der Kassenzahnärztlichen Vereinigung mitzuteilen (§ 32 Abs. 1 Satz 4 Zahnärzte-ZV). Eine Vertretung hält den Betrieb am Laufen, kostet aber Geld. Das Bedingungswerk A nennt bei den fortlaufenden Kosten Aufwendungen für die Beschäftigung einer Ersatzkraft (§ 4 Nr. 4). Ob jede Form der Vertretung darunter fällt und ob dein Vertrag Vertretungskosten ebenso einordnet, steht in seinen Bedingungen.
 
-Das Wort Praxisausfallversicherung kommt in § 192 VVG, in den MB/KT und in den geprüften GDV-Mustern nicht vor. Musterbedingungen für Krankheit von Praxisinhaber\*innen haben wir nicht gefunden, auch keine Veröffentlichung der Zahnärzteschaft, die beide Absicherungen gegenüberstellt. Was eine Praxisausfallversicherung bei Krankheit leistet und welche Kosten sie abdeckt, hängt deshalb vom einzelnen Vertrag ab. Die Seiten „[Praxisausfall: Wann zahlt sie, was ist die Karenzzeit?](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen)“ und „[Praxisausfall: Tagessatz aus den Fixkosten rechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen)“ erklären dazu die Begriffe.
+## Was passiert, wenn aus der Krankheit eine Berufsunfähigkeit wird?
 
-## Die Gegenüberstellung nach Mustern
+Dann endet im Bedingungswerk A die Leistung der Praxisausfallversicherung. Der Versicherer haftet dort nicht mehr ab dem Zeitpunkt, von dem an die Person, die die Praxis leitet, voraussichtlich auf nicht absehbare Zeit, mindestens aber für mehr als zwei Jahre, außerstande ist, ihre bisherige Tätigkeit zu 50 Prozent oder mehr auszuüben (§ 4 Nr. 7 b). Den Zeitpunkt stellt ein ärztlicher Befund fest. Wie das Versorgungswerk und eine private Berufsunfähigkeitsversicherung dann greifen, steht auf der Seite [BU bei Zahnärzt\*innen: Versorgungswerk und private BU](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen).
 
-| | Krankentagegeld (MB/KT 2009) | Betriebsunterbrechung (FBUB 2010) |
+## Krankentagegeld und Praxisausfall im Vergleich
+
+| | Krankentagegeld (MB/KT 2009) | Praxisausfall (Bedingungswerk A) |
 | --- | --- | --- |
-| Was wird ersetzt? | Verdienstausfall | Ertragsausfallschaden: fortlaufende Kosten und Betriebsgewinn |
-| Auslöser | Arbeitsunfähigkeit durch Krankheit oder Unfall | Sachschaden (A § 1 Nr. 1) |
-| Grenze | Nettoeinkommen aus dem Beruf (§ 4 Abs. 2) | Versicherungssumme und vereinbarte Entschädigungsgrenzen (A § 6 Nr. 5) |
-| Höhe und Dauer | Tarif (§ 4 Abs. 1) | Höhe nach dem Ertragsausfallschaden, Dauer nach der vereinbarten Haftzeit (A § 1 Nr. 2 a, Nr. 3) |
+| Was wird ersetzt? | Verdienstausfall der Person | Fortlaufende Kosten der Praxis, je nach Vereinbarung auch entgehender Gewinn (§ 4 Nr. 1) |
+| Auslöser | Arbeitsunfähigkeit durch Krankheit oder Unfall | Arbeitsunfähigkeit der leitenden Person, außerdem Quarantäne als Einzelanordnung (§ 2) |
+| Grenze | Nettoeinkommen aus dem Beruf (§ 4 Abs. 2) | Pro Tag höchstens 1/365 der Versicherungssumme (§ 7 Nr. 4) |
+| Dauer | Tarif (§ 4 Abs. 1) | Nach Ablauf der Karenzzeit bis zum Ende der vereinbarten Haftzeit, die mit dem Schadenereignis beginnt (§ 4 Nr. 1 bis 3) |
 
-Die Tabelle zeigt die Muster, nicht deinen Vertrag. Eine Praxisausfallversicherung bei Krankheit steht darin nicht, weil wir dafür keine Musterquelle gefunden haben.
+Die Tabelle zeigt Musterbedingungen und ein einzelnes Bedingungswerk, nicht deinen Vertrag.
 
-## Worauf du achten kannst
+## Worauf du in beiden Verträgen achten kannst
 
-- Woran bemisst dein Vertrag die Leistung: am Einkommen der Person oder am Ertrag der Praxis?
-- Welcher Auslöser ist genannt: Arbeitsunfähigkeit, Sachschaden, beides?
-- Wie sind Wartezeit oder Karenzzeit, Höhe und Dauer geregelt?
-- Gibt es ein Zusammenspiel mit gesetzlichem Krankengeld oder anderem Tagegeld? Für angestellte Zahnärzt\*innen steht das auf der Seite „[Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen)“.
+- Woran bemisst der Vertrag die Leistung: am Einkommen der Person oder an den Kosten der Praxis?
+- Sind in der Praxisausfallversicherung nur Kosten oder auch der Gewinn vereinbart?
+- Passen Karenzzeit und Beginn des Krankentagegelds zueinander? Die Begriffe erklärt die Seite [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
+- Sind Vertretungskosten als fortlaufende Kosten erfasst?
+- Wie hoch ist die Summe? Einen Rechenweg zeigt die Seite [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
+
+Für angestellte Zahnärzt\*innen stellt sich die Frage anders, siehe [Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen).
 
 ## Was du mitnehmen kannst
 
-Aus unserer Sicht lohnt es sich, zwei Fragen getrennt zu stellen: Was fehlt mir persönlich, und was fehlt der Praxis? Das Krankentagegeld ersetzt nach den Mustern Verdienstausfall und ist durch das Nettoeinkommen begrenzt, die Betriebsunterbrechung ersetzt den Ertragsausfall des Betriebs. Ob eine Praxisausfallversicherung bei Krankheit leistet, steht nur im Vertrag. Wer beide Fragen mit einem Vertrag beantwortet glaubt, sollte genau das in den Bedingungen nachlesen.
+Aus unserer Sicht lohnt es sich, zwei Fragen getrennt zu stellen: Was fehlt dir persönlich, wenn du ausfällst, und was fehlt der Praxis? Das Krankentagegeld ist nach den Musterbedingungen auf dein Nettoeinkommen begrenzt. Die Praxisausfallversicherung setzt in den gelesenen Unterlagen bei den Kosten der Praxis an. Ein Gespräch ist sinnvoll, wenn du nicht sicher bist, welcher deiner Verträge welche Lücke schließt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze abgerufen am 14.11.2026, MB/KT 2009 (Stand Juni 2024), GDV-Muster FBUB 2010 (Version 01.04.2014) und SK BU 2010 (Version 01.06.2020). Die Muster sind unverbindlich, dein Vertrag kann abweichen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze und Zahnärzte-ZV abgerufen am 16.11.2026, MB/KT 2009 (Stand Juni 2024), Bedingungswerk A (Stand 01.08.2020), Produktunterlage B (abgerufen am 16.11.2026), FBUB 2010 (Version 01.04.2014, abgerufen am 14.11.2026). Muster sind unverbindlich, Bedingungen unterscheiden sich je nach Versicherer, dein Vertrag kann abweichen.*

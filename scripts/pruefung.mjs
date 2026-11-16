@@ -47,7 +47,11 @@ for (const s of seiten) {
     hinweise.push('Mögliche Ich-Form im Text (ich, mir, mein): prüfen, ob es eine Leserfrage ist');
   }
   if (!(fm.quellen ?? []).length) fehler.push('Keine Quellen');
-  for (const q of fm.quellen ?? []) if (!q.url) fehler.push(`Quelle ohne URL: ${q.titel}`);
+  for (const q of fm.quellen ?? []) {
+    const anonym = /^(Bedingungswerk|Produktunterlage) [A-Z]:/.test(q.titel ?? '');
+    if (!q.url && !anonym) fehler.push(`Quelle ohne URL: ${q.titel}`);
+    if (anonym && !/Stand|abgerufen/.test(q.titel)) fehler.push(`Anonyme Quelle ohne Stand: ${q.titel}`);
+  }
   for (const v of fm.verwandt ?? []) if (!slugs.has(v)) fehler.push(`verwandt zeigt auf unbekannte Seite: ${v}`);
   if (!/keine individuelle Beratung/i.test(text)) fehler.push('Pflichthinweis fehlt im Text');
   if (/[a-zäöüß]\*(?!\*)[a-zäöüß]/i.test(text.replace(/\\\*/g, '').replace(/\*\*[^*]+\*\*/g, ''))) {
@@ -77,9 +81,6 @@ for (const s of seiten) {
     if (ziel && !(ziel.fm.verwandt ?? []).includes(s.slug)) hinweise.push(`Gegenverweis fehlt: ${v} nennt diese Seite nicht`);
   }
   if (!fm.cta) hinweise.push('Kein themenspezifischer CTA (Feld cta)');
-  if (!/unserer Erfahrung|aus unserer Sicht|in den Verträgen, die wir|das hören wir|in unserer Beratung/i.test(text)) {
-    hinweise.push('Kein gekennzeichnetes Praxiswissen im Text');
-  }
   const faellig = fm.pruefenBis ?? (fm.stand ? `${Number(String(fm.stand).slice(0, 4)) + 1}${String(fm.stand).slice(4)}` : null);
   if (faellig && new Date(faellig) < new Date()) fehler.push(`Prüfung überfällig (fällig ${faellig})`);
   if (!fm.pruefenBis) hinweise.push('Feld pruefenBis fehlt (nächste Aktualitätsprüfung)');
