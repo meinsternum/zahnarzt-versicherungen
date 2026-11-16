@@ -48,7 +48,7 @@ for (const s of seiten) {
   }
   if (!(fm.quellen ?? []).length) fehler.push('Keine Quellen');
   for (const q of fm.quellen ?? []) {
-    const anonym = /^(Bedingungswerk|Produktunterlage) [A-Z]:/.test(q.titel ?? '');
+    const anonym = /eines Versicherers/.test(q.titel ?? '');
     if (!q.url && !anonym) fehler.push(`Quelle ohne URL: ${q.titel}`);
     if (anonym && !/Stand|abgerufen/.test(q.titel)) fehler.push(`Anonyme Quelle ohne Stand: ${q.titel}`);
   }
@@ -81,6 +81,11 @@ for (const s of seiten) {
     if (ziel && !(ziel.fm.verwandt ?? []).includes(s.slug)) hinweise.push(`Gegenverweis fehlt: ${v} nennt diese Seite nicht`);
   }
   if (!fm.cta) hinweise.push('Kein themenspezifischer CTA (Feld cta)');
+  const hw = fm.hinweise ?? [];
+  if (hw.length > 2) fehler.push(`${hw.length} Handlungsaufrufe im Text (höchstens 2)`);
+  if (!hw.length) hinweise.push('Kein Handlungsaufruf im Text (Feld hinweise, 1 bis 2)');
+  if (hw.length === 2 && hw[0].art === hw[1].art) hinweise.push('Beide Handlungsaufrufe im Text haben dieselbe Art (abwechseln: einschaetzen/termin und mail/whatsapp)');
+  if (/Bedingungswerk [A-Z]|Produktunterlage [A-Z]|vollständig gelesen|nennen wir nicht/.test(alles)) fehler.push('Interne Quellenbezeichnung auf der Seite (Bedingungswerk A, „vollständig gelesen“ …)');
   const faellig = fm.pruefenBis ?? (fm.stand ? `${Number(String(fm.stand).slice(0, 4)) + 1}${String(fm.stand).slice(4)}` : null);
   if (faellig && new Date(faellig) < new Date()) fehler.push(`Prüfung überfällig (fällig ${faellig})`);
   if (!fm.pruefenBis) hinweise.push('Feld pruefenBis fehlt (nächste Aktualitätsprüfung)');

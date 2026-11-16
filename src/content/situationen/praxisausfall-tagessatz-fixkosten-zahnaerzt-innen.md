@@ -8,8 +8,8 @@ stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 63
 quellen:
-  - titel: "Bedingungswerk A: Bedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020 (vollständig gelesen, Anbieter nennen wir nicht)"
-  - titel: "Produktunterlage B: veröffentlichte Broschüre eines zweiten Versicherers zur Praxisausfallversicherung, Kennung 2509, abgerufen am 16.11.2026 (Anbieter nennen wir nicht)"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020"
+  - titel: "Produktbroschüre eines Versicherers zur Praxisausfallversicherung, abgerufen am 16.11.2026"
   - titel: "KZBV Jahrbuch 2025, Betriebswirtschaftliche Daten der Zahnarztpraxen, Tab. 5.3 (Zahnärzte-Praxis-Panel des Zi, Betriebsjahre 2022 und 2023)"
     url: "https://www.kzbv.de/wp-content/uploads/Seiten_116_bis_121_130_131_KZBVJB2025.pdf"
   - titel: "GDV: Allgemeine Feuer-Betriebsunterbrechungs-Versicherungs-Bedingungen (FBUB 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
@@ -31,6 +31,14 @@ verwandt:
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
   - praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen
+hinweise:
+  - nach: "Wie sieht die Rechnung an einem Beispiel aus?"
+    art: einschaetzen
+    text: "Du willst die Rechnung mit deinen eigenen Zahlen machen? Bring deine betriebswirtschaftliche Auswertung ins Erstgespräch mit."
+    button: "Tagessatz gemeinsam rechnen"
+  - nach: "Kann die Summe später angepasst werden?"
+    art: whatsapp
+    text: "Kurze Frage zu deiner Versicherungssumme? Schreib uns per WhatsApp."
 cta:
   titel: "Tagessatz mit deinen eigenen Zahlen rechnen"
   text: "Bring deine letzte betriebswirtschaftliche Auswertung mit. Im Erstgespräch rechnen wir gemeinsam, welche Kosten weiterlaufen. Das Gespräch kostet nichts, die Empfehlung mit Begründung kommt danach per E-Mail."

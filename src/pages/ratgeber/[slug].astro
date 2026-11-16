@@ -102,7 +102,7 @@ const jsonLd = [
           )}
         </div>
 
-        <CtaBlock titel={d.cta?.titel} button={d.cta?.button} text={d.cta?.text ?? 'Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.'} />
+        <CtaBlock kampagne={entry.id} betreff={d.titel} titel={d.cta?.titel} button={d.cta?.button} text={d.cta?.text ?? 'Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.'} />
 
         {verwandte.length > 0 && (
           <section class="prosa-anhang verwandt" aria-labelledby="verwandt-h">

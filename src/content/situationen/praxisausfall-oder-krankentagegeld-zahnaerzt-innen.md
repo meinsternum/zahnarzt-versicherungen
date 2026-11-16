@@ -12,8 +12,8 @@ quellen:
     url: "https://www.gesetze-im-internet.de/vvg_2008/__192.html"
   - titel: "Musterbedingungen 2009 für die Krankentagegeldversicherung (MB/KT 2009), PKV-Verband, Stand Juni 2024"
     url: "https://www.pkv.de/fileadmin/user_upload/PKV/3_PDFs/ABV_und_MB/MB-KT.pdf"
-  - titel: "Bedingungswerk A: Bedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020 (vollständig gelesen, Anbieter nennen wir nicht)"
-  - titel: "Produktunterlage B: veröffentlichte Broschüre eines zweiten Versicherers zur Praxisausfallversicherung, Kennung 2509, abgerufen am 16.11.2026 (Anbieter nennen wir nicht)"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020"
+  - titel: "Produktbroschüre eines Versicherers zur Praxisausfallversicherung, abgerufen am 16.11.2026"
   - titel: "§ 32 Zulassungsverordnung für Vertragszahnärzte (Zahnärzte-ZV), gesetze-im-internet.de"
     url: "https://www.gesetze-im-internet.de/zo-zahn_rzte/__32.html"
   - titel: "GDV: Allgemeine Feuer-Betriebsunterbrechungs-Versicherungs-Bedingungen (FBUB 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
@@ -36,6 +36,13 @@ verwandt:
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
   - krankengeld-luecke-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+hinweise:
+  - nach: "Was ersetzt eine Praxisausfallversicherung?"
+    art: einschaetzen
+    text: "Du weißt nicht genau, ob dein Krankentagegeld und deine Praxisausfallversicherung zusammenpassen? Wir sehen uns beide Verträge gemeinsam an."
+  - nach: "Worauf du in beiden Verträgen achten kannst"
+    art: mail
+    text: "Du hast eine konkrete Frage zu deinem Vertrag? Schreib sie uns kurz per E-Mail."
 cta:
   titel: "Krankentagegeld und Praxisausfall gemeinsam ansehen"
   text: "Im Erstgespräch gehen wir deine Verträge durch und klären, was dein Einkommen absichert und was die Praxiskosten. Das Gespräch kostet nichts, die Empfehlung mit Begründung bekommst du danach per E-Mail."

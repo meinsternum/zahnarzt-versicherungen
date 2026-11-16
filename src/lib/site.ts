@@ -2,7 +2,7 @@
 
 // Termin-Link: Patrick setzt die endgültige Buchungs-URL später ein.
 // Bis dahin zeigt sie auf die Buchungsseite von meinsternum.de.
-export const TERMIN_URL = 'https://meinsternum.de/online-buchen';
+export { TERMIN_URL, EMAIL, WHATSAPP_URL, terminLink, mailLink } from './kontakt.mjs';
 
 export const SITE_URL = 'https://zahnarzt-versicherungen.de';
 export const SITE_NAME = 'zahnarzt versicherungen';

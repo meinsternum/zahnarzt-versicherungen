@@ -331,3 +331,31 @@ main:focus { outline: none; }
   .bewertung-seit { flex-basis: 100%; margin-left: 0; padding: 0.7rem 0 0; border-left: 0; border-top: 1px solid var(--linie); display: flex; align-items: baseline; gap: 0.6rem; }
   .bewertung.dunkel .bewertung-seit { border-top-color: rgba(255, 255, 255, 0.25); }
 }
+
+/* Kontaktleiste über dem Kopf (16.11.2026): Telefon, WhatsApp, E-Mail, Profile */
+.kontaktleiste { background: var(--navy); color: #fff; font-size: 0.84rem; }
+.kontaktleiste-innen { display: flex; align-items: center; justify-content: flex-end; gap: 1.1rem; min-height: 2.1rem; flex-wrap: wrap; }
+.kontaktleiste a { display: inline-flex; align-items: center; gap: 0.35rem; color: #fff; text-decoration: none; opacity: 0.92; }
+.kontaktleiste a:hover { opacity: 1; text-decoration: underline; }
+.kl-trenner { width: 1px; height: 1rem; background: rgba(255, 255, 255, 0.3); }
+.kl-kurz { display: none; }
+@media (max-width: 900px) { .kl-lang { display: none; } .kl-kurz { display: inline; } }
+@media (max-width: 560px) {
+  .kontaktleiste-innen { justify-content: center; gap: 0.9rem; }
+  .kontaktleiste .kl-profil, .kontaktleiste .kl-trenner { display: none; }
+}
+
+/* Terminkasten mit Teamfoto und niedrigerer Kontaktstufe */
+.cta-raster { display: grid; grid-template-columns: minmax(0, 1fr) minmax(14rem, 22rem); gap: clamp(1.25rem, 4vw, 2.5rem); align-items: center; }
+.cta-foto { margin: 0; }
+.cta-foto img { width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 18px; display: block; }
+.cta-foto figcaption { font-size: 0.82rem; color: #dfe7f1; margin-top: 0.5rem; }
+.cta-alternativ { font-size: 0.95rem; color: #eaf0f7; margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1rem; align-items: center; }
+.cta-alternativ a { color: #fff; display: inline-flex; align-items: center; gap: 0.3rem; }
+@media (max-width: 760px) { .cta-raster { grid-template-columns: 1fr; } }
+
+/* Handlungsaufruf im Text (Feld hinweise, höchstens 2 je Seite) */
+.zwischen-cta { display: flex; align-items: center; justify-content: space-between; gap: 1rem 1.5rem; flex-wrap: wrap; margin: 1.8rem 0; padding: 1.05rem 1.3rem; background: #eef4f8; border: 1px solid #d6e3ec; border-radius: 14px; }
+.zwischen-cta p { margin: 0; flex: 1 1 18rem; font-weight: 500; color: var(--navy); }
+.prosa .zwischen-cta a.knopf { text-decoration: none; }
+.prosa .zwischen-cta a.knopf:not(.knopf-rand) { color: #fff; }

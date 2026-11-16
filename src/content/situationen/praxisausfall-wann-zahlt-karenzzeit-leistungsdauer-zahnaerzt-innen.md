@@ -8,8 +8,8 @@ stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 62
 quellen:
-  - titel: "Bedingungswerk A: Bedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020 (vollständig gelesen, Anbieter nennen wir nicht)"
-  - titel: "Produktunterlage B: veröffentlichte Broschüre eines zweiten Versicherers zur Praxisausfallversicherung, Kennung 2509, abgerufen am 16.11.2026 (Anbieter nennen wir nicht)"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020"
+  - titel: "Produktbroschüre eines Versicherers zur Praxisausfallversicherung, abgerufen am 16.11.2026"
   - titel: "§ 30 VVG, Anzeige des Versicherungsfalles (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__30.html"
   - titel: "§ 31 VVG, Auskunftspflicht des Versicherungsnehmers (gesetze-im-internet.de)"
@@ -35,6 +35,14 @@ verwandt:
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
   - praxisinhalt-was-gehoert-hinein-zahnaerzt-innen
+hinweise:
+  - nach: "Was bedeutet Karenzzeit?"
+    art: einschaetzen
+    text: "Wie viele Wochen kann deine Praxis einen Ausfall selbst tragen? Das rechnen wir im Erstgespräch mit dir durch."
+    button: "Karenzzeit gemeinsam festlegen"
+  - nach: "Wann zahlt die Praxisausfallversicherung nicht?"
+    art: mail
+    text: "Du willst wissen, wie dein Vertrag diese Punkte regelt? Schick uns deine Frage per E-Mail."
 cta:
   titel: "Karenzzeit und Haftzeit an deiner Praxis ausrichten"
   text: "Im Erstgespräch sehen wir uns an, wie lange deine Praxis einen Ausfall selbst tragen kann und was dein Vertrag dazu regelt. Das Gespräch kostet nichts, die Empfehlung mit Begründung kommt danach per E-Mail."
