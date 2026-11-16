@@ -1,4 +1,5 @@
 ---
+import { mitMarke } from '../lib/marke';
 // Über uns: Texte unverändert (freigegeben 12.11.2026), neues Layout und Fotos aus dem Pool.
 import Base from '../layouts/Base.astro';
 import Foto from '../components/Foto.astro';
@@ -26,13 +27,13 @@ const team = [
   ['Eva Janßen', 'Assistentin in den Bereichen Versicherungen und Kundenkommunikation.'],
   ['Vanessa Steuer', 'Im Team seit Februar 2022. Telefon und Social Media.'],
 ];
-const firma = 'MEIN STERNUM Finanzberatung GmbH';
+const firma = mitMarke('MEIN STERNUM Finanzberatung GmbH');
 ---
-<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team der MEIN STERNUM Finanzberatung GmbH in Köln." path="/ueber-uns" jsonLd={jsonLd} krumen={[{ name: 'Über uns', href: '/ueber-uns' }]}>
+<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team von meinsternum in Köln." path="/ueber-uns" jsonLd={jsonLd} krumen={[{ name: 'Über uns', href: '/ueber-uns' }]}>
   <div class="rahmen">
     <header class="seitenkopf">
       <h1>Über uns</h1>
-      <p class="einleitung">zahnarzt-versicherungen.de ist ein Angebot der <a href={O.url}>{firma}</a> aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
+      <p class="einleitung">zahnarzt-versicherungen.de ist ein Angebot der <a href={O.url} set:html={firma} /> aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.</p>
     </header>
 
     <section class="abschnitt uu-person" id="patrick-senn" aria-labelledby="ps-h">
@@ -41,7 +42,7 @@ const firma = 'MEIN STERNUM Finanzberatung GmbH';
       </figure>
       <div>
         <h2 id="ps-h" class="abschnitt-titel">Patrick Senn</h2>
-        <p>Patrick Senn hat die {firma} 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
+        <p>Patrick Senn hat die <Fragment set:html={firma} /> 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
       </div>
     </section>
 

@@ -11,6 +11,8 @@ export function organisation() {
     '@type': 'Organization',
     '@id': ORG_ID,
     name: O.name,
+    alternateName: 'meinsternum',
+    foundingDate: '2015',
     url: O.url,
     telephone: O.telefonSchema,
     email: O.email,

@@ -1,4 +1,5 @@
 ---
+import { mitMarke } from '../lib/marke';
 // Kontaktseite. Daten aus dem Impressum (src/lib/site.ts). Neue Sätze: zur Freigabe (Meilenstein 3).
 import Base from '../layouts/Base.astro';
 import Icon from '../components/Icon.astro';
@@ -11,7 +12,7 @@ const jsonLd = [
   { '@context': 'https://schema.org', '@type': 'ContactPage', name: 'Kontakt', url: `${SITE_URL}/kontakt`, inLanguage: 'de', about: { '@id': ORG_ID } },
   organisation(),
 ];
-const firma = O.name.replace('MEIN STERNUM', 'MEIN STERNUM');
+const firma = mitMarke(O.name);
 const profile = SOCIAL.filter((s) => s.url);
 const fehlend = SOCIAL.filter((s) => !s.url).map((s) => s.name);
 ---
@@ -28,7 +29,7 @@ const fehlend = SOCIAL.filter((s) => !s.url).map((s) => s.name);
       <dl class="kontakt-liste">
         <div><dt>Telefon</dt><dd><a href={O.telefonLink}>{O.telefon}</a></dd></div>
         <div><dt>E-Mail</dt><dd><a href={`mailto:${O.email}`}>{O.email}</a></dd></div>
-        <div><dt>Anschrift</dt><dd><a href={O.url}>{firma}</a><br />{O.strasse}<br />{O.plz} {O.ort}</dd></div>
+        <div><dt>Anschrift</dt><dd><a href={O.url} set:html={firma} /><br />{O.strasse}<br />{O.plz} {O.ort}</dd></div>
         {profile.map((s) => <div><dt>{s.name}</dt><dd><a href={s.url}>{s.url.replace(/^https?:\/\//, '')}</a></dd></div>)}
       </dl>
       {!isProduction && fehlend.length > 0 && <p class="grafik-platzhalter">[PLATZHALTER: {fehlend.join(', ')}] Nummer und Links liefert Patrick. Nur in der Vorschau sichtbar.</p>}

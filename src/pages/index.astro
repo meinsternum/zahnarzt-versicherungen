@@ -1,4 +1,5 @@
 ---
+import { mitMarke, markeText, MARKE_HTML } from '../lib/marke';
 // Startseite (Entwurf A, von Patrick am 13.11.2026 gewählt).
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
@@ -13,20 +14,21 @@ import { website, organisation, person, faqPage } from '../lib/schema';
 
 const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 const gruppen = gruppiere(seiten);
-const jsonLd = [website(), organisation(), person(), faqPage(faq.eintraege)];
+const jsonLd = [website(), organisation(), person(), faqPage(faq.eintraege.map((e) => ({ ...e, antwort: markeText(e.antwort) })))];
 // Firmenname nie umbrechen
 const nb = (t: string) => t.replaceAll('MEIN STERNUM', 'MEIN\u00a0STERNUM');
 const FIRMA = 'MEIN\u00a0STERNUM Finanzberatung GmbH';
 const [werVor, werNach] = nb(werWirSind.absaetze[0]).split(FIRMA);
+const FIRMA_HTML = mitMarke('MEIN STERNUM') + ' Finanzberatung GmbH';
 const [h1Teil1, h1Teil2] = hero.h1.split(': ');
 ---
-<Base title="Absicherung für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf Versicherungsfragen von Zahnärzt*innen, mit Quellen und Stand. Ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln." path="/" jsonLd={jsonLd}>
+<Base title="Absicherung für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf Versicherungsfragen von Zahnärzt*innen, mit Quellen und Stand. Ein Ratgeber von meinsternum aus Köln." path="/" jsonLd={jsonLd}>
 <div class="startseite">
   <section class="a-hero">
     <div class="rahmen a-hero-raster">
       <div class="a-hero-text">
         <h1><span class="stark">{h1Teil1}:</span> <span class="leicht">{h1Teil2}</span></h1>
-        <p class="a-lead">{nb(hero.lead.text)}</p>
+        <p class="a-lead" set:html={mitMarke(hero.lead.text)} />
         <p class="a-knoepfe">
           <a class="knopf" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a>
           <a class="knopf knopf-rand" href="#themen">{hero.zweit}</a>
@@ -35,7 +37,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
       </div>
       <figure class="a-hero-bild">
         <Foto foto="team-02" prioritaet sizes="(min-width: 900px) 45vw, 92vw" breiten={[480, 720, 960, 1280]} />
-        <figcaption><b>Das Team von MEIN STERNUM</b> mit Patrick Senn, Geschäftsführer</figcaption>
+        <figcaption><b>Das Team von <Fragment set:html={MARKE_HTML} /></b> mit Patrick Senn, Geschäftsführer</figcaption>
       </figure>
     </div>
   </section>
@@ -101,8 +103,8 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
         <Foto foto="schreibtisch-01" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
       </figure>
       <div class="a-wer-text einblenden">
-        <p>{werVor}<a href={ORGANISATION.url}>{FIRMA}</a>{werNach}</p>
-        {werWirSind.absaetze.slice(1).map((p) => <p>{nb(p)}</p>)}
+        <p>{werVor}<a href={ORGANISATION.url} set:html={FIRMA_HTML} />{werNach}</p>
+        {werWirSind.absaetze.slice(1).map((p) => <p set:html={mitMarke(p)} />)}
         {zeigeUeberUns && <p><a class="a-mehr" href="/ueber-uns">{werWirSind.link}<Icon name="pfeil" size={16} /></a></p>}
       </div>
     </div>
@@ -118,7 +120,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
         {faq.eintraege.map((f) => (
           <div class="einblenden">
             <dt>{f.frage}</dt>
-            <dd>{nb(f.antwort)}</dd>
+            <dd set:html={mitMarke(f.antwort)} />
           </div>
         ))}
       </dl>
@@ -146,7 +148,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
   .startseite .a-hero h1 .leicht { font-weight: 300; color: var(--teal); }
   .startseite .a-lead { font-size: clamp(1.08rem, 1.4vw, 1.22rem); color: var(--text-leise); max-width: 36rem; margin-bottom: 2rem; }
   .startseite .a-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem; }
-  .startseite .a-hero-bewertung { max-width: 30rem; }
+  .startseite .a-hero-bewertung { max-width: 38rem; }
   .startseite .a-hero-bild { margin: 0; position: relative; }
   .startseite .a-hero-bild img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; }
   .startseite .a-hero-bild figcaption { position: absolute; left: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.94); border-radius: 12px; padding: 0.55rem 0.9rem; font-size: 0.85rem; color: var(--text-leise); line-height: 1.35; box-shadow: var(--schatten); }
@@ -187,7 +189,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
   .startseite .a-abschluss-flaeche { background: var(--verlauf); color: #fff; border-radius: 32px; padding: clamp(2.25rem, 6vw, 4.5rem); }
   .startseite .a-abschluss-flaeche h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin-bottom: 1rem; }
   .startseite .a-abschluss-flaeche > p { max-width: 36rem; font-size: 1.1rem; }
-  .startseite .a-abschluss-bewertung { margin-top: 2rem; max-width: 30rem; }
+  .startseite .a-abschluss-bewertung { margin-top: 2rem; max-width: 38rem; }
 
   @media (max-width: 900px) {
     .startseite .a-hero-raster, .startseite .a-ablauf-raster, .startseite .a-faq-raster, .startseite .a-gruppen { grid-template-columns: 1fr; }
