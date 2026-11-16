@@ -53,5 +53,13 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'berufsunfaehigkeit-zahnaerztin-berufsstart': 'patrick-04-hoch',
   'berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen': 'schreibtisch-01-hoch',
   'berufsunfaehigkeit-teilweise-zahnaerzt-innen': 'patrick-02-hoch',
+  'altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen': 'patrick-04-hoch',
+  'krankengeld-luecke-zahnaerzt-innen': 'schreibtisch-01-hoch',
+  'berufshaftpflicht-pflicht-mindestsumme-zahnaerzt-innen': 'patrick-02-hoch',
+  'praxisinhalt-was-gehoert-hinein-zahnaerzt-innen': 'patrick-01-hoch',
+  'praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen': 'patrick-04-hoch',
+  'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': 'schreibtisch-01-hoch',
+  'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': 'patrick-02-hoch',
+  'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': 'patrick-01-hoch',
 };
 export const STANDARD_FOTO: FotoKey = 'patrick-01-hoch';

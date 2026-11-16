@@ -29,7 +29,7 @@ export const PFLICHTHINWEIS =
 // Kontaktwege und Profile. Leere url = noch nicht geliefert (Patrick schickt Nummer und Links),
 // wird dann nicht angezeigt und nicht ins Schema übernommen.
 export const SOCIAL: { name: string; url: string }[] = [
-  { name: 'WhatsApp', url: '' },
-  { name: 'LinkedIn', url: '' },
-  { name: 'Instagram', url: '' },
+  { name: 'WhatsApp', url: 'https://wa.me/4922198654436' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/mein-sternum' },
+  { name: 'Instagram', url: 'https://www.instagram.com/patrick.senn.meinsternum/' },
 ];

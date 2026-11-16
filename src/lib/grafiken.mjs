@@ -187,13 +187,13 @@ export const grafiken = {
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': [
     {
       typ: 'ablauf', nach: 'Was bedeutet Haftzeit oder Leistungsdauer?',
-      titel: 'Karenzzeit und Haftzeit im Bedingungswerk A',
+      titel: 'So laufen Karenzzeit und Haftzeit',
       schritte: [
-        { titel: 'Schadenereignis', text: 'Ärztlich festgestellte Arbeitsunfähigkeit der leitenden Person (§ 2 Nr. 2). Karenzzeit und Haftzeit beginnen.' },
-        { titel: 'Karenzzeit', text: 'Kein Anspruch auf Leistung, die Praxis trägt die Kosten selbst (§ 4 Nr. 3).' },
-        { titel: 'Leistung', text: 'Nach Ablauf der Karenzzeit, längstens bis zum Ende der vereinbarten Haftzeit (§ 4 Nr. 1 und 2).' },
+        { titel: 'Schadenereignis', text: 'Du bist ärztlich festgestellt arbeitsunfähig. Die Karenzzeit beginnt, je nach Vertrag auch schon die Haftzeit.' },
+        { titel: 'Karenzzeit', text: 'Noch keine Leistung, die Praxis trägt die Kosten selbst.' },
+        { titel: 'Leistung', text: 'Nach Ablauf der Karenzzeit, längstens bis zum Ende der vereinbarten Haftzeit.' },
       ],
-      fuss: 'Nach einem einzelnen Bedingungswerk (Stand 01.08.2020). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 16.11.2026, nach Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'karten', nach: 'Welche Pflichten hast du im Schadenfall?',
@@ -212,9 +212,9 @@ export const grafiken = {
       titel: 'Welche Kosten das fiktive Beispiel ansetzt',
       karten: [
         { kopf: 'Im Beispiel enthalten', punkte: ['Personal', 'Raumkosten', 'Leasing, Zinsen, Abschreibungen', 'Übrige laufende Kosten'] },
-        { kopf: 'Im Beispiel nicht enthalten', punkte: ['Material', 'Fremdlabor', 'Unsere Einschätzung für das Beispiel: behandlungsabhängig, keine Regel'] },
+        { kopf: 'Im Beispiel nicht enthalten', punkte: ['Material', 'Fremdlabor', 'Fallen in der Regel weg, wenn nicht behandelt wird'] },
       ],
-      fuss: 'Kostenarten des fiktiven Beispiels, angelehnt an KZBV Jahrbuch 2025, Tab. 5.3, und an ein einzelnes Bedingungswerk (Stand 01.08.2020).',
+      fuss: 'Kostenarten des fiktiven Beispiels, angelehnt an KZBV Jahrbuch 2025, Tab. 5.3. Stand: 16.11.2026.',
     },
   ],
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': [
@@ -222,10 +222,10 @@ export const grafiken = {
       typ: 'karten', nach: 'start',
       titel: 'Zwei Fragen, zwei Absicherungen',
       karten: [
-        { kopf: 'Was fehlt mir persönlich?', punkte: ['Krankentagegeld: ersetzt Verdienstausfall bei Arbeitsunfähigkeit (§ 192 Abs. 5 VVG)', 'Grenze nach Muster: Nettoeinkommen (§ 4 Abs. 2 MB/KT 2009)'] },
-        { kopf: 'Was fehlt der Praxis?', punkte: ['Praxisausfall: fortlaufende Kosten, je nach Vereinbarung auch entgehender Gewinn (Bedingungswerk A, § 4 Nr. 1)', 'Auslöser dort: Arbeitsunfähigkeit der leitenden Person (§ 2 Nr. 2)'] },
+        { kopf: 'Was fehlt mir persönlich?', punkte: ['Krankentagegeld: ersetzt deinen Verdienstausfall', 'Grenze: in der Regel dein Nettoeinkommen'] },
+        { kopf: 'Was fehlt der Praxis?', punkte: ['Praxisausfallversicherung: laufende Kosten, je nach Vereinbarung auch entgehender Gewinn', 'Auslöser: deine Arbeitsunfähigkeit als Inhaber*in'] },
       ],
-      fuss: 'Stand: VVG abgerufen am 16.11.2026, MB/KT 2009 (Juni 2024), Bedingungswerk A (01.08.2020). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 16.11.2026, nach Gesetz und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
 };
