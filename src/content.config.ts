@@ -15,6 +15,10 @@ const situationen = defineCollection({
     faq: z.array(z.object({ frage: z.string(), antwort: z.string() })).default([]),
     verwandt: z.array(z.string()).default([]),
     reihenfolge: z.number().default(99),
+    // Themenspezifischer Termin-Block (Regelwerk „Conversion“). Fehlt er, gilt der Standardtext.
+    cta: z.object({ titel: z.string().max(70), text: z.string().max(220), button: z.string().max(30).optional() }).optional(),
+    // Nächste Aktualitätsprüfung (JJJJ-MM-TT). Bei Jahreswerten spätestens der 15.01. des Folgejahres.
+    pruefenBis: z.string().optional(),
   }),
 });
 
