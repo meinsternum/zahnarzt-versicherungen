@@ -1,22 +1,20 @@
 ---
-frage: "Was gehört in die Praxisinhaltsversicherung?"
-titel: "Was gehört in die Praxisinhaltsversicherung?"
-kurzantwort: "In den GDV-Musterbedingungen heißt der Baustein Inhaltsversicherung. Nach diesen unverbindlichen Mustern sind die im Vertrag bezeichneten beweglichen Sachen versichert, jede Gefahr nur, wenn sie vereinbart ist. Dein Vertrag kann abweichen."
-metaDescription: "Welche Sachen die Inhaltsversicherung nach den GDV-Musterbedingungen umfasst, welche Gefahren einzeln vereinbart werden und was ausgenommen ist."
+frage: "Was gehört in die Praxisinhaltsversicherung der Zahnarztpraxis?"
+titel: "Praxisinhaltsversicherung Zahnarztpraxis: Was gehört hinein?"
+kurzantwort: "In die Praxisinhaltsversicherung gehört alles Bewegliche deiner Zahnarztpraxis: Einrichtung, Medizintechnik, IT und Vorräte, auch geleaste Geräte. Wie gut das geschützt ist, hängt davon ab, ob nur einzelne Gefahren versichert sind oder alle, und welche Grenzen für Edelmetalle, Bargeld und Implantate gelten."
+metaDescription: "Was in die Praxisinhaltsversicherung einer Zahnarztpraxis gehört: Medizintechnik, geleaste Geräte, Edelmetalle, Röntgenbilder. Worauf du achten solltest."
 status: geprueft
-stand: "2026-11-14"
-reihenfolge: 8
+stand: "2026-11-16"
+pruefenBis: "2027-11-16"
+reihenfolge: 51
 quellen:
-  - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Teil B Inhaltsversicherung, Version 01.04.2014 (unverbindliche Bekanntgabe)"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Inhalts- und Ertragsausfallversicherung für Zahnarztpraxen, Stand 01.09.2026"
+  - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5968/df3ece81b898dd9debcf0e23c943013a/01-allgemeine-bedingungen-fuer-die-verbundene-sach-gewerbeversicherung-vsg-2010--data.pdf"
   - titel: "GDV: Musterklauseln zur Verbundenen Sach-Gewerbeversicherung (VSG 2010), Version 01.06.2020 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5958/fb52b5726e97b4e9b673dcd1be32d2ae/02-musterklauseln-zur-verbundenen-sach-gewerbeversicherung-vsg-2010--data.pdf"
-  - titel: "GDV: Allgemeine Bedingungen für die Elektronikversicherung (ABE 2020), Version 01.07.2025 (unverbindliche Bekanntgabe)"
+  - titel: "GDV: Allgemeine Bedingungen für die Elektronikversicherung (ABE), Version 01.07.2025 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/6154/bfec8b863b9c6ba3c6175b8517f2acb5/05-allgemeine-bedingungen-fuer-die-elektronikversicherung--abe-2011--data.pdf"
-  - titel: "§ 43 VVG, Versicherung für fremde Rechnung, Begriff (gesetze-im-internet.de)"
-    url: "https://www.gesetze-im-internet.de/vvg_2008/__43.html"
-  - titel: "§ 44 VVG, Versicherung für fremde Rechnung, Rechte des Versicherten (gesetze-im-internet.de)"
-    url: "https://www.gesetze-im-internet.de/vvg_2008/__44.html"
   - titel: "§ 89 VVG, Versicherung für einen Inbegriff von Sachen (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__89.html"
   - titel: "§ 23 VVG, Gefahrerhöhung (gesetze-im-internet.de)"
@@ -24,68 +22,99 @@ quellen:
   - titel: "§ 28 VVG, Verletzung einer vertraglichen Obliegenheit (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__28.html"
 faq:
-  - frage: "Steht der Begriff Praxisinhaltsversicherung in den Musterbedingungen?"
-    antwort: "In den von uns geprüften GDV-Mustern nicht. Dort heißt der Baustein Inhaltsversicherung. Es gilt, was im Vertrag deines Versicherers steht."
-  - frage: "Sind Bargeld und Wertsachen mitversichert?"
-    antwort: "Nach den GDV-Mustern nur, wenn das vereinbart ist, und dann grundsätzlich nur in verschlossenen Räumen oder Behältnissen, mit Ausnahmen. Ob und wie dein Vertrag das regelt, steht in den Bedingungen."
-  - frage: "Sind Daten und Programme mitversichert?"
-    antwort: "Nach den GDV-Mustern gelten Daten und Programme nicht als Sachen. Versichert sind nur einzelne Fälle, etwa notwendige Systemprogrammdaten der versicherten Betriebseinrichtung. Cyberschäden sind ein eigenes Thema."
+  - frage: "Ist die Behandlungseinheit über die Praxisinhaltsversicherung versichert?"
+    antwort: "In der Regel ja, als Teil der technischen Praxiseinrichtung. Entscheidend ist, gegen welche Gefahren: Es gibt Verträge, die Medizintechnik in der Grunddeckung nur gegen benannte Gefahren wie Feuer, Leitungswasser oder Einbruch schützen und erst in einer erweiterten Deckung gegen alle unvorhergesehenen Schäden."
+  - frage: "Sind geleaste oder finanzierte Geräte mitversichert?"
+    antwort: "Das sollten sie sein. Die Muster des Versicherungsverbands schließen geleaste Sachen nur bei Leasing mit Kaufoption ein, und es gibt Verträge, die fremdes Eigentum generell mitversichern, solange nichts anderes vereinbart ist. Prüfe außerdem, ob dein Leasingvertrag eine eigene Versicherung verlangt."
+  - frage: "Sind Edelmetalle in der Zahnarztpraxis versichert?"
+    antwort: "Nur wenn das vereinbart ist, und dann bis zu Grenzen, die von der Aufbewahrung abhängen. Je sicherer das Behältnis, desto höher die Grenze, und offen im Raum ist der Betrag am niedrigsten. Es gibt Verträge und eine Musterklausel des Versicherungsverbands, die Edelmetalle in Zahnpraxen ausdrücklich regeln."
+  - frage: "Sind Implantate im Lager versichert?"
+    antwort: "Nicht in jedem Vertrag vollständig. Es gibt Verträge, die Implantate nur gegen Feuer, Einbruchdiebstahl, Leitungswasser und Sturm oder Hagel versichern, nicht aber gegen andere Schäden, sofern nichts anderes vereinbart ist. Wer einen größeren Vorrat hat, sollte das gezielt nachfragen."
+  - frage: "Ersetzt die Versicherung verlorene Röntgenbilder und Abdrücke?"
+    antwort: "Es gibt Verträge, die die Kosten für die Neuanfertigung von Röntgenaufnahmen, Abdrücken und Laboruntersuchungen ausdrücklich übernehmen, bis zu einer eigenen Grenze. In den Mustern des Versicherungsverbands ist das nicht eigens geregelt, darauf solltest du achten."
+  - frage: "Sind Patientendaten und Software versichert?"
+    antwort: "Nur eingeschränkt. Daten gelten nicht als Sache. Versichert sind in der Inhaltsversicherung meist nur Programmdaten, die ein Gerät zum Funktionieren braucht, und nur nach einem Sachschaden am Datenträger. Für Datenverlust, Hackerangriffe und Schadsoftware brauchst du eine eigene Daten- oder Cyberdeckung."
 verwandt:
   - praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
+hinweise:
+  - nach: "Ist die Behandlungseinheit über den Inhalt versichert?"
+    art: einschaetzen
+    text: "Du weißt nicht, ob dein Vertrag nur einzelne Gefahren absichert oder alle? Wir sehen ihn uns gemeinsam an."
+    button: "Vertrag einschätzen lassen"
+  - nach: "Sind Röntgenbilder, Abdrücke und Patientendaten versichert?"
+    art: mail
+    text: "Du hast eine konkrete Frage zu Edelmetallen, Implantaten oder Röntgenbildern in deinem Vertrag? Schreib uns kurz."
+cta:
+  titel: "Was in deiner Praxis steht, mit dem Vertrag abgleichen"
+  text: "Im Erstgespräch gehen wir durch, was in deiner Praxis steht, was davon versichert ist und wo Grenzen liegen. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail."
+  button: "Erstgespräch buchen"
 ---
 
-„Die Praxis ist doch versichert, da steht Inhalt drauf.“ Ob das reicht, zeigt erst der Blick in die Bedingungen. Für die Frage, was in eine Praxisinhaltsversicherung gehört, kannst du die Musterbedingungen des Gesamtverbands der Versicherer (GDV) als Vergleich heranziehen. Sie sind unverbindlich, Versicherer dürfen sie verwenden oder davon abweichen. Deshalb zeigt diese Seite, wie die Muster gegliedert sind. Was in deinem Vertrag steht, entscheiden die Bedingungen deines Versicherers.
+„Die Praxis ist doch versichert, da steht Inhalt drauf.“ Das stimmt meistens, sagt aber wenig. Ob die Behandlungseinheit nach einem Kurzschluss ersetzt wird, ob das Gold im Labor mitversichert ist und was mit dem geleasten DVT passiert, steht erst im Kleingedruckten. Diese Seite zeigt, was in eine Praxisinhaltsversicherung gehört und wo die Unterschiede liegen.
 
-## Der Begriff in den Mustern
+## Was ist in der Praxisinhaltsversicherung versichert?
 
-In den von uns geprüften GDV-Mustern kommt das Wort „Praxisinhaltsversicherung“ nicht vor. Dort heißt der Baustein „Inhaltsversicherung“ (Teil B der Muster für die Verbundene Sach-Gewerbeversicherung, VSG). Zahnpraxen werden in einer Musterklausel ausdrücklich genannt (Klausel B 150501, siehe unten). Eine neutrale Quelle, die den Umfang einer Praxisinhaltsversicherung verbindlich festlegt, haben wir nicht gefunden. In den von uns gelesenen Vorschriften des Versicherungsvertragsgesetzes steht kein Umfang der Inhaltsversicherung, sie betreffen allgemeine Fragen wie Wert, fremde Rechnung und Obliegenheiten.
+Versichert ist alles Bewegliche, das zu deiner Zahnarztpraxis gehört. Dazu zählen die Einrichtung vom Empfang bis zum Wartezimmer, die Behandlungseinheiten und die übrige Medizintechnik, Röntgen und Labortechnik, IT und Telefonanlage sowie Vorräte und Verbrauchsmaterial. Sachen deiner Mitarbeiter\*innen in der Praxis sind nach dem Gesetz in der Regel mitversichert (§ 89 VVG). Auch Einbauten, die du als Mieter\*in auf eigene Kosten angeschafft hast, gehören dazu.
 
-## Welche Sachen nach dem Muster versichert sind
+Die Musterbedingungen des Versicherungsverbands sprechen allgemein von kaufmännischer und technischer Betriebseinrichtung sowie Waren und Vorräten. Es gibt aber auch Verträge, die speziell für Zahnarztpraxen geschrieben sind und Medizintechnik, Labortechnik und Geräte zur Qualitätssicherung in der Röntgendiagnostik ausdrücklich nennen. Je genauer der Vertrag deine Praxis beschreibt, desto weniger Streit gibt es im Schadenfall.
 
-Nach dem GDV-Muster sind die im Vertrag bezeichneten beweglichen Sachen versichert: die kaufmännische Betriebseinrichtung, die technische Betriebseinrichtung samt zugehörigen Fundamenten und Einmauerungen sowie Waren und Vorräte (VSG Teil B § 1 Nr. 1). Zur Betriebseinrichtung zählen nach dem Muster außerdem Sachen, die ein Mieter auf eigene Kosten eingefügt hat und für die er die Gefahr trägt, und Gebrauchsgegenstände der Beschäftigten innerhalb des Versicherungsortes.
+## Benannte Gefahren oder Allgefahren: Was ist der Unterschied?
 
-Welche Gegenstände deiner Praxis unter diese Begriffe fallen, nennt das Muster nicht. Ob etwa Behandlungseinheit, Praxisverbrauchsmaterial oder Patientenmodelle erfasst sind, können wir deshalb nicht aus einer neutralen Quelle belegen. Das klärt dein Vertrag, zum Beispiel über eine Aufstellung der versicherten Sachen.
+Das ist die wichtigste Frage beim Praxisinhalt. Es gibt zwei Bauweisen:
 
-## Eigentum, Leasing, fremde Sachen
+- **Benannte Gefahren:** Versichert ist nur, was ausdrücklich vereinbart ist, typischerweise Feuer, Einbruchdiebstahl, Vandalismus, Leitungswasser, Sturm und Hagel, weitere Elementargefahren und Glasbruch. So sind die Muster des Versicherungsverbands aufgebaut. Ein Schaden, der in keinen Baustein passt, ist nicht versichert.
+- **Allgefahren:** Versichert sind alle unvorhergesehenen Schäden, auch solche, an die niemand gedacht hat, mit Ausnahme dessen, was ausdrücklich ausgeschlossen ist. Ausgeschlossen sind dann etwa Abnutzung, Verschleiß, Krieg, Kernenergie oder Sturmflut.
 
-Nach dem Muster sind bewegliche Sachen versichert, wenn sie dir gehören, du sie unter Eigentumsvorbehalt oder per Leasing mit Kaufoption beschafft hast oder sie sicherungsübereignet sind; für das Leasing nennt das Muster zusätzliche Voraussetzungen zur Kaufoption. Darüber hinaus ist fremdes Eigentum erfasst, wenn es seiner Art nach dazugehört und dir zur Bearbeitung, Benutzung, Verwahrung oder zum Verkauf übergeben wurde (VSG Teil B § 1 Nr. 3). Eine Musterklausel kann dieses übergebene fremde Eigentum ausschließen (Klausel B 010301). Gerade bei finanzierten oder geleasten Geräten lohnt deshalb der Blick in den Vertrag.
+Bei Allgefahren kehrt sich die Prüfung um: Nicht du musst zeigen, dass der Schaden in einen Baustein passt, sondern der Ausschluss muss im Vertrag stehen. Den Sachschaden selbst musst du weiter belegen, und es gibt Verträge, die eine Einwirkung von außen auf das Gerät verlangen. Für eine Zahnarztpraxis mit viel empfindlicher Technik ist das aus unserer Sicht ein spürbarer Unterschied.
 
-Wer Ansprüche geltend machen darf, wenn fremde Sachen betroffen sind, regelt das Gesetz als Grundsatz so: Bei einer Versicherung für fremde Rechnung stehen die Rechte aus dem Vertrag dem Versicherten zu (§ 44 Abs. 1 Satz 1 VVG). Das GDV-Muster sieht dafür eine abweichende Regel vor, nach der nur der Versicherungsnehmer die Rechte ausübt (VSG Teil A § 12 Nr. 1). Auch hier gilt: Maßgeblich ist dein Vertrag.
+## Ist die Behandlungseinheit über den Inhalt versichert?
 
-Für Sachen von Mitarbeiter\*innen sagt § 89 Abs. 2 VVG: Ist eine Versicherung für einen Inbegriff von Sachen genommen, erstreckt sie sich auf Sachen von Personen, die im Dienstverhältnis zu dir stehen und ihre Tätigkeit an dem Ort ausüben, für den die Versicherung gilt. Insoweit gilt sie als für fremde Rechnung genommen. Ob dein Vertrag eine Versicherung für einen Inbegriff von Sachen ist, ergibt sich aus dem Vertrag.
+In der Regel ja, sie gehört zur technischen Praxiseinrichtung. Wichtig ist, gegen welche Schäden. Bei benannten Gefahren ist die Einheit gegen Brand oder Wasser geschützt, aber nicht gegen einen Bedienfehler oder einen Kurzschluss im Gerät. Dafür gibt es eigene Bausteine, etwa ergänzende Gefahren für die technische Einrichtung oder eine eigene Elektronikversicherung.
 
-## Welche Gefahren einzeln vereinbart werden
+Es gibt Verträge, die beides kombinieren: In einer Grunddeckung ist Medizintechnik nur gegen benannte Gefahren versichert, in einer erweiterten Deckung gegen alle unvorhergesehenen Schäden. Für DVT, CAD/CAM, Laser oder die Behandlungseinheit lohnt sich deshalb der Blick darauf, welche Deckungsstufe vereinbart ist.
 
-Nach dem Muster ist jede Gefahr nur versichert, wenn sie vereinbart ist (VSG Teil B § 4 Nr. 1). Das Muster führt als einzelne Bausteine unter anderem auf: Feuer, Einbruchdiebstahl, Vandalismus nach Einbruch und Raub, Leitungswasser, Sturm und Hagel, weitere Elementargefahren, Glasbruch und ergänzende Gefahren für die technische Betriebseinrichtung.
+## Sind geleaste und finanzierte Geräte mitversichert?
 
-Einige Begriffe sind im Muster eng gefasst:
+Sie sollten es sein. Nach den Mustern des Versicherungsverbands sind Sachen versichert, die dir gehören, die du unter Eigentumsvorbehalt gekauft oder geleast hast, mit zusätzlichen Voraussetzungen beim Leasing, und Sachen, die sicherungsübereignet sind. Ohne Kaufoption gilt nach den Mustern für geleaste Geräte nur der Zeitwert. Es gibt Verträge, die noch weiter gehen und fremdes Eigentum generell mitversichern, solange du mit dem Eigentümer nichts anderes vereinbart hast. Manche Verträge ersetzen geleaste Geräte im Schadenfall genauso wie eigene, wenn du sie wiederbeschaffst.
 
-- Der Baustein Vandalismus nach einem Einbruch setzt voraus, dass vorher in der beschriebenen Weise in die Räume eingedrungen wurde. Einfacher Diebstahl oder Trickdiebstahl gilt nicht als Raub (VSG Teil B § 6).
-- Als Sturm gilt eine wetterbedingte Luftbewegung von mindestens Windstärke 8 nach Beaufort (VSG Teil B § 8).
-- Beim Leitungswasser sind unter anderem Überschwemmung, Grundwasser und Rückstau durch Niederschläge ausgenommen (VSG Teil B § 7 Nr. 4 a).
-- Krieg und Kernenergie sind ohne Rücksicht auf mitwirkende Ursachen ausgeschlossen, bei Kernenergie mit einer Ausnahme für radioaktive Isotope aus dem Betrieb. Innere Unruhen sind ausgeschlossen, soweit sie nicht nach § 10 Nr. 1 des Musters versichert sind (VSG Teil B § 4 Nr. 3).
+Prüfe zusätzlich deinen Leasing- oder Finanzierungsvertrag. Dort steht oft, wie das Gerät zu versichern ist und wer im Schadenfall die Entschädigung bekommt.
 
-## Was nach dem Muster nicht oder nur begrenzt versichert ist
+## Was ist mit Edelmetallen, Bargeld und Implantaten?
 
-Nach dem Muster sind, sofern nichts anderes vereinbart ist, unter anderem nicht versichert: Bargeld und Wertsachen (soweit sie nicht zu den Waren gehören), Geschäftsunterlagen, zulassungspflichtige Kraftfahrzeuge sowie Anschauungsmodelle und Ausstellungsstücke (VSG Teil B § 1 Nr. 5). Daten und Programme gelten nicht als Sache. Versichert sind sie nur in einzelnen Fällen, etwa als notwendige Systemprogrammdaten der versicherten Betriebseinrichtung (VSG Teil B § 1 Nr. 2). Cyber ist ein eigenes Thema und nicht Gegenstand dieser Seite.
+Hier liegen in der Zahnarztpraxis die typischen Lücken. Nach den Mustern sind Edelmetalle und Bargeld nur versichert, wenn das vereinbart ist, und dann bis zu Grenzen, deren Höhe von der Aufbewahrung ab: im schweren Geldschrank am höchsten, im verschlossenen Behältnis niedriger, offen im abgeschlossenen Raum am niedrigsten. Die Musterklauseln des Versicherungsverbands enthalten eine eigene Klausel für Edelmetalle in Zahnpraxen und Zahnlabors, nach der sie auch ohne Behältnis bis zu einer vereinbarten Grenze versichert sind, wenn die Klausel vereinbart ist.
 
-Soweit Bargeld und Wertsachen versichert sind, besteht Schutz nach dem Muster grundsätzlich nur in verschlossenen Räumen oder Behältnissen. Das Muster nennt selbst Ausnahmen, etwa bei Raub oder bei Vereinbarung für die Geschäftszeit bis zu einer Entschädigungsgrenze (VSG Teil B § 15 Nr. 5). Für Zahnpraxen sieht eine Musterklausel vor, dass verarbeitete und unverarbeitete Edelmetalle in Zahnpraxen und Zahnlabors auch ohne Behältnis bis zu einer vereinbarten Entschädigungsgrenze versichert sind (Klausel B 150501). Edelmetalle zählen im Muster zu den Wertsachen. Sie gilt nur, wenn sie vereinbart ist.
+Bei Implantaten im Lager gibt es Verträge, die nur gegen Feuer, Einbruchdiebstahl, Leitungswasser und Sturm oder Hagel versichern, nicht gegen alle Schäden, sofern nichts anderes vereinbart ist. Wer einen größeren Vorrat hält, sollte das gezielt prüfen.
 
-Versichert ist grundsätzlich nur am vertraglich bezeichneten Ort. Sachen im Freien sind nur bei Vereinbarung erfasst. Für vorübergehend außerhalb des Versicherungsortes befindliche Sachen sieht das Muster eine begrenzte Außenversicherung innerhalb Deutschlands vor (VSG Teil B § 15 Nr. 1 bis 3).
+## Sind Röntgenbilder, Abdrücke und Patientendaten versichert?
 
-## Elektronik und Ertragsausfall: eigene Bausteine
+Teilweise. Es gibt Verträge, die die Kosten für die Neuanfertigung von Röntgenaufnahmen, Abdrücken und Laboruntersuchungen ausdrücklich übernehmen, wenn sie in der Praxis beschädigt werden oder abhandenkommen, bis zu einer eigenen Grenze. Einige ersetzen auch den Ausfall verlorener Rezepte bei der Abrechnung, dafür gibt es auch eine Musterklausel des Versicherungsverbands.
 
-Elektrische und elektronische Geräte können über die „Ergänzenden Gefahren für Schäden an Technischer Betriebseinrichtung“ der Inhaltsversicherung (VSG Teil B § 13) oder über ein eigenes GDV-Muster, die Elektronikversicherung (ABE), versichert werden. Beide müssen vereinbart sein. Wie weit der Schutz für einzelne Geräte reicht, behandeln wir nicht auf dieser Seite.
+Daten sind dagegen keine Sachen. In der Inhaltsversicherung sind in der Regel nur Programmdaten versichert, die ein Gerät zum Funktionieren braucht, und nur dann, wenn der Datenträger selbst durch einen versicherten Schaden betroffen ist. Es gibt Praxisverträge mit einem eigenen Baustein für Daten, der auch Patientendaten und Bedienfehler abdeckt, Schadsoftware aber ausschließt. Für Hackerangriffe und Schadsoftware brauchst du eine Cyberdeckung.
 
-Ertragsausfallschäden sind nach dem Muster nur versichert, soweit das vereinbart ist (VSG Teil B § 2 Nr. 1). Wie du den Ausfall einer Praxis absichern kannst, steht auf den Seiten zur Praxisausfallversicherung.
+## Gilt der Schutz auch außerhalb der Praxis?
 
-## Pflichten im Vertrag
+Nur begrenzt. Versichert ist grundsätzlich am Ort, der im Vertrag steht. Für Sachen, die vorübergehend woanders sind, gibt es eine Außenversicherung mit eigener Grenze. Es gibt Verträge, die als vorübergehend höchstens sechs Monate gelten lassen, Laptops und mobile IT auch unterwegs versichern und den Notfallkoffer bei Hausbesuchen einschließen. Ziehst du mit der Praxis um, ist die Anzeige an den Versicherer Pflicht, und es gibt Verträge, die Schäden beim Umzugstransport ausdrücklich ausschließen.
 
-Das Muster nennt als Obliegenheit, gesetzliche, behördliche und vereinbarte Sicherheitsvorschriften einzuhalten (VSG Teil A § 8 Nr. 1). Gesetzlich gilt: Nach Abgabe deiner Vertragserklärung darfst du das versicherte Risiko nicht ohne Zustimmung des Versicherers erhöhen (§ 23 Abs. 1 VVG). Verletzt du eine vertragliche Obliegenheit vor dem Versicherungsfall, kann der Versicherer innerhalb eines Monats ab Kenntnis fristlos kündigen. Das gilt nicht, wenn die Verletzung weder auf Vorsatz noch auf grober Fahrlässigkeit beruht (§ 28 Abs. 1 VVG). Ist im Vertrag Leistungsfreiheit vereinbart, ist der Versicherer bei vorsätzlicher Verletzung leistungsfrei. Bei grob fahrlässiger Verletzung darf er seine Leistung im Verhältnis zur Schwere des Verschuldens kürzen, und du musst beweisen, dass keine grobe Fahrlässigkeit vorlag (§ 28 Abs. 2 VVG). Welche Sicherheitsvorkehrungen dein Vertrag verlangt, etwa eine Einbruchmeldeanlage, steht in den Bedingungen.
+## Welche Pflichten hast du?
+
+Du musst die vereinbarten Sicherheitsvorschriften einhalten. Typisch sind: außerhalb der Sprechzeiten Türen und Fenster verschließen, vereinbarte Sicherungen wie eine Alarmanlage funktionsfähig halten, wasserführende Anlagen in Ordnung halten und im Winter heizen. Auch eine mindestens wöchentliche Datensicherung verlangen schon die Muster des Versicherungsverbands.
+
+Das Gesetz verbietet dir, das Risiko ohne Zustimmung des Versicherers zu erhöhen (§ 23 VVG), etwa durch Abbau einer Alarmanlage. Verletzt du eine vertragliche Pflicht grob fahrlässig, kann der Versicherer die Leistung kürzen, bei Vorsatz ganz verweigern, sofern die Verletzung für den Schaden ursächlich war (§ 28 VVG). Es gibt Verträge, die bei grob fahrlässig verursachten Schäden ganz auf eine Kürzung verzichten und bei grob fahrlässigen Pflichtverletzungen erst ab einer hohen Schadensumme und nur begrenzt kürzen. Für individuell vereinbarte Sicherungen wie eine geforderte Alarmanlage gilt dieser Verzicht dort nicht. Solche Regelungen sind ein Qualitätsmerkmal, auf das wir in der Beratung achten.
+
+## Worauf du achten kannst
+
+- Benannte Gefahren oder Allgefahren, und in welcher Deckungsstufe steckt die Medizintechnik?
+- Sind geleaste und finanzierte Geräte ausdrücklich mitversichert?
+- Welche Grenzen gelten für Edelmetalle, Bargeld und Implantate, und wo bewahrst du sie auf?
+- Sind Röntgenbilder, Abdrücke und Rezepte mitversichert?
+- Gibt es eine eigene Daten- oder Cyberdeckung?
+- Verzichtet der Vertrag auf Kürzungen bei grob fahrlässig verursachten Schäden und bei Pflichtverletzungen?
+
+Wie hoch die Versicherungssumme sein muss und was Unterversicherung bedeutet, steht auf der Seite [Praxisinhalt: Versicherungssumme und Unterversicherung](/ratgeber/praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen). Was passiert, wenn die Praxis nach einem Schaden stillsteht, erklärt [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
 
 ## Was du mitnehmen kannst
 
-Einen verbindlichen Umfang der Praxisinhaltsversicherung haben wir in den geprüften Quellen nicht gefunden. Die GDV-Muster zeigen, wie ein Vertrag aufgebaut sein kann: bezeichnete Sachen, einzeln vereinbarte Gefahren, Ausschlüsse und Pflichten. Konkret heißt das: Prüfe in deinem Vertrag, welche Sachen bezeichnet sind, welche Gefahren vereinbart sind und was ausgenommen ist. Aus unserer Sicht ist das die wichtigste Frage, weil davon abhängt, ob ein Schaden überhaupt erfasst ist. Ob dein Vertrag im Einzelnen vom Muster abweicht, können wir von außen nicht sagen. Wie die Versicherungssumme festgelegt wird und was Unterversicherung bedeutet, steht auf der Seite „[Praxisinhalt: Versicherungssumme und Unterversicherung](/ratgeber/praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen)“.
+Eine Inhaltsversicherung haben in unserer Beratung fast alle Praxen. Die Unterschiede liegen in der Bauweise: benannte Gefahren oder Allgefahren, und wie gut Medizintechnik, Edelmetalle und Implantate abgedeckt sind. Geh einmal mit deinem Vertrag durch die Praxis und frag dich bei jedem teuren Gerät: Gegen welchen Schaden wäre es versichert? Ein Gespräch ist sinnvoll, wenn du dabei auf Fragen stößt, die der Vertrag nicht klar beantwortet.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: GDV-Musterbedingungen (VSG 2010, Version 01.04.2014, Klauseln 01.06.2020; ABE, Version 01.07.2025), Gesetze abgerufen am 14.11.2026. Die Muster sind unverbindlich, dein Vertrag kann abweichen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

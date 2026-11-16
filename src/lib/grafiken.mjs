@@ -161,27 +161,25 @@ export const grafiken = {
   ],
   'praxisinhalt-was-gehoert-hinein-zahnaerzt-innen': [
     {
-      typ: 'karten', nach: 'Welche Sachen nach dem Muster versichert sind',
-      titel: 'So ist die Inhaltsversicherung im GDV-Muster aufgebaut',
+      typ: 'karten', nach: 'Benannte Gefahren oder Allgefahren: Was ist der Unterschied?',
+      titel: 'Zwei Bauweisen der Praxisinhaltsversicherung',
       karten: [
-        { kopf: 'Versicherte Sachen', punkte: ['Kaufmännische und technische Betriebseinrichtung', 'Waren und Vorräte', 'Nur, was im Vertrag bezeichnet ist (VSG Teil B § 1)'] },
-        { kopf: 'Gefahren', punkte: ['Jede Gefahr nur, wenn vereinbart (§ 4)', 'Zum Beispiel Feuer, Einbruchdiebstahl, Leitungswasser, Sturm und Hagel'] },
-        { kopf: 'Ohne Vereinbarung nicht versichert', punkte: ['Bargeld und Wertsachen, Geschäftsunterlagen, zulassungspflichtige Kfz (§ 1 Nr. 5)', 'Daten und Programme gelten nicht als Sache'] },
+        { kopf: 'Benannte Gefahren', punkte: ['Versichert ist nur, was vereinbart ist', 'Typisch: Feuer, Einbruchdiebstahl, Leitungswasser, Sturm und Hagel, Glasbruch', 'Passt der Schaden in keinen Baustein, gibt es nichts'] },
+        { kopf: 'Allgefahren', punkte: ['Versichert sind alle unvorhergesehenen Schäden', 'Der Ausschluss muss im Vertrag stehen, den Schaden belegst du weiter', 'Aus unserer Sicht der robustere Schutz für viel Technik'] },
       ],
-      fuss: 'GDV-Musterbedingungen VSG 2010, Version 01.04.2014, unverbindlich. Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 16.11.2026, nach Verbandsmustern und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen': [
     {
-      typ: 'ablauf', nach: 'Wie das GDV-Muster rechnet',
-      titel: 'Fiktives Beispiel: Kürzung nach dem GDV-Muster',
-      schritte: [
-        { titel: 'Verhältnis', text: 'Summe 300.000 € ÷ Wert 400.000 € = 0,75' },
-        { titel: 'Kürzung', text: 'Schaden 40.000 € × 0,75 = 30.000 €' },
-        { titel: 'Selbstbehalt', text: '30.000 € − 1.000 € = 29.000 €' },
-        { titel: 'Zum Vergleich', text: 'Bei ausreichender Summe: 40.000 € − 1.000 € = 39.000 €' },
+      typ: 'karten', nach: 'Gibt es Verträge ohne Unterversicherung?',
+      titel: 'Drei Wege, wie Verträge mit Unterversicherung umgehen',
+      karten: [
+        { kopf: 'Summe ohne Verzicht', punkte: ['Gekürzt wird bei jedem Schaden im Verhältnis Summe zu Wert', 'Summe muss regelmäßig angepasst werden'] },
+        { kopf: 'Summe mit Verzichtsklausel', punkte: ['Keine Kürzung bis zu vereinbarten Grenzen', 'Darüber wird der ganze Schaden im Verhältnis gekürzt'] },
+        { kopf: 'Höchstgrenze statt Summe', punkte: ['Keine Unterversicherung im Vertrag', 'Beitrag zum Beispiel nach Behandlungsstühlen', 'Angaben, etwa eine Jahresmeldung, müssen stimmen'] },
       ],
-      fuss: 'Fiktives Beispiel mit frei angenommenen Zahlen nach VSG Teil B § 19 Nr. 5 (Version 01.04.2014, unverbindlich).',
+      fuss: 'Stand: 16.11.2026, nach Gesetz, Verbandsmustern und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': [
