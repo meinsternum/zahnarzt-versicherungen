@@ -212,7 +212,7 @@ export const grafiken = {
       titel: 'Welche Kosten das fiktive Beispiel ansetzt',
       karten: [
         { kopf: 'Im Beispiel enthalten', punkte: ['Personal', 'Raumkosten', 'Leasing, Zinsen, Abschreibungen', 'Übrige laufende Kosten'] },
-        { kopf: 'Im Beispiel nicht enthalten', punkte: ['Material', 'Fremdlabor', 'Fallen in der Regel weg, wenn nicht behandelt wird'] },
+        { kopf: 'Im Beispiel nicht enthalten', punkte: ['Material', 'Fremdlabor', 'Hängen an der Behandlung (unsere Einschätzung)'] },
       ],
       fuss: 'Kostenarten des fiktiven Beispiels, angelehnt an KZBV Jahrbuch 2025, Tab. 5.3. Stand: 16.11.2026.',
     },

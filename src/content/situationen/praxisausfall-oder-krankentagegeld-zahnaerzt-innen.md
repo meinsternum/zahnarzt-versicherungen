@@ -24,13 +24,13 @@ faq:
   - frage: "Was ersetzt eine Praxisausfallversicherung, wenn ich als Zahnärzt*in krank ausfalle?"
     antwort: "Die Kosten, die weiterlaufen, während du nicht behandeln kannst: vor allem Personal, Miete, Finanzierung und Leasing. Je nach Vereinbarung ist auch der entgehende Gewinn mitversichert. Was genau zählt, legt dein Vertrag fest."
   - frage: "Brauche ich als Praxisinhaber*in beides?"
-    antwort: "Wenn du Einkommen und Praxiskosten absichern willst, ja, denn die beiden Verträge decken Verschiedenes ab. Ist in der Praxisausfallversicherung der Gewinn mitversichert, überschneiden sie sich. Dann lohnt es sich, beide Summen aufeinander abzustimmen."
+    antwort: "Wenn du Einkommen und Praxiskosten absichern willst, ja, denn die beiden Verträge decken Verschiedenes ab. Ist in der Praxisausfallversicherung der Gewinn mitversichert, können sie sich überschneiden. Dann lohnt es sich, beide Summen aufeinander abzustimmen."
   - frage: "Zählen die Kosten für eine Praxisvertretung zu den versicherten Kosten?"
     antwort: "Das kann so vereinbart sein. Es gibt Verträge, die Aufwendungen für eine Ersatzkraft ausdrücklich zu den fortlaufenden Kosten zählen. Einnahmen, die die Vertretung erwirtschaftet, mindern dann aber die Entschädigung. Kläre das vor dem Abschluss."
   - frage: "Was passiert, wenn aus der Krankheit eine Berufsunfähigkeit wird?"
-    antwort: "Dann endet die Leistung der Praxisausfallversicherung. Sie ist für den vorübergehenden Ausfall gedacht. Ein Vertrag zieht die Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben. Ab dann geht es um deine Berufsunfähigkeitsabsicherung."
+    antwort: "Dann endet in der Regel die Leistung der Praxisausfallversicherung. Sie ist für den vorübergehenden Ausfall gedacht. Ein Vertrag zieht die Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben. Ab dann geht es um deine Berufsunfähigkeitsabsicherung."
   - frage: "Ist ein Brand in der Praxis mitversichert?"
-    antwort: "Nein, das ist eine andere Absicherung. Steht die Praxis nach einem Sachschaden wie einem Brand still, greift eine Betriebsunterbrechungsversicherung, die zur Praxisinhaltsversicherung gehören kann. Die Praxisausfallversicherung knüpft an deine Arbeitsunfähigkeit an."
+    antwort: "Nein, das ist eine andere Absicherung. Steht die Praxis nach einem Sachschaden wie einem Brand still, ist das ein Fall für die Betriebsunterbrechungsversicherung. Die Praxisausfallversicherung knüpft an deine Arbeitsunfähigkeit an."
 verwandt:
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
@@ -42,13 +42,13 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-„Ich habe doch ein Krankentagegeld, ist die Praxis damit nicht mit abgedeckt?“ Nein, und genau hier entsteht leicht eine Lücke. Beide Verträge zahlen, wenn du krank ausfällst. Aber sie messen an unterschiedlichen Dingen: der eine an deinem Einkommen, der andere an den Kosten deiner Zahnarztpraxis.
+„Ich habe doch ein Krankentagegeld, ist die Praxis damit nicht mit abgedeckt?“ In der Regel nicht, und genau hier kann eine Lücke entstehen. Beide Verträge zahlen, wenn du krank ausfällst. Aber sie messen an unterschiedlichen Dingen: der eine an deinem Einkommen, der andere an den Kosten deiner Zahnarztpraxis.
 
 ## Zahlt das Krankentagegeld auch die Kosten meiner Zahnarztpraxis?
 
-In der Regel nicht. Das Krankentagegeld ersetzt deinen Verdienstausfall, wenn du wegen Krankheit oder Unfall arbeitsunfähig bist. Wie hoch es ist und ab wann es fließt, legst du mit dem Tarif fest. Nach oben ist es üblicherweise durch dein Nettoeinkommen begrenzt: Du kannst nicht mehr Tagegeld versichern, als du netto aus dem Beruf verdienst.
+In der Regel nicht. Das Krankentagegeld ersetzt deinen Verdienstausfall, wenn du wegen Krankheit oder Unfall arbeitsunfähig bist. Wie hoch es ist und wie lange es fließt, ergibt sich aus dem Tarif. Nach oben ist es üblicherweise durch dein Nettoeinkommen begrenzt: Du kannst nicht mehr Tagegeld versichern, als du netto aus dem Beruf verdienst.
 
-Konkret heißt das: Das Krankentagegeld hält dich privat über Wasser. Die Gehälter deines Teams, die Miete und die Raten für den Behandlungsstuhl sind darin nicht vorgesehen.
+Konkret heißt das: Das Krankentagegeld hält dich privat über Wasser. Für die Gehälter deines Teams, die Miete und die Raten für den Behandlungsstuhl ist es nicht gedacht.
 
 ## Was ersetzt eine Praxisausfallversicherung?
 
@@ -60,11 +60,11 @@ Auslöser ist deine Arbeitsunfähigkeit als Inhaber\*in, ärztlich festgestellt.
 
 Als Vertragszahnärzt\*in musst du persönlich behandeln. Bei Krankheit, Urlaub oder Fortbildung darfst du dich innerhalb von zwölf Monaten zusammen bis zu drei Monate vertreten lassen (§ 32 Abs. 1 Zahnärzte-ZV). Dauert die Vertretung länger als eine Woche, musst du sie der Kassenzahnärztlichen Vereinigung mitteilen.
 
-Eine Vertretung hält die Praxis am Laufen, kostet aber Geld. Es gibt Verträge, die Aufwendungen für eine Ersatzkraft ausdrücklich zu den versicherten Kosten zählen. Wichtig ist an der Stelle: Was die Vertretung an Einnahmen erwirtschaftet, wird auf die Entschädigung angerechnet. Die Versicherung gleicht aus, was fehlt, nicht mehr.
+Eine Vertretung hält die Praxis am Laufen, kostet aber Geld. Es gibt Verträge, die Aufwendungen für eine Ersatzkraft ausdrücklich zu den versicherten Kosten zählen. Wichtig ist an der Stelle: Was die Vertretung an Einnahmen erwirtschaftet, wird in solchen Verträgen auf die Entschädigung angerechnet. Die Versicherung gleicht aus, was fehlt, nicht mehr.
 
 ## Was passiert, wenn aus der Krankheit eine Berufsunfähigkeit wird?
 
-Dann endet die Leistung der Praxisausfallversicherung. Sie ist für den vorübergehenden Ausfall gedacht, nicht für den dauerhaften. Ein Vertrag zieht die Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben. Ab diesem Punkt geht es um Versorgungswerk und private Berufsunfähigkeitsversicherung, siehe [BU bei Zahnärzt\*innen: Versorgungswerk und private BU](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen).
+Dann endet in der Regel die Leistung der Praxisausfallversicherung. Sie ist für den vorübergehenden Ausfall gedacht, nicht für den dauerhaften. Ein Vertrag zieht die Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben. Ab diesem Punkt geht es um Versorgungswerk und private Berufsunfähigkeitsversicherung, siehe [BU bei Zahnärzt\*innen: Versorgungswerk und private BU](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen).
 
 ## Krankentagegeld und Praxisausfall im Vergleich
 
@@ -77,10 +77,10 @@ Dann endet die Leistung der Praxisausfallversicherung. Sie ist für den vorüber
 
 ## Worauf du in beiden Verträgen achten kannst
 
-- Sind in der Praxisausfallversicherung nur die Kosten oder auch der Gewinn versichert? Davon hängt ab, wie hoch dein Krankentagegeld sein muss.
+- Sind in der Praxisausfallversicherung nur die Kosten oder auch der Gewinn versichert? Davon hängt ab, wie hoch dein Krankentagegeld sein sollte.
 - Passen die Karenzzeiten zusammen? Wenn das Krankentagegeld früher zahlt als die Praxisausfallversicherung, trägst du die Praxiskosten in der Zwischenzeit selbst.
 - Sind Vertretungskosten mitversichert?
-- Stimmt die Summe noch? Praxen wachsen, Verträge wachsen selten von allein mit. Einen Rechenweg zeigt die Seite [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
+- Stimmt die Summe noch? Praxen wachsen, die Versicherungssumme wächst nicht von allein mit. Einen Rechenweg zeigt die Seite [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
 
 Für angestellte Zahnärzt\*innen stellt sich die Frage anders, siehe [Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen).
 
@@ -88,4 +88,4 @@ Für angestellte Zahnärzt\*innen stellt sich die Frage anders, siehe [Krankenge
 
 Stell dir zwei Fragen getrennt: Was fehlt dir persönlich, wenn du drei Monate ausfällst? Und was fehlt der Praxis? Für das Erste ist das Krankentagegeld da, für das Zweite die Praxisausfallversicherung. Aus unserer Sicht kommt es weniger auf den einzelnen Vertrag an als darauf, dass beide aufeinander abgestimmt sind. Ein Gespräch ist sinnvoll, wenn du nicht sicher bist, welcher deiner Verträge welche Lücke schließt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz, Verbandsmuster und Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.08.2020). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

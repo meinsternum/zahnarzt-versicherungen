@@ -1,7 +1,7 @@
 ---
 frage: "Wann zahlt die Praxisausfallversicherung für Zahnärzt*innen, und was bedeuten Karenzzeit und Haftzeit?"
 titel: "Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit"
-kurzantwort: "Die Praxisausfallversicherung zahlt, wenn du als Inhaber*in der Zahnarztpraxis ärztlich festgestellt arbeitsunfähig bist: nach Ablauf der vereinbarten Karenzzeit und längstens bis zum Ende der Haftzeit. Worin sich Verträge am stärksten unterscheiden, sind die Ausschlüsse."
+kurzantwort: "Die Praxisausfallversicherung zahlt, wenn du als Inhaber*in der Zahnarztpraxis ärztlich festgestellt arbeitsunfähig bist: nach Ablauf der vereinbarten Karenzzeit und längstens bis zum Ende der Haftzeit. Deutliche Unterschiede zwischen Verträgen gibt es bei den Ausschlüssen."
 metaDescription: "Wann die Praxisausfallversicherung für Zahnärzt*innen zahlt, wie Karenzzeit und Haftzeit laufen und in welchen Fällen sie nicht leistet."
 status: geprueft
 stand: "2026-11-16"
@@ -22,13 +22,13 @@ faq:
   - frage: "Ab wann zahlt die Praxisausfallversicherung bei Krankheit?"
     antwort: "Nach Ablauf der Karenzzeit, die du im Vertrag vereinbarst. Sie beginnt mit dem ersten Tag der Arbeitsunfähigkeit. Für diese Zeit gibt es keine Leistung, die Kosten trägt die Praxis selbst."
   - frage: "Beginnt die Karenzzeit bei jeder Krankheit neu?"
-    antwort: "Grundsätzlich ja, mit jedem neuen Ausfall. Bei einem Rückfall kann es anders sein: Es gibt Verträge, die frühere Ausfallzeiten wegen derselben Erkrankung auf die Karenzzeit anrechnen, wenn der Rückfall innerhalb von sechs Monaten kommt."
+    antwort: "Grundsätzlich ja, mit jedem neuen Ausfall. Bei einem Rückfall kann es anders sein: Es gibt Verträge, die frühere Ausfallzeiten wegen derselben Erkrankung auf die Karenzzeit anrechnen, wenn der Rückfall innerhalb von sechs Monaten nach dem Ende des ersten Ausfalls kommt."
   - frage: "Wie lange zahlt die Praxisausfallversicherung höchstens?"
     antwort: "Bis zum Ende der vereinbarten Haftzeit. Angeboten werden zum Beispiel 12 oder 24 Monate. Achte darauf, ab wann die Haftzeit läuft: Beginnt sie schon mit dem ersten Krankheitstag, zählt die Karenzzeit mit."
   - frage: "Zahlt die Praxisausfallversicherung bei Schwangerschaft?"
     antwort: "Das hängt vom Vertrag ab. Es gibt Verträge, in denen Schwangerschaft und Entbindung allein kein Leistungsfall sind, und Tarife, die schwangerschaftsbedingte Erkrankungen ausdrücklich einschließen. Wenn das für dich ein Thema ist, kläre es vor dem Abschluss."
   - frage: "Ist eine Quarantäne oder Pandemie versichert?"
-    antwort: "Je nach Vertrag. Eine behördliche Quarantäne kann versichert sein, je nach Vertrag aber nur als Anordnung im Einzelfall und nicht bei einer Epidemie oder Pandemie. Davon zu trennen ist die eigene Erkrankung: Wirst du durch die Infektion selbst arbeitsunfähig, ist das ein normaler Krankheitsfall."
+    antwort: "Je nach Vertrag. Eine behördliche Quarantäne kann versichert sein, je nach Vertrag aber nur als Anordnung im Einzelfall und nicht bei einer Epidemie oder Pandemie. Davon zu trennen ist die eigene Erkrankung: Ob du versichert bist, wenn dich die Infektion selbst arbeitsunfähig macht, regeln Verträge unterschiedlich. Es gibt Tarife, die das ausdrücklich einschließen."
   - frage: "Muss ich als Zahnärzt*in ganz ausfallen, damit gezahlt wird?"
     antwort: "In der Regel ja. Arbeitsunfähig bist du nach den üblichen Definitionen, wenn du deine Tätigkeit vorübergehend in keiner Weise ausüben kannst und auch nicht ausübst. Manche Tarife sehen zusätzlich eine befristete Wiedereingliederung bei teilweiser Arbeitsfähigkeit vor."
 verwandt:
@@ -56,35 +56,35 @@ Die Karenzzeit ist die Zeit zu Beginn des Ausfalls, für die noch nicht gezahlt 
 Zwei Dinge sind wichtig:
 
 - Die Karenzzeit beginnt mit jedem neuen Ausfall von vorn. Bei einem Rückfall wegen derselben Erkrankung kann es Erleichterungen geben, etwa die Anrechnung früherer Ausfallzeiten.
-- Es gibt Verträge, die auf die Karenzzeit verzichten, wenn ein Unfall einen längeren Krankenhausaufenthalt nötig macht.
+- Es gibt Verträge, die auf die Karenzzeit verzichten, wenn ein Unfall einen Krankenhausaufenthalt von mindestens 72 Stunden nötig macht.
 
-Aus unserer Sicht ist die Karenzzeit die Stellschraube, an der sich falsches Sparen am stärksten rächt. Entscheidend ist nicht, was günstig klingt, sondern wie viele Wochen deine Praxis die Kosten aus Rücklagen tragen kann.
+Aus unserer Sicht solltest du die Karenzzeit nicht nach dem Beitrag wählen, sondern danach, wie viele Wochen deine Praxis die Kosten aus Rücklagen tragen kann.
 
 ## Was bedeutet Haftzeit oder Leistungsdauer?
 
 Die Haftzeit ist der Zeitraum, bis zu dessen Ende der Versicherer längstens leistet. Angeboten werden zum Beispiel 12 oder 24 Monate. Achte auf den Beginn: Läuft die Haftzeit schon ab dem ersten Krankheitstag, zählt die Karenzzeit mit. Die tatsächliche Leistungsdauer ist dann kürzer als die Haftzeit.
 
-Mehrere Ausfälle wegen derselben Ursache können zusammengerechnet werden. Wer nach einer Operation zurückkommt und wegen derselben Sache wieder ausfällt, beginnt also nicht bei null.
+Mehrere Ausfälle wegen derselben Ursache können zusammengerechnet werden. Fällst du nach einer Operation wegen derselben Sache noch einmal aus, läuft dann keine neue Haftzeit an. Die bisherigen Ausfalltage zählen mit.
 
 ## Wann zahlt die Praxisausfallversicherung nicht?
 
-Hier unterscheiden sich die Verträge am stärksten. Diese Punkte solltest du in deinen Bedingungen nachlesen:
+Hier unterscheiden sich Verträge deutlich. Diese Punkte solltest du in deinen Bedingungen nachlesen:
 
 - Schwangerschaft und Entbindung: in manchen Verträgen allein kein Leistungsfall, in anderen sind schwangerschaftsbedingte Erkrankungen eingeschlossen.
-- Kur und Reha: in manchen Verträgen ausgeschlossen, außer die Reha schließt direkt an eine versicherte Erkrankung an.
+- Kur und Reha: in manchen Verträgen ausgeschlossen, außer die Reha steht in unmittelbarem Zusammenhang mit einem versicherten Ausfall.
 - Psychische Erkrankungen: teils zeitlich begrenzt versichert.
-- Quarantäne: je nach Vertrag nur als behördliche Anordnung im Einzelfall, nicht bei einer Epidemie oder Pandemie. Die eigene Erkrankung durch die Infektion ist davon nicht betroffen.
-- Aufenthalt im Ausland: Wer während der Arbeitsunfähigkeit nicht am Wohnsitz ist, kann den Anspruch verlieren, mit Ausnahmen etwa bei stationärer Behandlung.
+- Quarantäne: je nach Vertrag nur als behördliche Anordnung im Einzelfall, nicht bei einer Epidemie oder Pandemie. Ob die eigene Erkrankung durch die Infektion versichert ist, steht gesondert in den Bedingungen.
+- Aufenthalt außerhalb des Wohnsitzes: Für Zeiten, in denen du während der Arbeitsunfähigkeit nicht an deinem Wohnsitz in Deutschland bist, kann die Leistung entfallen, mit Ausnahmen etwa bei stationärer Behandlung.
 
 ## Wann endet die Leistung?
 
-Sie endet, wenn du wieder arbeiten kannst, spätestens mit dem Ablauf der Haftzeit. Und sie endet, wenn aus dem vorübergehenden Ausfall eine Berufsunfähigkeit wird. Ein Vertrag zieht diese Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben.
+Sie endet, wenn du wieder arbeiten kannst, spätestens mit dem Ablauf der Haftzeit. Und sie endet in der Regel, wenn aus dem vorübergehenden Ausfall eine Berufsunfähigkeit wird. Ein Vertrag zieht diese Grenze zum Beispiel dort, wo du voraussichtlich länger als zwei Jahre außerstande bist, deine Tätigkeit zu 50 Prozent oder mehr auszuüben.
 
 Gibst du die Praxis nach einer Erkrankung auf, kann der Vertrag noch einen Teil der Auflösungskosten und für begrenzte Zeit die laufenden Kosten übernehmen. Auch das ist Vertragssache.
 
 ## Welche Pflichten hast du im Schadenfall?
 
-Melde den Ausfall sofort. Das Gesetz verlangt die unverzügliche Anzeige (§ 30 VVG), Auskunft und Belege auf Verlangen (§ 31 VVG) und dass du den Schaden so gering wie möglich hältst (§ 82 VVG). In der Praxis heißt das: Der Versicherer will Geschäftszahlen sehen, teils auch der Vorjahre, und kann eine ärztliche Untersuchung verlangen.
+Melde den Ausfall ohne Verzögerung. Das Gesetz verlangt die unverzügliche Anzeige (§ 30 VVG), Auskunft und Belege auf Verlangen (§ 31 VVG) und dass du den Schaden so gering wie möglich hältst (§ 82 VVG). Je nach Vertrag kann der Versicherer Geschäftszahlen sehen wollen, auch aus den Vorjahren, und eine ärztliche Untersuchung verlangen.
 
 Für Vertragszahnärzt\*innen kommt eine Pflicht außerhalb des Versicherungsvertrags dazu: Lässt du dich länger als eine Woche vertreten, musst du das der Kassenzahnärztlichen Vereinigung mitteilen (§ 32 Abs. 1 Zahnärzte-ZV).
 
@@ -99,6 +99,6 @@ Wie die Praxisausfallversicherung zum Krankentagegeld steht, erklärt die Seite 
 
 ## Was du mitnehmen kannst
 
-Karenzzeit und Haftzeit stehen in jedem Angebot vorn. Die Ausschlüsse stehen weiter hinten, und genau dort liegen die Unterschiede zwischen den Verträgen. Ein Gespräch ist sinnvoll, bevor du Karenzzeit und Haftzeit festlegst oder wenn du einen bestehenden Vertrag an diesen Punkten prüfen willst.
+Karenzzeit und Haftzeit legst du selbst fest. Die Ausschlüsse stehen in den Bedingungen, und dort lohnt sich das genaue Lesen. Ein Gespräch ist sinnvoll, bevor du Karenzzeit und Haftzeit festlegst oder wenn du einen bestehenden Vertrag an diesen Punkten prüfen willst.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz und Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.08.2020). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
