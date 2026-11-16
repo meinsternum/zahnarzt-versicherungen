@@ -1,7 +1,7 @@
 ---
 frage: "Reicht das Krankengeld für angestellte Zahnärzt*innen?"
 titel: "Krankengeld-Lücke für angestellte Zahnärzt*innen"
-kurzantwort: "Bei gutem Gehalt nicht. Angestellte Zahnärzt*innen in der gesetzlichen Krankenversicherung bekommen nach sechs Wochen Entgeltfortzahlung 70 Prozent des Bruttos, 2026 höchstens 4.068,75 Euro im Monat. Ein Krankentagegeld kann die Lücke schließen, bis zur Höhe deines Nettoeinkommens."
+kurzantwort: "Bei gutem Gehalt nicht. Angestellte Zahnärzt*innen in der gesetzlichen Krankenversicherung bekommen nach sechs Wochen Entgeltfortzahlung 70 Prozent des Bruttos, höchstens 90 Prozent des Nettos und 2026 höchstens 4.068,75 Euro im Monat. Krankentagegeld kann die Lücke schließen, bis zur Höhe deines Nettoeinkommens."
 metaDescription: "Krankengeld für angestellte Zahnärzt*innen: Höhe, Höchstbetrag 2026, wo die Lücke entsteht und was ein Krankentagegeld leistet."
 status: geprueft
 stand: "2026-11-16"
@@ -24,8 +24,6 @@ quellen:
     url: "https://www.gesetze-im-internet.de/vvg_2008/__19.html"
   - titel: "Musterbedingungen 2009 für die Krankentagegeldversicherung (MB/KT 2009), PKV-Verband, Stand Juni 2024"
     url: "https://www.pkv.de/fileadmin/user_upload/PKV/3_PDFs/ABV_und_MB/MB-KT.pdf"
-  - titel: "Bundesgesetzblatt 2026 I Nr. 228, Gesetz zur Stabilisierung der Beitragssätze in der gesetzlichen Krankenversicherung (Fundstelle)"
-    url: "https://www.recht.bund.de/bgbl/1/2026/228/VO.html"
 faq:
   - frage: "Ab wann zahlt die Krankenkasse Krankengeld?"
     antwort: "Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter (§ 3 Abs. 1 EntgFG). Solange du Gehalt bekommst, ruht das Krankengeld (§ 49 Abs. 1 Nr. 1 SGB V). Danach zahlt die Krankenkasse, wenn die Arbeitsunfähigkeit ärztlich festgestellt und gemeldet ist."
@@ -65,13 +63,13 @@ Du bist ein paar Wochen krank, die Praxis läuft ohne dich, und nach sechs Woche
 
 Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft und du mindestens vier Wochen angestellt bist (§ 3 EntgFG). Danach hast du als gesetzlich Versicherte\*r Anspruch auf Krankengeld (§ 44 SGB V), ab dem Tag der ärztlichen Feststellung (§ 46). Es ruht, solange du Gehalt bekommst oder die Arbeitsunfähigkeit nicht gemeldet ist. Wird sie elektronisch übermittelt, ist das kein Thema (§ 49 Abs. 1 SGB V).
 
-Das Krankengeld beträgt 70 Prozent deines Bruttos, gerechnet höchstens bis zur Beitragsbemessungsgrenze, und höchstens 90 Prozent deines Nettos (§ 47 SGB V). Für dieselbe Krankheit gibt es Krankengeld längstens 78 Wochen in drei Jahren, die Entgeltfortzahlung zählt mit (§ 48). Es endet unter anderem, wenn du eine Rente wegen voller Erwerbsminderung oder eine Altersvollrente beziehst, und das gilt entsprechend für vergleichbare Renten eines Versorgungswerks (§§ 44 Abs. 2, 50).
+Das Krankengeld beträgt 70 Prozent deines Bruttos, gerechnet höchstens bis zur Beitragsbemessungsgrenze, und höchstens 90 Prozent deines Nettos (§ 47 SGB V). Für dieselbe Krankheit gibt es Krankengeld längstens 78 Wochen in drei Jahren, die Entgeltfortzahlung zählt mit (§ 48 Abs. 1 und 3). Es endet unter anderem, wenn du eine Rente wegen voller Erwerbsminderung oder eine Altersvollrente beziehst, und das gilt entsprechend für vergleichbare Renten eines Versorgungswerks (§§ 44 Abs. 2, 50).
 
 ## Wo entsteht bei gutem Gehalt die Lücke?
 
 Bei der Beitragsbemessungsgrenze. Sie liegt 2026 bei 5.812,50 Euro im Monat. 70 Prozent davon sind 4.068,75 Euro, mehr Krankengeld gibt es nicht, egal wie viel du verdienst. Durch die Netto-Grenze kann es noch weniger sein.
 
-*Fiktives Beispiel, Stand 2026, ohne Steuern und Abzüge:* Bei 7.000 Euro brutto bekommst du höchstens 4.068,75 Euro Krankengeld, im reinen Vergleich fehlen 2.931,25 Euro im Monat. Bei 5.000 Euro brutto sind es 3.500 Euro Krankengeld und 1.500 Euro Unterschied.
+*Fiktives Beispiel, Stand 2026, ohne Steuern und Abzüge:* Bei 7.000 Euro brutto sind es rechnerisch höchstens 4.068,75 Euro, das setzt aber ein Netto von mindestens 4.520,83 Euro voraus. Liegt dein Netto darunter, begrenzt die 90-Prozent-Grenze das Krankengeld weiter. Schon gegenüber dem Höchstwert fehlen 2.931,25 Euro zum Brutto. Bei 5.000 Euro brutto sind es höchstens 3.500 Euro, und auch das nur bei einem Netto ab 3.888,89 Euro.
 
 Vereinfacht gesagt: Alles, was du über der Grenze verdienst, spielt für das Krankengeld keine Rolle. Die Lücke wächst mit deinem Gehalt.
 
@@ -87,7 +85,7 @@ Das Gesetz spricht nur vom vereinbarten Tagegeld (§ 192 Abs. 5 VVG). Höhe und 
 - Die allgemeine Wartezeit beträgt drei Monate, bei Unfällen keine (§ 3 Abs. 2 MB/KT).
 - Sinkt dein Einkommen dauerhaft, musst du das melden, und der Versicherer kann Tagegeld und Beitrag herabsetzen (§ 4 Abs. 3 und 4 MB/KT).
 - Eine automatische Erhöhung bei steigendem Gehalt ist nicht vorgesehen. Bei einer Erhöhung können für den neuen Teil Wartezeiten und Zuschläge gelten (§§ 3 Abs. 6, 8a Abs. 4 MB/KT).
-- Das Tagegeld endet mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach, und mit dem Bezug von Altersrente (§ 15 Abs. 1 MB/KT). Endet es mit 65, kannst du eine Anschlussversicherung bis 70 ohne neue Gesundheitsprüfung verlangen, wenn du sie innerhalb von zwei Monaten beantragst (§ 196 VVG).
+- Das Tagegeld endet mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach, und mit dem Bezug von Altersrente (§ 15 Abs. 1 MB/KT). Endet es mit 65, kannst du eine Anschlussversicherung bis 70 ohne neue Gesundheitsprüfung verlangen, wenn du sie bis zwei Monate nach deinem 65. Geburtstag beantragst und der neue Schutz nicht höher ist als bisher (§ 196 Abs. 1 VVG).
 
 Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten übersehen wird: Ein Tagegeld, das beim Berufsstart gepasst hat, passt einige Gehaltsstufen später nicht mehr.
 

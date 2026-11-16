@@ -1,7 +1,7 @@
 ---
 frage: "Reicht das Versorgungswerk im Alter für Zahnärzt*innen?"
 titel: "Reicht das Versorgungswerk im Alter für Zahnärzt*innen?"
-kurzantwort: "Für viele Zahnärzt*innen nicht ganz. Der Pflichtbeitrag zum Versorgungswerk orientiert sich am Höchstbeitrag der gesetzlichen Rentenversicherung. Wer mehr verdient, sichert über das Versorgungswerk nur einen Teil seines Einkommens ab. Ob eine Lücke entsteht, hängt von deinem Bedarf ab."
+kurzantwort: "Aus unserer Erfahrung für viele Zahnärzt*innen nicht ganz. In Westfalen-Lippe und Niedersachsen orientiert sich der Pflichtbeitrag am Höchstbeitrag der gesetzlichen Rentenversicherung. Wer mehr verdient, sichert dort nur einen Teil seines Einkommens ab. Ob eine Lücke entsteht, hängt von deinem Bedarf ab."
 metaDescription: "Wie bei Zahnärzt*innen trotz Versorgungswerk eine Rentenlücke entsteht: Beitragsgrenze, Anpassung, Inflation. Mit Satzungsbeispielen und fiktiver Rechnung."
 status: geprueft
 stand: "2026-11-16"
@@ -56,7 +56,7 @@ cta:
 
 ## Was zahlt das Versorgungswerk im Alter?
 
-Eine lebenslange Altersrente, deren Höhe von deinen Beiträgen abhängt. Zwei Beispiele: In Westfalen-Lippe gibt es die Rente ab dem Monat nach dem 67. Geburtstag (Satzung § 37), für ältere Jahrgänge gelten andere Altersgrenzen (§ 69 Abs. 5). Vorgezogen geht es auf Antrag ab 62, dann dauerhaft gekürzt (§ 38), für Mitglieder seit vor 2012 schon ab 60 (§ 69 Abs. 2). Die Rente ergibt sich aus Anwartschaften, die du mit jedem Beitrag erwirbst. Eine Rechengröße dafür legt die Kammerversammlung jährlich fest (§§ 51, 52).
+Eine lebenslange Altersrente, deren Höhe von deinen Beiträgen abhängt. Zwei Beispiele: In Westfalen-Lippe gibt es die Rente ab dem Monat nach dem 67. Geburtstag (Satzung § 37), für ältere Jahrgänge gelten andere Altersgrenzen (§ 69 Abs. 5). Vorgezogen geht es auf Antrag ab 62, dann dauerhaft gekürzt (§ 38), für Mitglieder seit vor 2012 schon ab 60 (§ 69 Abs. 2). Die Rente ergibt sich aus Anwartschaften, die du mit jedem Beitrag erwirbst. Die Rentenbemessungsgrundlage dafür legt die Kammerversammlung jährlich fest (§ 51 Abs. 5).
 
 In Niedersachsen hängt das Rentenalter vom Jahrgang ab, vorgezogen frühestens ab 60, bei Mitgliedschaft ab 2012 frühestens ab 62 (ABH § 14). Für Beiträge ab 2019 rechnet die Satzung mit Beitragssumme, Rentenfaktor und Generationenfaktor (§ 15c).
 
@@ -70,7 +70,7 @@ An die gesetzliche Rentenversicherung. In Westfalen-Lippe entspricht die Pflicht
 
 Für die Praxis heißt das: Verdienst du mehr als die Beitragsbemessungsgrenze, steigt dein Pflichtbeitrag nicht mit, und damit auch nicht deine Rente. Je weiter dein Einkommen darüber liegt, desto kleiner ist der Teil, den das Versorgungswerk im Alter abbildet. Gerade bei niedergelassenen Zahnärzt\*innen ist das aus unserer Erfahrung der Kern der Rentenlücke.
 
-Freiwillige Zahlungen sind möglich, mit Grenzen: In Westfalen-Lippe dürfen Pflicht- und freiwillige Beiträge zusammen das 2,5-Fache der Pflichtabgabe nicht übersteigen, der Antrag ist bis 62 möglich (§§ 18, 19). In Niedersachsen sind im Jahr bis zum 30-Fachen eines Monatsbeitrags möglich (§ 22 Abs. 1).
+Freiwillige Zahlungen sind möglich, mit Grenzen: In Westfalen-Lippe dürfen Pflicht- und freiwillige Beiträge zusammen das 2,5-Fache der Pflichtabgabe nicht übersteigen, laufende Höherversicherung kannst du bis zum 62. Geburtstag beantragen, mit ärztlichem Gesundheitszeugnis auf eigene Kosten (§§ 18, 19). Einmalzahlungen gehen ohne Gesundheitsprüfung, bleiben aber unberücksichtigt, wenn du innerhalb von drei Jahren berufsunfähig wirst oder stirbst (§ 18 Abs. 2). In Niedersachsen sind im Jahr bis zum 30-Fachen eines Monatsbeitrags möglich, aus Zuzahlungen entsteht aber kein Anspruch bei Berufsunfähigkeit oder Tod innerhalb von 36 Monaten (§ 22).
 
 ## Wie entsteht eine Rentenlücke?
 

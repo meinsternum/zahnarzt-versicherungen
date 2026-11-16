@@ -56,11 +56,11 @@ cta:
 
 ## Was legt das Gesetz zum Zeitpunkt fest?
 
-Nur eines: Der Versicherer muss für eine Berufsunfähigkeit leisten, die nach Beginn der Versicherung eintritt (§ 172 Abs. 1 VVG). Was vorher schon da war, ist nicht versichert. Wann der Schutz beginnt, steht in deinem Vertrag. Wie der Vertrag mit dem Wechsel vom Studium in den Beruf umgeht, regelt das Gesetz nicht, das steht in den Bedingungen.
+Nur eines: Der Versicherer muss für eine Berufsunfähigkeit leisten, die nach Beginn der Versicherung eintritt (§ 172 Abs. 1 VVG). Eine Berufsunfähigkeit, die schon vor Versicherungsbeginn eingetreten ist, ist nicht versichert. Wann der Schutz beginnt, steht in deinem Vertrag. Wie der Vertrag mit dem Wechsel vom Studium in den Beruf umgeht, regelt das Gesetz nicht, das steht in den Bedingungen.
 
 ## Was spricht für einen Abschluss im Studium?
 
-Vor allem die Gesundheit. Wer früh abschließt, hat meist weniger anzugeben. Die Verbraucherzentrale nennt für Studierende außerdem meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist der Blick nach vorn: Die Bedingungen sollten auch dann noch passen, wenn du als Zahnärzt\*in arbeitest, etwa bei der Verweisung und der Nachversicherung.
+Vor allem die Gesundheit. Wer früh abschließt, hat aus unserer Erfahrung meist weniger anzugeben. Die Verbraucherzentrale nennt für Studierende außerdem meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist der Blick nach vorn: Die Bedingungen sollten auch dann noch passen, wenn du als Zahnärzt\*in arbeitest, etwa bei der Verweisung und der Nachversicherung.
 
 ## Was zählt, wenn du zum Berufsstart oder in der Assistenzzeit abschließt?
 
@@ -72,9 +72,9 @@ Entscheidend ist also nicht, wie lange etwas her ist, sondern wonach der Fragebo
 
 ## Warum sind die Gesundheitsfragen so wichtig?
 
-Weil eine falsche Antwort den ganzen Schutz kosten kann. Verletzt du die Anzeigepflicht, kann der Versicherer je nach Verschulden zurücktreten, kündigen oder den Vertrag zu anderen Bedingungen fortführen (§ 19 Abs. 2 bis 4 VVG). Diese Rechte hat er nur, wenn er dich vorher gesondert in Textform belehrt hat (§ 19 Abs. 5). Tritt er nach einem Leistungsfall zurück, muss er grundsätzlich nicht zahlen (§ 21 Abs. 2). Seine Rechte erlöschen nach fünf Jahren, bei Vorsatz oder Arglist nach zehn (§ 21 Abs. 3).
+Weil eine falsche Antwort den ganzen Schutz kosten kann. Verletzt du die Anzeigepflicht, kann der Versicherer je nach Verschulden zurücktreten, kündigen oder den Vertrag zu anderen Bedingungen fortführen (§ 19 Abs. 2 bis 4 VVG). Diese Rechte hat er nur, wenn er dich vorher gesondert in Textform belehrt hat (§ 19 Abs. 5). Tritt er nach einem Leistungsfall zurück, muss er grundsätzlich nicht zahlen, es sei denn, der verschwiegene Umstand war für den Leistungsfall nicht ursächlich. Bei Arglist zahlt er nicht (§ 21 Abs. 2). Seine Rechte erlöschen fünf Jahre nach Vertragsschluss, bei Vorsatz oder Arglist nach zehn Jahren. Für Leistungsfälle, die vor Ablauf dieser Frist eingetreten sind, gilt das nicht (§ 21 Abs. 3).
 
-Für dich heißt das: Beantworte die Fragen vollständig und richtig, und hol dir vorher deine Unterlagen, etwa die Patientenquittung deiner Krankenkasse. Die Verbraucherzentrale weist darauf hin, dass Versicherer dieselben Antworten unterschiedlich bewerten.
+Für dich heißt das: Beantworte die Fragen vollständig und richtig, und sieh vorher in deine Unterlagen zu Behandlungen der letzten Jahre. Die Verbraucherzentrale weist darauf hin, dass Versicherer dieselben Antworten unterschiedlich bewerten.
 
 ## Was tun bei Vorerkrankungen?
 
@@ -86,7 +86,7 @@ Sie wirken verlockend: In einer Startphase zahlst du weniger, danach steigt der 
 
 ## Was bringt eine Nachversicherungsgarantie?
 
-Sie erlaubt dir, die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüfung zu erhöhen, etwa bei bestimmten Ereignissen in Familie oder Beruf, die der Vertrag aufzählt. Das Gesetz regelt sie nicht, sie steht im Vertrag. Startest du mit einer niedrigeren Rente, hängt die spätere Erhöhung genau an dieser Regelung. Für Zahnärzt\*innen, deren Einkommen nach der Assistenzzeit oft deutlich steigt, ist das aus unserer Sicht einer der wichtigsten Punkte im Vertrag.
+Sie erlaubt dir, die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüfung zu erhöhen, etwa bei bestimmten Ereignissen in Familie oder Beruf, die der Vertrag aufzählt. Das Gesetz regelt sie nicht, sie steht im Vertrag. Startest du mit einer niedrigeren Rente, hängt die spätere Erhöhung genau an dieser Regelung. Für Zahnärzt\*innen, deren Einkommen nach der Assistenzzeit aus unserer Erfahrung oft deutlich steigt, ist das aus unserer Sicht einer der wichtigsten Punkte im Vertrag.
 
 ## Worauf du achten kannst
 
@@ -100,6 +100,6 @@ Was das Versorgungswerk bei Berufsunfähigkeit leistet, steht auf [Reicht die BU
 
 ## Was du mitnehmen kannst
 
-Die Frage ist weniger „wann?“ als „mit welchem Antrag und welchen Bedingungen?“. Je früher du abschließt, desto weniger musst du meist angeben. Je besser die Bedingungen, desto länger passt der Vertrag zu deinem Beruf. Ein Gespräch lohnt sich vor dem ersten Antrag, nicht danach.
+Die Frage ist weniger „wann?“ als „mit welchem Antrag und welchen Bedingungen?“. Je früher du abschließt, desto weniger musst du aus unserer Erfahrung meist angeben. Je besser die Bedingungen, desto länger passt der Vertrag zu deinem Beruf. Ein Gespräch lohnt sich vor dem ersten Antrag, nicht danach.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz und Veröffentlichungen der Verbraucherzentrale (siehe Quellen mit dem jeweiligen Stand). Maßgeblich sind dein Antrag und deine Bedingungen.*

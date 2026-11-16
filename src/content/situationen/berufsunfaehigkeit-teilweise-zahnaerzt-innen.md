@@ -1,8 +1,8 @@
 ---
 frage: "Bin ich als Zahnärzt*in berufsunfähig, wenn ich nur noch teilweise arbeiten kann?"
 titel: "Teilweise berufsunfähig als Zahnärzt*in: Was gilt?"
-kurzantwort: "Bei einer privaten BU kann das reichen: Das Gesetz kennt auch die teilweise Berufsunfähigkeit, die Schwelle steht in den Bedingungen. Das Versorgungswerk zahlt Zahnärzt*innen dagegen in der Regel nur, wenn sie gar nicht mehr zahnärztlich arbeiten können. Eine Teilrente gibt es dort meist nicht."
-metaDescription: "Teilweise berufsunfähig als Zahnärzt*in: was die private BU leistet, warum das Versorgungswerk meist nicht zahlt und worauf du in den Bedingungen achtest."
+kurzantwort: "Bei einer privaten BU kann das reichen: Das Gesetz kennt auch die teilweise Berufsunfähigkeit, die Schwelle steht in den Bedingungen. In den Satzungen der Versorgungswerke Westfalen-Lippe und Niedersachsen gibt es Rente nur, wenn du gar nicht mehr zahnärztlich arbeiten kannst."
+metaDescription: "Teilweise berufsunfähig als Zahnärzt*in: was die private BU leistet, was zwei Versorgungswerke verlangen und worauf du in den Bedingungen achtest."
 status: geprueft
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
@@ -24,7 +24,7 @@ faq:
   - frage: "Was bedeutet die Verweisung für den teilweisen Fall?"
     antwort: "Sieht der Vertrag eine Verweisung vor, kann der Versicherer prüfen, ob du eine andere Tätigkeit ausübst oder ausüben könntest, die zu Ausbildung und Lebensstellung passt (§ 172 Abs. 3 VVG). Verzichtet er darauf, zählt nur dein bisheriger Beruf."
   - frage: "Kann ich weiter in meiner Praxis arbeiten und BU-Rente bekommen?"
-    antwort: "Bei einer privaten BU ist das je nach Bedingungen möglich, wenn du den Grad der Berufsunfähigkeit erreichst. Beim Versorgungswerk schließt eine Weiterarbeit die Rente in den Satzungen aus Westfalen-Lippe und Niedersachsen in der Regel aus."
+    antwort: "Bei einer privaten BU ist das je nach Bedingungen möglich, wenn du den Grad der Berufsunfähigkeit erreichst. Beim Versorgungswerk schließt eine Weiterarbeit die Rente in den Satzungen aus Westfalen-Lippe und Niedersachsen aus."
 verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
@@ -48,7 +48,7 @@ Du kannst nach einer Erkrankung noch behandeln, aber nicht mehr so lange, so oft
 
 ## Was sagt das Gesetz für die private BU?
 
-Das Gesetz kennt ausdrücklich den teilweisen Fall. Berufsunfähig ist, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, wegen Krankheit, Körperverletzung oder Kräfteverfalls ganz oder teilweise voraussichtlich dauerhaft nicht mehr ausüben kann (§ 172 Abs. 2 VVG).
+Das Gesetz kennt ausdrücklich den teilweisen Fall. Berufsunfähig ist, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, infolge Krankheit, Körperverletzung oder mehr als altersentsprechenden Kräfteverfalls ganz oder teilweise voraussichtlich auf Dauer nicht mehr ausüben kann (§ 172 Abs. 2 VVG).
 
 Eine Prozentzahl nennt das Gesetz nicht. Ab welchem Grad gezahlt wird und wie er gemessen wird, steht in den Bedingungen. In den Bedingungen, die wir in der Beratung sehen, liegt die Schwelle meist bei 50 Prozent. Dein Vertrag kann es anders regeln.
 
@@ -75,6 +75,6 @@ Findest du die Regelung nicht, frag beim Versicherer nach, und zwar vor dem Leis
 
 ## Was du mitnehmen kannst
 
-Der teilweise Fall ist der Normalfall bei Zahnärzt\*innen, nicht die Ausnahme. Die private BU kann ihn abdecken, wenn die Bedingungen passen. Das Versorgungswerk deckt ihn in der Regel nicht ab. Ein Gespräch lohnt sich, wenn du nicht sicher bist, wie dein Vertrag Schwelle und Verweisung regelt.
+Aus unserer Erfahrung ist der teilweise Fall bei Zahnärzt\*innen häufig, nicht die Ausnahme. Die private BU kann ihn abdecken, wenn die Bedingungen passen. Die beiden Beispielsatzungen der Versorgungswerke decken ihn nicht ab. Ein Gespräch lohnt sich, wenn du nicht sicher bist, wie dein Vertrag Schwelle und Verweisung regelt.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz und Satzungen (siehe Quellen mit dem jeweiligen Stand). Maßgeblich sind die Satzung deines Versorgungswerks und dein Vertrag.*

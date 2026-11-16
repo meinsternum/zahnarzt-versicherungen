@@ -11,8 +11,8 @@ export const grafiken = {
       typ: 'karten', nach: 'Was bedeutet „Praxis aufgeben“ für die Rente?',
       titel: 'Was „Praxis aufgeben“ in zwei Satzungen bedeutet',
       karten: [
-        { kopf: 'Westfalen-Lippe', punkte: ['Rente nur, wenn du dauerhaft berufsunfähig bist und die zahnärztliche Tätigkeit aufgegeben hast (§ 41 Abs. 1)', 'Kein Anspruch, solange eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3)'] },
-        { kopf: 'Niedersachsen', punkte: ['Aufgabe der Tätigkeit nachweisen, jedes Jahr bis 31. März erklären, sonst entfällt die Rente ab Mai (§ 17a)', 'Gutachten durch nicht behandelnde Fachärzt*innen, Kosten trägst du, Nachuntersuchungen möglich (§ 17 Abs. 5 bis 8)'] },
+        { kopf: 'Westfalen-Lippe', punkte: ['Rente bei dauerhafter Berufsunfähigkeit und aufgegebener Tätigkeit (§ 41 Abs. 1), befristet auch bei vorübergehender nach 26 Wochen und eingestellter Tätigkeit (§ 42)', 'Kein Anspruch, solange eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3)'] },
+        { kopf: 'Niedersachsen', punkte: ['Bei dauerhafter Berufsunfähigkeit: Aufgabe nachweisen, jedes Jahr bis 31. März erklären, sonst entfällt die Rente ab Mai (§ 17a); bei vorübergehender befristete Rente (§ 17b)', 'Gutachten durch nicht behandelnde Fachärzt*innen, Kosten trägst du, Nachuntersuchungen möglich (§ 17 Abs. 5 bis 8)'] },
       ],
       fuss: 'Stand: 16.11.2026, Beispiele aus den Satzungen Westfalen-Lippe und Niedersachsen (siehe Quellen). Deine Satzung kann anders regeln.',
     },
@@ -47,10 +47,10 @@ export const grafiken = {
       zeilen: [
         ['Pflicht vorsätzlich oder grob fahrlässig verletzt', 'Rücktritt möglich', '§ 19 Abs. 2 VVG'],
         ['Weder vorsätzlich noch grob fahrlässig', 'Kein Rücktritt, Kündigung mit Monatsfrist möglich', '§ 19 Abs. 3 VVG'],
-        ['Versicherer hätte zu anderen Bedingungen geschlossen', 'Kein Rücktritt wegen grober Fahrlässigkeit, keine Kündigung, andere Bedingungen auf Verlangen', '§ 19 Abs. 4 VVG'],
+        ['Versicherer hätte zu anderen Bedingungen geschlossen', 'Kein Rücktritt wegen grober Fahrlässigkeit, keine Kündigung, andere Bedingungen auf Verlangen des Versicherers', '§ 19 Abs. 4 VVG'],
         ['Keine gesonderte Belehrung in Textform', 'Rechte nach § 19 Abs. 2 bis 4 bestehen nicht', '§ 19 Abs. 5 VVG'],
         ['Frist für den Versicherer', 'Ein Monat ab Kenntnis, schriftlich', '§ 21 Abs. 1 VVG'],
-        ['Erlöschen der Rechte', 'Fünf Jahre nach Vertragsschluss, bei Vorsatz oder Arglist zehn Jahre', '§ 21 Abs. 3 VVG'],
+        ['Erlöschen der Rechte', 'Fünf Jahre nach Vertragsschluss, bei Vorsatz oder Arglist zehn Jahre; nicht für Leistungsfälle, die vorher eingetreten sind', '§ 21 Abs. 3 VVG'],
       ],
       fuss: 'Vereinfachte Übersicht. Stand: 16.11.2026, nach VVG (siehe Quellen).',
     },
@@ -86,7 +86,7 @@ export const grafiken = {
       spalten: ['', 'Private BU (§ 172 VVG)', 'Versorgungswerk Westfalen-Lippe', 'Versorgungswerk Niedersachsen'],
       zeilen: [
         ['Maßstab', 'Zuletzt ausgeübter Beruf, ganz oder teilweise', 'Fähigkeiten auch außerhalb der Praxis in irgendeiner Weise nicht mehr wirtschaftlich nutzbar, Beruf aufgegeben', '„Völlig berufsunfähig“'],
-        ['Schwelle', 'Nicht im Gesetz, steht in den Bedingungen', 'Keine Teilrente vorgesehen (§ 41)', 'Keine Teilrente vorgesehen (§§ 17, 17a)'],
+        ['Schwelle', 'Nicht im Gesetz, steht in den Bedingungen', 'Keine Teilrente vorgesehen (§§ 41, 42)', 'Keine Teilrente vorgesehen (§§ 17 bis 17b)'],
       ],
       fuss: 'Stand: 16.11.2026, nach Gesetz und Satzungen (siehe Quellen). In den Bedingungen, die wir in der Beratung sehen, liegt die Schwelle meist bei 50 Prozent.',
     },
@@ -107,7 +107,7 @@ export const grafiken = {
       titel: 'Fiktives Beispiel: Kaufkraft nach 30 Jahren',
       spalten: ['', 'Fall A: keine Anpassung', 'Fall B: Anpassung wie die Preise'],
       zeilen: [
-        ['Rente in Euro', '2.000 €', '2.000 €'],
+        ['Rente in Euro bei Rentenbeginn', '2.000 €', 'rund 3.623 €'],
         ['Kaufkraft in heutigen Preisen', 'rund 1.104 €', '2.000 €'],
         ['Bedarf in heutigen Preisen', '4.000 €', '4.000 €'],
         ['Lücke pro Monat, vor Steuern', '2.896 €', '2.000 €'],
@@ -146,12 +146,12 @@ export const grafiken = {
         { titel: 'Ab Woche 7', text: 'Krankengeld: 70 Prozent des Regelentgelts, höchstens 90 Prozent netto, 2026 höchstens 4.068,75 € im Monat (§ 47 SGB V)' },
         { titel: 'Längstens 78 Wochen', text: 'Für dieselbe Krankheit innerhalb von drei Jahren, Entgeltfortzahlung zählt mit (§ 48 SGB V, BMG)' },
       ],
-      fuss: 'Stand: Gesetze abgerufen am 14.11.2026, Beitragsbemessungsgrenze nach BMG (Stand 03.09.2026).',
+      fuss: 'Stand: 16.11.2026, nach SGB V, EntgFG und BMG (siehe Quellen).',
     },
     {
       typ: 'tabelle', nach: 'Wo entsteht bei gutem Gehalt die Lücke?',
       titel: 'Fiktives Beispiel: Gehalt und Krankengeld',
-      spalten: ['Brutto im Monat', 'Krankengeld (70 Prozent, max. Beitragsbemessungsgrenze)', 'Differenz im reinen Vergleich'],
+      spalten: ['Brutto im Monat', '70 Prozent, max. Beitragsbemessungsgrenze (vor Netto-Grenze)', 'Abstand zum Brutto (vor Netto-Grenze)'],
       zeilen: [
         ['7.000 €', '4.068,75 €', '2.931,25 €'],
         ['5.000 €', '3.500 €', '1.500 €'],

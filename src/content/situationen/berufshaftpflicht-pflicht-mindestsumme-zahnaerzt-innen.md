@@ -35,9 +35,9 @@ faq:
   - frage: "Gilt § 95e SGB V auch für Zahnärzt*innen?"
     antwort: "Ja, für Vertragszahnärzt*innen. Nach § 72 Abs. 1 Satz 2 SGB V gelten die Vorschriften für Ärzte entsprechend für Zahnärzte. Die Gesetzesbegründung zu § 95e nennt Zahnärzt*innen ausdrücklich."
   - frage: "Welche Mindestsumme gilt für Vertragszahnärzt*innen?"
-    antwort: "3 Millionen Euro je Versicherungsfall für Personen- und Sachschäden, mit angestellten Zahnärzt*innen, in Berufsausübungsgemeinschaften mit Angestellten und im MVZ 5 Millionen Euro. Für alle Schäden eines Jahres darf die Leistung nicht unter das Zwei- beziehungsweise Dreifache begrenzt werden (§ 95e Abs. 2 und 5 SGB V)."
+    antwort: "3 Millionen Euro je Versicherungsfall für Personen- und Sachschäden, mit angestellten Zahnärzt*innen (Einzelpraxis oder Berufsausübungsgemeinschaft) und im MVZ 5 Millionen Euro. Für alle Schäden eines Jahres darf die Leistung nicht unter das Zwei- beziehungsweise Dreifache begrenzt werden (§ 95e Abs. 2 und 5 SGB V)."
   - frage: "Brauche ich ohne Kassenzulassung eine Berufshaftpflicht?"
-    antwort: "Ja. Dann gilt die Pflicht aus der Berufsordnung deiner Kammer. In Westfalen-Lippe, Sachsen und Bayern steht sie jeweils in § 4. Eine Summe nennen die Berufsordnungen meist nicht, Bayern verweist auf die Mindestsummen des VVG."
+    antwort: "Ja. Dann gilt die Pflicht aus der Berufsordnung deiner Kammer. In Westfalen-Lippe, Sachsen und Bayern steht sie jeweils in § 4. Westfalen-Lippe und Sachsen nennen keine Summe, Bayern verweist auf die Mindestsummen des VVG."
   - frage: "Muss ich meine Berufshaftpflicht nachweisen?"
     antwort: "Mit Kassenzulassung ja, gegenüber dem Zulassungsausschuss mit dem Antrag und auf Verlangen (§ 95e Abs. 3 SGB V). Ob die Kammer einen Nachweis verlangt, steht in deiner Berufsordnung."
   - frage: "Was passiert, wenn der Nachweis fehlt?"
@@ -59,11 +59,11 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-„Die Berufshaftpflicht habe ich doch, oder?“ Meistens ja. Die spannendere Frage ist, ob die Summe passt und ob der Vertrag mitgewachsen ist, als die Praxis gewachsen ist. Die Pflicht kommt aus zwei Richtungen: aus der Berufsordnung deiner Kammer und, mit Kassenzulassung, aus § 95e SGB V.
+„Die Berufshaftpflicht habe ich doch, oder?“ Aus unserer Erfahrung meistens ja. Die spannendere Frage ist, ob die Summe passt und ob der Vertrag mitgewachsen ist, als die Praxis gewachsen ist. Die Pflicht kommt aus zwei Richtungen: aus der Berufsordnung deiner Kammer und, mit Kassenzulassung, aus § 95e SGB V.
 
 ## Was verlangen die Berufsordnungen?
 
-Dass du versichert bist, aber meist nicht in welcher Höhe. Jede Landeszahnärztekammer hat eine eigene Berufsordnung. Drei Beispiele:
+Dass du versichert bist. Eine Summe nennen zwei der drei Beispiele nicht, Bayern verweist auf die Mindestsummen des VVG. Jede Landeszahnärztekammer hat eine eigene Berufsordnung. Drei Beispiele:
 
 - **Westfalen-Lippe:** Du musst „ausreichend gegen Haftpflichtansprüche“ aus deiner beruflichen Tätigkeit versichert sein (§ 4). Eine Summe nennt die Vorschrift nicht.
 - **Sachsen:** Die Versicherung muss bestehen und ist auf Verlangen der Kammer nachzuweisen (§ 4). Auch hier keine Summe.
@@ -88,18 +88,18 @@ Die Mindestsumme ist eine Untergrenze, kein Richtwert. Und sie ändert sich mit 
 
 ## Was passiert, wenn der Nachweis fehlt?
 
-Mit Kassenzulassung weist du den Schutz dem Zulassungsausschuss nach, mit dem Antrag auf Zulassung oder Anstellung und auf Verlangen (§ 95e Abs. 3). Erfährt der Ausschuss, dass kein ausreichender Schutz besteht, fordert er dich zur Vorlage auf. Kommst du dem nicht unverzüglich nach, ruht deine Zulassung sofort. Endet das Ruhen nicht innerhalb von zwei Jahren, wird die Zulassung entzogen (§ 95e Abs. 4). Verstöße meldet der Ausschuss der Kammer (§ 95e Abs. 7).
+Mit Kassenzulassung weist du den Schutz dem Zulassungsausschuss nach, mit dem Antrag auf Zulassung oder Anstellung und auf Verlangen (§ 95e Abs. 3). Erfährt der Ausschuss, dass kein ausreichender Schutz besteht, fordert er dich zur Vorlage auf. Kommst du dem nicht unverzüglich nach, beschließt der Ausschuss nach vorherigem Hinweis das Ruhen deiner Zulassung mit sofortiger Wirkung. Endet das Ruhen nicht innerhalb von zwei Jahren, wird die Zulassung entzogen (§ 95e Abs. 4). Endet dein Versicherungsschutz oder wird er eingeschränkt, musst du das unverzüglich anzeigen (§ 95e Abs. 3). Verstöße meldet der Ausschuss der Kammer (§ 95e Abs. 7).
 
 ## Worauf achtest du im Vertrag?
 
 Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gibt Verträge speziell für Zahnarztpraxen, die das ausdrücklich regeln:
 
 - **Mitversicherte Personen:** Vertreter\*innen, Assistenzzahnärzt\*innen, Weiterbildungsassistent\*innen, angestellte Zahnärzt\*innen und das Praxispersonal, jeweils für ihre Tätigkeit in deiner Praxis.
-- **Vertretung:** Wenn du eine\*n verhinderte\*n Kolleg\*in vertrittst oder selbst eine Vertretung beschäftigst.
-- **Was die Versicherung leistet:** Sie prüft, ob ein Anspruch besteht, wehrt unberechtigte Ansprüche ab und stellt dich von berechtigten frei. Die Abwehr unberechtigter Ansprüche ist im Alltag oft der wichtigste Teil.
-- **Kosten:** Es gibt Verträge, die Prozesskosten nicht auf die Versicherungssumme anrechnen.
-- **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
-- **Nachhaftung und Ruhestand:** Es gibt Verträge, die nach Praxisaufgabe für Schäden aus der früheren Tätigkeit weiter einstehen, und solche, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen, Gutachten oder Notfälle.
+- **Vertretung:** Wenn du eine\*n verhinderte\*n Kolleg\*in vertrittst oder selbst eine Vertretung beschäftigst. Die persönliche Haftpflicht der Vertretung ist dabei nicht immer mitversichert, sie braucht dann eine eigene Berufshaftpflicht.
+- **Was die Versicherung leistet:** Sie prüft, ob ein Anspruch besteht, wehrt unberechtigte Ansprüche ab und stellt dich von berechtigten frei. Aus unserer Erfahrung ist die Abwehr unberechtigter Ansprüche im Alltag oft der wichtigste Teil.
+- **Kosten:** Es gibt Verträge, die Kosten nicht auf die Versicherungssumme anrechnen. Übersteigt der Anspruch die Summe, werden Prozesskosten aber nur anteilig übernommen.
+- **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache oder aus gleichen, zusammenhängenden Ursachen als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
+- **Nachhaftung und Ruhestand:** Es gibt Verträge, die nach Praxisaufgabe für Schäden aus der früheren Tätigkeit weiter einstehen, begrenzt auf den unverbrauchten Teil der Summe des letzten Versicherungsjahres, und solche, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen, Gutachten oder Notfälle.
 
 ## Was du mitnehmen kannst
 

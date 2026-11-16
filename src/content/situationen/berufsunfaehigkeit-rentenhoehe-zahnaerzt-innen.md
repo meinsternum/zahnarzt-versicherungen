@@ -24,7 +24,7 @@ faq:
   - frage: "Nennt das Gesetz eine Höhe für die BU-Rente?"
     antwort: "Nein. Der Versicherer muss die vereinbarten Leistungen erbringen (§ 172 Abs. 1 VVG). Einen Betrag oder eine Prozentgrenze nennt das Gesetz nicht, die Höhe legst du im Vertrag fest."
   - frage: "Wie rechne ich die BU-Rente neben dem Versorgungswerk?"
-    antwort: "Laufende Ausgaben und Verpflichtungen, die bei Berufsunfähigkeit weiterlaufen, minus die Leistung, die dir dein Versorgungswerk zahlen würde. Rechne zwei Fälle, mit und ohne diese Leistung, denn das Versorgungswerk zahlt oft erst, wenn du die zahnärztliche Tätigkeit ganz aufgibst."
+    antwort: "Laufende Ausgaben und Verpflichtungen, die bei Berufsunfähigkeit weiterlaufen, minus die Leistung, die dir dein Versorgungswerk zahlen würde. Rechne zwei Fälle, mit und ohne diese Leistung, denn in den Beispielsatzungen aus Westfalen-Lippe und Niedersachsen zahlt das Versorgungswerk erst, wenn du die zahnärztliche Tätigkeit ganz aufgibst."
   - frage: "Wie berechnet das Versorgungswerk meine BU-Rente?"
     antwort: "Das regelt die Satzung. In Westfalen-Lippe werden bis zum Monat vor dem 62. Geburtstag weitere Beiträge unterstellt (§ 53 Abs. 1). In Niedersachsen beträgt die Rente 80 Prozent der Anwartschaft auf Altersrente, bei einem Leistungsfall vor 65 mit zugerechneten Anwartschaften (§§ 15 Abs. 6, 17 Abs. 1). Am einfachsten fragst du dein Versorgungswerk nach deinem aktuellen Wert."
   - frage: "Wird die private BU-Rente auf das Versorgungswerk angerechnet?"
@@ -72,11 +72,11 @@ Ob ein Versicherer eine Höchstrente oder Einkommensnachweise verlangt, steht in
 
 ## Was trägt das Versorgungswerk bei?
 
-Jedes Versorgungswerk rechnet anders. In Westfalen-Lippe ergibt sich die Rente aus deinen erworbenen Anwartschaften plus den Anwartschaften, die du bis zum Monat vor deinem 62. Geburtstag mit deinem bisherigen Beitrag noch erworben hättest (Satzung § 53 Abs. 1). Sie endet mit dem Beginn der Regelaltersrente (§ 41 Abs. 5). In Niedersachsen beträgt die Rente bei völliger Berufsunfähigkeit 80 Prozent der Anwartschaft auf Altersrente (ABH § 17 Abs. 1), bei einem Leistungsfall vor 65 mit zugerechneten Anwartschaften aus dem Durchschnitt der letzten 60 Monatsbeiträge (§ 15 Abs. 6). Mit dem Rentenalter läuft sie als Altersrente in gleicher Höhe weiter (§ 17 Abs. 3).
+Jedes Versorgungswerk rechnet anders. In Westfalen-Lippe ergibt sich die Rente aus deinen erworbenen Anwartschaften plus den Anwartschaften, die du bis zum Monat vor deinem 62. Geburtstag mit dem Beitrag des letzten abgelaufenen Geschäftsjahrs noch erworben hättest (Satzung § 53 Abs. 1). Bei ruhender oder befreiter Mitgliedschaft wird nichts hinzugerechnet (§ 53 Abs. 3). Die BU-Rente gibt es dort nur, solange du noch keine Altersrente beziehen kannst, vorgezogen ist das ab 62 möglich (§§ 38, 41 Abs. 1). Für die Rechnung heißt das: Ab 62 bleibt dort nur die gekürzte vorgezogene Altersrente. In Niedersachsen beträgt die Rente bei völliger Berufsunfähigkeit 80 Prozent der Anwartschaft auf Altersrente (ABH § 17 Abs. 1), bei einem Leistungsfall vor 65 mit zugerechneten Anwartschaften aus dem Durchschnitt der letzten 60 Monatsbeiträge (§ 15 Abs. 6). Mit dem Rentenalter läuft sie als Altersrente in gleicher Höhe weiter (§ 17 Abs. 3).
 
 Einen Betrag kannst du der Satzung allein nicht entnehmen. Der einfachste Weg: Frag dein Versorgungswerk, welche Rente dir bei Berufsunfähigkeit heute zustünde. Eine Anrechnung einer privaten BU-Rente ist in den Regeln zur Berufsunfähigkeit beider Satzungen nicht vorgesehen.
 
-Wichtig ist an der Stelle: Das Versorgungswerk zahlt in der Regel erst, wenn du die zahnärztliche Tätigkeit ganz aufgibst. Warum, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Deshalb rechnen wir immer zwei Fälle.
+Wichtig ist an der Stelle: In den Beispielsatzungen aus Westfalen-Lippe und Niedersachsen zahlt das Versorgungswerk erst, wenn du gar nicht mehr zahnärztlich tätig sein kannst und die Tätigkeit aufgibst. Warum, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Deshalb rechnen wir immer zwei Fälle.
 
 ## Wie sieht das in Zahlen aus?
 
