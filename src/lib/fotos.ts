@@ -38,7 +38,7 @@ export const fotos = {
   'patrick-02-hoch': { name: 'patrick-02', datei: '2M3A9881.jpg (Zuschnitt 4:5)', bild: patrick02Hoch, alt: PATRICK },
   'patrick-04-hoch': { name: 'patrick-04', datei: '2M3A0103.jpg (Zuschnitt 4:5)', bild: patrick04Hoch, alt: PATRICK },
   'schreibtisch-01': { name: 'schreibtisch-01', datei: '2M3A0116.jpg', bild: schreibtisch01, alt: 'Patrick Senn bei der Arbeit am Schreibtisch' },
-  'schreibtisch-01-hoch': { name: 'schreibtisch-01', datei: '2M3A0116.jpg (Zuschnitt 4:5)', bild: schreibtisch01Hoch, alt: 'Patrick Senn bei der Arbeit am Schreibtisch' },
+  'schreibtisch-01-hoch': { name: 'schreibtisch-01', datei: '2M3A0116.jpg (Zuschnitt 4:5, mittig, 16.11.2026)', bild: schreibtisch01Hoch, alt: 'Patrick Senn bei der Arbeit am Schreibtisch' },
   'kollege-02': { name: 'kollege-02', datei: '2M3A0045.jpg', bild: kollege02, alt: 'Patrick Senn mit einem Teammitglied von meinsternum' },
   'team-02': { name: 'team-02', datei: 'IMG_9666.JPG', bild: team02, alt: TEAM },
   'gruppe-01': { name: 'gruppe-01', datei: '2M3A0052.jpg', bild: gruppe01, alt: TEAM },
