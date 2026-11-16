@@ -21,6 +21,8 @@ const FIRMA = 'MEIN\u00a0STERNUM Finanzberatung GmbH';
 const [werVor, werNach] = nb(werWirSind.absaetze[0]).split(FIRMA);
 const FIRMA_HTML = mitMarke('MEIN STERNUM') + ' Finanzberatung GmbH';
 const [h1Teil1, h1Teil2] = hero.h1.split(': ');
+// Anordnung der Themengruppen im Raster (4 Spalten): BU | Praxisausfall + Altersvorsorge | Praxisinhalt + KV + Haftpflicht
+const REIHE: Record<string, number> = { 'Berufsunfähigkeit': 1, 'Praxisausfall': 2, 'Altersvorsorge': 3, 'Praxisinhalt': 4, 'Krankenversicherung': 5, 'Berufshaftpflicht': 6 };
 ---
 <Base title="Absicherung für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf Versicherungsfragen von Zahnärzt*innen, mit Quellen und Stand. Ein Ratgeber von meinsternum aus Köln." path="/" jsonLd={jsonLd}>
 <div class="startseite">
@@ -50,7 +52,7 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
       </header>
       <div class="a-gruppen">
         {gruppen.map((g) => (
-          <div class="themengruppe einblenden">
+          <div class="themengruppe einblenden" style={`--n:${Math.min(g.seiten.length, 4)};order:${REIHE[g.titel] ?? 9}`}>
             <h3 class="themengruppe-titel"><Icon name={g.icon} size={22} />{g.titel}</h3>
             <ul class="karten">
               {g.seiten.map((s) => (

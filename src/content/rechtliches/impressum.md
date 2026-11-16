@@ -5,7 +5,7 @@ status: entwurf
 
 zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH.
 
-## Anbieter
+## Anbieter (Angaben gemäß § 5 DDG)
 
 MEIN STERNUM Finanzberatung GmbH  
 Göppinger Str. 2a  
@@ -22,15 +22,13 @@ Handelsregisternummer: HRB 84954
 
 Umsatzsteuer-Identifikationsnummer gemäß § 27a UStG: DE302066579
 
-[PRÜFEN: Der Impressums-Text auf meinsternum.de nennt „§ 5 TMG". Das TMG wurde durch das Digitale-Dienste-Gesetz (DDG) ersetzt. Rechtsgrundlage und Überschrift prüfen lassen.]
-
 ## Erlaubnis und Registrierung
 
 Die MEIN STERNUM Finanzberatung GmbH ist tätig als Versicherungsmakler im Sinne des § 34d Abs. 1 der Gewerbeordnung. Die Erlaubnis nach § 34d Abs. 1 GewO wurde am 24.11.2015 durch die IHK Köln, Unter Sachsenhausen 10-26, 50667 Köln erteilt. Eintragung im Versicherungsvermittlerregister unter der Nummer D-76KX-2USW4-01 gemäß § 34d Abs. 7 GewO.
 
 Für die Finanzanlagenvermittlung gemäß § 34f Abs. 1 Satz 1 Nr. 1 GewO wurde die Erlaubnis durch die IHK Köln am 24.11.2015 erteilt, Registrierungsnummer D-F-142-J122-06.
 
-Die Eintragungen können beim Deutschen Industrie- und Handelskammertag (DIHK) e.V., Breite Str. 29, 10178 Berlin, sowie im Internet unter www.vermittlerregister.info abgefragt werden. [PRÜFEN: Telefonnummer und Gebührenangabe des DIHK; auf meinsternum.de stehen im Impressum und in der Erstinformation unterschiedliche Angaben.]
+Die Eintragungen können beim Deutschen Industrie- und Handelskammertag (DIHK) e.V., Breite Str. 29, 10178 Berlin, sowie im Internet unter www.vermittlerregister.info abgefragt werden.
 
 Es bestehen keine direkten oder indirekten Beteiligungen von über zehn Prozent an den Stimmrechten oder am Kapital eines Versicherungsunternehmens.
 
@@ -57,7 +55,7 @@ Wir nehmen an Streitbeilegungsverfahren vor Verbraucherschlichtungsstellen teil.
 Versicherungsombudsmann e.V., Kronenstr. 13, 10117 Berlin  
 Ombudsmann Private Kranken- und Pflegeversicherung, Kronenstr. 13, 10117 Berlin
 
-Die Plattform der EU-Kommission zur Online-Streitbeilegung findest du unter https://ec.europa.eu/consumers/odr. Unsere E-Mail-Adresse steht oben.
+<!-- Hinweis auf die EU-Plattform zur Online-Streitbeilegung entfernt: abgeschaltet am 20.07.2025 (VO (EU) 2024/3228). -->
 
 ## Haftung für Inhalte und Links
 

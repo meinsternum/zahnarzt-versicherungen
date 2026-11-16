@@ -25,6 +25,7 @@ const jsonLd = [
     },
   },
 ];
+const REIHE: Record<string, number> = { 'Berufsunfähigkeit': 1, 'Praxisausfall': 2, 'Altersvorsorge': 3, 'Praxisinhalt': 4, 'Krankenversicherung': 5, 'Berufshaftpflicht': 6 };
 ---
 <Base title="Ratgeber für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen." path="/ratgeber" jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }]}>
   <div class="rahmen">
@@ -32,8 +33,9 @@ const jsonLd = [
       <h1>Ratgeber für Zahnärzt*innen</h1>
       <p class="einleitung">Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen.</p>
     </header>
+    <div class="themen-raster">
     {gruppen.map((g) => (
-      <section class="themengruppe" aria-labelledby={`thema-${g.id}`}>
+      <section class="themengruppe" style={`--n:${Math.min(g.seiten.length, 4)};order:${REIHE[g.titel] ?? 9}`} aria-labelledby={`thema-${g.id}`}>
         <h2 class="themengruppe-titel" id={`thema-${g.id}`}><Icon name={g.icon} size={22} />{g.titel}</h2>
         <ul class="karten">
           {g.seiten.map((s) => (
@@ -47,6 +49,7 @@ const jsonLd = [
         </ul>
       </section>
     ))}
+    </div>
     <CtaBlock text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
   </div>
 </Base>

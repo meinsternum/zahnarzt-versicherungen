@@ -1,11 +1,12 @@
 ---
 frage: "Ist die Berufshaftpflicht für Zahnärzt*innen Pflicht, und welche Mindestsumme gilt?"
 titel: "Berufshaftpflicht für Zahnärzt*innen: Pflicht und Summe"
-kurzantwort: "Ja. Berufsordnungen wie die in Westfalen-Lippe, Sachsen und Bayern schreiben sie vor, nennen aber selbst keine Summe (Bayern verweist auf das VVG). Nimmst du an der vertragszahnärztlichen Versorgung teil, gilt zusätzlich § 95e SGB V: mindestens 3 Millionen Euro je Versicherungsfall, mit angestellten Zahnärzt*innen 5 Millionen."
-metaDescription: "Berufshaftpflicht für Zahnärzt*innen: Was Berufsordnung und § 95e SGB V verlangen, welche Mindestsumme gilt und was der Nachweis bedeutet."
+kurzantwort: "Ja, die Berufsordnung deiner Kammer schreibt sie vor. Mit Kassenzulassung gilt zusätzlich § 95e SGB V: mindestens 3 Millionen Euro je Versicherungsfall, mit angestellten Zahnärzt*innen oder im MVZ 5 Millionen. Die Mindestsumme ist eine Untergrenze, kein Richtwert."
+metaDescription: "Berufshaftpflicht für Zahnärzt*innen: Pflicht nach Berufsordnung und § 95e SGB V, Mindestsummen, Nachweis und worauf du im Vertrag achtest."
 status: geprueft
-stand: "2026-11-14"
-reihenfolge: 6
+stand: "2026-11-16"
+pruefenBis: "2027-11-16"
+reihenfolge: 41
 quellen:
   - titel: "§ 95e SGB V, Berufshaftpflichtversicherung (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/sgb_5/__95e.html"
@@ -29,67 +30,79 @@ quellen:
     url: "https://www.blzk.de/fileadmin/user_upload/PDF-DOC/BLZK/berufsordnung_blzk.pdf"
   - titel: "Bundeszahnärztekammer und KZBV: Schritte in das zahnärztliche Berufsleben, Ausgabe 2021, S. 26 bis 27"
     url: "https://www.bzaek.de/fileadmin/PDFs/b/schritte_in_das_zahnaerztliche_berufsleben.pdf"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Berufs- und Betriebshaftpflicht für Zahnarztpraxen, Stand 01.09.2026"
 faq:
   - frage: "Gilt § 95e SGB V auch für Zahnärzt*innen?"
-    antwort: "Ja, für Vertragszahnärzt*innen. § 72 Abs. 1 Satz 2 SGB V ordnet an, dass die auf Ärzte bezogenen Vorschriften des Kapitels entsprechend für Zahnärzte gelten, sofern nichts Abweichendes bestimmt ist. Die Gesetzesbegründung zu § 95e nennt Zahnärzt*innen ausdrücklich."
-  - frage: "Welche Mindestsumme nennt § 95e SGB V?"
-    antwort: "3 Millionen Euro für Personen- und Sachschäden je Versicherungsfall (Abs. 2 Satz 1), bei Praxen und Berufsausübungsgemeinschaften mit angestellten Zahnärzt*innen sowie bei MVZ 5 Millionen Euro (Abs. 5 Satz 3). Die Leistung für alle Schäden eines Jahres darf nicht weiter als auf das Zweifache beziehungsweise Dreifache der Mindestsumme begrenzt werden. Für Vertragszahnärzt*innen gilt das entsprechend über § 72 Abs. 1 Satz 2 SGB V."
+    antwort: "Ja, für Vertragszahnärzt*innen. Nach § 72 Abs. 1 Satz 2 SGB V gelten die Vorschriften für Ärzte entsprechend für Zahnärzte. Die Gesetzesbegründung zu § 95e nennt Zahnärzt*innen ausdrücklich."
+  - frage: "Welche Mindestsumme gilt für Vertragszahnärzt*innen?"
+    antwort: "3 Millionen Euro je Versicherungsfall für Personen- und Sachschäden, mit angestellten Zahnärzt*innen, in Berufsausübungsgemeinschaften mit Angestellten und im MVZ 5 Millionen Euro. Für alle Schäden eines Jahres darf die Leistung nicht unter das Zwei- beziehungsweise Dreifache begrenzt werden (§ 95e Abs. 2 und 5 SGB V)."
+  - frage: "Brauche ich ohne Kassenzulassung eine Berufshaftpflicht?"
+    antwort: "Ja. Dann gilt die Pflicht aus der Berufsordnung deiner Kammer. In Westfalen-Lippe, Sachsen und Bayern steht sie jeweils in § 4. Eine Summe nennen die Berufsordnungen meist nicht, Bayern verweist auf die Mindestsummen des VVG."
   - frage: "Muss ich meine Berufshaftpflicht nachweisen?"
-    antwort: "Wenn du an der vertragszahnärztlichen Versorgung teilnimmst, ja: gegenüber dem Zulassungsausschuss mit dem Antrag und auf Verlangen (§ 95e Abs. 3 Satz 1 SGB V). Ob und wie du sie gegenüber deiner Kammer nachweisen musst, steht in deiner Berufsordnung."
+    antwort: "Mit Kassenzulassung ja, gegenüber dem Zulassungsausschuss mit dem Antrag und auf Verlangen (§ 95e Abs. 3 SGB V). Ob die Kammer einen Nachweis verlangt, steht in deiner Berufsordnung."
   - frage: "Was passiert, wenn der Nachweis fehlt?"
-    antwort: "Der Zulassungsausschuss fordert dich zur Vorlage einer Versicherungsbescheinigung auf. Kommst du dem nicht unverzüglich nach, beschließt er das Ruhen der Zulassung. Endet das Ruhen nicht binnen zwei Jahren, muss er die Zulassung entziehen (§ 95e Abs. 4 SGB V)."
+    antwort: "Der Zulassungsausschuss fordert dich zur Vorlage auf. Kommst du dem nicht unverzüglich nach, ruht die Zulassung. Endet das Ruhen nicht binnen zwei Jahren, wird sie entzogen (§ 95e Abs. 4 SGB V)."
+  - frage: "Bin ich nach Praxisabgabe noch versichert?"
+    antwort: "Für Schäden aus deiner früheren Tätigkeit gibt es Verträge mit einer Nachhaftung nach Berufsaufgabe. Es gibt auch Verträge, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen oder Notfälle. Wie das in deinem Vertrag geregelt ist, solltest du vor der Abgabe klären."
 verwandt: []
+hinweise:
+  - nach: "Welche Mindestsumme gilt?"
+    art: einschaetzen
+    text: "Du stellst bald eine Zahnärztin oder einen Zahnarzt an? Wir prüfen, ob deine Summe dann noch reicht."
+    button: "Summe prüfen lassen"
+  - nach: "Worauf achtest du im Vertrag?"
+    art: mail
+    text: "Du hast eine Frage zu Vertretung, Assistenz oder Nachhaftung in deinem Vertrag? Schreib uns per E-Mail."
+cta:
+  titel: "Berufshaftpflicht und Praxisform abgleichen"
+  text: "Im Erstgespräch prüfen wir, ob Summe und Vertrag zu deiner Praxis passen, auch für Anstellungen und Vertretungen. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail."
+  button: "Erstgespräch buchen"
 ---
 
-„Die Berufshaftpflicht habe ich doch, oder?“ Meistens ja. Die spannendere Frage ist, ob die Summe passt und woher die Pflicht eigentlich kommt. Für die Berufshaftpflicht gibt es zwei Regelungsebenen: die Berufsordnung deiner Zahnärztekammer und, wenn du an der vertragszahnärztlichen Versorgung teilnimmst, § 95e SGB V. Welche Summe für dich gilt, hängt davon ab, ob zur Berufsordnung auch § 95e hinzukommt.
+„Die Berufshaftpflicht habe ich doch, oder?“ Meistens ja. Die spannendere Frage ist, ob die Summe passt und ob der Vertrag mitgewachsen ist, als die Praxis gewachsen ist. Die Pflicht kommt aus zwei Richtungen: aus der Berufsordnung deiner Kammer und, mit Kassenzulassung, aus § 95e SGB V.
 
-## Was die Berufsordnungen verlangen
+## Was verlangen die Berufsordnungen?
 
-Jede Landeszahnärztekammer hat eine eigene Berufsordnung, und die Formulierungen unterscheiden sich. Drei Beispiele zeigen, worauf du achten kannst. Die Berufsordnung deiner eigenen Kammer findest du auf deren Website.
+Dass du versichert bist, aber meist nicht in welcher Höhe. Jede Landeszahnärztekammer hat eine eigene Berufsordnung. Drei Beispiele:
 
-In Westfalen-Lippe (Berufsordnung vom 19.11.2005, die Änderungsübersicht im Dokument reicht bis 24.05.2025) muss ein\*e Zahnärzt\*in „ausreichend gegen Haftpflichtansprüche aus seiner beruflichen Tätigkeit versichert sein“ (§ 4). Eine Summe nennt § 4 nicht, eine ausdrückliche Nachweispflicht steht dort ebenfalls nicht.
+- **Westfalen-Lippe:** Du musst „ausreichend gegen Haftpflichtansprüche“ aus deiner beruflichen Tätigkeit versichert sein (§ 4). Eine Summe nennt die Vorschrift nicht.
+- **Sachsen:** Die Versicherung muss bestehen und ist auf Verlangen der Kammer nachzuweisen (§ 4). Auch hier keine Summe.
+- **Bayern:** Die Versicherung muss ausreichend sein, auf Verlangen nachgewiesen werden und die Mindestsummen aus § 114 Abs. 1 VVG einhalten (§ 4). Das sind 250.000 Euro je Versicherungsfall und eine Million Euro im Jahr, soweit nichts anderes bestimmt ist.
 
-In Sachsen (Berufsordnung beschlossen am 20.04.2018, Änderungssatzung vom 23.11.2024, in Kraft seit 01.01.2025) muss die Versicherung bestehen, ohne dass § 4 Satz 1 das Wort „ausreichend“ verwendet. Auf Verlangen der Kammer ist die Berufshaftpflichtversicherung nachzuweisen (§ 4 Satz 2). Auch hier steht keine Summe in der Vorschrift.
-
-In Bayern (Berufsordnung erlassen am 18.01.2006, letzte Änderungssatzung vom 06.05.2021, gültig ab 01.08.2021) ist die Versicherung „ausreichend“ abzuschließen und auf Verlangen des Zahnärztlichen Bezirksverbands oder der Landeszahnärztekammer nachzuweisen (§ 4). Zusätzlich verlangt § 4, die Mindestversicherungssummen einzuhalten, die sich aus § 114 Abs. 1 VVG ergeben.
-
-Das Versicherungsvertragsgesetz nennt in § 114 Abs. 1 für Pflichtversicherungen eine Mindestversicherungssumme von 250.000 Euro je Versicherungsfall und einer Million Euro für alle Versicherungsfälle eines Versicherungsjahres, soweit durch Rechtsvorschrift nichts anderes bestimmt ist. Eine Pflichtversicherung ist nach § 113 Abs. 1 VVG eine Haftpflichtversicherung, zu deren Abschluss eine Rechtsvorschrift verpflichtet. Für Vertragszahnärzt\*innen bestimmt § 95e SGB V eigene Beträge (siehe unten). In den drei Berufsordnungen oben ist nur die bayerische an diese Beträge gebunden. Ob deine Berufsordnung auf das VVG verweist, nur eine „ausreichende“ Versicherung verlangt oder eine Summe nennt, steht in ihr selbst.
-
-Vereinfacht gesagt: Die Berufsordnung sagt dir, dass du versichert sein musst. Wie hoch, sagt sie in unseren Beispielen meist nicht.
+Die Berufsordnung deiner Kammer findest du auf deren Website. Für Zahnärzt\*innen ohne Kassenzulassung ist sie die maßgebliche Grundlage.
 
 ## Gilt § 95e SGB V auch für Zahnärzt\*innen?
 
-§ 95e Abs. 1 Satz 1 SGB V verpflichtet den „Vertragsarzt“, sich ausreichend gegen die Haftpflichtgefahren aus seiner Berufsausübung zu versichern. Der Pflichtsatz nennt nur den Vertragsarzt. Für Zahnärzt\*innen greift die Pflicht über § 72 Abs. 1 Satz 2 SGB V: Soweit sich die Vorschriften des Kapitels auf Ärzte beziehen, gelten sie entsprechend für Zahnärzte, sofern nichts Abweichendes bestimmt ist. Die Begründung des Gesetzentwurfs sagt es ausdrücklich: Die Versicherungspflicht gelte nach § 72 Abs. 1 Satz 2 auch für Zahnärztinnen und Zahnärzte (BT-Drucksache 19/26822, S. 76, Entwurfsfassung).
-
-Die Zulassungsverordnung für Vertragszahnärzte setzt das um. Mit dem Antrag auf Zulassung ist eine Versicherungsbescheinigung nach § 113 Abs. 2 VVG vorzulegen, aus der ausreichender Berufshaftpflichtversicherungsschutz hervorgeht (§ 18 Abs. 2 Nr. 6 Zahnärzte-ZV). Für das Ruhen der Zulassung verweist § 26 Abs. 1 Satz 1 Nr. 2 Zahnärzte-ZV auf § 95e Abs. 4 SGB V.
-
-Wen § 95e anspricht, steht in den Absätzen 1 und 5: Vertragsärzte, ermächtigte Ärzte, medizinische Versorgungszentren sowie Vertragsärzte und Berufsausübungsgemeinschaften mit angestellten Ärzten. Zahnärzt\*innen ohne Kassenzulassung, die nur privat behandeln, führt § 95e nicht auf. Für sie gilt die Pflicht aus dem Berufsrecht ihrer Kammer; in den drei Beispielen oben steht sie jeweils in § 4 der Berufsordnung.
-
-§ 95e Abs. 1 Satz 3 SGB V setzt voraus, dass eine Versicherungspflicht auch kraft Landes- oder Standesrechts bestehen kann: Eine dafür abgeschlossene Versicherung erfüllt auch die Pflicht nach § 95e, wenn sie dessen Anforderungen entspricht.
+Ja, für Vertragszahnärzt\*innen. § 95e verpflichtet dem Wortlaut nach den Vertragsarzt, sich ausreichend gegen Haftpflichtgefahren zu versichern. Über § 72 Abs. 1 Satz 2 SGB V gilt das entsprechend für Zahnärzte, und die Gesetzesbegründung sagt das ausdrücklich. Die Zulassungsverordnung setzt es um: Mit dem Zulassungsantrag legst du eine Versicherungsbescheinigung vor (§ 18 Abs. 2 Nr. 6 Zahnärzte-ZV). Eine Versicherung, die du wegen deiner Berufsordnung abgeschlossen hast, erfüllt auch § 95e, wenn sie dessen Anforderungen entspricht (§ 95e Abs. 1 Satz 3).
 
 ## Welche Mindestsumme gilt?
 
-| Situation | Mindestsumme je Versicherungsfall | Jahresleistung darf nicht weiter begrenzt werden als auf | Fundstelle |
-|---|---|---|---|
-| Vertragszahnärzt\*in ohne angestellte Zahnärzt\*innen | 3 Millionen Euro | das Zweifache, also mindestens 6 Millionen Euro (2 × 3, eigene Rechnung) | § 95e Abs. 2 SGB V, § 72 Abs. 1 Satz 2 SGB V |
-| Praxis oder Berufsausübungsgemeinschaft mit angestellten Zahnärzt\*innen, MVZ | 5 Millionen Euro | das Dreifache, also mindestens 15 Millionen Euro (3 × 5, eigene Rechnung) | § 95e Abs. 5 Satz 3 SGB V, § 72 Abs. 1 Satz 2 SGB V |
+| Situation | Je Versicherungsfall | Jahresleistung mindestens |
+|---|---|---|
+| Vertragszahnärzt\*in ohne angestellte Zahnärzt\*innen | 3 Millionen Euro | 6 Millionen Euro (2 × 3) |
+| Praxis oder Berufsausübungsgemeinschaft mit angestellten Zahnärzt\*innen, MVZ | 5 Millionen Euro | 15 Millionen Euro (3 × 5) |
 
-Die Beträge gelten für Personen- und Sachschäden für jeden Versicherungsfall. Dieselben Beträge für Zahnärzt\*innen nennt der Ratgeber von Bundeszahnärztekammer und KZBV (Ausgabe 2021, S. 27). „Ausreichend“ bedeutet nach § 95e Abs. 1 Satz 2 SGB V beides: Das individuelle Haftungsrisiko muss versichert sein, und die Mindestversicherungssumme darf nicht unterschritten werden.
+Die Beträge gelten für Personen- und Sachschäden (§ 95e Abs. 2 und 5 SGB V). Dieselben Beträge nennen Bundeszahnärztekammer und KZBV in ihrem Ratgeber. „Ausreichend“ heißt nach § 95e Abs. 1 Satz 2 beides: Dein individuelles Risiko muss versichert sein, und die Mindestsumme darf nicht unterschritten werden.
 
-Wichtig ist an der Stelle: Die Mindestsumme ist eine Untergrenze, kein Richtwert. Ob sie dein individuelles Risiko abdeckt, ist nach dem Gesetz eine eigene Frage.
+Die Mindestsumme ist eine Untergrenze, kein Richtwert. Und sie ändert sich mit deiner Praxis: Mit der ersten angestellten Zahnärztin steigt sie von 3 auf 5 Millionen Euro. Das ist ein Punkt, den wir in der Beratung oft nachholen.
 
-§ 95e Abs. 2 Satz 3 SGB V erlaubte dem GKV-Spitzenverband, bis zum 20. Januar 2022 mit der Bundeszahnärztekammer und weiteren Stellen höhere Mindestsummen zu vereinbaren. Eine solche Vereinbarung haben wir in den durchgesehenen Quellen (Gesetz, Gesetzesmaterialien, Veröffentlichungen von Bundeszahnärztekammer und KZBV) nicht gefunden. Der Gesetzeswortlaut nennt 3 beziehungsweise 5 Millionen Euro.
+## Was passiert, wenn der Nachweis fehlt?
 
-## Nachweis und Folgen
+Mit Kassenzulassung weist du den Schutz dem Zulassungsausschuss nach, mit dem Antrag auf Zulassung oder Anstellung und auf Verlangen (§ 95e Abs. 3). Erfährt der Ausschuss, dass kein ausreichender Schutz besteht, fordert er dich zur Vorlage auf. Kommst du dem nicht unverzüglich nach, ruht deine Zulassung sofort. Endet das Ruhen nicht innerhalb von zwei Jahren, wird die Zulassung entzogen (§ 95e Abs. 4). Verstöße meldet der Ausschuss der Kammer (§ 95e Abs. 7).
 
-Wenn du an der vertragszahnärztlichen Versorgung teilnimmst, weist du den Schutz dem Zulassungsausschuss mit einer Versicherungsbescheinigung nach: mit dem Antrag auf Zulassung, Ermächtigung oder Genehmigung einer Anstellung und auf Verlangen des Ausschusses (§ 95e Abs. 3 Satz 1 SGB V). Erfährt der Ausschuss, dass kein oder kein ausreichender Schutz besteht, fordert er dich unverzüglich zur Vorlage einer Bescheinigung auf (§ 95e Abs. 4 Satz 1). Kommst du dem nicht unverzüglich nach, beschließt er das Ruhen der Zulassung mit sofortiger Wirkung (Satz 2). Endet das Ruhen nicht innerhalb von zwei Jahren, muss er die Zulassung entziehen (Satz 7). Verstöße melden die Zulassungsausschüsse der zuständigen Kammer (§ 95e Abs. 7 SGB V).
+## Worauf achtest du im Vertrag?
 
-*Fiktives Beispiel: Dr. M. ist als Vertragszahnärztin zugelassen und will eine Zahnärztin anstellen. Mit dem Antrag auf Genehmigung der Anstellung legt sie dem Zulassungsausschuss eine Versicherungsbescheinigung vor. Weil sie eine Zahnärztin anstellt, gelten nach § 95e Abs. 5 Satz 3 SGB V in Verbindung mit § 72 Abs. 1 Satz 2 SGB V 5 Millionen Euro je Versicherungsfall und eine Jahresgrenze von mindestens 15 Millionen Euro (3 × 5 Millionen). Ohne angestellte Zahnärztin wären es 3 Millionen Euro je Versicherungsfall und mindestens 6 Millionen Euro im Jahr (2 × 3 Millionen). Daneben bleibt die Berufsordnung ihrer Kammer maßgeblich. Was bei dir gilt, hängt von deiner Zulassung, deiner Praxisform und deiner Berufsordnung ab.*
+Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gibt Verträge speziell für Zahnarztpraxen, die das ausdrücklich regeln:
 
-Das Beispiel zeigt einen Punkt, den man leicht übersieht: Mit der ersten angestellten Zahnärztin ändert sich nicht nur die Praxis, sondern auch die Mindestsumme.
+- **Mitversicherte Personen:** Vertreter\*innen, Assistenzzahnärzt\*innen, Weiterbildungsassistent\*innen, angestellte Zahnärzt\*innen und das Praxispersonal, jeweils für ihre Tätigkeit in deiner Praxis.
+- **Vertretung:** Wenn du eine\*n verhinderte\*n Kolleg\*in vertrittst oder selbst eine Vertretung beschäftigst.
+- **Was die Versicherung leistet:** Sie prüft, ob ein Anspruch besteht, wehrt unberechtigte Ansprüche ab und stellt dich von berechtigten frei. Die Abwehr unberechtigter Ansprüche ist im Alltag oft der wichtigste Teil.
+- **Kosten:** Es gibt Verträge, die Prozesskosten nicht auf die Versicherungssumme anrechnen.
+- **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
+- **Nachhaftung und Ruhestand:** Es gibt Verträge, die nach Praxisaufgabe für Schäden aus der früheren Tätigkeit weiter einstehen, und solche, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen, Gutachten oder Notfälle.
 
 ## Was du mitnehmen kannst
 
-Die Pflicht kommt aus der Berufsordnung deiner Kammer und, wenn du an der vertragszahnärztlichen Versorgung teilnimmst, zusätzlich aus § 95e SGB V. § 95e SGB V nennt für Vertragszahnärzt\*innen eigene Mindestbeträge: 3 Millionen Euro je Versicherungsfall, mit angestellten Zahnärzt\*innen 5 Millionen. Die Berufsordnungen in unseren Beispielen nennen selbst keine Summe, Bayern verweist auf § 114 Abs. 1 VVG. Ob dein Vertrag zu deiner Tätigkeit passt, ist eine eigene Frage. Für Vertragszahnärzt\*innen verlangt § 95e Abs. 1 Satz 2 SGB V dafür, dass das individuelle Haftungsrisiko versichert ist. Aus unserer Sicht lohnt sich deshalb ein Blick in die Police immer dann, wenn sich an deiner Praxis etwas ändert.
+Die Pflicht ist klar, die passende Summe ist es nicht immer. Prüfe deinen Vertrag immer dann, wenn sich in deiner Praxis etwas ändert: Anstellung, Kooperation, neue Behandlungsschwerpunkte oder Praxisabgabe. Ein Gespräch lohnt sich, wenn du vor einer dieser Veränderungen stehst.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze abgerufen am 14.11.2026, Berufsordnungen in den genannten Fassungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz, Berufsordnungen und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand). Maßgeblich sind deine Berufsordnung und dein Vertrag.*

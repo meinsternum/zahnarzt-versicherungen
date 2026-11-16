@@ -42,7 +42,7 @@ Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO.
 
 Diese Website setzt keine Cookies und verwendet keine Reichweitenmessung oder Marketing-Dienste. Es werden keine Schriften oder Inhalte von Drittanbietern nachgeladen.
 
-[PRÜFEN: Vor der Freigabe technisch gegenprüfen (Browser-Entwicklerwerkzeuge, Netzwerkanfragen), dass diese Aussage zum aktuellen Stand der Seite stimmt. Sobald ein Banner oder Analyse-Werkzeug eingebaut wird, diesen Abschnitt ändern.]
+<!-- Technisch geprüft am 16.11.2026: keine Anfragen an fremde Server auf Start-, Ratgeber-, Kontakt-, Über-uns- und Rechtsseiten. Bei Einbau eines Analyse-Werkzeugs oder Banners diesen Abschnitt ändern. -->
 
 ## 6. Kontaktaufnahme
 

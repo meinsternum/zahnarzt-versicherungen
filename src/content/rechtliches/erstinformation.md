@@ -25,9 +25,9 @@ Wir bieten dir vor der Vermittlung oder dem Abschluss eines Versicherungsvertrag
 
 ## 4. Grundlage der Beratung und Vergütung
 
-Die MEIN STERNUM Finanzberatung GmbH erhält für die Vermittlung eines Versicherungsvertrags eine Courtage vom Versicherer. Du schuldest uns keine gesonderte Vergütung. Abweichende Vereinbarungen, etwa bei Netto- oder Honorartarifen, werden schriftlich getroffen. Bei Anlageberatung oder -vermittlung kann die Vergütung durch dich, durch Produktgeber oder in Kombination erfolgen.
+Die MEIN STERNUM Finanzberatung GmbH erhält für die Vermittlung eines Versicherungsvertrags eine Courtage vom Versicherer. Du schuldest uns keine gesonderte Vergütung. Abweichende Vereinbarungen, etwa bei Netto- oder Honorartarifen, werden schriftlich getroffen. Bei Anlageberatung oder -vermittlung kann die Vergütung je nach deinen Wünschen und den vermittelten Produkten durch dich oder durch Dritte (Produktgeber) erfolgen. Zahlst du selbst, gelten gesonderte Vereinbarungen. Nehmen wir Zuwendungen Dritter entgegen, einschließlich Sach- und Dienstleistungen, stimmst du zu, dass wir diese vereinnahmen dürfen.
 
-[PRÜFEN: Den vollständigen Wortlaut zu Vergütung und Zuwendungen aus der Erstinformation von meinsternum.de übernehmen und rechtlich prüfen lassen.]
+<!-- Wortlaut sinngemäß nach der Erstinformation auf meinsternum.de (abgerufen 16.11.2026). -->
 
 ## 5. Handelsregister und Erlaubnis
 
@@ -45,8 +45,10 @@ Wir halten keine direkten oder indirekten Beteiligungen von über 10 % der Stimm
 
 Bei Unzufriedenheit mit unserer Dienstleistung kannst du dich an folgende Stellen wenden:
 
-- Versicherungsombudsmann e.V., Postfach 08 06 32, 10006 Berlin, www.versicherungsombudsmann.de
-- Ombudsmann für die private Kranken- und Pflegeversicherung, Postfach 06 02 22, 10052 Berlin, www.pkv-ombudsmann.de
-- Online-Streitbeilegung der EU: www.webgate.ec.europa.eu/odr
+- Versicherungsombudsmann e.V., Postfach 08 06 32, 10006 Berlin, Telefon 0800 3696000 (kostenfrei), www.versicherungsombudsmann.de
+- Ombudsmann für die private Kranken- und Pflegeversicherung, Postfach 06 02 22, 10052 Berlin, Telefon 0180 2550444 (6 Cent/Min. aus dem Festnetz, höchstens 42 Cent/Min. aus Mobilfunknetzen), www.pkv-ombudsmann.de
+- Ombudsleute der privaten Bausparkassen, Postfach 30 30 79, 10730 Berlin, Telefon 030 590091500, www.bausparkassen.de
+- Bundesanstalt für Finanzdienstleistungsaufsicht (BaFin), Graurheindorfer Straße 108, 53117 Bonn, www.bafin.de
+- Ombudsstelle des BVI Bundesverband Investment und Asset Management e.V., Unter den Linden 42, 10117 Berlin, Telefon 030 64490460, www.ombudsstelle-investmentfonds.de
 
-[PRÜFEN: Weitere Schlichtungsstellen (Bausparkassen, BaFin, BVI-Ombudsstelle) und Telefonnummern aus der Erstinformation von meinsternum.de übernehmen, soweit für diese Seite relevant. Rechtlich prüfen lassen.]
+<!-- Die EU-Plattform zur Online-Streitbeilegung wurde am 20.07.2025 abgeschaltet (VO (EU) 2024/3228), der Hinweis ist entfallen. -->

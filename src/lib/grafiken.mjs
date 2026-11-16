@@ -3,30 +3,30 @@
 // fiktive Beispiele gekennzeichnet, Fußzeile mit Stand und Quelle, keine neuen Zahlen.
 // Typen: tabelle (Vergleichstabelle), karten (Karten-Infografik), ablauf (Schritte/Zeitachse).
 // Platzierung: `nach` = Text der H2, an deren Abschnittsende die Grafik steht; 'start' = vor dem ersten H2.
-// Status: Praxisausfall-Seiten geprüft am 16.11.2026 (Regelwerk Fassung 3); übrige Grafiken Stand 14.11.2026.
+// Status: alle Grafiken geprüft am 16.11.2026 (Regelwerk Fassung 5).
 
 export const grafiken = {
   'berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen': [
     {
-      typ: 'karten', nach: 'Was „Praxis aufgeben“ bedeutet',
+      typ: 'karten', nach: 'Was bedeutet „Praxis aufgeben“ für die Rente?',
       titel: 'Was „Praxis aufgeben“ in zwei Satzungen bedeutet',
       karten: [
         { kopf: 'Westfalen-Lippe', punkte: ['Rente nur, wenn du dauerhaft berufsunfähig bist und die zahnärztliche Tätigkeit aufgegeben hast (§ 41 Abs. 1)', 'Kein Anspruch, solange eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3)'] },
         { kopf: 'Niedersachsen', punkte: ['Aufgabe der Tätigkeit nachweisen, jedes Jahr bis 31. März erklären, sonst entfällt die Rente ab Mai (§ 17a)', 'Gutachten durch nicht behandelnde Fachärzt*innen, Kosten trägst du, Nachuntersuchungen möglich (§ 17 Abs. 5 bis 8)'] },
       ],
-      fuss: 'Beispiele: Satzung VZWL Stand Juli 2026, ABH ZKN gültig ab 01.02.2024. Deine Satzung kann anders regeln.',
+      fuss: 'Stand: 16.11.2026, Beispiele aus den Satzungen Westfalen-Lippe und Niedersachsen (siehe Quellen). Deine Satzung kann anders regeln.',
     },
     {
-      typ: 'tabelle', nach: 'Was die private Berufsunfähigkeitsversicherung anders regeln kann',
+      typ: 'tabelle', nach: 'Was regelt die private Berufsunfähigkeitsversicherung anders?',
       titel: 'Zwei Maßstäbe im Vergleich',
       spalten: ['', 'Versorgungswerk (zwei Beispiele)', 'Private BU (§ 172 VVG)'],
       zeilen: [
         ['Maßstab', 'Zahnärztliche Tätigkeit insgesamt', 'Zuletzt ausgeübter Beruf, ganz oder teilweise'],
         ['Andere Tätigkeit', 'Westfalen-Lippe: auch Nutzung außerhalb der Praxis zählt (§ 41 Abs. 2)', 'Verweisung nur, wenn der Vertrag sie vorsieht (§ 172 Abs. 3)'],
-        ['Prozentgrenze', 'Nicht Teil der beiden Beispiele', 'Nicht im Gesetz, steht in den Bedingungen'],
+        ['Teilweise Berufsunfähigkeit', 'Keine Teilrente in den beiden Beispielen', 'Möglich, Schwelle steht in den Bedingungen'],
         ['Gesundheitsprüfung beim Eintritt', 'In beiden Regelwerken keine vorgesehen', 'Anzeigepflicht nach § 19 Abs. 1 VVG'],
       ],
-      fuss: 'Stand: Satzung VZWL Juli 2026, ABH ZKN 01.02.2024, VVG abgerufen am 12.11.2026. Maßgeblich sind deine Satzung und dein Vertrag.',
+      fuss: 'Stand: 16.11.2026, nach Gesetz und Satzungen (siehe Quellen). Maßgeblich sind deine Satzung und dein Vertrag.',
     },
   ],
   'berufsunfaehigkeit-zahnaerztin-berufsstart': [
@@ -38,10 +38,10 @@ export const grafiken = {
         { kopf: 'Gesundheitsfragen', punkte: ['Anzugeben ist, was dir bis zur Vertragserklärung bekannt ist und wonach in Textform gefragt wird (§ 19 Abs. 1 VVG)'] },
         { kopf: 'Bedingungen', punkte: ['Wechsel in den Beruf, Startphase, Nachversicherung: steht im Vertrag', 'Bedingungen bekommst du vor der Vertragserklärung in Textform (§ 7 Abs. 1 VVG)'] },
       ],
-      fuss: 'Stand: VVG abgerufen am 12.11.2026.',
+      fuss: 'Stand: 16.11.2026, nach VVG (siehe Quellen).',
     },
     {
-      typ: 'tabelle', nach: 'Gesundheitsfragen: Was du angeben musst und was bei falschen Angaben gilt',
+      typ: 'tabelle', nach: 'Warum sind die Gesundheitsfragen so wichtig?',
       titel: 'Falsche Angaben: Was der Versicherer tun kann',
       spalten: ['Situation', 'Folge nach dem Gesetz', 'Fundstelle'],
       zeilen: [
@@ -52,12 +52,12 @@ export const grafiken = {
         ['Frist für den Versicherer', 'Ein Monat ab Kenntnis, schriftlich', '§ 21 Abs. 1 VVG'],
         ['Erlöschen der Rechte', 'Fünf Jahre nach Vertragsschluss, bei Vorsatz oder Arglist zehn Jahre', '§ 21 Abs. 3 VVG'],
       ],
-      fuss: 'Vereinfachte Übersicht, Einzelheiten im Text. Stand: VVG abgerufen am 12.11.2026.',
+      fuss: 'Vereinfachte Übersicht. Stand: 16.11.2026, nach VVG (siehe Quellen).',
     },
   ],
   'berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen': [
     {
-      typ: 'ablauf', nach: 'Wovon die Höhe abhängt',
+      typ: 'ablauf', nach: 'Wie rechnest du deine BU-Rente?',
       titel: 'Ein möglicher Rechenweg',
       schritte: [
         { titel: 'Laufende Ausgaben', text: 'Was bei Berufsunfähigkeit weiterläuft: Wohnen, Lebenshaltung, Kranken- und Pflegeversicherung, Altersvorsorge' },
@@ -65,10 +65,10 @@ export const grafiken = {
         { titel: '− Leistung des Versorgungswerks', text: 'Nur soweit sie dir im Leistungsfall tatsächlich zusteht' },
         { titel: '= Lücke', text: 'Rechengröße vor Steuern, einmal mit und einmal ohne Versorgungswerk' },
       ],
-      fuss: 'Vorschlag zum Ordnen, keine Vorgabe aus Gesetz oder Satzung.',
+      fuss: 'So rechnen wir in der Beratung, keine Vorgabe aus Gesetz oder Satzung.',
     },
     {
-      typ: 'tabelle', nach: 'Rechenbeispiel',
+      typ: 'tabelle', nach: 'Wie sieht das in Zahlen aus?',
       titel: 'Fiktives Beispiel: Warum zwei Fälle?',
       spalten: ['', 'Fall A: Versorgungswerk zahlt', 'Fall B: Versorgungswerk zahlt nicht'],
       zeilen: [
@@ -81,19 +81,19 @@ export const grafiken = {
   ],
   'berufsunfaehigkeit-teilweise-zahnaerzt-innen': [
     {
-      typ: 'tabelle', nach: 'Was das Versorgungswerk verlangt',
+      typ: 'tabelle', nach: 'Was verlangt das Versorgungswerk?',
       titel: 'Teilweise berufsunfähig: drei Regelwerke im Vergleich',
       spalten: ['', 'Private BU (§ 172 VVG)', 'Versorgungswerk Westfalen-Lippe', 'Versorgungswerk Niedersachsen'],
       zeilen: [
         ['Maßstab', 'Zuletzt ausgeübter Beruf, ganz oder teilweise', 'Fähigkeiten auch außerhalb der Praxis in irgendeiner Weise nicht mehr wirtschaftlich nutzbar, Beruf aufgegeben', '„Völlig berufsunfähig“'],
-        ['Schwelle', 'Nicht im Gesetz, steht in den Bedingungen', 'Keine Teilrente gefunden (§§ 41, 42)', 'Keine Teilrente gefunden (§§ 17, 17a)'],
+        ['Schwelle', 'Nicht im Gesetz, steht in den Bedingungen', 'Keine Teilrente vorgesehen (§ 41)', 'Keine Teilrente vorgesehen (§§ 17, 17a)'],
       ],
-      fuss: 'Stand: § 172 VVG abgerufen am 13.11.2026, Satzung VZWL Juli 2026, ABH ZKN 01.02.2024. In vielen Bedingungen liegt die Schwelle bei 50 Prozent, das ist keine gesetzliche Vorgabe.',
+      fuss: 'Stand: 16.11.2026, nach Gesetz und Satzungen (siehe Quellen). In den Bedingungen, die wir in der Beratung sehen, liegt die Schwelle meist bei 50 Prozent.',
     },
   ],
   'altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen': [
     {
-      typ: 'karten', nach: 'Wie eine Rentenlücke entstehen kann',
+      typ: 'karten', nach: 'Wie entsteht eine Rentenlücke?',
       titel: 'Drei Punkte bestimmen die Lücke',
       karten: [
         { kopf: 'Dein Bedarf', punkte: ['Lebensstil, Verpflichtungen, Wohnsituation', 'Eine allgemeine Zahl gibt es nicht'] },
@@ -103,7 +103,7 @@ export const grafiken = {
       fuss: 'Quellen: SVBezGrV 2026, Bekanntmachung Beitragssätze 2026, Statistisches Bundesamt (16.01.2026 und 11.11.2026).',
     },
     {
-      typ: 'tabelle', nach: 'Rechenbeispiel zur Kaufkraft',
+      typ: 'tabelle', nach: 'Wie sieht das in Zahlen aus?',
       titel: 'Fiktives Beispiel: Kaufkraft nach 30 Jahren',
       spalten: ['', 'Fall A: keine Anpassung', 'Fall B: Anpassung wie die Preise'],
       zeilen: [
@@ -123,10 +123,10 @@ export const grafiken = {
         { kopf: 'Berufsordnung der Kammer', punkte: ['In den drei Beispielen jeweils in § 4', 'Westfalen-Lippe, Sachsen: keine Summe genannt', 'Bayern: Mindestsummen nach § 114 Abs. 1 VVG (250.000 € je Fall, 1 Mio. € im Jahr)'] },
         { kopf: '§ 95e SGB V', punkte: ['Für Vertragszahnärzt*innen über § 72 Abs. 1 Satz 2 SGB V', '3 Mio. € je Versicherungsfall', 'Mit angestellten Zahnärzt*innen oder im MVZ: 5 Mio. €'] },
       ],
-      fuss: 'Stand: Gesetze abgerufen am 14.11.2026, Berufsordnungen in den im Text genannten Fassungen.',
+      fuss: 'Stand: 16.11.2026, nach Gesetz und Berufsordnungen (siehe Quellen).',
     },
     {
-      typ: 'ablauf', nach: 'Nachweis und Folgen',
+      typ: 'ablauf', nach: 'Was passiert, wenn der Nachweis fehlt?',
       titel: 'Nachweis beim Zulassungsausschuss',
       schritte: [
         { titel: 'Antrag', text: 'Versicherungsbescheinigung mit dem Antrag und auf Verlangen (§ 95e Abs. 3)' },
@@ -134,12 +134,12 @@ export const grafiken = {
         { titel: 'Keine Vorlage', text: 'Ruhen der Zulassung mit sofortiger Wirkung (Satz 2)' },
         { titel: 'Nach zwei Jahren', text: 'Endet das Ruhen nicht, wird die Zulassung entzogen (Satz 7)' },
       ],
-      fuss: 'Gilt bei Teilnahme an der vertragszahnärztlichen Versorgung. Stand: SGB V abgerufen am 14.11.2026.',
+      fuss: 'Gilt mit Kassenzulassung. Stand: 16.11.2026, nach SGB V (siehe Quellen).',
     },
   ],
   'krankengeld-luecke-zahnaerzt-innen': [
     {
-      typ: 'ablauf', nach: 'Was das gesetzliche Krankengeld leistet',
+      typ: 'ablauf', nach: 'Was leistet das gesetzliche Krankengeld?',
       titel: 'Zeitachse bei Krankheit (angestellt, gesetzlich versichert)',
       schritte: [
         { titel: 'Woche 1 bis 6', text: 'Arbeitgeber zahlt das Gehalt weiter (§ 3 Abs. 1 EntgFG)' },
@@ -149,7 +149,7 @@ export const grafiken = {
       fuss: 'Stand: Gesetze abgerufen am 14.11.2026, Beitragsbemessungsgrenze nach BMG (Stand 03.09.2026).',
     },
     {
-      typ: 'tabelle', nach: 'Wo bei gutem Gehalt die Lücke entsteht',
+      typ: 'tabelle', nach: 'Wo entsteht bei gutem Gehalt die Lücke?',
       titel: 'Fiktives Beispiel: Gehalt und Krankengeld',
       spalten: ['Brutto im Monat', 'Krankengeld (70 Prozent, max. Beitragsbemessungsgrenze)', 'Differenz im reinen Vergleich'],
       zeilen: [

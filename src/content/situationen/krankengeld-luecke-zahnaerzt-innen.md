@@ -1,11 +1,12 @@
 ---
-frage: "Reicht das gesetzliche Krankengeld für angestellte Zahnärzt*innen, und was leistet ein Krankentagegeld?"
+frage: "Reicht das Krankengeld für angestellte Zahnärzt*innen?"
 titel: "Krankengeld-Lücke für angestellte Zahnärzt*innen"
-kurzantwort: "Bist du gesetzlich versichert, zahlt die Krankenkasse nach sechs Wochen Entgeltfortzahlung Krankengeld: 70 Prozent des Regelentgelts, 2026 höchstens 4.068,75 Euro im Monat. Ein Krankentagegeld kann die Differenz verringern, darf aber zusammen mit dem Krankengeld dein Nettoeinkommen nicht übersteigen."
-metaDescription: "Wie hoch das gesetzliche Krankengeld ist, wo bei gutem Gehalt eine Lücke entsteht und was ein Krankentagegeld nach Gesetz und Musterbedingungen regelt."
+kurzantwort: "Bei gutem Gehalt nicht. Angestellte Zahnärzt*innen in der gesetzlichen Krankenversicherung bekommen nach sechs Wochen Entgeltfortzahlung 70 Prozent des Bruttos, 2026 höchstens 4.068,75 Euro im Monat. Ein Krankentagegeld kann die Lücke schließen, bis zur Höhe deines Nettoeinkommens."
+metaDescription: "Krankengeld für angestellte Zahnärzt*innen: Höhe, Höchstbetrag 2026, wo die Lücke entsteht und was ein Krankentagegeld leistet."
 status: geprueft
-stand: "2026-11-14"
-reihenfolge: 7
+stand: "2026-11-16"
+pruefenBis: "2027-01-15"
+reihenfolge: 33
 quellen:
   - titel: "§§ 44, 46 SGB V, Krankengeld: Anspruch und Beginn (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/sgb_5/__44.html"
@@ -27,84 +28,81 @@ quellen:
     url: "https://www.recht.bund.de/bgbl/1/2026/228/VO.html"
 faq:
   - frage: "Ab wann zahlt die Krankenkasse Krankengeld?"
-    antwort: "Der Arbeitgeber zahlt das Gehalt bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft (§ 3 Abs. 1 EntgFG). Das Krankengeld ruht, solange du Arbeitsentgelt bekommst (§ 49 Abs. 1 Nr. 1 SGB V), und auch, solange die Arbeitsunfähigkeit der Kasse nicht gemeldet ist (§ 49 Abs. 1 Nr. 5 SGB V). Danach besteht der Anspruch nach § 44 Abs. 1 SGB V."
+    antwort: "Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter (§ 3 Abs. 1 EntgFG). Solange du Gehalt bekommst, ruht das Krankengeld (§ 49 Abs. 1 Nr. 1 SGB V). Danach zahlt die Krankenkasse, wenn die Arbeitsunfähigkeit ärztlich festgestellt und gemeldet ist."
+  - frage: "Wie hoch ist das Krankengeld 2026 höchstens?"
+    antwort: "70 Prozent des Bruttos bis zur Beitragsbemessungsgrenze von 5.812,50 Euro im Monat, also höchstens 4.068,75 Euro. Außerdem darf es 90 Prozent deines Nettos nicht übersteigen (§ 47 SGB V)."
   - frage: "Wie lange gibt es Krankengeld?"
-    antwort: "Für dieselbe Krankheit längstens 78 Wochen innerhalb von drei Jahren (§ 48 Abs. 1 SGB V). Laut Bundesgesundheitsministerium zählt die Entgeltfortzahlung in diese 78 Wochen hinein."
-  - frage: "Hat ein Krankentagegeld eine gesetzliche Höhe?"
-    antwort: "Nein. Das Gesetz spricht vom vereinbarten Krankentagegeld (§ 192 Abs. 5 VVG). Die Höhe steht im Tarif. Nach den Musterbedingungen darf das Tagegeld zusammen mit Krankengeld und anderen Tagegeldern das Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Das sind Musterbedingungen, dein Vertrag kann abweichen."
+    antwort: "Für dieselbe Krankheit längstens 78 Wochen innerhalb von drei Jahren (§ 48 Abs. 1 SGB V). Die sechs Wochen Entgeltfortzahlung zählen nach Angabe des Bundesgesundheitsministeriums mit."
+  - frage: "Was gilt, wenn ich privat krankenversichert bin?"
+    antwort: "Dann gibt es nach der Entgeltfortzahlung kein Krankengeld. Einkommensersatz bekommst du nur, wenn du ein Krankentagegeld vereinbart hast (§ 192 Abs. 5 VVG)."
+  - frage: "Wie hoch darf ein Krankentagegeld sein?"
+    antwort: "Nach den Musterbedingungen darf es zusammen mit Krankengeld und anderen Tagegeldern dein Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Die Höhe vereinbarst du im Tarif."
   - frage: "Ersetzt eine BU das Krankentagegeld?"
-    antwort: "Nein, beide regeln unterschiedliche Fälle. Nach den Musterbedingungen endet die Krankentagegeldversicherung mit Eintritt der Berufsunfähigkeit im Sinne dieser Bedingungen, bei bestehender Arbeitsunfähigkeit spätestens drei Monate danach (§ 15 Abs. 1 Buchst. b MB/KT). Was die BU leistet, steht auf den BU-Seiten."
+    antwort: "Nein. Das Krankentagegeld gilt für die Zeit der Arbeitsunfähigkeit, die BU für die dauerhafte Berufsunfähigkeit. Nach den Musterbedingungen endet das Krankentagegeld mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach (§ 15 Abs. 1 Buchst. b MB/KT)."
 verwandt:
   - berufsunfaehigkeit-teilweise-zahnaerzt-innen
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
+hinweise:
+  - nach: "Wo entsteht bei gutem Gehalt die Lücke?"
+    art: einschaetzen
+    text: "Du willst wissen, wie groß deine Krankengeld-Lücke mit deinem Gehalt ist? Das rechnen wir dir im Erstgespräch aus."
+    button: "Lücke ausrechnen lassen"
+  - nach: "Was regelt ein Krankentagegeld?"
+    art: whatsapp
+    text: "Dein Gehalt ist gestiegen und du weißt nicht, ob dein Tagegeld noch passt? Frag uns kurz per WhatsApp."
+cta:
+  titel: "Deine Krankengeld-Lücke schließen"
+  text: "Bring deine letzte Gehaltsabrechnung mit. Im Erstgespräch rechnen wir die Lücke aus und schauen, welches Tagegeld passt. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail."
+  button: "Erstgespräch buchen"
 ---
 
-Du bist ein paar Wochen krank, die Praxis läuft ohne dich, und der Arbeitgeber zahlt dein Gehalt nach sechs Wochen nicht mehr weiter. Was dann auf deinem Konto ankommt, hängt davon ab, ob du gesetzlich oder privat versichert bist, und bei gutem Gehalt ist es oft deutlich weniger als gewohnt. Diese Seite gilt für angestellte Zahnärzt\*innen. Sie zeigt, wie das gesetzliche Krankengeld berechnet wird, wo bei gutem Gehalt eine Lücke entsteht und was ein Krankentagegeld nach Gesetz und Musterbedingungen regelt. Für Selbstständigkeit und Praxisgründung gelten andere Regeln, die wir auf einer eigenen Seite behandeln.
+Du bist ein paar Wochen krank, die Praxis läuft ohne dich, und nach sechs Wochen zahlt der Arbeitgeber dein Gehalt nicht mehr weiter. Was dann ankommt, hängt davon ab, wie du versichert bist. Bei gutem Gehalt ist es oft deutlich weniger als gewohnt. Diese Seite gilt für angestellte Zahnärzt\*innen. Für die eigene Praxis gelten andere Regeln, die stehen auf [Praxisausfall oder Krankentagegeld in der Zahnarztpraxis](/ratgeber/praxisausfall-oder-krankentagegeld-zahnaerzt-innen).
 
-## Was das gesetzliche Krankengeld leistet
+## Was leistet das gesetzliche Krankengeld?
 
-Der Arbeitgeber zahlt dein Gehalt bei Krankheit bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft (§ 3 Abs. 1 EntgFG). Der Anspruch entsteht nach vier Wochen ununterbrochener Dauer des Arbeitsverhältnisses (§ 3 Abs. 3 EntgFG). Als gesetzlich Versicherte\*r hast du danach Anspruch auf Krankengeld, wenn die Krankheit dich arbeitsunfähig macht (§ 44 Abs. 1 SGB V). Der Anspruch entsteht von dem Tag der ärztlichen Feststellung der Arbeitsunfähigkeit an (§ 46 SGB V). Er ruht, solange du Arbeitsentgelt bekommst (§ 49 Abs. 1 Nr. 1 SGB V), und solange die Arbeitsunfähigkeit der Kasse nicht gemeldet ist. Das Ruhen tritt nicht ein, wenn die Meldung innerhalb einer Woche nach Beginn der Arbeitsunfähigkeit erfolgt oder die Daten elektronisch übermittelt werden (§ 49 Abs. 1 Nr. 5 SGB V).
+Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft und du mindestens vier Wochen angestellt bist (§ 3 EntgFG). Danach hast du als gesetzlich Versicherte\*r Anspruch auf Krankengeld (§ 44 SGB V), ab dem Tag der ärztlichen Feststellung (§ 46). Es ruht, solange du Gehalt bekommst oder die Arbeitsunfähigkeit nicht gemeldet ist. Wird sie elektronisch übermittelt, ist das kein Thema (§ 49 Abs. 1 SGB V).
 
-Das Krankengeld beträgt 70 Prozent des regelmäßigen Arbeitsentgelts, soweit es der Beitragsberechnung unterliegt. Es darf außerdem 90 Prozent des Nettoarbeitsentgelts nicht übersteigen (§ 47 Abs. 1 SGB V). Bei der Berechnung zählt dein Entgelt nur bis zur Beitragsbemessungsgrenze (§ 47 Abs. 6 SGB V). Gezahlt wird je Kalendertag, ein voller Monat wird mit 30 Tagen angesetzt (§ 47 Abs. 1 SGB V).
+Das Krankengeld beträgt 70 Prozent deines Bruttos, gerechnet höchstens bis zur Beitragsbemessungsgrenze, und höchstens 90 Prozent deines Nettos (§ 47 SGB V). Für dieselbe Krankheit gibt es Krankengeld längstens 78 Wochen in drei Jahren, die Entgeltfortzahlung zählt mit (§ 48). Es endet unter anderem, wenn du eine Rente wegen voller Erwerbsminderung oder eine Altersvollrente beziehst, und das gilt entsprechend für vergleichbare Renten eines Versorgungswerks (§§ 44 Abs. 2, 50).
 
-Die Dauer ist begrenzt: Für dieselbe Krankheit gibt es Krankengeld längstens 78 Wochen innerhalb von drei Jahren (§ 48 Abs. 1 SGB V). Nach Angabe des Bundesgesundheitsministeriums gilt diese Grenze einschließlich der Entgeltfortzahlung. Der Anspruch endet außerdem mit Beginn einer Rente wegen voller Erwerbsminderung oder einer Vollrente wegen Alters aus der gesetzlichen Rentenversicherung (§ 50 Abs. 1 SGB V). Für Mitglieder eines Versorgungswerks gilt Entsprechendes: Wer von dort eine Rente bezieht, die ihrer Art nach einer dieser Leistungen entspricht, hat keinen Anspruch auf Krankengeld (§ 44 Abs. 2 Satz 1 Nr. 4 SGB V). Welche Versorgungswerk-Renten das konkret sind, haben wir nicht geprüft; die Satzung deines Versorgungswerks regelt die Leistungen.
+## Wo entsteht bei gutem Gehalt die Lücke?
 
-## Wo bei gutem Gehalt die Lücke entsteht
+Bei der Beitragsbemessungsgrenze. Sie liegt 2026 bei 5.812,50 Euro im Monat. 70 Prozent davon sind 4.068,75 Euro, mehr Krankengeld gibt es nicht, egal wie viel du verdienst. Durch die Netto-Grenze kann es noch weniger sein.
 
-Die Beitragsbemessungsgrenze der Krankenversicherung liegt 2026 bei 5.812,50 Euro im Monat (Bundesgesundheitsministerium, Stand 03.09.2026; ebenso § 2 Abs. 2 der Sozialversicherungs-Rechengrößenverordnung 2026 für die dort genannte Jahresgrenze von 69.750 Euro). Der Wert wird jedes Jahr neu festgesetzt. Daraus folgt der Höchstbetrag nach der 70-Prozent-Regel: 70 Prozent von 5.812,50 Euro sind 4.068,75 Euro im Monat. Der tatsächliche Betrag kann niedriger liegen, weil zusätzlich die Grenze von 90 Prozent des Nettoarbeitsentgelts gilt.
+*Fiktives Beispiel, Stand 2026, ohne Steuern und Abzüge:* Bei 7.000 Euro brutto bekommst du höchstens 4.068,75 Euro Krankengeld, im reinen Vergleich fehlen 2.931,25 Euro im Monat. Bei 5.000 Euro brutto sind es 3.500 Euro Krankengeld und 1.500 Euro Unterschied.
 
-Vereinfacht gesagt: Alles, was du über der Beitragsbemessungsgrenze verdienst, spielt für das Krankengeld keine Rolle.
+Vereinfacht gesagt: Alles, was du über der Grenze verdienst, spielt für das Krankengeld keine Rolle. Die Lücke wächst mit deinem Gehalt.
 
-*Fiktives Rechenbeispiel, Stand 2026, gerechnet ohne Steuern und Beitragsabzüge, keine Aussage über dein Gehalt und keine Prognose: Du bist gesetzlich versichert und verdienst 7.000 Euro brutto im Monat. Für das Krankengeld zählt nur die Beitragsbemessungsgrenze: 70 Prozent von 5.812,50 Euro sind 4.068,75 Euro. Gegenüber 7.000 Euro fehlen im reinen Vergleich 2.931,25 Euro im Monat. Bei 5.000 Euro brutto greift die Grenze nicht: 70 Prozent sind 3.500 Euro, der Unterschied beträgt 1.500 Euro im Monat. Die Grenze von 90 Prozent des Nettoarbeitsentgelts ist hier nicht berechnet. Sie kann das Krankengeld in beiden Fällen weiter senken.*
+## Was gilt bei privater Krankenversicherung?
 
-Ein solcher Vergleich ist nur eine Größenordnung. Wie viel netto fehlt, hängt von Steuer, Beiträgen und deinem Gehalt im letzten abgerechneten Zeitraum ab. Er zeigt aber, warum die Lücke mit dem Gehalt wächst.
+Auch hier zahlt der Arbeitgeber sechs Wochen weiter. Danach gibt es kein Krankengeld. Einkommensersatz bekommst du nur, wenn du ein Krankentagegeld vereinbart hast (§ 192 Abs. 5 VVG). Ohne Tagegeld gibt es in der privaten Krankenversicherung keinen gesetzlichen Ersatz, auf den du ausweichen kannst.
 
-## Was bei privater Krankenversicherung gilt
+## Was regelt ein Krankentagegeld?
 
-Krankengeld nach dem Fünften Buch Sozialgesetzbuch bekommen Versicherte der gesetzlichen Krankenversicherung. Bist du privat versichert, zahlt dein Arbeitgeber ebenfalls bis zu sechs Wochen weiter. Danach bekommst du Einkommensersatz aus der Krankenversicherung nur, wenn du ein Krankentagegeld vereinbart hast. Für die Krankentagegeldversicherung sagt § 192 Abs. 5 VVG, dass der Versicherer den als Folge von Krankheit oder Unfall durch Arbeitsunfähigkeit verursachten Verdienstausfall durch das vereinbarte Krankentagegeld ersetzt.
+Das Gesetz spricht nur vom vereinbarten Tagegeld (§ 192 Abs. 5 VVG). Höhe und Beginn stehen im Tarif. Als Orientierung dienen die Musterbedingungen des PKV-Verbands. Dein Vertrag kann abweichen. Danach gilt:
 
-Wichtig ist an der Stelle: In der privaten Krankenversicherung gibt es ohne vereinbartes Krankentagegeld keinen gesetzlichen Ersatz, auf den du ausweichen kannst.
+- Tagegeld, Krankengeld und andere Tagegelder dürfen zusammen dein Nettoeinkommen nicht übersteigen, in der Regel gemessen am Durchschnitt der letzten zwölf Monate (§ 4 Abs. 2 MB/KT).
+- Die allgemeine Wartezeit beträgt drei Monate, bei Unfällen keine (§ 3 Abs. 2 MB/KT).
+- Sinkt dein Einkommen dauerhaft, musst du das melden, und der Versicherer kann Tagegeld und Beitrag herabsetzen (§ 4 Abs. 3 und 4 MB/KT).
+- Eine automatische Erhöhung bei steigendem Gehalt ist nicht vorgesehen. Bei einer Erhöhung können für den neuen Teil Wartezeiten und Zuschläge gelten (§§ 3 Abs. 6, 8a Abs. 4 MB/KT).
+- Das Tagegeld endet mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach, und mit dem Bezug von Altersrente (§ 15 Abs. 1 MB/KT). Endet es mit 65, kannst du eine Anschlussversicherung bis 70 ohne neue Gesundheitsprüfung verlangen, wenn du sie innerhalb von zwei Monaten beantragst (§ 196 VVG).
 
-## Was ein Krankentagegeld nach Gesetz und Musterbedingungen regelt
-
-§ 192 Abs. 5 VVG spricht vom vereinbarten Krankentagegeld. Höhe und Beginn der Zahlung legt diese Vorschrift nicht fest, sie stehen im Vertrag. Zum Ende erlaubt § 196 VVG, die Versicherung mit Vollendung des 65. Lebensjahres enden zu lassen. Als Orientierung für die Vertragsinhalte dienen die Musterbedingungen des PKV-Verbands (MB/KT 2009, Stand Juni 2024). Sie sind nicht verbindlich für jeden Vertrag. Dein Vertrag kann abweichen.
-
-Nach den Musterbedingungen gilt:
-
-- Das Krankentagegeld darf zusammen mit sonstigen Krankentage- und Krankengeldern das auf den Kalendertag umgerechnete Nettoeinkommen aus dem Beruf nicht übersteigen. Maßgeblich ist, sofern der Tarif nichts anderes regelt, der Durchschnittsverdienst der letzten zwölf Monate vor Antragstellung bzw. vor Eintritt der Arbeitsunfähigkeit (§ 4 Abs. 2 MB/KT).
-- Höhe und Dauer ergeben sich aus dem Tarif (§ 4 Abs. 1 MB/KT). Ab wann gezahlt wird, regelt deshalb der Tarif.
-- Die allgemeine Wartezeit beträgt drei Monate und entfällt bei Unfällen (§ 3 Abs. 2 MB/KT). Das Gesetz erlaubt, soweit eine Wartezeit vereinbart ist, allgemein höchstens drei Monate (§ 197 Abs. 1 VVG).
-- Eine Minderung deines Nettoeinkommens, die nicht nur vorübergehend ist, musst du unverzüglich mitteilen (§ 4 Abs. 3 MB/KT). Sinkt dein durchschnittliches Nettoeinkommen über zwölf Monate unter die Berechnungsgrundlage, kann der Versicherer Tagegeld und Beitrag herabsetzen, auch wenn du schon arbeitsunfähig bist. Die Herabsetzung wirkt ab dem zweiten Monat nach Zugang der Erklärung (§ 4 Abs. 4 MB/KT).
-- Eine automatische Erhöhung bei steigendem Gehalt sehen die Musterbedingungen nicht vor. Wird das Tagegeld erhöht, können für den zusätzlichen Teil Wartezeiten und ein Risikozuschlag gelten (§ 3 Abs. 6, § 8a Abs. 4 MB/KT). Ob dein Tarif eine Anpassung vorsieht, steht in deinen Tarifbedingungen.
-- Das Versicherungsverhältnis endet mit Eintritt der Berufsunfähigkeit. Gemeint ist: Du bist nach medizinischem Befund im bisher ausgeübten Beruf auf nicht absehbare Zeit mehr als 50 Prozent erwerbsunfähig. Bist du zu diesem Zeitpunkt schon arbeitsunfähig, endet es nicht vor dem Zeitpunkt, bis zu dem der Versicherer seine tariflichen Leistungen erbringen muss, spätestens aber drei Monate nach Eintritt der Berufsunfähigkeit (§ 15 Abs. 1 Buchst. b MB/KT).
-- Es endet außerdem mit dem Bezug von Altersrente, spätestens, sofern tariflich vereinbart, mit Vollendung des 65. Lebensjahres (§ 15 Abs. 1 Buchst. c MB/KT). Ist das Ende auf das 65. Lebensjahr vereinbart, kannst du verlangen, dass der Versicherer einen Antrag auf eine neue Krankentagegeldversicherung annimmt. Sie endet spätestens mit Vollendung des 70. Lebensjahres. Stellst du den Antrag innerhalb von zwei Monaten nach dem 65. Geburtstag, gibt es keine Risikoprüfung und keine Wartezeiten, soweit der Schutz nicht höher oder umfassender ist als im bisherigen Tarif (§ 196 Abs. 1 VVG).
-
-Zahlen für Tagegelder, Karenzzeiten oder Beiträge einzelner Tarife nennen wir hier nicht. Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, den man am leichtesten übersieht: Ein Tagegeld, das zum Gehalt beim Berufsstart gepasst hat, passt einige Gehaltsstufen später nicht mehr automatisch.
-
-## Krankentagegeld und Berufsunfähigkeit
-
-Krankengeld und Krankentagegeld gelten für die Zeit der Arbeitsunfähigkeit. Die Berufsunfähigkeitsversicherung ist ein eigener Vertrag mit eigenen Bedingungen. Die Musterbedingungen beenden das Krankentagegeld mit Eintritt der Berufsunfähigkeit in ihrem Sinne (§ 15 Abs. 1 Buchst. b MB/KT). Was die BU leistet, steht auf den Seiten „[Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen)“, „[BU bei Zahnärzt\*innen: Versorgungswerk und private BU](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen)“ und „[Teilweise arbeiten können: Was gilt bei Berufsunfähigkeit?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen)“.
+Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten übersehen wird: Ein Tagegeld, das beim Berufsstart gepasst hat, passt einige Gehaltsstufen später nicht mehr.
 
 ## Worauf du achten kannst
 
-Diese Fragen kannst du für deine Situation klären:
-
 - Wie hoch ist dein Gehalt im Vergleich zur Beitragsbemessungsgrenze?
-- Wie hoch ist das vereinbarte Krankentagegeld im Verhältnis zu deinem Nettoeinkommen?
+- Wie hoch ist dein Tagegeld im Verhältnis zu deinem Nettoeinkommen?
 - Ab welchem Tag zahlt der Tarif, und wie lange?
-- Wie wird die Höhe angepasst, wenn dein Gehalt steigt?
-- Wie hängen Tagegeld und Krankengeld zusammen, wenn du zusätzlich zur gesetzlichen Versicherung ein Krankentagegeld vereinbarst? Nach den Musterbedingungen zählt das Krankengeld bei der Höchstgrenze mit.
-- Welche Gesundheitsfragen stellt der Versicherer vor Vertragsabschluss? Bis zu deiner Vertragserklärung musst du die dir bekannten erheblichen Umstände anzeigen, nach denen er in Textform fragt (§ 19 Abs. 1 VVG).
+- Wie wird das Tagegeld angepasst, wenn dein Gehalt steigt?
+- Welche Gesundheitsfragen stellt der Versicherer (§ 19 Abs. 1 VVG)?
 
-## Rechtsstand
-
-Die genannten Werte gelten für 2026. Das Gesetz zur Stabilisierung der Beitragssätze in der gesetzlichen Krankenversicherung (BGBl. 2026 I Nr. 228) ändert Vorschriften der gesetzlichen Krankenversicherung. Ob und wie es das Krankengeld betrifft, haben wir hier nicht dargestellt. Prüfe vor einer Entscheidung, ob sich Grenzwerte oder Regeln geändert haben.
+Was nach der Arbeitsunfähigkeit kommt, wenn du dauerhaft nicht mehr arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen) und [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
 ## Was du mitnehmen kannst
 
-Das gesetzliche Krankengeld ersetzt bei hohem Gehalt nur einen Teil des Einkommens, weil es auf 70 Prozent und auf die Beitragsbemessungsgrenze begrenzt ist. Ob und wie ein Krankentagegeld die Differenz verringert, steht nicht im Gesetz, sondern in deinem Vertrag. Konkret heißt das: Ein Blick auf deine Gehaltsabrechnung und auf deinen Tarif reicht, um zu sehen, wie groß die Lücke bei dir wäre.
+Das Krankengeld ersetzt bei hohem Gehalt nur einen Teil des Einkommens. Ein Krankentagegeld kann die Lücke schließen, wenn Höhe und Beginn passen und es mit deinem Gehalt mitwächst. Ein Blick auf Gehaltsabrechnung und Tarif zeigt dir, wie groß die Lücke bei dir ist. Die Werte gelten für 2026 und werden jedes Jahr neu festgesetzt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: Gesetze und Verordnungen abgerufen am 14.11.2026, Beitragsbemessungsgrenze nach Bundesgesundheitsministerium (Stand 03.09.2026), MB/KT 2009 (Stand Juni 2024).*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026, Jahreswerte für 2026. Grundlagen sind Gesetz, Rechengrößen und Musterbedingungen (siehe Quellen mit dem jeweiligen Stand). Maßgeblich sind dein Tarif und deine Bedingungen.*

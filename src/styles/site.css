@@ -359,3 +359,12 @@ main:focus { outline: none; }
 .zwischen-cta p { margin: 0; flex: 1 1 18rem; font-weight: 500; color: var(--navy); }
 .prosa .zwischen-cta a.knopf { text-decoration: none; }
 .prosa .zwischen-cta a.knopf:not(.knopf-rand) { color: #fff; }
+
+/* Startseite: Themengruppen nebeneinander, Kartentext gekürzt (voller Text bleibt im HTML) */
+@media (min-width: 900px) {
+  .startseite .a-gruppen, .themen-raster { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 2.5rem 1rem; }
+  .startseite .themengruppe, .themen-raster .themengruppe { grid-column: span var(--n, 4); }
+  .startseite .themengruppe + .themengruppe, .themen-raster .themengruppe + .themengruppe { margin-top: 0; }
+  .startseite .themengruppe .karten, .themen-raster .karten { grid-template-columns: repeat(var(--n, 4), minmax(0, 1fr)); }
+}
+.startseite .karte > p:not(.karte-phase), .themen-raster .karte > p:not(.karte-phase) { display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
