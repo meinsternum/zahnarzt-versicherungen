@@ -99,6 +99,10 @@ Nein. Für die Pflichtmitgliedschaft sehen die Satzungen aus Westfalen-Lippe und
 
 Wie hoch die private Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen). Was gilt, wenn du nur noch teilweise arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Aus unserer Sicht braucht jede Zahnärztin und jeder Zahnarzt, die oder der vom eigenen Einkommen lebt, neben dem Versorgungswerk eine private BU. Bei der Auswahl achten wir auf den Verzicht auf die abstrakte Verweisung, eine Regelung für Tätigkeitsverbote nach dem Infektionsschutzgesetz und Leistung schon bei teilweiser Berufsunfähigkeit. Wer eine eigene Praxis führt, sollte zusätzlich klären, wie die Kosten der Praxis im Ernstfall weiterlaufen, das deckt die BU-Rente nicht ab. Dazu mehr auf [Praxisausfall oder Krankentagegeld in der Zahnarztpraxis](/ratgeber/praxisausfall-oder-krankentagegeld-zahnaerzt-innen).
+
 ## Was du mitnehmen kannst
 
 Das Versorgungswerk ist eine Grundlage, aber keine vollständige Absicherung. In beiden Beispielsatzungen zahlt es erst, wenn du gar nicht mehr zahnärztlich arbeiten kannst und die Tätigkeit aufgibst. Eine private BU kann früher und an deinem konkreten Beruf ansetzen. Ein Gespräch lohnt sich, wenn du noch keine private BU hast oder nicht weißt, wie deine Bedingungen Verweisung und Tätigkeitsverbot regeln.

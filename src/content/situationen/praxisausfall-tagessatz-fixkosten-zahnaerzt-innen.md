@@ -99,6 +99,10 @@ Je nach Vertrag ja, und dann solltest du es auch tun. Eine neue Mitarbeiterin, e
 
 Wann und wie lange gezahlt wird, erklärt die Seite [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Wir empfehlen, den Tagessatz aus deiner betriebswirtschaftlichen Auswertung herzuleiten, nicht aus dem Umsatz und nicht aus einer Faustregel. Prüf ihn bei jeder größeren Änderung in der Praxis neu, etwa bei neuem Personal, höherer Miete oder einem neuen Leasingvertrag. Ob dein eigener Lebensunterhalt im Tagessatz oder im Krankentagegeld abgesichert wird, entscheiden wir gemeinsam mit dir. Entscheidend ist, dass er an einer Stelle sauber abgedeckt ist.
+
 ## Was du mitnehmen kannst
 
 Der Rechenweg ist einfach: Kosten eines Jahres, geteilt durch die Tage, nach denen der Vertrag rechnet. Schwieriger ist die Frage davor, welche Posten wirklich weiterlaufen. Nimm deine letzte betriebswirtschaftliche Auswertung und geh sie Zeile für Zeile durch. Ein Gespräch ist sinnvoll, wenn du unsicher bist, welche Posten dazugehören oder ob der Gewinn in die Summe soll.

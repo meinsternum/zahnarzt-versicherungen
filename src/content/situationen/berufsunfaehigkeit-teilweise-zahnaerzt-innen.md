@@ -73,6 +73,10 @@ Genau diese Situation ist aus unserer Erfahrung einer der wichtigsten Gründe, w
 
 Findest du die Regelung nicht, frag beim Versicherer nach, und zwar vor dem Leistungsfall. Was das Versorgungswerk im Einzelnen verlangt, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Für die Zeit der Arbeitsunfähigkeit davor ist [Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen) wichtig.
 
+## Unsere Einschätzung
+
+Für Zahnärzt\*innen achten wir bei der Auswahl einer BU vor allem auf drei Punkte: dass der Vertrag schon bei teilweiser Berufsunfähigkeit leistet, dass er auf die abstrakte Verweisung verzichtet und dass dein Beruf so beschrieben ist, wie du ihn tatsächlich ausübst, mit dem Anteil der Arbeit am Behandlungsstuhl. Ein günstiger Beitrag ist aus unserer Sicht kein Ausgleich für eine unklare Regelung im teilweisen Fall.
+
 ## Was du mitnehmen kannst
 
 Aus unserer Erfahrung ist der teilweise Fall bei Zahnärzt\*innen häufig, nicht die Ausnahme. Die private BU kann ihn abdecken, wenn die Bedingungen passen. Die beiden Beispielsatzungen der Versorgungswerke decken ihn nicht ab. Ein Gespräch lohnt sich, wenn du nicht sicher bist, wie dein Vertrag Schwelle und Verweisung regelt.

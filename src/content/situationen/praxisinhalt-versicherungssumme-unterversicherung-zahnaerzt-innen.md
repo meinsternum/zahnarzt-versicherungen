@@ -109,6 +109,10 @@ Dann zahlst du Beitrag für einen Wert, den es nicht gibt. Ist die Summe erhebli
 
 Was überhaupt zu den versicherten Sachen gehört, steht auf der Seite [Praxisinhaltsversicherung Zahnarztpraxis: Was gehört hinein?](/ratgeber/praxisinhalt-was-gehoert-hinein-zahnaerzt-innen). Wie du die Summe für den Praxisausfall bestimmst, zeigt [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Wir bevorzugen für Zahnarztpraxen Verträge, die keine Unterversicherung anrechnen. Wo eine Versicherungssumme gilt, empfehlen wir einen vereinbarten Verzicht auf die Kürzung und eine jährliche Prüfung mit der Anlagenliste. Große Anschaffungen wie ein DVT oder eine CAD/CAM-Einheit solltest du dem Versicherer gleich melden, nicht erst bei der nächsten Jahresmeldung.
+
 ## Was du mitnehmen kannst
 
 Unterversicherung entsteht leise: Die Praxis wächst, der Vertrag nicht. Nimm einmal im Jahr deine Anlagenliste und vergleiche sie mit dem Vertrag, am besten zusammen mit dem Jahresabschluss. Ein Gespräch ist sinnvoll, wenn deine Summe seit der Gründung unverändert ist oder du nicht weißt, ob dein Vertrag auf die Unterversicherung verzichtet.

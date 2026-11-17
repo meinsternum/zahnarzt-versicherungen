@@ -91,6 +91,10 @@ Dann endet in der Regel die Leistung der Praxisausfallversicherung. Sie ist für
 
 Für angestellte Zahnärzt\*innen stellt sich die Frage anders, siehe [Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Für Zahnärzt\*innen mit eigener Praxis empfehlen wir in der Regel beides: ein Krankentagegeld für dein persönliches Einkommen und eine Praxisausfallversicherung für die laufenden Kosten der Praxis. Wichtig ist uns, dass beide Verträge aufeinander abgestimmt sind, vor allem beim Beginn der Leistung, damit keine Wochen ungedeckt bleiben und nichts doppelt versichert ist.
+
 ## Was du mitnehmen kannst
 
 Stell dir zwei Fragen getrennt: Was fehlt dir persönlich, wenn du drei Monate ausfällst? Und was fehlt der Praxis? Für das Erste ist das Krankentagegeld da, für das Zweite die Praxisausfallversicherung. Aus unserer Sicht kommt es weniger auf den einzelnen Vertrag an als darauf, dass beide aufeinander abgestimmt sind. Ein Gespräch ist sinnvoll, wenn du nicht sicher bist, welcher deiner Verträge welche Lücke schließt.

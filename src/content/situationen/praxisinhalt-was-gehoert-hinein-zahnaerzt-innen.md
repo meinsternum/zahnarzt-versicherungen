@@ -113,6 +113,10 @@ Das Gesetz verbietet dir, das Risiko ohne Zustimmung des Versicherers zu erhöhe
 
 Wie hoch die Versicherungssumme sein muss und was Unterversicherung bedeutet, steht auf der Seite [Praxisinhalt: Versicherungssumme und Unterversicherung](/ratgeber/praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen). Was passiert, wenn die Praxis nach einem Schaden stillsteht, erklärt [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Für Zahnarztpraxen empfehlen wir eine Allgefahrendeckung, die Medizintechnik ausdrücklich einschließt, dazu passende Grenzen für Edelmetalle und Implantate und einen Verzicht auf Kürzungen bei grober Fahrlässigkeit. Patientendaten und Software sichern wir über einen eigenen Baustein oder eine Cyberdeckung ab, weil die Inhaltsversicherung sie nur am Rand erfasst.
+
 ## Was du mitnehmen kannst
 
 Eine Inhaltsversicherung haben in unserer Beratung fast alle Praxen. Die Unterschiede liegen in der Bauweise: benannte Gefahren oder Allgefahren, und wie gut Medizintechnik, Edelmetalle und Implantate abgedeckt sind. Geh einmal mit deinem Vertrag durch die Praxis und frag dich bei jedem teuren Gerät: Gegen welchen Schaden wäre es versichert? Ein Gespräch ist sinnvoll, wenn du dabei auf Fragen stößt, die der Vertrag nicht klar beantwortet.

@@ -105,6 +105,10 @@ Für Vertragszahnärzt\*innen kommt eine Pflicht außerhalb des Versicherungsver
 
 Wie die Praxisausfallversicherung zum Krankentagegeld steht, erklärt die Seite [Praxisausfall oder Krankentagegeld in der Zahnarztpraxis](/ratgeber/praxisausfall-oder-krankentagegeld-zahnaerzt-innen). Den Rechenweg zur Höhe zeigt [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Wir empfehlen, die Karenzzeit an der Rücklage deiner Praxis auszurichten: so lang, wie die Praxis ihre Kosten ohne Einnahmen selbst tragen kann, und nicht länger. Bei der Haftzeit sind wir lieber großzügig, denn der Fall, der eine Praxis wirklich in Schwierigkeiten bringt, ist der lange Ausfall, nicht die kurze Erkältung. Die Ausschlüsse lesen wir mit dir gemeinsam, bevor du unterschreibst.
+
 ## Was du mitnehmen kannst
 
 Karenzzeit und Haftzeit legst du selbst fest. Die Ausschlüsse stehen in den Bedingungen, und dort lohnt sich das genaue Lesen. Ein Gespräch ist sinnvoll, bevor du Karenzzeit und Haftzeit festlegst oder wenn du einen bestehenden Vertrag an diesen Punkten prüfen willst.

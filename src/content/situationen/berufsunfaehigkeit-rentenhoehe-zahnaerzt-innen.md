@@ -98,6 +98,10 @@ Ja, aber nicht immer gleich. Das Einkommensteuergesetz unterscheidet zwei Wege (
 - Plane die Steuer ein.
 - Achte auf eine Nachversicherungsgarantie, damit die Rente mitwachsen kann. Mehr dazu auf [Wann solltest du als Zahnärzt\*in eine BU abschließen?](/ratgeber/berufsunfaehigkeit-zahnaerztin-berufsstart).
 
+## Unsere Einschätzung
+
+Wir empfehlen, die BU-Rente so zu planen, dass sie auch im ungünstigen Fall ohne Leistung des Versorgungswerks deine laufenden Ausgaben trägt. Lieber mit einer Rente starten, die zu deinem heutigen Bedarf passt, und sie über die Nachversicherungsgarantie mitwachsen lassen, als von Anfang an einen Beitrag zu zahlen, der dich heute belastet. Die Rechnung wiederholen wir mit unseren Mandant\*innen bei jedem größeren Schritt: Familie, Niederlassung, Darlehen.
+
 ## Was du mitnehmen kannst
 
 Die richtige BU-Rente ergibt sich aus deinen Zahlen, nicht aus einer Faustregel. Rechne mit und ohne Versorgungswerk, dann siehst du, wie groß deine Lücke im ungünstigen Fall ist. Ein Gespräch lohnt sich, wenn du die Rechnung einmal mit jemandem durchgehen willst, der sie oft macht.

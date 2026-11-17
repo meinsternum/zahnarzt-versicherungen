@@ -98,6 +98,10 @@ Sie erlaubt dir, die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüf
 
 Was das Versorgungswerk bei Berufsunfähigkeit leistet, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Wie hoch die Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Wir empfehlen, die BU so früh abzuschließen, wie Gesundheit und Budget es erlauben, mit einer Rente, die zu deinem heutigen Bedarf passt, und einer Nachversicherungsgarantie für die Zeit nach der Assistenzzeit. Bei Vorerkrankungen kommt bei uns immer zuerst die anonyme Risikovoranfrage, dann der Antrag. Von Starterpolicen raten wir ab, wenn nicht schon heute klar ist, wie hoch der Beitrag nach der Startphase wird.
+
 ## Was du mitnehmen kannst
 
 Die Frage ist weniger „wann?“ als „mit welchem Antrag und welchen Bedingungen?“. Je früher du abschließt, desto weniger musst du aus unserer Erfahrung meist angeben. Je besser die Bedingungen, desto länger passt der Vertrag zu deinem Beruf. Ein Gespräch lohnt sich vor dem ersten Antrag, nicht danach.

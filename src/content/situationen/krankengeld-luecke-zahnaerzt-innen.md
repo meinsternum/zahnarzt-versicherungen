@@ -99,6 +99,10 @@ Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten üb
 
 Was nach der Arbeitsunfähigkeit kommt, wenn du dauerhaft nicht mehr arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen) und [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Für angestellte Zahnärzt\*innen mit Gehalt über der Beitragsbemessungsgrenze empfehlen wir ein Krankentagegeld, das die Lücke bis zu deinem Nettoeinkommen schließt und direkt an die sechs Wochen Entgeltfortzahlung anschließt. Bist du privat krankenversichert, ist es aus unserer Sicht unverzichtbar, weil es sonst keinen Einkommensersatz gibt. Und: Prüf das Tagegeld bei jeder Gehaltserhöhung, denn es wächst nicht von allein mit.
+
 ## Was du mitnehmen kannst
 
 Das Krankengeld ersetzt bei hohem Gehalt nur einen Teil des Einkommens. Ein Krankentagegeld kann die Lücke schließen, wenn Höhe und Beginn passen und es mit deinem Gehalt mitwächst. Ein Blick auf Gehaltsabrechnung und Tarif zeigt dir, wie groß die Lücke bei dir ist. Die Werte gelten für 2026 und werden jedes Jahr neu festgesetzt.

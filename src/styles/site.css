@@ -391,3 +391,4 @@ main:focus { outline: none; }
 .mega-mehr a { font-weight: 600; }
 .themengruppe-titel a { color: inherit; text-decoration: none; }
 .themengruppe-titel a:hover { text-decoration: underline; }
+.thema-text { max-width: 46rem; margin-top: 3rem; }

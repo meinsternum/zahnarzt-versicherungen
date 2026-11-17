@@ -31,6 +31,9 @@ const jsonLd = [
     },
   },
 ];
+// Redaktioneller Überblick je Thema (optional, src/texte/themen/<id>.md), ab drei Unterseiten.
+const texte = import.meta.glob('../../texte/themen/*.md', { eager: true }) as Record<string, { Content: any }>;
+const Text = texte[`../../texte/themen/${g.id}.md`]?.Content;
 const anzahl = g.seiten.length === 1 ? 'eine Frage' : `${g.seiten.length} Fragen`;
 ---
 <Base title={`${titel}: alle Fragen | zahnarzt-versicherungen.de`} description={`${g.beschreibung} Antworten für Zahnärzt*innen mit Quellen und Stand.`} path={pfad} jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: g.titel, href: pfad }]}>
@@ -50,6 +53,7 @@ const anzahl = g.seiten.length === 1 ? 'eine Frage' : `${g.seiten.length} Fragen
         </li>
       ))}
     </ul>
+    {Text && <div class="prosa thema-text"><Text /></div>}
     <p class="thema-weiter"><a href="/ratgeber">Alle Themen im Ratgeber<Icon name="pfeil" size={16} /></a></p>
     <CtaBlock kampagne={`thema-${g.id}`} betreff={titel} text={`Du willst wissen, was beim Thema ${g.titel} für dich gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail.`} />
   </div>

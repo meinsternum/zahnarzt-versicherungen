@@ -101,6 +101,10 @@ Dieselbe Rente in Euro kann sehr unterschiedlich viel wert sein. Deshalb rechnen
 
 Was das Versorgungswerk bei Berufsunfähigkeit leistet, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Wie die Rente bei Berufsunfähigkeit berechnet wird, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
+## Unsere Einschätzung
+
+Aus unserer Sicht ist das Versorgungswerk eine gute Grundlage, für Zahnärzt\*innen mit Einkommen über der Beitragsbemessungsgrenze aber keine vollständige Altersvorsorge. Wir empfehlen drei Schritte: Leg die Renteninformation deines Versorgungswerks jedes Jahr ab und vergleiche sie mit deinem Bedarf. Rechne die Lücke immer in zwei Fällen, mit und ohne Anpassung an die Preise. Und entscheide erst danach, ob freiwillige Zahlungen ins Versorgungswerk oder eine private Vorsorge besser zu dir passen, denn beide Wege haben eigene Regeln und Grenzen.
+
 ## Was du mitnehmen kannst
 
 Das Versorgungswerk ist eine solide Grundlage, aber es bildet hohe Einkommen nur bis zur Beitragsgrenze ab, und eine Anpassung an die Preise ist nicht zugesagt. Rechne deine Lücke einmal mit echten Zahlen. Ein Gespräch lohnt sich, wenn dein Einkommen deutlich über der Beitragsbemessungsgrenze liegt oder du nicht weißt, was dein Versorgungswerk dir heute zusagt.

@@ -101,6 +101,10 @@ Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gib
 - **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache oder aus gleichen, zusammenhängenden Ursachen als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
 - **Nachhaftung und Ruhestand:** Es gibt Verträge, die nach Praxisaufgabe für Schäden aus der früheren Tätigkeit weiter einstehen, begrenzt auf den unverbrauchten Teil der Summe des letzten Versicherungsjahres, und solche, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen, Gutachten oder Notfälle.
 
+## Unsere Einschätzung
+
+Wir empfehlen, die Mindestsumme nicht als Ziel zu nehmen, sondern als Untergrenze. Drei Punkte prüfen wir bei jeder Zahnarztpraxis: ob die Summe auch nach der ersten Anstellung einer Zahnärztin oder eines Zahnarztes noch reicht, ob Vertretungen und Assistenzzahnärzt\*innen ausdrücklich mitversichert sind und wie die Nachhaftung nach einer Praxisabgabe geregelt ist. Die Nachhaftung klärst du am besten, bevor du den Vertrag kündigst, nicht danach.
+
 ## Was du mitnehmen kannst
 
 Die Pflicht ist klar, die passende Summe ist es nicht immer. Prüfe deinen Vertrag immer dann, wenn sich in deiner Praxis etwas ändert: Anstellung, Kooperation, neue Behandlungsschwerpunkte oder Praxisabgabe. Ein Gespräch lohnt sich, wenn du vor einer dieser Veränderungen stehst.
