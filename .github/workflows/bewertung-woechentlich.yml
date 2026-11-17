@@ -1,10 +1,10 @@
-# Baut die Website einmal täglich neu, damit die Google-Bewertung aktuell bleibt.
+# Baut die Website einmal pro Woche (montags) neu, damit die Google-Bewertung aktuell bleibt.
 # Einrichtung: In Netlify unter Site configuration > Build & deploy > Build hooks einen Hook für den
 # Live-Zweig anlegen und die URL in GitHub unter Settings > Secrets > Actions als NETLIFY_BUILD_HOOK speichern.
-name: Täglicher Neubau (Google-Bewertung)
+name: Wöchentlicher Neubau (Google-Bewertung)
 on:
   schedule:
-    - cron: '17 4 * * *'
+    - cron: '17 4 * * 1'
   workflow_dispatch:
 jobs:
   neubau:

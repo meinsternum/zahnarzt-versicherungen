@@ -3,7 +3,7 @@
 // GOOGLE_PLACES_API_KEY gesetzt ist (Netlify > Site configuration > Environment variables).
 // Ohne Schlüssel oder bei einem Fehler gelten die Werte unten (zuletzt geprüft am 17.11.2026: 5,0 bei 82).
 // Die Abfrage läuft nur beim Bauen, Besucher*innen laden nichts von Google (kein Widget, keine Cookies).
-// Täglicher Neubau: .github/workflows/bewertung-taeglich.yml (Netlify-Build-Hook als GitHub-Secret).
+// Wöchentlicher Neubau: .github/workflows/bewertung-woechentlich.yml (Netlify-Build-Hook als GitHub-Secret).
 const PLACE_ID = 'ChIJt1gykQUlv0cR9H-KWSmNHfg';
 const FALLBACK = { wert: '5,0', anzahl: 82 };
 
