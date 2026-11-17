@@ -1,0 +1,18 @@
+# Baut die Website einmal täglich neu, damit die Google-Bewertung aktuell bleibt.
+# Einrichtung: In Netlify unter Site configuration > Build & deploy > Build hooks einen Hook für den
+# Live-Zweig anlegen und die URL in GitHub unter Settings > Secrets > Actions als NETLIFY_BUILD_HOOK speichern.
+name: Täglicher Neubau (Google-Bewertung)
+on:
+  schedule:
+    - cron: '17 4 * * *'
+  workflow_dispatch:
+jobs:
+  neubau:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Netlify-Build auslösen
+        env:
+          HOOK: ${{ secrets.NETLIFY_BUILD_HOOK }}
+        run: |
+          if [ -z "$HOOK" ]; then echo "NETLIFY_BUILD_HOOK nicht gesetzt, übersprungen"; exit 0; fi
+          curl -fsS -X POST -d '{}' "$HOOK"

@@ -1,6 +1,6 @@
 ---
 titel: "Impressum"
-status: entwurf
+status: freigegeben
 ---
 
 zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH.

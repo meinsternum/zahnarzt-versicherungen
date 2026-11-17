@@ -1,6 +1,6 @@
 ---
 titel: "Datenschutz"
-status: entwurf
+status: freigegeben
 ---
 
 Stand: 16. November 2026
@@ -24,7 +24,7 @@ Diese Website wird bei Netlify, Inc., 512 2nd Street, Suite 200, San Francisco, 
 
 Mit Netlify besteht ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO. Netlify ist unter dem EU-US Data Privacy Framework zertifiziert, darauf stützt sich die Übermittlung in die USA (Angemessenheitsbeschluss der EU-Kommission, Art. 45 DSGVO). Entfällt die Zertifizierung, gelten die Standardvertragsklauseln der EU-Kommission. Netlify setzt Unterauftragsverarbeiter ein, die Netlify auf https://www.netlify.com/legal/subprocessors/ auflistet.
 
-[PRÜFEN: Im Netlify-Konto bestätigen, dass das Data Processing Agreement für dieses Konto gilt (laut Netlify Teil der Nutzungsbedingungen) oder es dort abschließen. DPF-Zertifizierung laut Netlify Trust Center bestätigt, abgerufen 16.11.2026.]
+<!-- Geprüft 17.11.2026: Netlify-DPA ist per Verweis Teil des Self-Serve Subscription Agreement und gilt automatisch (netlify.com/gdpr). DPF-Zertifizierung laut Netlify Trust Center. -->
 
 Rechtsgrundlage: Art. 6 Abs. 1 lit. f DSGVO (sichere und effiziente Bereitstellung der Website).
 

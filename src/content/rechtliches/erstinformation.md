@@ -1,6 +1,6 @@
 ---
 titel: "Erstinformation"
-status: entwurf
+status: freigegeben
 ---
 
 ## 1. Wozu eine Erstinformation?
