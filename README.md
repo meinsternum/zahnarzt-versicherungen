@@ -15,3 +15,14 @@ Statische Seite (Astro), Hosting über Netlify, Inhalte als Markdown in `src/con
 
 ## Indexierung
 `indexierung.json` steuert noindex, Sitemap und robots.txt. Solange `erlaubt: false`, ist die Live-Seite nicht indexierbar.
+
+## Vor dem Livegang prüfen
+- `indexierung.json`: `erlaubt` erst auf `true`, wenn Impressum, Datenschutz, Erstinformation freigegeben und alle Seiten geprüft sind.
+- Produktions-Build lokal testen: `CONTEXT=production npm run build`, dann Canonical (zahnarzt-versicherungen.de), robots-Meta, Sitemap, robots.txt prüfen.
+- Vorschau-Domain (netlify.app) ist immer noindex und darf nirgends fest im Code stehen (Links sind relativ, Canonical zeigt auf die Hauptdomain).
+- Google-Bewertung: Werte in `src/lib/bewertung.ts` mit dem aktuellen Profil abgleichen, Beleg in `belege/` aktualisieren.
+- Seiten mit Status `geprueft` sind nur in der Vorschau sichtbar, live erst mit `freigegeben`.
+
+## Regel-Prüfung der Inhalte
+`npm run pruefen` prüft alle Ratgeberseiten gegen das Regelwerk (Längen, verbotene Wörter, Antwort zuerst, Zahnarzt-Bezug, FAQ, Verweise, Aktualität) und gibt einen Bericht aus. `npm run pruefen -- --streng` bricht bei Fehlern ab (für den Build, sobald die Bestandsseiten überarbeitet sind). `-- --md` gibt die Tabelle für die Seitenübersicht im Projekt aus.
+Neue Frontmatter-Felder (optional): `cta` (titel, text, button) und `pruefenBis` (nächste Aktualitätsprüfung).

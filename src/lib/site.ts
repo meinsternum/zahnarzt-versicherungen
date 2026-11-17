@@ -1,0 +1,34 @@
+// Zentrale Konstanten. Alle Seiten nutzen nur diese Werte.
+
+// Termin-Link: Patrick setzt die endgültige Buchungs-URL später ein.
+// Bis dahin zeigt sie auf die Buchungsseite von meinsternum.de.
+export { TERMIN_URL, EMAIL, WHATSAPP_URL, terminLink, mailLink } from './kontakt.mjs';
+
+export const SITE_URL = 'https://zahnarzt-versicherungen.de';
+export const SITE_NAME = 'zahnarzt versicherungen';
+
+// Angaben aus dem Impressum (src/content/rechtliches/impressum.md).
+export const ORGANISATION = {
+  name: 'MEIN STERNUM Finanzberatung GmbH',
+  url: 'https://www.meinsternum.de',
+  strasse: 'Göppinger Str. 2a',
+  plz: '50739',
+  ort: 'Köln',
+  telefon: '0221 98654436',
+  telefonLink: 'tel:+4922198654436',
+  telefonSchema: '+49 221 98654436',
+  email: 'hallo@meinsternum.de',
+};
+
+// Kurzer KI-Hinweis im Fuß jeder Seite (Regelwerk, Wortlaut vorläufig, Patrick klärt).
+
+export const PFLICHTHINWEIS =
+  'Die Inhalte dieser Seite sind allgemeine Informationen und ersetzen keine individuelle Beratung.';
+
+// Kontaktwege und Profile. Leere url = noch nicht geliefert (Patrick schickt Nummer und Links),
+// wird dann nicht angezeigt und nicht ins Schema übernommen.
+export const SOCIAL: { name: string; url: string }[] = [
+  { name: 'WhatsApp', url: 'https://wa.me/4922198654436' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/company/mein-sternum' },
+  { name: 'Instagram', url: 'https://www.instagram.com/patrick.senn.meinsternum/' },
+];

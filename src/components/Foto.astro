@@ -1,0 +1,30 @@
+---
+// Foto aus dem Pool als <picture> mit AVIF/WebP. Feste Maße verhindern Layoutverschiebung.
+// prioritaet: nur für das Foto im ersten Bildschirm (kein Lazy Loading, fetchpriority=high).
+import { Picture } from 'astro:assets';
+import { fotos, type FotoKey } from '../lib/fotos';
+
+interface Props {
+  foto: FotoKey;
+  sizes: string;
+  breiten?: number[];
+  prioritaet?: boolean;
+  class?: string;
+}
+const { foto, sizes, breiten = [480, 720, 960, 1280], prioritaet = false, class: klasse } = Astro.props;
+const f = fotos[foto];
+const widths = breiten.filter((w) => w <= f.bild.width);
+---
+<Picture
+  src={f.bild}
+  alt={f.alt}
+  formats={['avif', 'webp']}
+  widths={widths}
+  sizes={sizes}
+  quality={62}
+  loading={prioritaet ? 'eager' : 'lazy'}
+  decoding={prioritaet ? 'sync' : 'async'}
+  fetchpriority={prioritaet ? 'high' : 'auto'}
+  class={klasse}
+  data-foto={f.name}
+/>
