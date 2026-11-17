@@ -3,7 +3,7 @@ frage: "Wie hoch sollte die BU-Rente für Zahnärzt*innen sein?"
 titel: "Wie hoch sollte die BU-Rente für Zahnärzt*innen sein?"
 kurzantwort: "Eine feste Zahl gibt es nicht. Für Zahnärzt*innen rechnen wir so: laufende Ausgaben und Verpflichtungen, die bei Berufsunfähigkeit weiterlaufen, abzüglich dessen, was das Versorgungswerk sicher zahlt. Rechne dabei immer auch den Fall, dass das Versorgungswerk nicht zahlt."
 metaDescription: "Wie Zahnärzt*innen die Höhe ihrer BU-Rente herleiten: Ausgaben, Verpflichtungen, Versorgungswerk und Steuer. Mit fiktivem Rechenbeispiel."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 13

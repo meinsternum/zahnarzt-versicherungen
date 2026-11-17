@@ -3,7 +3,7 @@ frage: "Versicherungssumme und Unterversicherung: Was gilt in der Zahnarztpraxis
 titel: "Praxisinhalt: Versicherungssumme und Unterversicherung"
 kurzantwort: "Ist die Versicherungssumme deiner Zahnarztpraxis niedriger als der Wert der Einrichtung, zahlt der Versicherer auch bei kleinen Schäden nur anteilig. Das ist Unterversicherung. Es gibt Verträge, die darauf verzichten und stattdessen mit festen Höchstgrenzen oder der Zahl der Behandlungsstühle arbeiten."
 metaDescription: "Wie Unterversicherung in der Zahnarztpraxis entsteht, wie gekürzt wird und welche Verträge darauf verzichten. Mit fiktivem Rechenbeispiel."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 52

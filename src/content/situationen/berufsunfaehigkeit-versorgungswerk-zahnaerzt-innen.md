@@ -3,7 +3,7 @@ frage: "Reicht die BU-Rente des Versorgungswerks für Zahnärzt*innen?"
 titel: "BU bei Zahnärzt*innen: Versorgungswerk und private BU"
 kurzantwort: "Aus unserer Erfahrung meist nicht als alleinige Absicherung. In den Satzungen aus Westfalen-Lippe und Niedersachsen zahlt das Versorgungswerk erst, wenn du gar nicht mehr zahnärztlich arbeiten kannst und die Tätigkeit aufgibst. Eine private BU knüpft an deinen Beruf an und kann früher leisten."
 metaDescription: "Wann das Versorgungswerk Zahnärzt*innen bei Berufsunfähigkeit zahlt, was Praxis aufgeben bedeutet und was eine private BU anders regelt."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 11
