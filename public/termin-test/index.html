@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Termin buchen</title>
+  <link rel="stylesheet" href="css/booking.css">
+</head>
+<body>
+  <main class="booking">
+    <h1>Termin buchen</h1>
+    <p class="testhinweis" id="testmodus" hidden>Testmodus: Die Kalender sind simuliert und E-Mails werden nicht versendet.</p>
+
+    <section id="step-type" aria-labelledby="h-type">
+      <h2 id="h-type"><span class="n">1</span> Welchen Termin möchtest du?</h2>
+      <div id="types" class="cards"><p class="muted">Wird geladen …</p></div>
+    </section>
+
+    <section id="step-staff" hidden aria-labelledby="h-staff">
+      <h2 id="h-staff"><span class="n">2</span> Mit wem?</h2>
+      <p class="muted" id="picked-type"></p>
+      <div id="staff-list" class="cards"></div>
+    </section>
+
+    <section id="step-time" hidden aria-labelledby="h-time">
+      <h2 id="h-time"><span class="n">3</span> Wann passt es dir? <span class="muted" id="picked-staff"></span></h2>
+      <div id="picker" aria-live="polite"></div>
+    </section>
+
+    <section id="step-form" hidden aria-labelledby="h-form">
+      <h2 id="h-form"><span class="n">4</span> Deine Angaben</h2>
+      <p class="summary" id="summary"></p>
+      <form id="booking-form" novalidate>
+        <label>Name <input name="name" autocomplete="name" required maxlength="100"></label>
+        <label>E-Mail <input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+        <label>Telefon (optional) <input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+        <label>Worum geht es? (optional) <textarea name="note" rows="3" maxlength="1000"></textarea></label>
+        <label>Wie hast du uns gefunden? <select name="source" id="source"></select></label>
+        <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+        <label class="check"><input type="checkbox" name="consent" required>
+          <span>Ich bin damit einverstanden, dass meine Angaben zur Terminvereinbarung verarbeitet werden. Mehr dazu in der <a href="/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span></label>
+        <p class="error" id="form-error" role="alert"></p>
+        <button type="submit" class="primary">Termin verbindlich buchen</button>
+      </form>
+    </section>
+
+    <section id="done" hidden aria-live="polite">
+      <h2>Dein Termin ist gebucht</h2>
+      <p class="summary" id="done-text"></p>
+      <p>Die Bestätigung kommt per E-Mail, mit Kalenderdatei und Videolink. Kurz vorher erinnern wir dich noch.</p>
+      <p><a id="done-link" href="#">Termin absagen oder verschieben</a></p>
+    </section>
+  </main>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
