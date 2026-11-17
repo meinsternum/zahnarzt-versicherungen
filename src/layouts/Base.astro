@@ -12,7 +12,7 @@ import '../styles/site.css';
 import CookieBanner from '../components/CookieBanner.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
 import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
-import { TERMIN_URL, WHATSAPP_URL, ORGANISATION as O, KI_HINWEIS, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
+import { TERMIN_URL, WHATSAPP_URL, ORGANISATION as O, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
 import { breadcrumbs, type Krume } from '../lib/schema';
 import Icon from '../components/Icon.astro';
 import { getCollection } from 'astro:content';
@@ -189,7 +189,6 @@ const profile = SOCIAL.filter((s) => s.url);
       </div>
       <div class="rahmen fuss-unten">
         <p>{PFLICHTHINWEIS}</p>
-        <p class="ki">{KI_HINWEIS}</p>
       </div>
     </footer>
     <script is:inline>

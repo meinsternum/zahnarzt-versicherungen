@@ -21,7 +21,6 @@ export const ORGANISATION = {
 };
 
 // Kurzer KI-Hinweis im Fuß jeder Seite (Regelwerk, Wortlaut vorläufig, Patrick klärt).
-export const KI_HINWEIS = 'Mit KI-Unterstützung erstellt, redaktionell geprüft.';
 
 export const PFLICHTHINWEIS =
   'Die Inhalte dieser Seite sind allgemeine Informationen und ersetzen keine individuelle Beratung.';
