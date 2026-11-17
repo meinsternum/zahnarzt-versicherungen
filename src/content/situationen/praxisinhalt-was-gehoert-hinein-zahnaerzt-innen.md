@@ -121,6 +121,8 @@ Gemessen am Wert der Einrichtung wenig. *Musterbeispiel aus einer Vergleichsrech
 
 Der Preis allein sagt wenig. Die Tarife im Vergleich unterschieden sich deutlich in den Bausteinen, etwa bei Verbesserungen gegenüber den Mindestbedingungen und Grenzen für einzelne Schäden. Ob Medizintechnik gegen alle Gefahren versichert ist, ob es einen Verzicht auf Unterversicherung gibt und welche Grenzen für Edelmetalle gelten, prüfen wir deshalb vor dem Beitrag.
 
+Ein zweites Musterbeispiel kombiniert den Inhalt mit dem Ertragsausfall nach einem Sachschaden: 300.000 Euro für den Inhalt, 500.000 Euro Jahresumsatz für den Ertragsausfall, 12 Monate Haftzeit, versichert gegen Feuer, Einbruchdiebstahl, Leitungswasser und Sturm, ohne Selbstbeteiligung. Der Jahresbeitrag lag bei rund 1.645 Euro. Diese Kombination zahlt, wenn die Praxis nach einem Brand oder Wasserschaden stillsteht, nicht bei Krankheit.
+
 ## Unsere Einschätzung
 
 Für Zahnarztpraxen empfehlen wir eine Allgefahrendeckung, die Medizintechnik ausdrücklich einschließt, dazu passende Grenzen für Edelmetalle und Implantate und einen Verzicht auf Kürzungen bei grober Fahrlässigkeit. Patientendaten und Software sichern wir über einen eigenen Baustein oder eine Cyberdeckung ab, weil die Inhaltsversicherung sie nur am Rand erfasst.

@@ -44,6 +44,8 @@ faq:
     antwort: "Der Zulassungsausschuss fordert dich zur Vorlage auf. Kommst du dem nicht unverzüglich nach, ruht die Zulassung. Endet das Ruhen nicht binnen zwei Jahren, wird sie entzogen (§ 95e Abs. 4 SGB V)."
   - frage: "Bin ich nach Praxisabgabe noch versichert?"
     antwort: "Für Schäden aus deiner früheren Tätigkeit gibt es Verträge mit einer Nachhaftung nach Berufsaufgabe. Es gibt auch Verträge, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen oder Notfälle. Wie das in deinem Vertrag geregelt ist, solltest du vor der Abgabe klären."
+  - frage: "Was kostet die Berufshaftpflicht für eine Zahnarztpraxis?"
+    antwort: "In einem Musterbeispiel von uns (niedergelassene*r Zahnärzt*in, Einzelpraxis, 5 Millionen Euro pauschal) lagen die Jahresbeiträge in zwei Tarifen zwischen 436 und 613 Euro. Mit jeder angestellten Zahnärztin oder jedem angestellten Zahnarzt steigt der Beitrag. Beiträge können heute abweichen."
 verwandt: []
 hinweise:
   - nach: "Welche Mindestsumme gilt?"
@@ -100,6 +102,12 @@ Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gib
 - **Kosten:** Es gibt Verträge, die Kosten nicht auf die Versicherungssumme anrechnen. Übersteigt der Anspruch die Summe, werden Prozesskosten aber nur anteilig übernommen.
 - **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache oder aus gleichen, zusammenhängenden Ursachen als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
 - **Nachhaftung und Ruhestand:** Es gibt Verträge, die nach Praxisaufgabe für Schäden aus der früheren Tätigkeit weiter einstehen, begrenzt auf den unverbrauchten Teil der Summe des letzten Versicherungsjahres, und solche, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen, Gutachten oder Notfälle.
+
+## Was kostet die Berufshaftpflicht für Zahnärzt\*innen?
+
+Weniger, als die Summen vermuten lassen. *Musterbeispiel aus einer Vergleichsrechnung von uns, Beiträge können heute abweichen:* niedergelassene\*r Zahnärzt\*in in einer Einzelpraxis, ambulant operativ tätig, 5 Millionen Euro pauschal je Versicherungsfall, im Jahr dreifach. Die Jahresbeiträge lagen in zwei Tarifen verschiedener Versicherer zwischen 436 und 613 Euro.
+
+Die beiden Tarife waren nicht gleich gebaut: Einer hatte eine Selbstbeteiligung von 500 Euro und eine deutlich niedrigere Summe für Vermögensschäden, der andere keine Selbstbeteiligung und 5 Millionen Euro auch für Vermögensschäden. Berechnet wird der Beitrag nach der Zahl der Zahnärzt\*innen in der Praxis, mit jeder angestellten Zahnärztin und jedem angestellten Zahnarzt steigt er also.
 
 ## Unsere Einschätzung
 
