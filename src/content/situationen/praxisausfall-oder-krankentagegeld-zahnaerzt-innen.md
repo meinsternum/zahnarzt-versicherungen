@@ -3,7 +3,7 @@ frage: "Praxisausfallversicherung oder Krankentagegeld: Was sichert was in der Z
 titel: "Praxisausfall oder Krankentagegeld in der Zahnarztpraxis"
 kurzantwort: "Das Krankentagegeld sichert dein persönliches Einkommen, die Praxisausfallversicherung die laufenden Kosten deiner Zahnarztpraxis, wenn du krank ausfällst. Das eine ersetzt das andere nicht: Das Krankentagegeld ist in der Regel auf dein Nettoeinkommen begrenzt, während Miete und Personal weiterlaufen."
 metaDescription: "Krankentagegeld sichert dein Einkommen, die Praxisausfallversicherung die Kosten der Zahnarztpraxis. Wo die Grenzen liegen und worauf du achten solltest."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 61

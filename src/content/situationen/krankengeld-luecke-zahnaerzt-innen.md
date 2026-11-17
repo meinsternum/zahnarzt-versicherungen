@@ -3,7 +3,7 @@ frage: "Reicht das Krankengeld für angestellte Zahnärzt*innen?"
 titel: "Krankengeld-Lücke für angestellte Zahnärzt*innen"
 kurzantwort: "Bei gutem Gehalt nicht. Angestellte Zahnärzt*innen in der gesetzlichen Krankenversicherung bekommen nach sechs Wochen Entgeltfortzahlung 70 Prozent des Bruttos, höchstens 90 Prozent des Nettos und 2026 höchstens 4.068,75 Euro im Monat. Krankentagegeld kann die Lücke schließen, bis zur Höhe deines Nettoeinkommens."
 metaDescription: "Krankengeld für angestellte Zahnärzt*innen: Höhe, Höchstbetrag 2026, wo die Lücke entsteht und was ein Krankentagegeld leistet."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-01-15"
 reihenfolge: 33

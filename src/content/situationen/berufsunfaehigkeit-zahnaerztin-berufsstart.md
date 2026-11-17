@@ -3,7 +3,7 @@ frage: "Wann solltest du als Zahnärzt*in eine BU abschließen?"
 titel: "Wann sollten Zahnärzt*innen eine BU abschließen?"
 kurzantwort: "Einen festen Zeitpunkt schreibt das Gesetz nicht vor. Für Zahnärzt*innen entscheiden vor allem zwei Dinge: Gesundheitsfragen beantwortest du mit jedem Jahr ohne Erkrankung leichter, und die Bedingungen sollten auch nach Studium und Assistenzzeit noch zu deinem Beruf passen."
 metaDescription: "BU im Studium, zum Berufsstart oder in der Assistenzzeit? Was für Zahnärzt*innen beim Zeitpunkt zählt: Gesundheitsfragen, Startphase, Nachversicherung."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 12

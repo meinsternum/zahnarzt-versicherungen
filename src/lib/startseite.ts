@@ -1,13 +1,13 @@
 // Stand 16.11.2026: Lead und FAQ nach Regelwerk Fassung 5 ergänzt (Lead-Konvertierung, Kontaktwege).
 // Inhalte der Startseite, gemeinsam für Entwurf A und B (gleiche Inhalte, gleiche Conversion-Logik).
-// entwurf: true = neuer Text, wartet auf Freigabe durch Patrick.
+// entwurf: false = von Patrick freigegeben (Livegang 17.11.2026).
 // Quelle: Herkunft des Wortlauts (bestehende Startseite, Über-uns-Seite, Pflichthinweis).
 
 export const hero = {
   h1: 'Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen', // bestehende Startseite
   lead: {
     text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH, Versicherungsmakler aus Köln. Hier beantworten wir die Fragen, die Zahnärzt*innen uns zur Absicherung stellen: kurz, aus der Praxis und mit Quellen. Deine eigene Situation gehen wir gern im Erstgespräch mit dir durch.',
-    entwurf: true,
+    entwurf: false,
   },
   cta: 'Erstgespräch buchen', // bestehende Startseite
   zweit: 'Zu den Fragen', // bestehende Startseite
@@ -15,12 +15,12 @@ export const hero = {
 
 export const themen = {
   h2: 'Fragen nach Thema',
-  entwurf: true,
+  entwurf: false,
 };
 
 export const ablauf = {
   h2: 'So arbeiten wir',
-  entwurf: true,
+  entwurf: false,
   schritte: [
     {
       titel: 'Termin wählen',
@@ -44,7 +44,7 @@ export const werWirSind = {
   h2: 'Wer wir sind',
   // Wortlaut aus der Über-uns-Seite (freigegeben 12.11.2026); im zweiten Absatz Firmenname durch
   // „das Unternehmen“ ersetzt, damit MEIN STERNUM nicht zu oft erscheint (Patrick, 13.11.2026).
-  entwurf: true,
+  entwurf: false,
   absaetze: [
     'zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.',
     'Patrick Senn hat das Unternehmen 2015 mitgegründet und ist seitdem Geschäftsführer. Ärzt*innen berät er seit 2008, angefangen als Berater bei der HORBACH Wirtschaftsberatung in Köln. Er schreibt und verantwortet die Texte auf dieser Seite.',
@@ -54,7 +54,7 @@ export const werWirSind = {
 
 export const faq = {
   h2: 'Häufige Fragen',
-  entwurf: true,
+  entwurf: false,
   eintraege: [
     {
       frage: 'Wer steht hinter zahnarzt-versicherungen.de?',

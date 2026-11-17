@@ -3,7 +3,7 @@ frage: "Reicht das Versorgungswerk im Alter für Zahnärzt*innen?"
 titel: "Reicht das Versorgungswerk im Alter für Zahnärzt*innen?"
 kurzantwort: "Aus unserer Erfahrung für viele Zahnärzt*innen nicht ganz. In Westfalen-Lippe und Niedersachsen orientiert sich der Pflichtbeitrag am Höchstbeitrag der gesetzlichen Rentenversicherung. Wer mehr verdient, sichert dort nur einen Teil seines Einkommens ab. Ob eine Lücke entsteht, hängt von deinem Bedarf ab."
 metaDescription: "Wie bei Zahnärzt*innen trotz Versorgungswerk eine Rentenlücke entsteht: Beitragsgrenze, Anpassung, Inflation. Mit Satzungsbeispielen und fiktiver Rechnung."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-01-15"
 reihenfolge: 21

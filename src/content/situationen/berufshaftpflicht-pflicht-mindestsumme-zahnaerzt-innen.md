@@ -3,7 +3,7 @@ frage: "Ist die Berufshaftpflicht für Zahnärzt*innen Pflicht, und welche Minde
 titel: "Berufshaftpflicht für Zahnärzt*innen: Pflicht und Summe"
 kurzantwort: "Ja, die Berufsordnung deiner Kammer schreibt sie vor. Mit Kassenzulassung gilt zusätzlich § 95e SGB V: mindestens 3 Millionen Euro je Versicherungsfall, mit angestellten Zahnärzt*innen oder im MVZ 5 Millionen. Die Mindestsumme ist eine Untergrenze, kein Richtwert."
 metaDescription: "Berufshaftpflicht für Zahnärzt*innen: Pflicht nach Berufsordnung und § 95e SGB V, Mindestsummen, Nachweis und worauf du im Vertrag achtest."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 41

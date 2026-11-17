@@ -3,7 +3,7 @@ frage: "Bin ich als Zahnärzt*in berufsunfähig, wenn ich nur noch teilweise arb
 titel: "Teilweise berufsunfähig als Zahnärzt*in: Was gilt?"
 kurzantwort: "Bei einer privaten BU kann das reichen: Das Gesetz kennt auch die teilweise Berufsunfähigkeit, die Schwelle steht in den Bedingungen. In den Satzungen der Versorgungswerke Westfalen-Lippe und Niedersachsen gibt es Rente nur, wenn du gar nicht mehr zahnärztlich arbeiten kannst."
 metaDescription: "Teilweise berufsunfähig als Zahnärzt*in: was die private BU leistet, was zwei Versorgungswerke verlangen und worauf du in den Bedingungen achtest."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 14

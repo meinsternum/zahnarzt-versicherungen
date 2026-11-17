@@ -3,7 +3,7 @@ frage: "Was gehört in die Praxisinhaltsversicherung der Zahnarztpraxis?"
 titel: "Praxisinhaltsversicherung Zahnarztpraxis: Was gehört hinein?"
 kurzantwort: "In die Praxisinhaltsversicherung gehört alles Bewegliche deiner Zahnarztpraxis: Einrichtung, Medizintechnik, IT und Vorräte, auch geleaste Geräte. Wie gut das geschützt ist, hängt davon ab, ob nur einzelne Gefahren versichert sind oder alle, und welche Grenzen für Edelmetalle, Bargeld und Implantate gelten."
 metaDescription: "Was in die Praxisinhaltsversicherung einer Zahnarztpraxis gehört: Medizintechnik, geleaste Geräte, Edelmetalle, Röntgenbilder. Worauf du achten solltest."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 51

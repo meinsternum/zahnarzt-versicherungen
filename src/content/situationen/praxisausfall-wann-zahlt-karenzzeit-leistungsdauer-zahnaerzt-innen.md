@@ -3,7 +3,7 @@ frage: "Wann zahlt die Praxisausfallversicherung für Zahnärzt*innen, und was b
 titel: "Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit"
 kurzantwort: "Die Praxisausfallversicherung zahlt, wenn du als Inhaber*in der Zahnarztpraxis ärztlich festgestellt arbeitsunfähig bist: nach Ablauf der vereinbarten Karenzzeit und längstens bis zum Ende der Haftzeit. Deutliche Unterschiede zwischen Verträgen gibt es bei den Ausschlüssen."
 metaDescription: "Wann die Praxisausfallversicherung für Zahnärzt*innen zahlt, wie Karenzzeit und Haftzeit laufen und in welchen Fällen sie nicht leistet."
-status: geprueft
+status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
 reihenfolge: 62
