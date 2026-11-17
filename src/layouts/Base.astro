@@ -12,12 +12,12 @@ import '../styles/site.css';
 import CookieBanner from '../components/CookieBanner.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
 import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
-import { TERMIN_URL, ORGANISATION as O, KI_HINWEIS, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
+import { TERMIN_URL, WHATSAPP_URL, ORGANISATION as O, KI_HINWEIS, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
 import { breadcrumbs, type Krume } from '../lib/schema';
 import Icon from '../components/Icon.astro';
 import { getCollection } from 'astro:content';
 import { visible } from '../lib/status';
-import { gruppiere, menueTitel } from '../lib/phasen';
+import { gruppiere, menueTitel, themenPfad } from '../lib/phasen';
 
 interface Props {
   title: string;
@@ -87,6 +87,15 @@ const profile = SOCIAL.filter((s) => s.url);
   </head>
   <body>
     <a class="skip" href="#inhalt">Zum Inhalt springen</a>
+    <div class="kontaktleiste">
+      <div class="rahmen kontaktleiste-innen">
+        <a href={O.telefonLink}><Icon name="telefon" size={15} /><span>{O.telefon}</span></a>
+        <a href={WHATSAPP_URL}><Icon name="chat" size={15} /><span>WhatsApp</span></a>
+        <a href={`mailto:${O.email}`}><Icon name="mail" size={15} /><span class="kl-lang">{O.email}</span><span class="kl-kurz">E-Mail</span></a>
+        <span class="kl-trenner" aria-hidden="true"></span>
+        {profile.filter((s) => s.name !== 'WhatsApp').map((s) => <a class="kl-profil" href={s.url}><Icon name="profil" size={15} /><span>{s.name}</span></a>)}
+      </div>
+    </div>
     <header class="kopf">
       <div class="rahmen kopf-innen">
         <a class="marke" href="/">
@@ -104,9 +113,10 @@ const profile = SOCIAL.filter((s) => s.url);
                       <div class="mega-themen">
                         {menueGruppen.map((g) => (
                           <div class="mega-thema">
-                            <p class="mega-kopf"><a href={`/ratgeber#thema-${g.id}`}><span class="mega-symbol"><Icon name={g.icon} size={18} /></span>{g.titel}</a></p>
+                            <p class="mega-kopf"><a href={themenPfad(g.id)}><span class="mega-symbol"><Icon name={g.icon} size={18} /></span>{g.titel}</a></p>
                             <ul>
-                              {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.slice(0, 4).map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.length > 4 && <li class="mega-mehr"><a href={themenPfad(g.id)}>Alle {g.seiten.length} Fragen</a></li>}
                             </ul>
                           </div>
                         ))}
@@ -136,7 +146,9 @@ const profile = SOCIAL.filter((s) => s.url);
                     <details class="menue-thema">
                       <summary><span class="mega-symbol"><Icon name={g.icon} size={16} /></span>{g.titel}<Icon name="runter" size={16} /></summary>
                       <ul>
-                        {g.seiten.map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                        <li class="mega-mehr"><a href={themenPfad(g.id)}>Übersicht {g.titel}</a></li>
+                        {g.seiten.slice(0, 4).map((s) => <li><a href={`/ratgeber/${s.id}`} aria-current={path === `/ratgeber/${s.id}` ? 'page' : undefined}>{label(s)}</a></li>)}
+                              {g.seiten.length > 4 && <li class="mega-mehr"><a href={themenPfad(g.id)}>Alle {g.seiten.length} Fragen</a></li>}
                       </ul>
                     </details>
                   ))}

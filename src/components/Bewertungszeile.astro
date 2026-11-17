@@ -11,7 +11,7 @@ const { dunkel = false, class: klasse = '' } = Astro.props;
   <div class="bewertung-text">
     <p class="bewertung-sterne"><span aria-hidden="true">★★★★★</span><span class="sr">{b.wert} von 5 Sternen</span></p>
     <p class="bewertung-anzahl"><strong>{b.anzahl} Google-Bewertungen</strong> für unser Team</p>
-    <p class="bewertung-stand">Stand {b.stand} · <a href={b.url}>Bewertungen bei Google ansehen</a></p>
+    <p class="bewertung-stand"><a href={b.url}>Bewertungen bei Google ansehen</a></p>
   </div>
   <div class="bewertung-seit">
     <p class="bewertung-seit-jahr"><span>seit</span> 2015</p>

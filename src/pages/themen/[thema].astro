@@ -1,0 +1,60 @@
+---
+// Themen-Übersichtsseite: alle Fragen eines Themas mit Kurzantwort (Hub für SEO/GEO und Navigation).
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import Icon from '../../components/Icon.astro';
+import CtaBlock from '../../components/CtaBlock.astro';
+import { visible } from '../../lib/status';
+import { gruppiere, phaseJeSeite, themenPfad } from '../../lib/phasen';
+import { SITE_URL } from '../../lib/site';
+import { organisation } from '../../lib/schema';
+
+export async function getStaticPaths() {
+  const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
+  return gruppiere(seiten).map((g) => ({ params: { thema: g.id }, props: { g } }));
+}
+const { g } = Astro.props;
+const pfad = themenPfad(g.id);
+const titel = `${g.titel} für Zahnärzt*innen`;
+const jsonLd = [
+  organisation(),
+  {
+    '@context': 'https://schema.org',
+    '@type': 'CollectionPage',
+    name: titel,
+    description: g.beschreibung,
+    url: `${SITE_URL}${pfad}`,
+    inLanguage: 'de',
+    mainEntity: {
+      '@type': 'ItemList',
+      itemListElement: g.seiten.map((s, i) => ({ '@type': 'ListItem', position: i + 1, name: s.data.frage, url: `${SITE_URL}/ratgeber/${s.id}` })),
+    },
+  },
+];
+// Redaktioneller Überblick je Thema (optional, src/texte/themen/<id>.md), ab drei Unterseiten.
+const texte = import.meta.glob('../../texte/themen/*.md', { eager: true }) as Record<string, { Content: any }>;
+const Text = texte[`../../texte/themen/${g.id}.md`]?.Content;
+const anzahl = g.seiten.length === 1 ? 'eine Frage' : `${g.seiten.length} Fragen`;
+---
+<Base title={`${titel}: alle Fragen | zahnarzt-versicherungen.de`} description={`${g.beschreibung} Antworten für Zahnärzt*innen mit Quellen und Stand.`} path={pfad} jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: g.titel, href: pfad }]}>
+  <div class="rahmen">
+    <header class="seitenkopf">
+      <p class="thema-marke"><Icon name={g.icon} size={20} />Thema</p>
+      <h1>{titel}</h1>
+      <p class="einleitung">{g.beschreibung} Hier findest du {anzahl} dazu, jeweils kurz beantwortet und mit Quellen.</p>
+    </header>
+    <ul class="karten thema-karten">
+      {g.seiten.map((s) => (
+        <li class="karte">
+          <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
+          <h2><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h2>
+          <p>{s.data.kurzantwort}</p>
+          <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
+        </li>
+      ))}
+    </ul>
+    {Text && <div class="prosa thema-text"><Text /></div>}
+    <p class="thema-weiter"><a href="/ratgeber">Alle Themen im Ratgeber<Icon name="pfeil" size={16} /></a></p>
+    <CtaBlock kampagne={`thema-${g.id}`} betreff={titel} text={`Du willst wissen, was beim Thema ${g.titel} für dich gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail.`} />
+  </div>
+</Base>

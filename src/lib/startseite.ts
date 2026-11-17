@@ -1,3 +1,4 @@
+// Stand 16.11.2026: Lead und FAQ nach Regelwerk Fassung 5 ergänzt (Lead-Konvertierung, Kontaktwege).
 // Inhalte der Startseite, gemeinsam für Entwurf A und B (gleiche Inhalte, gleiche Conversion-Logik).
 // entwurf: true = neuer Text, wartet auf Freigabe durch Patrick.
 // Quelle: Herkunft des Wortlauts (bestehende Startseite, Über-uns-Seite, Pflichthinweis).
@@ -5,7 +6,7 @@
 export const hero = {
   h1: 'Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen', // bestehende Startseite
   lead: {
-    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln. Hier findest du Antworten auf konkrete Fragen von Zahnärzt*innen zur Absicherung: kurz beantwortet, mit Quellen und dem Datum der letzten Prüfung.',
+    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH, Versicherungsmakler aus Köln. Hier beantworten wir die Fragen, die Zahnärzt*innen uns zur Absicherung stellen: kurz, aus der Praxis und mit Quellen. Deine eigene Situation gehen wir gern im Erstgespräch mit dir durch.',
     entwurf: true,
   },
   cta: 'Erstgespräch buchen', // bestehende Startseite
@@ -66,6 +67,18 @@ export const faq = {
     {
       frage: 'Ersetzen die Seiten eine Beratung?',
       antwort: 'Nein. Die Inhalte sind allgemeine Informationen und ersetzen keine individuelle Beratung.',
+    },
+    {
+      frage: 'Für wen ist die Seite gedacht?',
+      antwort: 'Für Zahnärzt*innen in jeder Phase: im Studium, in der Assistenzzeit, angestellt, in der eigenen Praxis und vor der Praxisabgabe.',
+    },
+    {
+      frage: 'Was kostet das Erstgespräch?',
+      antwort: 'Nichts. Das Erstgespräch ist kostenlos. Danach bekommst du die Empfehlungen per E-Mail und entscheidest in Ruhe.',
+    },
+    {
+      frage: 'Kann ich auch erst eine kurze Frage stellen?',
+      antwort: 'Ja. Schreib uns per E-Mail an hallo@meinsternum.de oder per WhatsApp. Kurze Fragen beantworten wir direkt, für mehr schlagen wir ein Gespräch vor.',
     },
     {
       frage: 'Wie läuft ein Gespräch ab?',

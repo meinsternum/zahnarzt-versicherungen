@@ -9,7 +9,7 @@ import Bewertungszeile from '../components/Bewertungszeile.astro';
 import { hero, themen, ablauf, werWirSind, faq, abschluss } from '../lib/startseite';
 import { TERMIN_URL, ORGANISATION } from '../lib/site';
 import { visible, zeigeUeberUns } from '../lib/status';
-import { gruppiere, phaseJeSeite } from '../lib/phasen';
+import { gruppiere, menueTitel, themenPfad } from '../lib/phasen';
 import { website, organisation, person, faqPage } from '../lib/schema';
 
 const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
@@ -48,23 +48,19 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
         <p class="a-nummer" aria-hidden="true">01</p>
         <h2 id="themen-h">{themen.h2}</h2>
       </header>
-      <div class="a-gruppen">
+      <p class="a-themen-lead">Wähle ein Thema. Auf der Themenseite findest du alle Fragen dazu, jeweils kurz beantwortet und mit Quellen.</p>
+      <ul class="themenkarten">
         {gruppen.map((g) => (
-          <div class="themengruppe einblenden">
-            <h3 class="themengruppe-titel"><Icon name={g.icon} size={22} />{g.titel}</h3>
-            <ul class="karten">
-              {g.seiten.map((s) => (
-                <li class="karte">
-                  <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
-                  <h4><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h4>
-                  <p>{s.data.kurzantwort}</p>
-                  <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
-                </li>
-              ))}
+          <li class="themenkarte einblenden">
+            <h3><Icon name={g.icon} size={22} /><a href={themenPfad(g.id)}>{g.titel}</a></h3>
+            <p>{g.beschreibung}</p>
+            <ul>
+              {g.seiten.slice(0, 3).map((s) => <li><a href={`/ratgeber/${s.id}`}>{menueTitel[s.id] ?? s.data.titel}</a></li>)}
             </ul>
-          </div>
+            <a class="themenkarte-alle" href={themenPfad(g.id)}>{g.seiten.length === 1 ? 'Zum Thema' : `Alle ${g.seiten.length} Fragen`}<Icon name="pfeil" size={16} /></a>
+          </li>
         ))}
-      </div>
+      </ul>
     </div>
   </section>
 

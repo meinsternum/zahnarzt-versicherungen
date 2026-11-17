@@ -14,6 +14,7 @@ const jsonLd = [
 ];
 const firma = mitMarke(O.name);
 const profile = SOCIAL.filter((s) => s.url);
+const LINKTEXT: Record<string, string> = { WhatsApp: 'Nachricht schreiben', LinkedIn: 'Profil von meinsternum', Instagram: 'Profil von Patrick Senn' };
 const fehlend = SOCIAL.filter((s) => !s.url).map((s) => s.name);
 ---
 <Base title="Kontakt | zahnarzt-versicherungen.de" description="So erreichst du das Team hinter zahnarzt-versicherungen.de: Termin online buchen, Telefon, E-Mail oder vor Ort in Köln." path="/kontakt" jsonLd={jsonLd} krumen={[{ name: 'Kontakt', href: '/kontakt' }]}>
@@ -30,7 +31,7 @@ const fehlend = SOCIAL.filter((s) => !s.url).map((s) => s.name);
         <div><dt>Telefon</dt><dd><a href={O.telefonLink}>{O.telefon}</a></dd></div>
         <div><dt>E-Mail</dt><dd><a href={`mailto:${O.email}`}>{O.email}</a></dd></div>
         <div><dt>Anschrift</dt><dd><a href={O.url} set:html={firma} /><br />{O.strasse}<br />{O.plz} {O.ort}</dd></div>
-        {profile.map((s) => <div><dt>{s.name}</dt><dd><a href={s.url}>{s.url.replace(/^https?:\/\//, '')}</a></dd></div>)}
+        {profile.map((s) => <div><dt>{s.name}</dt><dd><a href={s.url}>{LINKTEXT[s.name] ?? s.name}</a></dd></div>)}
       </dl>
       {!isProduction && fehlend.length > 0 && <p class="grafik-platzhalter">[PLATZHALTER: {fehlend.join(', ')}] Nummer und Links liefert Patrick. Nur in der Vorschau sichtbar.</p>}
       <Bewertungszeile class="kontakt-bewertung" />

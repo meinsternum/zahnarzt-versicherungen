@@ -1,14 +1,25 @@
 ---
-// Termin-Block nach dem Fließtext (einziger CTA im Inhaltsbereich). Link nur über TERMIN_URL.
+// Termin-Block nach dem Fließtext: Text je Seite (Feld cta), Teamfoto, Google-Bewertung,
+// darunter die niedrigere Stufe (Frage per E-Mail oder WhatsApp).
 import Icon from './Icon.astro';
 import Bewertungszeile from './Bewertungszeile.astro';
-import { TERMIN_URL } from '../lib/site';
-interface Props { titel?: string; text: string; button?: string }
-const { titel = 'Nächste Schritte', text, button = 'Erstgespräch buchen' } = Astro.props;
+import Foto from './Foto.astro';
+import { terminLink, mailLink, WHATSAPP_URL } from '../lib/site';
+interface Props { titel?: string; text: string; button?: string; kampagne?: string; betreff?: string }
+const { titel = 'Nächste Schritte', text, button = 'Erstgespräch buchen', kampagne, betreff } = Astro.props;
 ---
 <section class="cta-block einblenden" aria-label="Termin buchen">
-  <h2>{titel}</h2>
-  <p>{text}</p>
-  <p><a class="knopf knopf-hell" href={TERMIN_URL}>{button}<Icon name="pfeil" size={18} /></a></p>
+  <div class="cta-raster">
+    <div>
+      <h2>{titel}</h2>
+      <p>{text}</p>
+      <p><a class="knopf knopf-hell" href={terminLink(kampagne)}>{button}<Icon name="pfeil" size={18} /></a></p>
+      <p class="cta-alternativ">Lieber erst eine kurze Frage? <a href={mailLink(betreff ? `Frage zu: ${betreff}` : undefined)}><Icon name="mail" size={16} />per E-Mail</a> <a href={WHATSAPP_URL}><Icon name="chat" size={16} />per WhatsApp</a></p>
+    </div>
+    <figure class="cta-foto">
+      <Foto foto="team-02" class="cta-team" sizes="(max-width: 760px) 90vw, 22rem" breiten={[360, 540, 720]} />
+      <figcaption>Das Team von meinsternum in Köln</figcaption>
+    </figure>
+  </div>
   <Bewertungszeile dunkel class="cta-bewertung" />
 </section>

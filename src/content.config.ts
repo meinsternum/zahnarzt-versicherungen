@@ -15,6 +15,17 @@ const situationen = defineCollection({
     faq: z.array(z.object({ frage: z.string(), antwort: z.string() })).default([]),
     verwandt: z.array(z.string()).default([]),
     reihenfolge: z.number().default(99),
+    // Themenspezifischer Termin-Block (Regelwerk „Conversion“). Fehlt er, gilt der Standardtext.
+    cta: z.object({ titel: z.string().max(70), text: z.string().max(220), button: z.string().max(30).optional() }).optional(),
+    // Nächste Aktualitätsprüfung (JJJJ-MM-TT). Bei Jahreswerten spätestens der 15.01. des Folgejahres.
+    pruefenBis: z.string().optional(),
+    // Handlungsaufrufe im Text (höchstens 2, am Ende des genannten H2-Abschnitts; src/lib/hinweise.mjs).
+    hinweise: z.array(z.object({
+      nach: z.string(),
+      art: z.enum(['termin', 'einschaetzen', 'mail', 'whatsapp']),
+      text: z.string().max(200),
+      button: z.string().max(34).optional(),
+    })).max(2).default([]),
   }),
 });
 

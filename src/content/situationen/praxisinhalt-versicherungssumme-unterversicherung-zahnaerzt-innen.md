@@ -1,11 +1,12 @@
 ---
-frage: "Versicherungssumme und Unterversicherung: Was gilt bei der Praxisinhaltsversicherung?"
+frage: "Versicherungssumme und Unterversicherung: Was gilt in der Zahnarztpraxis?"
 titel: "Praxisinhalt: Versicherungssumme und Unterversicherung"
-kurzantwort: "Ist die Versicherungssumme erheblich niedriger als der Versicherungswert beim Schaden, zahlt der Versicherer nach § 75 VVG nur im Verhältnis von Summe zu Wert. Wie das im Vertrag gerechnet wird, steht in den Bedingungen."
-metaDescription: "Was § 75 VVG zur Unterversicherung sagt, wie das GDV-Muster die Kürzung rechnet und was Versicherungssumme und Versicherungswert unterscheidet. Mit fiktivem Beispiel."
+kurzantwort: "Ist die Versicherungssumme deiner Zahnarztpraxis niedriger als der Wert der Einrichtung, zahlt der Versicherer auch bei kleinen Schäden nur anteilig. Das ist Unterversicherung. Es gibt Verträge, die darauf verzichten und stattdessen mit festen Höchstgrenzen oder der Zahl der Behandlungsstühle arbeiten."
+metaDescription: "Wie Unterversicherung in der Zahnarztpraxis entsteht, wie gekürzt wird und welche Verträge darauf verzichten. Mit fiktivem Rechenbeispiel."
 status: geprueft
-stand: "2026-11-14"
-reihenfolge: 9
+stand: "2026-11-16"
+pruefenBis: "2027-11-16"
+reihenfolge: 52
 quellen:
   - titel: "§ 75 VVG, Unterversicherung (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__75.html"
@@ -13,64 +14,107 @@ quellen:
     url: "https://www.gesetze-im-internet.de/vvg_2008/__88.html"
   - titel: "§ 74 VVG, Überversicherung (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__74.html"
-  - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Teil B §§ 1, 17 bis 19, Version 01.04.2014 (unverbindliche Bekanntgabe)"
+  - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5968/df3ece81b898dd9debcf0e23c943013a/01-allgemeine-bedingungen-fuer-die-verbundene-sach-gewerbeversicherung-vsg-2010--data.pdf"
-  - titel: "GDV: Musterklauseln zur Verbundenen Sach-Gewerbeversicherung (VSG 2010), Klausel B 190501, Version 01.06.2020 (unverbindliche Bekanntgabe)"
+  - titel: "GDV: Musterklauseln zur Verbundenen Sach-Gewerbeversicherung (VSG 2010), Version 01.06.2020 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5958/fb52b5726e97b4e9b673dcd1be32d2ae/02-musterklauseln-zur-verbundenen-sach-gewerbeversicherung-vsg-2010--data.pdf"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Inhalts- und Ertragsausfallversicherung für Zahnarztpraxen, Stand 01.09.2026"
 faq:
-  - frage: "Nennt das Gesetz eine Prozentgrenze für Unterversicherung?"
-    antwort: "Nein. § 75 VVG spricht von einer Versicherungssumme, die erheblich niedriger ist als der Versicherungswert, und nennt keine Zahl. Ob und welche Toleranz dein Vertrag vorsieht, steht in den Bedingungen."
-  - frage: "Was passiert bei Unterversicherung mit meiner Entschädigung?"
-    antwort: "Nach § 75 VVG schuldet der Versicherer die Leistung nur nach dem Verhältnis der Versicherungssumme zum Versicherungswert. Das GDV-Muster rechnet: Schadenbetrag mal Versicherungssumme geteilt durch Versicherungswert. Dein Vertrag kann abweichen."
-  - frage: "Kann ein Vertrag auf den Einwand der Unterversicherung verzichten?"
-    antwort: "Das GDV-Muster enthält dafür eine Klausel (B 190501). Sie gilt nur, wenn sie vereinbart ist, und nur bis zu vereinbarten Grenzen. Die Grenzen nennt das Muster nicht."
+  - frage: "Was ist Unterversicherung?"
+    antwort: "Unterversicherung liegt vor, wenn die vereinbarte Versicherungssumme deutlich niedriger ist als der Wert der versicherten Sachen zum Zeitpunkt des Schadens. Der Versicherer zahlt dann nur im Verhältnis von Summe zu Wert (§ 75 VVG), sofern der Vertrag nichts anderes regelt."
+  - frage: "Wird auch ein kleiner Schaden gekürzt?"
+    antwort: "Ja, sofern dein Vertrag die Unterversicherung nicht ausschließt. Gekürzt wird im Verhältnis von Summe zu Wert, und zwar bei jedem Schaden, nicht erst beim Totalschaden. Fehlt ein Viertel der Summe, fehlt auch ein Viertel jeder Entschädigung."
+  - frage: "Ab wann ist die Summe zu niedrig?"
+    antwort: "Das Gesetz spricht von einer erheblich niedrigeren Summe und nennt keine feste Grenze. Die Muster des Versicherungsverbands lassen schon eine niedrigere Summe genügen. Es gibt Verträge, die auf die Kürzung verzichten, solange der Schaden unter einem vereinbarten Prozentsatz der Summe und einem Höchstbetrag bleibt."
+  - frage: "Gibt es Verträge ohne Unterversicherung?"
+    antwort: "Ja. Es gibt Verträge für Zahnarztpraxen, die ausdrücklich keine Unterversicherung anrechnen. Sie arbeiten stattdessen mit einer festen Höchstgrenze je Schadenfall und berechnen den Beitrag zum Beispiel nach der Zahl der Behandlungsstühle. Dann musst du die Angaben aktuell halten."
+  - frage: "Was passiert, wenn die Jahresmeldung zu den Behandlungsstühlen fehlt oder falsch ist?"
+    antwort: "Es gibt Verträge, die nach Behandlungsstühlen rechnen und eine jährliche Meldung verlangen. Fehlt die Meldung nach Ablauf der Frist oder ist sie falsch, und stehen mehr Stühle in der Praxis als vereinbart, kann die Entschädigung im Verhältnis gekürzt werden. Das gilt nicht, wenn du glaubhaft machst, dass dich kein Verschulden trifft."
+  - frage: "Wird im Schaden der Neuwert gezahlt?"
+    antwort: "Ja, wenn Neuwert vereinbart ist und du innerhalb einer Frist sicherstellst, dass das Geld für Wiederbeschaffung oder Reparatur verwendet wird, in den Mustern drei Jahre. Bis dahin und sonst gibt es nur den Zeitwert. Nach den Mustern gilt außerdem nur der Zeitwert, wenn er unter einen vereinbarten Prozentsatz des Neuwerts gefallen ist."
 verwandt:
   - praxisinhalt-was-gehoert-hinein-zahnaerzt-innen
+  - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
+hinweise:
+  - nach: "Wie wird bei Unterversicherung gekürzt?"
+    art: einschaetzen
+    text: "Du willst wissen, ob deine Summe zum heutigen Wert deiner Praxis passt? Das rechnen wir im Erstgespräch mit dir nach."
+    button: "Summe prüfen lassen"
+  - nach: "Was passiert, wenn neue Geräte dazukommen?"
+    art: whatsapp
+    text: "Neues Gerät angeschafft und unsicher, ob der Vertrag mitwächst? Frag uns kurz per WhatsApp."
+cta:
+  titel: "Versicherungssumme und Praxiswert abgleichen"
+  text: "Bring deine Anlagenliste oder die letzten Rechnungen für größere Geräte mit. Im Erstgespräch prüfen wir, ob Summe und Vertrag passen. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail."
+  button: "Erstgespräch buchen"
 ---
 
-„Die Summe habe ich damals festgelegt, das passt schon.“ Vielleicht. Entscheidend sind zwei Begriffe, die sich zum Verwechseln ähnlich anhören: Die Versicherungssumme ist der Betrag, den du im Vertrag vereinbarst. Der Versicherungswert ist das, was nach den Regeln des Vertrags oder des Gesetzes zum Zeitpunkt des Schadens als Wert gilt. Liegt die Summe erheblich darunter, kann die Entschädigung gekürzt werden. Diese Seite zeigt, was das Gesetz dazu sagt und wie die unverbindlichen Musterbedingungen des Gesamtverbands der Versicherer (GDV) rechnen. Was in deinem Vertrag steht, entscheiden die Bedingungen deines Versicherers.
+„Die Summe habe ich bei der Gründung festgelegt, das passt schon.“ Vielleicht. Seitdem sind vielleicht ein DVT, ein zweiter Behandlungsraum und eine neue IT dazugekommen, und die Listenpreise sind gestiegen. Die Versicherungssumme bewegt sich nicht von allein mit. Genau dort entsteht Unterversicherung, und sie trifft nicht erst den Totalschaden.
 
-## Versicherungssumme und Versicherungswert
+## Was ist der Unterschied zwischen Versicherungssumme und Versicherungswert?
 
-Der Versicherungswert einer Sache oder einer Gesamtheit von Sachen ist nach dem Gesetz, soweit nichts anderes vereinbart ist, der Betrag, den du zur Zeit des Eintrittes des Versicherungsfalles für die Wiederbeschaffung oder Wiederherstellung in neuwertigem Zustand aufwenden müsstest, abzüglich des Minderwerts, der sich aus dem Unterschied zwischen alt und neu ergibt (§ 88 VVG). Verträge dürfen etwas anderes vereinbaren.
+Die Versicherungssumme ist der Betrag, den du im Vertrag vereinbarst. Der Versicherungswert ist das, was deine Einrichtung zum Zeitpunkt eines Schadens tatsächlich wert ist. Das Gesetz versteht darunter, soweit nichts anderes vereinbart ist, die Kosten für die Wiederbeschaffung in neuwertigem Zustand abzüglich eines Abzugs für Alter und Abnutzung (§ 88 VVG). Die Muster des Versicherungsverbands sehen für die Einrichtung den Neuwert vor, also das, was gleichwertige Geräte heute neu kosten. Es gibt Verträge, die für die technische Praxiseinrichtung ausdrücklich den aktuellen Listenpreis zuzüglich Fracht und Montage ansetzen.
 
-Das GDV-Muster tut das: Für die Betriebseinrichtung gilt der Neuwert, bei entsprechender Vereinbarung der Zeitwert, und der gemeine Wert, wenn die Sache nicht mehr verwendbar ist. Auch bei vereinbartem Neuwert gilt nach dem Muster der Zeitwert, wenn er unter einen vereinbarten Prozentsatz des Neuwerts fällt. Für Waren und Vorräte gelten die Wiederbeschaffungs- beziehungsweise Neuherstellungskosten, jeweils der niedrigere Betrag, begrenzt durch den erzielbaren Verkaufspreis (VSG Teil B § 17). Die Versicherungssumme soll nach dem Muster dem Versicherungswert entsprechen und, je nach vereinbarter Wertart, während der Laufzeit angepasst werden (VSG Teil B § 17 Nr. 7; Teil B § 18 enthält Regeln zur Summenanpassung nach einem Index).
+Die Summe legst du einmal fest, der Wert bewegt sich. Deshalb laufen beide mit der Zeit auseinander.
 
-Vereinfacht gesagt: Die Summe legst du einmal fest, der Wert bewegt sich. Genau deshalb können beide mit der Zeit auseinanderlaufen.
+## Was bedeutet Unterversicherung?
 
-## Was § 75 VVG sagt
+Unterversicherung liegt vor, wenn die Versicherungssumme erheblich niedriger ist als der Versicherungswert zum Zeitpunkt des Schadens. Dann muss der Versicherer nur im Verhältnis von Summe zu Wert leisten (§ 75 VVG). Das Gesetz nennt keine Prozentgrenze, und die Muster des Versicherungsverbands lassen schon eine niedrigere Summe genügen.
 
-§ 75 VVG besteht aus einem Satz: Ist die Versicherungssumme erheblich niedriger als der Versicherungswert zur Zeit des Eintrittes des Versicherungsfalles, ist der Versicherer nur verpflichtet, die Leistung nach dem Verhältnis der Versicherungssumme zu diesem Wert zu erbringen. Das Gesetz nennt keine Formel, keine Prozentzahl und keinen Schwellenwert. Was „erheblich“ im Einzelfall bedeutet, haben wir nicht recherchiert, und wir nennen deshalb keine Grenze.
+## Wie wird bei Unterversicherung gekürzt?
 
-## Wie das GDV-Muster rechnet
+Im Verhältnis von Summe zu Wert, und zwar bei jedem Schaden, außer bei Positionen auf Erstes Risiko. Die Muster des Versicherungsverbands rechnen so: Schaden mal Versicherungssumme geteilt durch Versicherungswert. Danach werden Selbstbeteiligung und Entschädigungsgrenzen angewendet. Die Muster sprechen dabei nur von einer niedrigeren, nicht von einer erheblich niedrigeren Summe.
 
-Das Muster ist konkreter. Ist die Versicherungssumme niedriger als der Versicherungswert unmittelbar vor dem Schaden, wird die Entschädigung gekürzt: Schadenbetrag mal Versicherungssumme, geteilt durch Versicherungswert (VSG Teil B § 19 Nr. 5). Ob eine Unterversicherung vorliegt, wird nach dem Muster für jede vereinbarte Position gesondert festgestellt (Nr. 5). Betriebseinrichtung und andere Gruppen von Sachen sind nach dem Muster summarisch, also in einer Position, versichert (VSG Teil B § 1). Ein Selbstbehalt und danach Entschädigungsgrenzen werden im Muster im Anschluss an die Kürzung angewendet (Nr. 5, 7 und 8). Bei einer Versicherung auf Erstes Risiko wird Unterversicherung nach dem Muster nicht berücksichtigt (Nr. 6). Den Neuwertanteil zahlt das Muster nur, soweit und sobald innerhalb von drei Jahren nach dem Versicherungsfall sichergestellt ist, dass die Entschädigung für Wiederbeschaffung oder Wiederherstellung verwendet wird (Nr. 3). Wie sich das mit der Kürzung rechnerisch verbindet, haben wir nicht geprüft.
+*Fiktives Beispiel, alle Zahlen frei angenommen und kein Richtwert für deine Praxis:* Die Einrichtung ist mit Neuwert versichert. Der Wert unmittelbar vor dem Schaden beträgt 400.000 Euro, die Versicherungssumme 300.000 Euro. Ein Wasserschaden zerstört Geräte für 40.000 Euro, die du neu anschaffst. Die Selbstbeteiligung beträgt 1.000 Euro.
 
-Dort steht in der von uns gelesenen Fassung „niedriger“, nicht „erheblich niedriger“ wie im Gesetz. Welche Wirkung dieser Unterschied hat, können wir nicht beurteilen. Prüfe, was dein Vertrag dazu vorsieht.
+| Schritt | Rechnung | Ergebnis |
+| --- | --- | --- |
+| Verhältnis | 300.000 ÷ 400.000 | 0,75 |
+| Gekürzte Entschädigung | 40.000 × 0,75 | 30.000 Euro |
+| Nach Selbstbeteiligung | 30.000 − 1.000 | 29.000 Euro |
+| Bei ausreichender Summe | 40.000 − 1.000 | 39.000 Euro |
 
-*Fiktives Beispiel, alle Zahlen frei angenommen, gerechnet nach dem Verfahren des GDV-Musters; keine Aussage über deine Praxis und kein Versprechen: Die Betriebseinrichtung ist in einer Position mit Neuwert versichert. Der Versicherungswert unmittelbar vor dem Schaden beträgt 400.000 Euro, die Versicherungssumme 300.000 Euro. Der Schaden beträgt 40.000 Euro, die Bedingungen für den Neuwertanteil sind erfüllt, der Zeitwert liegt nicht unter dem vereinbarten Prozentsatz, es gilt weder ein Verzicht auf den Einwand der Unterversicherung noch Erstes Risiko, und der Selbstbehalt beträgt 1.000 Euro. Verhältnis: 300.000 geteilt durch 400.000 ergibt 0,75. Gekürzte Entschädigung: 40.000 mal 0,75 sind 30.000 Euro, 10.000 Euro entfallen. Nach Abzug des Selbstbehalts bleiben 29.000 Euro. Die Entschädigungsgrenze (hier die Summe der Position, 300.000 Euro) wird nicht erreicht. Bei ausreichender Summe wären es 39.000 Euro. Ob im Einzelfall eine erhebliche Unterversicherung im Sinn des § 75 VVG vorläge, sagt das Beispiel nicht.*
+10.000 Euro trägst du selbst, obwohl der Schaden weit unter der Versicherungssumme liegt. Das ist der Punkt, der in der Praxis überrascht.
 
-Das Beispiel zeigt einen Punkt, der oft überrascht: Nach der Formel des Musters wird nicht erst ein Totalschaden gekürzt, sondern auch ein Teilschaden, im selben Verhältnis.
+## Gibt es Verträge ohne Unterversicherung?
 
-## Verzicht auf den Einwand der Unterversicherung
+Ja, und das ist aus unserer Sicht für Zahnarztpraxen ein wichtiges Auswahlkriterium. Es gibt zwei Wege:
 
-Das Muster enthält eine Klausel, mit der der Versicherer auf den Einwand der Unterversicherung verzichtet, solange der Schaden einen vereinbarten Prozentsatz der Gesamtsumme und zugleich einen vereinbarten Betrag nicht übersteigt. Ausgenommen sind unter anderem die Stichtagsversicherung für Waren und Vorräte und die selbständige Außenversicherung (Klausel B 190501). Die Prozentsätze und Beträge sind im Muster nicht ausgefüllt. Die Klausel gilt nur, wenn sie vereinbart ist.
+- **Verzicht auf den Einwand:** Die Musterklauseln des Versicherungsverbands sehen vor, dass der Versicherer auf die Kürzung verzichtet, solange der Schaden einen vereinbarten Prozentsatz der gesamten Versicherungssummen und einen vereinbarten Betrag nicht übersteigt. Das gilt nur, wenn die Klausel vereinbart ist. Liegt der Schaden darüber, wird der ganze Schaden im Verhältnis gekürzt.
+- **Keine Unterversicherung im Vertrag:** Es gibt Verträge speziell für Zahnarztpraxen, die ausdrücklich keine Unterversicherung anrechnen. Statt einer Summe je Position gilt eine feste Höchstgrenze je Schadenfall, und der Beitrag richtet sich zum Beispiel nach der Zahl der Behandlungsstühle.
 
-## Das Gegenstück: Überversicherung
+Auch der zweite Weg hat eine Bedingung: Du musst die Angaben aktuell halten. Es gibt Verträge, die dafür eine jährliche Meldung verlangen. Fehlt die Meldung nach Ablauf der Frist oder ist sie falsch, und stehen mehr Behandlungsstühle in der Praxis als vereinbart, kann die Entschädigung im Verhältnis gekürzt werden, außer dich trifft kein Verschulden. Die Unterversicherung verschwindet also nicht ganz, sie hängt nur an einer einfacheren Zahl.
 
-Ist die Versicherungssumme erheblich höher als der Wert des Interesses, kann jede Vertragspartei verlangen, dass die Summe mit sofortiger Wirkung herabgesetzt wird, und die Prämie ist dann entsprechend zu mindern (§ 74 Abs. 1 VVG). Die Herabsetzung tritt nicht von selbst ein: Du oder der Versicherer müsst sie verlangen.
+## Was passiert, wenn neue Geräte dazukommen?
 
-## Worauf du in deinem Vertrag achten kannst
+Dann muss der Vertrag mitwachsen. Bei Verträgen mit Versicherungssumme bedeutet das: Summe anpassen, nach den Mustern des Versicherungsverbands auch über eine vereinbarte Anpassung nach einem Index. Die Indexanpassung hebt die Regeln zur Unterversicherung aber nicht auf, neue Großgeräte gehören trotzdem in die Summe. Bei Verträgen, die nach Behandlungsstühlen rechnen: neue Stühle melden. Ein neues DVT oder eine CAD/CAM-Einheit verändert den Wert deiner Einrichtung deutlich, ohne dass ein Stuhl dazukommt. Achte deshalb darauf, dass die Höchstgrenze je Schadenfall auch nach solchen Anschaffungen noch reicht.
 
-- Welche Wertart ist vereinbart (Neuwert, Zeitwert)?
-- Wie ist die Versicherungssumme festgelegt, und wird sie angepasst?
-- In wie vielen Positionen sind deine Sachen versichert?
-- Gilt ein Verzicht auf den Einwand der Unterversicherung, und bis zu welchen Grenzen?
-- Ist der Vertrag auf Erstes Risiko abgeschlossen?
-- Wie hoch sind Selbstbehalt und Entschädigungsgrenzen?
+## Neuwert oder Zeitwert: Was wird im Schadenfall gezahlt?
+
+Bei vereinbartem Neuwert bekommst du zunächst den Zeitwert, also den Wert nach Abzug für Alter und Abnutzung. Den Rest bis zum Neuwert gibt es, wenn du innerhalb einer Frist sicherstellst, dass das Geld für Wiederbeschaffung oder Reparatur verwendet wird, etwa durch einen verbindlichen Auftrag. In den Mustern sind das drei Jahre, und es gibt Verträge mit derselben Frist. Nach den Mustern gilt außerdem nur der Zeitwert, wenn er unter einen vereinbarten Prozentsatz des Neuwerts gefallen ist. Bei älterer Medizintechnik kann das eine Rolle spielen.
+
+Bei Medizintechnik gibt es eine Besonderheit: Es gibt Verträge, die bei Röntgenröhren, Laserröhren und ähnlichen Röhren in der Medizintechnik nach zwei Jahren Nutzung einen monatlichen Abzug vorsehen, wenn der Schaden nicht durch eine der großen Gefahren wie Brand oder Wasser entstanden ist. Wer viel Röntgentechnik hat, sollte das kennen.
+
+## Und wenn die Summe zu hoch ist?
+
+Dann zahlst du Beitrag für einen Wert, den es nicht gibt. Ist die Summe erheblich höher als der Wert, können du oder der Versicherer verlangen, dass sie herabgesetzt wird, und der Beitrag sinkt entsprechend (§ 74 VVG). Das passiert nicht von selbst, du musst es verlangen.
+
+## Worauf du achten kannst
+
+- Rechnet dein Vertrag mit einer Versicherungssumme oder mit festen Höchstgrenzen?
+- Gibt es einen Verzicht auf Unterversicherung, und bis zu welcher Grenze?
+- Wann hast du die Summe oder die Angaben zuletzt angepasst?
+- Reicht die Summe oder Höchstgrenze auch nach neuen Großgeräten wie DVT oder CAD/CAM?
+- Ist Neuwert vereinbart, und welche Frist gilt für die Wiederbeschaffung?
+
+Was überhaupt zu den versicherten Sachen gehört, steht auf der Seite [Praxisinhaltsversicherung Zahnarztpraxis: Was gehört hinein?](/ratgeber/praxisinhalt-was-gehoert-hinein-zahnaerzt-innen). Wie du die Summe für den Praxisausfall bestimmst, zeigt [Praxisausfall: Tagessatz der Zahnarztpraxis berechnen](/ratgeber/praxisausfall-tagessatz-fixkosten-zahnaerzt-innen).
+
+## Unsere Einschätzung
+
+Wir bevorzugen für Zahnarztpraxen Verträge, die keine Unterversicherung anrechnen. Wo eine Versicherungssumme gilt, empfehlen wir einen vereinbarten Verzicht auf die Kürzung und eine jährliche Prüfung mit der Anlagenliste. Große Anschaffungen wie ein DVT oder eine CAD/CAM-Einheit solltest du dem Versicherer gleich melden, nicht erst bei der nächsten Jahresmeldung.
 
 ## Was du mitnehmen kannst
 
-Nach § 75 VVG ist der Versicherer bei erheblicher Unterversicherung nur verpflichtet, im Verhältnis von Summe zu Wert zu leisten. Das GDV-Muster rechnet das mit einer Formel und regelt Selbstbehalt, Grenzen und Ausnahmen. Aus unserer Sicht lohnt es sich, Summe und Wertart beim Abschluss und danach regelmäßig mit dem Wert deiner Einrichtung zu vergleichen, etwa nach einer größeren Anschaffung, weil Gesetz und Muster genau an diesen Vergleich anknüpfen. Wie oft das für deine Praxis sinnvoll ist, hängt von dir und deinem Vertrag ab. Was zu den versicherten Sachen gehört, steht auf der Seite „[Was gehört in die Praxisinhaltsversicherung?](/ratgeber/praxisinhalt-was-gehoert-hinein-zahnaerzt-innen)“.
+Unterversicherung entsteht leise: Die Praxis wächst, der Vertrag nicht. Nimm einmal im Jahr deine Anlagenliste und vergleiche sie mit dem Vertrag, am besten zusammen mit dem Jahresabschluss. Ein Gespräch ist sinnvoll, wenn deine Summe seit der Gründung unverändert ist oder du nicht weißt, ob dein Vertrag auf die Unterversicherung verzichtet.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: GDV-Musterbedingungen (VSG 2010, Version 01.04.2014, Klauseln 01.06.2020), Gesetze abgerufen am 14.11.2026. Die Muster sind unverbindlich, dein Vertrag kann abweichen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 16.11.2026. Grundlagen sind Gesetz, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen. Das Beispiel ist fiktiv.*
