@@ -37,6 +37,8 @@ faq:
     antwort: "Nach den Musterbedingungen darf es zusammen mit Krankengeld und anderen Tagegeldern dein Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Die Höhe vereinbarst du im Tarif."
   - frage: "Ersetzt eine BU das Krankentagegeld?"
     antwort: "Nein. Das Krankentagegeld gilt für die Zeit der Arbeitsunfähigkeit, die BU für die dauerhafte Berufsunfähigkeit. Nach den Musterbedingungen endet das Krankentagegeld mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach (§ 15 Abs. 1 Buchst. b MB/KT)."
+  - frage: "Was kostet ein Krankentagegeld für Zahnärzt*innen?"
+    antwort: "In einem Musterbeispiel von uns (angestellter Zahnarzt, 35 Jahre, gesetzlich versichert, 150 Euro ab dem 43. Tag) lagen die Monatsbeiträge für das Tagegeld in drei Tarifen zwischen 49,50 und 76,50 Euro. Beiträge können heute abweichen."
 verwandt:
   - berufsunfaehigkeit-teilweise-zahnaerzt-innen
   - berufsunfaehigkeit-zahnaerztin-berufsstart
@@ -98,6 +100,12 @@ Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten üb
 - Welche Gesundheitsfragen stellt der Versicherer (§ 19 Abs. 1 VVG)?
 
 Was nach der Arbeitsunfähigkeit kommt, wenn du dauerhaft nicht mehr arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen) und [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
+
+## Was kostet ein Krankentagegeld?
+
+Weniger, als viele erwarten. *Musterbeispiel aus einer Vergleichsrechnung von uns, Beiträge können heute abweichen:* angestellter Zahnarzt, 35 Jahre, gesetzlich versichert, 150 Euro Krankentagegeld ab dem 43. Tag als private Zusatzversicherung. Allein für das Tagegeld lagen die Monatsbeiträge in drei Tarifen verschiedener Versicherer zwischen 49,50 und 76,50 Euro.
+
+150 Euro am Tag sind bei 30 Tagen 4.500 Euro im Monat. Welche Höhe zu dir passt, ergibt sich aus der Lücke zwischen Krankengeld und deinem Netto. Alter, Gesundheit und der Beginn der Leistung verändern den Beitrag.
 
 ## Unsere Einschätzung
 

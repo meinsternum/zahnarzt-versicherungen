@@ -33,6 +33,8 @@ faq:
     antwort: "Sie haben in den ersten Jahren einen niedrigeren Beitrag, danach steigt er über den normalen Beitrag. Über die ganze Laufzeit ist das laut Verbraucherzentrale teurer. Frag nach Dauer der Startphase und Beitrag danach."
   - frage: "Was ist eine Nachversicherungsgarantie?"
     antwort: "Damit kannst du die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüfung erhöhen. Sie steht nicht im Gesetz, sondern im Vertrag. Welche Ereignisse zählen und bis zu welcher Höhe, regeln die Bedingungen."
+  - frage: "Was kostet eine BU für Zahnärzt*innen?"
+    antwort: "Das hängt von Alter, Gesundheit und Rentenhöhe ab. In einem Musterbeispiel von uns (angestellte Zahnärztin, 32 Jahre, 3.000 Euro Rente bis 67) lagen die zu zahlenden Monatsbeiträge in drei Tarifen zwischen 125 und 179 Euro. Beiträge können heute abweichen."
 verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
@@ -97,6 +99,19 @@ Sie erlaubt dir, die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüf
 - Wie ist die Nachversicherung geregelt?
 
 Was das Versorgungswerk bei Berufsunfähigkeit leistet, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Wie hoch die Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
+
+## Was kostet eine BU als Zahnärzt\*in?
+
+Das hängt vor allem von Alter, Gesundheit, Rentenhöhe und Endalter ab. Ein Musterbeispiel aus einer Vergleichsrechnung von uns gibt eine Größenordnung:
+
+*Musterbeispiel, Beiträge können heute abweichen:* angestellte Zahnärztin, 32 Jahre, Nichtraucherin, 3.000 Euro Monatsrente bis 67, mit Leistung schon bei längerer Krankschreibung, 2 Prozent fest vereinbarte Rentensteigerung im Leistungsfall und 5 Prozent Beitragsdynamik.
+
+| Musterbeispiel | Drei Tarife verschiedener Versicherer |
+| --- | --- |
+| Zu zahlender Monatsbeitrag | 125 bis 179 Euro |
+| Möglicher Höchstbeitrag | 167 bis 229 Euro |
+
+Der zu zahlende Beitrag ist um Überschüsse gekürzt. Der Höchstbeitrag ist das, was der Versicherer höchstens verlangen darf, wenn die Überschüsse sinken. In der Beratung schauen wir auf beide Zahlen, nicht nur auf die erste. Vorerkrankungen, ein anderes Alter oder eine andere Rentenhöhe verändern den Beitrag deutlich.
 
 ## Unsere Einschätzung
 
