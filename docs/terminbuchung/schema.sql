@@ -1,6 +1,7 @@
 -- Tabelle für Buchungen. Zugriff nur über den Service-Key vom Server (Netlify Function).
 -- RLS ist aktiv und es gibt bewusst keine Policies: Browser und anon-Key kommen nicht an die Daten.
-create extension if not exists btree_gist;
+create schema if not exists extensions;
+create extension if not exists btree_gist with schema extensions;
 
 create table if not exists public.bookings (
   id uuid primary key,
