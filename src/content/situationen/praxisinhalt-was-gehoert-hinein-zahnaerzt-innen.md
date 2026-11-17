@@ -34,6 +34,8 @@ faq:
     antwort: "Es gibt Verträge, die die Kosten für die Neuanfertigung von Röntgenaufnahmen, Abdrücken und Laboruntersuchungen ausdrücklich übernehmen, bis zu einer eigenen Grenze. In den Mustern des Versicherungsverbands ist das nicht eigens geregelt, darauf solltest du achten."
   - frage: "Sind Patientendaten und Software versichert?"
     antwort: "Nur eingeschränkt. Daten gelten nicht als Sache. Versichert sind in der Inhaltsversicherung meist nur Programmdaten, die ein Gerät zum Funktionieren braucht, und nur nach einem Sachschaden am Datenträger. Für Datenverlust, Hackerangriffe und Schadsoftware brauchst du eine eigene Daten- oder Cyberdeckung."
+  - frage: "Was kostet eine Praxisinhaltsversicherung für eine Zahnarztpraxis?"
+    antwort: "In einem Musterbeispiel von uns (Einzelpraxis, drei Behandlungsstühle, 400.000 Euro Inhalt, ohne Selbstbeteiligung) lagen die Jahresbeiträge in drei Tarifen zwischen 783 und 972 Euro. Wichtiger als der Preis sind die Bausteine. Beiträge können heute abweichen."
 verwandt:
   - praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
@@ -112,6 +114,12 @@ Das Gesetz verbietet dir, das Risiko ohne Zustimmung des Versicherers zu erhöhe
 - Verzichtet der Vertrag auf Kürzungen bei grob fahrlässig verursachten Schäden und bei Pflichtverletzungen?
 
 Wie hoch die Versicherungssumme sein muss und was Unterversicherung bedeutet, steht auf der Seite [Praxisinhalt: Versicherungssumme und Unterversicherung](/ratgeber/praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen). Was passiert, wenn die Praxis nach einem Schaden stillsteht, erklärt [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
+
+## Was kostet eine Praxisinhaltsversicherung?
+
+Gemessen am Wert der Einrichtung wenig. *Musterbeispiel aus einer Vergleichsrechnung von uns, Beiträge können heute abweichen:* Einzelpraxis mit drei Behandlungsstühlen, 400.000 Euro Versicherungssumme für den Inhalt, ohne Selbstbeteiligung, Zahlung jährlich. Die Jahresbeiträge lagen in drei Tarifen verschiedener Versicherer zwischen 783 und 972 Euro.
+
+Der Preis allein sagt wenig. Die Tarife im Vergleich unterschieden sich deutlich in den Bausteinen, etwa bei Verbesserungen gegenüber den Mindestbedingungen und Grenzen für einzelne Schäden. Ob Medizintechnik gegen alle Gefahren versichert ist, ob es einen Verzicht auf Unterversicherung gibt und welche Grenzen für Edelmetalle gelten, prüfen wir deshalb vor dem Beitrag.
 
 ## Unsere Einschätzung
 
