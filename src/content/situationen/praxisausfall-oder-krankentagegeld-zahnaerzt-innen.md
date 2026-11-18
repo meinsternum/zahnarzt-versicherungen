@@ -21,9 +21,9 @@ quellen:
 faq:
   - frage: "Zahlt das Krankentagegeld auch die Miete und das Personal meiner Zahnarztpraxis?"
     antwort: "In der Regel nicht. Das Krankentagegeld ersetzt deinen Verdienstausfall und ist üblicherweise auf dein Nettoeinkommen aus dem Beruf begrenzt. Für die laufenden Kosten der Praxis ist es nicht gedacht. Wie dein Tarif die Grenze zieht, steht in deinen Bedingungen."
-  - frage: "Was ersetzt eine Praxisausfallversicherung, wenn ich als Zahnärzt*in krank ausfalle?"
+  - frage: "Was ersetzt eine Praxisausfallversicherung, wenn ich als Zahnärztin oder Zahnarzt krank ausfalle?"
     antwort: "Die Kosten, die weiterlaufen, während du nicht behandeln kannst: vor allem Personal, Miete, Finanzierung und Leasing. Je nach Vereinbarung ist auch der entgehende Gewinn mitversichert. Was genau zählt, legt dein Vertrag fest."
-  - frage: "Brauche ich als Praxisinhaber*in beides?"
+  - frage: "Brauche ich als Praxisinhaberin oder Praxisinhaber beides?"
     antwort: "Wenn du Einkommen und Praxiskosten absichern willst, ja, denn die beiden Verträge decken Verschiedenes ab. Ist in der Praxisausfallversicherung der Gewinn mitversichert, können sie sich überschneiden. Dann lohnt es sich, beide Summen aufeinander abzustimmen."
   - frage: "Zählen die Kosten für eine Praxisvertretung zu den versicherten Kosten?"
     antwort: "Das kann so vereinbart sein. Es gibt Verträge, die Aufwendungen für eine Ersatzkraft ausdrücklich zu den fortlaufenden Kosten zählen. Einnahmen, die die Vertretung erwirtschaftet, mindern dann aber die Entschädigung. Kläre das vor dem Abschluss."
@@ -61,11 +61,11 @@ Konkret heißt das: Das Krankentagegeld hält dich privat über Wasser. Für die
 
 Sie setzt genau dort an, wo das Krankentagegeld aufhört: bei den Kosten, die weiterlaufen, während du nicht behandeln kannst. Dazu zählen vor allem Personalkosten, Miete, Zinsen und Leasingraten. Je nach Vereinbarung ist zusätzlich der entgehende Gewinn mitversichert.
 
-Auslöser ist deine Arbeitsunfähigkeit als Inhaber\*in, ärztlich festgestellt. Verträge unterscheiden sich darin, was sie außerdem abdecken, etwa eine behördlich angeordnete Quarantäne. Die Einzelheiten stehen auf der Seite [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
+Auslöser ist deine Arbeitsunfähigkeit als Inhaberin oder Inhaber, ärztlich festgestellt. Verträge unterscheiden sich darin, was sie außerdem abdecken, etwa eine behördlich angeordnete Quarantäne. Die Einzelheiten stehen auf der Seite [Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit](/ratgeber/praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen).
 
 ## Was gilt für Vertragszahnärzt\*innen bei Vertretung?
 
-Als Vertragszahnärzt\*in musst du persönlich behandeln. Bei Krankheit, Urlaub oder Fortbildung darfst du dich innerhalb von zwölf Monaten zusammen bis zu drei Monate vertreten lassen (§ 32 Abs. 1 Zahnärzte-ZV). Dauert die Vertretung länger als eine Woche, musst du sie der Kassenzahnärztlichen Vereinigung mitteilen.
+Mit Kassenzulassung musst du persönlich behandeln. Bei Krankheit, Urlaub oder Fortbildung darfst du dich innerhalb von zwölf Monaten zusammen bis zu drei Monate vertreten lassen (§ 32 Abs. 1 Zahnärzte-ZV). Dauert die Vertretung länger als eine Woche, musst du sie der Kassenzahnärztlichen Vereinigung mitteilen.
 
 Eine Vertretung hält die Praxis am Laufen, kostet aber Geld. Es gibt Verträge, die Aufwendungen für eine Ersatzkraft ausdrücklich zu den versicherten Kosten zählen. Wichtig ist an der Stelle: Was die Vertretung an Einnahmen erwirtschaftet, wird in solchen Verträgen auf die Entschädigung angerechnet. Die Versicherung gleicht aus, was fehlt, nicht mehr.
 
@@ -78,7 +78,7 @@ Dann endet in der Regel die Leistung der Praxisausfallversicherung. Sie ist für
 | | Krankentagegeld | Praxisausfallversicherung |
 | --- | --- | --- |
 | Was wird ersetzt? | Dein Verdienstausfall | Laufende Kosten der Praxis, je nach Vereinbarung auch entgehender Gewinn |
-| Auslöser | Deine Arbeitsunfähigkeit | Deine Arbeitsunfähigkeit als Inhaber\*in, je nach Vertrag auch Quarantäne |
+| Auslöser | Deine Arbeitsunfähigkeit | Deine Arbeitsunfähigkeit als Inhaberin oder Inhaber, je nach Vertrag auch Quarantäne |
 | Grenze | In der Regel dein Nettoeinkommen | Vereinbarte Summe, die sich an den Kosten eines Jahres orientiert |
 | Dauer | Nach Tarif | Nach der Karenzzeit bis zum Ende der vereinbarten Haftzeit |
 

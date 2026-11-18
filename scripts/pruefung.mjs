@@ -57,6 +57,10 @@ for (const s of seiten) {
   if (/[a-zäöüß]\*(?!\*)[a-zäöüß]/i.test(text.replace(/\\\*/g, '').replace(/\*\*[^*]+\*\*/g, ''))) {
     fehler.push('Gendersternchen im Fließtext nicht maskiert (\\*)');
   }
+  // Einzahl ausschreiben (Zahnärztin oder Zahnarzt), Sternchen nur im Plural (Zahnärzt*innen).
+  if (/[a-zäöüß]\\?\*(in(?!nen)|r|e)\b/i.test(alles)) {
+    fehler.push('Gendersternchen in der Einzahl (z. B. Zahnärzt*in, *r): ausschreiben, etwa „Zahnärztin oder Zahnarzt“');
+  }
   for (const l of text.matchAll(/\]\(\/ratgeber\/([^)#]+)\)/g)) {
     if (!slugs.has(l[1].replace(/\/$/, ''))) fehler.push(`Interner Link ins Leere: ${l[1]}`);
   }

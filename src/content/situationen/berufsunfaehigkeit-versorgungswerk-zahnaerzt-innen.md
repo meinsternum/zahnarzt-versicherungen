@@ -56,7 +56,7 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-„Ich habe doch das Versorgungswerk, reicht das nicht?“ Diese Frage hören wir von Zahnärzt\*innen oft. Die Antwort ist unbequem: Das Versorgungswerk hilft, aber aus unserer Erfahrung oft erst sehr spät. Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer und damit auch im Versorgungswerk, und dort ist eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist, ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
+„Ich habe doch das Versorgungswerk, reicht das nicht?“ Diese Frage hören wir von Zahnärzt\*innen oft. Die Antwort ist unbequem: Das Versorgungswerk hilft, aber aus unserer Erfahrung oft erst sehr spät. Als Zahnärztin oder Zahnarzt bist du in der Regel Pflichtmitglied deiner Kammer und damit auch im Versorgungswerk, und dort ist eine Rente bei Berufsunfähigkeit geregelt. Die entscheidende Frage ist, ab wann sie zahlt und was dafür aus deiner Praxis werden muss.
 
 ## Wann zahlt das Versorgungswerk bei Berufsunfähigkeit?
 
@@ -70,7 +70,7 @@ Vereinfacht gesagt: Das Versorgungswerk fragt nicht, ob du deine Arbeit noch so 
 
 ## Was bedeutet „Praxis aufgeben“ für die Rente?
 
-Die Diagnose allein reicht nicht. In Westfalen-Lippe gibt es keinen Anspruch, solange eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du für die Rente bei dauerhafter Berufsunfähigkeit die Aufgabe der Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du nicht zahnärztlich tätig warst, sonst entfällt die Rente ab Mai (ABH § 17a Abs. 1 und 3). Für eine nur vorübergehende völlige Berufsunfähigkeit gibt es eine befristete Rente (§ 17b). Das Gutachten erstellt dort ein\*e nicht behandelnde\*r Fachärzt\*in, die Kosten trägst du, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung ergreifen (§ 17 Abs. 5 bis 8).
+Die Diagnose allein reicht nicht. In Westfalen-Lippe gibt es keinen Anspruch, solange eine Vertretung oder Assistenz die Praxis weiterführt (§ 41 Abs. 3). In Niedersachsen musst du für die Rente bei dauerhafter Berufsunfähigkeit die Aufgabe der Tätigkeit nachweisen und jedes Jahr bis zum 31. März erklären, dass du nicht zahnärztlich tätig warst, sonst entfällt die Rente ab Mai (ABH § 17a Abs. 1 und 3). Für eine nur vorübergehende völlige Berufsunfähigkeit gibt es eine befristete Rente (§ 17b). Das Gutachten erstellt dort eine nicht behandelnde Fachärztin oder ein nicht behandelnder Facharzt, die Kosten trägst du, Nachuntersuchungen sind möglich, und du musst zumutbare Maßnahmen zur Wiederherstellung ergreifen (§ 17 Abs. 5 bis 8).
 
 *Fiktives Beispiel: Dr. B. führt eine Einzelpraxis und kann wegen einer Handerkrankung nicht mehr behandeln. Sie stellt eine Vertretung ein, um die Praxis zu halten, verständlich nach Jahren des Aufbaus. Nach der Satzung aus Westfalen-Lippe hat sie für diese Zeit keinen Anspruch auf die Rente, weil eine Vertretung die Praxis weiterführt. Zusätzlich prüft das Versorgungswerk, ob sie ihre Fähigkeiten außerhalb der Praxis nutzen kann.*
 
@@ -88,7 +88,7 @@ Die Behörde kann Kranken, Krankheitsverdächtigen, Ansteckungsverdächtigen und
 
 ## Braucht man für das Versorgungswerk eine Gesundheitsprüfung?
 
-Nein. Für die Pflichtmitgliedschaft sehen die Satzungen aus Westfalen-Lippe und Niedersachsen keine Gesundheitsprüfung vor. Wer bei Beginn bereits berufsunfähig ist, wird dort nicht Mitglied. Bei der privaten BU musst du dagegen die bekannten Umstände angeben, nach denen der Versicherer in Textform fragt (§ 19 Abs. 1 VVG). Wann ein guter Zeitpunkt dafür ist, erklärt [Wann solltest du als Zahnärzt\*in eine BU abschließen?](/ratgeber/berufsunfaehigkeit-zahnaerztin-berufsstart).
+Nein. Für die Pflichtmitgliedschaft sehen die Satzungen aus Westfalen-Lippe und Niedersachsen keine Gesundheitsprüfung vor. Wer bei Beginn bereits berufsunfähig ist, wird dort nicht Mitglied. Bei der privaten BU musst du dagegen die bekannten Umstände angeben, nach denen der Versicherer in Textform fragt (§ 19 Abs. 1 VVG). Wann ein guter Zeitpunkt dafür ist, erklärt [Wann solltest du als Zahnärztin oder Zahnarzt eine BU abschließen?](/ratgeber/berufsunfaehigkeit-zahnaerztin-berufsstart).
 
 ## Worauf du achten kannst
 
@@ -97,7 +97,7 @@ Nein. Für die Pflichtmitgliedschaft sehen die Satzungen aus Westfalen-Lippe und
 - Prüfe in deiner privaten BU, ob sie auf die abstrakte Verweisung verzichtet.
 - Prüfe, ob ein Tätigkeitsverbot nach dem Infektionsschutzgesetz mitversichert ist.
 
-Wie hoch die private Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen). Was gilt, wenn du nur noch teilweise arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen).
+Wie hoch die private Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen). Was gilt, wenn du nur noch teilweise arbeiten kannst, steht auf [Teilweise berufsunfähig in der Zahnarztpraxis: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen).
 
 ## Unsere Einschätzung
 

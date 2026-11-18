@@ -63,7 +63,7 @@ Du bist ein paar Wochen krank, die Praxis läuft ohne dich, und nach sechs Woche
 
 ## Was leistet das gesetzliche Krankengeld?
 
-Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft und du mindestens vier Wochen angestellt bist (§ 3 EntgFG). Danach hast du als gesetzlich Versicherte\*r Anspruch auf Krankengeld (§ 44 SGB V), ab dem Tag der ärztlichen Feststellung (§ 46). Es ruht, solange du Gehalt bekommst oder die Arbeitsunfähigkeit nicht gemeldet ist. Wird sie elektronisch übermittelt, ist das kein Thema (§ 49 Abs. 1 SGB V).
+Zuerst zahlt dein Arbeitgeber bis zu sechs Wochen weiter, wenn dich kein Verschulden trifft und du mindestens vier Wochen angestellt bist (§ 3 EntgFG). Danach hast du in der gesetzlichen Krankenversicherung Anspruch auf Krankengeld (§ 44 SGB V), ab dem Tag der ärztlichen Feststellung (§ 46). Es ruht, solange du Gehalt bekommst oder die Arbeitsunfähigkeit nicht gemeldet ist. Wird sie elektronisch übermittelt, ist das kein Thema (§ 49 Abs. 1 SGB V).
 
 Das Krankengeld beträgt 70 Prozent deines Bruttos, gerechnet höchstens bis zur Beitragsbemessungsgrenze, und höchstens 90 Prozent deines Nettos (§ 47 SGB V). Für dieselbe Krankheit gibt es Krankengeld längstens 78 Wochen in drei Jahren, die Entgeltfortzahlung zählt mit (§ 48 Abs. 1 und 3). Es endet unter anderem, wenn du eine Rente wegen voller Erwerbsminderung oder eine Altersvollrente beziehst, und das gilt entsprechend für vergleichbare Renten eines Versorgungswerks (§§ 44 Abs. 2, 50).
 
@@ -99,7 +99,7 @@ Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten üb
 - Wie wird das Tagegeld angepasst, wenn dein Gehalt steigt?
 - Welche Gesundheitsfragen stellt der Versicherer (§ 19 Abs. 1 VVG)?
 
-Was nach der Arbeitsunfähigkeit kommt, wenn du dauerhaft nicht mehr arbeiten kannst, steht auf [Teilweise berufsunfähig als Zahnärzt\*in: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen) und [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
+Was nach der Arbeitsunfähigkeit kommt, wenn du dauerhaft nicht mehr arbeiten kannst, steht auf [Teilweise berufsunfähig in der Zahnarztpraxis: Was gilt?](/ratgeber/berufsunfaehigkeit-teilweise-zahnaerzt-innen) und [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
 ## Was kostet ein Krankentagegeld?
 

@@ -57,7 +57,7 @@ cta:
 
 ## Was ist in der Praxisinhaltsversicherung versichert?
 
-Versichert ist alles Bewegliche, das zu deiner Zahnarztpraxis gehört. Dazu zählen die Einrichtung vom Empfang bis zum Wartezimmer, die Behandlungseinheiten und die übrige Medizintechnik, Röntgen und Labortechnik, IT und Telefonanlage sowie Vorräte und Verbrauchsmaterial. Sachen deiner Mitarbeiter\*innen in der Praxis sind nach dem Gesetz in der Regel mitversichert (§ 89 VVG). Auch Einbauten, die du als Mieter\*in auf eigene Kosten angeschafft hast, gehören dazu.
+Versichert ist alles Bewegliche, das zu deiner Zahnarztpraxis gehört. Dazu zählen die Einrichtung vom Empfang bis zum Wartezimmer, die Behandlungseinheiten und die übrige Medizintechnik, Röntgen und Labortechnik, IT und Telefonanlage sowie Vorräte und Verbrauchsmaterial. Sachen deiner Mitarbeiter\*innen in der Praxis sind nach dem Gesetz in der Regel mitversichert (§ 89 VVG). Auch Einbauten, die du als Mieterin oder Mieter auf eigene Kosten angeschafft hast, gehören dazu.
 
 Die Musterbedingungen des Versicherungsverbands sprechen allgemein von kaufmännischer und technischer Betriebseinrichtung sowie Waren und Vorräten. Es gibt aber auch Verträge, die speziell für Zahnarztpraxen geschrieben sind und Medizintechnik, Labortechnik und Geräte zur Qualitätssicherung in der Röntgendiagnostik ausdrücklich nennen. Je genauer der Vertrag deine Praxis beschreibt, desto weniger Streit gibt es im Schadenfall.
 

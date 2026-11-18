@@ -6,7 +6,7 @@
 export const hero = {
   h1: 'Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen', // bestehende Startseite
   lead: {
-    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH, Versicherungsmakler aus Köln. Hier beantworten wir die Fragen, die Zahnärzt*innen uns zur Absicherung stellen: kurz, aus der Praxis und mit Quellen. Deine eigene Situation gehen wir gern im Erstgespräch mit dir durch.',
+    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln. Als Versicherungsmakler beraten wir Zahnärzt*innen in allen Karrierephasen, vom Studium bis zur eigenen Praxis. Hier beantworten wir die Fragen, die sie uns zur Absicherung stellen: kurz, aus der Praxis und mit Quellen. Deine eigene Situation gehen wir gern im Erstgespräch mit dir durch.',
     entwurf: false,
   },
   cta: 'Erstgespräch buchen', // bestehende Startseite
@@ -46,7 +46,7 @@ export const werWirSind = {
   // „das Unternehmen“ ersetzt, damit MEIN STERNUM nicht zu oft erscheint (Patrick, 13.11.2026).
   entwurf: false,
   absaetze: [
-    'zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Ärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung.',
+    'zahnarzt-versicherungen.de ist ein Angebot der MEIN STERNUM Finanzberatung GmbH aus Köln. Wir beraten Zahnärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung. Darüber hinaus beraten wir auch Ärzt*innen.',
     'Patrick Senn hat das Unternehmen 2015 mitgegründet und ist seitdem Geschäftsführer. Ärzt*innen berät er seit 2008, angefangen als Berater bei der HORBACH Wirtschaftsberatung in Köln. Er schreibt und verantwortet die Texte auf dieser Seite.',
   ],
   link: 'Mehr über Patrick Senn und das Team', // bestehende Startseite
@@ -74,7 +74,7 @@ export const faq = {
     },
     {
       frage: 'Was kostet das Erstgespräch?',
-      antwort: 'Nichts. Das Erstgespräch ist kostenlos. Danach bekommst du die Empfehlungen per E-Mail und entscheidest in Ruhe.',
+      antwort: 'Nichts. Das Erstgespräch ist kostenlos und verpflichtet dich zu nichts. Danach bekommst du die Empfehlungen per E-Mail und entscheidest in Ruhe.',
     },
     {
       frage: 'Kann ich auch erst eine kurze Frage stellen?',
