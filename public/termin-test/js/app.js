@@ -19,6 +19,14 @@ function renderTypes() {
   el('types').querySelectorAll('[data-type]').forEach((b) => b.addEventListener('click', () => chooseType(b.dataset.type)));
 }
 
+function renderExternal() {
+  const list = state.config.external || [];
+  el('external').hidden = !list.length;
+  el('external-list').innerHTML = list
+    .map((l) => `<a class="card" href="${esc(l.url)}" target="_blank" rel="noopener"><strong>${esc(l.title)}</strong><span class="desc">${esc(l.description)}</span></a>`)
+    .join('');
+}
+
 function chooseType(id) {
   state.type = state.config.types.find((t) => t.id === id);
   state.staff = 'any';
@@ -103,6 +111,7 @@ async function init() {
   sel.innerHTML = state.config.sources.map((s) => `<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
   el('booking-form').addEventListener('submit', submit);
   renderTypes();
+  renderExternal();
   show('step-type');
 }
 init();

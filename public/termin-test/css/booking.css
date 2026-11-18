@@ -45,3 +45,5 @@ input:focus, textarea:focus, select:focus { outline: 2px solid var(--accent); ou
 .actions .danger:hover { background: #fdf2f1; }
 [hidden] { display: none !important; }
 .testhinweis { background: #fff7e0; border: 1px solid #f0d58a; border-radius: 8px; padding: 8px 12px; font-size: .9rem; margin: 0 0 16px; }
+.ext-title { color: var(--navy); font-size: 1rem; margin: 28px 0 10px; }
+a.card { text-decoration: none; }

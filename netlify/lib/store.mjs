@@ -35,7 +35,7 @@ export function fileStore(dir = dataDir()) {
       locked(async () => {
         const rows = await read();
         if (rows.some((r) => r.status === 'confirmed' && r.staff_id === b.staff_id && overlaps(r, b))) throw conflict();
-        const row = { ...b, created_at: new Date().toISOString(), updated_at: new Date().toISOString() };
+        const row = { created_at: new Date().toISOString(), updated_at: new Date().toISOString(), ...b };
         rows.push(row);
         await write(rows);
         return row;

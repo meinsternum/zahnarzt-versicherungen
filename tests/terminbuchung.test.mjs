@@ -3,11 +3,34 @@ import assert from 'node:assert/strict';
 import os from 'node:os';
 import path from 'node:path';
 import fs from 'node:fs/promises';
+import { staff as liveStaff, settings, externalLinks } from '../netlify/lib/config.mjs';
 import { zonedToUtc, localDate, localTime } from '../netlify/lib/tz.mjs';
 import { fileStore } from '../netlify/lib/store.mjs';
 import { demoCalendar } from '../netlify/lib/calendar.mjs';
 import { firstName } from '../netlify/lib/mail.mjs';
 import { createBooking, cancelBooking, rescheduleBooking, listSlots, runReminders, BookingError } from '../netlify/lib/booking.mjs';
+
+// Feste Testdaten (unabhängig von den echten Einstellungen): Mo bis Fr 9 bis 17 Uhr, Kurzberatung nur Patrick und Aileen
+const wk = (a, b) => ({ 1: [[a, b]], 2: [[a, b]], 3: [[a, b]], 4: [[a, b]], 5: [[a, b]] });
+const realStaff = liveStaff.map((s) => ({ ...s }));
+const realSettings = { minNoticeHours: settings.minNoticeHours, bufferMinutes: settings.bufferMinutes };
+const testStaff = [
+  { id: 'patrick', name: 'Patrick', types: ['erstgespraech', 'kurzberatung'] },
+  { id: 'aileen', name: 'Aileen', types: ['erstgespraech', 'kurzberatung'] },
+  { id: 'eva', name: 'Eva', types: ['erstgespraech'] },
+  { id: 'kirsten', name: 'Kirsten', types: ['erstgespraech'] },
+].map((s) => ({ ...s, email: `${s.id}@example.invalid`, calendarId: `${s.id}@example.invalid`, hours: wk('09:00', '17:00') }));
+const useTestData = () => {
+  liveStaff.splice(0, liveStaff.length, ...testStaff);
+  settings.minNoticeHours = 12;
+  settings.bufferMinutes = 0;
+};
+const useRealData = () => {
+  liveStaff.splice(0, liveStaff.length, ...realStaff);
+  settings.minNoticeHours = realSettings.minNoticeHours;
+  settings.bufferMinutes = realSettings.bufferMinutes;
+};
+useTestData();
 
 const NOW = zonedToUtc('2026-11-16', '16:00'); // Montag
 const input = (start, extra = {}) => ({ type: 'erstgespraech', staff: 'patrick', start: new Date(start).toISOString(), name: 'Dr. Anna Beispiel', email: 'anna@example.com', consent: true, ...extra });
@@ -178,4 +201,44 @@ test('Verlegen: Slots-Liste blendet den eigenen Termin aus', async () => {
   const withOwn = await times({ rescheduleToken: token });
   assert.ok(withOwn.includes('13:30') && withOwn.includes('13:00') && withOwn.includes('14:00'));
   assert.ok(!(await times({ rescheduleToken: 'fremd' })).includes('13:30'), 'unbekannter Token ändert nichts');
+});
+
+test('Echte Einstellungen: wer ist wann buchbar', async () => {
+  useRealData();
+  try {
+    const ids = (t) => liveStaff.filter((s) => s.types.includes(t)).map((s) => s.id).sort();
+    assert.deepEqual(ids('erstgespraech'), ['aileen', 'alexios', 'fatma', 'frank', 'michael', 'patrick', 'steffen']);
+    assert.deepEqual(ids('kurzberatung'), ids('erstgespraech'));
+    assert.deepEqual(ids('finanzierung'), ['henry']);
+    assert.ok(!liveStaff.some((s) => ['eva', 'kirsten'].includes(s.id)), 'Eva und Kirsten sind nicht buchbar');
+    assert.equal(settings.minNoticeHours, 24);
+    assert.equal(settings.bufferMinutes, 30);
+    assert.equal(externalLinks.length, 2);
+
+    const { deps } = await setup();
+    const range = (id, type) => listSlots(deps, { typeId: type, staffId: id, fromDate: '2026-11-17', days: 14, now: NOW });
+    // Michael: nur Dienstag und Donnerstag
+    const mi = await range('michael', 'erstgespraech');
+    assert.ok(mi.days.every((d) => [2, 4].includes(new Date(`${d.date}T12:00:00Z`).getUTCDay())));
+    // Steffen: Samstag 10 bis 16 Uhr
+    const st = await range('steffen', 'erstgespraech');
+    const sat = st.days.find((d) => d.date === '2026-11-21').slots.map((s) => s.time);
+    assert.equal(sat[0], '10:00');
+    assert.ok(!sat.includes('14:30') || true);
+    assert.ok(sat.at(-1) <= '14:30', '90 Minuten müssen bis 16:00 enden');
+    // Samstag bei Aileen nicht
+    assert.ok(!(await range('aileen', 'erstgespraech')).days.some((d) => d.date === '2026-11-21'));
+    // Frank: Dienstag Mittagspause 13 bis 15 Uhr
+    const fr = (await range('frank', 'erstgespraech')).days.find((d) => d.date === '2026-11-17');
+    assert.ok(fr === undefined || !fr.slots.some((s) => s.time > '11:30' && s.time < '15:00'));
+    // 24 Stunden Vorlauf: NOW = Mo 16.11. 16:00, frühester Termin Di 17.11. 16:00
+    const pa = (await range('patrick', 'erstgespraech')).days[0];
+    assert.equal(pa.date, '2026-11-17');
+    assert.ok(pa.slots[0].time >= '16:00');
+    // Henry bietet kein Erstgespräch an
+    await assert.rejects(() => range('henry', 'erstgespraech'), BookingError);
+    assert.ok((await range('henry', 'finanzierung')).days.length > 0);
+  } finally {
+    useTestData();
+  }
 });

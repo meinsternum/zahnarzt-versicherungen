@@ -1,5 +1,5 @@
 // Geschäftslogik: buchen, absagen, verlegen, erinnern. Abhängigkeiten (Speicher, Kalender, Mail) werden übergeben, damit alles testbar ist.
-import { settings, appointmentTypes, staff as allStaff, sourceOptions } from './config.mjs';
+import { settings, appointmentTypes, staff as allStaff, sourceOptions, externalLinks } from './config.mjs';
 import { computeSlots, staffForType } from './slots.mjs';
 import { localDate, formatDayShortDe, localTime, addDays } from './tz.mjs';
 import { newId, newToken } from './store.mjs';
@@ -44,6 +44,7 @@ export function publicBooking(b) {
 export function publicConfig() {
   return {
     types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name })) })),
+    external: externalLinks,
     sources: sourceOptions,
     changeDeadlineHours: settings.changeDeadlineHours,
   };
@@ -143,6 +144,7 @@ export async function createBooking(deps, input, now = Date.now()) {
     event_id: '',
     meet_link: '',
     reminders_sent: [],
+    created_at: new Date(now).toISOString(),
   };
 
   let booking;
