@@ -92,5 +92,15 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': 'patrick-03-hoch',
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': 'schreibtisch-01-hoch',
   'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': 'patrick-01-hoch',
+  // Rechtsschutz (17.11.2026): acht verschiedene Fotos; 70 und 78 teilen patrick-03 (nur acht Motive ohne Doppel 04/05 und 01/07).
+  'rechtsschutz-welche-bausteine-zahnaerzt-innen': 'patrick-03-hoch',
+  'rechtsschutz-oder-berufshaftpflicht-zahnaerzt-innen': 'kollege-01-hoch',
+  'rechtsschutz-strafverfahren-zahnaerzt-innen': 'patrick-06-hoch',
+  'rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen': 'schreibtisch-02-hoch',
+  'rechtsschutz-zahnarztpraxis-team-vermieter-vertraege': 'patrick-02-hoch',
+  'rechtsschutz-praxisgruendung-uebernahme-bag-zahnaerzt-innen': 'schreibtisch-01-hoch',
+  'rechtsschutz-angestellte-zahnaerzt-innen': 'patrick-04-hoch',
+  'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'patrick-01-hoch',
+  'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'patrick-03-hoch',
 };
 export const STANDARD_FOTO: FotoKey = 'patrick-01-hoch';

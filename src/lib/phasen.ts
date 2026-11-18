@@ -11,6 +11,7 @@ export const themen = [
   { id: 'krankenversicherung', titel: 'Krankenversicherung', icon: 'puls', beschreibung: 'Was bei längerer Krankheit vom Einkommen bleibt und wie ein Krankentagegeld die Lücke schließt.' },
   { id: 'altersvorsorge', titel: 'Altersvorsorge', icon: 'sparen', beschreibung: 'Was das Versorgungswerk im Alter zahlt und wie du eine mögliche Rentenlücke berechnest.' },
   { id: 'berufshaftpflicht', titel: 'Berufshaftpflicht', icon: 'waage', beschreibung: 'Pflicht, Mindestsummen und worauf du im Vertrag deiner Berufshaftpflicht achtest.' },
+  { id: 'rechtsschutz', titel: 'Rechtsschutz', icon: 'dokument', beschreibung: 'Welche Bausteine du brauchst, wo die Berufshaftpflicht zuständig ist und was bei Strafverfahren, KZV und Streit in der Praxis gilt.' },
 ] as const;
 
 export type ThemaId = (typeof themen)[number]['id'];
@@ -28,6 +29,15 @@ export const themaJeSeite: Record<string, ThemaId> = {
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': 'praxisausfall',
   'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': 'praxisausfall',
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': 'praxisausfall',
+  'rechtsschutz-welche-bausteine-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-oder-berufshaftpflicht-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-strafverfahren-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-zahnarztpraxis-team-vermieter-vertraege': 'rechtsschutz',
+  'rechtsschutz-praxisgruendung-uebernahme-bag-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-angestellte-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'rechtsschutz',
+  'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'rechtsschutz',
 };
 
 // Kurze Bezeichnung je Seite für das Menü (Entwurf zur Freigabe, 14.11.2026).
@@ -45,6 +55,15 @@ export const menueTitel: Record<string, string> = {
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': 'Wann zahlt sie? Karenzzeit',
   'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': 'Tagessatz aus den Fixkosten',
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': 'Praxisausfall oder Krankentagegeld?',
+  'rechtsschutz-welche-bausteine-zahnaerzt-innen': 'Welche Bausteine brauche ich?',
+  'rechtsschutz-oder-berufshaftpflicht-zahnaerzt-innen': 'Rechtsschutz oder Berufshaftpflicht?',
+  'rechtsschutz-strafverfahren-zahnaerzt-innen': 'Strafverfahren und Spezial-Straf-Rechtsschutz',
+  'rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen': 'Streit mit der KZV: Prüfung, Regress, Zulassung',
+  'rechtsschutz-zahnarztpraxis-team-vermieter-vertraege': 'Streit mit Team, Vermieter, Lieferanten',
+  'rechtsschutz-praxisgruendung-uebernahme-bag-zahnaerzt-innen': 'Gründung, Übernahme, BAG',
+  'rechtsschutz-angestellte-zahnaerzt-innen': 'Rechtsschutz für Angestellte',
+  'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'Kammer, Berufsgericht, Approbation',
+  'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'Wartezeit, Wechsel, Nachhaftung',
 };
 
 // Berufsphase je Seite (Kennzeichnung auf der Karte).
@@ -57,6 +76,15 @@ export const phaseJeSeite: Record<string, string> = {
   'praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
   'praxisausfall-tagessatz-fixkosten-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
   'praxisausfall-oder-krankentagegeld-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
+  'rechtsschutz-welche-bausteine-zahnaerzt-innen': 'Jede Berufsphase',
+  'rechtsschutz-oder-berufshaftpflicht-zahnaerzt-innen': 'Jede Berufsphase',
+  'rechtsschutz-strafverfahren-zahnaerzt-innen': 'Jede Berufsphase',
+  'rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
+  'rechtsschutz-zahnarztpraxis-team-vermieter-vertraege': 'Praxisgründung und eigene Praxis',
+  'rechtsschutz-praxisgruendung-uebernahme-bag-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
+  'rechtsschutz-angestellte-zahnaerzt-innen': 'Angestellt',
+  'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'Jede Berufsphase',
+  'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'Jede Berufsphase',
 };
 
 export function gruppiere<T extends { id: string }>(seiten: T[]) {
