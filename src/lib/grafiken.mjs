@@ -221,7 +221,7 @@ export const grafiken = {
       titel: 'Zwei Fragen, zwei Absicherungen',
       karten: [
         { kopf: 'Was fehlt mir persönlich?', punkte: ['Krankentagegeld: ersetzt deinen Verdienstausfall', 'Grenze: in der Regel dein Nettoeinkommen'] },
-        { kopf: 'Was fehlt der Praxis?', punkte: ['Praxisausfallversicherung: laufende Kosten, je nach Vereinbarung auch entgehender Gewinn', 'Auslöser: deine Arbeitsunfähigkeit als Inhaber*in'] },
+        { kopf: 'Was fehlt der Praxis?', punkte: ['Praxisausfallversicherung: laufende Kosten, je nach Vereinbarung auch entgehender Gewinn', 'Auslöser: deine Arbeitsunfähigkeit als Inhaberin oder Inhaber'] },
       ],
       fuss: 'Stand: 16.11.2026, nach Gesetz und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },

@@ -49,7 +49,7 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-„Die Summe habe ich bei der Gründung festgelegt, das passt schon.“ Vielleicht. Seitdem sind vielleicht ein DVT, ein zweiter Behandlungsraum und eine neue IT dazugekommen, und die Listenpreise sind gestiegen. Die Versicherungssumme bewegt sich nicht von allein mit. Genau dort entsteht Unterversicherung, und sie trifft nicht erst den Totalschaden.
+„Die Summe habe ich bei der Gründung festgelegt, das passt schon.“ Vielleicht. Seitdem sind vielleicht ein DVT, ein zweiter Behandlungsraum und eine neue IT dazugekommen, und die Listenpreise sind gestiegen. Die Versicherungssumme bewegt sich nicht von allein mit. Genau dort entsteht Unterversicherung. Sie wirkt nicht erst beim Totalschaden, sondern schon bei jedem Teilschaden.
 
 ## Was ist der Unterschied zwischen Versicherungssumme und Versicherungswert?
 

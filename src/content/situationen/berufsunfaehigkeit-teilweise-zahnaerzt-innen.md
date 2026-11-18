@@ -1,8 +1,8 @@
 ---
-frage: "Bin ich als Zahnärzt*in berufsunfähig, wenn ich nur noch teilweise arbeiten kann?"
-titel: "Teilweise berufsunfähig als Zahnärzt*in: Was gilt?"
-kurzantwort: "Bei einer privaten BU kann das reichen: Das Gesetz kennt auch die teilweise Berufsunfähigkeit, die Schwelle steht in den Bedingungen. In den Satzungen der Versorgungswerke Westfalen-Lippe und Niedersachsen gibt es Rente nur, wenn du gar nicht mehr zahnärztlich arbeiten kannst."
-metaDescription: "Teilweise berufsunfähig als Zahnärzt*in: was die private BU leistet, was zwei Versorgungswerke verlangen und worauf du in den Bedingungen achtest."
+frage: "Bin ich als Zahnärztin oder Zahnarzt berufsunfähig, wenn ich nur noch teilweise arbeiten kann?"
+titel: "Teilweise berufsunfähig in der Zahnarztpraxis: Was gilt?"
+kurzantwort: "Bei einer privaten BU kann das reichen: § 172 VVG erfasst auch, wer seinen Beruf nur noch teilweise ausüben kann. Ab welchem Grad gezahlt wird, legen die Bedingungen fest. In den Satzungen der Versorgungswerke Westfalen-Lippe und Niedersachsen gibt es Rente nur, wenn du gar nicht mehr zahnärztlich arbeiten kannst."
+metaDescription: "Teilweise berufsunfähig als Zahnärztin oder Zahnarzt: was die private BU leistet, was zwei Versorgungswerke verlangen und worauf du in den Bedingungen achtest."
 status: freigegeben
 stand: "2026-11-16"
 pruefenBis: "2027-11-16"
@@ -48,7 +48,7 @@ Du kannst nach einer Erkrankung noch behandeln, aber nicht mehr so lange, so oft
 
 ## Was sagt das Gesetz für die private BU?
 
-Das Gesetz kennt ausdrücklich den teilweisen Fall. Berufsunfähig ist, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, infolge Krankheit, Körperverletzung oder mehr als altersentsprechenden Kräfteverfalls ganz oder teilweise voraussichtlich auf Dauer nicht mehr ausüben kann (§ 172 Abs. 2 VVG).
+Die gesetzliche Definition erfasst ausdrücklich auch den teilweisen Fall. Berufsunfähig ist, wer seinen zuletzt ausgeübten Beruf, so wie er ohne gesundheitliche Beeinträchtigung ausgestaltet war, infolge Krankheit, Körperverletzung oder mehr als altersentsprechenden Kräfteverfalls ganz oder teilweise voraussichtlich auf Dauer nicht mehr ausüben kann (§ 172 Abs. 2 VVG).
 
 Eine Prozentzahl nennt das Gesetz nicht. Ab welchem Grad gezahlt wird und wie er gemessen wird, steht in den Bedingungen. In den Bedingungen, die wir in der Beratung sehen, liegt die Schwelle meist bei 50 Prozent. Dein Vertrag kann es anders regeln.
 
@@ -69,7 +69,7 @@ Genau diese Situation ist aus unserer Erfahrung einer der wichtigsten Gründe, w
 - Ab welchem Grad zahlt der Vertrag, und wie wird er gemessen, nach Arbeitszeit oder nach Tätigkeitsanteilen?
 - Verzichtet der Vertrag auf die abstrakte Verweisung (§ 172 Abs. 3 VVG)?
 - Was gilt, wenn du in verringertem Umfang in der Praxis weiterarbeitest?
-- Wie ist der Beruf beschrieben, als Zahnärzt\*in in eigener Praxis oder angestellt?
+- Wie ist der Beruf beschrieben, als Zahnärztin oder Zahnarzt in eigener Praxis oder angestellt?
 
 Findest du die Regelung nicht, frag beim Versicherer nach, und zwar vor dem Leistungsfall. Was das Versorgungswerk im Einzelnen verlangt, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Für die Zeit der Arbeitsunfähigkeit davor ist [Krankengeld-Lücke für angestellte Zahnärzt\*innen](/ratgeber/krankengeld-luecke-zahnaerzt-innen) wichtig.
 

@@ -64,7 +64,7 @@ Nichts Konkretes. Der Versicherer muss bei einer Berufsunfähigkeit nach Versich
 Die Grundidee: Was läuft weiter, wenn dein Einkommen ausfällt?
 
 1. **Laufende Ausgaben:** Wohnen, Lebenshaltung, Kranken- und Pflegeversicherung, Altersvorsorge. Die Verbraucherzentrale beschreibt als Maßstab genau diese Ausgaben, die auch nach Eintritt der Berufsunfähigkeit weiterlaufen.
-2. **Verpflichtungen:** Darlehen für Wohnung oder Praxis, Unterhalt für Partner\*in oder Kinder. Sie ändern sich, etwa bei Familiengründung oder Niederlassung.
+2. **Verpflichtungen:** Darlehen für Wohnung oder Praxis, Unterhalt für Partnerin, Partner oder Kinder. Sie ändern sich, etwa bei Familiengründung oder Niederlassung.
 3. **Leistung des Versorgungswerks:** Sie wird abgezogen, soweit sie dir im Ernstfall tatsächlich zusteht.
 4. **Steuer:** Sie entscheidet, was netto ankommt.
 
@@ -96,7 +96,7 @@ Ja, aber nicht immer gleich. Das Einkommensteuergesetz unterscheidet zwei Wege (
 - Rechne zwei Fälle: mit und ohne Versorgungswerk.
 - Frag dein Versorgungswerk nach deiner heutigen BU-Rente.
 - Plane die Steuer ein.
-- Achte auf eine Nachversicherungsgarantie, damit die Rente mitwachsen kann. Mehr dazu auf [Wann solltest du als Zahnärzt\*in eine BU abschließen?](/ratgeber/berufsunfaehigkeit-zahnaerztin-berufsstart).
+- Achte auf eine Nachversicherungsgarantie, damit die Rente mitwachsen kann. Mehr dazu auf [Wann solltest du als Zahnärztin oder Zahnarzt eine BU abschließen?](/ratgeber/berufsunfaehigkeit-zahnaerztin-berufsstart).
 
 ## Unsere Einschätzung
 

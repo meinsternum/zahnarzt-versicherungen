@@ -1,5 +1,5 @@
 ---
-frage: "Wie berechnest du als Zahnärzt*in den Tagessatz für die Praxisausfallversicherung?"
+frage: "Wie berechnest du als Zahnärztin oder Zahnarzt den Tagessatz für die Praxisausfallversicherung?"
 titel: "Praxisausfall: Tagessatz der Zahnarztpraxis berechnen"
 kurzantwort: "Du nimmst die Kosten deiner Zahnarztpraxis, die bei Krankheit weiterlaufen, für ein Jahr und teilst sie durch die Tage, nach denen dein Vertrag rechnet. Soll auch der Gewinn abgesichert sein, kommt er dazu. Die Zahlen auf dieser Seite sind ein fiktives Beispiel, verlässlich sind nur deine eigenen."
 metaDescription: "So leitest du den Tagessatz der Praxisausfallversicherung aus den Fixkosten deiner Zahnarztpraxis her. Fiktives Rechenbeispiel mit offener Rechnung."

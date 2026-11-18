@@ -52,7 +52,7 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-„Ich zahle doch den Höchstbeitrag ins Versorgungswerk, das wird schon reichen.“ Vielleicht. Als Zahnärzt\*in bist du in der Regel Pflichtmitglied deiner Kammer und damit im Versorgungswerk, das dir im Alter eine lebenslange Rente zahlt. Ob sie zu deinem Bedarf passt, steht in keiner Satzung. Diese Seite zeigt, woran Beitrag und Rente anknüpfen und wie du eine Lücke selbst nachrechnest.
+„Ich zahle doch den Höchstbeitrag ins Versorgungswerk, das wird schon reichen.“ Vielleicht. Als Zahnärztin oder Zahnarzt bist du in der Regel Pflichtmitglied deiner Kammer und damit im Versorgungswerk, das dir im Alter eine lebenslange Rente zahlt. Ob sie zu deinem Bedarf passt, steht in keiner Satzung. Diese Seite zeigt, woran Beitrag und Rente anknüpfen und wie du eine Lücke selbst nachrechnest.
 
 ## Was zahlt das Versorgungswerk im Alter?
 
@@ -86,9 +86,18 @@ Nicht nach einer festen Formel. In Westfalen-Lippe beschließt die Kammerversamm
 
 ## Wie sieht das in Zahlen aus?
 
-*Fiktives Beispiel mit erfundenen Zahlen, keine Prognose:* Dr. M. rechnet in heutigen Preisen mit einem Bedarf von 4.000 Euro im Monat. Ihr Versorgungswerk nennt ihr für den Rentenbeginn in 30 Jahren 2.000 Euro im Monat. Sie nimmt 2 Prozent Preissteigerung pro Jahr an.
+*Fiktives Beispiel mit erfundenen Zahlen, keine Prognose.* Die Ausgangslage:
 
-Fall A: Die Rente wird bis dahin nicht angepasst. 2.000 Euro sind dann in heutigen Preisen rund 1.104 Euro wert (2.000 ÷ 1,02³⁰). Lücke: rund 2.896 Euro im Monat. Fall B: Die Rente steigt im Gleichschritt mit den Preisen. Lücke: 2.000 Euro im Monat. Beide Werte vor Steuern und ohne Kranken- und Pflegeversicherung.
+- Dr. M. braucht im Alter nach heutigen Preisen 4.000 Euro im Monat.
+- Ihr Versorgungswerk nennt ihr für den Rentenbeginn in 30 Jahren eine Rente von 2.000 Euro im Monat.
+- Sie rechnet mit 2 Prozent Preissteigerung pro Jahr.
+
+Die entscheidende Frage: Was sind diese 2.000 Euro beim Rentenbeginn nach heutigen Preisen wert? Dafür gibt es zwei Lesarten, deshalb rechnen wir zwei Fälle:
+
+- **Fall A:** Die 2.000 Euro sind ein fester Betrag, der bis zum Rentenbeginn nicht mehr steigt. Nach 30 Jahren mit 2 Prozent Preissteigerung kauft er nur noch so viel wie heute rund 1.104 Euro (2.000 ÷ 1,02³⁰). Die Lücke zum Bedarf beträgt dann rund 2.896 Euro im Monat.
+- **Fall B:** Die Rente steigt bis dahin im Gleichschritt mit den Preisen, beim Rentenbeginn sind es also rund 3.623 Euro. Das entspricht heute 2.000 Euro. Die Lücke beträgt 2.000 Euro im Monat.
+
+Beide Werte vor Steuern und ohne Kranken- und Pflegeversicherung.
 
 Dieselbe Rente in Euro kann sehr unterschiedlich viel wert sein. Deshalb rechnen wir immer beide Fälle.
 

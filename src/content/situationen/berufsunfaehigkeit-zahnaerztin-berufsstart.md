@@ -1,5 +1,5 @@
 ---
-frage: "Wann solltest du als Zahnärzt*in eine BU abschließen?"
+frage: "Wann solltest du als Zahnärztin oder Zahnarzt eine BU abschließen?"
 titel: "Wann sollten Zahnärzt*innen eine BU abschließen?"
 kurzantwort: "Einen festen Zeitpunkt schreibt das Gesetz nicht vor. Für Zahnärzt*innen entscheiden vor allem zwei Dinge: Gesundheitsfragen beantwortest du mit jedem Jahr ohne Erkrankung leichter, und die Bedingungen sollten auch nach Studium und Assistenzzeit noch zu deinem Beruf passen."
 metaDescription: "BU im Studium, zum Berufsstart oder in der Assistenzzeit? Was für Zahnärzt*innen beim Zeitpunkt zählt: Gesundheitsfragen, Startphase, Nachversicherung."
@@ -22,7 +22,7 @@ quellen:
     url: "https://www.verbraucherzentrale.de/wissen/geld-versicherungen/weitere-versicherungen/berufsunfaehigkeit-wie-sie-sich-gegen-verlust-des-einkommens-absichern-13931"
 faq:
   - frage: "Brauche ich schon im Studium eine BU?"
-    antwort: "Das hängt von deiner Gesundheit und den Bedingungen ab. Für einen frühen Abschluss nennt die Verbraucherzentrale meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist, dass der Vertrag später zu deinem Beruf als Zahnärzt*in passt."
+    antwort: "Das hängt von deiner Gesundheit und den Bedingungen ab. Für einen frühen Abschluss nennt die Verbraucherzentrale meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist, dass der Vertrag später zu deinem Beruf als Zahnärztin oder Zahnarzt passt."
   - frage: "Muss ich im Antrag alle Vorerkrankungen angeben?"
     antwort: "Du musst die dir bekannten Umstände angeben, die für den Versicherer erheblich sind und nach denen er in Textform fragt (§ 19 Abs. 1 VVG). Was abgefragt wird und wie weit die Fragen zurückreichen, steht im Antrag des jeweiligen Versicherers."
   - frage: "Was passiert, wenn ich eine Gesundheitsfrage falsch beantworte?"
@@ -62,7 +62,7 @@ Nur eines: Der Versicherer muss für eine Berufsunfähigkeit leisten, die nach B
 
 ## Was spricht für einen Abschluss im Studium?
 
-Vor allem die Gesundheit. Wer früh abschließt, hat aus unserer Erfahrung meist weniger anzugeben. Die Verbraucherzentrale nennt für Studierende außerdem meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist der Blick nach vorn: Die Bedingungen sollten auch dann noch passen, wenn du als Zahnärzt\*in arbeitest, etwa bei der Verweisung und der Nachversicherung.
+Vor allem die Gesundheit. Wer früh abschließt, hat aus unserer Erfahrung meist weniger anzugeben. Die Verbraucherzentrale nennt für Studierende außerdem meist günstige Beiträge und eine vorteilhafte Einstufung der Berufsgruppe. Wichtig ist der Blick nach vorn: Die Bedingungen sollten auch dann noch passen, wenn du als Zahnärztin oder Zahnarzt arbeitest, etwa bei der Verweisung und der Nachversicherung.
 
 ## Was zählt, wenn du zum Berufsstart oder in der Assistenzzeit abschließt?
 
@@ -100,7 +100,7 @@ Sie erlaubt dir, die Rente bei bestimmten Ereignissen ohne neue Gesundheitsprüf
 
 Was das Versorgungswerk bei Berufsunfähigkeit leistet, steht auf [Reicht die BU-Rente des Versorgungswerks für Zahnärzt\*innen?](/ratgeber/berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen). Wie hoch die Rente sein sollte, zeigt [Wie hoch sollte die BU-Rente für Zahnärzt\*innen sein?](/ratgeber/berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen).
 
-## Was kostet eine BU als Zahnärzt\*in?
+## Was kostet eine BU als Zahnärztin oder Zahnarzt?
 
 Das hängt vor allem von Alter, Gesundheit, Rentenhöhe und Endalter ab. Ein Musterbeispiel aus einer Vergleichsrechnung von uns gibt eine Größenordnung:
 

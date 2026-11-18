@@ -45,7 +45,7 @@ faq:
   - frage: "Bin ich nach Praxisabgabe noch versichert?"
     antwort: "Für Schäden aus deiner früheren Tätigkeit gibt es Verträge mit einer Nachhaftung nach Berufsaufgabe. Es gibt auch Verträge, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen oder Notfälle. Wie das in deinem Vertrag geregelt ist, solltest du vor der Abgabe klären."
   - frage: "Was kostet die Berufshaftpflicht für eine Zahnarztpraxis?"
-    antwort: "In einem Musterbeispiel von uns (niedergelassene*r Zahnärzt*in, Einzelpraxis, 5 Millionen Euro pauschal) lagen die Jahresbeiträge in zwei Tarifen zwischen 436 und 613 Euro. Mit jeder angestellten Zahnärztin oder jedem angestellten Zahnarzt steigt der Beitrag. Beiträge können heute abweichen."
+    antwort: "In einem Musterbeispiel von uns (Einzelpraxis, niedergelassen, 5 Millionen Euro pauschal) lagen die Jahresbeiträge in zwei Tarifen zwischen 436 und 613 Euro. Mit jeder angestellten Zahnärztin oder jedem angestellten Zahnarzt steigt der Beitrag. Beiträge können heute abweichen."
 verwandt: []
 hinweise:
   - nach: "Welche Mindestsumme gilt?"
@@ -81,7 +81,7 @@ Ja, für Vertragszahnärzt\*innen. § 95e verpflichtet dem Wortlaut nach den Ver
 
 | Situation | Je Versicherungsfall | Jahresleistung mindestens |
 |---|---|---|
-| Vertragszahnärzt\*in ohne angestellte Zahnärzt\*innen | 3 Millionen Euro | 6 Millionen Euro (2 × 3) |
+| Vertragszahnarztpraxis ohne angestellte Zahnärzt\*innen | 3 Millionen Euro | 6 Millionen Euro (2 × 3) |
 | Praxis oder Berufsausübungsgemeinschaft mit angestellten Zahnärzt\*innen, MVZ | 5 Millionen Euro | 15 Millionen Euro (3 × 5) |
 
 Die Beträge gelten für Personen- und Sachschäden (§ 95e Abs. 2 und 5 SGB V). Dieselben Beträge nennen Bundeszahnärztekammer und KZBV in ihrem Ratgeber. „Ausreichend“ heißt nach § 95e Abs. 1 Satz 2 beides: Dein individuelles Risiko muss versichert sein, und die Mindestsumme darf nicht unterschritten werden.
@@ -97,7 +97,7 @@ Mit Kassenzulassung weist du den Schutz dem Zulassungsausschuss nach, mit dem An
 Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gibt Verträge speziell für Zahnarztpraxen, die das ausdrücklich regeln:
 
 - **Mitversicherte Personen:** Vertreter\*innen, Assistenzzahnärzt\*innen, Weiterbildungsassistent\*innen, angestellte Zahnärzt\*innen und das Praxispersonal, jeweils für ihre Tätigkeit in deiner Praxis.
-- **Vertretung:** Wenn du eine\*n verhinderte\*n Kolleg\*in vertrittst oder selbst eine Vertretung beschäftigst. Die persönliche Haftpflicht der Vertretung ist dabei nicht immer mitversichert, sie braucht dann eine eigene Berufshaftpflicht.
+- **Vertretung:** Wenn du eine verhinderte Kollegin oder einen verhinderten Kollegen vertrittst oder selbst eine Vertretung beschäftigst. Die persönliche Haftpflicht der Vertretung ist dabei nicht immer mitversichert, sie braucht dann eine eigene Berufshaftpflicht.
 - **Was die Versicherung leistet:** Sie prüft, ob ein Anspruch besteht, wehrt unberechtigte Ansprüche ab und stellt dich von berechtigten frei. Aus unserer Erfahrung ist die Abwehr unberechtigter Ansprüche im Alltag oft der wichtigste Teil.
 - **Kosten:** Es gibt Verträge, die Kosten nicht auf die Versicherungssumme anrechnen. Übersteigt der Anspruch die Summe, werden Prozesskosten aber nur anteilig übernommen.
 - **Serienschäden:** Es gibt Verträge, in denen mehrere Schäden aus derselben Ursache oder aus gleichen, zusammenhängenden Ursachen als ein Versicherungsfall gelten. Dann steht die Summe nur einmal zur Verfügung.
@@ -105,7 +105,7 @@ Neben der Summe gibt es Punkte, die wir bei Zahnarztpraxen immer prüfen. Es gib
 
 ## Was kostet die Berufshaftpflicht für Zahnärzt\*innen?
 
-Weniger, als die Summen vermuten lassen. *Musterbeispiel aus einer Vergleichsrechnung von uns, Beiträge können heute abweichen:* niedergelassene\*r Zahnärzt\*in in einer Einzelpraxis, ambulant operativ tätig, 5 Millionen Euro pauschal je Versicherungsfall, im Jahr dreifach. Die Jahresbeiträge lagen in zwei Tarifen verschiedener Versicherer zwischen 436 und 613 Euro.
+Weniger, als die Summen vermuten lassen. *Musterbeispiel aus einer Vergleichsrechnung von uns, Beiträge können heute abweichen:* eine niedergelassene Einzelpraxis, ambulant operativ tätig, 5 Millionen Euro pauschal je Versicherungsfall, im Jahr dreifach. Die Jahresbeiträge lagen in zwei Tarifen verschiedener Versicherer zwischen 436 und 613 Euro.
 
 Die beiden Tarife waren nicht gleich gebaut: Einer hatte eine Selbstbeteiligung von 500 Euro und eine deutlich niedrigere Summe für Vermögensschäden, der andere keine Selbstbeteiligung und 5 Millionen Euro auch für Vermögensschäden. Berechnet wird der Beitrag nach der Zahl der Zahnärzt\*innen in der Praxis, mit jeder angestellten Zahnärztin und jedem angestellten Zahnarzt steigt er also.
 

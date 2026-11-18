@@ -34,14 +34,13 @@ const jsonLd = [
 // Redaktioneller Überblick je Thema (optional, src/texte/themen/<id>.md), ab drei Unterseiten.
 const texte = import.meta.glob('../../texte/themen/*.md', { eager: true }) as Record<string, { Content: any }>;
 const Text = texte[`../../texte/themen/${g.id}.md`]?.Content;
-const anzahl = g.seiten.length === 1 ? 'eine Frage' : `${g.seiten.length} Fragen`;
 ---
 <Base title={`${titel}: alle Fragen | zahnarzt-versicherungen.de`} description={`${g.beschreibung} Antworten für Zahnärzt*innen mit Quellen und Stand.`} path={pfad} jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: g.titel, href: pfad }]}>
   <div class="rahmen">
     <header class="seitenkopf">
       <p class="thema-marke"><Icon name={g.icon} size={20} />Thema</p>
       <h1>{titel}</h1>
-      <p class="einleitung">{g.beschreibung} Hier findest du {anzahl} dazu, jeweils kurz beantwortet und mit Quellen.</p>
+      <p class="einleitung">{g.beschreibung} {g.seiten.length === 1 ? 'Hier findest du die erste Frage dazu, kurz beantwortet und mit Quellen. Weitere folgen.' : `Hier findest du ${g.seiten.length} Fragen dazu, jede kurz beantwortet und mit Quellen.`}</p>
     </header>
     <ul class="karten thema-karten">
       {g.seiten.map((s) => (

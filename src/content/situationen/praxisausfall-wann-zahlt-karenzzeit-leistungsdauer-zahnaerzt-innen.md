@@ -1,7 +1,7 @@
 ---
 frage: "Wann zahlt die Praxisausfallversicherung für Zahnärzt*innen, und was bedeuten Karenzzeit und Haftzeit?"
 titel: "Praxisausfall Zahnarztpraxis: Karenzzeit und Haftzeit"
-kurzantwort: "Die Praxisausfallversicherung zahlt, wenn du als Inhaber*in der Zahnarztpraxis ärztlich festgestellt arbeitsunfähig bist: nach Ablauf der vereinbarten Karenzzeit und längstens bis zum Ende der Haftzeit. Deutliche Unterschiede zwischen Verträgen gibt es bei den Ausschlüssen."
+kurzantwort: "Die Praxisausfallversicherung zahlt, wenn du als Inhaberin oder Inhaber der Zahnarztpraxis ärztlich festgestellt arbeitsunfähig bist: nach Ablauf der vereinbarten Karenzzeit und längstens bis zum Ende der Haftzeit. Deutliche Unterschiede zwischen Verträgen gibt es bei den Ausschlüssen."
 metaDescription: "Wann die Praxisausfallversicherung für Zahnärzt*innen zahlt, wie Karenzzeit und Haftzeit laufen und in welchen Fällen sie nicht leistet."
 status: freigegeben
 stand: "2026-11-16"
@@ -29,7 +29,7 @@ faq:
     antwort: "Das hängt vom Vertrag ab. Es gibt Verträge, in denen Schwangerschaft und Entbindung allein kein Leistungsfall sind, und Tarife, die schwangerschaftsbedingte Erkrankungen ausdrücklich einschließen. Wenn das für dich ein Thema ist, kläre es vor dem Abschluss."
   - frage: "Ist eine Quarantäne oder Pandemie versichert?"
     antwort: "Je nach Vertrag. Eine behördliche Quarantäne kann versichert sein, je nach Vertrag aber nur als Anordnung im Einzelfall und nicht bei einer Epidemie oder Pandemie. Davon zu trennen ist die eigene Erkrankung: Ob du versichert bist, wenn dich die Infektion selbst arbeitsunfähig macht, regeln Verträge unterschiedlich. Es gibt Tarife, die das ausdrücklich einschließen."
-  - frage: "Muss ich als Zahnärzt*in ganz ausfallen, damit gezahlt wird?"
+  - frage: "Muss ich als Zahnärztin oder Zahnarzt ganz ausfallen, damit gezahlt wird?"
     antwort: "In der Regel ja. Arbeitsunfähig bist du nach den üblichen Definitionen, wenn du deine Tätigkeit vorübergehend in keiner Weise ausüben kannst und auch nicht ausübst. Manche Tarife sehen zusätzlich eine befristete Wiedereingliederung bei teilweiser Arbeitsfähigkeit vor."
 verwandt:
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
@@ -53,7 +53,7 @@ cta:
 
 ## Wann zahlt die Praxisausfallversicherung?
 
-Sie zahlt, wenn du als Inhaber\*in der Zahnarztpraxis arbeitsunfähig bist, also wegen Krankheit oder Unfall vorübergehend gar nicht behandeln kannst. Ein Arzt oder eine Ärztin muss das feststellen. Wer noch stundenweise arbeitet, gilt in der Regel nicht als arbeitsunfähig.
+Sie zahlt, wenn du als Inhaberin oder Inhaber der Zahnarztpraxis arbeitsunfähig bist, also wegen Krankheit oder Unfall vorübergehend gar nicht behandeln kannst. Ein Arzt oder eine Ärztin muss das feststellen. Wer noch stundenweise arbeitet, gilt in der Regel nicht als arbeitsunfähig.
 
 Je nach Vertrag kommt ein zweiter Auslöser dazu: die behördlich angeordnete Quarantäne, die sich gegen dich oder gegen deine Praxis richtet.
 
