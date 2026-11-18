@@ -1,9 +1,9 @@
 ---
 frage: "Ab wann zahlt die Rechtsschutzversicherung? Wartezeit, Wechsel, Nachhaftung"
 titel: "Rechtsschutz Zahnarztpraxis: Wartezeit und Nachhaftung"
-kurzantwort: "Die Rechtsschutzversicherung zahlt für Fälle, deren Auslöser nach Vertragsbeginn und nach einer Wartezeit liegt, im Straf-Rechtsschutz gilt in der Regel keine. Endet dein Vertrag mit der Aufgabe deiner Zahnarztpraxis, bleiben je nach Vertrag ein bis drei Jahre Schutz für neue Fälle, nicht in jedem Vertrag."
+kurzantwort: "Die Rechtsschutzversicherung zahlt für Fälle, deren Auslöser nach Vertragsbeginn und nach einer Wartezeit liegt. Im Straf-Rechtsschutz gilt in der Regel keine Wartezeit. Endet dein Vertrag mit der Aufgabe deiner Zahnarztpraxis, sehen manche Verträge noch ein bis drei Jahre Schutz für neue Fälle vor."
 metaDescription: "Rechtsschutz für Zahnärzt*innen: Wartezeit, Rechtsschutzfall, Vorvertraglichkeit, Versichererwechsel, Kündigung und Nachhaftung nach der Praxisabgabe."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 78
@@ -99,7 +99,7 @@ Für Fälle aus der alten Vertragszeit bleibt zunächst der alte Versicherer zus
 
 ## Kann der Versicherer nach Rechtsschutzfällen kündigen?
 
-Ja. Je nach Vertrag können Versicherer und Versicherungsnehmer\*in kündigen, wenn innerhalb von zwölf Monaten zwei oder drei Rechtsschutzfälle eingetreten sind, für die Versicherungsschutz besteht. Die Kündigung muss dann in der Regel innerhalb eines Monats erfolgen, nachdem der Versicherer seine Leistungspflicht bestätigt hat.
+Ja. Je nach Vertrag können beide Seiten kündigen, wenn innerhalb von zwölf Monaten zwei oder drei Rechtsschutzfälle eingetreten sind, für die Versicherungsschutz besteht. Die Kündigung muss dann in der Regel innerhalb eines Monats erfolgen, nachdem der Versicherer seine Leistungspflicht bestätigt hat.
 
 Nach manchen Verträgen kannst du selbst schon nach dem ersten Fall kündigen. Lehnt der Versicherer den Schutz ab, obwohl er leisten müsste, hast du je nach Vertrag ebenfalls ein Kündigungsrecht.
 
@@ -107,7 +107,7 @@ Nach manchen Verträgen kannst du selbst schon nach dem ersten Fall kündigen. L
 
 Grundsätzlich endet der Schutz mit dem Vertrag. Endet der Vertrag aber durch Berufsaufgabe oder Tod, sehen die Musterbedingungen und mehrere Verträge eine Nachhaftung vor: Versichert sind dann auch Fälle, die nach Vertragsende eintreten und mit der versicherten Tätigkeit zusammenhängen.
 
-In den Bedingungen, die wir vergleichen, liegt diese Nachhaftung allgemein zwischen einem und drei Jahren, in einem Vertrag gibt es vier Jahre nur für Verfahren mit der Kassenärztlichen Vereinigung:
+In den Bedingungen, die wir vergleichen, liegt diese Nachhaftung allgemein zwischen einem und drei Jahren. Ein Vertrag sieht außerdem vier Jahre vor, nur für Verfahren mit der Kassenärztlichen Vereinigung:
 
 - **Ein Jahr:** in den Musterbedingungen und in mehreren Verträgen, darunter ein Vertrag für Zahnarztpraxen.
 - **Drei Jahre:** in einem Vertrag für Selbstständige, in einem anderen nur im Spezial-Straf-Rechtsschutz für niedergelassene Heilberufe.

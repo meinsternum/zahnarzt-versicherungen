@@ -3,7 +3,7 @@ frage: "Rechtsschutz für die Zahnarztpraxis: Streit mit Team, Vermieter, Labor 
 titel: "Rechtsschutz Zahnarztpraxis: Team, Miete, Verträge"
 kurzantwort: "Für deine Zahnarztpraxis deckt der Rechtsschutz für Selbstständige in der Regel Streit mit deinem Team und, wenn die Räume eingeschlossen sind, Streit mit dem Vermieter. Bei Verträgen mit Labor, Depot oder Lieferanten unterscheiden sich die Verträge stark: teils gar nicht, teils nur vor Gericht."
 metaDescription: "Streit mit ZFA, Vermieter, Labor oder Depot: Was der Praxis-Rechtsschutz für Zahnärzt*innen deckt, wo Verträge sich unterscheiden und was ausgeschlossen ist."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 74
@@ -17,8 +17,8 @@ quellen:
   - titel: "Versicherungsbedingungen eines Versicherers zur Rechtsschutzversicherung für Zahnarztpraxen, Stand 01.09.2026"
 faq:
   - frage: "Ist eine Kündigungsschutzklage meiner ZFA über den Praxis-Rechtsschutz versichert?"
-    antwort: "In der Regel ja, wenn dein Vertrag den Arbeits-Rechtsschutz als Arbeitgeber*in enthält. Er gilt für Streit aus Arbeitsverhältnissen. Der Streit muss nach Ablauf der Wartezeit entstanden sein. Sie beträgt in den Bedingungen, die wir vergleichen, drei bis sechs Monate."
-  - frage: "Zahlt der Rechtsschutz schon die Beratung, bevor ich als Praxisinhaber*in kündige?"
+    antwort: "In der Regel ja, wenn dein Vertrag den Arbeits-Rechtsschutz auf Arbeitgeberseite enthält. Er gilt für Streit aus Arbeitsverhältnissen. Der Streit muss nach Ablauf der Wartezeit entstanden sein. Sie beträgt in den Bedingungen, die wir vergleichen, drei bis sechs Monate."
+  - frage: "Zahlt der Rechtsschutz schon die Beratung, bevor ich als Praxisinhaberin oder Praxisinhaber kündige?"
     antwort: "Das hängt vom Vertrag ab. Solange niemand gegen eine Rechtspflicht verstoßen hat oder verstoßen haben soll, liegt nach den Bedingungen noch kein Versicherungsfall vor. Es gibt Verträge, die trotzdem eine anwaltliche Beratung vor einer Kündigung oder zu einem Aufhebungsvertrag übernehmen, teils mit festem Höchstbetrag."
   - frage: "Ist Streit mit dem Vermieter meiner Zahnarztpraxis versichert?"
     antwort: "Ja, wenn die Praxisräume im Wohnungs- und Grundstücks-Rechtsschutz eingeschlossen sind. Je nach Vertrag gilt das für alle selbst genutzten Gewerbeeinheiten oder nur für das Objekt, das im Versicherungsschein steht. Bei einem Vertrag ist es ein eigener Baustein."
@@ -52,11 +52,11 @@ Ein Praxis-Rechtsschutz deckt nicht automatisch jeden Streit, den eine Zahnarztp
 
 ## Ist Streit mit deinem Praxisteam versichert?
 
-In der Regel ja: Alle Bedingungen für Selbstständige, die wir vergleichen, enthalten einen Arbeits-Rechtsschutz für dich als Arbeitgeber\*in. Er gilt für Streit aus Arbeitsverhältnissen, also etwa um eine Kündigung, eine Abmahnung, offenen Lohn oder ein Arbeitszeugnis.
+In der Regel ja: Alle Bedingungen für Selbstständige, die wir vergleichen, enthalten einen Arbeits-Rechtsschutz für dich auf Arbeitgeberseite. Er gilt für Streit aus Arbeitsverhältnissen, also etwa um eine Kündigung, eine Abmahnung, offenen Lohn oder ein Arbeitszeugnis.
 
 Zwei Dinge solltest du wissen. Erstens gilt für den Arbeits-Rechtsschutz eine Wartezeit ab Vertragsbeginn, in den Bedingungen, die wir vergleichen, drei bis sechs Monate. Zweitens zählt als Versicherungsfall der Zeitpunkt, zu dem du oder die Gegenseite gegen Rechtspflichten verstoßen hat oder verstoßen haben soll. Solange es nur um die Frage geht, ob du einer Mitarbeiterin kündigen solltest, liegt also noch kein Versicherungsfall vor.
 
-Für diese Phase haben einzelne Verträge eigene Leistungen. Es gibt Verträge, die dir als Arbeitgeber\*in einmal im Jahr eine anwaltliche Beratung vor einer Kündigung oder zu einer Aufhebungsvereinbarung vermitteln und bezahlen, ebenso die Prüfung eines Arbeitsvertrags oder Arbeitszeugnisses. Andere übernehmen Anwaltskosten bei einem Aufhebungsvertrag auch ohne Versicherungsfall. In den Bedingungen, die wir vergleichen, liegt der Höchstbetrag dafür zwischen 1.000 und 1.500 Euro.
+Für diese Phase haben einzelne Verträge eigene Leistungen. Es gibt Verträge, die dir als Praxisinhaberin oder Praxisinhaber einmal im Jahr eine anwaltliche Beratung vor einer Kündigung oder zu einer Aufhebungsvereinbarung vermitteln und bezahlen, ebenso die Prüfung eines Arbeitsvertrags oder Arbeitszeugnisses. Andere übernehmen Anwaltskosten bei einem Aufhebungsvertrag auch ohne Versicherungsfall. In den Bedingungen, die wir vergleichen, liegt der Höchstbetrag dafür zwischen 1.000 und 1.500 Euro.
 
 **Fiktives Beispiel:** Eine Zahnärztin kündigt einer ZFA nach mehreren Abmahnungen. Die ZFA erhebt Kündigungsschutzklage. Ist die Wartezeit abgelaufen und liegt der erste Verstoß, um den gestritten wird, nach Vertragsbeginn, ist das ein Fall für den Arbeits-Rechtsschutz. Kommen mehrere Verstöße in Betracht, ist nach den Bedingungen der erste entscheidend. Liegt er vor Vertragsbeginn, besteht kein Schutz.
 
@@ -109,7 +109,7 @@ Diese Ausschlüsse stehen in allen Bedingungen, die wir vergleichen:
 
 ## Worauf du achten kannst
 
-- Steht der Arbeits-Rechtsschutz als Arbeitgeber\*in in deinem Vertrag, und gibt es Beratungsleistungen vor einer Kündigung?
+- Steht der Arbeits-Rechtsschutz auf Arbeitgeberseite in deinem Vertrag, und gibt es Beratungsleistungen vor einer Kündigung?
 - Sind deine Praxisräume eingeschlossen, und stimmt das Objekt im Versicherungsschein noch, etwa nach einem Umzug?
 - Wie behandelt dein Vertrag Verträge der Berufsausübung: gar nicht, nur vor Gericht oder auch außergerichtlich? Lass dir für Labor- und Depotverträge schriftlich bestätigen, wie der Versicherer sie einordnet.
 - Gibt es ein Forderungsmanagement für unstreitige Rechnungen?
@@ -117,10 +117,10 @@ Diese Ausschlüsse stehen in allen Bedingungen, die wir vergleichen:
 
 ## Unsere Einschätzung
 
-Für Zahnärzt\*innen mit eigener Praxis empfehlen wir einen Rechtsschutz mit Arbeits-Rechtsschutz als Arbeitgeber\*in und mit eingeschlossenen Praxisräumen, weil Team und Miete die Streitfälle sind, die jede Praxis treffen können. Beim Vertrags-Rechtsschutz würden wir nicht auf den Namen des Bausteins schauen, sondern auf zwei Fragen: Sind Verträge der Berufsausübung überhaupt versichert, und ab welchem Schritt? Ein Vertrag, der nur Hilfsgeschäfte abdeckt, passt aus unserer Sicht nur, wenn dir dieses Risiko bewusst ist.
+Für Zahnärzt\*innen mit eigener Praxis empfehlen wir einen Rechtsschutz mit Arbeits-Rechtsschutz auf Arbeitgeberseite und mit eingeschlossenen Praxisräumen, weil Team und Miete die Streitfälle sind, die jede Praxis treffen können. Beim Vertrags-Rechtsschutz würden wir nicht auf den Namen des Bausteins schauen, sondern auf zwei Fragen: Sind Verträge der Berufsausübung überhaupt versichert, und ab welchem Schritt? Ein Vertrag, der nur Hilfsgeschäfte abdeckt, passt aus unserer Sicht nur, wenn dir dieses Risiko bewusst ist.
 
 ## Was du mitnehmen kannst
 
-Nimm deine Bedingungen und such drei Stellen: den Arbeits-Rechtsschutz als Arbeitgeber\*in, das versicherte Objekt im Wohnungs- und Grundstücks-Rechtsschutz und die Regel zu Verträgen der Berufsausübung. Wenn du eine der drei nicht findest oder nicht sicher bist, wie dein Laborvertrag eingeordnet wird, ist ein Gespräch sinnvoll.
+Nimm deine Bedingungen und such drei Stellen: den Arbeits-Rechtsschutz auf Arbeitgeberseite, das versicherte Objekt im Wohnungs- und Grundstücks-Rechtsschutz und die Regel zu Verträgen der Berufsausübung. Wenn du eine der drei nicht findest oder nicht sicher bist, wie dein Laborvertrag eingeordnet wird, ist ein Gespräch sinnvoll.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 17.11.2026. Grundlagen sind Gesetz, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste Fassung 01.05.2024). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

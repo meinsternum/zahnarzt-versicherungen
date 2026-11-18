@@ -3,7 +3,7 @@ frage: "Welche Rechtsschutzversicherung brauchen Zahnärzt*innen?"
 titel: "Rechtsschutz für Zahnärzt*innen: Welche Bausteine?"
 kurzantwort: "Welcher Rechtsschutz passt, hängt von deiner Berufsphase ab: Angestellt passen Privat- und Berufs-Rechtsschutz, mit eigener Zahnarztpraxis kommt ein Rechtsschutz für Selbstständige dazu. Verlangt eine Patientin wegen eines Behandlungsfehlers Geld, ist das zuerst ein Fall für die Berufshaftpflicht."
 metaDescription: "Rechtsschutz für Zahnärzt*innen: welche Bereiche und Leistungsarten zählen, welche Bausteine je Berufsphase passen und was keine Police abdeckt."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 70
@@ -18,12 +18,12 @@ quellen:
   - titel: "§ 127 VVG, Freie Anwaltswahl (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/vvg_2008/__127.html"
 faq:
-  - frage: "Reicht als Zahnärzt*in die Berufshaftpflicht, oder brauche ich zusätzlich Rechtsschutz?"
+  - frage: "Reicht als Zahnärztin oder Zahnarzt die Berufshaftpflicht, oder brauche ich zusätzlich Rechtsschutz?"
     antwort: "Die beiden decken Verschiedenes ab. Schadenersatzansprüche nach einem Behandlungsfehlervorwurf sind zuerst ein Fall für die Berufshaftpflicht, sie wehrt unberechtigte Forderungen ab. Die Rechtsschutzversicherung trägt Kosten, wenn du selbst Rechte durchsetzt oder dich verteidigst, zum Beispiel im Arbeitsrecht, vor dem Sozialgericht, im Strafverfahren oder vor der Kammer."
   - frage: "Bin ich mit meinem Privat-Rechtsschutz auch in der eigenen Praxis versichert?"
     antwort: "Nein. In den Musterbedingungen des Versicherungsverbands ist der Privat-Rechtsschutz ausdrücklich nicht für eine freiberufliche oder sonstige selbstständige Tätigkeit gedacht. Für die Praxis brauchst du einen eigenen Rechtsschutz für Selbstständige."
   - frage: "Welche Leistungsarten sind für Zahnärzt*innen mit eigener Praxis wichtig?"
-    antwort: "Aus unserer Sicht vor allem Arbeits-Rechtsschutz als Arbeitgeber*in, Vertrags-Rechtsschutz für die Praxis, Sozial-Rechtsschutz, Disziplinar- und Standes-Rechtsschutz und Straf-Rechtsschutz. Ob ein Spezial-Straf-Rechtsschutz dazukommt, entscheidest du gesondert."
+    antwort: "Aus unserer Sicht vor allem Arbeits-Rechtsschutz auf Arbeitgeberseite, Vertrags-Rechtsschutz für die Praxis, Sozial-Rechtsschutz, Disziplinar- und Standes-Rechtsschutz und Straf-Rechtsschutz. Ob ein Spezial-Straf-Rechtsschutz dazukommt, entscheidest du gesondert."
   - frage: "Ist Streit mit Labor, Depot oder Patient*innen über Rechnungen automatisch versichert?"
     antwort: "Nicht automatisch. Dafür brauchst du Vertrags-Rechtsschutz für die Praxis. Die Musterbedingungen sehen ihn im Rechtsschutz für Selbstständige nicht vor. Verträge für Heilberufe enthalten ihn teils, je nach Vertrag nur für das Gerichtsverfahren."
   - frage: "Kann ich meinen Anwalt selbst wählen?"
@@ -61,9 +61,9 @@ Eine Rechtsschutzversicherung ist in Bereiche aufgeteilt, die du einzeln versich
 Für Zahnärzt\*innen heißt das:
 
 - **Privat:** Streit im privaten Alltag. Eine freiberufliche oder selbstständige Tätigkeit ist hier ausdrücklich nicht versichert.
-- **Beruf als Angestellte\*r:** Streit aus deiner Tätigkeit als Arbeitnehmer\*in, etwa mit der Praxisinhaberin oder dem MVZ.
+- **Beruf in Anstellung:** Streit aus deinem Arbeitsverhältnis, etwa mit der Praxisinhaberin oder dem MVZ.
 - **Praxis:** deine im Versicherungsschein bezeichnete selbstständige Tätigkeit, also die eigene Zahnarztpraxis.
-- **Verkehr:** als Fahrer\*in, Halter\*in oder Eigentümer\*in eines Fahrzeugs.
+- **Verkehr:** wenn du ein Fahrzeug fährst, hältst oder besitzt.
 - **Immobilie:** Streit aus Miete oder Eigentum. In einem Vertrag für Zahnarztpraxen sind zum Beispiel selbst genutzte Räume versichert, wenn sie im Versicherungsschein bezeichnet sind.
 
 Wichtig ist an der Stelle: Der Privat-Rechtsschutz reicht nicht in die Praxis hinein. Wer niedergelassen ist, braucht dafür einen eigenen Baustein.
@@ -72,7 +72,7 @@ Wichtig ist an der Stelle: Der Privat-Rechtsschutz reicht nicht in die Praxis hi
 
 Innerhalb jedes Bereichs legen die Leistungsarten fest, für welche Rechtsgebiete gezahlt wird. Für Zahnärzt\*innen zählen vor allem diese:
 
-- **Arbeits-Rechtsschutz:** Als Inhaber\*in streitest du mit deinem Team, etwa mit einer ZFA über eine Kündigung. Als Angestellte\*r streitest du mit deinem Arbeitgeber. Mehr dazu auf den Seiten [Rechtsschutz für die Zahnarztpraxis](/ratgeber/rechtsschutz-zahnarztpraxis-team-vermieter-vertraege) und [Rechtsschutz für angestellte Zahnärzt\*innen](/ratgeber/rechtsschutz-angestellte-zahnaerzt-innen).
+- **Arbeits-Rechtsschutz:** Mit eigener Praxis streitest du mit deinem Team, etwa mit einer ZFA über eine Kündigung. In Anstellung streitest du mit deinem Arbeitgeber. Mehr dazu auf den Seiten [Rechtsschutz für die Zahnarztpraxis](/ratgeber/rechtsschutz-zahnarztpraxis-team-vermieter-vertraege) und [Rechtsschutz für angestellte Zahnärzt\*innen](/ratgeber/rechtsschutz-angestellte-zahnaerzt-innen).
 - **Vertrags-Rechtsschutz für die Praxis:** Streit mit Labor, Depot, Lieferanten oder Patient\*innen über eine Rechnung. Die Musterbedingungen sehen ihn im Rechtsschutz für Selbstständige nicht vor. Verträge für Heilberufe enthalten ihn teils, je nach Vertrag nur für das Gerichtsverfahren.
 - **Sozial-Rechtsschutz:** Streit vor dem Sozialgericht, in den Musterbedingungen erst ab dem Gerichtsverfahren, je nach Vertrag auch im Widerspruchsverfahren davor. Bei Streit mit der KZV kommt am ehesten der Sozial-Rechtsschutz in Betracht. Einige Verträge regeln Regresse der „Kassenärztlichen Vereinigung“ ausdrücklich, die KZV nennt keiner der Verträge, die wir vergleichen. Was das bedeutet, steht auf der Seite [Rechtsschutz bei Streit mit der KZV](/ratgeber/rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen).
 - **Verwaltungs-Rechtsschutz:** Streit mit Behörden. In den Musterbedingungen nur in Verkehrssachen, in Verträgen für Selbstständige je nach Vertrag auch für die berufliche Tätigkeit.
@@ -83,7 +83,7 @@ Was die Versicherung im Fall zahlt, ist in den Musterbedingungen beschrieben: un
 
 ## Welche Bausteine passen in welcher Berufsphase?
 
-Kurz gesagt: Der Bedarf wächst mit der Verantwortung. In der Assistenzzeit geht es um dich als Arbeitnehmer\*in, mit eigener Praxis um ein ganzes Unternehmen.
+Kurz gesagt: Der Bedarf wächst mit der Verantwortung. In der Assistenzzeit geht es um dein eigenes Arbeitsverhältnis, mit eigener Praxis um ein ganzes Unternehmen.
 
 **Assistenzzeit und Anstellung:** Hier passen Privat- und Berufs-Rechtsschutz. Es gibt Verträge, die angestellte Zahnärzt\*innen ausdrücklich als Zielgruppe nennen. Ein solcher Vertrag schließt zum Beispiel die Vorbereitung auf die eigene Niederlassung einschließlich eines Praxiskaufs für längstens 24 Monate ein. Der Wortlaut spricht dabei von einer Tätigkeit als Arzt, lass dir bestätigen, dass das für die zahnärztliche Niederlassung gilt.
 

@@ -1,9 +1,9 @@
 ---
 frage: "Welcher Rechtsschutz passt für angestellte Zahnärzt*innen und die Assistenzzeit?"
 titel: "Rechtsschutz für angestellte Zahnärzt*innen"
-kurzantwort: "Für angestellte Zahnärzt*innen passt ein eigener Berufs-Rechtsschutz für Nichtselbstständige: Er enthält in der Regel Arbeits-Rechtsschutz für Streit mit Praxisinhaber*in oder MVZ und Standes-Rechtsschutz. Über den Praxisvertrag deines Arbeitgebers bist du nur bei der Arbeit mitversichert, nicht für Streit mit ihm."
+kurzantwort: "Für angestellte Zahnärzt*innen passt ein eigener Berufs-Rechtsschutz für Nichtselbstständige: Er enthält in der Regel Arbeits-Rechtsschutz für Streit mit deiner Praxis oder dem MVZ und Standes-Rechtsschutz. Über den Praxisvertrag deines Arbeitgebers bist du nur bei der Arbeit mitversichert, nicht für Streit mit ihm."
 metaDescription: "Angestellt oder in der Vorbereitungsassistenz: Welcher Rechtsschutz Zahnärzt*innen bei Streit mit dem Arbeitgeber schützt und was für Nebentätigkeiten gilt."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 76
@@ -21,10 +21,10 @@ faq:
   - frage: "Bin ich als angestellte Zahnärztin über den Rechtsschutz der Praxis mitversichert?"
     antwort: "Teilweise. Die Praxisverträge, die wir vergleichen, versichern Mitarbeitende, soweit sie im versicherten Betrieb tätig und in Ausübung dieser Tätigkeit betroffen sind. Einen Streit mit deinem Arbeitgeber deckt dieser Vertrag nicht, denn Streit von Mitversicherten gegen den Versicherungsnehmer ist ausgeschlossen."
   - frage: "Ist Streit um Kündigung, Gehalt oder Zeugnis mit meinem Praxisinhaber versichert?"
-    antwort: "Ja, über einen eigenen Arbeits-Rechtsschutz als Arbeitnehmer*in. Er ist in den Berufs-Bausteinen für Angestellte, die wir vergleichen, in der Regel enthalten. Der Streit muss nach Ablauf der Wartezeit entstehen. Sie beträgt in den Bedingungen, die wir vergleichen, drei bis sechs Monate ab Vertragsbeginn."
+    antwort: "Ja, über einen eigenen Arbeits-Rechtsschutz auf Arbeitnehmerseite. Er ist in den Berufs-Bausteinen für Angestellte, die wir vergleichen, in der Regel enthalten. Der Streit muss nach Ablauf der Wartezeit entstehen. Sie beträgt in den Bedingungen, die wir vergleichen, drei bis sechs Monate ab Vertragsbeginn."
   - frage: "Was gilt, wenn mir ein Aufhebungsvertrag angeboten wird?"
     antwort: "Es gibt Verträge, die eine anwaltliche Beratung zum Aufhebungsvertrag auch ohne Versicherungsfall bezahlen. In den Bedingungen, die wir vergleichen, liegt der Höchstbetrag dafür zwischen 1.000 und 1.500 Euro."
-  - frage: "Brauche ich als Angestellte*r einen Standes-Rechtsschutz?"
+  - frage: "Brauche ich in Anstellung einen Standes-Rechtsschutz?"
     antwort: "Der Disziplinar- und Standes-Rechtsschutz ist in den Berufs-Bausteinen für Angestellte, die wir vergleichen, in der Regel enthalten. Er betrifft berufsrechtliche Verfahren, etwa vor der Kammer. Wie weit er reicht, steht auf unserer Seite zu Kammer, Berufsgericht und Approbation."
   - frage: "Ist meine Praxisvertretung auf Honorarbasis mitversichert?"
     antwort: "In der Regel nicht. Die Berufs-Bausteine für Angestellte schließen selbstständige Tätigkeiten aus. Ein Vertrag für angestellte Ärzt*innen und Zahnärzt*innen schließt gelegentliche Nebentätigkeiten ein, darunter nicht operative Praxisvertretungen an höchstens 90 Tagen im Jahr. Lass dir bestätigen, dass das für zahnärztliche Tätigkeit gilt."
@@ -45,11 +45,11 @@ hinweise:
     text: "Du hast eine Vertretung oder Nebentätigkeit und willst wissen, ob sie versichert ist? Schreib uns kurz per WhatsApp."
 cta:
   titel: "Rechtsschutz für deine Anstellung prüfen"
-  text: "Im Erstgespräch sehen wir uns an, was dein Vertrag als angestellte Zahnärzt*in abdeckt, was in der Assistenzzeit gilt und was beim Wechsel in die eigene Praxis passiert. Das Gespräch kostet nichts."
+  text: "Im Erstgespräch sehen wir uns an, was dein Vertrag in Anstellung abdeckt, was in der Assistenzzeit gilt und was beim Wechsel in die eigene Praxis passiert. Das Gespräch kostet nichts."
   button: "Erstgespräch buchen"
 ---
 
-Als angestellte Zahnärzt\*in bist du über den Rechtsschutz der Praxis für manches mitversichert, was dir bei der Arbeit passiert. Für den Streit mit deinem Arbeitgeber gilt das nicht, und gerade der ist für Angestellte der naheliegende Fall.
+Als angestellte Zahnärztin oder angestellter Zahnarzt bist du über den Rechtsschutz der Praxis für manches mitversichert, was dir bei der Arbeit passiert. Für den Streit mit deinem Arbeitgeber gilt das nicht, und gerade der ist für Angestellte der naheliegende Fall.
 
 ## Bist du über den Praxis-Rechtsschutz deines Arbeitgebers versichert?
 
@@ -61,7 +61,7 @@ Damit sind drei Grenzen verbunden:
 - **Der Arbeitgeber entscheidet mit.** Es gibt Verträge, in denen der Versicherungsnehmer einer Leistung für mitversicherte Personen widersprechen und bestimmen kann, ob Kosten für sie übernommen werden.
 - **Nicht alle Bausteine gelten für dich.** Ein Vertrag für Zahnarztpraxen nimmt die Mitarbeitenden ausdrücklich vom erweiterten Straf-Rechtsschutz aus.
 
-Konkret heißt das: Für deine eigenen Interessen als Arbeitnehmer\*in brauchst du einen eigenen Vertrag.
+Konkret heißt das: Für deine eigenen Interessen im Arbeitsverhältnis brauchst du einen eigenen Vertrag.
 
 **Fiktives Beispiel:** Ein angestellter Zahnarzt in einem MVZ streitet mit seinem Arbeitgeber über die vereinbarte Umsatzbeteiligung. Das MVZ hat einen Firmen-Rechtsschutz, in dem er als Mitarbeiter mitversichert ist. Für diesen Streit nützt ihm das nichts. Hat er einen eigenen Berufs-Rechtsschutz mit Arbeits-Rechtsschutz und ist die Wartezeit abgelaufen, ist das ein Fall für diesen Vertrag.
 
@@ -79,9 +79,9 @@ Dieser Vertrag nennt angestellte Zahnärzt\*innen ausdrücklich. Er enthält au�
 
 ## Was gilt in der Vorbereitungsassistenz?
 
-Für die Eintragung ins Zahnarztregister, die Voraussetzung für die Zulassung als Vertragszahnärzt\*in ist, brauchst du in der Regel eine Vorbereitungszeit von mindestens zwei Jahren. Mindestens sechs Monate davon leistest du als Assistent\*in oder Vertreter\*in eines oder mehrerer Kassenzahnärzt\*innen ab. Eine Vertretung setzt eine vorherige, mindestens einjährige unselbstständige Assistenz voraus. Die Eintragung ins Zahnarztregister beantragst du bei der Kassenzahnärztlichen Vereinigung (§ 3 Zahnärzte-ZV).
+Für die Eintragung ins Zahnarztregister, die Voraussetzung für die vertragszahnärztliche Zulassung ist, brauchst du in der Regel eine Vorbereitungszeit von mindestens zwei Jahren. Mindestens sechs Monate davon leistest du in Assistenz oder Vertretung eines oder mehrerer Kassenzahnärzt\*innen ab. Eine Vertretung setzt eine vorherige, mindestens einjährige unselbstständige Assistenz voraus. Die Eintragung ins Zahnarztregister beantragst du bei der Kassenzahnärztlichen Vereinigung (§ 3 Zahnärzte-ZV).
 
-Als angestellte Assistenzzahnärzt\*in bist du Arbeitnehmer\*in. Streit mit der Praxis, in der du deine Assistenzzeit ableistest, ist deshalb ein Fall für deinen eigenen Arbeits-Rechtsschutz, nicht für den Praxisvertrag deiner Ausbilderin. Für den späteren Zulassungsantrag brauchst du Bescheinigungen über deine zahnärztliche Tätigkeit seit der Approbation (§ 18 Zahnärzte-ZV), sammle sie schon jetzt.
+In der Assistenzzeit bist du angestellt. Streit mit der Praxis, in der du deine Assistenzzeit ableistest, ist deshalb ein Fall für deinen eigenen Arbeits-Rechtsschutz, nicht für den Praxisvertrag deiner Ausbilderin. Für den späteren Zulassungsantrag brauchst du Bescheinigungen über deine zahnärztliche Tätigkeit seit der Approbation (§ 18 Zahnärzte-ZV), sammle sie schon jetzt.
 
 ## Ist eine selbstständige Nebentätigkeit mitversichert?
 
@@ -89,7 +89,7 @@ In der Regel nicht. Die Privat- und Berufs-Bausteine für Angestellte, die wir v
 
 Als selbstständig gilt nach diesen Bedingungen jede Tätigkeit, mit der du Einkünfte erzielst, die kein Lohn oder Gehalt und keine Rente sind. Bekommst du für eine Vertretung oder ein Gutachten kein Gehalt, sondern ein Honorar, fällt das nach dieser Definition darunter.
 
-Eine Ausnahme gibt es: Ein Vertrag für angestellte Ärzt\*innen und Zahnärzt\*innen schließt gelegentliche Nebentätigkeiten ein, darunter nicht operative Praxisvertretungen, Notdienste und Tätigkeiten als Gutachter\*in. „Gelegentlich“ heißt dort: im Einzelfall, keine dauerhafte Erwerbsquelle, Gutachten an höchstens 60 und die übrigen Tätigkeiten an höchstens 90 Tagen im Jahr. Der Wortlaut spricht von Tätigkeiten „als Arzt“. Lass dir schriftlich bestätigen, dass zahnärztliche Tätigkeiten gemeint sind.
+Eine Ausnahme gibt es: Ein Vertrag für angestellte Ärzt\*innen und Zahnärzt\*innen schließt gelegentliche Nebentätigkeiten ein, darunter nicht operative Praxisvertretungen, Notdienste und Gutachtertätigkeiten. „Gelegentlich“ heißt dort: im Einzelfall, keine dauerhafte Erwerbsquelle, Gutachten an höchstens 60 und die übrigen Tätigkeiten an höchstens 90 Tagen im Jahr. Der Wortlaut spricht von Tätigkeiten „als Arzt“. Lass dir schriftlich bestätigen, dass zahnärztliche Tätigkeiten gemeint sind.
 
 ## Was gilt beim Wechsel in die eigene Praxis?
 

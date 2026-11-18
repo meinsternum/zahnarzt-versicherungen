@@ -1,9 +1,9 @@
 ---
 frage: "Strafverfahren gegen Zahnärzt*innen: Was zahlt der Straf-Rechtsschutz, was der Spezial-Straf-Rechtsschutz?"
 titel: "Strafverfahren: Straf- oder Spezial-Straf-Rechtsschutz?"
-kurzantwort: "Der normale Straf-Rechtsschutz zahlt für Zahnärzt*innen in der Regel nur beim Vorwurf eines fahrlässigen Vergehens, etwa fahrlässiger Körperverletzung bei der Behandlung. Beim Vorwurf des Abrechnungsbetrugs zahlt erst ein erweiterter oder Spezial-Straf-Rechtsschutz, mit Rückforderung bei Verurteilung wegen Vorsatz."
+kurzantwort: "Der normale Straf-Rechtsschutz zahlt Zahnärzt*innen in der Regel nur beim Vorwurf eines fahrlässigen Vergehens, etwa fahrlässiger Körperverletzung. Beim Vorwurf des Abrechnungsbetrugs zahlt erst ein erweiterter oder Spezial-Straf-Rechtsschutz. Bei Verurteilung wegen Vorsatz fordert er die Kosten zurück."
 metaDescription: "Fahrlässige Körperverletzung oder Abrechnungsbetrug: Was der Straf-Rechtsschutz für Zahnärzt*innen zahlt und wann nur der Spezial-Straf-Rechtsschutz hilft."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 72
@@ -35,8 +35,8 @@ faq:
   - frage: "Ab wann gilt der Versicherungsfall im Spezial-Straf-Rechtsschutz?"
     antwort: "In der Regel mit der Einleitung des Ermittlungsverfahrens gegen dich. Als eingeleitet gilt es, wenn die zuständige Behörde es als solches verfügt hat. Der Vertrag muss zu diesem Zeitpunkt bestehen."
   - frage: "Sind meine ZFA und angestellten Zahnärzt*innen im Spezial-Straf-Rechtsschutz mitversichert?"
-    antwort: "In der Regel ja, für ihre Tätigkeit in deiner Praxis. Je nach Vertrag kannst du als Versicherungsnehmer*in widersprechen oder musst ihrem Rechtsschutz vorher zustimmen. Auch ausgeschiedene Mitarbeitende können für Fälle aus ihrer früheren Tätigkeit versichert sein."
-  - frage: "Zahlt der Spezial-Straf-Rechtsschutz auch, wenn ich nur als Zeug*in aussagen soll?"
+    antwort: "In der Regel ja, für ihre Tätigkeit in deiner Praxis. Je nach Vertrag kannst du widersprechen oder musst ihrem Rechtsschutz vorher zustimmen. Auch ausgeschiedene Mitarbeitende können für Fälle aus ihrer früheren Tätigkeit versichert sein."
+  - frage: "Zahlt der Spezial-Straf-Rechtsschutz auch, wenn ich nur als Zeugin oder Zeuge aussagen soll?"
     antwort: "Ja, wenn du dich durch die Aussage selbst belasten könntest. Den Zeugenbeistand durch einen Rechtsanwalt oder eine Rechtsanwältin sehen alle Spezial-Straf-Bedingungen vor, die wir vergleichen."
   - frage: "Sind Verbrechen im Spezial-Straf-Rechtsschutz versichert?"
     antwort: "Je nach Vertrag. In den Bedingungen, die wir vergleichen, reicht die Spanne von ausgeschlossen über nur bestimmte Verbrechen bis mitversichert. Der Betrug im Grundtatbestand ist ein Vergehen, gewerbsmäßiger Bandenbetrug dagegen ein Verbrechen. Dann kommt es darauf an, ob dein Vertrag Verbrechen einschließt."
@@ -85,12 +85,12 @@ Konkret heißt das: Lautet der Vorwurf, du hättest gegenüber der KZV oder gege
 Er zahlt die Verteidigung auch dann, wenn dir ein Vergehen vorgeworfen wird, das nur vorsätzlich begangen werden kann. Das gilt in allen Spezial-Straf-Bedingungen, die wir vergleichen. Dazu kommen Leistungen, die der normale Straf-Rechtsschutz nicht kennt:
 
 - **Anderer Versicherungsfall:** Er tritt in der Regel erst mit der Einleitung des Ermittlungsverfahrens ein, also wenn die zuständige Behörde das Verfahren verfügt hat. Im normalen Straf-Rechtsschutz zählt dagegen der Zeitpunkt der vorgeworfenen Tat.
-- **Zeugenbeistand:** Ein Anwalt oder eine Anwältin begleitet dich, wenn du als Zeug\*in aussagen sollst und dich selbst belasten könntest.
+- **Zeugenbeistand:** Ein Anwalt oder eine Anwältin begleitet dich, wenn du als Zeugin oder Zeuge aussagen sollst und dich selbst belasten könntest.
 - **Firmenstellungnahme:** Richtet sich ein Ermittlungsverfahren gegen die Praxis, ohne dass eine bestimmte Person beschuldigt wird, ist eine anwaltliche Stellungnahme versichert.
 - **Honorar statt Gebührentabelle:** In der Regel trägt der Versicherer statt der gesetzlichen Vergütung ein angemessenes vereinbartes Honorar. Ein Vertrag setzt dafür feste Höchstbeträge.
 - **Verwaltungsrecht:** Versichert ist auch anwaltliche Tätigkeit in Verwaltungsverfahren, soweit sie die Verteidigung im versicherten Strafverfahren unterstützt.
 
-Es gibt Verträge, die als Zwischenstufe einen erweiterten Straf-Rechtsschutz anbieten: Er schließt auch nur vorsätzlich begehbare Vergehen ein, aber keine Verbrechen. Ein Vertrag bietet ihn auch für die selbstständige Tätigkeit an. Ein Vertrag für Zahnarztpraxen sieht ihn nur für den privaten Bereich und die Tätigkeit als Arbeitnehmer\*in vor, für die Praxis dagegen den Spezial-Straf-Rechtsschutz.
+Es gibt Verträge, die als Zwischenstufe einen erweiterten Straf-Rechtsschutz anbieten: Er schließt auch nur vorsätzlich begehbare Vergehen ein, aber keine Verbrechen. Ein Vertrag bietet ihn auch für die selbstständige Tätigkeit an. Ein Vertrag für Zahnarztpraxen sieht ihn nur für den privaten Bereich und die Tätigkeit in Anstellung vor, für die Praxis dagegen den Spezial-Straf-Rechtsschutz.
 
 Außerdem enthalten die Spezial-Straf-Bausteine, die wir vergleichen, den Disziplinar- und Standes-Rechtsschutz. Was das für Verfahren vor der Zahnärztekammer bedeutet, steht auf der Seite [Kammer, Berufsgericht, Approbation](/ratgeber/rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen).
 
@@ -118,7 +118,7 @@ Auch ausgeschiedene Mitarbeitende können für Fälle aus ihrer früheren Tätig
 
 - Das Ermittlungsverfahren wurde vor Vertragsbeginn eingeleitet. Es gibt Verträge, die Vorfälle vor Vertragsschluss einschließen, solange noch kein Ermittlungsverfahren eingeleitet ist. Einer verlangt dafür, dass du bekannte Umstände vorher meldest.
 - Du wirst rechtskräftig wegen Vorsatz verurteilt. Dann fordert der Versicherer die Kosten zurück, mit den oben genannten Ausnahmen.
-- Der Vorwurf betrifft ein reines Verkehrsdelikt als Fahrer\*in. Das schließen mehrere Verträge aus.
+- Der Vorwurf betrifft ein reines Verkehrsdelikt am Steuer. Das schließen mehrere Verträge aus.
 - Es geht um eine Steuerstraftat nach Selbstanzeige. Es gibt Verträge, die das ausschließen.
 - Die vereinbarte Selbstbeteiligung trägst du selbst.
 

@@ -1,9 +1,9 @@
 ---
 frage: "Praxisgründung, Übernahme, BAG: Wann muss der Rechtsschutz für Zahnärzt*innen stehen?"
 titel: "Rechtsschutz bei Praxisgründung und BAG für Zahnärzt*innen"
-kurzantwort: "Als Zahnärzt*in sollte dein Praxis-Rechtsschutz stehen, bevor die Verträge der neuen Praxis laufen: Es gilt eine Wartezeit von drei bis sechs Monaten, und versichert ist nur Streit, dessen erster Verstoß nach Vertragsbeginn liegt. Streit unter Praxispartner*innen im selben Vertrag ist in der Regel ausgeschlossen."
+kurzantwort: "Dein Praxis-Rechtsschutz sollte stehen, bevor die Verträge deiner neuen Zahnarztpraxis laufen, denn es gilt eine Wartezeit von drei bis sechs Monaten. Versichert ist nur Streit, dessen erster Verstoß nach Vertragsbeginn liegt. Streit unter Praxispartner*innen im selben Vertrag ist in der Regel ausgeschlossen."
 metaDescription: "Wartezeit, Vorbereitungszeit, Praxiskauf und Streit in der BAG: Wann Zahnärzt*innen den Praxis-Rechtsschutz abschließen sollten und was er nicht deckt."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 75
@@ -20,7 +20,7 @@ quellen:
   - titel: "Versicherungsbedingungen eines Versicherers zur Rechtsschutzversicherung für Zahnarztpraxen, Stand 01.09.2026"
 faq:
   - frage: "Wie lange vor der Praxiseröffnung sollte ich den Rechtsschutz abschließen?"
-    antwort: "So früh, dass die Wartezeit abgelaufen ist, bevor es Streit geben kann. Für Arbeits- und Mietstreit beträgt sie in den Bedingungen, die wir vergleichen, drei bis sechs Monate ab Vertragsbeginn. Versichert ist außerdem nur Streit, dessen erster Verstoß nach Vertragsbeginn liegt."
+    antwort: "So früh, dass die Wartezeit abgelaufen ist, bevor es Streit geben kann. Für Arbeits- und Mietstreit beträgt sie in den Bedingungen, die wir vergleichen, drei bis sechs Monate ab Vertragsbeginn. Versichert ist nur Streit, dessen erster Verstoß nach Vertragsbeginn liegt."
   - frage: "Deckt mein Rechtsschutz als angestellte Zahnärztin den Streit um den Mietvertrag meiner künftigen Praxis?"
     antwort: "In der Regel nicht. Privat- und Berufs-Rechtsschutz für Angestellte schließen Streit im Zusammenhang mit einer selbstständigen Tätigkeit aus, mehrere Verträge ausdrücklich auch mit einer geplanten. Es gibt aber Verträge mit einer Regel für die Vorbereitungszeit oder einer Vorsorgeversicherung."
   - frage: "Ist der Kauf einer Zahnarztpraxis über den Rechtsschutz versichert?"
@@ -61,7 +61,7 @@ Weil der Rechtsschutz nur Streit abdeckt, der nach Vertragsbeginn und außerhalb
 
 **Regel 2: die Wartezeit.** Für Arbeits- und Mietstreit gilt eine Wartezeit, in den Bedingungen, die wir vergleichen, drei bis sechs Monate ab Vertragsbeginn. Es gibt Verträge, die sie auch für den Vertrags-Rechtsschutz von Selbstständigen vorsehen. Tritt der Versicherungsfall in dieser Zeit ein, zahlt der Versicherer nicht.
 
-Dazu kommt ein dritter Punkt: Dein bisheriger Privat- und Berufs-Rechtsschutz als angestellte Zahnärzt\*in hilft in der Gründung in der Regel nicht. Die Bedingungen schließen Streit im Zusammenhang mit einer selbstständigen Tätigkeit aus, mehrere ausdrücklich auch mit einer geplanten.
+Dazu kommt ein dritter Punkt: Dein bisheriger Privat- und Berufs-Rechtsschutz aus der Anstellung hilft in der Gründung in der Regel nicht. Die Bedingungen schließen Streit im Zusammenhang mit einer selbstständigen Tätigkeit aus, mehrere ausdrücklich auch mit einer geplanten.
 
 Aus diesen Regeln folgt für uns: Der Praxis-Rechtsschutz sollte beginnen, sobald die Gründung konkret wird, und möglichst so früh, dass die Wartezeit abgelaufen ist, bevor die ersten Verträge der neuen Praxis laufen.
 
@@ -79,7 +79,7 @@ Wichtig ist an der Stelle: Diese Regeln helfen nur, wenn du den Vertrag schon vo
 
 ## Was gilt bei der Zulassung durch die KZV?
 
-Wer als Vertragszahnärzt\*in gründet, braucht die Zulassung. Der Antrag ist schriftlich zu stellen und nennt den Vertragszahnarztsitz. Beizufügen sind unter anderem ein Auszug aus dem Zahnarztregister und eine Bescheinigung über die Berufshaftpflichtversicherung (§ 18 Zahnärzte-ZV). Die Eintragung ins Zahnarztregister beantragst du bei der Kassenzahnärztlichen Vereinigung (§ 3 Zahnärzte-ZV).
+Wer mit Kassenzulassung gründet, braucht die Zulassung. Der Antrag ist schriftlich zu stellen und nennt den Vertragszahnarztsitz. Beizufügen sind unter anderem ein Auszug aus dem Zahnarztregister und eine Bescheinigung über die Berufshaftpflichtversicherung (§ 18 Zahnärzte-ZV). Die Eintragung ins Zahnarztregister beantragst du bei der Kassenzahnärztlichen Vereinigung (§ 3 Zahnärzte-ZV).
 
 Für den Rechtsschutz heißt das: Streit um die Zulassung ist ein eigenes Thema. Der Vertrag mit Vorbereitungszeit aus dem Abschnitt oben spricht von der „Kassenärztlichen Vereinigung“, nicht von der KZV. Lass dir schriftlich bestätigen, dass Verfahren der KZV gemeint sind. Stellst du einen Antrag bei der KZV vor Beginn des Rechtsschutzes, kann ein späterer Streit darüber je nach Vertrag ausgeschlossen sein. Mehr zu Prüfungen, Regress und Zulassung steht auf der Seite [Wirtschaftlichkeitsprüfung, Regress, Zulassung: Zahlt die Rechtsschutzversicherung bei Streit mit der KZV?](/ratgeber/rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen)
 
@@ -109,7 +109,7 @@ Aus unserer Sicht gehört der Konfliktfall deshalb in den Gesellschaftsvertrag, 
 - Ist die Wartezeit deines Praxis-Rechtsschutzes abgelaufen, bevor die ersten Verträge der neuen Praxis laufen?
 - Hat dein jetziger Vertrag eine Regel für die Vorbereitungszeit oder eine Vorsorgeversicherung, und bis wann musst du die neue Tätigkeit melden?
 - Nennt der Vertrag die Kassenärztliche Vereinigung? Dann frag schriftlich nach der KZV.
-- Wer ist in eurer BAG Versicherungsnehmer\*in, wer mitversichert, und was bedeutet das für Streit untereinander?
+- Wer schließt in eurer BAG den Vertrag ab, wer mitversichert, und was bedeutet das für Streit untereinander?
 - Gibt es eine Beratung zur Praxisnachfolge, falls du später abgibst?
 
 ## Unsere Einschätzung

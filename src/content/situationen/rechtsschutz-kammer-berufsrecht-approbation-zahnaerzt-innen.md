@@ -3,7 +3,7 @@ frage: "Kammer, Berufsgericht, Approbation: Was deckt der Standes-Rechtsschutz f
 titel: "Zahnärztekammer und Berufsgericht: Standes-Rechtsschutz"
 kurzantwort: "Der Disziplinar- und Standes-Rechtsschutz zahlt Zahnärzt*innen in der Regel die Verteidigung in berufsrechtlichen Verfahren, etwa vor der Zahnärztekammer oder dem Berufsgericht. Ein Verfahren um die Approbation nennen die Bedingungen nicht: Dafür kommt je nach Vertrag ein beruflicher Verwaltungs-Rechtsschutz in Frage."
 metaDescription: "Verfahren vor Zahnärztekammer und Berufsgericht, Ruhen der Approbation: Was der Standes-Rechtsschutz für Zahnärzt*innen zahlt und wo er endet."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 77

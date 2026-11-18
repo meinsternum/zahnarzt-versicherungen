@@ -1,9 +1,9 @@
 ---
 frage: "Rechtsschutz oder Berufshaftpflicht: Wer zahlt beim Vorwurf eines Behandlungsfehlers?"
 titel: "Zahnärzt*innen: Rechtsschutz oder Berufshaftpflicht?"
-kurzantwort: "Verlangt eine Patientin Schadenersatz wegen eines Behandlungsfehlers, ist das Sache der Berufshaftpflicht deiner Zahnarztpraxis. Der Rechtsschutz zahlt die Verteidigung bei einem Fahrlässigkeitsvorwurf im Strafverfahren und je nach Vertrag den Honorarstreit, die Abwehr der Forderung schließt er in der Regel aus."
+kurzantwort: "Verlangt eine Patientin Schadenersatz wegen eines Behandlungsfehlers, ist das Sache der Berufshaftpflicht deiner Zahnarztpraxis. Der Rechtsschutz zahlt die Verteidigung bei einem Fahrlässigkeitsvorwurf im Strafverfahren und je nach Vertrag den Honorarstreit. Die Abwehr der Forderung schließt er in der Regel aus."
 metaDescription: "Behandlungsfehler-Vorwurf in der Zahnarztpraxis: was die Berufshaftpflicht trägt, was der Rechtsschutz im Straf- und Honorarstreit zahlt, wo die Grenze liegt."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 71

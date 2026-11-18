@@ -10,4 +10,4 @@ Je nach Situation: [Streit mit Team, Vermieter und Lieferanten](/ratgeber/rechts
 
 ## Unsere Einschätzung
 
-Den Rechtsschutz stellen wir nach Berufsphase zusammen: als Angestellte\*r anders als mit eigener Praxis. Wichtig ist uns, ihn rechtzeitig vor Gründung, Übernahme oder Anstellungswechsel abzuschließen, weil Wartezeiten gelten. Für Vertragszahnärzt\*innen lassen wir uns vom Versicherer schriftlich bestätigen, dass Verfahren der KZV eingeschlossen sind, und prüfen, ob ein Spezial-Straf-Rechtsschutz sinnvoll ist.
+Den Rechtsschutz stellen wir nach Berufsphase zusammen: in Anstellung anders als mit eigener Praxis. Wichtig ist uns, ihn rechtzeitig vor Gründung, Übernahme oder Anstellungswechsel abzuschließen, weil Wartezeiten gelten. Für Vertragszahnärzt\*innen lassen wir uns vom Versicherer schriftlich bestätigen, dass Verfahren der KZV eingeschlossen sind, und prüfen, ob ein Spezial-Straf-Rechtsschutz sinnvoll ist.

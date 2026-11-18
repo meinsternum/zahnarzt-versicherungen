@@ -3,7 +3,7 @@ frage: "Wirtschaftlichkeitsprüfung, Regress, Zulassung: Zahlt die Rechtsschutzv
 titel: "KZV-Prüfung: Zahlt der Rechtsschutz für Zahnärzt*innen?"
 kurzantwort: "Bei einer Wirtschaftlichkeitsprüfung deiner Zahnarztpraxis zahlt der Sozial-Rechtsschutz je nach Vertrag erst vor dem Sozialgericht oder schon beim Beschwerdeausschuss. Die Bedingungen nennen die Kassenärztliche Vereinigung, nicht die KZV: Lass dir schriftlich bestätigen, dass KZV-Verfahren gemeint sind."
 metaDescription: "Wirtschaftlichkeitsprüfung und Regress der KZV: Ab welcher Stufe die Rechtsschutzversicherung für Zahnärzt*innen zahlt und was du vorher klären solltest."
-status: geprueft
+status: freigegeben
 stand: "2026-11-17"
 pruefenBis: "2027-11-17"
 reihenfolge: 73

@@ -234,7 +234,7 @@ export const grafiken = {
     spalten: ['', 'Assistenzzeit und Anstellung', 'Gründung und Übernahme', 'Eigene Praxis'],
     zeilen: [
       ['Passende Bereiche', 'Privat- und Berufs-Rechtsschutz', 'Baustein, der die geplante Selbstständigkeit einschließt', 'Rechtsschutz für Selbstständige, je nach Vertrag kombiniert mit Privat und Verkehr'],
-      ['Worum es geht', 'Streit als Arbeitnehmer*in, etwa mit Praxisinhaber*in oder MVZ', 'Praxismiete, Kaufvertrag; Wartezeiten beachten', 'Team, Verträge der Praxis, Sozialgericht, berufsrechtliche Verfahren, Strafverfahren'],
+      ['Worum es geht', 'Streit aus dem Arbeitsverhältnis, etwa mit der Praxis oder dem MVZ', 'Praxismiete, Kaufvertrag; Wartezeiten beachten', 'Team, Verträge der Praxis, Sozialgericht, berufsrechtliche Verfahren, Strafverfahren'],
       ['Gut zu wissen', 'Es gibt Verträge, die angestellte Zahnärzt*innen ausdrücklich nennen', 'Privat- und Berufs-Rechtsschutz decken in den Musterbedingungen nichts zur geplanten Selbstständigkeit', 'Spezial-Straf-Rechtsschutz je nach Vertrag als eigener Baustein'],
     ],
     fuss: 'Stand: 17.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
@@ -285,7 +285,7 @@ export const grafiken = {
     typ: 'karten', nach: 'start',
     titel: 'Drei Streitfelder der Zahnarztpraxis',
     karten: [
-      { kopf: 'Team', punkte: ['Arbeits-Rechtsschutz als Arbeitgeber*in: in der Regel enthalten', 'Wartezeit in den Bedingungen, die wir vergleichen, drei bis sechs Monate', 'Beratung vor Kündigung oder Aufhebungsvertrag nur in einzelnen Verträgen'] },
+      { kopf: 'Team', punkte: ['Arbeits-Rechtsschutz auf Arbeitgeberseite: in der Regel enthalten', 'Wartezeit in den Bedingungen, die wir vergleichen, drei bis sechs Monate', 'Beratung vor Kündigung oder Aufhebungsvertrag nur in einzelnen Verträgen'] },
       { kopf: 'Praxisräume', punkte: ['Wohnungs- und Grundstücks-Rechtsschutz', 'Je nach Vertrag alle selbst genutzten Gewerbeeinheiten, nur das Objekt im Versicherungsschein oder ein eigener Baustein', 'Umbau mit Genehmigungs- oder Anzeigepflicht ausgeschlossen'] },
       { kopf: 'Labor, Depot, Lieferanten', punkte: ['Hilfsgeschäfte rund um Räume und Einrichtung: in Verträgen für Selbstständige und Heilberufe in der Regel versichert', 'Verträge der Berufsausübung: je nach Vertrag gar nicht oder nur vor Gericht'] },
     ],
