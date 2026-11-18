@@ -46,7 +46,8 @@ faq:
     antwort: "Für Schäden aus deiner früheren Tätigkeit gibt es Verträge mit einer Nachhaftung nach Berufsaufgabe. Es gibt auch Verträge, die gelegentliche Tätigkeit im Ruhestand mitversichern, etwa Vertretungen oder Notfälle. Wie das in deinem Vertrag geregelt ist, solltest du vor der Abgabe klären."
   - frage: "Was kostet die Berufshaftpflicht für eine Zahnarztpraxis?"
     antwort: "In einem Musterbeispiel von uns (niedergelassene*r Zahnärzt*in, Einzelpraxis, 5 Millionen Euro pauschal) lagen die Jahresbeiträge in zwei Tarifen zwischen 436 und 613 Euro. Mit jeder angestellten Zahnärztin oder jedem angestellten Zahnarzt steigt der Beitrag. Beiträge können heute abweichen."
-verwandt: []
+verwandt:
+  - rechtsschutz-oder-berufshaftpflicht-zahnaerzt-innen
 hinweise:
   - nach: "Welche Mindestsumme gilt?"
     art: einschaetzen
