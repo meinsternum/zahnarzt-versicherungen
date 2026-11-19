@@ -39,6 +39,7 @@ faq:
 verwandt:
   - praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen
   - praxisausfall-wann-zahlt-karenzzeit-leistungsdauer-zahnaerzt-innen
+  - cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall
 hinweise:
   - nach: "Ist die Behandlungseinheit über den Inhalt versichert?"
     art: einschaetzen
@@ -92,7 +93,7 @@ Bei Implantaten im Lager gibt es Verträge, die nur gegen Feuer, Einbruchdiebsta
 
 Teilweise. Es gibt Verträge, die die Kosten für die Neuanfertigung von Röntgenaufnahmen, Abdrücken und Laboruntersuchungen ausdrücklich übernehmen, wenn sie in der Praxis beschädigt werden oder abhandenkommen, bis zu einer eigenen Grenze. Einige ersetzen auch den Ausfall verlorener Rezepte bei der Abrechnung, dafür gibt es auch eine Musterklausel des Versicherungsverbands.
 
-Daten sind dagegen keine Sachen. In der Inhaltsversicherung sind in der Regel nur Programmdaten versichert, die ein Gerät zum Funktionieren braucht, und nur dann, wenn der Datenträger selbst durch einen versicherten Schaden betroffen ist. Es gibt Praxisverträge mit einem eigenen Baustein für Daten, der auch Patientendaten und Bedienfehler abdeckt, Schadsoftware aber ausschließt. Für Hackerangriffe und Schadsoftware brauchst du eine Cyberdeckung.
+Daten sind dagegen keine Sachen. In der Inhaltsversicherung sind in der Regel nur Programmdaten versichert, die ein Gerät zum Funktionieren braucht, und nur dann, wenn der Datenträger selbst durch einen versicherten Schaden betroffen ist. Es gibt Praxisverträge mit einem eigenen Baustein für Daten, der auch Patientendaten und Bedienfehler abdeckt, Schadsoftware aber ausschließt. Für Hackerangriffe und Schadsoftware brauchst du eine Cyberdeckung, mehr dazu auf [Cyberversicherung für die Zahnarztpraxis: Braucht man das?](/ratgeber/cyberversicherung-zahnarztpraxis-braucht-man-das).
 
 ## Gilt der Schutz auch außerhalb der Praxis?
 

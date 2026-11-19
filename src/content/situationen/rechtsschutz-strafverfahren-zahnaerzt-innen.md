@@ -47,6 +47,7 @@ verwandt:
   - rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen
   - rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen
   - rechtsschutz-angestellte-zahnaerzt-innen
+  - cyber-datenleck-haftung-patienten-zahnarztpraxis
 hinweise:
   - nach: "Warum zahlt der normale Straf-Rechtsschutz beim Vorwurf des Abrechnungsbetrugs nicht?"
     art: einschaetzen

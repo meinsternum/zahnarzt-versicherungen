@@ -34,6 +34,7 @@ verwandt:
   - rechtsschutz-welche-bausteine-zahnaerzt-innen
   - rechtsschutz-strafverfahren-zahnaerzt-innen
   - rechtsschutz-zahnarztpraxis-team-vermieter-vertraege
+  - cyber-datenleck-haftung-patienten-zahnarztpraxis
 hinweise:
   - nach: "Was gilt, wenn gegen dich strafrechtlich ermittelt wird?"
     art: einschaetzen

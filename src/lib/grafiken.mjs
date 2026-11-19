@@ -376,6 +376,140 @@ export const grafiken = {
     fuss: 'Vereinfachte Übersicht. Stand: 17.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
   },
 ],
+  // Cyber (18.11.2026, freigegeben 19.11.2026)
+  'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': [
+    {
+      typ: 'ablauf', nach: 'Ab wann und wie lange zahlt die Versicherung?',
+      titel: 'Stillstand nach Cyberangriff: So läuft die Zeit',
+      schritte: [
+        { titel: 'Unterbrechung beginnt', text: 'Daten oder IT-Systeme stehen nach einer Sicherheitsverletzung nicht zur Verfügung.' },
+        { titel: 'Zeitlicher Selbstbehalt', text: 'Je nach Vertrag keine Entschädigung für den Ertragsausfall. Die Dauer steht im Versicherungsschein.' },
+        { titel: 'Haftzeit', text: 'Ertragsausfall oder Tagessatz. Je nach Vertrag beginnt sie mit der Unterbrechung oder erst nach dem Selbstbehalt.' },
+        { titel: 'Ende', text: 'Wenn kein Ertragsausfall mehr entsteht, spätestens mit Ablauf der Haftzeit.' },
+      ],
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'tabelle', nach: 'Springt der Ertragsausfall aus der Inhaltsversicherung ein?',
+      titel: 'Drei Verträge, drei Auslöser',
+      spalten: ['Vertrag', 'Auslöser', 'Bei Cyberangriff'],
+      zeilen: [
+        ['Cyber-Betriebsunterbrechung', 'Sicherheitsverletzung der IT, etwa ein Angriff', 'Zahlt, wenn vereinbart, nach dem zeitlichen Selbstbehalt'],
+        ['Praxisausfallversicherung', 'Deine Arbeitsunfähigkeit als Inhaberin oder Inhaber', 'Ein Angriff allein löst sie nicht aus'],
+        ['Ertragsausfall zur Inhaltsversicherung', 'Sachschaden, etwa durch Brand oder Leitungswasser', 'Nicht für den Angriff allein, Daten sind keine Sachen'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach Verbandsmustern, Versicherungsbedingungen und den Seiten zu Praxisausfall und Inhalt (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'cyber-datenleck-haftung-patienten-zahnarztpraxis': [
+    {
+      typ: 'karten', nach: 'Wo endet die Cyberversicherung, und wann zahlt die Berufshaftpflicht?',
+      titel: 'Datenleck: Welcher Vertrag für welche Forderung?',
+      karten: [
+        { kopf: 'Cyberversicherung', punkte: ['Schadenersatz wegen Datenschutzverstoß, immaterielle Schäden je nach Vertrag', 'Prüft, wehrt unberechtigte Ansprüche ab, zahlt berechtigte'] },
+        { kopf: 'Berufshaftpflicht', punkte: ['Gesundheitsschäden von Patient*innen, etwa nach Behandlung mit veränderten Daten', 'Reiner Datenschutzverstoß: in den eigenen Bedingungen prüfen'] },
+        { kopf: 'Je nach Vertrag', punkte: ['Kosten eines Verfahrens der Datenschutzaufsicht', 'Freistellung externer Datenverarbeiter'] },
+      ],
+      fuss: 'Stand: 19.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': [
+    {
+      typ: 'ablauf', nach: 'Wen rufst du nach einem Hackerangriff zuerst an?',
+      titel: 'Die ersten Schritte nach einem Angriff',
+      schritte: [
+        { titel: 'Versicherer anrufen', text: 'Über den Meldeweg aus dem Versicherungsschein, parallel den IT-Dienstleister. Den Schaden unverzüglich melden.' },
+        { titel: 'Weisungen befolgen', text: 'Weisungen des Versicherers befolgen; je nach Vertrag das Schadenbild unverändert lassen oder nachvollziehbar dokumentieren.' },
+        { titel: 'Aufsicht informieren', text: 'Sind personenbezogene Daten betroffen: unverzüglich und möglichst binnen 72 Stunden, außer bei voraussichtlich keinem Risiko.' },
+        { titel: 'Patient*innen informieren', text: 'Nur bei voraussichtlich hohem Risiko, dann unverzüglich.' },
+        { titel: 'Dokumentieren', text: 'Jede Verletzung mit Fakten, Auswirkungen und Abhilfemaßnahmen festhalten.' },
+      ],
+      fuss: 'Stand: 19.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'tabelle', nach: 'Wann musst du deine Patient*innen informieren?',
+      titel: 'Aufsicht oder Patient*innen: Wen du wann informierst',
+      spalten: ['', 'Datenschutzaufsicht', 'Patient*innen'],
+      zeilen: [
+        ['Wann?', 'Außer bei voraussichtlich keinem Risiko für die Betroffenen', 'Nur bei voraussichtlich hohem Risiko'],
+        ['Frist', 'Unverzüglich, möglichst binnen 72 Stunden', 'Unverzüglich, ohne feste Stundenfrist'],
+        ['Entfällt auch', '–', 'Daten vorher für Unbefugte unzugänglich gemacht, Risiko beseitigt oder unverhältnismäßiger Aufwand (dann öffentliche Bekanntmachung)'],
+        ['Grundlage', 'Art. 33 DSGVO', 'Art. 34 DSGVO'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach Art. 33 und 34 DSGVO (siehe Quellen).',
+    },
+  ],
+  'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': [
+    {
+      typ: 'karten', nach: 'Was verlangt die IT-Sicherheitsrichtlinie der KZBV?',
+      titel: 'Welche Anlagen der KZBV-Richtlinie gelten',
+      karten: [
+        { kopf: 'Praxis: bis 5 Personen', punkte: ['Anlage 1 und 5'] },
+        { kopf: 'Mittlere Praxis: 6 bis 20', punkte: ['Anlage 1, 2 und 5'] },
+        { kopf: 'Großpraxis: über 20', punkte: ['Anlage 1, 2, 3 und 5', 'Auch bei Datenverarbeitung in erheblichem Umfang, zum Beispiel Groß-MVZ mit krankenhausähnlichen Strukturen'] },
+        { kopf: 'Medizinische Großgeräte', punkte: ['Zusätzlich Anlage 4, zum Beispiel bei einem Dental-MRT'] },
+      ],
+      fuss: 'Stand: 19.11.2026, nach der KZBV-Richtlinie Version 1.1 (siehe Quellen).',
+    },
+    {
+      typ: 'tabelle', nach: 'Wo unterscheiden sich Richtlinie und Versicherungsbedingungen?',
+      titel: 'KZBV-Richtlinie und Cyber-Bedingungen im Vergleich',
+      spalten: ['', 'KZBV-Richtlinie', 'Cyber-Bedingungen'],
+      zeilen: [
+        ['Datensicherung', 'Regelmäßig (muss)', 'Mindestens wöchentlich'],
+        ['Test der Sicherung', 'Soll', 'Je nach Vertrag Pflicht'],
+        ['Sicherheitsupdates', 'Zeitnah (muss)', 'Je nach Vertrag unverzüglich, zeitnah oder in 14 bzw. 30 Tagen'],
+        ['Systeme ohne Updates', 'Ausmustern oder separieren (muss)', 'In der Regel nur mit Zusatzschutz oder abgeschottet'],
+        ['2-Faktor-Authentifizierung', 'In Anlage 1 nicht ausdrücklich gefordert', 'Je nach Vertrag Beispiel bei erhöhtem Risiko'],
+        ['Firewall', 'Am Internetübergang (muss)', 'Je nach Vertrag Beispiel oder Pflicht'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach der KZBV-Richtlinie Version 1.1 und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': [
+    {
+      typ: 'tabelle', nach: 'start',
+      titel: 'Ausschlüsse: in der Regel oder je nach Vertrag',
+      spalten: ['Thema', 'Regelung'],
+      zeilen: [
+        ['Krieg, staatliche Angriffe', 'In der Regel ausgeschlossen'],
+        ['Ausfall von öffentlichem Strom, Internet, Telefonnetz', 'In der Regel ausgeschlossen'],
+        ['Vorsatz', 'In der Regel ausgeschlossen'],
+        ['Personenschäden', 'In der Regel nicht versichert'],
+        ['Lösegeld', 'Je nach Vertrag: ausgeschlossen, mit Zusatz oder Zustimmung, mitversichert'],
+        ['Bußgelder', 'Je nach Vertrag: ausgeschlossen, nur im Ausland oder unter Vorbehalt'],
+        ['Gefälschte Zahlungsanweisungen', 'Je nach Vertrag: ausgeschlossen, Zusatzbaustein oder Grunddeckung mit Grenzen'],
+        ['Ausfall von IT-Dienstleister oder Cloud', 'Je nach Vertrag: eingeschlossen, Zusatzbaustein oder ausgeschlossen'],
+        ['Bedienfehler', 'Je nach Vertrag'],
+        ['Technische Störung ohne Angriff', 'Nur über Zusatzbausteine'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'cyberversicherung-zahnarztpraxis-braucht-man-das': [
+    {
+      typ: 'karten', nach: 'Was ist eine Cyberversicherung?',
+      titel: 'Die drei Bereiche einer Cyberversicherung',
+      karten: [
+        { kopf: 'Eigenschäden', punkte: ['Kosten, um Daten und Programme wiederherzustellen', 'Hardware nur je nach Vertrag', 'Ertragsausfall je nach Vertrag in der Grunddeckung oder nur bei Vereinbarung'] },
+        { kopf: 'Drittschäden', punkte: ['Schadenersatzansprüche anderer wegen eines Vermögensschadens, etwa von Patient*innen', 'Personenschäden in der Regel ausgeschlossen'] },
+        { kopf: 'Service und Kosten', punkte: ['IT-Forensik', 'Meldepflichten prüfen, Betroffene benachrichtigen', 'Je nach Vertrag Notfallnummer, Krisendienstleister, Krisenkommunikation'] },
+      ],
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'tabelle', nach: 'Zahlt nicht schon die Inhalts- oder Elektronikversicherung?',
+      titel: 'Daten nach einem Angriff: Welcher Vertrag zahlt?',
+      spalten: ['Vertrag', 'Verschlüsselte oder gelöschte Daten'],
+      zeilen: [
+        ['Inhaltsversicherung', 'Daten sind keine Sachen; Daten nur nach einem versicherten Schaden am Datenträger, Schadprogramme ausgeschlossen'],
+        ['Elektronikversicherung', 'Daten sind keine Sachen; Wiederherstellung nur nach einem versicherten Schaden am Datenträger oder an der Anlage'],
+        ['Cyberversicherung', 'Kosten der Wiederherstellung in der Regel versichert'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach Verbandsmustern und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
