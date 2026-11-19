@@ -3,9 +3,9 @@ frage: "Wann zahlt die Cyberversicherung der Zahnarztpraxis nicht?"
 titel: "Cyberversicherung Zahnarztpraxis: Wann sie nicht zahlt"
 kurzantwort: "Die Cyberversicherung deiner Zahnarztpraxis zahlt in der Regel nicht bei Krieg, bei Ausfall von öffentlichem Strom oder Internet, bei Vorsatz und bei Personenschäden. Lösegeld, Bußgelder, gefälschte Zahlungsanweisungen und der Ausfall deines IT-Dienstleisters sind je nach Vertrag versichert oder nicht."
 metaDescription: "Wann die Cyberversicherung der Zahnarztpraxis nicht zahlt: Krieg, Infrastruktur, Vorsatz, Lösegeld, Bußgelder, Fake President, TI und IT-Dienstleister."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 83
 quellen:
   - titel: "GDV: Allgemeine Versicherungsbedingungen für die Cyberrisiko-Versicherung (AVB Cyber), unverbindliche Musterbedingungen, Stand Februar 2024"
@@ -14,6 +14,7 @@ quellen:
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Firmen, Stand 01.02.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Gewerbebetriebe, Stand 01.03.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Unternehmen und Freiberufler, Stand 01.06.2022"
+  - titel: "Produktinformation eines Versicherers zur Cyberversicherung für Zahnarztpraxen, Stand 01.08.2026"
   - titel: "Art. 9 DSGVO, Verarbeitung besonderer Kategorien personenbezogener Daten (EUR-Lex)"
     url: "https://eur-lex.europa.eu/legal-content/DE/TXT/HTML/?uri=CELEX:32016R0679"
   - titel: "Art. 83 DSGVO, Allgemeine Bedingungen für die Verhängung von Geldbußen (EUR-Lex)"
@@ -73,7 +74,7 @@ Daneben kann der Versicherer je nach Verschulden die Leistung kürzen oder ganz 
 Je nach Vertrag: Lösegeld ist ausgeschlossen, nur mit Zusatzvereinbarung oder Zustimmung des Versicherers versichert, oder mitversichert.
 
 - **Ausgeschlossen:** Das Verbandsmuster und ein weiterer Vertrag schließen die Zahlung von Lösegeld aus. Der Vertrag übernimmt aber die technische und rechtliche Beratung bei einer Erpressung.
-- **Nur mit Zusatz oder Zustimmung:** Ein Vertrag zahlt Lösegeld nur über eine besonders vereinbarte Klausel bis zu der Grenze im Versicherungsschein, und nur nach einem Präventionsgespräch zu Beginn. Ein anderer übernimmt es in einem Zusatzpaket nur nach Zustimmung des Versicherers und nur, wenn die Bedrohung nicht oder nur mit unverhältnismäßig hohem Aufwand abzuwehren ist.
+- **Nur mit Zusatz oder Zustimmung:** Ein Vertrag zahlt Lösegeld nur über eine besonders vereinbarte Klausel bis zu der Grenze im Versicherungsschein, in einem Vertrag für Zahnarztpraxen zum Beispiel bis 100.000 Euro, und nur nach einem Präventionsgespräch zu Beginn. Ein anderer übernimmt es in einem Zusatzpaket nur nach Zustimmung des Versicherers und nur, wenn die Bedrohung nicht oder nur mit unverhältnismäßig hohem Aufwand abzuwehren ist.
 - **Mitversichert:** Ein Vertrag ersetzt das gezahlte Lösegeld, bei Kryptowährung den Marktwert zum Zeitpunkt der Beschaffung.
 
 Wichtig ist an der Stelle: Wo Lösegeld versichert ist, hängen Pflichten daran, etwa das Vorgehen vorher mit dem Versicherer abzustimmen. Aus unserer Sicht gilt deshalb: keine Zahlung ohne Absprache mit dem Versicherer. Was in den ersten Stunden zu tun ist und ob du Anzeige erstatten solltest, steht auf der Seite [Hackerangriff in der Zahnarztpraxis: Was jetzt zu tun ist](/ratgeber/cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht).
@@ -140,4 +141,4 @@ Aus unserer Sicht sind die Ausschlüsse der Teil eines Cybervertrags, der am mei
 
 Leg deine Bedingungen neben die Prüfliste oben, markiere, was offen bleibt, und notiere, welche Dienstleister an Praxis-IT und TI-Anbindung arbeiten. Ein Gespräch ist sinnvoll, wenn nach dieser Prüfung offene Punkte bleiben oder du vor einem Wechsel stehst.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Gesetz, Veröffentlichungen der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, Veröffentlichungen der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

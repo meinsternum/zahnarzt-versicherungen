@@ -3,9 +3,9 @@ frage: "Braucht eine Zahnarztpraxis eine Cyberversicherung?"
 titel: "Cyberversicherung für die Zahnarztpraxis: Braucht man das?"
 kurzantwort: "Für eine Zahnarztpraxis, die Patientendaten digital verwaltet, ja: Inhalts- und Elektronikversicherung ersetzen verlorene Daten nach einem Angriff in der Regel nicht. Die Cyberversicherung zahlt Hilfe, die Wiederherstellung der Daten und Ansprüche Dritter, die Verantwortung für die IT-Sicherheit bleibt aber bei dir."
 metaDescription: "Braucht deine Zahnarztpraxis eine Cyberversicherung? Was sie zahlt, was Inhalts- und Elektronikversicherung nicht abdecken und was die KZBV verlangt."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 80
 quellen:
   - titel: "GDV: Allgemeine Versicherungsbedingungen für die Cyberrisiko-Versicherung (AVB Cyber), unverbindliche Musterbedingungen, Stand Februar 2024"
@@ -14,6 +14,7 @@ quellen:
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Firmen, Stand 01.02.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Gewerbebetriebe, Stand 01.03.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Unternehmen und Freiberufler, Stand 01.06.2022"
+  - titel: "Produktinformation eines Versicherers zur Cyberversicherung für Zahnarztpraxen, Stand 01.08.2026"
   - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5968/df3ece81b898dd9debcf0e23c943013a/01-allgemeine-bedingungen-fuer-die-verbundene-sach-gewerbeversicherung-vsg-2010--data.pdf"
   - titel: "GDV: Allgemeine Bedingungen für die Elektronikversicherung (ABE), Version 01.07.2025 (unverbindliche Bekanntgabe)"
@@ -69,6 +70,8 @@ Eine Cyberversicherung zahlt, wenn Daten oder IT-Systeme deiner Praxis durch ein
 - **Drittschäden:** Die Cyber-Haftpflicht deckt Schadenersatzansprüche anderer wegen eines Vermögensschadens aus dem Vorfall, etwa von Patient\*innen, deren Daten betroffen sind.
 - **Service und Kosten:** IT-Forensik, um Ursache und Schaden festzustellen, und die Kosten, um Meldepflichten zu prüfen und Betroffene zu benachrichtigen. Je nach Vertrag kommen eine Notfallnummer oder ein Krisendienstleister für die ersten Stunden und Krisenkommunikation dazu.
 
+Wie hoch der Schutz ist, steht im Versicherungsschein. Ein Vertrag für Zahnarztpraxen bietet zum Beispiel Versicherungssummen zwischen 125.000 Euro und 5 Millionen Euro, mit einer Selbstbeteiligung von 1.000 Euro je Versicherungsfall. Kosten wie Forensik, Krisenkommunikation und Benachrichtigung sind dort zusammen auf die Hälfte der Versicherungssumme begrenzt.
+
 Versichert sind Vermögensschäden. Personenschäden sind in der Regel ausgeschlossen, sie gehören in die Berufshaftpflicht, siehe [Berufshaftpflicht für Zahnärzt\*innen: Pflicht und Summe](/ratgeber/berufshaftpflicht-pflicht-mindestsumme-zahnaerzt-innen).
 
 Es gibt außerdem Verträge mit Zusatzbedingungen für Heilberufe, die „Zahnärzte“ im Titel ausdrücklich nennen. Ein solcher Vertrag schließt zum Beispiel Angriffe im Zusammenhang mit der Verwaltung von Patientendaten, der elektronischen AU und dem elektronischen Rezept sowie Schäden durch eine unsichere Telematikinfrastruktur ein, soweit sie in deiner gesetzlichen Verantwortung liegen und im Rahmen der übrigen Bedingungen. Was das für einen Ausfall der Telematikinfrastruktur bedeutet, steht auf der Seite [Cyberversicherung Zahnarztpraxis: Wann sie nicht zahlt](/ratgeber/cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis).
@@ -122,4 +125,4 @@ Für jede Zahnarztpraxis, die Patientendaten digital verwaltet, halten wir eine 
 
 Leg deine Inhalts-, Elektronik- und, falls vorhanden, Cyberversicherung nebeneinander und schau nach, was jeweils zu Daten geregelt ist. Frag deinen IT-Dienstleister, wie oft gesichert wird und ob die Sicherung getrennt von den Originalen liegt. Ein Gespräch ist sinnvoll, wenn du eine Praxis gründest oder übernimmst oder deine Verträge noch nie auf Cyberrisiken hin angesehen hast.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Gesetz, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.04.2014). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.04.2014). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

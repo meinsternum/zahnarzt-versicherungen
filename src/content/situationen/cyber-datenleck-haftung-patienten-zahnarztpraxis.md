@@ -3,9 +3,9 @@ frage: "Datenleck in der Zahnarztpraxis: Wer zahlt, wenn Patient*innen Schadener
 titel: "Datenleck in der Zahnarztpraxis: Wer zahlt Schadenersatz?"
 kurzantwort: "Fordern Patient*innen nach einem Datenleck Schadenersatz von deiner Zahnarztpraxis, ist in der Regel die Haftpflicht-Deckung der Cyberversicherung zuständig: Sie prüft, wehrt unberechtigte Forderungen ab und zahlt berechtigte. Geht es um einen Gesundheitsschaden, ist die Berufshaftpflicht gefragt."
 metaDescription: "Datenleck in der Zahnarztpraxis: Wann Patient*innen Schadenersatz fordern können, was die Cyberversicherung zahlt und wo die Berufshaftpflicht beginnt."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 84
 quellen:
   - titel: "Art. 82 DSGVO, Haftung und Recht auf Schadenersatz (EUR-Lex)"
@@ -135,4 +135,4 @@ Aus unserer Sicht gehört die Haftpflicht-Deckung zu den wichtigsten Teilen eine
 
 Nimm deine Cyberpolice und deine Berufshaftpflicht und beantworte die Prüfliste oben für beide Verträge. Leg dazu die Liste deiner IT-Dienstleister mit dem jeweiligen Stand der Geheimhaltungsverpflichtung. Ein Gespräch ist sinnvoll, wenn eine der Fragen offen bleibt oder die beiden Verträge nicht sauber aneinander anschließen.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Gesetz, die IT-Sicherheitsrichtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, die IT-Sicherheitsrichtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

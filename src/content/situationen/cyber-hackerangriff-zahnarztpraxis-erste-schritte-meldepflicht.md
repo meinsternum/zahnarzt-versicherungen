@@ -3,9 +3,9 @@ frage: "Hackerangriff auf die Zahnarztpraxis: Was ist jetzt zu tun, und was übe
 titel: "Hackerangriff in der Zahnarztpraxis: Was jetzt zu tun ist"
 kurzantwort: "Melde den Angriff sofort deinem Cyberversicherer und hol deinen IT-Dienstleister dazu. Sind Patientendaten betroffen, muss die Zahnarztpraxis in der Regel die Datenschutzaufsicht unverzüglich, möglichst binnen 72 Stunden informieren; die Kosten übernimmt in der Regel die Versicherung."
 metaDescription: "Hackerangriff auf die Zahnarztpraxis: wen du zuerst anrufst, wann du Aufsicht und Patient*innen informierst und was die Cyberversicherung übernimmt."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 81
 quellen:
   - titel: "Art. 4 DSGVO, Begriffsbestimmungen (EUR-Lex)"
@@ -140,4 +140,4 @@ Wir empfehlen, den Ernstfall einmal vorher durchzuspielen: Wer ruft wen an, wo s
 
 Such heute die Notfallnummer aus deinem Versicherungsschein heraus und leg sie dort ab, wo dein Team sie findet. Kläre mit deinem IT-Dienstleister, wie er dir einen Vorfall meldet. Ein Gespräch ist sinnvoll, wenn dein Vertrag keine Soforthilfe vorsieht oder du nicht weißt, ob er das tut.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Gesetz, Berufsordnung, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, Berufsordnung, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

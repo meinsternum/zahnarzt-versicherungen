@@ -3,9 +3,9 @@ frage: "Welche IT-Sicherheit verlangt die Cyberversicherung von einer Zahnarztpr
 titel: "Cyberversicherung: IT-Pflichten für die Zahnarztpraxis"
 kurzantwort: "Die Cyberversicherung verlangt von deiner Zahnarztpraxis in der Regel eine mindestens wöchentliche Datensicherung und Sicherheitsupdates, je nach Vertrag auch Virenschutz und Regeln für Zugänge. Bei grob fahrlässigem Verstoß kann der Versicherer kürzen. Zusätzlich gilt die KZBV-Richtlinie."
 metaDescription: "Backup, Updates, Virenschutz: Welche IT-Sicherheit die Cyberversicherung von der Zahnarztpraxis verlangt und wie das zur KZBV-Richtlinie passt."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 82
 quellen:
   - titel: "KZBV: Richtlinie nach § 390 SGB V zur IT-Sicherheit in der vertragszahnärztlichen Versorgung, Version 1.1, in Kraft seit 02.07.2025"
@@ -137,4 +137,4 @@ Wir raten, die Praxis-IT an Richtlinie und Vertrag zugleich auszurichten und bei
 
 Leg die Pflichten aus deinem Cybervertrag neben Anlage 1 der KZBV-Richtlinie und hak beides gemeinsam mit deinem IT-Dienstleister ab. Ein Gespräch ist sinnvoll, wenn du eine Praxis übernimmst, die IT umstellst oder dein Vertrag Pflichten nennt, die deine Praxis heute nicht erfüllt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Gesetz, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, die Richtlinie der KZBV, Verbandsmuster und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste ausgewertete Fassung 01.06.2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

@@ -376,7 +376,7 @@ export const grafiken = {
     fuss: 'Vereinfachte Übersicht. Stand: 17.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
   },
 ],
-  // Cyber (18.11.2026)
+  // Cyber (18.11.2026, freigegeben 19.11.2026)
   'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': [
     {
       typ: 'ablauf', nach: 'Ab wann und wie lange zahlt die Versicherung?',
@@ -387,7 +387,7 @@ export const grafiken = {
         { titel: 'Haftzeit', text: 'Ertragsausfall oder Tagessatz. Je nach Vertrag beginnt sie mit der Unterbrechung oder erst nach dem Selbstbehalt.' },
         { titel: 'Ende', text: 'Wenn kein Ertragsausfall mehr entsteht, spätestens mit Ablauf der Haftzeit.' },
       ],
-      fuss: 'Stand: 18.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'tabelle', nach: 'Springt der Ertragsausfall aus der Inhaltsversicherung ein?',
@@ -398,7 +398,7 @@ export const grafiken = {
         ['Praxisausfallversicherung', 'Deine Arbeitsunfähigkeit als Inhaberin oder Inhaber', 'Ein Angriff allein löst sie nicht aus'],
         ['Ertragsausfall zur Inhaltsversicherung', 'Sachschaden, etwa durch Brand oder Leitungswasser', 'Nicht für den Angriff allein, Daten sind keine Sachen'],
       ],
-      fuss: 'Stand: 18.11.2026, nach Verbandsmustern, Versicherungsbedingungen und den Seiten zu Praxisausfall und Inhalt (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach Verbandsmustern, Versicherungsbedingungen und den Seiten zu Praxisausfall und Inhalt (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'cyber-datenleck-haftung-patienten-zahnarztpraxis': [
@@ -410,7 +410,7 @@ export const grafiken = {
         { kopf: 'Berufshaftpflicht', punkte: ['Gesundheitsschäden von Patient*innen, etwa nach Behandlung mit veränderten Daten', 'Reiner Datenschutzverstoß: in den eigenen Bedingungen prüfen'] },
         { kopf: 'Je nach Vertrag', punkte: ['Kosten eines Verfahrens der Datenschutzaufsicht', 'Freistellung externer Datenverarbeiter'] },
       ],
-      fuss: 'Stand: 18.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': [
@@ -424,7 +424,7 @@ export const grafiken = {
         { titel: 'Patient*innen informieren', text: 'Nur bei voraussichtlich hohem Risiko, dann unverzüglich.' },
         { titel: 'Dokumentieren', text: 'Jede Verletzung mit Fakten, Auswirkungen und Abhilfemaßnahmen festhalten.' },
       ],
-      fuss: 'Stand: 18.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach DSGVO, Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'tabelle', nach: 'Wann musst du deine Patient*innen informieren?',
@@ -436,7 +436,7 @@ export const grafiken = {
         ['Entfällt auch', '–', 'Daten vorher für Unbefugte unzugänglich gemacht, Risiko beseitigt oder unverhältnismäßiger Aufwand (dann öffentliche Bekanntmachung)'],
         ['Grundlage', 'Art. 33 DSGVO', 'Art. 34 DSGVO'],
       ],
-      fuss: 'Stand: 18.11.2026, nach Art. 33 und 34 DSGVO (siehe Quellen).',
+      fuss: 'Stand: 19.11.2026, nach Art. 33 und 34 DSGVO (siehe Quellen).',
     },
   ],
   'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': [
@@ -449,7 +449,7 @@ export const grafiken = {
         { kopf: 'Großpraxis: über 20', punkte: ['Anlage 1, 2, 3 und 5', 'Auch bei Datenverarbeitung in erheblichem Umfang, zum Beispiel Groß-MVZ mit krankenhausähnlichen Strukturen'] },
         { kopf: 'Medizinische Großgeräte', punkte: ['Zusätzlich Anlage 4, zum Beispiel bei einem Dental-MRT'] },
       ],
-      fuss: 'Stand: 18.11.2026, nach der KZBV-Richtlinie Version 1.1 (siehe Quellen).',
+      fuss: 'Stand: 19.11.2026, nach der KZBV-Richtlinie Version 1.1 (siehe Quellen).',
     },
     {
       typ: 'tabelle', nach: 'Wo unterscheiden sich Richtlinie und Versicherungsbedingungen?',
@@ -463,7 +463,7 @@ export const grafiken = {
         ['2-Faktor-Authentifizierung', 'In Anlage 1 nicht ausdrücklich gefordert', 'Je nach Vertrag Beispiel bei erhöhtem Risiko'],
         ['Firewall', 'Am Internetübergang (muss)', 'Je nach Vertrag Beispiel oder Pflicht'],
       ],
-      fuss: 'Stand: 18.11.2026, nach der KZBV-Richtlinie Version 1.1 und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach der KZBV-Richtlinie Version 1.1 und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': [
@@ -483,7 +483,7 @@ export const grafiken = {
         ['Bedienfehler', 'Je nach Vertrag'],
         ['Technische Störung ohne Angriff', 'Nur über Zusatzbausteine'],
       ],
-      fuss: 'Stand: 18.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'cyberversicherung-zahnarztpraxis-braucht-man-das': [
@@ -495,7 +495,7 @@ export const grafiken = {
         { kopf: 'Drittschäden', punkte: ['Schadenersatzansprüche anderer wegen eines Vermögensschadens, etwa von Patient*innen', 'Personenschäden in der Regel ausgeschlossen'] },
         { kopf: 'Service und Kosten', punkte: ['IT-Forensik', 'Meldepflichten prüfen, Betroffene benachrichtigen', 'Je nach Vertrag Notfallnummer, Krisendienstleister, Krisenkommunikation'] },
       ],
-      fuss: 'Stand: 18.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach Verbandsmuster und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'tabelle', nach: 'Zahlt nicht schon die Inhalts- oder Elektronikversicherung?',
@@ -506,7 +506,7 @@ export const grafiken = {
         ['Elektronikversicherung', 'Daten sind keine Sachen; Wiederherstellung nur nach einem versicherten Schaden am Datenträger oder an der Anlage'],
         ['Cyberversicherung', 'Kosten der Wiederherstellung in der Regel versichert'],
       ],
-      fuss: 'Stand: 18.11.2026, nach Verbandsmustern und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 19.11.2026, nach Verbandsmustern und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
 

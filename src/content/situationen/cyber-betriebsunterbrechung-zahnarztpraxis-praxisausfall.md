@@ -3,9 +3,9 @@ frage: "Zahnarztpraxis steht nach einem Cyberangriff still: Wer zahlt den Ausfal
 titel: "Zahnarztpraxis nach Cyberangriff: Wer zahlt den Ausfall?"
 kurzantwort: "Steht deine Zahnarztpraxis nach einem Cyberangriff still, zahlt die Betriebsunterbrechung der Cyberversicherung den Ertragsausfall, wenn sie vereinbart ist: nach dem zeitlichen Selbstbehalt bis zum Ende der Haftzeit. Die Praxisausfallversicherung löst ein Angriff allein nicht aus, sie knüpft an Arbeitsunfähigkeit an."
 metaDescription: "Zahnarztpraxis nach Cyberangriff im Stillstand: was die Cyber-Betriebsunterbrechung zahlt, Haftzeit, Selbstbehalt und warum Praxisausfall nicht greift."
-status: geprueft
-stand: "2026-11-18"
-pruefenBis: "2027-11-18"
+status: freigegeben
+stand: "2026-11-19"
+pruefenBis: "2027-11-19"
 reihenfolge: 85
 quellen:
   - titel: "GDV: Allgemeine Versicherungsbedingungen für die Cyberrisiko-Versicherung (AVB Cyber), unverbindliche Musterbedingungen, Stand Februar 2024"
@@ -14,6 +14,7 @@ quellen:
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Firmen, Stand 01.02.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Gewerbebetriebe, Stand 01.03.2024"
   - titel: "Versicherungsbedingungen eines Versicherers zur Cyberversicherung für Unternehmen und Freiberufler, Stand 01.06.2022"
+  - titel: "Produktinformation eines Versicherers zur Cyberversicherung für Zahnarztpraxen, Stand 01.08.2026"
   - titel: "Versicherungsbedingungen eines Versicherers zur Ertragsausfallversicherung für Freiberufler, Stand 01.08.2020"
   - titel: "GDV: Allgemeine Bedingungen für die Verbundene Sach-Gewerbeversicherung (VSG 2010), Version 01.04.2014 (unverbindliche Bekanntgabe)"
     url: "https://www.gdv.de/resource/blob/5968/df3ece81b898dd9debcf0e23c943013a/01-allgemeine-bedingungen-fuer-die-verbundene-sach-gewerbeversicherung-vsg-2010--data.pdf"
@@ -27,7 +28,7 @@ faq:
   - frage: "Ist die Betriebsunterbrechung in jeder Cyberversicherung enthalten?"
     antwort: "Nein. Es gibt Verträge, in denen sie nur versichert ist, wenn sie besonders vereinbart und im Versicherungsschein ausgewiesen ist. Prüfe deshalb, ob dein Versicherungsschein eine Summe oder Grenze für die Betriebsunterbrechung nennt."
   - frage: "Was bedeutet der zeitliche Selbstbehalt in der Cyberversicherung?"
-    antwort: "Er ist der Zeitraum zu Beginn der Unterbrechung, für den du je nach Vertrag keine Entschädigung für den Ertragsausfall bekommst. Wie lang er ist, steht im Versicherungsschein. Je nach Vertrag beginnt die Haftzeit erst danach oder läuft schon ab dem Beginn der Unterbrechung."
+    antwort: "Er ist der Zeitraum zu Beginn der Unterbrechung, für den du je nach Vertrag keine Entschädigung für den Ertragsausfall bekommst. Wie lang er ist, steht im Versicherungsschein, ein Vertrag für Zahnarztpraxen sieht zum Beispiel 12 Stunden vor. Je nach Vertrag beginnt die Haftzeit erst danach oder läuft schon ab dem Beginn der Unterbrechung."
   - frage: "Werden die Gehälter des Praxisteams ersetzt, wenn die Praxis nach einem Angriff stillsteht?"
     antwort: "Je nach Vertrag. Ersetzt wird der Ertragsausfall aus fortlaufenden Kosten und Betriebsgewinn oder ein vereinbarter Tagessatz. Ein Vertrag erkennt ausdrücklich an, dass Gehälter über den nächstzulässigen Entlassungstermin hinaus weitergezahlt werden, soweit das nötig ist, um das Team zu halten."
   - frage: "Zählt eine vorsorgliche Abschaltung der Praxis-IT als Betriebsunterbrechung?"
@@ -73,8 +74,8 @@ Wichtig ist an der Stelle: Je nach Vertrag gehört die Betriebsunterbrechung zum
 
 Nach dem zeitlichen Selbstbehalt und längstens bis zum Ende der Haftzeit, solange ein Ertragsausfall entsteht. Die Werte stehen im Versicherungsschein oder in den Bedingungen.
 
-- **Zeitlicher Selbstbehalt:** Für diesen Zeitraum zu Beginn der Unterbrechung gibt es je nach Vertrag keine Entschädigung. Wie der Selbstbehalt genau wirkt, steht in deinen Bedingungen.
-- **Haftzeit:** Sie begrenzt, wie lange der Ertragsausfall ersetzt wird. Ein Vertrag nennt zum Beispiel 24 Monate, soweit nichts anderes vereinbart ist.
+- **Zeitlicher Selbstbehalt:** Für diesen Zeitraum zu Beginn der Unterbrechung gibt es je nach Vertrag keine Entschädigung. Ein Vertrag für Zahnarztpraxen sieht zum Beispiel 12 Stunden vor. Wie der Selbstbehalt genau wirkt, steht in deinen Bedingungen.
+- **Haftzeit:** Sie begrenzt, wie lange der Ertragsausfall ersetzt wird. In den Verträgen, die wir vergleichen, liegt sie zum Beispiel bei 6 Monaten (ein Vertrag für Zahnarztpraxen) oder bei 24 Monaten, soweit nichts anderes vereinbart ist.
 - **Beginn der Haftzeit:** Je nach Vertrag beginnt sie mit der Unterbrechung oder erst nach Ablauf des zeitlichen Selbstbehalts. Im ersten Fall zählt der Selbstbehalt zur Haftzeit.
 
 Es gibt Verträge, die nicht zahlen, soweit sich der Ausfall verlängert, weil zum Beispiel das Geld für die Wiederherstellung fehlt oder anlässlich des Angriffs Verbesserungen vorgenommen werden. Wer nach einem Angriff die IT gleich modernisiert, sollte das vorher mit dem Versicherer klären.
@@ -130,4 +131,4 @@ Für Zahnarztpraxen würden wir die Betriebsunterbrechung in der Cyberversicheru
 
 Rechne einmal grob, was deine Praxis an einem Tag ohne Behandlungen kostet, und vergleiche das mit dem, was dein Cybervertrag nach dem Selbstbehalt ersetzt. Schau dabei auf alle drei Verträge: Cyber, Praxisausfall und Inhalt. Ein Gespräch ist sinnvoll, wenn du nicht sicher bist, welcher Vertrag welchen Stillstand trägt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 18.11.2026. Grundlagen sind Verbandsmuster, Versicherungsbedingungen, Veröffentlichungen der KZBV und die Muster-Berufsordnung der Bundeszahnärztekammer (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.04.2014). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Verbandsmuster, Versicherungsbedingungen, Veröffentlichungen der KZBV und die Muster-Berufsordnung der Bundeszahnärztekammer (siehe Quellen mit dem jeweiligen Stand; älteste ausgewertete Fassung: 01.04.2014). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
