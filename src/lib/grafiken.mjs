@@ -510,6 +510,32 @@ export const grafiken = {
     },
   ],
 
+
+  'pkv-oder-gkv-wechsel-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Wer darf als Zahnärztin oder Zahnarzt in die private Krankenversicherung?',
+      titel: 'Wer kann zwischen PKV und GKV wählen?',
+      spalten: ['Situation', 'Krankenversicherung'],
+      zeilen: [
+        ['Angestellt, auch in der Vorbereitungsassistenz, Gehalt bis zur Grenze', 'Versicherungspflicht in der gesetzlichen Kasse'],
+        ['Angestellt, regelmäßiges Jahresgehalt über der Grenze (2026: 77.400 Euro)', 'versicherungsfrei: freiwillig gesetzlich oder privat'],
+        ['Eigene Zahnarztpraxis, hauptberuflich selbstständig', 'nicht versicherungspflichtig: privat oder, nach ausreichender Vorversicherung, freiwillig gesetzlich'],
+        ['Ab 55 eigentlich wieder versicherungspflichtig, vorher fünf Jahre nicht gesetzlich versichert', 'trotzdem versicherungsfrei unter den Voraussetzungen des § 6 Abs. 3a SGB V'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach SGB V und Sozialversicherungs-Rechengrößenverordnung 2026 (siehe Quellen).',
+    },
+    {
+      typ: 'ablauf', nach: 'Wie läuft der Wechsel als angestellte Zahnärztin oder angestellter Zahnarzt?',
+      titel: 'Fiktives Beispiel: Wechsel bei 7.000 Euro Monatsgehalt',
+      schritte: [
+        { titel: 'Gehalt 2026', text: '12 × 7.000 Euro = 84.000 Euro, über der Grenze von 77.400 Euro' },
+        { titel: 'Prüfung Folgejahr', text: 'Die Versicherungspflicht endet nur, wenn das Gehalt auch über der Grenze für 2027 liegt' },
+        { titel: 'Hinweis der Kasse', text: 'Ohne Austritt binnen zwei Wochen geht es freiwillig gesetzlich weiter' },
+        { titel: 'Ab 01.01.2027', text: 'Privat versichert, wenn der Austritt erklärt und die PKV nachgewiesen ist' },
+      ],
+      fuss: 'Stand: 19.11.2026, nach §§ 6 und 188 SGB V (siehe Quellen). Annahme: Gehaltserhöhung in bestehender Stelle, festes Gehalt, zwölf Monatsgehälter.',
+    },
+  ],
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

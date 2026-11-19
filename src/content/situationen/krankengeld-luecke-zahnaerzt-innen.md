@@ -45,6 +45,7 @@ verwandt:
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
+  - pkv-oder-gkv-wechsel-zahnaerzt-innen
 hinweise:
   - nach: "Wo entsteht bei gutem Gehalt die Lücke?"
     art: einschaetzen

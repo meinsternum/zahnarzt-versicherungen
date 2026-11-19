@@ -37,6 +37,7 @@ verwandt:
   - krankengeld-luecke-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall
+  - pkv-oder-gkv-wechsel-zahnaerzt-innen
 hinweise:
   - nach: "Was ersetzt eine Praxisausfallversicherung?"
     art: einschaetzen

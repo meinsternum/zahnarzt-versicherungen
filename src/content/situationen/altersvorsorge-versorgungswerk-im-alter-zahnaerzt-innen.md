@@ -38,6 +38,7 @@ faq:
 verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
+  - pkv-oder-gkv-wechsel-zahnaerzt-innen
 hinweise:
   - nach: "Woran knüpft dein Beitrag an?"
     art: einschaetzen
