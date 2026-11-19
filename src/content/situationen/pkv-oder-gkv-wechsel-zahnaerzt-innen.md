@@ -3,7 +3,7 @@ frage: "Wann können Zahnärzt*innen in die private Krankenversicherung wechseln
 titel: "PKV oder GKV: Wann können Zahnärzt*innen wechseln?"
 kurzantwort: "Angestellte Zahnärzt*innen können wechseln, wenn ihr regelmäßiges Jahresgehalt über der Jahresarbeitsentgeltgrenze liegt, 2026 sind das 77.400 Euro. Mit eigener Zahnarztpraxis bist du hauptberuflich selbstständig und nicht versicherungspflichtig. Der Weg zurück in die gesetzliche Kasse ist danach nur eng offen."
 metaDescription: "PKV oder GKV für Zahnärzt*innen: wann der Wechsel möglich ist, Grenze 2026, Vorbereitungsassistenz, eigene Praxis und der Weg zurück."
-status: geprueft
+status: freigegeben
 stand: "2026-11-19"
 pruefenBis: "2027-01-15"
 reihenfolge: 31
