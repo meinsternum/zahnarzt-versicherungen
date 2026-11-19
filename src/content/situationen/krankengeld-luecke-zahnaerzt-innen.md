@@ -36,7 +36,7 @@ faq:
   - frage: "Wie hoch darf ein Krankentagegeld sein?"
     antwort: "Nach den Musterbedingungen darf es zusammen mit Krankengeld und anderen Tagegeldern dein Nettoeinkommen nicht übersteigen (§ 4 Abs. 2 MB/KT). Die Höhe vereinbarst du im Tarif."
   - frage: "Ersetzt eine BU das Krankentagegeld?"
-    antwort: "Nein. Das Krankentagegeld gilt für die Zeit der Arbeitsunfähigkeit, die BU für die dauerhafte Berufsunfähigkeit. Nach den Musterbedingungen endet das Krankentagegeld mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach (§ 15 Abs. 1 Buchst. b MB/KT)."
+    antwort: "Nein. Das Krankentagegeld gilt für die Zeit der Arbeitsunfähigkeit, die BU für die dauerhafte Berufsunfähigkeit. Nach den Musterbedingungen endet das Krankentagegeld mit Eintritt der Berufsunfähigkeit. Läuft dann schon eine Arbeitsunfähigkeit, zahlt der Versicherer höchstens noch drei Monate (§ 15 Abs. 1 Buchst. b MB/KT)."
   - frage: "Was kostet ein Krankentagegeld für Zahnärzt*innen?"
     antwort: "In einem Musterbeispiel von uns (angestellter Zahnarzt, 35 Jahre, gesetzlich versichert, 150 Euro ab dem 43. Tag) lagen die Monatsbeiträge für das Tagegeld in drei Tarifen zwischen 49,50 und 76,50 Euro. Beiträge können heute abweichen."
 verwandt:
@@ -46,6 +46,8 @@ verwandt:
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
   - pkv-oder-gkv-wechsel-zahnaerzt-innen
+  - krankentagegeld-praxisinhaber-zahnaerzt-innen
+  - pkv-im-alter-beitraege-zahnaerzt-innen
 hinweise:
   - nach: "Wo entsteht bei gutem Gehalt die Lücke?"
     art: einschaetzen
@@ -88,7 +90,7 @@ Das Gesetz spricht nur vom vereinbarten Tagegeld (§ 192 Abs. 5 VVG). Höhe und 
 - Die allgemeine Wartezeit beträgt drei Monate, bei Unfällen keine (§ 3 Abs. 2 MB/KT).
 - Sinkt dein Einkommen dauerhaft, musst du das melden, und der Versicherer kann Tagegeld und Beitrag herabsetzen (§ 4 Abs. 3 und 4 MB/KT).
 - Eine automatische Erhöhung bei steigendem Gehalt ist nicht vorgesehen. Bei einer Erhöhung können für den neuen Teil Wartezeiten und Zuschläge gelten (§§ 3 Abs. 6, 8a Abs. 4 MB/KT).
-- Das Tagegeld endet mit Eintritt der Berufsunfähigkeit, spätestens drei Monate danach, und mit dem Bezug von Altersrente (§ 15 Abs. 1 MB/KT). Endet es mit 65, kannst du eine Anschlussversicherung bis 70 ohne neue Gesundheitsprüfung verlangen, wenn du sie bis zwei Monate nach deinem 65. Geburtstag beantragst und der neue Schutz nicht höher ist als bisher (§ 196 Abs. 1 VVG).
+- Das Tagegeld endet mit Eintritt der Berufsunfähigkeit, bei schon laufender Arbeitsunfähigkeit spätestens drei Monate danach, und mit dem Bezug von Altersrente (§ 15 Abs. 1 MB/KT). Endet es mit 65, kannst du eine Anschlussversicherung bis 70 ohne neue Gesundheitsprüfung verlangen, wenn du sie bis zwei Monate nach deinem 65. Geburtstag beantragst und der neue Schutz nicht höher ist als bisher (§ 196 Abs. 1 VVG).
 
 Der Punkt zur Gehaltsanpassung ist aus unserer Sicht der, der am leichtesten übersehen wird: Ein Tagegeld, das beim Berufsstart gepasst hat, passt einige Gehaltsstufen später nicht mehr.
 

@@ -87,6 +87,8 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen': 'patrick-06-hoch',
   'krankengeld-luecke-zahnaerzt-innen': 'schreibtisch-02-hoch',
   'pkv-oder-gkv-wechsel-zahnaerzt-innen': 'patrick-03-hoch',
+  'krankentagegeld-praxisinhaber-zahnaerzt-innen': 'patrick-06-hoch',
+  'pkv-im-alter-beitraege-zahnaerzt-innen': 'kollege-01-hoch',
   'berufshaftpflicht-pflicht-mindestsumme-zahnaerzt-innen': 'kollege-01-hoch',
   'praxisinhalt-was-gehoert-hinein-zahnaerzt-innen': 'patrick-05-hoch',
   'praxisinhalt-versicherungssumme-unterversicherung-zahnaerzt-innen': 'patrick-07-hoch',

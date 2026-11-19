@@ -56,6 +56,8 @@ verwandt:
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
   - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
+  - krankentagegeld-praxisinhaber-zahnaerzt-innen
+  - pkv-im-alter-beitraege-zahnaerzt-innen
 hinweise:
   - nach: "Wie läuft der Wechsel als angestellte Zahnärztin oder angestellter Zahnarzt?"
     art: einschaetzen
