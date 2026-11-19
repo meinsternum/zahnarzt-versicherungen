@@ -12,6 +12,7 @@ export const themen = [
   { id: 'altersvorsorge', titel: 'Altersvorsorge', icon: 'sparen', beschreibung: 'Was das Versorgungswerk im Alter zahlt und wie du eine mögliche Rentenlücke berechnest.' },
   { id: 'berufshaftpflicht', titel: 'Berufshaftpflicht', icon: 'waage', beschreibung: 'Pflicht, Mindestsummen und worauf du im Vertrag deiner Berufshaftpflicht achtest.' },
   { id: 'rechtsschutz', titel: 'Rechtsschutz', icon: 'dokument', beschreibung: 'Welche Bausteine du brauchst, wo die Berufshaftpflicht zuständig ist und was bei Strafverfahren, KZV und Streit in der Praxis gilt.' },
+  { id: 'cyber', titel: 'Cyberversicherung', icon: 'schloss', beschreibung: 'Was eine Cyberversicherung für deine Zahnarztpraxis leistet, was nach einem Angriff zu tun ist und welche IT-Sicherheit der Vertrag verlangt.' },
 ] as const;
 
 export type ThemaId = (typeof themen)[number]['id'];
@@ -38,6 +39,12 @@ export const themaJeSeite: Record<string, ThemaId> = {
   'rechtsschutz-angestellte-zahnaerzt-innen': 'rechtsschutz',
   'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'rechtsschutz',
   'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'rechtsschutz',
+  'cyberversicherung-zahnarztpraxis-braucht-man-das': 'cyber',
+  'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': 'cyber',
+  'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': 'cyber',
+  'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'cyber',
+  'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'cyber',
+  'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'cyber',
 };
 
 // Kurze Bezeichnung je Seite für das Menü (Entwurf zur Freigabe, 14.11.2026).
@@ -64,6 +71,12 @@ export const menueTitel: Record<string, string> = {
   'rechtsschutz-angestellte-zahnaerzt-innen': 'Rechtsschutz für Angestellte',
   'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'Kammer, Berufsgericht, Approbation',
   'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'Wartezeit, Wechsel, Nachhaftung',
+  'cyberversicherung-zahnarztpraxis-braucht-man-das': 'Braucht meine Praxis eine Cyberversicherung?',
+  'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': 'Hackerangriff: erste Schritte und Meldepflicht',
+  'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': 'Welche IT-Sicherheit verlangt der Vertrag?',
+  'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'Wann zahlt sie nicht? Lösegeld, Bußgeld, TI',
+  'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'Datenleck: Ansprüche von Patient*innen',
+  'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'Praxis steht still: Wer zahlt den Ausfall?',
 };
 
 // Berufsphase je Seite (Kennzeichnung auf der Karte).
@@ -85,6 +98,12 @@ export const phaseJeSeite: Record<string, string> = {
   'rechtsschutz-angestellte-zahnaerzt-innen': 'Angestellt',
   'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'Jede Berufsphase',
   'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'Jede Berufsphase',
+  'cyberversicherung-zahnarztpraxis-braucht-man-das': 'Praxisgründung und eigene Praxis',
+  'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': 'Praxisgründung und eigene Praxis',
+  'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': 'Praxisgründung und eigene Praxis',
+  'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'Praxisgründung und eigene Praxis',
+  'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'Praxisgründung und eigene Praxis',
+  'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'Praxisgründung und eigene Praxis',
 };
 
 export function gruppiere<T extends { id: string }>(seiten: T[]) {

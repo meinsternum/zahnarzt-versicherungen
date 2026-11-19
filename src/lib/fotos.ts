@@ -102,5 +102,12 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'rechtsschutz-angestellte-zahnaerzt-innen': 'patrick-04-hoch',
   'rechtsschutz-kammer-berufsrecht-approbation-zahnaerzt-innen': 'patrick-01-hoch',
   'rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen': 'patrick-03-hoch',
+  // Cyber (18.11.2026): sechs verschiedene Motive, kein patrick-03 auf 80 (78 hat es), 04/05 und 01/07 nicht gemeinsam.
+  'cyberversicherung-zahnarztpraxis-braucht-man-das': 'kollege-01-hoch',
+  'cyber-hackerangriff-zahnarztpraxis-erste-schritte-meldepflicht': 'schreibtisch-02-hoch',
+  'cyber-obliegenheiten-it-sicherheitsrichtlinie-zahnarztpraxis': 'patrick-06-hoch',
+  'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'patrick-02-hoch',
+  'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'patrick-04-hoch',
+  'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'schreibtisch-01-hoch',
 };
 export const STANDARD_FOTO: FotoKey = 'patrick-01-hoch';

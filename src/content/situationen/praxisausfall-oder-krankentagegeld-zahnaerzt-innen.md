@@ -36,6 +36,7 @@ verwandt:
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
   - krankengeld-luecke-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+  - cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall
 hinweise:
   - nach: "Was ersetzt eine Praxisausfallversicherung?"
     art: einschaetzen
