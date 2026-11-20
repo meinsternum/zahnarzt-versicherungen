@@ -1,8 +1,10 @@
+import { useGoogle } from './env.mjs';
 import { settings, staff as allStaff, appointmentTypes } from './config.mjs';
 import { zonedToUtc, addDays, weekdayOf } from './tz.mjs';
 
 export function staffForType(typeId) {
-  return allStaff.filter((s) => s.types.includes(typeId));
+  // Mit echtem Google-Kalender nur Personen anbieten, deren Kalender-Adresse hinterlegt ist
+  return allStaff.filter((s) => s.types.includes(typeId) && (!useGoogle() || s.configured));
 }
 
 /**

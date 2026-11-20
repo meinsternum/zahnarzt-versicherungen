@@ -75,6 +75,7 @@ export const staff = [
   ...s,
   // Kalender-Adresse je Person aus STAFF_<ID>_EMAIL (nicht im öffentlichen Code); ohne Eintrag eine ungültige Platzhalter-Adresse
   email: process.env[`STAFF_${s.id.toUpperCase()}_EMAIL`] || `${s.id}@example.invalid`,
+  configured: Boolean(process.env[`STAFF_${s.id.toUpperCase()}_EMAIL`]),
 }))
   .map((s) => ({ ...s, calendarId: s.email }));
 
