@@ -36,6 +36,7 @@ verwandt:
   - praxisausfall-tagessatz-fixkosten-zahnaerzt-innen
   - praxisinhalt-was-gehoert-hinein-zahnaerzt-innen
   - cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall
+  - krankentagegeld-praxisinhaber-zahnaerzt-innen
 hinweise:
   - nach: "Was bedeutet Karenzzeit?"
     art: einschaetzen

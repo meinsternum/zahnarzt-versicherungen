@@ -510,6 +510,82 @@ export const grafiken = {
     },
   ],
 
+
+  'pkv-oder-gkv-wechsel-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Wer darf als Zahnärztin oder Zahnarzt in die private Krankenversicherung?',
+      titel: 'Wer kann zwischen PKV und GKV wählen?',
+      spalten: ['Situation', 'Krankenversicherung'],
+      zeilen: [
+        ['Angestellt, auch in der Vorbereitungsassistenz, Gehalt bis zur Grenze', 'Versicherungspflicht in der gesetzlichen Kasse'],
+        ['Angestellt, regelmäßiges Jahresgehalt über der Grenze (2026: 77.400 Euro)', 'versicherungsfrei: freiwillig gesetzlich oder privat'],
+        ['Eigene Zahnarztpraxis, hauptberuflich selbstständig', 'nicht versicherungspflichtig: privat oder, nach ausreichender Vorversicherung, freiwillig gesetzlich'],
+        ['Ab 55 eigentlich wieder versicherungspflichtig, vorher fünf Jahre nicht gesetzlich versichert', 'trotzdem versicherungsfrei unter den Voraussetzungen des § 6 Abs. 3a SGB V'],
+      ],
+      fuss: 'Stand: 19.11.2026, nach SGB V und Sozialversicherungs-Rechengrößenverordnung 2026 (siehe Quellen).',
+    },
+    {
+      typ: 'ablauf', nach: 'Wie läuft der Wechsel als angestellte Zahnärztin oder angestellter Zahnarzt?',
+      titel: 'Fiktives Beispiel: Wechsel bei 7.000 Euro Monatsgehalt',
+      schritte: [
+        { titel: 'Gehalt 2026', text: '12 × 7.000 Euro = 84.000 Euro, über der Grenze von 77.400 Euro' },
+        { titel: 'Prüfung Folgejahr', text: 'Die Versicherungspflicht endet nur, wenn das Gehalt auch über der Grenze für 2027 liegt' },
+        { titel: 'Hinweis der Kasse', text: 'Ohne Austritt binnen zwei Wochen geht es freiwillig gesetzlich weiter' },
+        { titel: 'Ab 01.01.2027', text: 'Privat versichert, wenn der Austritt erklärt und die PKV nachgewiesen ist' },
+      ],
+      fuss: 'Stand: 19.11.2026, nach §§ 6 und 188 SGB V (siehe Quellen). Annahme: Gehaltserhöhung in bestehender Stelle, festes Gehalt, zwölf Monatsgehälter.',
+    },
+  ],
+
+
+  'krankentagegeld-praxisinhaber-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Wie hoch sollte das Krankentagegeld mit eigener Praxis sein?',
+      titel: 'Was als Nettoeinkommen zählt',
+      spalten: ['Grundlage', 'Obergrenze für das Tagegeld'],
+      zeilen: [
+        ['Musterbedingungen des PKV-Verbands', 'Nettoeinkommen aus dem Beruf, Durchschnitt der letzten zwölf Monate, wenn der Tarif nichts anderes vorsieht'],
+        ['Ein Vertrag, niedergelassene Zahnärzt*innen', '80 Prozent des Praxisumsatzes, in der Berufsausübungsgemeinschaft dein Anteil'],
+        ['Ein anderer Vertrag, Freiberufler*innen', '75 Prozent der Praxiseinnahmen der letzten zwölf Monate'],
+      ],
+      fuss: 'Stand: 20.11.2026, nach Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'ablauf', nach: 'Ab welchem Tag sollte das Krankentagegeld zahlen?',
+      titel: 'Fiktives Beispiel: Was du bis zum Beginn selbst trägst',
+      schritte: [
+        { titel: 'Bedarf', text: '6.000 Euro im Monat, geteilt durch 30 Tage, ergibt 200 Euro Tagessatz' },
+        { titel: 'Beginn ab dem 22. Tag', text: '21 Tage selbst tragen: 21 × 200 Euro = 4.200 Euro' },
+        { titel: 'Beginn ab dem 43. Tag', text: '42 Tage selbst tragen: 42 × 200 Euro = 8.400 Euro' },
+      ],
+      fuss: 'Stand: 20.11.2026. Annahmen: privater Bedarf 6.000 Euro im Monat, Zahlung je Kalendertag einschließlich Wochenende, ohne Steuern.',
+    },
+  ],
+
+  'pkv-im-alter-beitraege-zahnaerzt-innen': [
+    {
+      typ: 'karten', nach: 'Was dämpft den Beitrag im Ruhestand?',
+      titel: 'Was den Beitrag im Alter dämpft',
+      karten: [
+        { kopf: 'Alterungsrückstellung', punkte: ['Keine Erhöhung wegen des Älterwerdens allein', 'Anpassung nur bei veränderten Leistungen oder Lebenserwartung'] },
+        { kopf: 'Gesetzlicher Zuschlag', punkte: ['10 Prozent in der Krankheitskostenvollversicherung, vom Jahr nach dem 21. bis zum Jahr des 60. Geburtstags', 'Ab 65 für Beitragserhöhungen, ab 80 zur Senkung'] },
+        { kopf: 'Krankentagegeld endet', punkte: ['Mit dem Bezug von Altersrente, spätestens mit 65, wenn vereinbart', 'Sein Beitrag fällt weg'] },
+        { kopf: 'Beitragsentlastungstarif', punkte: ['Vereinbarter Abzug vom Beitrag, in der Regel ab 67', 'Zusatzbeitrag läuft auch danach weiter'] },
+      ],
+      fuss: 'Stand: 20.11.2026, nach Gesetz, Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'tabelle', nach: 'Zahlt das Versorgungswerk einen Zuschuss zu meinem Beitrag?',
+      titel: 'Wer zahlt im Ruhestand beim Beitrag mit?',
+      spalten: ['Rente', 'Zuschuss zur Krankenversicherung'],
+      zeilen: [
+        ['Gesetzliche Rente, privat versichert', 'Ja, die Hälfte von allgemeinem Beitragssatz und durchschnittlichem Zusatzbeitrag auf die Rente, höchstens die Hälfte des Beitrags'],
+        ['Rente aus dem Versorgungswerk Westfalen-Lippe', 'Nein, die Satzung (Stand Juli 2026) sieht keinen Zuschuss vor'],
+        ['Angestellt bis zum Ruhestand', 'Arbeitgeberzuschuss endet mit der Beschäftigung'],
+      ],
+      fuss: 'Stand: 20.11.2026, nach SGB VI, SGB V und Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe, Stand Juli 2026 (siehe Quellen).',
+    },
+  ],
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

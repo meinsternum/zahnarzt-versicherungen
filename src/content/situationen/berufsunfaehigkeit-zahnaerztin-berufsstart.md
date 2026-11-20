@@ -40,6 +40,7 @@ verwandt:
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-teilweise-zahnaerzt-innen
   - krankengeld-luecke-zahnaerzt-innen
+  - pkv-oder-gkv-wechsel-zahnaerzt-innen
 hinweise:
   - nach: "Was zählt, wenn du zum Berufsstart oder in der Assistenzzeit abschließt?"
     art: termin
