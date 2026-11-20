@@ -3,9 +3,9 @@ frage: "Wird die private Krankenversicherung für Zahnärzt*innen im Alter zu te
 titel: "PKV im Alter: Was Zahnärzt*innen zum Beitrag wissen sollten"
 kurzantwort: "Nicht automatisch: Wegen des Älterwerdens allein steigt dein PKV-Beitrag nicht, wohl aber mit Behandlungskosten und Lebenserwartung. Für Zahnärzt*innen wichtig: Den Zuschuss der Rentenversicherung zum Beitrag gibt es nur zur gesetzlichen Rente, nicht zur Rente aus dem Versorgungswerk."
 metaDescription: "PKV-Beitrag im Ruhestand für Zahnärzt*innen: Alterungsrückstellung, gesetzlicher Zuschlag, Zuschuss und Versorgungswerk, Beitragsentlastung, Basistarif."
-status: geprueft
-stand: "2026-11-19"
-pruefenBis: "2027-11-19"
+status: freigegeben
+stand: "2026-11-20"
+pruefenBis: "2027-11-20"
 reihenfolge: 35
 quellen:
   - titel: "§ 146 VAG, Substitutive Krankenversicherung (gesetze-im-internet.de)"
@@ -146,4 +146,4 @@ Aus unserer Sicht wird die PKV im Alter nicht automatisch unbezahlbar, aber sie 
 
 Dein PKV-Beitrag steigt nicht wegen deines Alters, aber er steigt mit Kosten und Lebenserwartung, und im Ruhestand zahlt ihn niemand mit. Leg deinen Beitragsbescheid neben die Rentenauskunft deines Versorgungswerks und rechne aus, welcher Anteil der Rente für die Krankenversicherung bleibt. Ein Gespräch ist sinnvoll, bevor du 55 wirst, weil danach einige Wege enger werden.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, Satzung, Musterbedingungen und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste Fassung 01.08.2016). Verträge unterscheiden sich, maßgeblich sind dein Tarif und deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 20.11.2026. Grundlagen sind Gesetz, Satzung, Musterbedingungen und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste Fassung 01.08.2016). Verträge unterscheiden sich, maßgeblich sind dein Tarif und deine Bedingungen.*

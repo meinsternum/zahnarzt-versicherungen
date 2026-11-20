@@ -3,9 +3,9 @@ frage: "Wie hoch sollte das Krankentagegeld mit eigener Zahnarztpraxis sein, und
 titel: "Krankentagegeld für Zahnärzt*innen mit eigener Praxis"
 kurzantwort: "So hoch wie dein privater Bedarf, höchstens bis zu deinem Nettoeinkommen, und ab dem Tag, bis zu dem du den Ausfall aus Rücklagen überbrückst. Mit eigener Zahnarztpraxis zahlt dir sonst niemand das Einkommen weiter, die Praxiskosten deckt das Tagegeld aber nicht."
 metaDescription: "Krankentagegeld mit eigener Zahnarztpraxis: Höhe, Leistungsbeginn, Einkommensnachweis, Kündigungsrecht und Mutterschutz für Zahnärzt*innen."
-status: geprueft
-stand: "2026-11-19"
-pruefenBis: "2027-11-19"
+status: freigegeben
+stand: "2026-11-20"
+pruefenBis: "2027-11-20"
 reihenfolge: 34
 quellen:
   - titel: "§ 192 VVG, Vertragstypische Leistungen des Versicherers (gesetze-im-internet.de)"
@@ -150,4 +150,4 @@ Für Zahnärzt\*innen mit eigener Praxis halten wir ein Krankentagegeld für unv
 
 Mit eigener Praxis trägst du jeden Krankheitstag selbst, bis dein Krankentagegeld beginnt. Leg deinen Versicherungsschein neben deine privaten Ausgaben und prüf drei Dinge: Tagessatz, Beginn und Kündigungsrecht. Ein Gespräch ist sinnvoll, wenn du gerade gründest oder übernimmst, denn dann lassen sich Tagegeld und Praxisausfallversicherung in einem Schritt aufeinander abstimmen.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 19.11.2026. Grundlagen sind Gesetz, Satzung, Musterbedingungen und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste Fassung 01.01.2018). Verträge unterscheiden sich, maßgeblich sind dein Tarif und deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 20.11.2026. Grundlagen sind Gesetz, Satzung, Musterbedingungen und Versicherungsbedingungen (siehe Quellen mit dem jeweiligen Stand, älteste Fassung 01.01.2018). Verträge unterscheiden sich, maßgeblich sind dein Tarif und deine Bedingungen.*

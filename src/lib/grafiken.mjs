@@ -548,7 +548,7 @@ export const grafiken = {
         ['Ein Vertrag, niedergelassene Zahnärzt*innen', '80 Prozent des Praxisumsatzes, in der Berufsausübungsgemeinschaft dein Anteil'],
         ['Ein anderer Vertrag, Freiberufler*innen', '75 Prozent der Praxiseinnahmen der letzten zwölf Monate'],
       ],
-      fuss: 'Stand: 19.11.2026, nach Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 20.11.2026, nach Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'ablauf', nach: 'Ab welchem Tag sollte das Krankentagegeld zahlen?',
@@ -558,7 +558,7 @@ export const grafiken = {
         { titel: 'Beginn ab dem 22. Tag', text: '21 Tage selbst tragen: 21 × 200 Euro = 4.200 Euro' },
         { titel: 'Beginn ab dem 43. Tag', text: '42 Tage selbst tragen: 42 × 200 Euro = 8.400 Euro' },
       ],
-      fuss: 'Stand: 19.11.2026. Annahmen: privater Bedarf 6.000 Euro im Monat, Zahlung je Kalendertag einschließlich Wochenende, ohne Steuern.',
+      fuss: 'Stand: 20.11.2026. Annahmen: privater Bedarf 6.000 Euro im Monat, Zahlung je Kalendertag einschließlich Wochenende, ohne Steuern.',
     },
   ],
 
@@ -572,7 +572,7 @@ export const grafiken = {
         { kopf: 'Krankentagegeld endet', punkte: ['Mit dem Bezug von Altersrente, spätestens mit 65, wenn vereinbart', 'Sein Beitrag fällt weg'] },
         { kopf: 'Beitragsentlastungstarif', punkte: ['Vereinbarter Abzug vom Beitrag, in der Regel ab 67', 'Zusatzbeitrag läuft auch danach weiter'] },
       ],
-      fuss: 'Stand: 19.11.2026, nach Gesetz, Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 20.11.2026, nach Gesetz, Musterbedingungen und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'tabelle', nach: 'Zahlt das Versorgungswerk einen Zuschuss zu meinem Beitrag?',
@@ -583,7 +583,7 @@ export const grafiken = {
         ['Rente aus dem Versorgungswerk Westfalen-Lippe', 'Nein, die Satzung (Stand Juli 2026) sieht keinen Zuschuss vor'],
         ['Angestellt bis zum Ruhestand', 'Arbeitgeberzuschuss endet mit der Beschäftigung'],
       ],
-      fuss: 'Stand: 19.11.2026, nach SGB VI, SGB V und Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe, Stand Juli 2026 (siehe Quellen).',
+      fuss: 'Stand: 20.11.2026, nach SGB VI, SGB V und Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe, Stand Juli 2026 (siehe Quellen).',
     },
   ],
 };
