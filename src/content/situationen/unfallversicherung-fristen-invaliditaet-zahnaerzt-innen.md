@@ -1,21 +1,23 @@
 ---
 frage: "Welche Fristen gelten für Zahnärzt*innen nach einem Unfall, damit die Unfallversicherung bei Invalidität zahlt?"
 titel: "Unfall passiert: Welche Fristen gelten für Zahnärzt*innen?"
-kurzantwort: "Nach den Musterbedingungen muss die Invalidität innerhalb von 15 Monaten nach dem Unfall eingetreten, ärztlich festgestellt und beim Versicherer geltend gemacht sein. Sonst ist der Anspruch in der Regel verloren, auch wenn du in der Zahnarztpraxis dauerhaft eingeschränkt bleibst."
+kurzantwort: "Nach den Musterbedingungen muss die Invalidität innerhalb von 15 Monaten nach dem Unfall eingetreten, schriftlich ärztlich festgestellt und beim Versicherer geltend gemacht sein. Sonst besteht kein Anspruch, auch wenn du in der Zahnarztpraxis dauerhaft eingeschränkt bleibst, außer in besonderen Ausnahmefällen."
 metaDescription: "Welche Fristen und Pflichten nach einem Unfall in der Unfallversicherung gelten und was Zahnärzt*innen mit eigener Praxis zusätzlich melden müssen."
-status: entwurf
+status: geprueft
 stand: "2026-11-21"
 pruefenBis: "2027-11-21"
 reihenfolge: 94
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
     url: "https://gdv.de/resource/blob/6252/a0b6aef8832c8ed756a3b26865728d59/01-allgemeine-unfallversicherungsbedingungenaub-2014%2D%2Ddata.pdf"
-  - titel: "GDV: Besondere Bedingungen für den Einschluss von Infektionen für Heilberufe (BB Infektionen/Heilberufe 2014), unverbindliche Musterbedingungen, Stand 20.11.2015"
+  - titel: "GDV: Besondere Bedingungen für den Einschluss von Infektionen für Heilberufe (BB Infektionen/Heilberufe 2014, bezogen auf AUB 2014), unverbindliche Musterbedingungen, Stand 20.11.2015"
     url: "https://www.gdv.de/resource/blob/5936/0fa5ccd4d9dce8d900012a9a1126b689/07-besondere-bedingungen-fuer-den-einschluss-von-infektionen-fuer-heilberufe-bb-infektionen-heilberufe-2014--data.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
   - titel: "Satzung der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) vom 24.05.2024 in der Fassung des 1. Nachtrags, gültig ab 01.01.2026"
     url: "https://www.bgw-online.de/resource/blob/19550/62d38354ba27176b249b47f4695e05a3/bgw03-04-004-satzung-der-bgw-data.pdf"
+  - titel: "BGW: Freiwillige Versicherung für Ärztinnen und Ärzte, Merkblatt BGW 03-04-010, Stand 04/2022"
+    url: "https://www.bgw-online.de/resource/blob/19522/9b6f1536b7021c72b5834c773026ffb4/bgw03-04-010-freiwillige-versicherung-aerzte-data.pdf"
 faq:
   - frage: "Wie lange habe ich Zeit, eine Invalidität zu melden?"
     antwort: "Nach den Musterbedingungen 15 Monate nach dem Unfall. Innerhalb dieser Zeit muss die Invalidität eingetreten, von einer Ärztin oder einem Arzt schriftlich festgestellt und beim Versicherer geltend gemacht sein. Es gibt Verträge mit längeren Fristen, zum Beispiel 30 und 36 Monate."
@@ -66,8 +68,7 @@ Invalidität heißt dabei: Deine körperliche oder geistige Leistungsfähigkeit 
 
 Ja. Die 15 Monate sind der Wert der Musterbedingungen, Versicherer dürfen davon abweichen. Zum Beispiel gibt es:
 
-- einen Vertrag mit 18 Monaten für den Eintritt und 24 Monaten für die ärztliche Feststellung und die Geltendmachung,
-- einen Vertrag mit Baustein für Heilberufe, in dem die Invalidität innerhalb von 30 Monaten eingetreten und ärztlich festgestellt und innerhalb von 36 Monaten geltend gemacht sein muss,
+- einen Vertrag mit 18 Monaten für den Eintritt und 24 Monaten für die ärztliche Feststellung und die Geltendmachung, der sich mit einem Baustein für Heilberufe auf 30 Monate für Eintritt und Feststellung und 36 Monate für die Geltendmachung verlängert,
 - bei Infektionen nach den Musterbedingungen für Heilberufe 39 Monate für Eintritt, Feststellung und Geltendmachung.
 
 Für Infektionen gibt es außerdem Verträge, in denen die Fristen nicht mit der Ansteckung beginnen, sondern erst mit der ersten ärztlichen Diagnose. Mehr dazu auf [Nadelstich und Infektion: Zahlt die Unfallversicherung?](/ratgeber/unfallversicherung-nadelstich-infektion-zahnaerzt-innen).
@@ -82,19 +83,19 @@ Nach den Musterbedingungen hast du nach einem Unfall, der voraussichtlich zu ein
 - dich von Ärzt\*innen untersuchen lassen, die der Versicherer beauftragt; Kosten und Verdienstausfall dafür trägt der Versicherer,
 - dem Versicherer ermöglichen, Auskünfte von behandelnden Ärzt\*innen und anderen Stellen zu erhalten.
 
-Verletzt du eine dieser Pflichten vorsätzlich, verlierst du den Versicherungsschutz. Bei grober Fahrlässigkeit kann der Versicherer die Leistung kürzen. Beides gilt nur, wenn er dich vorher in Textform auf diese Folgen hingewiesen hat, und nicht, wenn die Pflichtverletzung für den Fall keine Rolle gespielt hat, außer bei Arglist.
+Verletzt du eine dieser Pflichten vorsätzlich, verlierst du den Versicherungsschutz. Bei grober Fahrlässigkeit kann der Versicherer die Leistung kürzen. Die Kürzung richtet sich nach der Schwere des Verschuldens. Beides gilt nur, wenn er dich vorher durch gesonderte Mitteilung in Textform auf diese Folgen hingewiesen hat. Der Schutz bleibt außerdem, wenn du nachweist, dass die Pflichtverletzung für Eintritt, Feststellung oder Umfang des Falls nicht ursächlich war, außer bei Arglist.
 
 Ein praktischer Punkt: Die schriftliche ärztliche Feststellung der Invalidität muss nicht vom Versicherer kommen. Bitte deine behandelnde Ärztin oder deinen behandelnden Arzt frühzeitig darum, wenn absehbar ist, dass etwas bleibt.
 
 ## Wie läuft die Leistung ab?
 
-Nach den Musterbedingungen erklärt der Versicherer bei Invaliditätsleistung und Unfallrente innerhalb von drei Monaten, ob und in welchem Umfang er leistet. Die Frist beginnt, sobald ihm die Nachweise zum Unfallhergang, zu den Unfallfolgen und, soweit für die Bemessung nötig, zum Abschluss des Heilverfahrens vorliegen. Danach zahlt er innerhalb von zwei Wochen. Steht nur fest, dass er zahlen muss, aber nicht wie viel, kannst du einen Vorschuss verlangen.
+Nach den Musterbedingungen erklärt der Versicherer bei Invaliditätsleistung und Unfallrente innerhalb von drei Monaten, ob und in welchem Umfang er leistet. Die Frist beginnt, sobald ihm die Nachweise zum Unfallhergang, zu den Unfallfolgen und, soweit für die Bemessung nötig, zum Abschluss des Heilverfahrens vorliegen. Danach zahlt er innerhalb von zwei Wochen. Steht nur fest, dass er zahlen muss, aber nicht wie viel, kannst du einen Vorschuss verlangen. Vor Abschluss des Heilverfahrens ist er im ersten Jahr nach dem Unfall auf eine vereinbarte Todesfallsumme begrenzt.
 
 Den Invaliditätsgrad können du und der Versicherer bis zu drei Jahre nach dem Unfall jährlich neu ärztlich bemessen lassen. Maßgeblich ist der Zustand, der spätestens am Ende des dritten Jahres erkennbar ist. Wie der Grad bei Hand und Fingern berechnet wird, steht auf [Gliedertaxe für Zahnärzt\*innen: Hand und Finger](/ratgeber/unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen).
 
 ## Was gilt bei einem Unfall in deiner Zahnarztpraxis?
 
-Passiert der Unfall in der Praxis oder auf dem Weg dorthin, kann zusätzlich die BGW zuständig sein. Für dein angestelltes Team gilt das immer, für dich als Inhaberin oder Inhaber nur bei einer freiwilligen Versicherung.
+Passiert der Unfall in der Praxis oder auf dem Weg dorthin, kann zusätzlich die BGW zuständig sein. Für dein angestelltes Team ist die BGW bei Arbeits- und Wegeunfällen zuständig, für dich als Inhaberin oder Inhaber nur bei einer freiwilligen Versicherung.
 
 Als Inhaberin oder Inhaber hast du eine eigene Meldepflicht: Nach der Satzung der BGW musst du Unfälle deiner Mitarbeitenden anzeigen, wenn jemand getötet wird oder mehr als drei Tage arbeitsunfähig ist. Die Anzeige ist binnen drei Tagen zu erstatten, nachdem du davon erfahren hast. Mehr dazu auf [BGW für Zahnärzt\*innen mit Praxis: freiwillig versichern](/ratgeber/unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen).
 

@@ -593,8 +593,8 @@ export const grafiken = {
       titel: 'Vier Ebenen im Vergleich',
       spalten: ['', 'Private Unfallversicherung', 'BGW (gesetzlich)', 'Private BU', 'Versorgungswerk'],
       zeilen: [
-        ['Zahlt bei', 'Unfällen, weltweit und rund um die Uhr', 'Arbeits- und Wegeunfällen, Berufskrankheiten', 'Krankheit und Unfall', 'Berufsunfähigkeit nach der Satzung'],
-        ['Maßstab', 'Invaliditätsgrad nach Gliedertaxe', 'Versicherungssumme, Minderung der Erwerbsfähigkeit', 'Berufsunfähigkeit nach dem Vertrag', 'Satzung, zum Beispiel Aufgabe der Tätigkeit'],
+        ['Zahlt bei', 'Unfällen, weltweit und rund um die Uhr', 'Arbeits- und Wegeunfällen, Berufskrankheiten', 'Krankheit, Körperverletzung, Kräfteverfall', 'Berufsunfähigkeit nach der Satzung'],
+        ['Maßstab', 'Invaliditätsgrad (Gliedertaxe oder Leistungsfähigkeit)', 'Nach Satzung und Gesetz', 'Berufsunfähigkeit nach dem Vertrag', 'Satzung, zum Beispiel Aufgabe der Tätigkeit'],
         ['Für dich mit eigener Praxis', 'Wenn abgeschlossen', 'Nur bei freiwilliger Versicherung', 'Wenn abgeschlossen', 'Nach der Satzung'],
       ],
       fuss: 'Vereinfachte Übersicht. Stand: 21.11.2026, nach Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
@@ -607,7 +607,7 @@ export const grafiken = {
       karten: [
         { kopf: 'Angestelltes Team', punkte: ['Kraft Gesetzes versichert, auch angestellte Zahnärzt*innen'] },
         { kopf: 'Inhaberin oder Inhaber', punkte: ['Versicherungsfrei nach § 4 Abs. 3 SGB VII', 'Freiwillige Versicherung auf Antrag möglich'] },
-        { kopf: 'Mitarbeitende Ehe- oder Lebenspartner*innen', punkte: ['Bei unentgeltlicher Mitarbeit freiwillige Versicherung möglich'] },
+        { kopf: 'Mitarbeitende Ehe- oder eingetragene Lebenspartner*innen', punkte: ['Bei unentgeltlicher Mitarbeit freiwillige Versicherung möglich'] },
       ],
       fuss: 'Stand: 21.11.2026, nach SGB VII und Satzung der BGW, Fassung gültig ab 01.01.2026 (siehe Quellen).',
     },
@@ -664,7 +664,7 @@ export const grafiken = {
       typ: 'ablauf', nach: 'Welche Fristen gelten für die Invaliditätsleistung?',
       titel: 'Nach dem Unfall: die Fristen der Musterbedingungen',
       schritte: [
-        { titel: 'Unfalltag', text: 'Ärztin oder Arzt unverzüglich hinzuziehen, Versicherer unterrichten' },
+        { titel: 'Nach dem Unfall', text: 'Ärztin oder Arzt unverzüglich hinzuziehen, Versicherer unterrichten' },
         { titel: 'Bis 15 Monate', text: 'Invalidität eingetreten, schriftlich ärztlich festgestellt und beim Versicherer geltend gemacht' },
         { titel: 'Nach Eingang der Nachweise', text: 'Versicherer erklärt sich bei Invaliditätsleistung innerhalb von drei Monaten, zahlt dann binnen zwei Wochen' },
         { titel: 'Bis drei Jahre', text: 'Neubemessung des Invaliditätsgrads jährlich möglich' },

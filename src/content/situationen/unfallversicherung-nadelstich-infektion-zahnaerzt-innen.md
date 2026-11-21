@@ -3,14 +3,14 @@ frage: "Zahlt die Unfallversicherung, wenn sich Zahnärzt*innen bei der Behandlu
 titel: "Nadelstich und Infektion: Zahlt die Unfallversicherung?"
 kurzantwort: "Nicht automatisch. In den Musterbedingungen sind Infektionen ausgeschlossen, wenn die Erreger durch eine nur geringfügige Verletzung wie einen kleinen Stich in den Körper gelangen. Für Zahnärzt*innen gibt es Infektionsklauseln für Heilberufe, die solche Infektionen bei der Berufsausübung einschließen."
 metaDescription: "Wann die Unfallversicherung Zahnärzt*innen nach Nadelstich oder Spritzer ins Auge zahlt und was Infektionsklauseln für Heilberufe regeln."
-status: entwurf
+status: geprueft
 stand: "2026-11-21"
 pruefenBis: "2027-11-21"
 reihenfolge: 93
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
     url: "https://gdv.de/resource/blob/6252/a0b6aef8832c8ed756a3b26865728d59/01-allgemeine-unfallversicherungsbedingungenaub-2014%2D%2Ddata.pdf"
-  - titel: "GDV: Besondere Bedingungen für den Einschluss von Infektionen für Heilberufe (BB Infektionen/Heilberufe 2014), unverbindliche Musterbedingungen, Stand 20.11.2015"
+  - titel: "GDV: Besondere Bedingungen für den Einschluss von Infektionen für Heilberufe (BB Infektionen/Heilberufe 2014, bezogen auf AUB 2014), unverbindliche Musterbedingungen, Stand 20.11.2015"
     url: "https://www.gdv.de/resource/blob/5936/0fa5ccd4d9dce8d900012a9a1126b689/07-besondere-bedingungen-fuer-den-einschluss-von-infektionen-fuer-heilberufe-bb-infektionen-heilberufe-2014--data.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
@@ -20,13 +20,13 @@ faq:
   - frage: "Ist eine Nadelstichverletzung ein Unfall?"
     antwort: "Ja, ein Stich kann ein Unfall sein. Entscheidend ist aber die Infektion: In den Musterbedingungen sind Infektionen ausgeschlossen, außer die Erreger gelangen durch eine nicht nur geringfügige Unfallverletzung in den Körper. Geringfügig ist eine Verletzung, die ohne die Infektion keine ärztliche Behandlung bräuchte."
   - frage: "Was regelt eine Infektionsklausel für Heilberufe?"
-    antwort: "Sie schließt Infektionen ein, die du dir bei deiner beruflichen Tätigkeit zuziehst. In den Musterbedingungen für Heilberufe genügt dafür, dass mindestens die äußere Hautschicht durchtrennt ist oder infektiöses Material plötzlich in Auge, Mund oder Nase gelangt."
+    antwort: "Sie schließt Infektionen ein, die du dir bei deiner im Vertrag genannten beruflichen Tätigkeit zuziehst. In den Musterbedingungen für Heilberufe genügt dafür, dass mindestens die äußere Hautschicht durchtrennt ist oder infektiöses Material plötzlich in Auge, Mund oder Nase gelangt."
   - frage: "Gilt die Infektionsklausel auch für Studierende der Zahnmedizin?"
-    antwort: "In den Musterbedingungen des GDV ja. Sie nennen ausdrücklich Studierende der Zahnmedizin neben Zahnärztinnen und Zahnärzten und Zahntechniker*innen. Ob dein Vertrag das übernimmt, steht in deinen Bedingungen."
+    antwort: "In den Musterbedingungen des GDV ja. Sie nennen ausdrücklich Studierende der Zahnmedizin neben Zahnärzt*innen und Zahntechniker*innen. Ob dein Vertrag das übernimmt, steht in deinen Bedingungen."
   - frage: "Reicht es, wenn eine Patientin mich anhustet?"
     antwort: "Nach den Musterbedingungen für Heilberufe nein. Anhauchen, Anniesen oder Anhusten reichen nicht aus, außer bei Diphtherie und Tuberkulose."
   - frage: "Welche Fristen gelten bei einer Infektion?"
-    antwort: "Längere als bei anderen Unfällen. In den Musterbedingungen für Heilberufe muss die Invalidität innerhalb von 39 Monaten eingetreten, ärztlich festgestellt und geltend gemacht sein. Es gibt Verträge, in denen die Fristen erst mit der ersten ärztlichen Diagnose der Infektion beginnen."
+    antwort: "Nach den Musterbedingungen für Heilberufe längere als bei anderen Unfällen: Dort muss die Invalidität innerhalb von 39 Monaten eingetreten, ärztlich festgestellt und geltend gemacht sein. Es gibt Verträge, in denen die Fristen erst mit der ersten ärztlichen Diagnose der Infektion beginnen."
   - frage: "Zahlt die BGW bei einer Infektion in der Praxis?"
     antwort: "Die BGW ist für Arbeitsunfälle und Berufskrankheiten zuständig, also auch für Infektionen, die als solche anerkannt werden. Als Inhaberin oder Inhaber einer Zahnarztpraxis gilt das für dich nur, wenn du dich bei der BGW freiwillig versichert hast."
 verwandt:
@@ -49,11 +49,11 @@ cta:
   button: "Erstgespräch buchen"
 ---
 
-Der Stich mit der benutzten Kanüle, der Spritzer ins Auge beim Präparieren: In der Zahnarztpraxis gehört das Infektionsrisiko zum Alltag. Naheliegend wäre, dass die Unfallversicherung so etwas abdeckt. Ohne eine passende Klausel ist das nicht so.
+Der Stich mit der benutzten Kanüle, der Spritzer ins Auge beim Präparieren: Mit beidem rechnet man in der Zahnarztpraxis. Naheliegend wäre, dass die Unfallversicherung so etwas abdeckt. Ohne eine passende Klausel ist das nicht so.
 
 ## Ist eine Infektion durch einen Nadelstich versichert?
 
-Nach den Musterbedingungen in der Regel nicht. Infektionen sind dort grundsätzlich ausgeschlossen. Es gibt Ausnahmen, etwa Tollwut, Wundstarrkrampf und Infektionen über eine nicht nur geringfügige Unfallverletzung. Geringfügig ist eine Verletzung, die ohne die Infektion und ihre Folgen keine ärztliche Behandlung bräuchte.
+Nach den Musterbedingungen nur, wenn eine Ausnahme greift. Infektionen sind dort grundsätzlich ausgeschlossen. Es gibt Ausnahmen, etwa Tollwut, Wundstarrkrampf und Infektionen über eine nicht nur geringfügige Unfallverletzung. Geringfügig ist eine Verletzung, die ohne die Infektion und ihre Folgen keine ärztliche Behandlung bräuchte.
 
 Ein kleiner Nadelstich, der ohne die Infektion keine ärztliche Behandlung bräuchte, ist nach dieser Definition geringfügig. Die Infektion, die daraus entsteht, wäre dann nicht versichert, auch wenn sie dich dauerhaft beeinträchtigt.
 
@@ -68,7 +68,7 @@ Versichert ist danach eine Infektion, wenn
 
 Anhauchen, Anniesen oder Anhusten reichen nicht aus. Ausnahmen gelten für Diphtherie und Tuberkulose.
 
-Für die Zahnarztpraxis heißt das: Der Stich mit einer Kanüle oder einem Instrument und der Spritzer ins Auge sind die Fälle, für die diese Klausel gemacht ist.
+Für die Zahnarztpraxis heißt das: Der Stich mit einer Kanüle oder einem Instrument und der Spritzer ins Auge fallen unter diese Klausel, wenn die Haut durchtrennt ist oder das Material plötzlich in Auge, Mund oder Nase gelangt.
 
 ## Gibt es Unterschiede zwischen den Infektionsklauseln?
 
@@ -76,8 +76,7 @@ Ja, und sie sind erheblich. Unter dem Namen „Infektionsklausel“ stehen in Ve
 
 - Es gibt Klauseln für Heilberufe wie die oben beschriebene, die Infektionen bei der Berufsausübung allgemein einschließen.
 - Es gibt Klauseln, die nur eine Liste bestimmter Krankheiten einschließen, etwa durch Zecken übertragene Krankheiten, Masern oder Diphtherie, dazu Wundinfektionen nach einem Unfall. Ob eine Krankheit, die über Blut übertragen wird, dort erfasst ist, steht nur in der Liste.
-- Es gibt Verträge mit einer Wartezeit für Infektionen, zum Beispiel ein oder drei Monate nach Vertragsbeginn.
-- Ein Vertrag schließt Gesundheitsschäden aus, die als Berufskrankheit anerkannt worden sind.
+- Es gibt Verträge mit einer Wartezeit für Infektionen, zum Beispiel ein Monat oder drei Monate.
 
 Lies deshalb nicht nur, ob dein Vertrag eine Infektionsklausel hat, sondern auch, was genau sie einschließt.
 
@@ -85,7 +84,7 @@ Lies deshalb nicht nur, ob dein Vertrag eine Infektionsklausel hat, sondern auch
 
 Die BGW ist für Arbeitsunfälle und Berufskrankheiten zuständig. Für dein angestelltes Team bedeutet das: Eine Infektion bei der Arbeit kann ein Fall für die BGW sein. Als Inhaberin oder Inhaber der Zahnarztpraxis bist du dort nur versichert, wenn du dich freiwillig angemeldet hast. Berufskrankheiten, deren medizinische Voraussetzungen schon vor Beginn der freiwilligen Versicherung vorlagen, sind ausgeschlossen. Wie die freiwillige Versicherung funktioniert, steht auf [BGW für Zahnärzt\*innen mit Praxis: freiwillig versichern](/ratgeber/unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen).
 
-Die private Unfallversicherung mit Infektionsklausel und die BGW schließen sich nicht aus. Sie zahlen nach unterschiedlichen Regeln und können sich ergänzen.
+Die private Unfallversicherung mit Infektionsklausel und die BGW sind zwei getrennte Absicherungen mit eigenen Voraussetzungen.
 
 ## Was tust du nach einem Nadelstich?
 
@@ -114,6 +113,6 @@ Für Zahnärzt\*innen, die selbst behandeln, gehört aus unserer Sicht eine Infe
 
 ## Was du mitnehmen kannst
 
-Eine Infektion nach einem kleinen Nadelstich ist nach den Musterbedingungen nicht versichert. Mit einer Infektionsklausel für Heilberufe kann sie es sein, wenn die Haut verletzt wurde oder infektiöses Material in Auge, Mund oder Nase gelangt ist. Ein Gespräch ist sinnvoll, wenn du nicht weißt, welche Infektionsklausel in deinem Vertrag steht, oder wenn du die BGW-Versicherung prüfen willst.
+Eine Infektion nach einem kleinen Nadelstich ist nach den Musterbedingungen nicht versichert, wenn der Stich ohne die Infektion keine ärztliche Behandlung gebraucht hätte. Mit einer Infektionsklausel für Heilberufe kann sie es sein, wenn die Haut verletzt wurde oder infektiöses Material in Auge, Mund oder Nase gelangt ist. Ein Gespräch ist sinnvoll, wenn du nicht weißt, welche Infektionsklausel in deinem Vertrag steht, oder wenn du die BGW-Versicherung prüfen willst.
 
 *Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 20.11.2015). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
