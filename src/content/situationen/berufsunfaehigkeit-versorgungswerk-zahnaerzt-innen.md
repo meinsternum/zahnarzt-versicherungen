@@ -42,6 +42,8 @@ verwandt:
   - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
   - krankengeld-luecke-zahnaerzt-innen
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
+  - unfallversicherung-zahnaerzt-innen-braucht-man-das
+  - unfallversicherung-nadelstich-infektion-zahnaerzt-innen
 hinweise:
   - nach: "Was bedeutet „Praxis aufgeben“ für die Rente?"
     art: einschaetzen

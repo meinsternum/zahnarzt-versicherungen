@@ -13,6 +13,7 @@ export const themen = [
   { id: 'berufshaftpflicht', titel: 'Berufshaftpflicht', icon: 'waage', beschreibung: 'Pflicht, Mindestsummen und worauf du im Vertrag deiner Berufshaftpflicht achtest.' },
   { id: 'rechtsschutz', titel: 'Rechtsschutz', icon: 'dokument', beschreibung: 'Welche Bausteine du brauchst, wo die Berufshaftpflicht zuständig ist und was bei Strafverfahren, KZV und Streit in der Praxis gilt.' },
   { id: 'cyber', titel: 'Cyberversicherung', icon: 'schloss', beschreibung: 'Was eine Cyberversicherung für deine Zahnarztpraxis leistet, was nach einem Angriff zu tun ist und welche IT-Sicherheit der Vertrag verlangt.' },
+  { id: 'unfallversicherung', titel: 'Unfallversicherung', icon: 'pflaster', beschreibung: 'Was die private Unfallversicherung neben BU und Versorgungswerk leistet, wie du dich bei der BGW freiwillig versicherst und worauf es bei Gliedertaxe, Infektionen und Fristen ankommt.' },
 ] as const;
 
 export type ThemaId = (typeof themen)[number]['id'];
@@ -48,6 +49,11 @@ export const themaJeSeite: Record<string, ThemaId> = {
   'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'cyber',
   'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'cyber',
   'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'cyber',
+  'unfallversicherung-zahnaerzt-innen-braucht-man-das': 'unfallversicherung',
+  'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': 'unfallversicherung',
+  'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': 'unfallversicherung',
+  'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': 'unfallversicherung',
+  'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': 'unfallversicherung',
 };
 
 // Kurze Bezeichnung je Seite für das Menü (Entwurf zur Freigabe, 14.11.2026).
@@ -83,6 +89,11 @@ export const menueTitel: Record<string, string> = {
   'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'Wann zahlt sie nicht? Lösegeld, Bußgeld, TI',
   'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'Datenleck: Ansprüche von Patient*innen',
   'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'Praxis steht still: Wer zahlt den Ausfall?',
+  'unfallversicherung-zahnaerzt-innen-braucht-man-das': 'Brauche ich eine Unfallversicherung?',
+  'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': 'BGW: freiwillig versichern mit eigener Praxis',
+  'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': 'Gliedertaxe: Hand und Finger',
+  'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': 'Nadelstich und Infektion',
+  'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': 'Unfall passiert: Welche Fristen gelten?',
 };
 
 // Berufsphase je Seite (Kennzeichnung auf der Karte).
@@ -113,6 +124,11 @@ export const phaseJeSeite: Record<string, string> = {
   'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'Praxisgründung und eigene Praxis',
   'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'Praxisgründung und eigene Praxis',
   'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'Praxisgründung und eigene Praxis',
+  'unfallversicherung-zahnaerzt-innen-braucht-man-das': 'Jede Berufsphase',
+  'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': 'Praxisgründung und eigene Praxis',
+  'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': 'Jede Berufsphase',
+  'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': 'Jede Berufsphase',
+  'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': 'Jede Berufsphase',
 };
 
 export function gruppiere<T extends { id: string }>(seiten: T[]) {

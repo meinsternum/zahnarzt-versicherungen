@@ -37,6 +37,7 @@ verwandt:
   - rechtsschutz-angestellte-zahnaerzt-innen
   - rechtsschutz-kzv-wirtschaftlichkeitspruefung-zahnaerzt-innen
   - rechtsschutz-wartezeit-wechsel-nachhaftung-zahnaerzt-innen
+  - unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen
 hinweise:
   - nach: "Gibt es Schutz schon in der Vorbereitungszeit?"
     art: termin

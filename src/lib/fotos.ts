@@ -112,5 +112,11 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'cyber-was-zahlt-nicht-loesegeld-bussgeld-zahnarztpraxis': 'patrick-02-hoch',
   'cyber-datenleck-haftung-patienten-zahnarztpraxis': 'patrick-04-hoch',
   'cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall': 'schreibtisch-01-hoch',
+  // Unfallversicherung (21.11.2026): fünf verschiedene Motive, 90 nicht kollege-01/schreibtisch-01 (Nachbarn 80, 85).
+  'unfallversicherung-zahnaerzt-innen-braucht-man-das': 'patrick-03-hoch',
+  'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': 'schreibtisch-02-hoch',
+  'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': 'patrick-06-hoch',
+  'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': 'patrick-02-hoch',
+  'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': 'patrick-05-hoch',
 };
 export const STANDARD_FOTO: FotoKey = 'patrick-01-hoch';

@@ -30,6 +30,8 @@ verwandt:
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - berufsunfaehigkeit-zahnaerztin-berufsstart
   - krankengeld-luecke-zahnaerzt-innen
+  - unfallversicherung-zahnaerzt-innen-braucht-man-das
+  - unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen
 hinweise:
   - nach: "Was verlangt das Versorgungswerk?"
     art: einschaetzen
