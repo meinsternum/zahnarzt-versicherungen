@@ -47,6 +47,7 @@ verwandt:
   - krankengeld-luecke-zahnaerzt-innen
   - pkv-oder-gkv-wechsel-zahnaerzt-innen
   - pkv-im-alter-beitraege-zahnaerzt-innen
+  - unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen
 hinweise:
   - nach: "Wie hoch sollte das Krankentagegeld mit eigener Praxis sein?"
     art: einschaetzen

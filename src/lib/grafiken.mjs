@@ -586,6 +586,92 @@ export const grafiken = {
       fuss: 'Stand: 20.11.2026, nach SGB VI, SGB V und Satzung des Versorgungswerks der Zahnärztekammer Westfalen-Lippe, Stand Juli 2026 (siehe Quellen).',
     },
   ],
+  // Unfallversicherung (21.11.2026, Entwurf)
+  'unfallversicherung-zahnaerzt-innen-braucht-man-das': [
+    {
+      typ: 'tabelle', nach: 'Was unterscheidet die Unfallversicherung von BU und Versorgungswerk?',
+      titel: 'Vier Ebenen im Vergleich',
+      spalten: ['', 'Private Unfallversicherung', 'BGW (gesetzlich)', 'Private BU', 'Versorgungswerk'],
+      zeilen: [
+        ['Zahlt bei', 'Unfällen, weltweit und rund um die Uhr', 'Arbeits- und Wegeunfällen, Berufskrankheiten', 'Krankheit und Unfall', 'Berufsunfähigkeit nach der Satzung'],
+        ['Maßstab', 'Invaliditätsgrad nach Gliedertaxe', 'Versicherungssumme, Minderung der Erwerbsfähigkeit', 'Berufsunfähigkeit nach dem Vertrag', 'Satzung, zum Beispiel Aufgabe der Tätigkeit'],
+        ['Für dich mit eigener Praxis', 'Wenn abgeschlossen', 'Nur bei freiwilliger Versicherung', 'Wenn abgeschlossen', 'Nach der Satzung'],
+      ],
+      fuss: 'Vereinfachte Übersicht. Stand: 21.11.2026, nach Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': [
+    {
+      typ: 'karten', nach: 'Bist du mit eigener Zahnarztpraxis gesetzlich unfallversichert?',
+      titel: 'Wer in der Zahnarztpraxis bei der BGW versichert ist',
+      karten: [
+        { kopf: 'Angestelltes Team', punkte: ['Kraft Gesetzes versichert, auch angestellte Zahnärzt*innen'] },
+        { kopf: 'Inhaberin oder Inhaber', punkte: ['Versicherungsfrei nach § 4 Abs. 3 SGB VII', 'Freiwillige Versicherung auf Antrag möglich'] },
+        { kopf: 'Mitarbeitende Ehe- oder Lebenspartner*innen', punkte: ['Bei unentgeltlicher Mitarbeit freiwillige Versicherung möglich'] },
+      ],
+      fuss: 'Stand: 21.11.2026, nach SGB VII und Satzung der BGW, Fassung gültig ab 01.01.2026 (siehe Quellen).',
+    },
+    {
+      typ: 'ablauf', nach: 'Welche Versicherungssumme ist sinnvoll?',
+      titel: 'Fiktives Beispiel: 120.000 Euro Versicherungssumme',
+      schritte: [
+        { titel: 'Verletztengeld', text: '120.000 Euro geteilt durch 450 ergibt rund 266,67 Euro je Kalendertag' },
+        { titel: 'Volle Rente', text: 'Zwei Drittel von 120.000 Euro ergeben 80.000 Euro im Jahr, rund 6.666,67 Euro im Monat' },
+        { titel: 'Teilrente bei 30 Prozent', text: '30 Prozent der vollen Rente ergeben 24.000 Euro im Jahr, 2.000 Euro im Monat' },
+      ],
+      fuss: 'Fiktives Beispiel. Stand: 21.11.2026, nach Satzung und Merkblatt der BGW (siehe Quellen).',
+    },
+  ],
+  'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Warum sind Hand und Finger für Zahnärzt*innen so wichtig?',
+      titel: 'Drei Gliedertaxen im Vergleich',
+      spalten: ['Körperteil', 'Musterbedingungen', 'Verbessert, ohne Berufsbezug (Beispiel)', 'Heilberufe, Zahnärzt*innen (Beispiel)'],
+      zeilen: [
+        ['Hand', '55 %', '65 %', '100 %'],
+        ['Daumen', '20 %', '25 %', '60 %'],
+        ['Zeigefinger', '10 %', '15 %', '60 %'],
+        ['Anderer Finger', '5 %', '10 %', '30 %'],
+      ],
+      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+    {
+      typ: 'ablauf', nach: 'Wie viel macht eine Gliedertaxe für Heilberufe aus?',
+      titel: 'Fiktives Beispiel: Zeigefinger, 200.000 Euro Summe',
+      schritte: [
+        { titel: 'Musterbedingungen', text: '10 Prozent von 200.000 Euro ergeben 20.000 Euro' },
+        { titel: 'Verbesserte Gliedertaxe', text: '15 Prozent von 200.000 Euro ergeben 30.000 Euro' },
+        { titel: 'Gliedertaxe für Heilberufe', text: '60 Prozent von 200.000 Euro ergeben 120.000 Euro' },
+      ],
+      fuss: 'Fiktives Beispiel: Zeigefinger vollständig funktionsunfähig, keine Vorschädigung, keine Mitwirkung, keine Progression. Stand: 21.11.2026 (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Was regelt eine Infektionsklausel für Heilberufe?',
+      titel: 'Nadelstich: Musterbedingungen und Heilberufe-Klausel',
+      spalten: ['', 'Musterbedingungen allgemein', 'Musterbedingungen für Heilberufe'],
+      zeilen: [
+        ['Infektion versichert?', 'Grundsätzlich ausgeschlossen, Ausnahmen etwa bei nicht nur geringfügiger Unfallverletzung', 'Ja, wenn bei der Berufsausübung infiziert'],
+        ['Kleiner Stich', 'Geringfügig, wenn er ohne Infektion keine ärztliche Behandlung bräuchte', 'Reicht, wenn mindestens die äußere Hautschicht durchtrennt ist'],
+        ['Fristen für die Invalidität', '15 Monate', '39 Monate'],
+      ],
+      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann abweichen.',
+    },
+  ],
+  'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': [
+    {
+      typ: 'ablauf', nach: 'Welche Fristen gelten für die Invaliditätsleistung?',
+      titel: 'Nach dem Unfall: die Fristen der Musterbedingungen',
+      schritte: [
+        { titel: 'Unfalltag', text: 'Ärztin oder Arzt unverzüglich hinzuziehen, Versicherer unterrichten' },
+        { titel: 'Bis 15 Monate', text: 'Invalidität eingetreten, schriftlich ärztlich festgestellt und beim Versicherer geltend gemacht' },
+        { titel: 'Nach Eingang der Nachweise', text: 'Versicherer erklärt sich bei Invaliditätsleistung innerhalb von drei Monaten, zahlt dann binnen zwei Wochen' },
+        { titel: 'Bis drei Jahre', text: 'Neubemessung des Invaliditätsgrads jährlich möglich' },
+      ],
+      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann längere Fristen vorsehen.',
+    },
+  ],
 };
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');

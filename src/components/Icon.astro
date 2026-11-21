@@ -1,6 +1,6 @@
 ---
 // Einfache Linien-Symbole im CI-Stil (2px Strich, runde Enden). Rein dekorativ.
-interface Props { name: 'start' | 'schild' | 'praxis' | 'kalender' | 'gespraech' | 'dokument' | 'pfeil' | 'quelle' | 'sparen' | 'puls' | 'waage' | 'uhr' | 'runter' | 'telefon' | 'mail' | 'chat' | 'profil'; size?: number }
+interface Props { name: 'start' | 'schild' | 'praxis' | 'kalender' | 'gespraech' | 'dokument' | 'pfeil' | 'quelle' | 'sparen' | 'puls' | 'waage' | 'uhr' | 'runter' | 'telefon' | 'mail' | 'chat' | 'profil' | 'pflaster'; size?: number }
 const { name, size = 24 } = Astro.props;
 const pfade: Record<string, string> = {
   start: '<path d="M3 9l9-5 9 5-9 5-9-5z"/><path d="M7 11.2V16c0 1.4 2.2 3 5 3s5-1.6 5-3v-4.8"/><path d="M21 9v5"/>',
@@ -20,6 +20,7 @@ const pfade: Record<string, string> = {
   telefon: '<path d="M6.5 3.5h3l1.5 4-2 1.3a11 11 0 005.2 5.2l1.3-2 4 1.5v3a2 2 0 01-2 2A16 16 0 014.5 5.5a2 2 0 012-2z"/>',
   mail: '<rect x="3.5" y="5.5" width="17" height="13" rx="2.5"/><path d="M4 7l8 6 8-6"/>',
   chat: '<path d="M12 4a8 8 0 00-6.9 12l-1.1 4 4.1-1.1A8 8 0 1012 4z"/>',
+  pflaster: '<rect x="2.5" y="8.5" width="19" height="7" rx="3.5" transform="rotate(-45 12 12)"/><rect x="9" y="9" width="6" height="6" rx="1" transform="rotate(-45 12 12)"/>',
   profil: '<circle cx="12" cy="8.5" r="3.5"/><path d="M5 20a7 7 0 0114 0"/>',
 };
 ---

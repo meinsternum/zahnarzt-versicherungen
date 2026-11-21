@@ -39,6 +39,7 @@ verwandt:
   - cyber-betriebsunterbrechung-zahnarztpraxis-praxisausfall
   - pkv-oder-gkv-wechsel-zahnaerzt-innen
   - krankentagegeld-praxisinhaber-zahnaerzt-innen
+  - unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen
 hinweise:
   - nach: "Was ersetzt eine Praxisausfallversicherung?"
     art: einschaetzen
