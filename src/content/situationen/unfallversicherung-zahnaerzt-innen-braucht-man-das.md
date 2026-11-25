@@ -4,16 +4,19 @@ titel: "Unfallversicherung für Zahnärzt*innen: Braucht man sie?"
 kurzantwort: "Als Ergänzung kann sie sinnvoll sein, als Ersatz für die Berufsunfähigkeitsversicherung nein. Die private Unfallversicherung zahlt nach einem Unfall eine Summe nach dem Grad der dauerhaften Beeinträchtigung, auch wenn du weiter in deiner Zahnarztpraxis arbeiten kannst. Bei Krankheit zahlt sie nicht."
 metaDescription: "Was die private Unfallversicherung für Zahnärzt*innen leistet, wo BU, Versorgungswerk und BGW zuständig sind und wann sie sinnvoll ist."
 status: geprueft
-stand: "2026-11-21"
-pruefenBis: "2027-11-21"
+stand: "2026-11-25"
+pruefenBis: "2027-11-25"
 reihenfolge: 90
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
     url: "https://gdv.de/resource/blob/6252/a0b6aef8832c8ed756a3b26865728d59/01-allgemeine-unfallversicherungsbedingungenaub-2014%2D%2Ddata.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 01.01.2026"
   - titel: "§ 4 SGB VII, Versicherungsfreiheit (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/sgb_7/__4.html"
+  - titel: "§ 8 SGB VII, Arbeitsunfall (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__8.html"
   - titel: "BGW: Freiwillige Versicherung für Ärztinnen und Ärzte, Merkblatt BGW 03-04-010, Stand 04/2022"
     url: "https://www.bgw-online.de/resource/blob/19522/9b6f1536b7021c72b5834c773026ffb4/bgw03-04-010-freiwillige-versicherung-aerzte-data.pdf"
   - titel: "Satzung der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) vom 24.05.2024 in der Fassung des 1. Nachtrags, gültig ab 01.01.2026"
@@ -79,7 +82,7 @@ Nach den Musterbedingungen sind unter anderem ausgeschlossen:
 - Infektionen, mit Ausnahmen, etwa wenn die Erreger durch eine nicht nur geringfügige Unfallverletzung in den Körper gelangen,
 - krankhafte Störungen infolge psychischer Reaktionen.
 
-Haben Krankheiten an den Unfallfolgen mitgewirkt, kann die Leistung gekürzt werden. Nach den Musterbedingungen erst, wenn der Mitwirkungsanteil mindestens 25 Prozent beträgt.
+Haben Krankheiten an den Unfallfolgen mitgewirkt, kann die Leistung gekürzt werden. Nach den Musterbedingungen erst, wenn der Mitwirkungsanteil mindestens 25 Prozent beträgt. Es gibt Verträge, die erst ab 75 Prozent kürzen.
 
 Für die Zahnarztpraxis sind zwei dieser Punkte besonders wichtig: Strahlen und Infektionen. Es gibt Verträge für Heilberufe, die Röntgenstrahlen oder bestimmte Infektionen ausdrücklich einschließen. Mehr dazu auf [Nadelstich und Infektion: Zahlt die Unfallversicherung?](/ratgeber/unfallversicherung-nadelstich-infektion-zahnaerzt-innen).
 
@@ -114,4 +117,4 @@ Wir sehen die Unfallversicherung für Zahnärzt\*innen als sinnvolle Ergänzung,
 
 Die Unfallversicherung zahlt nach einem Unfall, auch wenn du weiterarbeitest, aber nie bei Krankheit. Sie ergänzt BU und Versorgungswerk, ersetzt sie nicht. Ein Gespräch ist sinnvoll, wenn du eine bestehende Unfallversicherung auf Gliedertaxe und Infektionsschutz prüfen oder deine Absicherung insgesamt sortieren willst.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Gesetz, Satzung und Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.06.2021). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 25.11.2026. Grundlagen sind Gesetz, Satzung und Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.06.2021). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

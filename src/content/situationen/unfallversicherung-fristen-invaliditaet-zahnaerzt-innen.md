@@ -4,8 +4,8 @@ titel: "Unfall passiert: Welche Fristen gelten für Zahnärzt*innen?"
 kurzantwort: "Nach den Musterbedingungen muss die Invalidität innerhalb von 15 Monaten nach dem Unfall eingetreten, schriftlich ärztlich festgestellt und beim Versicherer geltend gemacht sein. Sonst besteht kein Anspruch, auch wenn du in der Zahnarztpraxis dauerhaft eingeschränkt bleibst, außer in besonderen Ausnahmefällen."
 metaDescription: "Welche Fristen und Pflichten nach einem Unfall in der Unfallversicherung gelten und was Zahnärzt*innen mit eigener Praxis zusätzlich melden müssen."
 status: geprueft
-stand: "2026-11-21"
-pruefenBis: "2027-11-21"
+stand: "2026-11-25"
+pruefenBis: "2027-11-25"
 reihenfolge: 94
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
@@ -14,13 +14,16 @@ quellen:
     url: "https://www.gdv.de/resource/blob/5936/0fa5ccd4d9dce8d900012a9a1126b689/07-besondere-bedingungen-fuer-den-einschluss-von-infektionen-fuer-heilberufe-bb-infektionen-heilberufe-2014--data.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 01.01.2026"
   - titel: "Satzung der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) vom 24.05.2024 in der Fassung des 1. Nachtrags, gültig ab 01.01.2026"
     url: "https://www.bgw-online.de/resource/blob/19550/62d38354ba27176b249b47f4695e05a3/bgw03-04-004-satzung-der-bgw-data.pdf"
+  - titel: "§ 8 SGB VII, Arbeitsunfall (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__8.html"
   - titel: "BGW: Freiwillige Versicherung für Ärztinnen und Ärzte, Merkblatt BGW 03-04-010, Stand 04/2022"
     url: "https://www.bgw-online.de/resource/blob/19522/9b6f1536b7021c72b5834c773026ffb4/bgw03-04-010-freiwillige-versicherung-aerzte-data.pdf"
 faq:
   - frage: "Wie lange habe ich Zeit, eine Invalidität zu melden?"
-    antwort: "Nach den Musterbedingungen 15 Monate nach dem Unfall. Innerhalb dieser Zeit muss die Invalidität eingetreten, von einer Ärztin oder einem Arzt schriftlich festgestellt und beim Versicherer geltend gemacht sein. Es gibt Verträge mit längeren Fristen, zum Beispiel 30 und 36 Monate."
+    antwort: "Nach den Musterbedingungen 15 Monate nach dem Unfall. Innerhalb dieser Zeit muss die Invalidität eingetreten, von einer Ärztin oder einem Arzt schriftlich festgestellt und beim Versicherer geltend gemacht sein. Es gibt Verträge mit längeren Fristen, zum Beispiel 24 Monate für den Eintritt und 36 Monate für Feststellung und Geltendmachung."
   - frage: "Was heißt Invalidität geltend machen?"
     antwort: "Du teilst dem Versicherer mit, dass du von einer Invalidität ausgehst. Mehr braucht es dafür nach den Musterbedingungen nicht. Die ärztliche Feststellung ist eine eigene Voraussetzung und muss ebenfalls fristgerecht vorliegen."
   - frage: "Was passiert, wenn ich die Frist verpasse?"
@@ -68,8 +71,9 @@ Invalidität heißt dabei: Deine körperliche oder geistige Leistungsfähigkeit 
 
 Ja. Die 15 Monate sind der Wert der Musterbedingungen, Versicherer dürfen davon abweichen. Zum Beispiel gibt es:
 
+- einen Vertrag mit 24 Monaten für den Eintritt und 36 Monaten für die ärztliche Feststellung und die Geltendmachung,
 - einen Vertrag mit 18 Monaten für den Eintritt und 24 Monaten für die ärztliche Feststellung und die Geltendmachung, der sich mit einem Baustein für Heilberufe auf 30 Monate für Eintritt und Feststellung und 36 Monate für die Geltendmachung verlängert,
-- bei Infektionen nach den Musterbedingungen für Heilberufe 39 Monate für Eintritt, Feststellung und Geltendmachung.
+- bei Infektionen nach den Musterbedingungen für Heilberufe 39 Monate für Eintritt, Feststellung und Geltendmachung; es gibt Verträge, die diese Frist für Heilberufe übernehmen.
 
 Für Infektionen gibt es außerdem Verträge, in denen die Fristen nicht mit der Ansteckung beginnen, sondern erst mit der ersten ärztlichen Diagnose. Mehr dazu auf [Nadelstich und Infektion: Zahlt die Unfallversicherung?](/ratgeber/unfallversicherung-nadelstich-infektion-zahnaerzt-innen).
 
@@ -114,4 +118,4 @@ Wir raten dir, jeden Unfall mit einer Verletzung an Hand oder Arm dem Versichere
 
 Eintritt, ärztliche Feststellung und Geltendmachung der Invalidität haben feste Fristen, nach den Musterbedingungen jeweils 15 Monate. Notiere dir das Unfalldatum und bitte deine Ärztin oder deinen Arzt rechtzeitig um die schriftliche Feststellung. Ein Gespräch ist sinnvoll, wenn du gerade einen Unfall hattest und unsicher bist, was dein Vertrag bis wann verlangt.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 20.11.2015). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 25.11.2026. Grundlagen sind Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 20.11.2015). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

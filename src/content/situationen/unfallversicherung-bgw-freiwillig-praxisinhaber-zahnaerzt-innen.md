@@ -4,12 +4,18 @@ titel: "BGW für Zahnärzt*innen mit Praxis: freiwillig versichern"
 kurzantwort: "Nein. Als Inhaberin oder Inhaber einer Zahnarztpraxis bist du nicht kraft Gesetzes unfallversichert, dein angestelltes Team dagegen schon. Du kannst dich bei der BGW freiwillig gegen Arbeits- und Wegeunfälle sowie Berufskrankheiten versichern und die Versicherungssumme selbst wählen."
 metaDescription: "Warum Zahnärzt*innen mit eigener Praxis nicht gesetzlich unfallversichert sind und wie die freiwillige Versicherung bei der BGW funktioniert."
 status: geprueft
-stand: "2026-11-21"
-pruefenBis: "2027-11-21"
+stand: "2026-11-25"
+pruefenBis: "2027-11-25"
 reihenfolge: 91
 quellen:
   - titel: "§ 4 SGB VII, Versicherungsfreiheit (gesetze-im-internet.de)"
     url: "https://www.gesetze-im-internet.de/sgb_7/__4.html"
+  - titel: "§ 8 SGB VII, Arbeitsunfall (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__8.html"
+  - titel: "§ 47 SGB VII, Höhe des Verletztengeldes (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__47.html"
+  - titel: "§ 56 SGB VII, Voraussetzungen und Höhe des Rentenanspruchs (gesetze-im-internet.de)"
+    url: "https://www.gesetze-im-internet.de/sgb_7/__56.html"
   - titel: "Satzung der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) vom 24.05.2024 in der Fassung des 1. Nachtrags, gültig ab 01.01.2026"
     url: "https://www.bgw-online.de/resource/blob/19550/62d38354ba27176b249b47f4695e05a3/bgw03-04-004-satzung-der-bgw-data.pdf"
   - titel: "BGW: Freiwillige Versicherung für Ärztinnen und Ärzte, Merkblatt BGW 03-04-010, Stand 04/2022"
@@ -27,6 +33,8 @@ faq:
     antwort: "Mindestens 60 Prozent der sozialversicherungsrechtlichen Bezugsgröße, höchstens 120.000 Euro nach der Satzung der BGW (Fassung gültig ab 01.01.2026). Die Summe wird auf volle 1.000 Euro aufgerundet."
   - frage: "Zahlt die BGW auch bei einem Unfall in der Freizeit?"
     antwort: "Nein. Die BGW leistet nur bei Arbeitsunfällen, Wegeunfällen und Berufskrankheiten. Für Unfälle in der Freizeit brauchst du eine private Unfallversicherung."
+  - frage: "Ab wann zahlt die BGW eine Rente?"
+    antwort: "Wenn deine Erwerbsfähigkeit durch den Arbeitsunfall oder die Berufskrankheit über die 26. Woche hinaus um wenigstens 20 Prozent gemindert ist (§ 56 SGB VII). Bei vollständigem Verlust der Erwerbsfähigkeit beträgt die Rente zwei Drittel des Jahresarbeitsverdienstes, bei freiwillig Versicherten also der Versicherungssumme."
   - frage: "Was passiert, wenn ich den BGW-Beitrag nicht zahle?"
     antwort: "Die freiwillige Versicherung erlischt, wenn der Beitrag oder Beitragsvorschuss nicht binnen zwei Monaten nach Fälligkeit gezahlt wird. Eine Neuanmeldung wirkt erst, wenn der Rückstand bezahlt ist."
   - frage: "Muss ich der BGW Unfälle meiner Mitarbeitenden melden?"
@@ -78,11 +86,12 @@ Der Beitrag richtet sich nach der Versicherungssumme, der Gefahrklasse und dem B
 
 Die BGW leistet nach Arbeitsunfällen, Wegeunfällen und bei Berufskrankheiten. Freiwillig Versicherte erhalten nach der Satzung dieselben Leistungen wie kraft Gesetzes Versicherte: Heilbehandlung und Rehabilitation, Verletztengeld, Renten und Leistungen an Hinterbliebene.
 
-Die Geldleistungen richten sich bei dir allein nach der Versicherungssumme, die zum Zeitpunkt des Unfalls gilt. Nach den Angaben der BGW gilt:
+Die Geldleistungen richten sich bei dir allein nach der Versicherungssumme, die zum Zeitpunkt des Versicherungsfalls gilt, also des Unfalls oder der Berufskrankheit. Sie gilt als dein Jahresarbeitsverdienst. Nach dem Sozialgesetzbuch gilt dann:
 
-- Verletztengeld: je Kalendertag 1/450 der Versicherungssumme, für die Zeit der medizinischen Rehabilitation.
-- Volle Rente: zwei Drittel der Versicherungssumme im Jahr, wenn du langfristig gar nicht mehr erwerbsfähig bist.
-- Teilrente: anteilig nach dem Grad der Minderung der Erwerbsfähigkeit.
+- Verletztengeld: je Kalendertag der 450. Teil der Versicherungssumme (§ 47 Abs. 5 SGB VII).
+- Rente: wenn deine Erwerbsfähigkeit über die 26. Woche nach dem Versicherungsfall hinaus um wenigstens 20 Prozent gemindert ist (§ 56 SGB VII).
+- Volle Rente: zwei Drittel der Versicherungssumme im Jahr, wenn du deine Erwerbsfähigkeit ganz verlierst.
+- Teilrente: der Prozentsatz der vollen Rente, der dem Grad der Minderung der Erwerbsfähigkeit entspricht.
 
 Beispiele aus der Zahnarztpraxis können eine Schnittverletzung an der Hand oder ein Sturz in der Praxis oder auf dem Weg dorthin sein. Eine Infektion bei der Behandlung kann ein Fall für die BGW sein, wenn sie als Arbeitsunfall oder Berufskrankheit anerkannt wird.
 
@@ -102,7 +111,7 @@ Verletztengeld: 120.000 Euro geteilt durch 450 ergibt rund 266,67 Euro je Kalend
 
 Volle Rente: zwei Drittel von 120.000 Euro ergeben 80.000 Euro im Jahr, also rund 6.666,67 Euro im Monat.
 
-Teilrente bei einer Minderung der Erwerbsfähigkeit von 30 Prozent: 30 Prozent der vollen Rente ergeben 24.000 Euro im Jahr, also 2.000 Euro im Monat.
+Teilrente bei einer dauerhaften Minderung der Erwerbsfähigkeit von 30 Prozent: 30 Prozent der vollen Rente ergeben 24.000 Euro im Jahr, also 2.000 Euro im Monat.
 
 Mit einer niedrigeren Versicherungssumme sinken alle drei Werte im selben Verhältnis. Die BGW empfiehlt, sich bei der Wahl der Summe am Jahreseinkommen zu orientieren.
 
@@ -126,4 +135,4 @@ Wir empfehlen Zahnärzt\*innen mit eigener Praxis, die freiwillige BGW-Versicher
 
 Dein Team ist über die BGW versichert, du selbst nur, wenn du dich anmeldest. Der Antrag ist schriftlich oder elektronisch möglich, und die Versicherungssumme bestimmt, was im Ernstfall ankommt. Ein Gespräch ist sinnvoll, wenn du gerade gründest oder übernimmst oder wenn du nicht weißt, ob und mit welcher Summe du heute bei der BGW versichert bist.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 04/2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen und die Satzung der BGW.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 25.11.2026. Grundlagen sind Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 04/2022). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen und die Satzung der BGW.*

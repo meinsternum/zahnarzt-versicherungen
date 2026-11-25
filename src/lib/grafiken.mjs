@@ -597,7 +597,7 @@ export const grafiken = {
         ['Maßstab', 'Invaliditätsgrad (Gliedertaxe oder Leistungsfähigkeit)', 'Nach Satzung und Gesetz', 'Berufsunfähigkeit nach dem Vertrag', 'Satzung, zum Beispiel Aufgabe der Tätigkeit'],
         ['Für dich mit eigener Praxis', 'Wenn abgeschlossen', 'Nur bei freiwilliger Versicherung', 'Wenn abgeschlossen', 'Nach der Satzung'],
       ],
-      fuss: 'Vereinfachte Übersicht. Stand: 21.11.2026, nach Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Vereinfachte Übersicht. Stand: 25.11.2026, nach Gesetz, Satzung der BGW und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'unfallversicherung-bgw-freiwillig-praxisinhaber-zahnaerzt-innen': [
@@ -609,7 +609,7 @@ export const grafiken = {
         { kopf: 'Inhaberin oder Inhaber', punkte: ['Versicherungsfrei nach § 4 Abs. 3 SGB VII', 'Freiwillige Versicherung auf Antrag möglich'] },
         { kopf: 'Mitarbeitende Ehe- oder eingetragene Lebenspartner*innen', punkte: ['Bei unentgeltlicher Mitarbeit freiwillige Versicherung möglich'] },
       ],
-      fuss: 'Stand: 21.11.2026, nach SGB VII und Satzung der BGW, Fassung gültig ab 01.01.2026 (siehe Quellen).',
+      fuss: 'Stand: 25.11.2026, nach SGB VII und Satzung der BGW, Fassung gültig ab 01.01.2026 (siehe Quellen).',
     },
     {
       typ: 'ablauf', nach: 'Welche Versicherungssumme ist sinnvoll?',
@@ -617,9 +617,9 @@ export const grafiken = {
       schritte: [
         { titel: 'Verletztengeld', text: '120.000 Euro geteilt durch 450 ergibt rund 266,67 Euro je Kalendertag' },
         { titel: 'Volle Rente', text: 'Zwei Drittel von 120.000 Euro ergeben 80.000 Euro im Jahr, rund 6.666,67 Euro im Monat' },
-        { titel: 'Teilrente bei 30 Prozent', text: '30 Prozent der vollen Rente ergeben 24.000 Euro im Jahr, 2.000 Euro im Monat' },
+        { titel: 'Teilrente bei 30 Prozent Minderung', text: '30 Prozent der vollen Rente ergeben 24.000 Euro im Jahr, 2.000 Euro im Monat' },
       ],
-      fuss: 'Fiktives Beispiel. Stand: 21.11.2026, nach Satzung und Merkblatt der BGW (siehe Quellen).',
+      fuss: 'Fiktives Beispiel. Stand: 25.11.2026, nach §§ 47 und 56 SGB VII und Satzung der BGW (siehe Quellen).',
     },
   ],
   'unfallversicherung-gliedertaxe-hand-finger-zahnaerzt-innen': [
@@ -633,7 +633,7 @@ export const grafiken = {
         ['Zeigefinger', '10 %', '15 %', '60 %'],
         ['Anderer Finger', '5 %', '10 %', '30 %'],
       ],
-      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 25.11.2026, nach Musterbedingungen des GDV und Versicherungsbedingungen (siehe Quellen). Dein Vertrag kann abweichen.',
     },
     {
       typ: 'ablauf', nach: 'Wie viel macht eine Gliedertaxe für Heilberufe aus?',
@@ -643,7 +643,7 @@ export const grafiken = {
         { titel: 'Verbesserte Gliedertaxe', text: '15 Prozent von 200.000 Euro ergeben 30.000 Euro' },
         { titel: 'Gliedertaxe für Heilberufe', text: '60 Prozent von 200.000 Euro ergeben 120.000 Euro' },
       ],
-      fuss: 'Fiktives Beispiel: Zeigefinger vollständig funktionsunfähig, keine Vorschädigung, keine Mitwirkung, keine Progression. Stand: 21.11.2026 (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Fiktives Beispiel: Zeigefinger vollständig funktionsunfähig, keine Vorschädigung, keine Mitwirkung, keine Progression. Stand: 25.11.2026 (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'unfallversicherung-nadelstich-infektion-zahnaerzt-innen': [
@@ -656,7 +656,7 @@ export const grafiken = {
         ['Kleiner Stich', 'Geringfügig, wenn er ohne Infektion keine ärztliche Behandlung bräuchte', 'Reicht, wenn mindestens die äußere Hautschicht durchtrennt ist'],
         ['Fristen für die Invalidität', '15 Monate', '39 Monate'],
       ],
-      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann abweichen.',
+      fuss: 'Stand: 25.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann abweichen.',
     },
   ],
   'unfallversicherung-fristen-invaliditaet-zahnaerzt-innen': [
@@ -669,7 +669,7 @@ export const grafiken = {
         { titel: 'Nach Eingang der Nachweise', text: 'Versicherer erklärt sich bei Invaliditätsleistung innerhalb von drei Monaten, zahlt dann binnen zwei Wochen' },
         { titel: 'Bis drei Jahre', text: 'Neubemessung des Invaliditätsgrads jährlich möglich' },
       ],
-      fuss: 'Stand: 21.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann längere Fristen vorsehen.',
+      fuss: 'Stand: 25.11.2026, nach Musterbedingungen des GDV (siehe Quellen). Dein Vertrag kann längere Fristen vorsehen.',
     },
   ],
 };

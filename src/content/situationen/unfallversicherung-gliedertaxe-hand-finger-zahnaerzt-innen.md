@@ -4,14 +4,15 @@ titel: "Gliedertaxe für Zahnärzt*innen: Hand und Finger"
 kurzantwort: "Das bestimmt die Gliedertaxe: Nach den Musterbedingungen ergibt ein verlorener Zeigefinger 10 Prozent Invaliditätsgrad, also 10 Prozent der Versicherungssumme. Es gibt Verträge mit einer Gliedertaxe für Heilberufe, die Zahnärzt*innen ausdrücklich einschließt und Daumen oder Zeigefinger mit 60 Prozent ansetzt."
 metaDescription: "Wie die Gliedertaxe Hand, Daumen und Zeigefinger bewertet, was eine Gliedertaxe für Heilberufe bringt und ein Rechenbeispiel für Zahnärzt*innen."
 status: geprueft
-stand: "2026-11-21"
-pruefenBis: "2027-11-21"
+stand: "2026-11-25"
+pruefenBis: "2027-11-25"
 reihenfolge: 92
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
     url: "https://gdv.de/resource/blob/6252/a0b6aef8832c8ed756a3b26865728d59/01-allgemeine-unfallversicherungsbedingungenaub-2014%2D%2Ddata.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 01.01.2026"
 faq:
   - frage: "Was ist die Gliedertaxe in der Unfallversicherung?"
     antwort: "Eine feste Tabelle im Vertrag, die für den Verlust oder die vollständige Funktionsunfähigkeit von Körperteilen einen Invaliditätsgrad festlegt. Ist ein Körperteil nur teilweise beeinträchtigt, gilt der entsprechende Teil dieses Werts."
@@ -71,7 +72,7 @@ Die Gliedertaxe der Musterbedingungen fragt danach aber nicht. Sie bewertet den 
 - Daumen oder Zeigefinger: 60 Prozent
 - anderer Finger: 30 Prozent
 
-Daneben gibt es Verträge mit einer allgemein verbesserten Gliedertaxe, die nicht nach Beruf unterscheidet. Ein solcher Vertrag bewertet zum Beispiel die Hand mit 65, den Daumen mit 25, den Zeigefinger mit 15 und jeden anderen Finger mit 10 Prozent. Das ist besser als das Muster, aber deutlich weniger als die Gliedertaxe für Heilberufe im Beispiel.
+Daneben gibt es Verträge mit einer allgemein verbesserten Gliedertaxe, die nicht nach Beruf unterscheidet. Ein solcher Vertrag bewertet zum Beispiel die Hand mit 65, den Daumen mit 25, den Zeigefinger mit 15 und jeden anderen Finger mit 10 Prozent. Das ist besser als das Muster, aber deutlich weniger als die Gliedertaxe für Heilberufe im Beispiel. Ein anderer Vertrag setzt schon in seiner normalen Gliedertaxe die Hand mit 75, den Daumen mit 35 und den Zeigefinger mit 20 Prozent an und bietet als Zusatz bis zum 70. Lebensjahr eine Gliedertaxe mit 90, 45 und 30 Prozent.
 
 ## Wie viel macht eine Gliedertaxe für Heilberufe aus?
 
@@ -108,7 +109,7 @@ Die Gliedertaxe für Heilberufe ist kein Freifahrtschein. Diese Punkte solltest 
 - Alter: Ein Vertrag beendet die Heilberufe-Gliedertaxe zum Beispiel spätestens mit dem 70. Geburtstag, auch wenn du noch praktizierst.
 - Unfallrente: Es gibt Verträge mit verbesserter Gliedertaxe, die nur für die Einmalzahlung gilt und für die Unfallrente die normale Gliedertaxe ansetzt. Der Beispielvertrag für Heilberufe wendet seine Gliedertaxe dagegen auch auf die Unfallrente an.
 - Vorinvalidität: War die Hand schon vor dem Unfall dauerhaft beeinträchtigt, wird das abgezogen.
-- Mitwirkung: Haben Krankheiten zur Beeinträchtigung beigetragen, etwa eine Arthrose, kann gekürzt werden. Nach den Musterbedingungen ab einem Mitwirkungsanteil von 25 Prozent.
+- Mitwirkung: Haben Krankheiten zur Beeinträchtigung beigetragen, etwa eine Arthrose, kann gekürzt werden. Nach den Musterbedingungen ab einem Mitwirkungsanteil von 25 Prozent. Es gibt Verträge, die erst ab 75 Prozent kürzen.
 - Berufswechsel: Wechselst du den Beruf, musst du das dem Versicherer mitteilen. Das kann Beitrag und Versicherungssummen ändern.
 
 Wie dauerhaft und wie stark die Beeinträchtigung ist, wird ärztlich bemessen. Maßgeblich ist nach den Musterbedingungen der Zustand, der spätestens am Ende des dritten Jahres nach dem Unfall erkennbar ist. Welche Fristen bis dahin laufen, steht auf [Unfall passiert: Welche Fristen gelten?](/ratgeber/unfallversicherung-fristen-invaliditaet-zahnaerzt-innen).
@@ -132,4 +133,4 @@ Wenn du als Zahnärztin oder Zahnarzt eine Unfallversicherung abschließt, würd
 
 Die Gliedertaxe entscheidet, was die Unfallversicherung bei einer Fingerverletzung zahlt. Für Zahnärzt\*innen gibt es Verträge mit deutlich höheren Werten für Hand und Finger, mit Grenzen bei Alter und Beruf. Ein Gespräch ist sinnvoll, wenn du die Gliedertaxe deines Vertrags nicht kennst oder vor dem Abschluss einer Unfallversicherung stehst.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.06.2021). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 25.11.2026. Grundlagen sind Versicherungsbedingungen (siehe Quellen, älteste Fassung 01.06.2021). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*

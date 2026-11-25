@@ -4,8 +4,8 @@ titel: "Nadelstich und Infektion: Zahlt die Unfallversicherung?"
 kurzantwort: "Nicht automatisch. In den Musterbedingungen sind Infektionen ausgeschlossen, wenn die Erreger durch eine nur geringfügige Verletzung wie einen kleinen Stich in den Körper gelangen. Für Zahnärzt*innen gibt es Infektionsklauseln für Heilberufe, die solche Infektionen bei der Berufsausübung einschließen."
 metaDescription: "Wann die Unfallversicherung Zahnärzt*innen nach Nadelstich oder Spritzer ins Auge zahlt und was Infektionsklauseln für Heilberufe regeln."
 status: geprueft
-stand: "2026-11-21"
-pruefenBis: "2027-11-21"
+stand: "2026-11-25"
+pruefenBis: "2027-11-25"
 reihenfolge: 93
 quellen:
   - titel: "GDV: Allgemeine Unfallversicherungsbedingungen (AUB 2020), unverbindliche Musterbedingungen, Stand Juni 2025"
@@ -14,6 +14,7 @@ quellen:
     url: "https://www.gdv.de/resource/blob/5936/0fa5ccd4d9dce8d900012a9a1126b689/07-besondere-bedingungen-fuer-den-einschluss-von-infektionen-fuer-heilberufe-bb-infektionen-heilberufe-2014--data.pdf"
   - titel: "Versicherungsbedingungen eines Versicherers zur Gruppenunfallversicherung mit Baustein für Heilberufe, Stand 01.06.2021"
   - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 06/2026"
+  - titel: "Versicherungsbedingungen eines Versicherers zur Unfallversicherung, Stand 01.01.2026"
   - titel: "Satzung der Berufsgenossenschaft für Gesundheitsdienst und Wohlfahrtspflege (BGW) vom 24.05.2024 in der Fassung des 1. Nachtrags, gültig ab 01.01.2026"
     url: "https://www.bgw-online.de/resource/blob/19550/62d38354ba27176b249b47f4695e05a3/bgw03-04-004-satzung-der-bgw-data.pdf"
 faq:
@@ -55,7 +56,7 @@ Der Stich mit der benutzten Kanüle, der Spritzer ins Auge beim Präparieren: Mi
 
 Nach den Musterbedingungen nur, wenn eine Ausnahme greift. Infektionen sind dort grundsätzlich ausgeschlossen. Es gibt Ausnahmen, etwa Tollwut, Wundstarrkrampf und Infektionen über eine nicht nur geringfügige Unfallverletzung. Geringfügig ist eine Verletzung, die ohne die Infektion und ihre Folgen keine ärztliche Behandlung bräuchte.
 
-Ein kleiner Nadelstich, der ohne die Infektion keine ärztliche Behandlung bräuchte, ist nach dieser Definition geringfügig. Die Infektion, die daraus entsteht, wäre dann nicht versichert, auch wenn sie dich dauerhaft beeinträchtigt.
+Ein kleiner Nadelstich, der ohne die Infektion keine ärztliche Behandlung bräuchte, ist nach dieser Definition geringfügig. Die Infektion, die daraus entsteht, wäre dann nicht versichert, auch wenn sie dich dauerhaft beeinträchtigt. Es gibt allerdings Verträge, die auch Infektionen durch geringfügige Haut- oder Schleimhautverletzungen einschließen, wenn du das auslösende Ereignis innerhalb von vier Wochen meldest.
 
 ## Was regelt eine Infektionsklausel für Heilberufe?
 
@@ -76,6 +77,7 @@ Ja, und sie sind erheblich. Unter dem Namen „Infektionsklausel“ stehen in Ve
 
 - Es gibt Klauseln für Heilberufe wie die oben beschriebene, die Infektionen bei der Berufsausübung allgemein einschließen.
 - Es gibt Klauseln, die nur eine Liste bestimmter Krankheiten einschließen, etwa durch Zecken übertragene Krankheiten, Masern oder Diphtherie, dazu Wundinfektionen nach einem Unfall. Ob eine Krankheit, die über Blut übertragen wird, dort erfasst ist, steht nur in der Liste.
+- Es gibt Verträge, die Infektionen durch geringfügige Haut- oder Schleimhautverletzungen allgemein einschließen, also ohne Bezug zum Beruf, wenn du das Ereignis innerhalb von vier Wochen meldest.
 - Es gibt Verträge mit einer Wartezeit für Infektionen, zum Beispiel ein Monat oder drei Monate.
 
 Lies deshalb nicht nur, ob dein Vertrag eine Infektionsklausel hat, sondern auch, was genau sie einschließt.
@@ -90,7 +92,7 @@ Die private Unfallversicherung mit Infektionsklausel und die BGW sind zwei getre
 
 Die medizinischen Sofortmaßnahmen kennst du aus deiner Praxis. Für die Versicherung sind drei Dinge wichtig:
 
-- Dokumentiere den Vorfall: wann, womit, bei welcher Behandlung.
+- Dokumentiere den Vorfall: wann, womit, bei welcher Behandlung. Melde ihn früh deinem Versicherer; es gibt Verträge, die eine Infektion nach einer geringfügigen Verletzung nur versichern, wenn du das Ereignis innerhalb von vier Wochen meldest.
 - Lass dich ärztlich untersuchen. Nach einem Unfall, der voraussichtlich zu einer Leistung führt, musst du nach den Musterbedingungen unverzüglich einen Arzt hinzuziehen und den Versicherer unterrichten.
 - Achte auf die Fristen. Nach den allgemeinen Musterbedingungen gelten für die Invalidität 15 Monate. Nach den Musterbedingungen für Heilberufe muss die Invalidität durch die Infektion innerhalb von 39 Monaten eingetreten, ärztlich festgestellt und beim Versicherer geltend gemacht sein. Es gibt Verträge, in denen die Fristen erst mit der ersten ärztlichen Diagnose der Infektion beginnen und du den Versicherer nach dieser Diagnose unverzüglich informieren musst.
 
@@ -106,6 +108,7 @@ Ist nach einer Infektion nicht mehr die Einschränkung des Körpers das Problem,
 - Ist die Klausel allgemein formuliert oder auf eine Liste von Krankheiten beschränkt?
 - Gibt es eine Wartezeit für Infektionen?
 - Wann beginnen die Fristen: mit dem Stich oder mit der Diagnose?
+- Musst du einen kleinen Stich innerhalb einer bestimmten Frist melden?
 
 ## Unsere Einschätzung
 
@@ -115,4 +118,4 @@ Für Zahnärzt\*innen, die selbst behandeln, gehört aus unserer Sicht eine Infe
 
 Eine Infektion nach einem kleinen Nadelstich ist nach den Musterbedingungen nicht versichert, wenn der Stich ohne die Infektion keine ärztliche Behandlung gebraucht hätte. Mit einer Infektionsklausel für Heilberufe kann sie es sein, wenn die Haut verletzt wurde oder infektiöses Material in Auge, Mund oder Nase gelangt ist. Ein Gespräch ist sinnvoll, wenn du nicht weißt, welche Infektionsklausel in deinem Vertrag steht, oder wenn du die BGW-Versicherung prüfen willst.
 
-*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 21.11.2026. Grundlagen sind Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 20.11.2015). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
+*Dieser Beitrag ist eine allgemeine Information und keine individuelle Beratung. Stand: 25.11.2026. Grundlagen sind Satzung der BGW und Versicherungsbedingungen (siehe Quellen, älteste Fassung 20.11.2015). Verträge unterscheiden sich, maßgeblich sind deine Bedingungen.*
