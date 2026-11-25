@@ -1,4 +1,4 @@
-import { api, esc, fmtLong, mountPicker } from './common.js';
+import { api, esc, fmtDate, fmtTime, fmtLong, mountPicker, minutesLabel, channelInfoHtml, OFFICE_ADDRESS } from './common.js';
 
 const el = (id) => document.getElementById(id);
 const token = new URLSearchParams(location.search).get('t');
@@ -14,11 +14,9 @@ function fail(msg) {
 function renderView() {
   el('loading').hidden = true;
   el('view').hidden = false;
-  el('details').innerHTML = `<strong>${esc(booking.typeTitle)} mit ${esc(booking.staffName)}</strong> (${booking.minutes} Minuten)<br>${esc(fmtLong(booking.start))}${booking.status === 'cancelled' ? '<br><em>Dieser Termin wurde abgesagt.</em>' : ''}`;
-  if (booking.meetLink && booking.status === 'confirmed') {
-    el('video').hidden = false;
-    el('video').innerHTML = `Videolink: <a href="${esc(booking.meetLink)}">${esc(booking.meetLink)}</a>`;
-  }
+  el('details-title').textContent = `${booking.typeTitle} bei ${booking.staffName}`;
+  el('details-time').textContent = `${fmtDate(booking.start)} um ${fmtTime(booking.start).replace(' Uhr', '')} (${minutesLabel(booking.minutes)})${booking.status === 'cancelled' ? ', abgesagt' : ''}`;
+  if (booking.status === 'confirmed') el('details-info').innerHTML = channelInfoHtml(booking.channel, booking.staffName, OFFICE_ADDRESS);
   const canChange = booking.changeable;
   el('actions').hidden = !canChange;
   el('locked').hidden = canChange || booking.status === 'cancelled';

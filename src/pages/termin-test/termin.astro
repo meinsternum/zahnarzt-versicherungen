@@ -1,0 +1,48 @@
+---
+// Verwaltung eines gebuchten Termins (Absagen oder Verschieben) über den Link aus der Bestätigungsmail.
+import Base from '../../layouts/Base.astro';
+import '../../styles/buchung.css';
+---
+<Base
+  title="Dein Termin | zahnarzt-versicherungen.de"
+  description="Deinen Termin bei meinsternum absagen oder verschieben."
+  path="/termin-test/termin"
+  noindex
+>
+  <section class="buch-hero buch-hero-klein">
+    <div class="rahmen">
+      <h1>Dein Termin</h1>
+    </div>
+  </section>
+
+  <div class="rahmen buch">
+    <p class="buch-leise" id="loading">Wird geladen …</p>
+    <p class="buch-fehler" id="error" role="alert" hidden></p>
+
+    <section id="view" hidden>
+      <p class="buch-details-titel" id="details-title"></p>
+      <p class="buch-details-zeit" id="details-time"></p>
+      <p id="details-info"></p>
+      <div id="actions" class="buch-aktionen">
+        <button type="button" class="knopf" id="btn-reschedule">Termin verschieben</button>
+        <button type="button" class="knopf knopf-rand" id="btn-cancel">Termin absagen</button>
+      </div>
+      <p class="buch-leise" id="locked" hidden></p>
+    </section>
+
+    <section id="reschedule" hidden>
+      <h2 class="buch-h">Neuen Termin wählen</h2>
+      <div id="picker" aria-live="polite"></div>
+      <p class="buch-details-zeit" id="new-summary" hidden></p>
+      <button type="button" class="knopf" id="btn-confirm-new" hidden>Termin verschieben</button>
+    </section>
+
+    <section id="result" hidden aria-live="polite" class="buch-fertig">
+      <h2 class="buch-h" id="result-title"></h2>
+      <p id="result-text"></p>
+      <p><a class="knopf knopf-rand" href="/termin-test">Neuen Termin buchen</a></p>
+    </section>
+  </div>
+  <div class="abstand-unten"></div>
+  <script is:inline type="module" src="/termin-test/js/termin.js"></script>
+</Base>

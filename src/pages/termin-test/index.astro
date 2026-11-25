@@ -1,0 +1,87 @@
+---
+// Online-Terminbuchung (Testphase, nur in der Vorschau). Skripte liegen in public/termin-test/js.
+import Base from '../../layouts/Base.astro';
+import '../../styles/buchung.css';
+---
+<Base
+  title="Termin buchen | zahnarzt-versicherungen.de"
+  description="Buche online deinen Beratungstermin bei meinsternum: per Zoom, telefonisch oder vor Ort in Köln."
+  path="/termin-test"
+  noindex
+  krumen={[{ name: 'Termin buchen', href: '/termin-test' }]}
+>
+  <section class="buch-hero">
+    <div class="rahmen">
+      <p class="buch-eyebrow">Wir nehmen uns Zeit für deine Fragen</p>
+      <h1>Dein persönlicher Beratungstermin</h1>
+      <p class="buch-lead">Buche jetzt deinen Termin: online, vor Ort in Köln oder telefonisch. Wir klären, was für dich gerade wichtig ist: Versicherungen, Finanzen oder Vorsorge. Kurz, klar und auf Augenhöhe.</p>
+    </div>
+  </section>
+
+  <div class="rahmen buch" id="buchung">
+    <p class="buch-testhinweis" id="testmodus" hidden>Testmodus: Die Kalender sind simuliert und E-Mails werden nicht versendet.</p>
+    <p class="buch-fehler" id="load-error" role="alert" hidden></p>
+
+    <section id="step-staff" aria-labelledby="h-staff">
+      <h2 id="h-staff" class="buch-h">Wen möchtest du sprechen?</h2>
+      <div id="types" class="buch-arten" role="group" aria-label="Terminart"><p class="buch-leise">Wird geladen …</p></div>
+      <div id="staff-list" class="buch-berater"></div>
+      <div id="external" hidden>
+        <h3 class="buch-h2">Weitere Beratung bei Partnern</h3>
+        <div id="external-list" class="buch-extern"></div>
+      </div>
+    </section>
+
+    <section id="step-time" hidden aria-labelledby="h-time">
+      <button type="button" class="buch-zurueck" data-back="staff">Zurück</button>
+      <h2 id="h-time" class="buch-h">Datum und Uhrzeit wählen</h2>
+      <p class="buch-leise" id="picked-staff"></p>
+      <div id="picker" aria-live="polite"></div>
+    </section>
+
+    <section id="step-form" hidden aria-labelledby="h-form">
+      <button type="button" class="buch-zurueck" data-back="time">Zurück</button>
+      <h2 id="h-form" class="buch-h">Buchungsformular</h2>
+      <div class="buch-formraster">
+        <form id="booking-form" class="buch-form" novalidate>
+          <h3 class="buch-h2">Deine Angaben</h3>
+          <div class="buch-zeile">
+            <label>Name *<input name="name" autocomplete="name" required maxlength="100"></label>
+            <label>E-Mail *<input name="email" type="email" autocomplete="email" required maxlength="200"></label>
+          </div>
+          <label>Telefonnummer <span id="phone-hint" class="buch-leise">(optional)</span><input name="phone" type="tel" autocomplete="tel" maxlength="40"></label>
+          <label>Möchtest du uns etwas sagen?<textarea name="note" rows="4" maxlength="1000"></textarea></label>
+          <fieldset class="buch-form-art">
+            <legend>Wie soll die Beratung stattfinden?</legend>
+            <div id="channels"></div>
+          </fieldset>
+          <label>Wie hast du uns gefunden?<select name="source" id="source"></select></label>
+          <label class="hp" aria-hidden="true">Website <input name="website" tabindex="-1" autocomplete="off"></label>
+          <label class="buch-check"><input type="checkbox" name="consent" required>
+            <span>Ich bin damit einverstanden, dass meine Angaben zur Terminvereinbarung verarbeitet werden. Mehr dazu in der <a href="/datenschutz" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span></label>
+          <p class="buch-fehler" id="form-error" role="alert"></p>
+        </form>
+        <aside class="buch-details" aria-labelledby="h-details">
+          <h3 class="buch-h2" id="h-details">Buchungsdetails</h3>
+          <p class="buch-details-titel" id="summary-title"></p>
+          <p class="buch-details-zeit" id="summary-time"></p>
+          <p class="buch-leise" id="summary-meta"></p>
+          <button type="submit" form="booking-form" class="knopf buch-absenden" id="submit-btn">Termin buchen</button>
+          <p class="buch-leise buch-klein">Du bekommst die Bestätigung per E-Mail und vorab eine Erinnerung.</p>
+        </aside>
+      </div>
+    </section>
+
+    <section id="done" hidden aria-live="polite" class="buch-fertig">
+      <p class="buch-haken" aria-hidden="true">✓</p>
+      <h2 class="buch-h">Dein Termin ist gebucht</h2>
+      <p class="buch-details-titel" id="done-title"></p>
+      <p class="buch-details-zeit" id="done-time"></p>
+      <p id="done-info"></p>
+      <p>Die Bestätigung kommt per E-Mail. Kurz vorher erinnern wir dich noch.</p>
+      <p><a class="knopf knopf-rand" id="done-link" href="#">Termin absagen oder verschieben</a></p>
+    </section>
+  </div>
+  <div class="abstand-unten"></div>
+  <script is:inline type="module" src="/termin-test/js/app.js"></script>
+</Base>

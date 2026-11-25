@@ -1,0 +1,83 @@
+/* Online-Terminbuchung – nutzt die Variablen aus site.css */
+.buch-hero { background: var(--verlauf); color: #fff; padding: 3.2rem 0 3.4rem; }
+.buch-hero-klein { padding: 2rem 0 2.2rem; }
+.buch-hero h1 { color: #fff; margin: 0.3rem 0 0.8rem; }
+.buch-eyebrow { font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.85; margin: 0; }
+.buch-lead { max-width: 44rem; font-size: 1.08rem; opacity: 0.95; margin: 0; }
+
+.buch { padding-top: 2.2rem; }
+.buch-h { font-size: 1.6rem; margin: 0 0 1rem; color: var(--navy); }
+.buch-h2 { font-size: 1.15rem; margin: 0 0 0.8rem; color: var(--navy); }
+.buch-leise { color: var(--text-leise); }
+.buch-klein { font-size: 0.85rem; }
+.buch-fehler { color: #a32626; margin: 0.6rem 0; }
+.buch-fehler:empty { display: none; }
+.buch-testhinweis { background: #fff6dd; border: 1px solid #ecd48a; border-radius: var(--radius-klein); padding: 0.6rem 0.9rem; margin: 0 0 1.2rem; font-size: 0.9rem; }
+
+.buch-arten { display: flex; flex-wrap: wrap; gap: 0.6rem; margin: 0 0 1.6rem; }
+.buch-art { font: inherit; cursor: pointer; background: #fff; color: var(--navy); border: 1px solid var(--linie); border-radius: 999px; padding: 0.55rem 1.1rem; display: inline-flex; gap: 0.6rem; align-items: baseline; }
+.buch-art span { font-size: 0.82rem; color: var(--text-leise); }
+.buch-art.on { background: var(--navy); color: #fff; border-color: var(--navy); }
+.buch-art.on span { color: #dbe4f1; }
+.buch-art:focus-visible, .buch-tag:focus-visible, .buch-zeit:focus-visible, .buch-pfeil:focus-visible { outline: 3px solid var(--teal-hell); outline-offset: 2px; }
+
+.buch-berater { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.2rem; }
+.buch-karte { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); box-shadow: var(--schatten); padding: 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.buch-karte h3 { margin: 0.4rem 0 0; font-size: 1.1rem; color: var(--navy); }
+.buch-karte p { margin: 0; color: var(--text); }
+.buch-karte .buch-dauer { color: var(--text-leise); font-size: 0.9rem; }
+.buch-karte .knopf { margin-top: auto; align-self: flex-start; }
+.buch-avatar { width: 3.4rem; height: 3.4rem; border-radius: 50%; background: var(--verlauf); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 1.3rem; }
+.buch-avatar-alle { background: var(--teal-hell); }
+.buch-extern { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.2rem; }
+a.buch-karte-extern { text-decoration: none; }
+#external { margin-top: 2.2rem; }
+
+.buch-zurueck { font: inherit; background: none; border: 0; color: var(--teal); cursor: pointer; padding: 0.2rem 0; margin-bottom: 0.8rem; }
+.buch-zurueck::before { content: '‹ '; }
+
+.buch-kal { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 2rem; background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); box-shadow: var(--schatten); padding: 1.6rem; margin-top: 1rem; }
+.buch-kal-kopf { display: flex; align-items: center; justify-content: space-between; margin-bottom: 0.8rem; font-weight: 600; color: var(--navy); }
+.buch-pfeil { font: inherit; font-size: 1.3rem; width: 2.4rem; height: 2.4rem; border-radius: 50%; border: 1px solid var(--linie); background: #fff; color: var(--navy); cursor: pointer; }
+.buch-pfeil:disabled { opacity: 0.35; cursor: default; }
+.buch-kal-raster { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.35rem; text-align: center; }
+.buch-wt { font-size: 0.78rem; color: var(--text-leise); padding: 0.3rem 0; }
+.buch-tag { font: inherit; aspect-ratio: 1; border-radius: 50%; border: 0; background: var(--grund); color: var(--text-leise); cursor: default; min-height: 2.4rem; }
+.buch-tag:not(:disabled) { background: #e8f2f6; color: var(--navy); font-weight: 600; cursor: pointer; }
+.buch-tag:not(:disabled):hover { background: #d3e7ef; }
+.buch-tag.on { background: var(--navy); color: #fff; }
+.buch-kal-tag { font-weight: 600; color: var(--navy); margin: 0 0 0.8rem; }
+.buch-zeiten { display: grid; grid-template-columns: repeat(auto-fill, minmax(5.6rem, 1fr)); gap: 0.5rem; margin-bottom: 1rem; }
+.buch-zeit { font: inherit; padding: 0.6rem 0.4rem; border-radius: var(--radius-klein); border: 1px solid var(--teal); background: #fff; color: var(--teal); font-weight: 600; cursor: pointer; }
+.buch-zeit:hover, .buch-zeit.on { background: var(--teal); color: #fff; }
+
+.buch-formraster { display: grid; grid-template-columns: minmax(0, 1.7fr) minmax(0, 1fr); gap: 2rem; align-items: start; }
+.buch-form, .buch-details { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); box-shadow: var(--schatten); padding: 1.6rem; }
+.buch-form label { display: block; margin-bottom: 1rem; font-weight: 500; color: var(--navy); }
+.buch-form input:not([type=checkbox]):not([type=radio]), .buch-form textarea, .buch-form select { display: block; width: 100%; margin-top: 0.3rem; font: inherit; padding: 0.65rem 0.8rem; border: 1px solid #c5cedb; border-radius: var(--radius-klein); background: #fff; color: var(--text); }
+.buch-form input:focus, .buch-form textarea:focus, .buch-form select:focus { outline: 3px solid var(--teal-hell); outline-offset: 1px; }
+.buch-zeile { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+.buch-form-art { border: 0; padding: 0; margin: 0 0 1rem; }
+.buch-form-art legend { font-weight: 500; color: var(--navy); margin-bottom: 0.5rem; padding: 0; }
+.buch-form-art #channels { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+.buch-radio { display: inline-flex !important; align-items: center; gap: 0.5rem; border: 1px solid var(--linie); border-radius: var(--radius-klein); padding: 0.55rem 0.9rem; margin: 0 !important; font-weight: 500; cursor: pointer; }
+.buch-radio:has(input:checked) { border-color: var(--teal); background: #e8f2f6; }
+.buch-check { display: flex !important; gap: 0.6rem; align-items: flex-start; font-weight: 400 !important; font-size: 0.92rem; color: var(--text) !important; }
+.buch-check input { margin-top: 0.25rem; }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.buch-details { position: sticky; top: 1rem; }
+.buch-details-titel { font-weight: 700; color: var(--navy); font-size: 1.1rem; margin: 0 0 0.3rem; }
+.buch-details-zeit { margin: 0 0 0.3rem; font-weight: 500; }
+.buch-absenden { width: 100%; margin: 1rem 0 0.8rem; }
+.buch-absenden:disabled { opacity: 0.6; cursor: wait; }
+
+.buch-fertig { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); box-shadow: var(--schatten); padding: 2rem; max-width: 40rem; }
+.buch-haken { width: 3rem; height: 3rem; border-radius: 50%; background: var(--teal); color: #fff; display: grid; place-items: center; font-size: 1.5rem; margin: 0 0 0.8rem; }
+.buch-aktionen { display: flex; flex-wrap: wrap; gap: 0.8rem; margin: 1.2rem 0; }
+
+@media (max-width: 52rem) {
+  .buch-kal, .buch-formraster { grid-template-columns: 1fr; }
+  .buch-details { position: static; }
+  .buch-zeile { grid-template-columns: 1fr; }
+  .buch-hero { padding: 2.2rem 0 2.4rem; }
+}

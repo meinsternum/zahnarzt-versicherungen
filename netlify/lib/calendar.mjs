@@ -34,19 +34,19 @@ export function googleCalendar(credentialsJson = process.env.GOOGLE_SERVICE_ACCO
       if (!entry || entry.errors?.length) throw new Error(`freebusy_failed_${staff.id}: ${JSON.stringify(entry?.errors || 'no data')}`);
       return entry.busy.map((b) => ({ start: Date.parse(b.start), end: Date.parse(b.end) }));
     },
-    async createEvent(staff, { summary, description, startMs, endMs }) {
+    async createEvent(staff, { summary, description, location, startMs, endMs }) {
       const res = await req(staff, {
-        url: `${cal(staff)}/events?conferenceDataVersion=1&sendUpdates=none`,
+        url: `${cal(staff)}/events?sendUpdates=none`,
         method: 'POST',
         data: {
           summary,
           description,
+          ...(location ? { location } : {}),
           start: { dateTime: new Date(startMs).toISOString(), timeZone: TZ },
           end: { dateTime: new Date(endMs).toISOString(), timeZone: TZ },
-          conferenceData: { createRequest: { requestId: crypto.randomUUID(), conferenceSolutionKey: { type: 'hangoutsMeet' } } },
         },
       });
-      return { eventId: res.data.id, meetLink: res.data.hangoutLink || '' };
+      return { eventId: res.data.id };
     },
     async updateEvent(staff, eventId, { startMs, endMs }) {
       await req(staff, {
@@ -83,7 +83,7 @@ export function demoCalendar() {
     },
     async createEvent(staff, ev) {
       console.log(`[demo-kalender] Termin angelegt bei ${staff.name}: ${ev.summary}`);
-      return { eventId: `demo-${crypto.randomUUID()}`, meetLink: 'https://meet.google.com/demo-abcd-efg' };
+      return { eventId: `demo-${crypto.randomUUID()}` };
     },
     async updateEvent(staff, eventId) {
       console.log(`[demo-kalender] Termin verschoben bei ${staff.name}: ${eventId}`);

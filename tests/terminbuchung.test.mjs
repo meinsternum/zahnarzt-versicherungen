@@ -44,7 +44,7 @@ async function setup() {
     ...cal,
     async createEvent(s, ev) {
       events.push(['create', s.id, ev.startMs]);
-      return { eventId: `ev${events.length}`, meetLink: 'https://meet.google.com/x' };
+      return { eventId: `ev${events.length}` };
     },
     async updateEvent(s, id, ev) {
       events.push(['update', id, ev.startMs]);
@@ -94,7 +94,7 @@ test('Buchen: Kalender, Speicher, zwei Mails, Doppelbuchung wird verhindert', as
   assert.ok(r.token);
   assert.deepEqual(events[0].slice(0, 2), ['create', 'patrick']);
   assert.deepEqual(outbox.map((m) => m.to).sort(), ['anna@example.com', 'hallo@meinsternum.de']);
-  assert.ok(outbox.find((m) => m.to === 'anna@example.com').text.includes('/termin.html?t='));
+  assert.ok(outbox.find((m) => m.to === 'anna@example.com').text.includes('/termin?t='));
   await assert.rejects(() => createBooking(deps, input(start, { email: 'b@example.com' }), NOW), (e) => e.code === 'slot_unavailable');
   // überlappender Termin (09:30) ist ebenfalls blockiert
   await assert.rejects(() => createBooking(deps, input(zonedToUtc('2026-11-17', '09:30')), NOW), (e) => e.code === 'slot_unavailable');
@@ -163,7 +163,8 @@ test('Erinnerungen: 3 Tage und 1 Tag vorher, nur einmal', async () => {
   assert.equal((await runReminders(deps, start - 71 * 3600e3)).length, 0, 'nicht doppelt');
   assert.equal((await runReminders(deps, start - 23.5 * 3600e3)).length, 1);
   assert.equal(outbox.length, 2);
-  assert.ok(outbox[0].subject.includes('in drei Tagen') && outbox[1].subject.includes('morgen'));
+  assert.ok(outbox[0].text.includes('in drei Tagen') && outbox[1].text.includes('morgen'));
+  assert.ok(outbox.every((m) => m.subject.startsWith('Erinnerung: Dein meinsternum-Termin am ')));
 });
 
 test('Erinnerungen: keine 3-Tage-Erinnerung, wenn erst kurz vorher gebucht wurde', async () => {
@@ -241,4 +242,32 @@ test('Echte Einstellungen: wer ist wann buchbar', async () => {
   } finally {
     useTestData();
   }
+});
+
+test('Mails: Betreff, Signatur, Zoom-Hinweis statt Meet-Link', async () => {
+  const { deps, outbox } = await setup();
+  const start = zonedToUtc('2026-11-17', '09:00');
+  await createBooking(deps, input(start), NOW);
+  const m = outbox.find((x) => x.to === 'anna@example.com');
+  assert.match(m.subject, /^Dein meinsternum-Termin am Dienstag, 17\. November 2026, 09:00 Uhr$/);
+  assert.ok(m.text.includes('deine Beratung ist bestätigt'));
+  assert.ok(m.text.includes('https://www.meinsternum.de/beratung') && m.text.includes('Foto von Patrick'));
+  assert.ok(!/meet\.google|Videolink/i.test(m.text + m.html));
+  assert.ok(m.text.includes('dein meinsternum-Team') && m.html.includes('dein mein<b>sternum</b>-Team'));
+  assert.ok(m.text.includes('Göppinger Str. 2a') && m.text.includes('0221 986 544 36'));
+  assert.ok(m.text.includes('Wenn du vorab Fragen hast'));
+  assert.ok(!m.text.includes('Erstgespräch'));
+  assert.ok(m.ics && !m.ics.includes('METHOD:'));
+});
+
+test('Beratungsform: Telefon braucht eine Nummer, Vor Ort nennt die Adresse', async () => {
+  const { deps, outbox, events } = await setup();
+  await assert.rejects(() => createBooking(deps, input(zonedToUtc('2026-11-17', '09:00'), { channel: 'phone' }), NOW), (e) => e.code === 'invalid');
+  await assert.rejects(() => createBooking(deps, input(zonedToUtc('2026-11-17', '09:00'), { channel: 'fax' }), NOW), (e) => e.code === 'invalid');
+  await createBooking(deps, input(zonedToUtc('2026-11-17', '09:00'), { channel: 'phone', phone: '0170 1234567' }), NOW);
+  assert.ok(outbox.find((x) => x.to === 'anna@example.com').text.includes('ruft dich zur vereinbarten Zeit unter 0170 1234567 an'));
+  await createBooking(deps, input(zonedToUtc('2026-11-17', '13:00'), { channel: 'onsite' }), NOW);
+  assert.ok(outbox.filter((x) => x.to === 'anna@example.com')[1].text.includes('Göppinger Str. 2a'));
+  assert.ok(outbox.find((x) => x.to === 'hallo@meinsternum.de').text.includes('Beratungsform: Telefonisch'));
+  assert.equal(events.length, 2);
 });

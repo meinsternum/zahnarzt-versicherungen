@@ -15,6 +15,7 @@ create table if not exists public.bookings (
   phone text not null default '',
   note text not null default '',
   source text not null default '',
+  channel text not null default 'online' check (channel in ('online', 'phone', 'onsite')),
   status text not null default 'confirmed' check (status in ('confirmed', 'cancelled')),
   event_id text not null default '',
   meet_link text not null default '',

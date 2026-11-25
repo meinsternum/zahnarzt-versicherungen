@@ -1,5 +1,5 @@
 // Geschäftslogik: buchen, absagen, verlegen, erinnern. Abhängigkeiten (Speicher, Kalender, Mail) werden übergeben, damit alles testbar ist.
-import { settings, appointmentTypes, staff as allStaff, sourceOptions, externalLinks } from './config.mjs';
+import { settings, appointmentTypes, staff as allStaff, sourceOptions, externalLinks, channels, office } from './config.mjs';
 import { computeSlots, staffForType } from './slots.mjs';
 import { localDate, formatDayShortDe, localTime, addDays } from './tz.mjs';
 import { newId, newToken } from './store.mjs';
@@ -36,14 +36,15 @@ export function publicBooking(b) {
     start: b.start_at,
     end: b.end_at,
     status: b.status,
-    meetLink: b.meet_link || '',
+    channel: b.channel || 'online',
     changeable: b.status === 'confirmed' && Date.parse(b.start_at) - Date.now() >= settings.changeDeadlineHours * HOUR,
   };
 }
 
 export function publicConfig() {
   return {
-    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name })) })),
+    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: s.blurb || t.description })) })),
+    channels: Object.values(channels).map((c) => ({ id: c.id, label: c.label })),
     external: externalLinks,
     sources: sourceOptions,
     changeDeadlineHours: settings.changeDeadlineHours,
@@ -93,13 +94,18 @@ function validate(input) {
   const start = Date.parse(input.start);
   if (Number.isNaN(start)) throw err('Bitte wähle eine Uhrzeit.');
   const source = sourceOptions.some((s) => s.id === input.source) ? input.source : '';
+  const channel = input.channel === undefined || input.channel === '' ? 'online' : String(input.channel);
+  if (!channels[channel]) throw err('Bitte wähle, wie die Beratung stattfinden soll.');
+  const phone = String(input.phone || '').trim().slice(0, 40);
+  if (channel === 'phone' && phone.replace(/\D/g, '').length < 6) throw err('Für eine telefonische Beratung brauchen wir deine Telefonnummer.');
   return {
     typeId: input.type,
     staffId: input.staff || 'any',
     start,
     name,
     email,
-    phone: String(input.phone || '').trim().slice(0, 40),
+    phone,
+    channel,
     note: String(input.note || '').trim().slice(0, 1000),
     source,
   };
@@ -138,6 +144,7 @@ export async function createBooking(deps, input, now = Date.now()) {
     name: v.name,
     email: v.email,
     phone: v.phone,
+    channel: v.channel,
     note: v.note,
     source: v.source,
     status: 'confirmed',
@@ -157,12 +164,21 @@ export async function createBooking(deps, input, now = Date.now()) {
 
   try {
     const ev = await deps.calendar.createEvent(person, {
-      summary: `${type.title}: ${v.name}`,
-      description: [`Kontakt: ${v.name}`, `E-Mail: ${v.email}`, v.phone && `Telefon: ${v.phone}`, v.note && `Anliegen: ${v.note}`, 'Gebucht über die Online-Terminbuchung'].filter(Boolean).join('\n'),
+      summary: `${type.title} (${channels[v.channel].short}): ${v.name}`,
+      description: [
+        `Kontakt: ${v.name}`,
+        `E-Mail: ${v.email}`,
+        v.phone && `Telefon: ${v.phone}`,
+        `Beratungsform: ${channels[v.channel].label}`,
+        v.channel === 'online' && `Zoom: persönlicher Raum, Zugang über ${office.zoomPage}`,
+        v.note && `Anliegen: ${v.note}`,
+        'Gebucht über die Online-Terminbuchung',
+      ].filter(Boolean).join('\n'),
+      location: v.channel === 'onsite' ? `${office.company}, ${office.street}, ${office.zip} ${office.city}` : v.channel === 'online' ? office.zoomPage : '',
       startMs: slot.start,
       endMs: slot.end,
     });
-    booking = await deps.store.update(booking.id, { event_id: ev.eventId, meet_link: ev.meetLink });
+    booking = await deps.store.update(booking.id, { event_id: ev.eventId });
   } catch (e) {
     await deps.store.update(booking.id, { status: 'cancelled' }).catch(() => {});
     console.error('Kalendereintrag fehlgeschlagen:', e);
