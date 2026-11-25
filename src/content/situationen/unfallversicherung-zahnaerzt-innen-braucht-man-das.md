@@ -3,7 +3,7 @@ frage: "Brauchen Zahnärzt*innen eine private Unfallversicherung, wenn BU und Ve
 titel: "Unfallversicherung für Zahnärzt*innen: Braucht man sie?"
 kurzantwort: "Als Ergänzung kann sie sinnvoll sein, als Ersatz für die Berufsunfähigkeitsversicherung nein. Die private Unfallversicherung zahlt nach einem Unfall eine Summe nach dem Grad der dauerhaften Beeinträchtigung, auch wenn du weiter in deiner Zahnarztpraxis arbeiten kannst. Bei Krankheit zahlt sie nicht."
 metaDescription: "Was die private Unfallversicherung für Zahnärzt*innen leistet, wo BU, Versorgungswerk und BGW zuständig sind und wann sie sinnvoll ist."
-status: geprueft
+status: freigegeben
 stand: "2026-11-25"
 pruefenBis: "2027-11-25"
 reihenfolge: 90

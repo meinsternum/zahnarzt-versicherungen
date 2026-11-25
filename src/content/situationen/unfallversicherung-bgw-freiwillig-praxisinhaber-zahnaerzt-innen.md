@@ -3,7 +3,7 @@ frage: "Sind Zahnärzt*innen mit eigener Praxis gesetzlich unfallversichert, und
 titel: "BGW für Zahnärzt*innen mit Praxis: freiwillig versichern"
 kurzantwort: "Nein. Als Inhaberin oder Inhaber einer Zahnarztpraxis bist du nicht kraft Gesetzes unfallversichert, dein angestelltes Team dagegen schon. Du kannst dich bei der BGW freiwillig gegen Arbeits- und Wegeunfälle sowie Berufskrankheiten versichern und die Versicherungssumme selbst wählen."
 metaDescription: "Warum Zahnärzt*innen mit eigener Praxis nicht gesetzlich unfallversichert sind und wie die freiwillige Versicherung bei der BGW funktioniert."
-status: geprueft
+status: freigegeben
 stand: "2026-11-25"
 pruefenBis: "2027-11-25"
 reihenfolge: 91

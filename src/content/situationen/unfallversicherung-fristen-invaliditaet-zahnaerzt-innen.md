@@ -3,7 +3,7 @@ frage: "Welche Fristen gelten für Zahnärzt*innen nach einem Unfall, damit die 
 titel: "Unfall passiert: Welche Fristen gelten für Zahnärzt*innen?"
 kurzantwort: "Nach den Musterbedingungen muss die Invalidität innerhalb von 15 Monaten nach dem Unfall eingetreten, schriftlich ärztlich festgestellt und beim Versicherer geltend gemacht sein. Sonst besteht kein Anspruch, auch wenn du in der Zahnarztpraxis dauerhaft eingeschränkt bleibst, außer in besonderen Ausnahmefällen."
 metaDescription: "Welche Fristen und Pflichten nach einem Unfall in der Unfallversicherung gelten und was Zahnärzt*innen mit eigener Praxis zusätzlich melden müssen."
-status: geprueft
+status: freigegeben
 stand: "2026-11-25"
 pruefenBis: "2027-11-25"
 reihenfolge: 94

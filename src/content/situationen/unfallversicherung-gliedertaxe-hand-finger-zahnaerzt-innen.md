@@ -3,7 +3,7 @@ frage: "Was zahlt die Unfallversicherung Zahnärzt*innen bei einer Verletzung vo
 titel: "Gliedertaxe für Zahnärzt*innen: Hand und Finger"
 kurzantwort: "Das bestimmt die Gliedertaxe: Nach den Musterbedingungen ergibt ein verlorener Zeigefinger 10 Prozent Invaliditätsgrad, also 10 Prozent der Versicherungssumme. Es gibt Verträge mit einer Gliedertaxe für Heilberufe, die Zahnärzt*innen ausdrücklich einschließt und Daumen oder Zeigefinger mit 60 Prozent ansetzt."
 metaDescription: "Wie die Gliedertaxe Hand, Daumen und Zeigefinger bewertet, was eine Gliedertaxe für Heilberufe bringt und ein Rechenbeispiel für Zahnärzt*innen."
-status: geprueft
+status: freigegeben
 stand: "2026-11-25"
 pruefenBis: "2027-11-25"
 reihenfolge: 92

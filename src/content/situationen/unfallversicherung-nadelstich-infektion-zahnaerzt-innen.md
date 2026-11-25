@@ -3,7 +3,7 @@ frage: "Zahlt die Unfallversicherung, wenn sich Zahnärzt*innen bei der Behandlu
 titel: "Nadelstich und Infektion: Zahlt die Unfallversicherung?"
 kurzantwort: "Nicht automatisch. In den Musterbedingungen sind Infektionen ausgeschlossen, wenn die Erreger durch eine nur geringfügige Verletzung wie einen kleinen Stich in den Körper gelangen. Für Zahnärzt*innen gibt es Infektionsklauseln für Heilberufe, die solche Infektionen bei der Berufsausübung einschließen."
 metaDescription: "Wann die Unfallversicherung Zahnärzt*innen nach Nadelstich oder Spritzer ins Auge zahlt und was Infektionsklauseln für Heilberufe regeln."
-status: geprueft
+status: freigegeben
 stand: "2026-11-25"
 pruefenBis: "2027-11-25"
 reihenfolge: 93
