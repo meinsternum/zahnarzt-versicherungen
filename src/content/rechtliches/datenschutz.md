@@ -3,7 +3,7 @@ titel: "Datenschutz"
 status: freigegeben
 ---
 
-Stand: 16. November 2026
+Stand: 26. November 2026
 
 Diese Erklärung gilt für die Website zahnarzt-versicherungen.de, ein Angebot der MEIN STERNUM Finanzberatung GmbH.
 
@@ -52,9 +52,27 @@ Wenn du uns über den WhatsApp-Link schreibst, nutzt du den Dienst der WhatsApp 
 
 ## 7. Terminbuchung und Links zu anderen Seiten
 
-Für die Buchung eines Termins verlinken wir auf meinsternum.de/online-buchen. Die Buchung läuft dort über Wix Bookings. Verarbeitet werden die Angaben, die du bei der Buchung machst, etwa Name, E-Mail-Adresse, Telefonnummer und gewählter Termin. Es gilt die Datenschutzerklärung von meinsternum.de (www.meinsternum.de/datenschutz). Der Link enthält nur eine Kennung, dass du von dieser Website kommst, keine persönlichen Daten.
+### Online-Terminbuchung
+
+Du kannst auf dieser Website direkt einen Beratungstermin buchen. Dafür verarbeiten wir die Angaben, die du im Formular machst: Name, E-Mail-Adresse, Telefonnummer, gewählte Beratungsform und Beratungsperson, den Termin sowie optional deine Nachricht. Bitte schreib in das Nachrichtenfeld keine Gesundheitsdaten.
+
+Zweck ist die Vereinbarung und Durchführung des Termins. Wir schicken dir eine Bestätigung mit Kalendereintrag per E-Mail, eine Erinnerung vor dem Termin und, wenn du den Termin absagst oder verschiebst, eine entsprechende Nachricht. Über den Link in der E-Mail kannst du den Termin selbst absagen oder verschieben. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Durchführung vorvertraglicher Maßnahmen auf deine Anfrage).
+
+Wir tragen den Termin in den Kalender der Beratungsperson ein. Dort und in unserem E-Mail-Postfach bleiben die Daten gespeichert, solange sie für die Beratung und die Kund*innenbetreuung gebraucht werden oder gesetzliche Aufbewahrungsfristen es verlangen. In der Buchungsdatenbank löschen wir deine Angaben automatisch zwölf Monate nach dem Termin.
+
+Zum Schutz vor Missbrauch begrenzen wir, wie viele Termine mit derselben E-Mail-Adresse gleichzeitig gebucht werden können. Dafür gleichen wir die E-Mail-Adresse mit bestehenden Buchungen ab. Ein Captcha oder ein Tracking-Dienst kommt nicht zum Einsatz. Für die Buchung werden keine Cookies gesetzt.
+
+Dafür setzen wir folgende Dienstleister als Auftragsverarbeiter ein, mit denen jeweils ein Auftragsverarbeitungsvertrag nach Art. 28 DSGVO besteht:
+
+- Netlify (siehe Abschnitt 3): Die Buchungsfunktion läuft als Netlify Function. Dabei kann die Verarbeitung auf Servern in den USA stattfinden. Grundlage ist wie in Abschnitt 3 das EU-US Data Privacy Framework, ersatzweise die Standardvertragsklauseln.
+- Supabase: Die Buchungsdaten liegen in einer Datenbank von Supabase in der EU (Region Irland). Der Zugriff erfolgt nur über unsere Server, nicht direkt aus dem Browser.
+- Google (Google Workspace): Kalender und E-Mail-Versand laufen über unser Google-Workspace-Konto. Google verarbeitet Daten auch in den USA, die Übermittlung stützt sich auf das EU-US Data Privacy Framework und die Standardvertragsklauseln.
+
+### Links zu anderen Seiten
 
 Auf LinkedIn und Instagram verweisen wir nur mit einfachen Links. Es werden keine Inhalte dieser Dienste eingebunden, Daten fließen erst, wenn du einen Link anklickst.
+
+Wenn du lieber über die Seite meinsternum.de buchst, gilt dort die Datenschutzerklärung von meinsternum.de (www.meinsternum.de/datenschutz).
 
 ## 8. Deine Rechte
 
