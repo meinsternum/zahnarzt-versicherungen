@@ -64,7 +64,7 @@ export const appointmentTypes = {
   finanzierung: {
     id: 'finanzierung',
     title: 'Beratung zu Immobilienfinanzierung',
-    minutes: 90,
+    minutes: 60,
     stepMinutes: 30,
     description: 'Beratung zur Finanzierung, zum Beispiel für Immobilie oder Praxis.',
   },
