@@ -3,6 +3,7 @@ import { BookingError, publicConfig, listSlots, createBooking, getBooking, cance
 import { setOrigin } from '../lib/config.mjs';
 import { useGoogle, testMode } from '../lib/env.mjs';
 
+import { buildIcs } from '../lib/mail.mjs';
 export const config = { path: '/api/*' };
 
 const json = (data, status = 200) =>
@@ -26,6 +27,11 @@ export default async function handler(req) {
     if (req.method === 'GET' && route === 'slots') {
       const q = url.searchParams;
       return json(await listSlots(deps, { typeId: q.get('type'), staffId: q.get('staff') || 'any', fromDate: q.get('from'), days: q.get('days'), rescheduleToken: q.get('reschedule') }));
+    }
+    if (req.method === 'GET' && route === 'ics') {
+      const b = await deps.store.getByToken(String(url.searchParams.get('t') || ''));
+      if (!b || b.status !== 'confirmed') return json({ error: 'not_found', message: 'Termin nicht gefunden' }, 404);
+      return new Response(buildIcs(b), { headers: { 'Content-Type': 'text/calendar; charset=utf-8', 'Content-Disposition': 'attachment; filename="meinsternum-termin.ics"' } });
     }
     if (req.method === 'GET' && route === 'booking') return json(await getBooking(deps, url.searchParams.get('t')));
     if (req.method === 'POST' && route === 'book') return json(await createBooking(deps, await body(req)), 201);

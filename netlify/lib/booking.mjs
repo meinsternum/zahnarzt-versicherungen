@@ -6,7 +6,8 @@ import { newId, newToken } from './store.mjs';
 import { templates } from './mail.mjs';
 
 // Beraterfotos liegen in public/termin-test/fotos/<id>.jpg
-const PHOTOS = new Set(['patrick', 'aileen', 'michael', 'steffen', 'alexios', 'fatma', 'henry']);
+const PHOTOS = new Set(['patrick', 'aileen', 'michael', 'steffen', 'alexios', 'fatma', 'henry', 'frank']);
+const photoOf = (id) => (PHOTOS.has(id) ? `/termin-test/fotos/${id}.jpg` : '');
 
 export class BookingError extends Error {
   constructor(code, message, status = 400) {
@@ -36,6 +37,7 @@ export function publicBooking(b) {
     minutes: appointmentTypes[b.type_id].minutes,
     staffId: b.staff_id,
     staffName: person.name,
+    staffPhoto: photoOf(b.staff_id),
     start: b.start_at,
     end: b.end_at,
     status: b.status,
@@ -46,7 +48,7 @@ export function publicBooking(b) {
 
 export function publicConfig() {
   return {
-    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: s.blurb || t.description, photo: PHOTOS.has(s.id) ? `/termin-test/fotos/${s.id}.jpg` : '' })) })),
+    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: t.id === 'kurzberatung' ? t.description : s.blurb || t.description, photo: photoOf(s.id) })) })),
     channels: Object.values(channels).map((c) => ({ id: c.id, label: c.label })),
     external: externalLinks,
     sources: sourceOptions,

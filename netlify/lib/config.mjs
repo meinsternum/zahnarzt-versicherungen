@@ -59,7 +59,7 @@ export const appointmentTypes = {
     title: 'Kurzberatung',
     minutes: 15,
     stepMinutes: 15,
-    description: 'Eine konkrete Frage kurz klären.',
+    description: 'Klarheit in 15 Minuten: Deine Frage, klare Antwort. Orientierung statt Grübeln.',
   },
   finanzierung: {
     id: 'finanzierung',
@@ -82,17 +82,18 @@ export const staff = [
   { id: 'patrick', blurb: 'Beratung zu Versicherungen und Geldanlage in ETFs und Investmentfonds, sowie Jahresupdate.', name: 'Patrick', types: ['erstgespraech', 'kurzberatung'], hours: { ...days([1], ['10:30', '21:30']), ...days([2, 3, 4, 5], ['10:00', '21:30']) } },
   { id: 'aileen', blurb: 'Beratung zu Versicherungen und Immobilien zur Kapitalanlage.', name: 'Aileen', types: ['erstgespraech', 'kurzberatung'], hours: days(MO_FR, ['10:00', '21:30']) },
   { id: 'michael', blurb: 'Beratung zu Versicherungen und zu deiner Niederlassung.', name: 'Michael', types: ['erstgespraech', 'kurzberatung'], hours: days([2, 4], ['10:30', '13:00'], ['17:00', '19:00']) },
-  { id: 'steffen', name: 'Steffen', types: ['erstgespraech', 'kurzberatung'], hours: { ...days(MO_FR, ['08:00', '22:00']), ...days([6], ['10:00', '16:00']) } },
+  { id: 'steffen', blurb: 'Beratung zu sämtlichen Versicherungen und ETFs & Investmentfonds.', name: 'Steffen', types: ['erstgespraech', 'kurzberatung'], hours: { ...days(MO_FR, ['08:00', '22:00']), ...days([6], ['10:00', '16:00']) } },
   {
     id: 'alexios',
+    blurb: 'Beratung zu sämtlichen Versicherungen.',
     name: 'Alexios',
     types: ['erstgespraech', 'kurzberatung'],
     hours: { ...days([1, 3, 5], ['11:00', '20:30']), ...days([2, 4], ['11:00', '19:30']) },
   },
-  { id: 'fatma', name: 'Fatma', types: ['erstgespraech', 'kurzberatung'], hours: days(MO_FR, ['11:00', '21:30']) },
-  { id: 'frank', name: 'Frank', types: ['erstgespraech', 'kurzberatung'], hours: { ...days([2], ['11:00', '13:00'], ['15:00', '18:00']), ...days([5], ['11:00', '13:00'], ['15:00', '17:00']) } },
+  { id: 'fatma', blurb: 'Beratung zu sämtlichen Versicherungen.', name: 'Fatma', types: ['erstgespraech', 'kurzberatung'], hours: days(MO_FR, ['11:00', '21:30']) },
+  { id: 'frank', blurb: 'Beratung zu Geldanlage, Immobilien-Kapitalanlage, Photovoltaik-Investments und Versicherungen.', name: 'Frank', types: ['erstgespraech', 'kurzberatung'], hours: { ...days([2], ['11:00', '13:00'], ['15:00', '18:00']), ...days([5], ['11:00', '13:00'], ['15:00', '17:00']) } },
   // Henry berät nur zu Finanzierung: nur diese Terminart, nicht Erstgespräch oder Kurzberatung.
-  { id: 'henry', name: 'Henry', types: ['finanzierung'], hours: days(MO_FR, ['11:00', '21:30']) },
+  { id: 'henry', blurb: 'Henry hilft dir bei deinen Fragen zur Immobilienfinanzierung.', name: 'Henry', types: ['finanzierung'], hours: days(MO_FR, ['11:00', '21:30']) },
 ].map((s) => ({
   ...s,
   // Kalender-Adresse je Person aus STAFF_<ID>_EMAIL (nicht im öffentlichen Code); ohne Eintrag eine ungültige Platzhalter-Adresse
@@ -105,12 +106,14 @@ export const staff = [
 export const externalLinks = [
   {
     title: 'Beratung zu bAV und bKV',
-    description: 'Betriebliche Altersvorsorge und Krankenversicherung, Termin über einen externen Kalender.',
+    description: 'Sebastian & Christoph helfen bei betrieblicher Altersvorsorge und betrieblicher Krankenversicherung für die Arztpraxis.',
+    photo: '/termin-test/fotos/gfbv.jpg',
     url: 'https://meetings-eu1.hubspot.com/meetings/sebastian-dreschmann/sternum-link-arbeitgebergesprach?uuid=b674b0eb-1344-42f8-a7fc-67d31c7cd421',
   },
   {
     title: 'Beratung zu Steuern',
-    description: 'Steuerberatung mit Gerrit, Termin über einen externen Kalender.',
+    description: 'Gerrit hilft dir bei steuerlichen Fragen. Als externer Kooperationspartner berät er viele unserer Kund*innen.',
+    photo: '/termin-test/fotos/gerrit.jpg',
     url: 'https://outlook.office365.com/owa/calendar/sternum@wilde-partner.de/bookings/',
   },
 ];

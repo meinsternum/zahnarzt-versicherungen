@@ -20,12 +20,18 @@ import '../../styles/buchung.css';
     <p class="buch-fehler" id="error" role="alert" hidden></p>
 
     <section id="view" hidden>
+      <img class="buch-foto" id="details-photo" alt="" width="120" height="120" hidden>
       <p class="buch-details-titel" id="details-title"></p>
       <p class="buch-details-zeit" id="details-time"></p>
       <p id="details-info"></p>
       <div id="actions" class="buch-aktionen">
         <button type="button" class="knopf" id="btn-reschedule">Termin verschieben</button>
         <button type="button" class="knopf knopf-rand" id="btn-cancel">Termin absagen</button>
+      </div>
+      <div id="cancel-confirm" class="buch-bestaetigung" hidden>
+        <p><strong>Möchtest du den Termin wirklich absagen?</strong></p>
+        <button type="button" class="knopf" id="btn-cancel-yes">Ja, Termin absagen</button>
+        <button type="button" class="knopf knopf-rand" id="btn-cancel-no">Nein, Termin behalten</button>
       </div>
       <p class="buch-leise" id="locked" hidden></p>
     </section>

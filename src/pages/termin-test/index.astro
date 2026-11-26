@@ -8,7 +8,6 @@ import '../../styles/buchung.css';
   description="Buche online deinen Beratungstermin bei meinsternum: per Zoom, telefonisch oder vor Ort in Köln."
   path="/termin-test"
   noindex
-  krumen={[{ name: 'Termin buchen', href: '/termin-test' }]}
 >
   <section class="buch-hero">
     <div class="rahmen">
@@ -26,6 +25,7 @@ import '../../styles/buchung.css';
       <h2 id="h-staff" class="buch-h">Wen möchtest du sprechen?</h2>
       <div id="types" class="buch-arten" role="group" aria-label="Terminart"><p class="buch-leise">Wird geladen …</p></div>
       <div id="staff-list" class="buch-berater"></div>
+      <p class="buch-egal" id="any-wrap" hidden>Du hast keine Präferenz? <button type="button" class="buch-link" data-staff="any">Zum nächsten freien Termin</button></p>
       <div id="external" hidden>
         <h3 class="buch-h2">Weitere Beratung bei Partnern</h3>
         <div id="external-list" class="buch-extern"></div>
@@ -63,11 +63,12 @@ import '../../styles/buchung.css';
         </form>
         <aside class="buch-details" aria-labelledby="h-details">
           <h3 class="buch-h2" id="h-details">Buchungsdetails</h3>
+          <img class="buch-foto buch-foto-mitte" id="summary-photo" alt="" width="120" height="120" hidden>
           <p class="buch-details-titel" id="summary-title"></p>
           <p class="buch-details-zeit" id="summary-time"></p>
           <p class="buch-leise" id="summary-meta"></p>
           <button type="submit" form="booking-form" class="knopf buch-absenden" id="submit-btn">Termin buchen</button>
-          <p class="buch-leise buch-klein">Du bekommst die Bestätigung per E-Mail und vorab eine Erinnerung.</p>
+          <p class="buch-leise buch-klein">Du bekommst die Bestätigung per E-Mail.</p>
         </aside>
       </div>
     </section>
@@ -75,10 +76,11 @@ import '../../styles/buchung.css';
     <section id="done" hidden aria-live="polite" class="buch-fertig">
       <p class="buch-haken" aria-hidden="true">✓</p>
       <h2 class="buch-h">Dein Termin ist gebucht</h2>
+      <img class="buch-foto" id="done-photo" alt="" width="120" height="120" hidden>
       <p class="buch-details-titel" id="done-title"></p>
       <p class="buch-details-zeit" id="done-time"></p>
       <p id="done-info"></p>
-      <p>Die Bestätigung kommt per E-Mail. Kurz vorher erinnern wir dich noch.</p>
+      <p>Die Bestätigung kommt per E-Mail.</p>
       <p><a class="knopf knopf-rand" id="done-link" href="#">Termin absagen oder verschieben</a></p>
     </section>
   </div>

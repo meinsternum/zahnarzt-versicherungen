@@ -22,15 +22,7 @@ function renderTypes() {
 
 function renderStaff() {
   const t = state.type;
-  const any =
-    t.staff.length > 1
-      ? `<article class="buch-karte"><span class="buch-avatar buch-avatar-alle" aria-hidden="true">★</span>
-          <h3>Nächster freier Termin</h3><p>Du wirst einer Person zugeordnet, die als Nächstes Zeit hat.</p>
-          <p class="buch-dauer">${esc(minutesLabel(t.minutes))}</p>
-          <button type="button" class="knopf knopf-rand" data-staff="any">Termin buchen</button></article>`
-      : '';
   el('staff-list').innerHTML =
-    any +
     t.staff
       .map(
         (s) => `<article class="buch-karte">${s.photo ? `<img class="buch-foto" src="${esc(s.photo)}" alt="${esc(s.name)}" width="120" height="120" loading="lazy">` : `<span class="buch-avatar" aria-hidden="true">${esc(initials(s.name))}</span>`}
@@ -40,6 +32,7 @@ function renderStaff() {
       )
       .join('');
   el('staff-list').querySelectorAll('[data-staff]').forEach((b) => b.addEventListener('click', () => chooseStaff(b.dataset.staff)));
+  el('any-wrap').hidden = t.staff.length < 2;
 }
 
 function setType(id) {
@@ -50,11 +43,13 @@ function setType(id) {
   renderStaff();
 }
 
+const setPhoto = (img, src, alt) => { img.hidden = !src; if (src) { img.src = src; img.alt = alt || ''; } };
+
 function renderExternal() {
   const list = state.config.external || [];
   el('external').hidden = !list.length;
   el('external-list').innerHTML = list
-    .map((l) => `<a class="buch-karte buch-karte-extern" href="${esc(l.url)}" target="_blank" rel="noopener"><h3>${esc(l.title)}</h3><p>${esc(l.description)}</p></a>`)
+    .map((l) => `<a class="buch-karte buch-karte-extern" href="${esc(l.url)}" target="_blank" rel="noopener">${l.photo ? `<img class="buch-foto" src="${esc(l.photo)}" alt="" width="120" height="120" loading="lazy">` : ''}<h3>${esc(l.title)}</h3><p>${esc(l.description)}</p></a>`)
     .join('');
 }
 
@@ -74,6 +69,7 @@ function chooseStaff(id) {
       state.slot = slot;
       el('summary-title').textContent = id === 'any' ? state.type.title : staffTitle(state.type, { name: personName() });
       el('summary-time').textContent = `${fmtDate(slot.start)} um ${fmtTime(slot.start).replace(' Uhr', '')}`;
+      setPhoto(el('summary-photo'), state.type.staff.find((x) => x.id === id)?.photo, personName());
       el('summary-meta').textContent = minutesLabel(state.type.minutes);
       show('form');
     },
@@ -116,6 +112,7 @@ async function submit(e) {
       website: f.website.value,
     });
     const b = res.booking;
+    setPhoto(el('done-photo'), b.staffPhoto, b.staffName);
     el('done-title').textContent = `${b.typeTitle} bei ${b.staffName}`;
     el('done-time').textContent = `${fmtDate(b.start)} um ${fmtTime(b.start).replace(' Uhr', '')}`;
     el('done-info').innerHTML = channelInfoHtml(b.channel, b.staffName, OFFICE_ADDRESS);
@@ -146,6 +143,7 @@ async function init() {
   el('source').innerHTML = state.config.sources.map((s) => `<option value="${esc(s.id)}">${esc(s.label)}</option>`).join('');
   renderChannels();
   el('booking-form').addEventListener('submit', submit);
+  el('any-wrap').querySelector('[data-staff]').addEventListener('click', () => chooseStaff('any'));
   document.querySelectorAll('[data-back]').forEach((b) => b.addEventListener('click', () => show(b.dataset.back)));
   renderExternal();
   const first = state.config.types.find((t) => t.id === 'erstgespraech' && t.staff.length) || state.config.types.find((t) => t.staff.length);

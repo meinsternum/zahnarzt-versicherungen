@@ -14,6 +14,7 @@ function fail(msg) {
 function renderView() {
   el('loading').hidden = true;
   el('view').hidden = false;
+  if (booking.staffPhoto) { el('details-photo').src = booking.staffPhoto; el('details-photo').alt = booking.staffName; el('details-photo').hidden = false; }
   el('details-title').textContent = `${booking.typeTitle} bei ${booking.staffName}`;
   el('details-time').textContent = `${fmtDate(booking.start)} um ${fmtTime(booking.start).replace(' Uhr', '')} (${minutesLabel(booking.minutes)})${booking.status === 'cancelled' ? ', abgesagt' : ''}`;
   if (booking.status === 'confirmed') el('details-info').innerHTML = channelInfoHtml(booking.channel, booking.staffName, OFFICE_ADDRESS);
@@ -33,9 +34,16 @@ async function start() {
   renderView();
 }
 
-el('btn-cancel').addEventListener('click', async () => {
-  if (!confirm('Möchtest du den Termin wirklich absagen?')) return;
-  el('btn-cancel').disabled = true;
+el('btn-cancel').addEventListener('click', () => {
+  el('actions').hidden = true;
+  el('cancel-confirm').hidden = false;
+});
+el('btn-cancel-no').addEventListener('click', () => {
+  el('cancel-confirm').hidden = true;
+  el('actions').hidden = false;
+});
+el('btn-cancel-yes').addEventListener('click', async () => {
+  el('btn-cancel-yes').disabled = true;
   try {
     await api('cancel', { t: token });
     el('view').hidden = true;
@@ -44,7 +52,7 @@ el('btn-cancel').addEventListener('click', async () => {
     el('result-title').textContent = 'Dein Termin wurde abgesagt';
     el('result-text').textContent = 'Du bekommst dazu eine Bestätigung per E-Mail.';
   } catch (e) {
-    el('btn-cancel').disabled = false;
+    el('btn-cancel-yes').disabled = false;
     fail(e.message);
   }
 });

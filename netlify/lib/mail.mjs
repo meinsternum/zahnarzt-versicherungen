@@ -109,6 +109,27 @@ Telefon ${esc(office.phone)} · <a href="mailto:${office.email}" style="color:${
 const button = (href, label) =>
   `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:20px 0"><tr><td style="background:${NAVY};border-radius:999px"><a href="${esc(href)}" style="display:inline-block;padding:12px 22px;color:#ffffff;text-decoration:none;font-weight:600;font-size:15px">${esc(label)}</a></td></tr></table>`;
 
+const buttonLight = (href, label) =>
+  `<table role="presentation" cellpadding="0" cellspacing="0" style="margin:8px 0 20px"><tr><td style="border:1px solid ${NAVY};border-radius:999px"><a href="${esc(href)}" style="display:inline-block;padding:10px 20px;color:${NAVY};text-decoration:none;font-weight:600;font-size:14px">${esc(label)}</a></td></tr></table>`;
+
+// Links zum Eintragen in Google, Outlook oder per .ics-Datei
+function calendarLinks(b) {
+  const type = appointmentTypes[b.type_id];
+  const person = allStaff.find((s) => s.id === b.staff_id);
+  const info = channelInfo(b, person);
+  const ch = b.channel || 'online';
+  const location = ch === 'onsite' ? addressLine : ch === 'online' ? office.zoomPage : '';
+  const title = `meinsternum: ${type.title} mit ${person.name}`;
+  const start = Date.parse(b.start_at);
+  const end = Date.parse(b.end_at);
+  const q = (o) => new URLSearchParams(o).toString();
+  return {
+    google: `https://calendar.google.com/calendar/render?${q({ action: 'TEMPLATE', text: title, dates: `${icsDate(start)}/${icsDate(end)}`, details: info.text, location })}`,
+    outlook: `https://outlook.live.com/calendar/0/deeplink/compose?${q({ path: '/calendar/action/compose', rru: 'addevent', subject: title, startdt: new Date(start).toISOString(), enddt: new Date(end).toISOString(), body: info.text, location })}`,
+    ics: `${settings.siteUrl}/api/ics?t=${encodeURIComponent(b.token)}`,
+  };
+}
+
 const detailsBox = (rows) =>
   `<table role="presentation" cellpadding="0" cellspacing="0" style="width:100%;background:#f2f5f9;border-radius:12px;margin:16px 0"><tr><td style="padding:16px 18px;font-size:15px;line-height:1.6;color:${TEXT}">${rows
     .map(([k, v]) => `<strong style="color:${NAVY}">${esc(k)}:</strong> ${esc(v)}`)
@@ -155,18 +176,26 @@ ${detailText(rows)}
 
 ${info.text}
 
+Im Kalender eintragen:
+Google: ${calendarLinks(b).google}
+Outlook: ${calendarLinks(b).outlook}
+Apple und andere (.ics): ${calendarLinks(b).ics}
+
 Du kannst den Termin hier absagen oder verschieben:
 ${manageUrl(b)}
 
-Du bekommst vorab noch eine Erinnerung. ${questionsText}
+${questionsText}
 
 ${signatureText}`;
     const html = layout(`<p style="margin:0 0 14px">Hallo ${esc(firstName(b))},</p>
 <p style="margin:0 0 6px">deine ${esc(type.title)} ist bestätigt.</p>
 ${detailsBox(rows)}
 <p style="margin:0 0 4px">${info.html}</p>
-${button(manageUrl(b), 'Termin absagen oder verschieben')}
-<p style="margin:0">Du bekommst vorab noch eine Erinnerung. ${questionsHtml}</p>`);
+${button(calendarLinks(b).google, 'Im Google Kalender eintragen')}
+<p style="margin:-8px 0 20px;font-size:14px;color:${LEISE}">Andere Kalender: <a href="${esc(calendarLinks(b).outlook)}" style="color:${TEAL}">Outlook</a> · <a href="${esc(calendarLinks(b).ics)}" style="color:${TEAL}">Apple Kalender und andere (.ics)</a></p>
+<p style="margin:0 0 4px">Möchtest du den Termin ändern?</p>
+${buttonLight(manageUrl(b), 'Absagen oder verschieben')}
+<p style="margin:0">${questionsHtml}</p>`);
     return { subject: `Dein meinsternum-Termin am ${dateSubject(b)}`, text, html, ics: buildIcs(b) };
   },
   reminder(b, hours) {

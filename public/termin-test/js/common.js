@@ -40,8 +40,10 @@ export function mountPicker(root, { typeId, staffId, onPick, rescheduleToken }) 
     const q = new URLSearchParams({ type: typeId, staff: staffId, from: `${key}-01`, days: '31' });
     if (rescheduleToken) q.set('reschedule', rescheduleToken);
     const data = await api(`slots?${q}`);
-    const byDate = new Map(data.days.map((d) => [d.date, d.slots]));
-    const entry = { byDate, hasMore: data.hasMore };
+    // Das Abruffenster kann über den Monatswechsel hinausgehen; angezeigt werden nur Tage dieses Monats
+    const byDate = new Map(data.days.filter((d) => d.date.startsWith(key)).map((d) => [d.date, d.slots]));
+    const nextMonth = new Date(Date.UTC(y, m + 1, 1)).toISOString().slice(0, 10);
+    const entry = { byDate, hasMore: data.hasMore || data.nextFrom > nextMonth };
     state.months.set(key, entry);
     return entry;
   }

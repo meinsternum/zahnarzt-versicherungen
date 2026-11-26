@@ -5,7 +5,7 @@
 .buch-eyebrow { font-size: 0.85rem; letter-spacing: 0.04em; text-transform: uppercase; opacity: 0.85; margin: 0; }
 .buch-lead { max-width: 44rem; font-size: 1.08rem; opacity: 0.95; margin: 0; }
 
-.buch { padding-top: 2.2rem; }
+.buch::before { content: ""; display: block; height: 3.4rem; }
 .buch-h { font-size: 1.6rem; margin: 0 0 1rem; color: var(--navy); }
 .buch-h2 { font-size: 1.15rem; margin: 0 0 0.8rem; color: var(--navy); }
 .buch-leise { color: var(--text-leise); }
@@ -82,3 +82,14 @@ a.buch-karte-extern { text-decoration: none; }
   .buch-zeile { grid-template-columns: 1fr; }
   .buch-hero { padding: 2.2rem 0 2.4rem; }
 }
+
+.buch-foto-mitte { margin-bottom: 0.8rem; }
+.buch-fertig .buch-foto, #view .buch-foto { display: block; margin: 0 0 1rem; }
+.buch-foto[hidden] { display: none; }
+.buch-egal { margin: 1.6rem 0 0; color: var(--text-leise); }
+.buch-link { font: inherit; background: none; border: 0; padding: 0; color: var(--teal); text-decoration: underline; cursor: pointer; }
+.buch-bestaetigung { background: #fff; border: 1px solid var(--linie); border-radius: var(--radius); padding: 1.2rem 1.4rem; max-width: 30rem; margin: 1.2rem 0; }
+.buch-bestaetigung[hidden] { display: none; }
+.buch-bestaetigung p { margin: 0 0 0.8rem; }
+.buch-bestaetigung .knopf { margin: 0 0.6rem 0.4rem 0; }
+.buch-karte-extern .buch-foto { margin-bottom: 0.2rem; }
