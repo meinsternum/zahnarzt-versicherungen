@@ -6,15 +6,31 @@
 export const hero = {
   h1: 'Absicherung für Zahnärzt*innen: Antworten auf konkrete Fragen', // bestehende Startseite
   lead: {
-    text: 'zahnarzt-versicherungen.de ist ein Ratgeber der MEIN STERNUM Finanzberatung GmbH aus Köln. Als Versicherungsmakler beraten wir Zahnärzt*innen in allen Karrierephasen, vom Studium bis zur eigenen Praxis. Hier beantworten wir die Fragen, die sie uns zur Absicherung stellen: kurz, aus der Praxis und mit Quellen. Deine eigene Situation gehen wir gern im Erstgespräch mit dir durch.',
+    text: 'Vom Berufsstart bis zur Praxisabgabe.', // neues Design, 26.11.2026 (Patrick: mehr Text braucht es nicht)
     entwurf: false,
   },
-  cta: 'Erstgespräch buchen', // bestehende Startseite
+  cta: 'Termin wählen', // neues Design, 26.11.2026
   zweit: 'Zu den Fragen', // bestehende Startseite
+  eyebrow: 'Für Zahnärzt*innen',
+  vertrauen: 'Jede Antwort nennt ihre Quellen und ihren Stand.', // Sachaussage zur Seite, siehe Seitenregeln
+};
+
+// Fragen nach Laufbahn (neues Design, von Patrick am 26.11.2026 in der Vorschau freigegeben).
+// Die Texte sind Orientierung, keine Fachaussagen; die Chips verlinken auf die Themenseiten.
+export const laufbahn = {
+  h2: 'Fragen nach Laufbahn',
+  lead: 'Such dir die Stufe aus, auf der du gerade stehst.',
+  stufen: [
+    { titel: 'Studium und Berufsstart', text: 'Der Berufsstart legt Weichen für Absicherung und Vorsorge.', themen: ['berufsunfaehigkeit', 'krankenversicherung', 'altersvorsorge'] },
+    { titel: 'Assistenz und Anstellung', text: 'Als Angestellte*r gelten andere Regeln als in der eigenen Praxis.', themen: ['berufsunfaehigkeit', 'berufshaftpflicht', 'rechtsschutz', 'krankenversicherung'] },
+    { titel: 'Praxis gründen oder übernehmen', text: 'Mit Gründung oder Übernahme kommen neue Risiken und Pflichten dazu.', themen: ['praxisinhalt', 'praxisausfall', 'rechtsschutz', 'cyber', 'berufshaftpflicht'] },
+    { titel: 'Praxis führen und abgeben', text: 'Im laufenden Betrieb und vor der Abgabe lohnt ein Blick auf bestehende Verträge.', themen: ['praxisausfall', 'unfallversicherung', 'altersvorsorge', 'krankenversicherung'] },
+  ],
 };
 
 export const themen = {
   h2: 'Fragen nach Thema',
+  lead: 'Alle Antworten, sortiert nach Versicherungsart.',
   entwurf: false,
 };
 
@@ -88,6 +104,7 @@ export const faq = {
 };
 
 export const abschluss = {
-  h2: 'Nächste Schritte', // bestehende Startseite
-  text: 'Eine Ratgeberseite kann vieles erklären, aber nicht deine persönliche Situation. Die gehen wir im Erstgespräch gemeinsam durch.', // Stil-Skill, Entwurf zur Freigabe 14.11.2026
+  h2: 'Deine Frage ist nicht dabei?', // neues Design, 26.11.2026
+  text: 'Schick uns eine kurze Nachricht oder such dir direkt einen Termin aus.',
+  whatsapp: 'Kurze Frage per WhatsApp',
 };

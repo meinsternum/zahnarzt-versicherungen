@@ -156,7 +156,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 .bewertung.dunkel .bewertung-stand { color: #dfe7f1; }
 
 /* Fuß */
-.fuss { background: var(--navy-tief); color: #dfe6f0; margin-top: 0; font-size: 0.95rem; }
+.fuss { background: #1b2a45; color: #dfe6f0; margin-top: 0; font-size: 0.95rem; }
 .fuss a { color: #fff; }
 .fuss-raster { display: grid; gap: 2.5rem; grid-template-columns: 1.6fr 1fr; padding-top: 3.5rem; padding-bottom: 2.5rem; }
 .fuss-marke { font-size: 1.15rem; color: #fff; margin-bottom: 0.8rem; }

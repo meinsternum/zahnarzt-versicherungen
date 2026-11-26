@@ -1,87 +1,96 @@
 ---
-import { mitMarke, markeText, MARKE_HTML } from '../lib/marke';
-// Startseite (Entwurf A, von Patrick am 13.11.2026 gewählt).
+import { mitMarke, markeText } from '../lib/marke';
+// Startseite, neues Design (Richtung A, von Patrick am 26.11.2026 in der Vorschau freigegeben).
+// Inhalte aus src/lib/startseite.ts, Themen und Fragen datengetrieben aus den Ratgeberseiten.
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import Foto from '../components/Foto.astro';
-import Icon from '../components/Icon.astro';
-import Bewertungszeile from '../components/Bewertungszeile.astro';
-import { hero, themen, ablauf, werWirSind, faq, abschluss } from '../lib/startseite';
-import { TERMIN_URL, ORGANISATION } from '../lib/site';
+import { hero, laufbahn, themen, ablauf, werWirSind, faq, abschluss } from '../lib/startseite';
+import { TERMIN_URL, WHATSAPP_URL, ORGANISATION } from '../lib/site';
+import { bewertung } from '../lib/bewertung';
 import { visible, zeigeUeberUns } from '../lib/status';
-import { gruppiere, menueTitel, themenPfad } from '../lib/phasen';
+import { gruppiere, themenPfad } from '../lib/phasen';
 import { website, organisation, person, faqPage } from '../lib/schema';
 
 const seiten = visible(await getCollection('situationen')).sort((a, b) => a.data.reihenfolge - b.data.reihenfolge);
 const gruppen = gruppiere(seiten);
+const gruppeJeId = new Map(gruppen.map((g) => [g.id as string, g]));
 const jsonLd = [website(), organisation(), person(), faqPage(faq.eintraege.map((e) => ({ ...e, antwort: markeText(e.antwort) })))];
 // Firmenname nie umbrechen
-const nb = (t: string) => t.replaceAll('MEIN STERNUM', 'MEIN\u00a0STERNUM');
-const FIRMA = 'MEIN\u00a0STERNUM Finanzberatung GmbH';
+const nb = (t: string) => t.replaceAll('MEIN STERNUM', 'MEIN STERNUM');
+const FIRMA = 'MEIN STERNUM Finanzberatung GmbH';
 const [werVor, werNach] = nb(werWirSind.absaetze[0]).split(FIRMA);
 const FIRMA_HTML = mitMarke('MEIN STERNUM') + ' Finanzberatung GmbH';
-const [h1Teil1, h1Teil2] = hero.h1.split(': ');
+
+// Symbole der Themenkacheln (Linien, 24er-Raster)
+const symbole: Record<string, string> = {
+  berufsunfaehigkeit: 'M3 12a9 9 0 0118 0zM12 12v6a2 2 0 004 0',
+  altersvorsorge: 'M12 8a4 4 0 100 8 4 4 0 000-8zM12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2',
+  krankenversicherung: 'M12 20s-7-4.5-7-10a4 4 0 017-2.5A4 4 0 0119 10c0 5.5-7 10-7 10z',
+  berufshaftpflicht: 'M12 3l7 3v5c0 5-3 8-7 10-4-2-7-5-7-10V6z',
+  praxisinhalt: 'M4 8l8-4 8 4v8l-8 4-8-4zM4 8l8 4 8-4M12 12v8',
+  praxisausfall: 'M12 3a9 9 0 100 18 9 9 0 000-18zM12 7v5l3 2',
+  rechtsschutz: 'M12 4v16M6 20h12M5 8h14M5 8l-3 7a3 3 0 006 0zM19 8l-3 7a3 3 0 006 0z',
+  cyber: 'M6 11h12v9H6zM8 11V8a4 4 0 018 0v3',
+  unfallversicherung: 'M9 3h6v6h6v6h-6v6H9v-6H3V9h6z',
+};
+const STERN = 'M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z';
 ---
 <Base title="Absicherung für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf Versicherungsfragen von Zahnärzt*innen, mit Quellen und Stand. Ein Ratgeber von meinsternum aus Köln." path="/" jsonLd={jsonLd}>
 <div class="startseite">
-  <section class="a-hero">
-    <div class="rahmen a-hero-raster">
-      <div class="a-hero-text">
-        <h1><span class="stark">{h1Teil1}:</span> <span class="leicht">{h1Teil2}</span></h1>
-        <p class="a-lead" set:html={mitMarke(hero.lead.text)} />
-        <p class="a-knoepfe">
-          <a class="knopf" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a>
-          <a class="knopf knopf-rand" href="#themen">{hero.zweit}</a>
+
+  <section class="s-hero">
+    <div class="rahmen s-hero-raster">
+      <div class="s-hero-text">
+        <p class="s-eyebrow">{hero.eyebrow}</p>
+        <h1>{hero.h1}</h1>
+        <p class="s-lead">{hero.lead.text}</p>
+        <p class="s-knoepfe">
+          <a class="s-knopf s-knopf-hell" href={TERMIN_URL}>{hero.cta}</a>
+          <a class="s-knopf s-knopf-rand" href="#laufbahn">{hero.zweit}</a>
         </p>
-        <Bewertungszeile class="a-hero-bewertung" />
+        <p class="s-haken">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12l4 4 10-10" /></svg>
+          <span>{hero.vertrauen}</span>
+        </p>
       </div>
-      <figure class="a-hero-bild">
-        <Foto foto="team-02" prioritaet sizes="(min-width: 900px) 45vw, 92vw" breiten={[480, 720, 960, 1280]} />
-        <figcaption><b>Das Team von <Fragment set:html={MARKE_HTML} /></b> mit Patrick Senn, Geschäftsführer</figcaption>
-      </figure>
+      <div class="s-hero-bild">
+        <Foto foto="team-02" prioritaet sizes="(min-width: 960px) 560px, 92vw" breiten={[480, 720, 960, 1280]} />
+        <p class="s-seit">seit 2015</p>
+        <a class="s-bewertung" href={bewertung.url}>
+          <span class="s-bewertung-streifen" aria-hidden="true"></span>
+          <span class="s-bewertung-note"><b aria-hidden="true">{bewertung.wert}</b><span aria-hidden="true">von 5</span></span>
+          <span class="s-bewertung-trenner" aria-hidden="true"></span>
+          <span class="s-bewertung-text">
+            <span class="s-sterne" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <svg viewBox="0 0 24 24" width="22" height="22"><path d={STERN} /></svg>)}</span>
+            <span class="sr">{bewertung.wert} von 5 Sternen. </span>
+            <span class="s-bewertung-anzahl">{bewertung.anzahl} Google-Bewertungen</span>
+            <span class="s-bewertung-mehr">Alle ansehen →</span>
+          </span>
+        </a>
+      </div>
     </div>
+    <svg class="s-welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 8V60z" /></svg>
   </section>
 
-  <section class="a-abschnitt" id="themen" aria-labelledby="themen-h">
+  <section class="s-laufbahn" id="laufbahn" aria-labelledby="laufbahn-h">
     <div class="rahmen">
-      <header class="a-kopf">
-        <p class="a-nummer" aria-hidden="true">01</p>
-        <h2 id="themen-h">{themen.h2}</h2>
+      <header class="s-kopf">
+        <p class="s-nummer" aria-hidden="true">01</p>
+        <h2 id="laufbahn-h">{laufbahn.h2}</h2>
+        <p class="s-kopf-text">{laufbahn.lead}</p>
       </header>
-      <p class="a-themen-lead">Wähle ein Thema. Auf der Themenseite findest du alle Fragen dazu, jede kurz beantwortet und mit Quellen.</p>
-      <ul class="themenkarten">
-        {gruppen.map((g) => (
-          <li class="themenkarte einblenden">
-            <h3><Icon name={g.icon} size={22} /><a href={themenPfad(g.id)}>{g.titel}</a></h3>
-            <p>{g.beschreibung}</p>
-            <ul>
-              {g.seiten.slice(0, 3).map((s) => <li><a href={`/ratgeber/${s.id}`}>{menueTitel[s.id] ?? s.data.titel}</a></li>)}
-            </ul>
-            <a class="themenkarte-alle" href={themenPfad(g.id)}>{g.seiten.length === 1 ? 'Zum Thema' : `Alle ${g.seiten.length} Fragen`}<Icon name="pfeil" size={16} /></a>
-          </li>
-        ))}
-      </ul>
-    </div>
-  </section>
-
-  <section class="a-abschnitt a-ablauf" aria-labelledby="ablauf-h">
-    <div class="rahmen a-ablauf-raster">
-      <figure class="a-ablauf-bild einblenden">
-        <Foto foto="kollege-02" sizes="(min-width: 900px) 38vw, 88vw" />
-      </figure>
-      <div>
-        <header class="a-kopf">
-          <p class="a-nummer" aria-hidden="true">02</p>
-          <h2 id="ablauf-h">{ablauf.h2}</h2>
-        </header>
-        <ol class="a-schritte">
-          {ablauf.schritte.map((s, i) => (
-            <li class="einblenden">
-              <span class="a-ziffer" aria-hidden="true">{String(i + 1).padStart(2, '0')}</span>
-              <div>
-                <h3>{s.titel}</h3>
-                <p>{s.text} {s.platzhalter && <span class="platzhalter">[PLATZHALTER: {s.platzhalter}]</span>}</p>
-              </div>
+      <div class="s-treppe-feld">
+        <ol class="s-treppe">
+          {laufbahn.stufen.map((s, i) => (
+            <li class={`tr stufe st${i + 1}`}>
+              <span class="tf" aria-hidden="true"></span>
+              <span class="sf" aria-hidden="true"></span>
+              <h3>{s.titel}</h3>
+              <p>{s.text}</p>
+              <ul class="s-chips">
+                {s.themen.filter((id) => gruppeJeId.has(id)).map((id) => <li><a href={themenPfad(id)}>{gruppeJeId.get(id)!.titel}</a></li>)}
+              </ul>
             </li>
           ))}
         </ol>
@@ -89,107 +98,259 @@ const [h1Teil1, h1Teil2] = hero.h1.split(': ');
     </div>
   </section>
 
-  <section class="a-abschnitt" aria-labelledby="wer-h">
+  <section class="s-themen" id="themen" aria-labelledby="themen-h">
     <div class="rahmen">
-      <header class="a-kopf">
-        <p class="a-nummer" aria-hidden="true">03</p>
-        <h2 id="wer-h">{werWirSind.h2}</h2>
-      </header>
-      <figure class="a-team einblenden">
-        <Foto foto="schreibtisch-01" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
-      </figure>
-      <div class="a-wer-text einblenden">
+      <div class="s-themen-kopf">
+        <div class="s-themen-foto"><Foto foto="gruppe-01" sizes="(min-width: 700px) 260px, 88vw" breiten={[480, 720, 960]} /></div>
+        <header class="s-kopf s-kopf-hell">
+          <p class="s-nummer" aria-hidden="true">02</p>
+          <h2 id="themen-h">{themen.h2}</h2>
+          <p class="s-kopf-text">{themen.lead}</p>
+        </header>
+      </div>
+      <ul class="s-kacheln">
+        {gruppen.map((g) => (
+          <li class="karte tk">
+            <span class="s-symbol" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="34" height="34" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d={symbole[g.id]} /></svg>
+            </span>
+            <h3><a href={themenPfad(g.id)}>{g.titel}</a></h3>
+            <p>{g.beschreibung}</p>
+            <span class="s-kachel-mehr" aria-hidden="true">{g.seiten.length === 1 ? 'Zum Thema' : `Alle ${g.seiten.length} Fragen`} <span class="pfa">→</span></span>
+          </li>
+        ))}
+      </ul>
+    </div>
+  </section>
+
+  <section class="s-ablauf" aria-labelledby="ablauf-h">
+    <div class="rahmen s-zwei">
+      <div class="s-ablauf-text">
+        <header class="s-kopf">
+          <p class="s-nummer" aria-hidden="true">03</p>
+          <h2 id="ablauf-h">{ablauf.h2}</h2>
+        </header>
+        <ol class="s-schritte">
+          {ablauf.schritte.map((s, i) => (
+            <li>
+              <span class="s-schritt-nr" aria-hidden="true">{i + 1}</span>
+              <div>
+                <h3>{s.titel}</h3>
+                <p>{s.text}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
+      </div>
+      <figure class="s-foto s-foto-kollege"><Foto foto="kollege-02" sizes="(min-width: 960px) 420px, 88vw" breiten={[480, 720, 960]} /></figure>
+    </div>
+  </section>
+
+  <section class="s-wer" aria-labelledby="wer-h">
+    <div class="rahmen s-zwei s-zwei-umgekehrt">
+      <figure class="s-foto s-foto-patrick"><Foto foto="patrick-01-hoch" sizes="(min-width: 960px) 380px, 88vw" breiten={[480, 720, 960]} /></figure>
+      <div class="s-wer-text">
+        <header class="s-kopf">
+          <p class="s-nummer" aria-hidden="true">04</p>
+          <h2 id="wer-h">{werWirSind.h2}</h2>
+        </header>
         <p>{werVor}<a href={ORGANISATION.url} set:html={FIRMA_HTML} />{werNach}</p>
         {werWirSind.absaetze.slice(1).map((p) => <p set:html={mitMarke(p)} />)}
-        {zeigeUeberUns && <p><a class="a-mehr" href="/ueber-uns">{werWirSind.link}<Icon name="pfeil" size={16} /></a></p>}
+        {zeigeUeberUns && <p><a class="s-mehr" href="/ueber-uns">{werWirSind.link} →</a></p>}
       </div>
     </div>
   </section>
 
-  <section class="a-abschnitt" aria-labelledby="faq-h">
-    <div class="rahmen a-faq-raster">
-      <header class="a-kopf">
-        <p class="a-nummer" aria-hidden="true">04</p>
-        <h2 id="faq-h">{faq.h2}</h2>
-      </header>
-      <dl class="a-faq">
+  <section class="s-faq" aria-labelledby="faq-h">
+    <div class="rahmen s-faq-raster">
+      <h2 id="faq-h">{faq.h2}</h2>
+      <div class="s-faq-liste">
         {faq.eintraege.map((f) => (
-          <div class="einblenden">
-            <dt>{f.frage}</dt>
-            <dd set:html={mitMarke(f.antwort)} />
-          </div>
+          <details>
+            <summary>{f.frage}</summary>
+            <p set:html={mitMarke(f.antwort)} />
+          </details>
         ))}
-      </dl>
+      </div>
     </div>
   </section>
 
-  <section class="a-abschluss" aria-labelledby="abschluss-h">
+  <section class="s-abschluss" aria-labelledby="abschluss-h">
     <div class="rahmen">
-      <div class="a-abschluss-flaeche einblenden">
+      <div class="s-abschluss-karte">
+        <svg class="s-frage" aria-hidden="true" viewBox="0 0 200 300"><text x="100" y="260" text-anchor="middle" font-size="320" font-weight="700" fill="#fff">?</text></svg>
         <h2 id="abschluss-h">{abschluss.h2}</h2>
         <p>{abschluss.text}</p>
-        <p><a class="knopf knopf-hell" href={TERMIN_URL}>{hero.cta}<Icon name="pfeil" size={18} /></a></p>
-        <Bewertungszeile dunkel class="a-abschluss-bewertung" />
+        <p class="s-knoepfe">
+          <a class="s-knopf s-knopf-hell" href={TERMIN_URL}>{hero.cta}</a>
+          <a class="s-knopf s-knopf-rand" href={WHATSAPP_URL}>{abschluss.whatsapp}</a>
+        </p>
       </div>
     </div>
   </section>
+
 </div>
 </Base>
 
 <style is:global>
-  .startseite .a-hero { padding: clamp(2.5rem, 6vw, 5.5rem) 0 clamp(3rem, 7vw, 6rem); }
-  .startseite .a-hero-raster { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(2rem, 4vw, 4rem); align-items: center; }
-  .startseite .a-hero h1 { font-size: clamp(2.3rem, 5.4vw, 4.4rem); line-height: 1.04; letter-spacing: -0.03em; margin-bottom: 1.6rem; }
-  .startseite .a-hero h1 .stark { font-weight: 700; display: block; }
-  .startseite .a-hero h1 .leicht { font-weight: 300; color: var(--teal); }
-  .startseite .a-lead { font-size: clamp(1.08rem, 1.4vw, 1.22rem); color: var(--text-leise); max-width: 36rem; margin-bottom: 2rem; }
-  .startseite .a-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin-bottom: 1.6rem; }
-  .startseite .a-hero-bewertung { max-width: 38rem; }
-  .startseite .a-hero-bild { margin: 0; position: relative; }
-  .startseite .a-hero-bild img { width: 100%; aspect-ratio: 4 / 3; object-fit: cover; border-radius: 28px; }
-  .startseite .a-hero-bild figcaption { position: absolute; left: 1rem; bottom: 1rem; background: rgba(255, 255, 255, 0.94); border-radius: 12px; padding: 0.55rem 0.9rem; font-size: 0.85rem; color: var(--text-leise); line-height: 1.35; box-shadow: var(--schatten); }
-  .startseite .a-hero-bild figcaption b { display: block; color: var(--navy); font-weight: 600; }
+  .startseite { --s-navy: #2f4770; --s-verlauf: linear-gradient(112deg, #2f4770 0%, #39537c 36%, #31708f 74%, #1f7f95 100%); }
+  .startseite h2, .startseite h3 { letter-spacing: -0.015em; }
 
-  .startseite .a-abschnitt { padding: clamp(3.5rem, 8vw, 7rem) 0; border-top: 1px solid var(--linie); }
-  .startseite .a-kopf { display: flex; align-items: baseline; gap: 1rem; margin-bottom: clamp(1.75rem, 4vw, 3rem); }
-  .startseite .a-nummer { margin: 0; font-size: 0.85rem; font-weight: 600; color: var(--teal); letter-spacing: 0.08em; font-variant-numeric: tabular-nums; }
-  .startseite .a-kopf h2 { font-size: clamp(1.75rem, 3.4vw, 2.6rem); font-weight: 700; }
+  /* Knöpfe auf Verlauf */
+  .startseite .s-knoepfe { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0; }
+  .startseite .s-knopf { display: inline-block; text-decoration: none; font-weight: 600; font-size: 1rem; line-height: 1.2; padding: 0.9rem 1.7rem; border-radius: 999px; border: 1px solid #fff; transition: background-color 0.2s ease, color 0.2s ease; }
+  .startseite .s-knopf-hell { background: #fff; color: var(--s-navy); }
+  .startseite .s-knopf-hell:hover { background: #e8eff6; color: var(--s-navy); }
+  .startseite .s-knopf-rand { color: #fff; font-weight: 500; }
+  .startseite .s-knopf-rand:hover { background: rgba(255, 255, 255, 0.14); color: #fff; }
+  .startseite .s-knopf:focus-visible { outline-color: #fff; }
 
-  .startseite .a-gruppen { display: grid; gap: clamp(2rem, 4vw, 3rem); }
+  /* Hero */
+  .startseite .s-hero { background: var(--s-verlauf); color: #fff; position: relative; overflow: hidden; }
+  .startseite .s-hero-raster { display: flex; flex-wrap: wrap; align-items: center; gap: 3.5rem; padding-top: 4.5rem; padding-bottom: 7rem; }
+  .startseite .s-hero-text { flex: 1 1 27rem; min-width: 0; display: flex; flex-direction: column; gap: 1.5rem; }
+  .startseite .s-hero-text p { margin: 0; }
+  .startseite .s-eyebrow { font-size: 0.875rem; letter-spacing: 0.08em; text-transform: uppercase; }
+  .startseite .s-hero h1 { color: #fff; font-size: clamp(2rem, 4.6vw, 2.875rem); line-height: 1.12; font-weight: 600; letter-spacing: -0.03em; }
+  .startseite .s-lead { font-size: 1.1875rem; line-height: 1.55; max-width: 35rem; }
+  .startseite .s-haken { display: flex; align-items: center; gap: 0.6rem; padding-top: 1.25rem; border-top: 1px solid rgba(255, 255, 255, 0.3); max-width: 35rem; font-size: 0.94rem; line-height: 1.5; }
+  .startseite .s-haken svg { flex: none; }
+  .startseite .s-hero-bild { flex: 1 1 27rem; min-width: 0; max-width: 35rem; margin: 0 auto; position: relative; }
+  .startseite .s-hero-bild img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; box-shadow: 0 24px 56px rgba(10, 20, 45, 0.35); }
+  .startseite .s-seit { position: absolute; right: 1rem; top: 1rem; margin: 0; background: #fff; color: var(--s-navy); border-radius: 10px; padding: 0.5rem 0.875rem; font-size: 0.875rem; font-weight: 600; box-shadow: 0 8px 24px rgba(20, 30, 50, 0.2); }
+  .startseite .s-bewertung { position: absolute; left: 1rem; bottom: -2.1rem; display: flex; align-items: center; gap: 1.25rem; padding: 1rem 1.5rem; overflow: hidden; background: linear-gradient(180deg, #fff, #f4f7fb); color: #2b3647; border-radius: 18px; text-decoration: none; box-shadow: 0 20px 44px rgba(15, 30, 60, 0.35), 0 0 0 1px rgba(255, 255, 255, 0.7); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .startseite .s-bewertung-streifen { position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #f5b301, #e08e00); }
+  .startseite .s-bewertung-note { display: flex; align-items: baseline; gap: 0.4rem; padding-left: 0.4rem; }
+  .startseite .s-bewertung-note b { font-size: 2.75rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--s-navy); }
+  .startseite .s-bewertung-note span { font-size: 0.875rem; color: #566479; }
+  .startseite .s-bewertung-trenner { width: 1px; height: 3rem; background: #d6dfea; }
+  .startseite .s-bewertung-text { display: flex; flex-direction: column; gap: 0.375rem; line-height: 1.3; }
+  .startseite .s-sterne { display: flex; gap: 3px; }
+  .startseite .s-sterne svg { fill: #f5b301; stroke: #e08e00; stroke-width: 0.8; stroke-linejoin: round; filter: drop-shadow(0 1px 1px rgba(224, 142, 0, 0.45)); }
+  .startseite .s-bewertung-anzahl { font-size: 0.875rem; font-weight: 500; color: #2b3647; }
+  .startseite .s-bewertung-mehr { font-size: 0.8125rem; font-weight: 600; color: #31708f; }
+  @media (hover: hover) { .startseite .s-bewertung:hover { transform: translateY(-3px); box-shadow: 0 26px 52px rgba(15, 30, 60, 0.4), 0 0 0 1px rgba(255, 255, 255, 0.7); } }
+  .startseite .s-welle { position: absolute; left: 0; bottom: -1px; display: block; width: 100%; height: 3rem; fill: #e8eff6; }
 
-  .startseite .a-ablauf { background: #fff; }
-  .startseite .a-ablauf-raster { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: clamp(2rem, 6vw, 5.5rem); align-items: center; }
-  .startseite .a-ablauf-bild { margin: 0; }
-  .startseite .a-ablauf-bild img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 50%; border-radius: 28px; }
-  .startseite .a-schritte { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
-  .startseite .a-schritte li { display: grid; grid-template-columns: 4.5rem 1fr; gap: 1rem; padding: 1.5rem 0; border-top: 1px solid var(--linie); }
-  .startseite .a-schritte li:last-child { border-bottom: 1px solid var(--linie); }
-  .startseite .a-ziffer { font-size: 2.6rem; font-weight: 300; line-height: 1; color: var(--teal-hell); font-variant-numeric: tabular-nums; }
-  .startseite .a-schritte h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 0.35rem; }
-  .startseite .a-schritte p { margin: 0; color: var(--text-leise); }
+  /* Abschnittsköpfe */
+  .startseite .s-kopf { display: flex; flex-direction: column; gap: 0.5rem; }
+  .startseite .s-kopf p { margin: 0; }
+  .startseite .s-nummer { font-size: 0.875rem; font-weight: 600; color: var(--teal); letter-spacing: 0.08em; }
+  .startseite .s-kopf h2 { font-size: clamp(1.75rem, 3.4vw, 2.125rem); line-height: 1.2; font-weight: 600; color: var(--s-navy); letter-spacing: -0.02em; }
+  .startseite .s-kopf-text { font-size: 1.0625rem; line-height: 1.6; color: #3f4b5e; max-width: 32rem; }
+  .startseite .s-kopf-hell .s-nummer { color: #bfe3ee; }
+  .startseite .s-kopf-hell h2 { color: #fff; }
+  .startseite .s-kopf-hell .s-kopf-text { color: #e6edf5; }
 
-  .startseite .a-team { margin: 0 0 2.5rem; }
-  .startseite .a-team img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 28px; }
-  .startseite .a-wer-text { columns: 2 22rem; column-gap: 3rem; max-width: 60rem; color: var(--text); }
-  .startseite .a-wer-text p { break-inside: avoid; }
-  .startseite .a-mehr { display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 600; }
+  /* 01 Laufbahn: Treppe */
+  .startseite .s-laufbahn { background: #e8eff6; padding: 4rem 0 5rem; }
+  .startseite .s-laufbahn .rahmen { display: flex; flex-direction: column; gap: 2.5rem; }
+  .startseite .s-treppe-feld { padding: 30px 36px 0 0; }
+  .startseite .s-treppe { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; align-items: flex-end; filter: drop-shadow(0 22px 22px rgba(47, 71, 112, 0.22)); }
+  .startseite .tr { position: relative; flex: 1 1 250px; min-width: 0; display: flex; flex-direction: column; gap: 0.875rem; padding: 1.75rem 1.5rem 2rem; color: #fff; transition: transform 0.35s cubic-bezier(0.2, 0.8, 0.2, 1), filter 0.35s ease; }
+  .startseite .tr h3 { margin: 0; color: #fff; font-size: 1.3125rem; line-height: 1.3; font-weight: 600; }
+  .startseite .tr p { margin: 0; font-size: 0.94rem; line-height: 1.6; opacity: 0.93; }
+  .startseite .st1 { --f: #4d6f99; --t: #7a9bc0; --sd: #3b5878; }
+  .startseite .st2 { --f: #31708f; --t: #5ea0bc; --sd: #25566e; }
+  .startseite .st3 { --f: #39537c; --t: #6b86b0; --sd: #2b4162; }
+  .startseite .st4 { --f: #2f4770; --t: #5f7bab; --sd: #223555; }
+  .startseite .tr { background: var(--f); }
+  .startseite .tf { display: none; background: var(--t); }
+  .startseite .sf { display: none; background: var(--sd); }
+  .startseite .s-chips { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+  .startseite .s-chips a { display: inline-block; background: rgba(255, 255, 255, 0.16); border: 1px solid rgba(255, 255, 255, 0.4); color: #fff; text-decoration: none; font-size: 0.875rem; font-weight: 500; padding: 0.55rem 0.8rem; border-radius: 999px; transition: background-color 0.2s ease; }
+  .startseite .s-chips a:hover { background: rgba(255, 255, 255, 0.28); color: #fff; }
+  .startseite .s-chips a:focus-visible { outline-color: #fff; }
+  @media (hover: hover) { .startseite .tr:hover { transform: translateY(-6px); z-index: 2; filter: brightness(1.1); } }
+  @media (min-width: 960px) {
+    .startseite .st1 { min-height: 290px; }
+    .startseite .st2 { min-height: 370px; }
+    .startseite .st3 { min-height: 450px; }
+    .startseite .st4 { min-height: 530px; }
+    .startseite .tf { display: block; position: absolute; left: 0; top: -30px; width: calc(100% + 36px); height: 30px; clip-path: polygon(36px 0, 100% 0, calc(100% - 36px) 100%, 0 100%); }
+    .startseite .sf { display: block; position: absolute; left: 100%; top: -30px; width: 36px; height: calc(100% + 30px); clip-path: polygon(0 30px, 100% 0, 100% calc(100% - 30px), 0 100%); }
+  }
+  @keyframes s-stieg { from { opacity: 0; transform: translateY(36px); } to { opacity: 1; transform: none; } }
+  @supports (animation-timeline: view()) {
+    .startseite .stufe { animation: s-stieg linear backwards; animation-timeline: view(); animation-range: entry 0% entry 80%; }
+  }
 
-  .startseite .a-faq-raster { display: grid; grid-template-columns: 0.8fr 1.2fr; gap: clamp(1.5rem, 5vw, 5rem); }
-  .startseite .a-faq { margin: 0; }
-  .startseite .a-faq div { padding: 1.4rem 0; border-top: 1px solid var(--linie); }
-  .startseite .a-faq div:last-child { border-bottom: 1px solid var(--linie); }
-  .startseite .a-faq dt { font-weight: 600; color: var(--navy); font-size: 1.12rem; margin-bottom: 0.4rem; }
-  .startseite .a-faq dd { margin: 0; color: var(--text-leise); }
+  /* 02 Themen */
+  .startseite .s-themen { background: linear-gradient(160deg, #2f4770 0%, #39537c 55%, #31708f 100%); padding: 5rem 0; }
+  .startseite .s-themen .rahmen { display: flex; flex-direction: column; gap: 2.5rem; }
+  .startseite .s-themen-kopf { display: flex; flex-wrap: wrap; align-items: center; gap: 2rem; }
+  .startseite .s-themen-foto { flex: 0 1 260px; min-width: 0; width: 100%; }
+  .startseite .s-themen-foto img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; object-position: center 15%; border-radius: 16px; box-shadow: 0 16px 40px rgba(10, 20, 45, 0.35); }
+  .startseite .s-themen-kopf .s-kopf { flex: 1 1 26rem; min-width: 0; }
+  .startseite .s-kacheln { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; }
+  .startseite .tk { position: relative; display: flex; flex-direction: column; gap: 0.75rem; background: #fff; border: 0; border-radius: 16px; padding: 1.75rem; color: #2b3647; box-shadow: 0 8px 24px rgba(15, 30, 60, 0.18); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+  .startseite .tk:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(47, 71, 112, 0.14); }
+  .startseite .s-symbol { width: 64px; height: 64px; border-radius: 16px; background: linear-gradient(135deg, #1f7f95, #2f4770); color: #fff; display: flex; align-items: center; justify-content: center; }
+  .startseite .tk h3 { margin: 0; font-size: 1.25rem; font-weight: 600; color: var(--s-navy); line-height: 1.3; }
+  .startseite .tk h3 a { color: inherit; text-decoration: none; }
+  .startseite .tk h3 a::after { content: ''; position: absolute; inset: 0; border-radius: 16px; }
+  .startseite .tk p { margin: 0; font-size: 0.94rem; line-height: 1.55; color: #566479; display: -webkit-box; -webkit-line-clamp: 4; line-clamp: 4; -webkit-box-orient: vertical; overflow: hidden; }
+  .startseite .s-kachel-mehr { margin-top: auto; font-size: 0.94rem; font-weight: 500; color: #31708f; }
+  .startseite .pfa { display: inline-block; transition: transform 0.2s ease; }
+  .startseite .tk:hover .pfa { transform: translateX(5px); }
+  .startseite .tk:focus-within { outline: 3px solid #fff; outline-offset: 3px; }
 
-  .startseite .a-abschluss { padding: 0 0 clamp(3.5rem, 8vw, 6rem); }
-  .startseite .a-abschluss-flaeche { background: var(--verlauf); color: #fff; border-radius: 32px; padding: clamp(2.25rem, 6vw, 4.5rem); }
-  .startseite .a-abschluss-flaeche h2 { color: #fff; font-size: clamp(1.9rem, 3.6vw, 2.8rem); margin-bottom: 1rem; }
-  .startseite .a-abschluss-flaeche > p { max-width: 36rem; font-size: 1.1rem; }
-  .startseite .a-abschluss-bewertung { margin-top: 2rem; max-width: 38rem; }
+  /* 03 So arbeiten wir und 04 Wer wir sind */
+  .startseite .s-ablauf { background: var(--grund); padding: 5rem 0; }
+  .startseite .s-wer { background: #d9ebf1; padding: 5rem 0; }
+  .startseite .s-zwei { display: flex; flex-wrap: wrap; align-items: center; gap: 3.5rem; }
+  .startseite .s-ablauf-text, .startseite .s-wer-text { flex: 1 1 26rem; min-width: 0; display: flex; flex-direction: column; }
+  .startseite .s-ablauf-text { gap: 2rem; }
+  .startseite .s-wer-text { gap: 1rem; }
+  .startseite .s-wer-text p { margin: 0; font-size: 1.0625rem; line-height: 1.6; color: #3f4b5e; }
+  .startseite .s-mehr { font-size: 1rem; font-weight: 500; text-decoration: none; }
+  .startseite .s-foto { margin: 0 auto; flex: 1 1 21rem; min-width: 0; width: 100%; }
+  .startseite .s-foto img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; box-shadow: 0 20px 48px rgba(47, 71, 112, 0.22); }
+  .startseite .s-foto-kollege { max-width: 26rem; }
+  .startseite .s-foto-kollege img { object-position: 42% center; }
+  .startseite .s-foto-patrick { max-width: 24rem; }
+  .startseite .s-foto-patrick img { object-position: 52% center; }
+  .startseite .s-schritte { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; }
+  .startseite .s-schritte li { display: flex; gap: 1.25rem; position: relative; }
+  .startseite .s-schritte li:not(:last-child)::before { content: ''; position: absolute; left: 23px; top: 54px; bottom: 6px; width: 2px; background: #c9d3e0; }
+  .startseite .s-schritt-nr { flex: none; width: 48px; height: 48px; border-radius: 12px; background: linear-gradient(112deg, #2f4770, #1f7f95); color: #fff; font-weight: 600; font-size: 1.125rem; display: flex; align-items: center; justify-content: center; }
+  .startseite .s-schritte li > div { display: flex; flex-direction: column; gap: 0.375rem; padding: 0.625rem 0 1.75rem; }
+  .startseite .s-schritte h3 { margin: 0; font-size: 1.25rem; font-weight: 600; color: var(--s-navy); }
+  .startseite .s-schritte p { margin: 0; font-size: 0.94rem; line-height: 1.55; color: #566479; }
 
-  @media (max-width: 900px) {
-    .startseite .a-hero-raster, .startseite .a-ablauf-raster, .startseite .a-faq-raster, .startseite .a-gruppen { grid-template-columns: 1fr; }
-    .startseite .a-hero-bild { max-width: 40rem; }
-    .startseite .a-ablauf-bild img { aspect-ratio: 3 / 2; }
+  /* Häufige Fragen: dezent, damit die Seite ruhig bleibt; Inhalt steht für das FAQ-Schema sichtbar auf der Seite */
+  .startseite .s-faq { background: #d9ebf1; padding: 0 0 2.5rem; }
+  .startseite .s-faq-raster { border-top: 1px solid rgba(47, 71, 112, 0.18); padding-top: 3rem; display: grid; grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.4fr); gap: 2rem 4rem; }
+  .startseite .s-faq h2 { font-size: clamp(1.5rem, 2.8vw, 1.875rem); font-weight: 600; color: var(--s-navy); }
+  .startseite .s-faq-liste details { border-bottom: 1px solid rgba(47, 71, 112, 0.18); }
+  .startseite .s-faq-liste details:first-child { border-top: 1px solid rgba(47, 71, 112, 0.18); }
+  .startseite .s-faq-liste summary { cursor: pointer; list-style: none; display: flex; justify-content: space-between; align-items: baseline; gap: 1rem; padding: 1rem 0; font-weight: 600; color: var(--s-navy); font-size: 1.0625rem; }
+  .startseite .s-faq-liste summary::-webkit-details-marker { display: none; }
+  .startseite .s-faq-liste summary::after { content: '+'; flex: none; font-weight: 400; font-size: 1.4rem; line-height: 1; color: var(--teal); }
+  .startseite .s-faq-liste details[open] summary::after { content: '–'; }
+  .startseite .s-faq-liste p { margin: 0 0 1.1rem; color: #3f4b5e; max-width: 40rem; }
+
+  /* CTA-Karte */
+  .startseite .s-abschluss { background: #d9ebf1; padding: 0 0 5rem; }
+  .startseite .s-abschluss-karte { position: relative; overflow: hidden; border-radius: 28px; background: var(--s-verlauf); color: #fff; padding: 4rem 3rem; box-shadow: 0 20px 48px rgba(47, 71, 112, 0.25); display: flex; flex-direction: column; align-items: flex-start; gap: 1.25rem; }
+  .startseite .s-abschluss-karte > * { position: relative; }
+  .startseite .s-abschluss-karte h2 { color: #fff; font-size: clamp(1.75rem, 3.4vw, 2.125rem); line-height: 1.2; font-weight: 600; letter-spacing: -0.02em; }
+  .startseite .s-abschluss-karte > p { margin: 0; font-size: 1.125rem; line-height: 1.55; max-width: 32rem; }
+  .startseite .s-abschluss-karte .s-frage { position: absolute; right: -20px; top: -30px; height: 130%; width: auto; opacity: 0.12; pointer-events: none; font-family: var(--font); }
+
+  @media (max-width: 760px) {
+    .startseite .s-hero-raster { padding-top: 3rem; padding-bottom: 6.5rem; gap: 2.5rem; }
+    .startseite .s-bewertung { gap: 0.9rem; padding: 0.9rem 1.1rem; right: 1rem; }
+    .startseite .s-bewertung-note b { font-size: 2.25rem; }
+    .startseite .s-faq-raster { grid-template-columns: 1fr; }
+    .startseite .s-abschluss-karte { padding: 2.5rem 1.5rem; }
+    .startseite .s-laufbahn, .startseite .s-themen, .startseite .s-ablauf, .startseite .s-wer { padding: 3.5rem 0; }
+    .startseite .s-treppe-feld { padding-right: 0; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .startseite .tr, .startseite .tk, .startseite .s-bewertung, .startseite .pfa { transition: none; }
+    .startseite .tr:hover, .startseite .tk:hover, .startseite .s-bewertung:hover { transform: none; filter: none; }
+    .startseite .tk:hover .pfa { transform: none; }
+    .startseite .stufe { animation: none; }
   }
 </style>
