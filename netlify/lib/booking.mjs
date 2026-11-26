@@ -5,6 +5,9 @@ import { localDate, formatDayShortDe, localTime, addDays } from './tz.mjs';
 import { newId, newToken } from './store.mjs';
 import { templates } from './mail.mjs';
 
+// Beraterfotos liegen in public/termin-test/fotos/<id>.jpg
+const PHOTOS = new Set(['patrick', 'aileen', 'michael', 'steffen', 'alexios', 'fatma', 'henry']);
+
 export class BookingError extends Error {
   constructor(code, message, status = 400) {
     super(message);
@@ -43,7 +46,7 @@ export function publicBooking(b) {
 
 export function publicConfig() {
   return {
-    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: s.blurb || t.description })) })),
+    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: s.blurb || t.description, photo: PHOTOS.has(s.id) ? `/termin-test/fotos/${s.id}.jpg` : '' })) })),
     channels: Object.values(channels).map((c) => ({ id: c.id, label: c.label })),
     external: externalLinks,
     sources: sourceOptions,

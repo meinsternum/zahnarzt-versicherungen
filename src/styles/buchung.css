@@ -27,7 +27,8 @@
 .buch-karte p { margin: 0; color: var(--text); }
 .buch-karte .buch-dauer { color: var(--text-leise); font-size: 0.9rem; }
 .buch-karte .knopf { margin-top: auto; align-self: flex-start; }
-.buch-avatar { width: 3.4rem; height: 3.4rem; border-radius: 50%; background: var(--verlauf); color: #fff; display: grid; place-items: center; font-weight: 700; font-size: 1.3rem; }
+.buch-foto { width: 7.5rem; height: 7.5rem; border-radius: 50%; object-fit: cover; background: var(--navy); box-shadow: 0 6px 18px -8px rgba(37,50,74,.5); }
+.buch-avatar { width: 7.5rem; height: 7.5rem; font-size: 2.6rem; border-radius: 50%; background: var(--verlauf); color: #fff; display: grid; place-items: center; font-weight: 700; }
 .buch-avatar-alle { background: var(--teal-hell); }
 .buch-extern { display: grid; grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); gap: 1.2rem; }
 a.buch-karte-extern { text-decoration: none; }

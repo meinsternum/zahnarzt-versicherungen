@@ -33,7 +33,7 @@ function renderStaff() {
     any +
     t.staff
       .map(
-        (s) => `<article class="buch-karte"><span class="buch-avatar" aria-hidden="true">${esc(initials(s.name))}</span>
+        (s) => `<article class="buch-karte">${s.photo ? `<img class="buch-foto" src="${esc(s.photo)}" alt="${esc(s.name)}" width="120" height="120" loading="lazy">` : `<span class="buch-avatar" aria-hidden="true">${esc(initials(s.name))}</span>`}
           <h3>${esc(staffTitle(t, s))}</h3><p>${esc(s.blurb)}</p>
           <p class="buch-dauer">${esc(minutesLabel(t.minutes))}</p>
           <button type="button" class="knopf knopf-rand" data-staff="${esc(s.id)}" aria-label="Termin buchen bei ${esc(s.name)}">Termin buchen</button></article>`,
