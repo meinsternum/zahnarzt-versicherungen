@@ -52,6 +52,22 @@ export function fileStore(dir = dataDir()) {
         await write(rows);
         return rows[i];
       }),
+    // Für die Obergrenze pro E-Mail-Adresse: künftige bestätigte Termine und kürzlich angelegte Buchungen
+    countByEmail: async (email, nowIso, sinceIso) => {
+      const rows = (await read()).filter((r) => String(r.email).toLowerCase() === email);
+      return {
+        open: rows.filter((r) => r.status === 'confirmed' && Date.parse(r.start_at) > Date.parse(nowIso)).length,
+        recent: rows.filter((r) => Date.parse(r.created_at) > Date.parse(sinceIso)).length,
+      };
+    },
+    // Datenschutz: Buchungen löschen, deren Termin vor cutoffIso endete
+    deleteEndedBefore: (cutoffIso) =>
+      locked(async () => {
+        const rows = await read();
+        const keep = rows.filter((r) => Date.parse(r.end_at) >= Date.parse(cutoffIso));
+        await write(keep);
+        return rows.length - keep.length;
+      }),
     listConfirmed: async (fromIso, toIso) =>
       (await read()).filter((r) => r.status === 'confirmed' && Date.parse(r.end_at) > Date.parse(fromIso) && Date.parse(r.start_at) < Date.parse(toIso)),
   };
@@ -75,6 +91,14 @@ export function supabaseStore(url = process.env.SUPABASE_URL, key = process.env.
     insert: async (b) => (await call('POST', '', b))[0],
     getByToken: async (token) => (await call('GET', `?token=eq.${encodeURIComponent(token)}&limit=1`))[0] || null,
     update: async (id, patch) => (await call('PATCH', `?id=eq.${id}`, { ...patch, updated_at: new Date().toISOString() }))[0],
+    countByEmail: async (email, nowIso, sinceIso) => {
+      const rows = await call('GET', `?email=eq.${encodeURIComponent(email)}&or=(start_at.gt.${encodeURIComponent(nowIso)},created_at.gt.${encodeURIComponent(sinceIso)})&select=status,start_at,created_at`);
+      return {
+        open: rows.filter((r) => r.status === 'confirmed' && Date.parse(r.start_at) > Date.parse(nowIso)).length,
+        recent: rows.filter((r) => Date.parse(r.created_at) > Date.parse(sinceIso)).length,
+      };
+    },
+    deleteEndedBefore: async (cutoffIso) => (await call('DELETE', `?end_at=lt.${encodeURIComponent(cutoffIso)}&select=id`)).length,
     listConfirmed: (fromIso, toIso) =>
       call('GET', `?status=eq.confirmed&end_at=gt.${encodeURIComponent(fromIso)}&start_at=lt.${encodeURIComponent(toIso)}&order=start_at`),
   };

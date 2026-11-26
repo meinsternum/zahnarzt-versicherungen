@@ -1,0 +1,11 @@
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+# Die Verwaltungsseite hat das geheime Token in der Adresse: keine Weitergabe an andere Seiten
+/termin-test/termin
+  Referrer-Policy: no-referrer
+/termin
+  Referrer-Policy: no-referrer

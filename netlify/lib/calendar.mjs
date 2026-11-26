@@ -15,7 +15,7 @@ export function googleCalendar(credentialsJson = process.env.GOOGLE_SERVICE_ACCO
       const { JWT } = await import('google-auth-library');
       clients.set(
         staff.email,
-        new JWT({ email: creds.client_email, key: creds.private_key, scopes: ['https://www.googleapis.com/auth/calendar'], subject: staff.email }),
+        new JWT({ email: creds.client_email, key: creds.private_key, scopes: ['https://www.googleapis.com/auth/calendar.events', 'https://www.googleapis.com/auth/calendar.freebusy'], subject: staff.email }),
       );
     }
     return clients.get(staff.email);

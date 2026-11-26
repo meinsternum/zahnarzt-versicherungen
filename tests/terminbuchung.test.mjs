@@ -271,3 +271,23 @@ test('Beratungsform: Telefon braucht eine Nummer, Vor Ort nennt die Adresse', as
   assert.ok(outbox.find((x) => x.to === 'hallo@meinsternum.de').text.includes('Beratungsform: Telefonisch'));
   assert.equal(events.length, 2);
 });
+
+test('Obergrenze: höchstens drei offene Termine pro E-Mail-Adresse, Groß-/Kleinschreibung egal', async () => {
+  const { deps } = await setup();
+  const base = zonedToUtc('2026-11-17', '09:00');
+  for (let i = 0; i < 3; i++) await createBooking(deps, input(base + i * 90 * 60000, { email: i === 1 ? 'ANNA@Example.com' : 'anna@example.com' }), NOW);
+  await assert.rejects(
+    () => createBooking(deps, input(base + 270 * 60000, { email: 'Anna@example.com' }), NOW),
+    (e) => e instanceof BookingError && e.code === 'limit' && e.status === 429,
+  );
+  // andere Adresse ist nicht betroffen
+  await createBooking(deps, input(base + 270 * 60000, { email: 'ben@example.com' }), NOW);
+});
+
+test('Datenschutz: Buchungen werden nach der Aufbewahrungsfrist aus der Datenbank gelöscht', async () => {
+  const { deps } = await setup();
+  const { purgeOldBookings } = await import('../netlify/lib/booking.mjs');
+  await createBooking(deps, input(zonedToUtc('2026-11-17', '10:00')), NOW);
+  assert.equal(await purgeOldBookings(deps, NOW + 6 * 30 * 24 * 3600000), 0, 'nach 6 Monaten noch da');
+  assert.equal(await purgeOldBookings(deps, NOW + 14 * 30 * 24 * 3600000), 1, 'nach 14 Monaten gelöscht');
+});

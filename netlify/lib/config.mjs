@@ -10,6 +10,9 @@ export const settings = {
   maxDaysAhead: 60, // so weit im Voraus buchbar
   bufferMinutes: 30, // Puffer vor und nach jedem Termin
   changeDeadlineHours: 2, // Absagen/Verlegen online nur bis so viele Stunden vorher
+  maxOpenPerEmail: 3, // so viele künftige Termine darf eine E-Mail-Adresse gleichzeitig haben
+  maxPerEmailPerDay: 6, // so viele Buchungen pro E-Mail-Adresse in 24 Stunden (inkl. abgesagter)
+  retentionMonths: 12, // Buchungsdaten in der Datenbank werden so viele Monate nach dem Termin gelöscht
   reminderHours: [72, 24], // E-Mail-Erinnerungen: 3 Tage und 1 Tag vorher
   // Adresse der Seite: SITE_URL, sonst die Adresse der letzten Anfrage (passt dann auch zu Vorschau-Adressen)
   get siteUrl() {

@@ -1,7 +1,7 @@
 import { getDeps } from '../lib/runtime.mjs';
 import { BookingError, publicConfig, listSlots, createBooking, getBooking, cancelBooking, rescheduleBooking, runReminders } from '../lib/booking.mjs';
 import { setOrigin } from '../lib/config.mjs';
-import { useGoogle, testMode } from '../lib/env.mjs';
+import { onNetlify, testMode } from '../lib/env.mjs';
 
 import { buildIcs } from '../lib/mail.mjs';
 export const config = { path: '/api/*' };
@@ -40,7 +40,7 @@ export default async function handler(req) {
       const b = await body(req);
       return json({ booking: await rescheduleBooking(deps, b.t, b.start) });
     }
-    if (req.method === 'POST' && route === 'dev/run-reminders' && !useGoogle()) return json({ sent: await runReminders(deps) });
+    if (req.method === 'POST' && route === 'dev/run-reminders' && !onNetlify()) return json({ sent: await runReminders(deps) });
     return json({ error: 'not_found', message: 'Nicht gefunden' }, 404);
   } catch (e) {
     if (e instanceof BookingError) return json({ error: e.code, message: e.message }, e.status);

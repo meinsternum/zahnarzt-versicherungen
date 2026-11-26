@@ -92,7 +92,7 @@ function validate(input) {
   if (input.website) throw new BookingError('invalid', 'Ungültige Anfrage'); // Honeypot
   if (!appointmentTypes[input.type]) throw err('Bitte wähle eine Terminart.');
   const name = String(input.name || '').trim();
-  const email = String(input.email || '').trim();
+  const email = String(input.email || '').trim().toLowerCase();
   if (name.length < 2 || name.length > 100) throw err('Bitte gib deinen Namen an.');
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) || email.length > 200) throw err('Bitte gib eine gültige E-Mail-Adresse an.');
   if (input.consent !== true) throw err('Bitte bestätige die Datenschutzhinweise.');
@@ -121,7 +121,7 @@ async function safeSend(mailer, msg) {
     await mailer.send(msg);
     return true;
   } catch (e) {
-    console.error('Mailversand fehlgeschlagen:', msg.to, e.message);
+    console.error('Mailversand fehlgeschlagen:', e.code || e.name); // ohne Adresse, damit keine personenbezogenen Daten im Log landen
     return false;
   }
 }
@@ -133,6 +133,10 @@ function pickStaff(slot, staffId) {
 export async function createBooking(deps, input, now = Date.now()) {
   const v = validate(input);
   const type = appointmentTypes[v.typeId];
+  // Obergrenze pro E-Mail-Adresse (Schutz vor Missbrauch)
+  const counts = await deps.store.countByEmail(v.email, new Date(now).toISOString(), new Date(now - 24 * HOUR).toISOString());
+  if (counts.open >= settings.maxOpenPerEmail || counts.recent >= settings.maxPerEmailPerDay)
+    throw new BookingError('limit', `Für diese E-Mail-Adresse sind bereits mehrere Termine gebucht. Bitte schreibe uns an ${settings.notifyEmail}, dann finden wir eine Lösung.`, 429);
   const slots = await computeSlots({ typeId: v.typeId, staffId: v.staffId, fromDate: localDate(v.start), days: 1, now, getBusy: makeGetBusy(deps) });
   const slot = slots.find((s) => s.start === v.start);
   if (!slot) throw new BookingError('slot_unavailable', 'Dieser Termin ist leider nicht mehr frei. Bitte wähle eine andere Zeit.', 409);
@@ -267,6 +271,13 @@ export async function rescheduleBooking(deps, token, newStartIso, now = Date.now
  * - senden, sobald der Termin innerhalb der Frist liegt (Toleranz 12 Stunden, falls ein Lauf ausfiel)
  * - nicht senden, wenn der Termin erst nach dem Erinnerungszeitpunkt gebucht wurde
  */
+// Datenschutz: Buchungsdaten in der Datenbank nach der Aufbewahrungsfrist löschen. Kalender und Postfach bleiben unberührt.
+export async function purgeOldBookings(deps, now = Date.now()) {
+  const cutoff = new Date(now);
+  cutoff.setUTCMonth(cutoff.getUTCMonth() - settings.retentionMonths);
+  return deps.store.deleteEndedBefore(cutoff.toISOString());
+}
+
 export async function runReminders(deps, now = Date.now()) {
   const upcoming = await deps.store.listConfirmed(new Date(now).toISOString(), new Date(now + (Math.max(...settings.reminderHours) + 1) * HOUR).toISOString());
   const sent = [];
