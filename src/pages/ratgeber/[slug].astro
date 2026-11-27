@@ -3,8 +3,8 @@
 import { getCollection, render } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Foto from '../../components/Foto.astro';
-import Icon from '../../components/Icon.astro';
 import CtaBlock from '../../components/CtaBlock.astro';
+import BewertungKarte from '../../components/BewertungKarte.astro';
 import { datumDe } from '../../lib/datum';
 import { visible, isProduction, zeigeUeberUns } from '../../lib/status';
 import { fotoJeSeite, STANDARD_FOTO, kreisZu } from '../../lib/fotos';
@@ -49,78 +49,107 @@ const jsonLd = [
   ...(d.faq.length ? [faqPage(d.faq)] : []),
 ];
 const thema = themaVon(entry.id);
+const krumen = [{ name: 'Ratgeber', href: '/ratgeber' }, { name: thema.titel, href: themenPfad(thema.id) }, { name: d.titel, href: `/ratgeber/${entry.id}` }];
+const krumenKopf = [{ name: 'Startseite', href: '/' }, ...krumen];
 ---
-<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd} ogTyp="article" krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: thema.titel, href: themenPfad(thema.id) }, { name: d.titel, href: `/ratgeber/${entry.id}` }]}>
-  <article class="rahmen">
+<Base title={`${d.titel} | zahnarzt-versicherungen.de`} description={d.metaDescription} path={`/ratgeber/${entry.id}`} jsonLd={jsonLd} ogTyp="article" krumen={krumen} krumenImKopf>
+  <article class="artikelseite">
     {!isProduction && d.status !== 'freigegeben' && (
-      <p class="vorschau-hinweis">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>
+      <p class="vorschau-hinweis rahmen">{d.status === 'geprueft' ? 'Inhaltlich geprüft, noch nicht freigegeben: Diese Seite erscheint noch nicht auf der Live-Seite.' : 'Entwurf: Diese Seite ist noch nicht freigegeben und erscheint nicht auf der Live-Seite.'}</p>
     )}
-    <header class="artikel-kopf">
-      <div>
-        <p class="karte-phase">{phaseJeSeite[entry.id] ?? 'Jede Berufsphase'}</p>
-        <h1>{d.frage}</h1>
+    <header class="a-hero">
+      <div class="rahmen">
+        <nav class="a-krumen" aria-label="Brotkrumen">
+          <ol>
+            {krumenKopf.map((k, i) => (
+              <li>{i < krumenKopf.length - 1 ? <a href={k.href}>{k.name}</a> : <span aria-current="page">{k.name}</span>}</li>
+            ))}
+          </ol>
+        </nav>
+        <div class="a-hero-raster">
+          <div class="a-hero-text">
+            <p class="karte-phase">{phaseJeSeite[entry.id] ?? 'Jede Berufsphase'}</p>
+            <h1>{d.frage}</h1>
+            <p class="stand-zeile">Stand: <time datetime={d.stand}>{datumDe(d.stand)}</time> · Text: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : 'Patrick Senn'}, Geschäftsführer</p>
+            <BewertungKarte class="bk-hero" />
+          </div>
+          <figure class="artikel-foto">
+            <Foto foto={foto} class="foto-gross" sizes="15rem" breiten={[240, 360, 480]} />
+            <Foto foto={kreisZu[foto] ?? foto} class="foto-kreis" sizes="5.5rem" breiten={[180, 360]} />
+            <figcaption>Patrick Senn schreibt und verantwortet die Texte auf dieser Seite.</figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg class="a-welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 8V60z" /></svg>
+    </header>
+
+    <section class="a-kurz" aria-label="Kurzantwort">
+      <div class="rahmen">
         <div class="kurzantwort">
           <span class="kurzantwort-label">Kurz gesagt</span>
           <p>{d.kurzantwort}</p>
         </div>
-        <p class="stand-zeile">Stand: <time datetime={d.stand}>{datumDe(d.stand)}</time> · Text: {zeigeUeberUns ? <a href="/ueber-uns">Patrick Senn</a> : 'Patrick Senn'}, Geschäftsführer</p>
       </div>
-      <figure class="artikel-foto">
-        <Foto foto={foto} class="foto-gross" sizes="15rem" breiten={[240, 360, 480]} />
-        <Foto foto={kreisZu[foto] ?? foto} class="foto-kreis" sizes="5.5rem" breiten={[180, 360]} />
-        <figcaption>Patrick Senn schreibt und verantwortet die Texte auf dieser Seite.</figcaption>
-      </figure>
-    </header>
+    </section>
 
-    <div class="artikel-raster">
-      <nav class="inhalt-verzeichnis" aria-labelledby="iv-titel">
-        <p id="iv-titel">Inhalt</p>
-        <ol>{verzeichnis.map((v) => <li><a href={`#${v.id}`}>{v.text}</a></li>)}</ol>
-      </nav>
-      <div>
+    <section class="a-text">
+      <div class="rahmen artikel-raster">
+        <nav class="inhalt-verzeichnis" aria-labelledby="iv-titel">
+          <p id="iv-titel">Inhalt</p>
+          <ol>{verzeichnis.map((v) => <li><a href={`#${v.id}`}>{v.text}</a></li>)}</ol>
+        </nav>
         <div class="prosa">
           <Content />
         </div>
-        <div class="prosa prosa-anhang">
-          {d.faq.length > 0 && (
-            <section aria-labelledby="haeufige-fragen">
-              <h2 id="haeufige-fragen">Häufige Fragen</h2>
-              <dl class="faq-liste">
-                {d.faq.map((f) => <div><dt>{f.frage}</dt><dd>{f.antwort}</dd></div>)}
-              </dl>
-            </section>
-          )}
-          {d.quellen.length > 0 && (
-            <section aria-labelledby="quellen">
-              <h2 id="quellen">Quellen</h2>
-              <ol class="quellen-liste">
-                {d.quellen.map((q) => (
-                  <li>{q.url ? <a href={q.url}>{q.titel}</a> : q.titel}{q.url && <span class="url">{q.url.replace(/^https?:\/\//, '')}</span>}</li>
-                ))}
-              </ol>
-              <p class="quellen-stand">Stand dieser Seite: {datumDe(d.stand)}. Fassungen und Abrufdaten der Quellen stehen im Hinweis am Ende des Textes.</p>
-            </section>
-          )}
-        </div>
-
-        <CtaBlock kampagne={entry.id} betreff={d.titel} titel={d.cta?.titel} button={d.cta?.button} text={d.cta?.text ?? 'Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.'} />
-
-        {verwandte.length > 0 && (
-          <section class="prosa-anhang verwandt" aria-labelledby="verwandt-h">
-            <h2 id="verwandt-h">Verwandte Fragen</h2>
-            <ul class="karten">
-              {verwandte.map((v) => (
-                <li class="karte">
-                  <p class="karte-phase">{phaseJeSeite[v.id] ?? 'Jede Berufsphase'}</p>
-                  <h3><a href={`/ratgeber/${v.id}`}>{v.data.frage}</a></h3>
-                  <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
-                </li>
-              ))}
-            </ul>
-          </section>
-        )}
       </div>
-    </div>
+    </section>
+
+    {(d.faq.length > 0 || d.quellen.length > 0) && (
+      <section class="a-anhang">
+        <div class="rahmen artikel-raster">
+          <div class="a-abstandhalter" aria-hidden="true"></div>
+          <div class="prosa prosa-anhang">
+            {d.faq.length > 0 && (
+              <section aria-labelledby="haeufige-fragen">
+                <h2 id="haeufige-fragen">Häufige Fragen</h2>
+                <dl class="faq-liste">
+                  {d.faq.map((f) => <div><dt>{f.frage}</dt><dd>{f.antwort}</dd></div>)}
+                </dl>
+              </section>
+            )}
+            {d.quellen.length > 0 && (
+              <section aria-labelledby="quellen">
+                <h2 id="quellen">Quellen</h2>
+                <ol class="quellen-liste">
+                  {d.quellen.map((q) => (
+                    <li>{q.url ? <a href={q.url}>{q.titel}</a> : q.titel}{q.url && <span class="url">{q.url.replace(/^https?:\/\//, '')}</span>}</li>
+                  ))}
+                </ol>
+                <p class="quellen-stand">Stand dieser Seite: {datumDe(d.stand)}. Fassungen und Abrufdaten der Quellen stehen im Hinweis am Ende des Textes.</p>
+              </section>
+            )}
+          </div>
+        </div>
+      </section>
+    )}
+
+    <CtaBlock neu kampagne={entry.id} betreff={d.titel} titel={d.cta?.titel} button={d.cta?.button} text={d.cta?.text ?? 'Du möchtest wissen, was davon für deine Situation gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch.'} />
+
+    {verwandte.length > 0 && (
+      <section class="a-verwandt verwandt" aria-labelledby="verwandt-h">
+        <div class="rahmen">
+          <h2 id="verwandt-h">Verwandte Fragen</h2>
+          <ul class="karten">
+            {verwandte.map((v) => (
+              <li class="karte">
+                <p class="karte-phase">{phaseJeSeite[v.id] ?? 'Jede Berufsphase'}</p>
+                <h3><a href={`/ratgeber/${v.id}`}>{v.data.frage}</a></h3>
+                <span class="karte-mehr" aria-hidden="true">Frage ansehen →</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    )}
   </article>
-  <div class="abstand-unten"></div>
 </Base>

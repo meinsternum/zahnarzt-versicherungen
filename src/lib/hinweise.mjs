@@ -5,7 +5,7 @@ import { terminLink, mailLink, WHATSAPP_URL } from './kontakt.mjs';
 
 const esc = (s) => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const STANDARD = {
-  termin: 'Erstgespräch buchen',
+  termin: 'Termin wählen',
   einschaetzen: 'Situation einschätzen lassen',
   mail: 'Frage per E-Mail stellen',
   whatsapp: 'Kurz per WhatsApp fragen',
