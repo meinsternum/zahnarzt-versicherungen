@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CtaBlock from '../../components/CtaBlock.astro';
+import BewertungKarte from '../../components/BewertungKarte.astro';
 import { visible } from '../../lib/status';
 import { gruppiere, phaseJeSeite, themenPfad } from '../../lib/phasen';
 import { SITE_URL } from '../../lib/site';
@@ -35,25 +36,62 @@ const jsonLd = [
 const texte = import.meta.glob('../../texte/themen/*.md', { eager: true }) as Record<string, { Content: any }>;
 const Text = texte[`../../texte/themen/${g.id}.md`]?.Content;
 ---
-<Base title={`${titel}: alle Fragen | zahnarzt-versicherungen.de`} description={`${g.beschreibung} Antworten für Zahnärzt*innen mit Quellen und Stand.`} path={pfad} jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: g.titel, href: pfad }]}>
-  <div class="rahmen">
-    <header class="seitenkopf">
-      <p class="thema-marke"><Icon name={g.icon} size={20} />Thema</p>
-      <h1>{titel}</h1>
-      <p class="einleitung">{g.beschreibung} {g.seiten.length === 1 ? 'Hier findest du die erste Frage dazu, kurz beantwortet und mit Quellen. Weitere folgen.' : `Hier findest du ${g.seiten.length} Fragen dazu, jede kurz beantwortet und mit Quellen.`}</p>
+<Base title={`${titel}: alle Fragen | zahnarzt-versicherungen.de`} description={`${g.beschreibung} Antworten für Zahnärzt*innen mit Quellen und Stand.`} path={pfad} jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }, { name: g.titel, href: pfad }]} krumenImKopf>
+  <div class="themenseite">
+    <header class="a-hero">
+      <div class="rahmen">
+        <nav class="a-krumen" aria-label="Brotkrumen">
+          <ol>
+            <li><a href="/">Startseite</a></li>
+            <li><a href="/ratgeber">Ratgeber</a></li>
+            <li><span aria-current="page">{g.titel}</span></li>
+          </ol>
+        </nav>
+        <div class="a-hero-raster t-hero-raster">
+          <div class="a-hero-text">
+            <p class="t-marke"><Icon name={g.icon} size={16} />Thema</p>
+            <h1>{titel}</h1>
+            <p class="t-einleitung">{g.beschreibung} {g.seiten.length === 1 ? 'Hier findest du die erste Frage dazu, kurz beantwortet und mit Quellen. Weitere folgen.' : `Hier findest du ${g.seiten.length} Fragen dazu, jede kurz beantwortet und mit Quellen.`}</p>
+            <BewertungKarte class="bk-hero" />
+          </div>
+          <!-- Platz rechts: derzeit Themen-Symbol, später Video (16:9) an gleicher Stelle -->
+          <div class="t-kachel" aria-hidden="true"><Icon name={g.icon} size={84} /></div>
+        </div>
+      </div>
+      <svg class="a-welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 8V60z" /></svg>
     </header>
-    <ul class="karten thema-karten">
-      {g.seiten.map((s) => (
-        <li class="karte">
-          <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
-          <h2><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h2>
-          <p>{s.data.kurzantwort}</p>
-          <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
-        </li>
-      ))}
-    </ul>
-    {Text && <div class="prosa thema-text"><Text /></div>}
-    <p class="thema-weiter"><a href="/ratgeber">Alle Themen im Ratgeber<Icon name="pfeil" size={16} /></a></p>
-    <CtaBlock kampagne={`thema-${g.id}`} betreff={titel} text={`Du willst wissen, was beim Thema ${g.titel} für dich gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail.`} />
+
+    <section class="t-fragen" aria-label={`Fragen zum Thema ${g.titel}`}>
+      <div class="rahmen">
+        <ul class="t-karten">
+          {g.seiten.map((s) => (
+            <li class="karte">
+              <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
+              <h2><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h2>
+              <p>{s.data.kurzantwort}</p>
+              <span class="karte-mehr" aria-hidden="true">Frage ansehen →</span>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+
+    {Text && (
+      <section class="a-text t-text">
+        <div class="rahmen artikel-raster t-raster">
+          <div class="a-abstandhalter" aria-hidden="true"></div>
+          <div class="prosa">
+            <Text />
+            <p class="thema-weiter"><a href="/ratgeber">Alle Themen im Ratgeber →</a></p>
+          </div>
+        </div>
+      </section>
+    )}
+    {!Text && (
+      <section class="t-text-leer"><div class="rahmen"><p class="thema-weiter"><a href="/ratgeber">Alle Themen im Ratgeber →</a></p></div></section>
+    )}
+
+    <CtaBlock neu kampagne={`thema-${g.id}`} betreff={titel} text={`Du willst wissen, was beim Thema ${g.titel} für dich gilt? Im Erstgespräch gehen wir deine Situation gemeinsam durch. Das Gespräch kostet nichts, die Empfehlung kommt danach per E-Mail.`} />
   </div>
+  <div class="abstand-unten"></div>
 </Base>

@@ -404,7 +404,7 @@ main:focus { outline: none; }
 .thema-text { max-width: 46rem; margin-top: 3rem; }
 
 /* ===== Artikelseite im neuen Design (Startseiten-Look) ===== */
-.artikelseite { --a-navy: #39537c; --a-tief: #2f4770; --a-teal: #31708f; }
+.artikelseite, .themenseite { --a-navy: #39537c; --a-tief: #2f4770; --a-teal: #31708f; }
 .artikelseite .vorschau-hinweis { margin-top: 1rem; }
 
 /* Kopf mit Verlauf und Welle */
@@ -529,3 +529,24 @@ main:focus { outline: none; }
   .bk-anzahl { font-size: 0.75rem; }
   .bk-am-foto { max-width: calc(100% - 28px); }
 }
+
+/* ===== Themenseite im neuen Design ===== */
+.t-marke { display: inline-flex; align-items: center; gap: 0.5rem; align-self: flex-start; margin: 0 0 1rem; font-size: 0.82rem; font-weight: 600; color: var(--a-tief); background: #fff; border-radius: 999px; padding: 0.35rem 0.9rem 0.35rem 0.75rem; }
+.themenseite .a-hero h1 { font-size: clamp(2.1rem, 4.6vw, 3rem); max-width: 40rem; }
+.t-einleitung { font-size: clamp(1.05rem, 1.3vw, 1.15rem); line-height: 1.6; color: #eaf0f7; max-width: 38rem; margin: 0 0 1.5rem; }
+.t-hero-raster { grid-template-columns: minmax(0, 1fr) 12.5rem; align-items: center; }
+.t-kachel { display: grid; place-items: center; width: 12.5rem; height: 12.5rem; border-radius: 32px; color: #fff; background: linear-gradient(135deg, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.06)); box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.28), 0 18px 40px rgba(10, 20, 45, 0.25); }
+.t-kachel svg { stroke-width: 1.6; }
+.t-fragen { background: #e8eff6; padding: 0 0 clamp(3rem, 6vw, 4.5rem); }
+.t-karten { list-style: none; margin: -2.5rem 0 0; padding: 0; display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 26rem), 1fr)); position: relative; }
+.t-karten .karte { border: 0; border-radius: 18px; padding: 1.75rem 1.75rem 4rem; box-shadow: 0 8px 24px rgba(31, 55, 95, 0.1); display: flex; flex-direction: column; gap: 0.75rem; }
+.t-karten .karte-phase { align-self: flex-start; margin: 0; color: #27607c; }
+.t-karten .karte h2 { margin: 0; font-size: 1.3rem; color: var(--a-tief); }
+.t-karten .karte > p:not(.karte-phase) { font-size: 0.97rem; line-height: 1.6; color: var(--text-leise); }
+.t-karten .karte-mehr { position: absolute; left: 1.75rem; bottom: 1.4rem; font-size: 0.95rem; font-weight: 600; color: #27607c; }
+.themenseite .t-text { padding-top: clamp(3rem, 6vw, 4.5rem); }
+.themenseite .t-text .prosa .thema-weiter { margin-top: 1.75rem; }
+.themenseite .t-text .prosa .thema-weiter a { color: #27607c; text-decoration: none; }
+.t-text-leer { background: #fafafb; padding: 2.5rem 0; }
+@media (max-width: 960px) { .t-hero-raster { grid-template-columns: minmax(0, 1fr); } .t-kachel { display: none; } }
+@media (max-width: 760px) { .t-karten { margin-top: -2rem; } }
