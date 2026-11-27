@@ -1,25 +1,51 @@
 ---
 // Termin-Block nach dem Fließtext: Text je Seite (Feld cta), Teamfoto, Google-Bewertung,
 // darunter die niedrigere Stufe (Frage per E-Mail oder WhatsApp).
+// neu: Gestaltung der Artikelseiten im neuen Design (Band, Verlaufskarte, Bewertungskarte am Foto).
 import Icon from './Icon.astro';
 import Bewertungszeile from './Bewertungszeile.astro';
+import BewertungKarte from './BewertungKarte.astro';
 import Foto from './Foto.astro';
 import { terminLink, mailLink, WHATSAPP_URL } from '../lib/site';
-interface Props { titel?: string; text: string; button?: string; kampagne?: string; betreff?: string }
-const { titel = 'Nächste Schritte', text, button = 'Erstgespräch buchen', kampagne, betreff } = Astro.props;
+interface Props { titel?: string; text: string; button?: string; kampagne?: string; betreff?: string; neu?: boolean }
+const { titel = 'Nächste Schritte', text, button = 'Erstgespräch buchen', kampagne, betreff, neu = false } = Astro.props;
+// Neues Design: Standard-Buttontext ist "Termin wählen"; seitenspezifische Buttontexte aus dem Frontmatter bleiben.
+const knopf = neu && button === 'Erstgespräch buchen' ? 'Termin wählen' : button;
 ---
-<section class="cta-block einblenden" aria-label="Termin buchen">
-  <div class="cta-raster">
-    <div>
-      <h2>{titel}</h2>
-      <p>{text}</p>
-      <p><a class="knopf knopf-hell" href={terminLink(kampagne)}>{button}<Icon name="pfeil" size={18} /></a></p>
-      <p class="cta-alternativ">Lieber erst eine kurze Frage? <a href={mailLink(betreff ? `Frage zu: ${betreff}` : undefined)}><Icon name="mail" size={16} />per E-Mail</a> <a href={WHATSAPP_URL}><Icon name="chat" size={16} />per WhatsApp</a></p>
+{neu ? (
+  <section class="cta-neu" aria-label="Termin wählen">
+    <div class="rahmen">
+      <div class="cta-neu-karte">
+        <div class="cta-neu-text">
+          <h2>{titel}</h2>
+          <p>{text}</p>
+          <p><a class="cta-neu-knopf" href={terminLink(kampagne)}>{knopf}</a></p>
+          <p class="cta-alternativ">Lieber erst eine kurze Frage? <a href={mailLink(betreff ? `Frage zu: ${betreff}` : undefined)}>per E-Mail</a> <a href={WHATSAPP_URL}>per WhatsApp</a></p>
+        </div>
+        <figure class="cta-neu-foto">
+          <div class="cta-neu-bild">
+            <Foto foto="team-02" sizes="(max-width: 760px) 90vw, 28rem" breiten={[360, 540, 720, 960]} />
+            <BewertungKarte class="bk-am-foto" />
+          </div>
+          <figcaption>Das Team von meinsternum in Köln</figcaption>
+        </figure>
+      </div>
     </div>
-    <figure class="cta-foto">
-      <Foto foto="team-02" class="cta-team" sizes="(max-width: 760px) 90vw, 22rem" breiten={[360, 540, 720]} />
-      <figcaption>Das Team von meinsternum in Köln</figcaption>
-    </figure>
-  </div>
-  <Bewertungszeile dunkel class="cta-bewertung" />
-</section>
+  </section>
+) : (
+  <section class="cta-block einblenden" aria-label="Termin buchen">
+    <div class="cta-raster">
+      <div>
+        <h2>{titel}</h2>
+        <p>{text}</p>
+        <p><a class="knopf knopf-hell" href={terminLink(kampagne)}>{button}<Icon name="pfeil" size={18} /></a></p>
+        <p class="cta-alternativ">Lieber erst eine kurze Frage? <a href={mailLink(betreff ? `Frage zu: ${betreff}` : undefined)}><Icon name="mail" size={16} />per E-Mail</a> <a href={WHATSAPP_URL}><Icon name="chat" size={16} />per WhatsApp</a></p>
+      </div>
+      <figure class="cta-foto">
+        <Foto foto="team-02" class="cta-team" sizes="(max-width: 760px) 90vw, 22rem" breiten={[360, 540, 720]} />
+        <figcaption>Das Team von meinsternum in Köln</figcaption>
+      </figure>
+    </div>
+    <Bewertungszeile dunkel class="cta-bewertung" />
+  </section>
+)}

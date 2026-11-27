@@ -235,8 +235,6 @@ main:focus { outline: none; }
 .cta-bewertung { margin-top: 1.6rem; max-width: 38rem; }
 
 /* Artikel */
-.artikel-kopf { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; padding: clamp(1.5rem, 4vw, 2.75rem) 0 clamp(1.5rem, 3vw, 2.25rem); }
-.artikel-kopf h1 { font-size: clamp(1.9rem, 4vw, 3rem); line-height: 1.1; letter-spacing: -0.025em; margin-bottom: 1.4rem; }
 .kurzantwort { background: #fff; border: 1px solid var(--linie); border-left: 4px solid var(--teal-hell); border-radius: 14px; padding: 1.15rem 1.35rem; margin: 0 0 1rem; max-width: 46rem; }
 .kurzantwort-label { display: block; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.06em; text-transform: uppercase; color: var(--teal); margin-bottom: 0.35rem; }
 .kurzantwort p { margin: 0; font-size: 1.08rem; line-height: 1.6; color: var(--text); }
@@ -248,7 +246,7 @@ main:focus { outline: none; }
 .artikel-foto figcaption { font-size: 0.82rem; color: var(--text-leise); margin-top: 0.5rem; }
 .vorschau-hinweis { margin: 1rem 0 0; background: #fff4d6; color: #5a4600; border: 1px solid #e8d18a; border-radius: 10px; padding: 0.6rem 0.9rem; font-size: 0.9rem; }
 
-.artikel-raster { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; border-top: 1px solid var(--linie); padding-top: clamp(1.75rem, 4vw, 3rem); }
+.artikel-raster { display: grid; grid-template-columns: 15rem minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 4rem); align-items: start; }
 .inhalt-verzeichnis { position: sticky; top: 5.5rem; font-size: 0.92rem; }
 .inhalt-verzeichnis p { font-weight: 600; color: var(--navy); margin-bottom: 0.6rem; }
 .inhalt-verzeichnis ol, .prosa .inhalt-verzeichnis ol { list-style: none; margin: 0; padding: 0; border-left: 2px solid var(--linie); }
@@ -287,7 +285,6 @@ main:focus { outline: none; }
   .inhalt-verzeichnis { position: static; background: #fff; border: 1px solid var(--linie); border-radius: 14px; padding: 1rem 1.1rem; }
 }
 @media (max-width: 760px) {
-  .artikel-kopf { grid-template-columns: minmax(0, 1fr); }
   .artikel-foto { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.9rem; align-items: center; }
   .artikel-foto .foto-gross, .artikel-foto picture:has(.foto-gross) { display: none; }
   .artikel-foto picture:has(.foto-kreis) { display: block; }
@@ -405,3 +402,130 @@ main:focus { outline: none; }
 .themengruppe-titel a { color: inherit; text-decoration: none; }
 .themengruppe-titel a:hover { text-decoration: underline; }
 .thema-text { max-width: 46rem; margin-top: 3rem; }
+
+/* ===== Artikelseite im neuen Design (Startseiten-Look) ===== */
+.artikelseite { --a-navy: #39537c; --a-tief: #2f4770; --a-teal: #31708f; }
+.artikelseite .vorschau-hinweis { margin-top: 1rem; }
+
+/* Kopf mit Verlauf und Welle */
+.a-hero { position: relative; background: linear-gradient(112deg, #2f4770 0%, #39537c 36%, #31708f 74%, #1f7f95 100%); color: #fff; padding: 0 0 clamp(5rem, 8vw, 6.5rem); }
+.a-krumen { padding-top: 1.25rem; font-size: 0.88rem; color: rgba(255, 255, 255, 0.85); }
+.a-krumen ol { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 0; }
+.a-krumen li + li::before { content: '›'; margin: 0 0.5rem; color: rgba(255, 255, 255, 0.6); }
+.a-krumen a { color: #fff; text-decoration: none; }
+.a-krumen a:hover { text-decoration: underline; }
+.a-krumen [aria-current] { color: rgba(255, 255, 255, 0.85); }
+.a-hero-raster { display: grid; grid-template-columns: minmax(0, 1fr) 15rem; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: start; padding-top: clamp(1.5rem, 3vw, 2.25rem); }
+.a-hero .karte-phase { background: #fff; color: var(--a-navy); margin-bottom: 1rem; }
+.a-hero h1 { color: #fff; font-size: clamp(1.9rem, 4vw, 2.75rem); line-height: 1.12; letter-spacing: -0.025em; margin: 0 0 1.1rem; max-width: 40rem; }
+.a-hero .stand-zeile { color: rgba(255, 255, 255, 0.88); margin: 0 0 1.4rem; }
+.a-hero .stand-zeile a { color: #fff; }
+.a-hero .artikel-foto { margin: 0; }
+.a-hero .artikel-foto picture { display: block; }
+.a-hero .artikel-foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 24px; box-shadow: 0 18px 40px rgba(15, 30, 60, 0.35); }
+.a-hero .artikel-foto .foto-kreis, .a-hero .artikel-foto picture:has(.foto-kreis) { display: none; }
+.a-hero .artikel-foto figcaption { font-size: 0.82rem; color: rgba(255, 255, 255, 0.88); margin-top: 0.6rem; }
+.a-welle { position: absolute; left: 0; bottom: -1px; display: block; width: 100%; height: 3rem; fill: #e8eff6; }
+
+/* Kurzantwort auf der Welle */
+.a-kurz { background: #e8eff6; padding: 0 0 clamp(2.5rem, 5vw, 3.5rem); }
+.a-kurz .kurzantwort { position: relative; overflow: hidden; margin: -4.5rem 0 0; max-width: 52rem; background: #fff; border: 0; border-radius: 20px; padding: 1.5rem 1.75rem 1.5rem 2rem; box-shadow: 0 14px 34px rgba(31, 55, 95, 0.14); }
+.a-kurz .kurzantwort::before { content: ''; position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #39537c, #1f7f95); }
+.a-kurz .kurzantwort-label { color: #27607c; text-transform: none; letter-spacing: 0.02em; font-size: 0.9rem; }
+.a-kurz .kurzantwort p { font-size: 1.12rem; line-height: 1.6; }
+
+/* Textbereich */
+.a-text { background: #fafafb; padding: clamp(2.5rem, 5vw, 4rem) 0 clamp(2rem, 4vw, 3rem); }
+.a-text .inhalt-verzeichnis { background: #fff; border-radius: 16px; padding: 1.1rem 1.15rem; box-shadow: 0 6px 20px rgba(31, 55, 95, 0.08); top: 6rem; }
+.a-text .inhalt-verzeichnis p { color: #27607c; }
+.artikelseite .prosa { max-width: 42.5rem; }
+.artikelseite .prosa > p:first-child { font-size: 1.15rem; line-height: 1.65; }
+.artikelseite .prosa h2 { color: var(--a-navy); font-size: clamp(1.45rem, 2.6vw, 1.75rem); }
+.artikelseite .prosa > p:last-child em { background: #e8eff6; border-radius: 14px; }
+
+/* Anhang: FAQ und Quellen */
+.a-anhang { background: #fff; padding: clamp(2.5rem, 5vw, 4rem) 0; }
+.a-anhang .prosa-anhang section:first-child { margin-top: 0; }
+.a-anhang .faq-liste { display: grid; gap: 0.8rem; }
+.a-anhang .faq-liste div, .a-anhang .faq-liste div:last-child { background: #f4f7fb; border: 0; border-radius: 16px; padding: 1.1rem 1.3rem; }
+.a-anhang .faq-liste dt { color: var(--a-navy); }
+
+/* Termin-Block neu */
+.cta-neu { background: #d9ebf1; padding: clamp(2.5rem, 6vw, 4rem) 0; }
+.cta-neu-karte { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; background: linear-gradient(112deg, #2f4770 0%, #39537c 36%, #31708f 74%, #1f7f95 100%); color: #fff; border-radius: 28px; padding: clamp(1.75rem, 4vw, 3rem); box-shadow: 0 20px 44px rgba(31, 55, 95, 0.25); }
+.cta-neu h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.1rem); margin: 0 0 0.8rem; }
+.cta-neu-text > p { max-width: 34rem; font-size: 1.06rem; color: #fff; }
+.cta-neu-knopf { display: inline-block; background: #fff; color: var(--a-tief); font-weight: 600; text-decoration: none; padding: 0.85rem 1.7rem; border-radius: 999px; box-shadow: 0 8px 20px rgba(15, 30, 60, 0.25); transition: transform 0.2s ease, box-shadow 0.2s ease; }
+.cta-neu-knopf:hover { transform: translateY(-2px); box-shadow: 0 12px 26px rgba(15, 30, 60, 0.3); }
+.cta-neu-knopf:focus-visible { outline: 3px solid #fff; outline-offset: 3px; }
+.cta-neu .cta-alternativ a { text-decoration: underline; text-underline-offset: 3px; }
+.cta-neu-foto { margin: 0; }
+.cta-neu-bild { position: relative; margin-bottom: 42px; }
+.cta-neu-bild img { display: block; width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 20px; }
+.cta-neu-foto figcaption { font-size: 0.85rem; color: rgba(255, 255, 255, 0.9); }
+
+/* Bewertungskarte (kompakt) */
+.bk { position: relative; display: inline-flex; align-items: center; gap: 0.8rem; padding: 0.7rem 1.1rem 0.7rem 1.2rem; overflow: hidden; background: linear-gradient(180deg, #fff, #f4f7fb); color: #2b3647; border-radius: 16px; text-decoration: none; box-shadow: 0 14px 32px rgba(15, 30, 60, 0.3), 0 0 0 1px rgba(255, 255, 255, 0.7); transition: transform 0.2s ease, box-shadow 0.2s ease; white-space: nowrap; }
+.bk-streifen { position: absolute; left: 0; top: 0; bottom: 0; width: 5px; background: linear-gradient(180deg, #f5b301, #e08e00); }
+.bk-note { display: flex; align-items: baseline; gap: 0.3rem; padding-left: 0.3rem; }
+.bk-note b { font-size: 1.75rem; font-weight: 700; line-height: 1; letter-spacing: -0.04em; color: var(--a-navy); }
+.bk-note span { font-size: 0.8rem; color: #566479; }
+.bk-text { display: flex; flex-direction: column; gap: 0.2rem; line-height: 1.25; }
+.bk-sterne { display: flex; gap: 2px; }
+.bk-sterne svg { fill: #f5b301; stroke: #e08e00; stroke-width: 0.8; stroke-linejoin: round; }
+.bk-anzahl { font-size: 0.8rem; font-weight: 500; color: #2b3647; }
+.bk-mehr { color: #27607c; font-weight: 600; }
+.bk-hero { padding: 0.85rem 1.4rem 0.85rem 1.4rem; gap: 1rem; }
+.bk-hero .bk-note b { font-size: 1.875rem; }
+.bk-hero .bk-sterne svg { width: 17px; height: 17px; }
+.bk-am-foto { position: absolute; left: 14px; bottom: -30px; }
+.bk-am-foto .bk-sterne svg { width: 16px; height: 16px; }
+@media (hover: hover) { .bk:hover { transform: translateY(-3px); box-shadow: 0 20px 40px rgba(15, 30, 60, 0.38), 0 0 0 1px rgba(255, 255, 255, 0.7); } }
+.bk:focus-visible { outline: 3px solid #f5b301; outline-offset: 3px; }
+
+/* Verwandte Fragen */
+.a-verwandt { background: #e8eff6; padding: clamp(2.5rem, 6vw, 4rem) 0 clamp(3rem, 7vw, 5rem); }
+.a-verwandt h2 { color: var(--a-navy); font-size: clamp(1.45rem, 2.6vw, 1.75rem); margin: 0 0 1.2rem; }
+.a-verwandt .karte { border: 0; border-radius: 16px; padding: 1.4rem 1.4rem 3rem; box-shadow: 0 6px 20px rgba(31, 55, 95, 0.1); }
+.a-verwandt .karte-mehr { position: absolute; left: 1.4rem; bottom: 1.1rem; font-size: 0.9rem; font-weight: 600; color: #27607c; }
+
+/* Grafiken und Hinweis-Kästen im Artikel (nur CSS, Inhalt unverändert) */
+.artikelseite .prosa .grafik { border: 0; border-radius: 22px; box-shadow: 0 12px 32px rgba(31, 55, 95, 0.14); }
+.artikelseite .prosa .grafik-titel { padding: 1.05rem 1.4rem; }
+.artikelseite .prosa .grafik-karten > li, .artikelseite .prosa .grafik-ablauf > li { background: #f4f7fb; border: 0; border-radius: 16px; }
+.artikelseite .prosa .grafik-nr { width: 2.5rem; height: 2.5rem; border-radius: 12px; background: linear-gradient(135deg, #39537c, #1f7f95); color: #fff; font-size: 1rem; }
+.artikelseite .prosa .grafik-ablauf > li::before { width: 2.5rem; height: 2.5rem; border-radius: 12px; background: linear-gradient(135deg, #39537c, #1f7f95); font-size: 1rem; }
+.artikelseite .prosa .grafik-ablauf > li { padding-top: 4rem; }
+.artikelseite .prosa .grafik-karten ul { list-style: none; padding-left: 0; }
+.artikelseite .prosa .grafik-karten ul li { position: relative; padding-left: 1.4rem; }
+.artikelseite .prosa .grafik-karten ul li::before { content: ''; position: absolute; left: 0; top: 0.4em; width: 0.45rem; height: 0.8rem; border: solid #1f7f95; border-width: 0 2px 2px 0; transform: rotate(40deg) scale(0.85); }
+.artikelseite .prosa .grafik-fuss { background: #f4f7fb; border-top: 0; }
+.artikelseite .prosa .zwischen-cta { background: #e8eff6; border: 0; border-radius: 18px; }
+.artikelseite .prosa .zwischen-cta .knopf { background: var(--a-navy); color: #fff; border-radius: 999px; }
+
+@media (max-width: 960px) {
+  .a-text .inhalt-verzeichnis { position: static; }
+  .a-abstandhalter { display: none; }
+  .cta-neu-karte { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 760px) {
+  .a-hero-raster { grid-template-columns: minmax(0, 1fr); }
+  .a-hero .artikel-foto { display: grid; grid-template-columns: 5.5rem 1fr; gap: 0.9rem; align-items: center; }
+  .a-hero .artikel-foto .foto-gross, .a-hero .artikel-foto picture:has(.foto-gross) { display: none; }
+  .a-hero .artikel-foto picture:has(.foto-kreis) { display: block; }
+  .a-hero .artikel-foto .foto-kreis { display: block; width: 100%; aspect-ratio: 1 / 1; border-radius: 50%; }
+  .a-hero .artikel-foto figcaption { margin: 0; }
+  .a-kurz .kurzantwort { margin-top: -3.75rem; padding: 1.25rem 1.25rem 1.25rem 1.5rem; }
+  .bk-hero { padding: 0.75rem 1rem; gap: 0.75rem; }
+  .bk-hero .bk-note b { font-size: 1.6rem; }
+}
+@media (max-width: 400px) {
+  .bk-hero .bk-sterne svg, .bk-am-foto .bk-sterne svg { width: 14px; height: 14px; }
+  .bk-am-foto { left: 8px; padding: 0.6rem 0.8rem; gap: 0.6rem; }
+  .bk-am-foto .bk-note b { font-size: 1.5rem; }
+}
+@media (max-width: 560px) {
+  .bk-mehr { display: none; }
+  .bk-anzahl { font-size: 0.75rem; }
+  .bk-am-foto { max-width: calc(100% - 28px); }
+}
