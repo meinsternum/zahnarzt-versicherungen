@@ -27,9 +27,10 @@ interface Props {
   jsonLd?: object[];
   krumen?: Krume[]; // ohne Startseite; leer = keine Brotkrumen (Startseite)
   ogTyp?: 'website' | 'article';
+  krumenImKopf?: boolean; // Seite zeigt die Brotkrumen selbst (z. B. im blauen Kopf der Artikelseite)
 }
 
-const { title, description, path, noindex = false, jsonLd = [], krumen = [], ogTyp = 'website' } = Astro.props;
+const { title, description, path, noindex = false, jsonLd = [], krumen = [], ogTyp = 'website', krumenImKopf = false } = Astro.props;
 const suffix = ' | zahnarzt-versicherungen.de';
 const basis = title.endsWith(suffix) ? title.slice(0, -suffix.length) : title;
 // Domain-Zusatz nur, wenn der Titel danach höchstens 60 Zeichen hat (sonst kürzt Google).
@@ -121,7 +122,7 @@ const profile = SOCIAL.filter((s) => s.url);
                       <div class="mega-seite">
                         <p class="mega-seite-titel">Deine Situation ist anders?</p>
                         <p>Eine Ratgeberseite erklärt die Regeln. Deine persönliche Situation gehen wir im Erstgespräch gemeinsam durch.</p>
-                        <p><a class="knopf knopf-klein" href={TERMIN_URL}>Erstgespräch buchen<Icon name="pfeil" size={16} /></a></p>
+                        <p><a class="knopf knopf-klein" href={TERMIN_URL}>Termin wählen<Icon name="pfeil" size={16} /></a></p>
                         <p><a class="mega-alle" href="/ratgeber" aria-current={path === '/ratgeber' ? 'page' : undefined}>Alle Fragen im Überblick<Icon name="pfeil" size={16} /></a></p>
                       </div>
                     </div>
@@ -157,7 +158,7 @@ const profile = SOCIAL.filter((s) => s.url);
       </div>
     </header>
 
-    {alleKrumen.length > 0 && <Brotkrumen krumen={alleKrumen} />}
+    {alleKrumen.length > 0 && !krumenImKopf && <Brotkrumen krumen={alleKrumen} />}
 
     <main id="inhalt" tabindex="-1">
       <slot />

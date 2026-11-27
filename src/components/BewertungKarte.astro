@@ -1,0 +1,17 @@
+---
+// Kompakte Google-Bewertungskarte (Artikelseiten, neues Design). Werte aus src/lib/bewertung.ts.
+// Statischer Link, kein Widget, kein Schema. Die Bewertungen gelten für das Team der MEIN STERNUM Finanzberatung GmbH.
+import { bewertung as b } from '../lib/bewertung';
+interface Props { class?: string }
+const { class: klasse = '' } = Astro.props;
+const STERN = 'M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1z';
+---
+<a class={`bk ${klasse}`.trim()} href={b.url}>
+  <span class="bk-streifen" aria-hidden="true"></span>
+  <span class="bk-note" aria-hidden="true"><b>{b.wert}</b><span>von 5</span></span>
+  <span class="bk-text">
+    <span class="bk-sterne" aria-hidden="true">{[1, 2, 3, 4, 5].map(() => <svg viewBox="0 0 24 24" width="17" height="17"><path d={STERN} /></svg>)}</span>
+    <span class="sr">{b.wert} von 5 Sternen, {b.anzahl} Google-Bewertungen für unser Team. </span>
+    <span class="bk-anzahl" aria-hidden="true">{b.anzahl} Google-Bewertungen<span class="bk-mehr"> · ansehen →</span></span>
+  </span>
+</a>

@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Icon from '../../components/Icon.astro';
 import CtaBlock from '../../components/CtaBlock.astro';
+import BewertungKarte from '../../components/BewertungKarte.astro';
 import { visible } from '../../lib/status';
 import { gruppiere, phaseJeSeite, themenPfad } from '../../lib/phasen';
 import { SITE_URL } from '../../lib/site';
@@ -26,29 +27,47 @@ const jsonLd = [
   },
 ];
 ---
-<Base title="Ratgeber für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen." path="/ratgeber" jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }]}>
-  <div class="rahmen">
-    <header class="seitenkopf">
-      <h1>Ratgeber für Zahnärzt*innen</h1>
-      <p class="einleitung">Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen.</p>
+<Base title="Ratgeber für Zahnärzt*innen | zahnarzt-versicherungen.de" description="Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen." path="/ratgeber" jsonLd={jsonLd} krumen={[{ name: 'Ratgeber', href: '/ratgeber' }]} krumenImKopf>
+  <div class="uebersichtsseite">
+    <header class="a-hero u-hero">
+      <div class="rahmen">
+        <nav class="a-krumen" aria-label="Brotkrumen">
+          <ol>
+            <li><a href="/">Startseite</a></li>
+            <li><span aria-current="page">Ratgeber</span></li>
+          </ol>
+        </nav>
+        <div class="u-hero-text">
+          <h1>Ratgeber für Zahnärzt*innen</h1>
+          <p class="t-einleitung">Antworten auf typische Fragen zu Versicherungen und Absicherung für Zahnärzt*innen in verschiedenen Berufsphasen.</p>
+          <BewertungKarte class="bk-hero" />
+        </div>
+      </div>
+      <svg class="a-welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 8V60z" /></svg>
     </header>
-    <div class="themen-raster">
+
     {gruppen.map((g) => (
-      <section class="themengruppe" style={`--n:${Math.min(g.seiten.length, 4)}`} aria-labelledby={`thema-${g.id}`}>
-        <h2 class="themengruppe-titel" id={`thema-${g.id}`}><Icon name={g.icon} size={22} /><a href={themenPfad(g.id)}>{g.titel}</a></h2>
-        <ul class="karten">
-          {g.seiten.map((s) => (
-            <li class="karte">
-              <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
-              <h3><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h3>
-              <p>{s.data.kurzantwort}</p>
-              <span class="karte-pfeil" aria-hidden="true"><Icon name="pfeil" size={18} /></span>
-            </li>
-          ))}
-        </ul>
+      <section class="u-gruppe" aria-labelledby={`thema-${g.id}`}>
+        <div class="rahmen">
+          <div class="u-gruppe-kopf">
+            <h2 id={`thema-${g.id}`}><span class="u-kachel" aria-hidden="true"><Icon name={g.icon} size={22} /></span><a href={themenPfad(g.id)}>{g.titel}</a></h2>
+            <a class="u-alle" href={themenPfad(g.id)}>Alle Fragen zum Thema →</a>
+          </div>
+          <ul class="u-karten">
+            {g.seiten.map((s) => (
+              <li class="karte">
+                <p class="karte-phase">{phaseJeSeite[s.id] ?? 'Jede Berufsphase'}</p>
+                <h3><a href={`/ratgeber/${s.id}`}>{s.data.frage}</a></h3>
+                <p>{s.data.kurzantwort}</p>
+                <span class="karte-mehr" aria-hidden="true">Frage ansehen →</span>
+              </li>
+            ))}
+          </ul>
+        </div>
       </section>
     ))}
-    </div>
-    <CtaBlock text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
+
+    <CtaBlock neu text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
   </div>
+  <div class="abstand-unten"></div>
 </Base>
