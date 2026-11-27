@@ -354,6 +354,10 @@ const STERN = 'M12 2l3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.
     .startseite .s-laufbahn, .startseite .s-themen, .startseite .s-ablauf, .startseite .s-wer { padding: 3.5rem 0; }
     .startseite .s-treppe-feld { padding-right: 0; }
   }
+  /* Einspaltig: erst Text, dann Foto, damit zwei Fotos nicht direkt aufeinander folgen */
+  @media (max-width: 880px) {
+    .startseite .s-zwei-umgekehrt .s-foto { order: 2; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .startseite .tr, .startseite .tk, .startseite .s-bewertung, .startseite .pfa { transition: none; }
     .startseite .tr:hover, .startseite .tk:hover, .startseite .s-bewertung:hover { transform: none; filter: none; }

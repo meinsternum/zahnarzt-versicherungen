@@ -118,8 +118,8 @@ ul { margin: 0; padding: 0; list-style: none; }
 /* Mobil: Themen als aufklappbare Gruppen im Menü */
 .menue nav { width: min(22rem, calc(100vw - 1.5rem)); max-height: calc(100vh - 5.5rem); overflow-y: auto; }
 .menue-thema summary { display: flex !important; align-items: center; gap: 0.55rem; padding: 0.55rem 0.9rem !important; border-radius: 10px !important; font-weight: 500 !important; font-size: 0.95rem !important; color: var(--text) !important; }
-.menue-thema summary .icon:last-child { margin-left: auto; color: var(--schiefer); transition: transform 0.2s var(--weich); }
-.menue-thema[open] summary .icon:last-child { transform: rotate(180deg); }
+.menue-thema summary > .icon:last-child { margin-left: auto; color: var(--schiefer); transition: transform 0.2s var(--weich); }
+.menue-thema[open] summary > .icon:last-child { transform: rotate(180deg); }
 .menue-thema .mega-symbol { width: 1.7rem; height: 1.7rem; border-radius: 7px; }
 .menue-thema ul { padding: 0 0 0.3rem 2.6rem; }
 .menue nav .menue-thema a { padding: 0.45rem 0.6rem; font-size: 0.92rem; color: var(--text-leise); }
@@ -131,13 +131,27 @@ ul { margin: 0; padding: 0; list-style: none; }
   .kopf-innen { gap: 0.5rem; }
 }
 @media (max-width: 440px) {
-  .kopf .rahmen { padding: 0 0.9rem; }
-  .kopf-innen { gap: 0.35rem; min-height: 3.75rem; }
-  .marke { font-size: 0.84rem; gap: 0.4rem; }
-  .marke img { width: 26px; height: 26px; }
+  .kopf .rahmen { padding: 0 1rem; }
+  .kopf-innen { gap: 0.5rem; min-height: 4.5rem; }
+  .marke { font-size: 1.02rem; gap: 0.55rem; }
+  .marke img { width: 40px; height: 40px; }
+  .wortmarke { line-height: 1.12; }
+  .wortmarke span, .wortmarke b { display: block; }
   .menue-text { display: none; }
-  .menue summary { padding: 0.5rem 0.45rem; }
-  .kopf-termin { padding: 0.45rem 0.7rem; font-size: 0.8rem; white-space: nowrap; }
+  .menue summary { padding: 0.6rem 0.4rem; }
+  .kopf-termin { padding: 0.55rem 0.85rem; font-size: 0.86rem; white-space: nowrap; }
+  .kontaktleiste-innen { min-height: 2.4rem; }
+}
+@media (max-width: 380px) {
+  .marke { font-size: 0.92rem; gap: 0.45rem; }
+  .marke img { width: 36px; height: 36px; }
+  .kopf-termin { padding: 0.5rem 0.7rem; font-size: 0.8rem; }
+  .kopf-innen { gap: 0.35rem; }
+}
+@media (max-width: 340px) {
+  .marke { font-size: 0.82rem; }
+  .marke img { width: 32px; height: 32px; }
+  .kopf-termin { padding: 0.45rem 0.55rem; font-size: 0.74rem; }
 }
 @media (max-width: 350px) { .wortmarke b { display: block; } .wortmarke { line-height: 1.05; } }
 
