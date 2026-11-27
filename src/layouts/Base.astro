@@ -12,7 +12,7 @@ import '../styles/site.css';
 import CookieBanner from '../components/CookieBanner.astro';
 import Brotkrumen from '../components/Brotkrumen.astro';
 import { isProduction, indexierungErlaubt, zeigeUeberUns } from '../lib/status';
-import { TERMIN_URL, WHATSAPP_URL, ORGANISATION as O, PFLICHTHINWEIS, SITE_URL, SOCIAL } from '../lib/site';
+import { TERMIN_URL, WHATSAPP_URL, ORGANISATION as O, SITE_URL, SOCIAL } from '../lib/site';
 import { breadcrumbs, type Krume } from '../lib/schema';
 import Icon from '../components/Icon.astro';
 import { getCollection } from 'astro:content';
@@ -91,9 +91,6 @@ const profile = SOCIAL.filter((s) => s.url);
       <div class="rahmen kontaktleiste-innen">
         <a href={O.telefonLink}><Icon name="telefon" size={15} /><span>{O.telefon}</span></a>
         <a href={WHATSAPP_URL}><Icon name="chat" size={15} /><span>WhatsApp</span></a>
-        <a href={`mailto:${O.email}`}><Icon name="mail" size={15} /><span class="kl-lang">{O.email}</span><span class="kl-kurz">E-Mail</span></a>
-        <span class="kl-trenner" aria-hidden="true"></span>
-        {profile.filter((s) => s.name !== 'WhatsApp').map((s) => <a class="kl-profil" href={s.url}><Icon name="profil" size={15} /><span>{s.name}</span></a>)}
       </div>
     </div>
     <header class="kopf">
@@ -134,7 +131,7 @@ const profile = SOCIAL.filter((s) => s.url);
             ) : <li><a href={n.href} aria-current={aktuell(n.href)}>{n.text}</a></li>)}
           </ul>
         </nav>
-        <a class="knopf knopf-klein kopf-termin" href={TERMIN_URL}>Termin buchen</a>
+        <a class="knopf knopf-klein kopf-termin" href={TERMIN_URL}>Termin wählen</a>
         <details class="menue" data-menue>
           <summary aria-label="Menü"><span class="menue-strich" aria-hidden="true"></span><span class="menue-text">Menü</span></summary>
           <nav aria-label="Hauptnavigation mobil">
@@ -173,7 +170,7 @@ const profile = SOCIAL.filter((s) => s.url);
           <p>Ein Angebot der <a href={O.url} set:html={firma} /><br />{O.strasse}, {O.plz} {O.ort}</p>
           <p><a href={O.telefonLink}>{O.telefon}</a><br /><a href={`mailto:${O.email}`}>{O.email}</a></p>
           {profile.length > 0 && <p>{profile.map((s, i) => <>{i > 0 && ' · '}<a href={s.url}>{s.name}</a></>)}</p>}
-          <p><a class="knopf knopf-hell knopf-klein" href={TERMIN_URL}>Termin buchen</a></p>
+          <p><a class="knopf knopf-hell knopf-klein" href={TERMIN_URL}>Termin wählen</a></p>
         </div>
         <div>
           <p class="fuss-titel">Seite</p>
@@ -186,9 +183,6 @@ const profile = SOCIAL.filter((s) => s.url);
             <li><a href="/erstinformation">Erstinformation</a></li>
           </ul>
         </div>
-      </div>
-      <div class="rahmen fuss-unten">
-        <p>{PFLICHTHINWEIS}</p>
       </div>
     </footer>
     <script is:inline>
