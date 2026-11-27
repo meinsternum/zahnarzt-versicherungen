@@ -96,7 +96,13 @@ export const staff = [
   email: process.env[`STAFF_${s.id.toUpperCase()}_EMAIL`] || `${s.id}@example.invalid`,
   configured: Boolean(process.env[`STAFF_${s.id.toUpperCase()}_EMAIL`]),
 }))
-  .map((s) => ({ ...s, calendarId: s.email }));
+  .map((s) => ({
+    ...s,
+    calendarId: s.email,
+    // Weitere Kalender (z. B. privater Google-Kalender), die nur auf „belegt“ geprüft werden. Aus STAFF_<ID>_EXTRA_CALENDARS,
+    // mehrere Adressen mit Komma getrennt. Der Kalender muss für die meinsternum-Adresse der Person mindestens „Nur frei/gebucht“ freigegeben sein.
+    extraCalendars: (process.env[`STAFF_${s.id.toUpperCase()}_EXTRA_CALENDARS`] || '').split(',').map((x) => x.trim()).filter(Boolean),
+  }));
 
 // Dauer eines Termins: Standard der Terminart, außer die Person hat eine eigene Dauer (staff.minutes).
 export const minutesFor = (typeId, person) => person?.minutes?.[typeId] ?? appointmentTypes[typeId].minutes;

@@ -25,14 +25,21 @@ export function googleCalendar(credentialsJson = process.env.GOOGLE_SERVICE_ACCO
 
   return {
     async freeBusy(staff, fromMs, toMs) {
+      const ids = [staff.calendarId, ...(staff.extraCalendars || [])];
       const res = await req(staff, {
         url: `${API}/freeBusy`,
         method: 'POST',
-        data: { timeMin: new Date(fromMs).toISOString(), timeMax: new Date(toMs).toISOString(), timeZone: TZ, items: [{ id: staff.calendarId }] },
+        data: { timeMin: new Date(fromMs).toISOString(), timeMax: new Date(toMs).toISOString(), timeZone: TZ, items: ids.map((id) => ({ id })) },
       });
-      const entry = res.data.calendars?.[staff.calendarId];
-      if (!entry || entry.errors?.length) throw new Error(`freebusy_failed_${staff.id}: ${JSON.stringify(entry?.errors || 'no data')}`);
-      return entry.busy.map((b) => ({ start: Date.parse(b.start), end: Date.parse(b.end) }));
+      // Sicher statt großzügig: Ist ein Kalender nicht lesbar (z. B. Freigabe fehlt), wird die Person nicht angeboten, statt Zeiten zu verschenken.
+      // Die Fehlermeldung nennt nur die Person und den Grund, keine Adressen.
+      const busy = [];
+      for (const id of ids) {
+        const entry = res.data.calendars?.[id];
+        if (!entry || entry.errors?.length) throw new Error(`freebusy_failed_${staff.id}${id === staff.calendarId ? '' : '_extra'}: ${entry?.errors?.[0]?.reason || 'no data'}`);
+        busy.push(...entry.busy.map((b) => ({ start: Date.parse(b.start), end: Date.parse(b.end) })));
+      }
+      return busy;
     },
     async createEvent(staff, { summary, description, location, startMs, endMs }) {
       const res = await req(staff, {

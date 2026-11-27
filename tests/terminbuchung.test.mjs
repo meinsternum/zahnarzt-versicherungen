@@ -310,3 +310,11 @@ test('Henry: Beratung dauert 60 Minuten, die anderen 90, auch bei „nächster f
     useTestData();
   }
 });
+
+test('Weitere Kalender: Variable STAFF_<ID>_EXTRA_CALENDARS wird gelesen', async () => {
+  process.env.STAFF_PATRICK_EXTRA_CALENDARS = ' a@example.com, b@example.com ,';
+  const { staff } = await import(`../netlify/lib/config.mjs?x=${Date.now()}`);
+  delete process.env.STAFF_PATRICK_EXTRA_CALENDARS;
+  assert.deepEqual(staff.find((s) => s.id === 'patrick').extraCalendars, ['a@example.com', 'b@example.com']);
+  assert.deepEqual(staff.find((s) => s.id === 'aileen').extraCalendars, []);
+});
