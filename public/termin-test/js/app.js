@@ -10,7 +10,8 @@ function show(view) {
 }
 
 const initials = (name) => name.trim().slice(0, 1).toUpperCase();
-const staffTitle = (type, s) => (type.id === 'finanzierung' ? `${type.title} bei ${s.name}` : `${type.title} bei ${s.name}`);
+const staffTitle = (type, s) => `${type.title} bei ${s.name}`;
+const minutesOf = (type, staffId) => type.staff.find((s) => s.id === staffId)?.minutes ?? type.minutes;
 
 function renderTypes() {
   const types = state.config.types.filter((t) => t.staff.length);
@@ -27,7 +28,7 @@ function renderStaff() {
       .map(
         (s) => `<article class="buch-karte">${s.photo ? `<img class="buch-foto" src="${esc(s.photo)}" alt="${esc(s.name)}" width="120" height="120" loading="lazy">` : `<span class="buch-avatar" aria-hidden="true">${esc(initials(s.name))}</span>`}
           <h3>${esc(staffTitle(t, s))}</h3><p>${esc(s.blurb)}</p>
-          <p class="buch-dauer">${esc(minutesLabel(t.minutes))}</p>
+          <p class="buch-dauer">${esc(minutesLabel(s.minutes ?? t.minutes))}</p>
           <button type="button" class="knopf knopf-rand" data-staff="${esc(s.id)}" aria-label="Termin buchen bei ${esc(s.name)}">Termin buchen</button></article>`,
       )
       .join('');
@@ -60,7 +61,7 @@ function personName() {
 function chooseStaff(id) {
   state.staff = id;
   state.slot = null;
-  el('picked-staff').textContent = `${state.type.title}, ${minutesLabel(state.type.minutes)}, ${id === 'any' ? 'nächster freier Termin' : `bei ${personName()}`}`;
+  el('picked-staff').textContent = `${state.type.title}, ${id === 'any' ? '' : `${minutesLabel(minutesOf(state.type, id))}, `}${id === 'any' ? 'nächster freier Termin' : `bei ${personName()}`}`;
   show('time');
   mountPicker(el('picker'), {
     typeId: state.type.id,
@@ -70,7 +71,7 @@ function chooseStaff(id) {
       el('summary-title').textContent = id === 'any' ? state.type.title : staffTitle(state.type, { name: personName() });
       el('summary-time').textContent = `${fmtDate(slot.start)} um ${fmtTime(slot.start).replace(' Uhr', '')}`;
       setPhoto(el('summary-photo'), state.type.staff.find((x) => x.id === id)?.photo, personName());
-      el('summary-meta').textContent = minutesLabel(state.type.minutes);
+      el('summary-meta').textContent = id === 'any' ? '' : minutesLabel(minutesOf(state.type, id));
       show('form');
     },
   });

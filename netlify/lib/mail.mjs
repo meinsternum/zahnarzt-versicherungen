@@ -156,7 +156,7 @@ const dateSubject = (b) => `${formatDateDe(Date.parse(b.start_at))}, ${formatTim
 function detailRows(b, type, person, info) {
   return [
     ['Wann', when(b)],
-    ['Dauer', minutesLabel(type.minutes)],
+    ['Dauer', minutesLabel(Math.round((Date.parse(b.end_at) - Date.parse(b.start_at)) / 60000))],
     ['Mit', person.name],
     ['Beratungsform', info.label],
   ];

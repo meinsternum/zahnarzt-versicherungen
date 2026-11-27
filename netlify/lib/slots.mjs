@@ -1,5 +1,5 @@
 import { useGoogle } from './env.mjs';
-import { settings, staff as allStaff, appointmentTypes } from './config.mjs';
+import { settings, staff as allStaff, appointmentTypes, minutesFor } from './config.mjs';
 import { zonedToUtc, addDays, weekdayOf } from './tz.mjs';
 
 export function staffForType(typeId) {
@@ -23,11 +23,11 @@ export async function computeSlots({ typeId, staffId = 'any', fromDate, days = 1
   const rangeStart = zonedToUtc(fromDate, '00:00');
   const rangeEnd = zonedToUtc(addDays(fromDate, days), '00:00');
   const buf = settings.bufferMinutes * 60e3;
-  const dur = type.minutes * 60e3;
   const step = type.stepMinutes * 60e3;
   const bySlot = new Map();
 
   for (const s of candidates) {
+    const dur = minutesFor(typeId, s) * 60e3;
     let busy = await getBusy(s, rangeStart - buf, rangeEnd + buf);
     if (ignore && ignore.staffId === s.id) busy = busy.filter((b) => !(b.start === ignore.start && b.end === ignore.end));
     for (let i = 0; i < days; i++) {
@@ -38,11 +38,13 @@ export async function computeSlots({ typeId, staffId = 'any', fromDate, days = 1
         for (let t = ws; t + dur <= we; t += step) {
           if (t < earliest || t > latest) continue;
           if (busy.some((b) => t - buf < b.end && t + dur + buf > b.start)) continue;
-          if (!bySlot.has(t)) bySlot.set(t, []);
-          bySlot.get(t).push(s.id);
+          if (!bySlot.has(t)) bySlot.set(t, { staffIds: [], ends: {} });
+          bySlot.get(t).staffIds.push(s.id);
+          bySlot.get(t).ends[s.id] = t + dur;
         }
       }
     }
   }
-  return [...bySlot.entries()].sort((a, b) => a[0] - b[0]).map(([start, staffIds]) => ({ start, end: start + dur, staffIds }));
+  // end gilt je Person (ends[staffId]), weil die Dauer bei einzelnen Personen abweichen kann
+  return [...bySlot.entries()].sort((a, b) => a[0] - b[0]).map(([start, v]) => ({ start, end: Math.min(...Object.values(v.ends)), ends: v.ends, staffIds: v.staffIds }));
 }

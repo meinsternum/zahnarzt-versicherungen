@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import os from 'node:os';
 import path from 'node:path';
 import fs from 'node:fs/promises';
-import { staff as liveStaff, settings, externalLinks } from '../netlify/lib/config.mjs';
+import { staff as liveStaff, settings, externalLinks, minutesFor } from '../netlify/lib/config.mjs';
 import { zonedToUtc, localDate, localTime } from '../netlify/lib/tz.mjs';
 import { fileStore } from '../netlify/lib/store.mjs';
 import { demoCalendar } from '../netlify/lib/calendar.mjs';
@@ -208,9 +208,8 @@ test('Echte Einstellungen: wer ist wann buchbar', async () => {
   useRealData();
   try {
     const ids = (t) => liveStaff.filter((s) => s.types.includes(t)).map((s) => s.id).sort();
-    assert.deepEqual(ids('erstgespraech'), ['aileen', 'alexios', 'fatma', 'frank', 'michael', 'patrick', 'steffen']);
-    assert.deepEqual(ids('kurzberatung'), ids('erstgespraech'));
-    assert.deepEqual(ids('finanzierung'), ['henry']);
+    assert.deepEqual(ids('erstgespraech'), ['aileen', 'alexios', 'fatma', 'frank', 'henry', 'michael', 'patrick', 'steffen']);
+    assert.deepEqual(ids('kurzberatung'), ids('erstgespraech').filter((x) => x !== 'henry'));
     assert.ok(!liveStaff.some((s) => ['eva', 'kirsten'].includes(s.id)), 'Eva und Kirsten sind nicht buchbar');
     assert.equal(settings.minNoticeHours, 24);
     assert.equal(settings.bufferMinutes, 30);
@@ -236,9 +235,11 @@ test('Echte Einstellungen: wer ist wann buchbar', async () => {
     const pa = (await range('patrick', 'erstgespraech')).days[0];
     assert.equal(pa.date, '2026-11-17');
     assert.ok(pa.slots[0].time >= '16:00');
-    // Henry bietet kein Erstgespräch an
-    await assert.rejects(() => range('henry', 'erstgespraech'), BookingError);
-    assert.ok((await range('henry', 'finanzierung')).days.length > 0);
+    // Henry steht unter „Beratung“, dauert bei ihm aber 60 statt 90 Minuten; keine Kurzberatung
+    assert.ok((await range('henry', 'erstgespraech')).days.length > 0);
+    assert.equal(minutesFor('erstgespraech', liveStaff.find((s) => s.id === 'henry')), 60);
+    assert.equal(minutesFor('erstgespraech', liveStaff.find((s) => s.id === 'patrick')), 90);
+    await assert.rejects(() => range('henry', 'kurzberatung'), BookingError);
   } finally {
     useTestData();
   }
@@ -290,4 +291,22 @@ test('Datenschutz: Buchungen werden nach der Aufbewahrungsfrist aus der Datenban
   await createBooking(deps, input(zonedToUtc('2026-11-17', '10:00')), NOW);
   assert.equal(await purgeOldBookings(deps, NOW + 6 * 30 * 24 * 3600000), 0, 'nach 6 Monaten noch da');
   assert.equal(await purgeOldBookings(deps, NOW + 14 * 30 * 24 * 3600000), 1, 'nach 14 Monaten gelöscht');
+});
+
+test('Henry: Beratung dauert 60 Minuten, die anderen 90, auch bei „nächster freier Termin“', async () => {
+  useRealData();
+  try {
+    const { deps, events } = await setup();
+    const sl = await listSlots(deps, { typeId: 'erstgespraech', staffId: 'henry', fromDate: '2026-11-17', days: 3, now: NOW });
+    const start = Date.parse(sl.days[0].slots[0].start);
+    const r = await createBooking(deps, input(start, { staff: 'henry' }), NOW);
+    assert.equal(r.booking.minutes, 60);
+    assert.equal(r.booking.end, new Date(start + 60 * 60000).toISOString());
+    const pa = await listSlots(deps, { typeId: 'erstgespraech', staffId: 'patrick', fromDate: '2026-11-17', days: 3, now: NOW });
+    const r2 = await createBooking(deps, input(Date.parse(pa.days[0].slots[0].start), { staff: 'patrick', email: 'b@example.com' }), NOW);
+    assert.equal(r2.booking.minutes, 90);
+    assert.ok(events.length >= 2);
+  } finally {
+    useTestData();
+  }
 });

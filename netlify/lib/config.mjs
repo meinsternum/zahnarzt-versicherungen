@@ -64,13 +64,6 @@ export const appointmentTypes = {
     stepMinutes: 15,
     description: 'Klarheit in 15 Minuten: Deine Frage, klare Antwort. Orientierung statt Grübeln.',
   },
-  finanzierung: {
-    id: 'finanzierung',
-    title: 'Beratung zu Immobilienfinanzierung',
-    minutes: 60,
-    stepMinutes: 30,
-    description: 'Beratung zur Finanzierung, zum Beispiel für Immobilie oder Praxis.',
-  },
 };
 
 // Sprechzeiten wie in den Wix-Einstellungen (Stand 18.11.2026). Mehrere Zeitfenster pro Tag sind möglich.
@@ -95,8 +88,8 @@ export const staff = [
   },
   { id: 'fatma', blurb: 'Beratung zu sämtlichen Versicherungen.', name: 'Fatma', types: ['erstgespraech', 'kurzberatung'], hours: days(MO_FR, ['11:00', '21:30']) },
   { id: 'frank', blurb: 'Beratung zu Geldanlage, Immobilien-Kapitalanlage, Photovoltaik-Investments und Versicherungen.', name: 'Frank', types: ['erstgespraech', 'kurzberatung'], hours: { ...days([2], ['11:00', '13:00'], ['15:00', '18:00']), ...days([5], ['11:00', '13:00'], ['15:00', '17:00']) } },
-  // Henry berät nur zu Finanzierung: nur diese Terminart, nicht Erstgespräch oder Kurzberatung.
-  { id: 'henry', blurb: 'Henry hilft dir bei deinen Fragen zur Immobilienfinanzierung.', name: 'Henry', types: ['finanzierung'], hours: days(MO_FR, ['11:00', '21:30']) },
+  // Henry steht wie alle anderen unter „Beratung“, die Beratung dauert bei ihm aber nur 1 Stunde (minutes überschreibt die Standarddauer).
+  { id: 'henry', blurb: 'Henry hilft dir bei deinen Fragen zur Immobilienfinanzierung.', name: 'Henry', types: ['erstgespraech'], minutes: { erstgespraech: 60 }, hours: days(MO_FR, ['11:00', '21:30']) },
 ].map((s) => ({
   ...s,
   // Kalender-Adresse je Person aus STAFF_<ID>_EMAIL (nicht im öffentlichen Code); ohne Eintrag eine ungültige Platzhalter-Adresse
@@ -104,6 +97,9 @@ export const staff = [
   configured: Boolean(process.env[`STAFF_${s.id.toUpperCase()}_EMAIL`]),
 }))
   .map((s) => ({ ...s, calendarId: s.email }));
+
+// Dauer eines Termins: Standard der Terminart, außer die Person hat eine eigene Dauer (staff.minutes).
+export const minutesFor = (typeId, person) => person?.minutes?.[typeId] ?? appointmentTypes[typeId].minutes;
 
 // Externe Buchungsseiten (nicht Teil dieser Buchung), werden unter den Terminarten verlinkt.
 export const externalLinks = [

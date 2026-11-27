@@ -1,5 +1,5 @@
 // Geschäftslogik: buchen, absagen, verlegen, erinnern. Abhängigkeiten (Speicher, Kalender, Mail) werden übergeben, damit alles testbar ist.
-import { settings, appointmentTypes, staff as allStaff, sourceOptions, externalLinks, channels, office } from './config.mjs';
+import { settings, appointmentTypes, minutesFor, staff as allStaff, sourceOptions, externalLinks, channels, office } from './config.mjs';
 import { computeSlots, staffForType } from './slots.mjs';
 import { localDate, formatDayShortDe, localTime, addDays } from './tz.mjs';
 import { newId, newToken } from './store.mjs';
@@ -34,7 +34,7 @@ export function publicBooking(b) {
   return {
     typeId: b.type_id,
     typeTitle: appointmentTypes[b.type_id].title,
-    minutes: appointmentTypes[b.type_id].minutes,
+    minutes: Math.round((Date.parse(b.end_at) - Date.parse(b.start_at)) / 60000),
     staffId: b.staff_id,
     staffName: person.name,
     staffPhoto: photoOf(b.staff_id),
@@ -48,7 +48,7 @@ export function publicBooking(b) {
 
 export function publicConfig() {
   return {
-    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, blurb: t.id === 'kurzberatung' ? t.description : s.blurb || t.description, photo: photoOf(s.id) })) })),
+    types: Object.values(appointmentTypes).map((t) => ({ id: t.id, title: t.title, minutes: t.minutes, description: t.description, staff: staffForType(t.id).map((s) => ({ id: s.id, name: s.name, minutes: minutesFor(t.id, s), blurb: t.id === 'kurzberatung' ? t.description : s.blurb || t.description, photo: photoOf(s.id) })) })),
     channels: Object.values(channels).map((c) => ({ id: c.id, label: c.label })),
     external: externalLinks,
     sources: sourceOptions,
@@ -149,7 +149,7 @@ export async function createBooking(deps, input, now = Date.now()) {
     type_id: v.typeId,
     staff_id: staffId,
     start_at: new Date(slot.start).toISOString(),
-    end_at: new Date(slot.end).toISOString(),
+    end_at: new Date(slot.ends[staffId]).toISOString(),
     name: v.name,
     email: v.email,
     phone: v.phone,
@@ -185,7 +185,7 @@ export async function createBooking(deps, input, now = Date.now()) {
       ].filter(Boolean).join('\n'),
       location: v.channel === 'onsite' ? `${office.company}, ${office.street}, ${office.zip} ${office.city}` : v.channel === 'online' ? office.zoomPage : '',
       startMs: slot.start,
-      endMs: slot.end,
+      endMs: slot.ends[staffId],
     });
     booking = await deps.store.update(booking.id, { event_id: ev.eventId });
   } catch (e) {
@@ -246,13 +246,13 @@ export async function rescheduleBooking(deps, token, newStartIso, now = Date.now
 
   let updated;
   try {
-    updated = await deps.store.update(b.id, { start_at: new Date(slot.start).toISOString(), end_at: new Date(slot.end).toISOString(), reminders_sent: [] });
+    updated = await deps.store.update(b.id, { start_at: new Date(slot.start).toISOString(), end_at: new Date(slot.ends[b.staff_id]).toISOString(), reminders_sent: [] });
   } catch (e) {
     if (e.code === 'CONFLICT') throw new BookingError('slot_unavailable', 'Dieser Termin wurde gerade vergeben. Bitte wähle eine andere Zeit.', 409);
     throw e;
   }
   try {
-    if (b.event_id) await deps.calendar.updateEvent(person, b.event_id, { startMs: slot.start, endMs: slot.end });
+    if (b.event_id) await deps.calendar.updateEvent(person, b.event_id, { startMs: slot.start, endMs: slot.ends[b.staff_id] });
   } catch (e) {
     await deps.store.update(b.id, { start_at: b.start_at, end_at: b.end_at, reminders_sent: b.reminders_sent }).catch(() => {});
     console.error('Kalender-Update fehlgeschlagen:', e);
