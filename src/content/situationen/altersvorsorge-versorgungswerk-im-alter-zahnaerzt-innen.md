@@ -42,6 +42,7 @@ verwandt:
   - pkv-im-alter-beitraege-zahnaerzt-innen
   - altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen
   - altersvorsorgedepot-foerderung-zahnaerzt-innen
+  - altersvorsorgedepot-neben-versorgungswerk-zahnaerzt-innen
 hinweise:
   - nach: "Woran knüpft dein Beitrag an?"
     art: einschaetzen

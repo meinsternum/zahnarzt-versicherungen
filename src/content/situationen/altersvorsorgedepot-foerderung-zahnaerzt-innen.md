@@ -40,6 +40,7 @@ verwandt:
   - altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
   - berufsunfaehigkeit-zahnaerztin-berufsstart
+  - altersvorsorgedepot-neben-versorgungswerk-zahnaerzt-innen
 hinweise:
   - nach: "Was gilt, wenn du angestellt bist?"
     art: mail
