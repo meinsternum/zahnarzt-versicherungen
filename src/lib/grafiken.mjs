@@ -119,7 +119,7 @@ export const grafiken = {
     {
       typ: 'tabelle', nach: 'Wer bekommt die Förderung beim Altersvorsorgedepot ab 2027?',
       titel: 'Zwei Wege zur Förderung ab 2027',
-      spalten: ['', 'Angestellt mit Versorgungswerk', 'Mit eigener Praxis'],
+      spalten: ['', 'Angestellt mit Versorgungswerk', 'Mit eigener Praxis (selbstständig)'],
       zeilen: [
         ['Einkünfte', 'Nichtselbständige Arbeit (§ 19 EStG)', 'Freiberufliche Tätigkeit (§ 18 Abs. 1 Nr. 1 EStG)'],
         ['Voraussetzung', 'Versorgungsabgabe als Pflichtmitglied und Einwilligung', 'Steuererklärung für das Beitragsjahr'],
