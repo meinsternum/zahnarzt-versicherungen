@@ -3,7 +3,7 @@ frage: "Was passiert bei Zahnärzt*innen mit Versorgungswerk und Altersvorsorged
 titel: "Altersvorsorge im Todesfall bei Zahnärzt*innen"
 kurzantwort: "Das Versorgungswerk für Zahnärzt*innen sichert Hinterbliebene mit Renten ab, vererben lassen sich die Ansprüche nach der Satzung aus Westfalen-Lippe nicht. Beim Altersvorsorgedepot kann eine Auszahlung im Todesfall Zulagen kosten, wenn keine Ausnahme greift."
 metaDescription: "Was Hinterbliebene von Zahnärzt*innen aus Versorgungswerk und Altersvorsorgedepot bekommen: Renten, Wartezeit der Ehe, Zulagenrückzahlung. Mit Satzungen."
-status: entwurf
+status: freigegeben
 stand: "2026-11-28"
 pruefenBis: "2027-01-15"
 reihenfolge: 24
