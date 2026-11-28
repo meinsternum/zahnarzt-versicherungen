@@ -15,7 +15,7 @@ quellen:
   - titel: "§ 93 EStG, Schädliche Verwendung (gesetze-im-internet.de, Fassung bis 31.12.2026) und Fassung ab 01.01.2027 nach Artikel 2 Nr. 14 des Altersvorsorgereformgesetzes"
     url: "https://www.gesetze-im-internet.de/estg/__93.html"
   - titel: "Altersvorsorgereformgesetz vom 26.05.2026 (BGBl. 2026 I Nr. 156), Artikel 2 Nr. 1, 3, 6 und 14 und Artikel 6 (Änderungen ab 01.01.2027)"
-    url: "https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf"
+    url: "https://www.recht.bund.de/bgbl/1/2026/156/regelungstext.pdf?__blob=publicationFile&v=1"
   - titel: "Bundeszahnärztekammer: Schritte in das zahnärztliche Berufsleben (Pflichtmitgliedschaft)"
     url: "https://www.bzaek.de/fileadmin/PDFs/b/schritte_in_das_zahnaerztliche_berufsleben.pdf"
 faq:
@@ -36,6 +36,7 @@ faq:
 verwandt:
   - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+  - altersvorsorgedepot-foerderung-zahnaerzt-innen
 hinweise:
   - nach: "Wie sieht das in Zahlen aus?"
     art: einschaetzen

@@ -106,6 +106,8 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen': 'patrick-06-hoch',
   // Altersvorsorge Todesfall (28.11.2026): anderes Motiv als Seite 21.
   'altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen': 'patrick-04-hoch',
+  // Altersvorsorgedepot Förderung (28.11.2026): anders als 21 (patrick-06) und 24 (patrick-04), geschlossener Mund.
+  'altersvorsorgedepot-foerderung-zahnaerzt-innen': 'patrick-03-hoch',
   'krankengeld-luecke-zahnaerzt-innen': 'schreibtisch-02-hoch',
   'pkv-oder-gkv-wechsel-zahnaerzt-innen': 'patrick-03-hoch',
   'krankentagegeld-praxisinhaber-zahnaerzt-innen': 'patrick-06-hoch',

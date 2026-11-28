@@ -115,6 +115,31 @@ export const grafiken = {
       fuss: 'Fiktives Beispiel mit erfundenen Zahlen und angenommenen 2 Prozent Preisentwicklung pro Jahr, keine Prognose.',
     },
   ],
+  'altersvorsorgedepot-foerderung-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Wer bekommt die Förderung beim Altersvorsorgedepot ab 2027?',
+      titel: 'Zwei Wege zur Förderung ab 2027',
+      spalten: ['', 'Angestellt mit Versorgungswerk', 'Mit eigener Praxis (selbstständig)'],
+      zeilen: [
+        ['Einkünfte', 'Nichtselbständige Arbeit (§ 19 EStG)', 'Freiberufliche Tätigkeit (§ 18 Abs. 1 Nr. 1 EStG)'],
+        ['Voraussetzung', 'Versorgungsabgabe als Pflichtmitglied und Einwilligung', 'Steuererklärung für das Beitragsjahr'],
+        ['Wo du handelst', 'Einwilligung beim Versorgungswerk bis Ende des Beitragsjahres', 'Beim Finanzamt über die Steuererklärung'],
+        ['Alter', 'Vor Vollendung des 67. Lebensjahres', 'Vor Vollendung des 67. Lebensjahres'],
+      ],
+      fuss: 'Stand: 28.11.2026, nach § 10a Abs. 1 Satz 5 und § 81a EStG in der Fassung ab 01.01.2027 (siehe Quellen).',
+    },
+    {
+      typ: 'tabelle', nach: 'Wie hoch ist die Zulage?',
+      titel: 'Fiktives Beispiel: Grundzulage je Jahresbeitrag',
+      spalten: ['Jahresbeitrag', 'Rechnung', 'Grundzulage'],
+      zeilen: [
+        ['120 €', '50 % von 120 €', '60 €'],
+        ['600 €', '50 % von 360 € plus 25 % von 240 €', '240 €'],
+        ['1.800 €', '50 % von 360 € plus 25 % von 1.440 €', '540 €'],
+      ],
+      fuss: 'Fiktives Beispiel nach § 84 und § 86 EStG in der Fassung ab 01.01.2027, ohne Kinderzulage, Zulageberechtigte älter als 25.',
+    },
+  ],
   'altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen': [
     {
       typ: 'tabelle', nach: 'Was bekommen Hinterbliebene aus dem Versorgungswerk?',
