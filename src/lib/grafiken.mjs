@@ -148,8 +148,8 @@ export const grafiken = {
       zeilen: [
         ['Wer regelt', 'Versorgungsstatut der Kammer', 'Gesetz (EStG, AltZertG) und Vertrag'],
         ['Zusätzlich einzahlen', 'Bis zum 1,5-Fachen des Regelbeitrags im Kalenderjahr, ab 57 nur halbe Punkte (§ 21)', 'Höchstens 6.840 € im Jahr je Vertrag, höchstens zwei geförderte Verträge ab 2027'],
-        ['Altersgrenze beim Einzahlen', 'Pflichtmitglied, wer bei Eintritt in die Kammer jünger als 67 ist (§ 9)', 'Förderung nur vor dem 67. Geburtstag (§ 10a Abs. 1 Satz 5 EStG)'],
-        ['Beginn der Leistung', 'Ab dem Monat nach dem 67. Geburtstag, vorziehen bis fünf Jahre mit 4 % Kürzung je Jahr, aufschieben bis 72 mit 4,5 % je Jahr (§ 16)', 'Frühestens ab 65, spätestens ab 70, Ausnahme bei früherer Leistung aus einem gesetzlichen Alterssicherungssystem'],
+        ['Altersgrenze', 'Pflichtmitglied, wer bei Eintritt in die Kammer jünger als 67 ist (§ 9); Beiträge bis zum Versorgungsfall (§ 20 Abs. 1)', 'Förderung nur vor dem 67. Geburtstag (§ 10a Abs. 1 Satz 5 EStG)'],
+        ['Beginn der Leistung', 'Ab dem Monat nach dem 67. Geburtstag, vorziehen bis fünf Jahre mit 4 % Kürzung je Jahr, aufschieben bis 72 mit 4,5 % je Jahr (§ 16)', 'In der Regel frühestens ab 65, spätestens ab 70; früher nur bei eigener früherer Leistung aus einem gesetzlichen Alterssicherungssystem'],
         ['Form der Leistung', 'Alters-, BU-, Witwen- oder Witwer- und Waisenrente (§ 14)', 'Leibrente oder Auszahlungsplan bis mindestens 85, bis 30 % des Kapitals außerhalb der Monatsleistungen'],
       ],
       fuss: 'Stand: 28.11.2026, nach Versorgungsstatut Sachsen-Anhalt (Stand 01.08.2025), § 10a EStG und § 1 AltZertG in der Fassung ab 01.01.2027 (siehe Quellen). Die Satzung deines Versorgungswerks kann abweichen.',
