@@ -44,6 +44,7 @@ verwandt:
   - praxisausfall-oder-krankentagegeld-zahnaerzt-innen
   - unfallversicherung-zahnaerzt-innen-braucht-man-das
   - unfallversicherung-nadelstich-infektion-zahnaerzt-innen
+  - altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen
 hinweise:
   - nach: "Was bedeutet „Praxis aufgeben“ für die Rente?"
     art: einschaetzen

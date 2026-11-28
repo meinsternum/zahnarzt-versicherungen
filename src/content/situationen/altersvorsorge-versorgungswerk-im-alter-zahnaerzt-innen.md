@@ -40,6 +40,7 @@ verwandt:
   - berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen
   - pkv-oder-gkv-wechsel-zahnaerzt-innen
   - pkv-im-alter-beitraege-zahnaerzt-innen
+  - altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen
 hinweise:
   - nach: "Woran knüpft dein Beitrag an?"
     art: einschaetzen
