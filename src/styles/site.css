@@ -569,3 +569,50 @@ main:focus { outline: none; }
 .u-karten .karte h3 { margin: 0; font-size: 1.12rem; color: var(--a-tief); }
 .u-karten .karte > p:not(.karte-phase) { font-size: 0.92rem; line-height: 1.55; color: var(--text-leise); display: -webkit-box; -webkit-line-clamp: 5; line-clamp: 5; -webkit-box-orient: vertical; overflow: hidden; }
 .u-karten .karte-mehr { position: absolute; left: 1.5rem; bottom: 1.25rem; font-size: 0.92rem; font-weight: 600; color: #27607c; }
+
+/* Unterseiten im neuen Design (Über uns, Kontakt, Rechtstexte), 28.11.2026 */
+.uu-hero-raster { display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.uu-hero-bild { margin: 0; }
+.uu-hero-bild img { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; box-shadow: 0 18px 40px rgba(15, 30, 60, 0.35); }
+.uu-hero-bild figcaption { font-size: 0.82rem; color: rgba(255, 255, 255, 0.88); margin-top: 0.6rem; }
+.a-hero .t-einleitung a { color: #fff; }
+.uu-patrick { background: #e8eff6; padding: 0 0 clamp(2.5rem, 5vw, 4rem); }
+.uu-patrick-karte { display: grid; grid-template-columns: 19rem minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; background: #fff; border-radius: 24px; padding: clamp(1.25rem, 3vw, 2rem); box-shadow: 0 8px 24px rgba(31, 55, 95, 0.1); }
+.uu-patrick-foto { margin: 0; }
+.uu-patrick-foto img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 18px; }
+.uu-patrick-text .karte-phase { margin-bottom: 0.9rem; color: #27607c; }
+.uu-patrick-text h2 { font-size: clamp(1.7rem, 3vw, 2.2rem); margin-bottom: 0.9rem; }
+.uu-patrick-text p:last-child { max-width: 40rem; font-size: 1.06rem; margin-bottom: 0; }
+.uu-team { background: #fafafb; padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
+.uu-team h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin-bottom: 1.75rem; }
+.uu-karten { display: grid; gap: 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr)); }
+.uu-person { display: flex; flex-direction: column; background: #fff; border-radius: 18px; overflow: hidden; box-shadow: 0 8px 24px rgba(31, 55, 95, 0.1); transition: transform 0.25s var(--weich), box-shadow 0.25s var(--weich); }
+.uu-person:hover { transform: translateY(-3px); box-shadow: 0 14px 30px rgba(31, 55, 95, 0.16); }
+.uu-person-bild { aspect-ratio: 4 / 5; background: #d9ebf1; }
+.uu-person-bild img { width: 100%; height: 100%; object-fit: cover; }
+.uu-initialen { display: grid; place-items: center; width: 100%; height: 100%; background: var(--verlauf); color: #fff; font-size: 3.2rem; font-weight: 300; letter-spacing: 0.04em; }
+.uu-person-text { padding: 1.25rem 1.4rem 1.5rem; display: flex; flex-direction: column; gap: 0.5rem; }
+.uu-person-text h3 { font-size: 1.2rem; color: var(--a-tief); }
+.uu-person-text .karte-phase { align-self: flex-start; margin: 0; color: #27607c; }
+.uu-person-text p:last-child { margin: 0; font-size: 0.95rem; line-height: 1.55; color: var(--text-leise); }
+.uu-quelle { margin: 1.5rem 0 0; font-size: 0.85rem; color: var(--text-leise); }
+@media (max-width: 860px) {
+  .uu-hero-raster { grid-template-columns: minmax(0, 1fr); }
+  .uu-patrick-karte { grid-template-columns: minmax(0, 1fr); }
+  .uu-patrick-foto { max-width: 16rem; }
+}
+.kt-wege { background: #e8eff6; padding: 0 0 clamp(2.5rem, 6vw, 4.5rem); }
+.kt-wege h2 { font-size: clamp(1.5rem, 2.8vw, 2.1rem); margin-bottom: 1.5rem; }
+.kt-karten { display: grid; gap: 1.1rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 15.5rem), 1fr)); margin-bottom: 2rem; }
+.kt-karte { background: #fff; border-radius: 18px; padding: 1.5rem; box-shadow: 0 8px 24px rgba(31, 55, 95, 0.1); }
+.kt-kachel { display: inline-grid; place-items: center; width: 4rem; height: 4rem; border-radius: 16px; background: var(--verlauf); color: #fff; flex: none; }
+.kt-karte h3 { margin: 1rem 0 0.35rem; font-size: 1.15rem; color: var(--a-tief); }
+.kt-karte p { margin: 0; font-size: 1.02rem; }
+.kt-bewertung { max-width: 30rem; }
+.rt-flaeche { background: #e8eff6; padding: 0 0 clamp(2.5rem, 6vw, 4.5rem); }
+.rt-karte { background: #fff; border-radius: 24px; padding: clamp(1.5rem, 4vw, 3rem); box-shadow: 0 8px 24px rgba(31, 55, 95, 0.1); }
+.rt-karte .prosa { max-width: 48rem; }
+.rt-download { display: flex; align-items: center; gap: 1rem; max-width: 48rem; margin-bottom: 2rem; padding: 1rem 1.25rem; border-radius: 16px; background: #e8eff6; text-decoration: none; color: var(--a-tief); transition: transform 0.25s var(--weich), box-shadow 0.25s var(--weich); }
+.rt-download:hover { transform: translateY(-3px); box-shadow: 0 10px 24px rgba(31, 55, 95, 0.15); color: var(--a-tief); }
+.rt-download-text { display: flex; flex-direction: column; flex: 1; line-height: 1.35; }
+.rt-download-text span { font-size: 0.88rem; color: var(--text-leise); }
