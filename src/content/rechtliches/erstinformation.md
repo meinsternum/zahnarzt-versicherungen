@@ -25,7 +25,7 @@ Wir bieten dir vor der Vermittlung oder dem Abschluss eines Versicherungsvertrag
 
 ## 4. Grundlage der Beratung und Vergütung
 
-Die MEIN STERNUM Finanzberatung GmbH erhält für die Vermittlung eines Versicherungsvertrags eine Courtage vom Versicherer. Du schuldest uns keine gesonderte Vergütung. Abweichende Vereinbarungen, etwa bei Netto- oder Honorartarifen, werden schriftlich getroffen. Bei Anlageberatung oder -vermittlung kann die Vergütung je nach deinen Wünschen und den vermittelten Produkten durch dich oder durch Dritte (Produktgeber) erfolgen. Zahlst du selbst, gelten gesonderte Vereinbarungen. Nehmen wir Zuwendungen Dritter entgegen, einschließlich Sach- und Dienstleistungen, stimmst du zu, dass wir diese vereinnahmen dürfen.
+Die MEIN STERNUM Finanzberatung GmbH erhält für die Vermittlung eines Versicherungsvertrags eine Courtage vom Versicherer. Die Courtage ist in der Versicherungsprämie enthalten, du zahlst sie nicht direkt an uns. Du schuldest uns keine gesonderte Vergütung. Abweichende Vereinbarungen, etwa bei Netto- oder Honorartarifen, werden schriftlich getroffen. Bei Anlageberatung oder -vermittlung kann die Vergütung je nach deinen Wünschen und den vermittelten Produkten durch dich oder durch Dritte (Produktgeber) erfolgen. Zahlst du selbst, gelten gesonderte Vereinbarungen. Neben der Courtage können wir weitere Zuwendungen Dritter erhalten, einschließlich Sach- und Dienstleistungen. Unsere Vergütung kann sich daher aus der Courtage und diesen Zuwendungen zusammensetzen. Du stimmst zu, dass wir sie vereinnahmen dürfen.
 
 <!-- Wortlaut sinngemäß nach der Erstinformation auf meinsternum.de (abgerufen 16.11.2026). -->
 
@@ -35,7 +35,7 @@ Eingetragen im Handelsregister des Amtsgerichts Köln, HRB 84954, Sitz Köln.
 
 Erlaubnis als Versicherungsmakler nach § 34d Abs. 1 GewO, erteilt am 24.11.2015 durch die IHK Köln, Unter Sachsenhausen 10-26, 50667 Köln. Registernummer im Versicherungsvermittlerregister: D-76KX-2USW4-01. Erlaubnis zur Finanzanlagenvermittlung nach § 34f Abs. 1 Satz 1 Nr. 1 GewO, Registrierungsnummer D-F-142-J122-06.
 
-Die Eintragungen können beim Deutschen Industrie- und Handelskammertag (DIHK), Breite Str. 29, 10178 Berlin, und unter www.vermittlerregister.info abgefragt werden.
+Die Eintragungen können beim Deutschen Industrie- und Handelskammertag (DIHK), Breite Str. 29, 10178 Berlin, Telefon 0180 600 585 0 (20 Cent pro Anruf aus dem deutschen Festnetz), und unter www.vermittlerregister.info abgefragt werden.
 
 ## 6. Beteiligungen
 
@@ -52,3 +52,7 @@ Bei Unzufriedenheit mit unserer Dienstleistung kannst du dich an folgende Stelle
 - Ombudsstelle des BVI Bundesverband Investment und Asset Management e.V., Unter den Linden 42, 10117 Berlin, Telefon 030 64490460, www.ombudsstelle-investmentfonds.de
 
 <!-- Die EU-Plattform zur Online-Streitbeilegung wurde am 20.07.2025 abgeschaltet (VO (EU) 2024/3228), der Hinweis ist entfallen. -->
+
+## 8. Wie du diese Erstinformation erhältst
+
+Die Erstinformation ist für dich kostenlos. Auf Wunsch senden wir sie dir auf Papier. Alternativ kannst du sie auf dieser Seite als PDF herunterladen und speichern, oder wir senden sie dir als PDF per E-Mail, wenn du uns eine E-Mail-Adresse mitteilst. Du hast die Wahl.
