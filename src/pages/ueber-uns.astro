@@ -1,12 +1,14 @@
 ---
 import { mitMarke } from '../lib/marke';
-// Über uns: Texte unverändert (freigegeben 12.11.2026), neues Layout und Fotos aus dem Pool.
+// Über uns im neuen Design (Kopf wie Ratgeber-Übersicht). Texte nach meinsternum.de/wir, Stand 28.11.2026.
+// Vanessa Steuer ist nicht mehr im Team (Patrick, 28.11.2026).
 import Base from '../layouts/Base.astro';
 import Foto from '../components/Foto.astro';
 import CtaBlock from '../components/CtaBlock.astro';
 import { zeigeUeberUns } from '../lib/status';
 import { ORGANISATION as O, SITE_URL } from '../lib/site';
 import { organisation, person, ORG_ID } from '../lib/schema';
+import type { FotoKey } from '../lib/fotos';
 
 if (!zeigeUeberUns) return new Response(null, { status: 404 });
 
@@ -15,63 +17,82 @@ const jsonLd = [
   organisation(),
   person(),
 ];
-const team = [
-  ['Aileen Scherer', 'Partnerin, im Team seit 2017. Schwerpunkte: Versicherungen, Immobilien als Kapitalanlage, Onlinemarketing.'],
-  ['Michael Elsner', 'Arzt- und Unternehmensberater, im Team seit August 2023. Schwerpunkte: Berufsstart, Niederlassung und Existenzgründung.'],
-  ['Alexios Karantonis', 'Versicherungsmakler, im Team seit Januar 2024. Schwerpunkte: private Krankenversicherung, Berufsunfähigkeit, Altersvorsorge.'],
-  ['Fatma Gözel-Bußmann', 'Finanzmaklerin, im Team seit 2020. Schwerpunkte: Berufsunfähigkeit, private Krankenversicherung, Altersvorsorge.'],
-  ['Frank Schmidt', 'Fachwirt für Finanzberatung (IHK), im Team seit Januar 2023. Schwerpunkte: Kapitalanlage und Altersvorsorge.'],
-  ['Steffen Weber', 'Schwerpunkte: Altersvorsorge und Investment.'],
-  ['Henry Momberger', 'Finanzplaner, im Team seit 2017. Schwerpunkt: Immobilienfinanzierung.'],
-  ['Kirsten Zimmermann', 'Im Team seit 2020. Ansprechpartnerin für Sachversicherungen, unterstützt die Organisation.'],
-  ['Eva Janßen', 'Assistentin in den Bereichen Versicherungen und Kundenkommunikation.'],
-  ['Vanessa Steuer', 'Im Team seit Februar 2022. Telefon und Social Media.'],
+type Mitglied = { name: string; rolle: string; text: string; foto?: FotoKey };
+const team: Mitglied[] = [
+  { name: 'Aileen Scherer', rolle: 'Partnerin', foto: 'team-aileen-hoch', text: 'Im Team seit 2017, als Finanzberaterin tätig seit 2010. Schwerpunkte: Versicherungen und Immobilien als Kapitalanlage. Außerdem beschäftigt sie sich mit Onlinemarketing.' },
+  { name: 'Michael Elsner', rolle: 'Arzt- und Unternehmensberater', foto: 'team-michael-hoch', text: 'Im Team seit August 2023. Zuvor 19 Jahre Finanzberater, seit 2019 mit eigener Beratungsfirma selbstständig. Schwerpunkte: Berufsstart, Niederlassung und Existenzgründung.' },
+  { name: 'Alexios Karantonis', rolle: 'Versicherungsmakler', foto: 'team-alexios-hoch', text: 'Im Team seit Januar 2024. Früher in der Finanzverwaltung NRW, heute Makler für Ärzt*innen und Akademiker*innen. Schwerpunkte: private Krankenversicherung, Berufsunfähigkeit, Altersvorsorge.' },
+  { name: 'Fatma Gözel-Bußmann', rolle: 'Finanzmaklerin', foto: 'team-fatma-hoch', text: 'Im Team seit 2020. Zuvor 12 Jahre Finanzberaterin, seit 2020 mit eigener Firma selbstständig. Schwerpunkte: Berufsunfähigkeit, private Krankenversicherung, Altersvorsorge.' },
+  { name: 'Steffen Weber', rolle: 'Altersvorsorge und Investment', foto: 'team-steffen-hoch', text: 'In der Finanzwelt seit 2016. Er betreut Altersvorsorge und Investment und erklärt komplexe Zusammenhänge verständlich.' },
+  { name: 'Frank Schmidt', rolle: 'Fachwirt für Finanzberatung (IHK)', foto: 'team-frank-hoch', text: 'Unterstützt das Team seit Januar 2023, selbstständig seit 2002. Schwerpunkte: Kapitalanlagen und Altersvorsorge.' },
+  { name: 'Henry Momberger', rolle: 'Finanzplaner', foto: 'team-henry-hoch', text: 'Im Team seit 2017. Seit 2011 ausschließlich auf Immobilienfinanzierungen ausgerichtet.' },
+  { name: 'Kirsten Zimmermann', rolle: 'Sachversicherungen, Organisation und Administration', foto: 'team-kirsten-hoch', text: 'Im Team seit 2020, in der Branche seit 2013. Ansprechpartnerin unter anderem für Haftpflicht- und Hausratversicherungen.' },
+  { name: 'Eva Janßen', rolle: 'Assistenz', foto: 'team-eva-hoch', text: 'Kauffrau für Versicherungen und Finanzen (IHK), seit 2013 in der Versicherungsbranche. Unterstützt bei Versicherungen und in der Kundenkommunikation.' },
 ];
+const initialen = (n: string) => n.split(' ').map((t) => t[0]).slice(0, 2).join('');
 const firma = mitMarke('MEIN STERNUM Finanzberatung GmbH');
 ---
-<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team von meinsternum in Köln." path="/ueber-uns" jsonLd={jsonLd} krumen={[{ name: 'Über uns', href: '/ueber-uns' }]}>
-  <div class="rahmen">
-    <header class="seitenkopf">
-      <h1>Über uns</h1>
-      <p class="einleitung">zahnarzt-versicherungen.de ist ein Angebot der <a href={O.url} set:html={firma} /> aus Köln. Wir beraten Zahnärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung. Darüber hinaus beraten wir auch Ärzt*innen.</p>
+<Base title="Über uns | zahnarzt-versicherungen.de" description="Wer hinter zahnarzt-versicherungen.de steht: das Team von meinsternum in Köln." path="/ueber-uns" jsonLd={jsonLd} krumen={[{ name: 'Über uns', href: '/ueber-uns' }]} krumenImKopf>
+  <div class="uebersichtsseite uu-seite">
+    <header class="a-hero u-hero">
+      <div class="rahmen">
+        <nav class="a-krumen" aria-label="Brotkrumen">
+          <ol>
+            <li><a href="/">Startseite</a></li>
+            <li><span aria-current="page">Über uns</span></li>
+          </ol>
+        </nav>
+        <div class="uu-hero-raster">
+          <div class="u-hero-text">
+            <h1>Über uns</h1>
+            <p class="t-einleitung">zahnarzt-versicherungen.de ist ein Angebot der <a href={O.url} set:html={firma} /> aus Köln. Wir beraten Zahnärzt*innen in allen Karrierephasen zu Versicherungen, Finanzanlagen, Finanzierung und Niederlassung. Darüber hinaus beraten wir auch Ärzt*innen.</p>
+          </div>
+          <figure class="uu-hero-bild">
+            <Foto foto="team-02" prioritaet sizes="(min-width: 960px) 520px, 92vw" breiten={[480, 720, 960, 1280]} />
+            <figcaption>Ein Teil des Teams in Köln</figcaption>
+          </figure>
+        </div>
+      </div>
+      <svg class="a-welle" viewBox="0 0 1440 60" preserveAspectRatio="none" aria-hidden="true"><path d="M0 60V30C240 0 480 0 720 22s480 30 720 8V60z" /></svg>
     </header>
 
-    <section class="abschnitt uu-person" id="patrick-senn" aria-labelledby="ps-h">
-      <figure class="uu-portrait">
-        <Foto foto="patrick-01-hoch" prioritaet sizes="(min-width: 760px) 18rem, 70vw" breiten={[300, 480, 640]} />
-      </figure>
-      <div>
-        <h2 id="ps-h" class="abschnitt-titel">Patrick Senn</h2>
-        <p>Patrick Senn hat die <Fragment set:html={firma} /> 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
+    <section class="uu-patrick" id="patrick-senn" aria-labelledby="ps-h">
+      <div class="rahmen">
+        <div class="uu-patrick-karte">
+          <figure class="uu-patrick-foto">
+            <Foto foto="patrick-01-hoch" sizes="(min-width: 760px) 20rem, 70vw" breiten={[300, 480, 640, 800]} />
+          </figure>
+          <div class="uu-patrick-text">
+            <p class="karte-phase">Geschäftsführer und Mitgründer</p>
+            <h2 id="ps-h">Patrick Senn</h2>
+            <p>Patrick Senn hat die <Fragment set:html={firma} /> 2015 mitgegründet und ist seitdem Geschäftsführer. Er hat 2008 als Berater bei der HORBACH Wirtschaftsberatung in Köln begonnen und berät seitdem Ärzt*innen. Seine Schwerpunkte sind Versicherungen und Investmentanlagen. Er schreibt und verantwortet die Texte auf dieser Seite.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="abschnitt" aria-labelledby="team-h">
-      <h2 id="team-h" class="abschnitt-titel">Das Team</h2>
-      <figure class="uu-team">
-        <Foto foto="team-02" sizes="(min-width: 1200px) 1100px, 92vw" breiten={[640, 960, 1280, 1600]} />
-        <figcaption>Auf dem Foto ist ein Teil des Teams zu sehen.</figcaption>
-      </figure>
-      <ul class="uu-liste">
-        {team.map(([name, text]) => <li><strong>{name}</strong>: {text}</li>)}
-      </ul>
-      <p class="quellen-stand">Angaben nach meinsternum.de/wir, Stand 12.11.2026.</p>
+    <section class="uu-team" aria-labelledby="team-h">
+      <div class="rahmen">
+        <h2 id="team-h">Das Team</h2>
+        <ul class="uu-karten">
+          {team.map((m) => (
+            <li class="uu-person">
+              <div class="uu-person-bild">
+                {m.foto ? <Foto foto={m.foto} sizes="(min-width: 1100px) 17rem, (min-width: 640px) 30vw, 80vw" breiten={[300, 480, 640]} /> : <span class="uu-initialen" aria-hidden="true">{initialen(m.name)}</span>}
+              </div>
+              <div class="uu-person-text">
+                <h3>{m.name}</h3>
+                <p class="karte-phase">{m.rolle}</p>
+                <p>{m.text}</p>
+              </div>
+            </li>
+          ))}
+        </ul>
+        <p class="uu-quelle">Angaben nach meinsternum.de/wir, Stand 28.11.2026.</p>
+      </div>
     </section>
 
-    <CtaBlock text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
+    <CtaBlock neu text="Du möchtest wissen, was für deine Situation gilt? Im Erstgespräch gehen wir sie gemeinsam durch." />
   </div>
+  <div class="abstand-unten"></div>
 </Base>
-
-<style>
-  .uu-person { display: grid; grid-template-columns: 18rem 1fr; gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
-  .uu-person p { max-width: 40rem; font-size: 1.06rem; }
-  .uu-portrait { margin: 0; }
-  .uu-portrait :global(img) { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 22px; }
-  .uu-team { margin: 0 0 2rem; }
-  .uu-team :global(img) { width: 100%; aspect-ratio: 3 / 2; object-fit: cover; border-radius: 24px; }
-  .uu-team figcaption { font-size: 0.85rem; color: var(--text-leise); margin-top: 0.5rem; }
-  .uu-liste { display: grid; gap: 0.9rem 2.5rem; grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr)); }
-  .uu-liste li { padding-top: 0.9rem; border-top: 1px solid var(--linie); color: var(--text-leise); }
-  .uu-liste strong { color: var(--navy); font-weight: 600; }
-  @media (max-width: 760px) { .uu-person { grid-template-columns: 1fr; } .uu-portrait { max-width: 16rem; } }
-</style>
