@@ -1,7 +1,7 @@
 ---
 import { mitMarke } from '../lib/marke';
 // Über uns im neuen Design (Kopf wie Ratgeber-Übersicht). Texte nach meinsternum.de/wir, Stand 28.11.2026.
-// Vanessa Steuer ist nicht mehr im Team (Patrick, 28.11.2026). Fotos von Eva und Kirsten folgen.
+// Vanessa Steuer ist nicht mehr im Team (Patrick, 28.11.2026).
 import Base from '../layouts/Base.astro';
 import Foto from '../components/Foto.astro';
 import CtaBlock from '../components/CtaBlock.astro';
@@ -26,8 +26,8 @@ const team: Mitglied[] = [
   { name: 'Steffen Weber', rolle: 'Altersvorsorge und Investment', foto: 'team-steffen-hoch', text: 'In der Finanzwelt seit 2016. Er betreut Altersvorsorge und Investment und erklärt komplexe Zusammenhänge verständlich.' },
   { name: 'Frank Schmidt', rolle: 'Fachwirt für Finanzberatung (IHK)', foto: 'team-frank-hoch', text: 'Unterstützt das Team seit Januar 2023, selbstständig seit 2002. Schwerpunkte: Kapitalanlagen und Altersvorsorge.' },
   { name: 'Henry Momberger', rolle: 'Finanzplaner', foto: 'team-henry-hoch', text: 'Im Team seit 2017. Seit 2011 ausschließlich auf Immobilienfinanzierungen ausgerichtet.' },
-  { name: 'Kirsten Zimmermann', rolle: 'Sachversicherungen, Organisation und Administration', text: 'Im Team seit 2021, in der Branche seit 2013. Ansprechpartnerin unter anderem für Haftpflicht- und Hausratversicherungen.' },
-  { name: 'Eva Janßen', rolle: 'Assistenz', text: 'Kauffrau für Versicherungen und Finanzen (IHK), seit 2013 in der Versicherungsbranche. Unterstützt bei Versicherungen und in der Kundenkommunikation.' },
+  { name: 'Kirsten Zimmermann', rolle: 'Sachversicherungen, Organisation und Administration', foto: 'team-kirsten-hoch', text: 'Im Team seit 2020, in der Branche seit 2013. Ansprechpartnerin unter anderem für Haftpflicht- und Hausratversicherungen.' },
+  { name: 'Eva Janßen', rolle: 'Assistenz', foto: 'team-eva-hoch', text: 'Kauffrau für Versicherungen und Finanzen (IHK), seit 2013 in der Versicherungsbranche. Unterstützt bei Versicherungen und in der Kundenkommunikation.' },
 ];
 const initialen = (n: string) => n.split(' ').map((t) => t[0]).slice(0, 2).join('');
 const firma = mitMarke('MEIN STERNUM Finanzberatung GmbH');

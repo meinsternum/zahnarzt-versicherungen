@@ -35,6 +35,8 @@ import frankHoch from '../assets/fotos/frank-hoch.jpg';
 import henryHoch from '../assets/fotos/henry-hoch.jpg';
 import michaelHoch from '../assets/fotos/michael-hoch.jpg';
 import steffenHoch from '../assets/fotos/steffen-hoch.jpg';
+import evaHoch from '../assets/fotos/eva-hoch.jpg';
+import kirstenHoch from '../assets/fotos/kirsten-hoch.jpg';
 
 export type Foto = { name: string; datei: string; bild: ImageMetadata; alt: string };
 
@@ -49,6 +51,8 @@ export const fotos = {
   'team-henry-hoch': { name: 'team-henry', datei: 'henry-hoch.jpg (Zuschnitt 4:5)', bild: henryHoch, alt: 'Henry Momberger, meinsternum' },
   'team-michael-hoch': { name: 'team-michael', datei: 'michael-hoch.jpg (Zuschnitt 4:5)', bild: michaelHoch, alt: 'Michael Elsner, meinsternum' },
   'team-steffen-hoch': { name: 'team-steffen', datei: 'steffen-hoch.jpg (Zuschnitt 4:5)', bild: steffenHoch, alt: 'Steffen Weber, meinsternum' },
+  'team-eva-hoch': { name: 'team-eva', datei: 'eva-hoch.jpg (Zuschnitt 4:5)', bild: evaHoch, alt: 'Eva Janßen, meinsternum' },
+  'team-kirsten-hoch': { name: 'team-kirsten', datei: 'kirsten-hoch.jpg (Zuschnitt 4:5)', bild: kirstenHoch, alt: 'Kirsten Zimmermann, meinsternum' },
   'patrick-01-hoch': { name: 'patrick-01', datei: '2M3A9875.jpg (Zuschnitt 4:5)', bild: patrick01Hoch, alt: PATRICK },
   'patrick-02-hoch': { name: 'patrick-02', datei: '2M3A9881.jpg (Zuschnitt 4:5)', bild: patrick02Hoch, alt: PATRICK },
   'patrick-04-hoch': { name: 'patrick-04', datei: '2M3A0103.jpg (Zuschnitt 4:5)', bild: patrick04Hoch, alt: PATRICK },
