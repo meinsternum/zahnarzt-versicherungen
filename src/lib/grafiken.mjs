@@ -115,6 +115,30 @@ export const grafiken = {
       fuss: 'Fiktives Beispiel mit erfundenen Zahlen und angenommenen 2 Prozent Preisentwicklung pro Jahr, keine Prognose.',
     },
   ],
+  'altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen': [
+    {
+      typ: 'tabelle', nach: 'Was bekommen Hinterbliebene aus dem Versorgungswerk?',
+      titel: 'Hinterbliebenenrenten in zwei Satzungen',
+      spalten: ['', 'Westfalen-Lippe (Stand Juli 2026)', 'Niedersachsen (Stand 01.02.2024)'],
+      zeilen: [
+        ['Witwen- oder Witwerrente', '60 Prozent der Berechnungsgrundlage, bei größerem Altersabstand weniger, nicht bei Ehen vor 01.01.2010 (§ 54 Abs. 4, § 69 Abs. 4)', '60 Prozent, bei älteren Ehen und Mitgliedschaften zwei Drittel (§ 18 Abs. 1, 1a)'],
+        ['Waisenrente', '15 Prozent, bei Vollwaisen 30 Prozent (§ 54 Abs. 4)', 'Ein Sechstel, bei Vollwaisen ein Drittel (§ 19 Abs. 1)'],
+        ['Waisenrente bis', '18, bei Ausbildung längstens 27 (§ 46)', '18, bei Ausbildung auf Antrag 25 (§ 19 Abs. 2)'],
+        ['Späte Ehe', 'Ehe nach BU-Antrag oder bei möglichem Altersrentenbezug: mindestens drei Jahre (§ 49 Abs. 2)', 'Kein Anspruch bei Ehe später als 36 Monate vor Tod oder Rentenbeginn, außer bei Unfalltod (§ 18 Abs. 1b)'],
+      ],
+      fuss: 'Stand: 28.11.2026, nach Satzungen (siehe Quellen). Die Satzung deines Versorgungswerks kann abweichen.',
+    },
+    {
+      typ: 'karten', nach: 'Was passiert beim Altersvorsorgedepot im Todesfall?',
+      titel: 'Altersvorsorgedepot: Was im Todesfall zählt',
+      karten: [
+        { kopf: 'Grundregel', punkte: ['Auszahlung im Todesfall ist schädliche Verwendung', 'Zulagen und gesondert festgestellte Beträge sind zurückzuzahlen (§ 93 Abs. 1 Satz 1 und 2)'] },
+        { kopf: 'Ausnahmen', punkte: ['Unter anderem: Leistungen an Hinterbliebene, etwa aus der Rentengarantiezeit', 'Übertragung auf einen Vertrag des Ehegatten (nicht dauernd getrennt, EU oder EWR)', '§ 93 Abs. 1 Satz 4 Buchst. a bis c, Fassung ab 01.01.2027'] },
+        { kopf: 'Absicherung', punkte: ['Ab 2027 nur Rentengarantiezeit von zehn oder zwanzig Jahren als Zusatz', 'Gilt auch für das Depot'] },
+      ],
+      fuss: 'Stand: 28.11.2026, nach § 93 EStG und Altersvorsorgereformgesetz, Änderungen ab 01.01.2027 (siehe Quellen).',
+    },
+  ],
   'berufshaftpflicht-pflicht-mindestsumme-zahnaerzt-innen': [
     {
       typ: 'karten', nach: 'start',

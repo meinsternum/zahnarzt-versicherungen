@@ -104,6 +104,8 @@ export const fotoJeSeite: Record<string, FotoKey> = {
   'berufsunfaehigkeit-rentenhoehe-zahnaerzt-innen': 'schreibtisch-01-hoch',
   'berufsunfaehigkeit-teilweise-zahnaerzt-innen': 'patrick-02-hoch',
   'altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen': 'patrick-06-hoch',
+  // Altersvorsorge Todesfall (28.11.2026): anderes Motiv als Seite 21.
+  'altersvorsorge-todesfall-versorgungswerk-depot-zahnaerzt-innen': 'patrick-04-hoch',
   'krankengeld-luecke-zahnaerzt-innen': 'schreibtisch-02-hoch',
   'pkv-oder-gkv-wechsel-zahnaerzt-innen': 'patrick-03-hoch',
   'krankentagegeld-praxisinhaber-zahnaerzt-innen': 'patrick-06-hoch',
