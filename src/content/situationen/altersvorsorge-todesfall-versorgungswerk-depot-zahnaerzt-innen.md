@@ -36,6 +36,7 @@ faq:
 verwandt:
   - altersvorsorge-versorgungswerk-im-alter-zahnaerzt-innen
   - berufsunfaehigkeit-versorgungswerk-zahnaerzt-innen
+  - altersvorsorgedepot-foerderung-zahnaerzt-innen
 hinweise:
   - nach: "Wie sieht das in Zahlen aus?"
     art: einschaetzen
